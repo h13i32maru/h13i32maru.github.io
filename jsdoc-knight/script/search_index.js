@@ -1,0 +1,112 @@
+window.jsdocCloudySearchIndex = [
+  [
+    "jsdoc-knight/out/src/node/astnode.js~astnode",
+    "ASTNode.html",
+    "<span>ASTNode</span> <span class=\"search-result-import-path\">jsdoc-knight/out/src/node/ASTNode.js</span>"
+  ],
+  [
+    "jsdoc-knight/out/src/node/assignmentexpressionnode.js~assignmentexpressionnode",
+    "AssignmentExpressionNode.html",
+    "<span>AssignmentExpressionNode</span> <span class=\"search-result-import-path\">jsdoc-knight/out/src/node/AssignmentExpressionNode.js</span>"
+  ],
+  [
+    "jsdoc-knight/out/src/converter.js~converter",
+    "Converter.html",
+    "<span>Converter</span> <span class=\"search-result-import-path\">jsdoc-knight/out/src/Converter.js</span>"
+  ],
+  [
+    "jsdoc-knight/out/src/node/functiondeclarationnode.js~functiondeclarationnode",
+    "FunctionDeclarationNode.html",
+    "<span>FunctionDeclarationNode</span> <span class=\"search-result-import-path\">jsdoc-knight/out/src/node/FunctionDeclarationNode.js</span>"
+  ],
+  [
+    "jsdoc-knight/out/src/node/functionexpressionnode.js~functionexpressionnode",
+    "FunctionExpressionNode.html",
+    "<span>FunctionExpressionNode</span> <span class=\"search-result-import-path\">jsdoc-knight/out/src/node/FunctionExpressionNode.js</span>"
+  ],
+  [
+    "jsdoc-knight/out/src/node/identifiernode.js~identifiernode",
+    "IdentifierNode.html",
+    "<span>IdentifierNode</span> <span class=\"search-result-import-path\">jsdoc-knight/out/src/node/IdentifierNode.js</span>"
+  ],
+  [
+    "jsdoc-knight/out/src/node/literalnode.js~literalnode",
+    "LiteralNode.html",
+    "<span>LiteralNode</span> <span class=\"search-result-import-path\">jsdoc-knight/out/src/node/LiteralNode.js</span>"
+  ],
+  [
+    "jsdoc-knight/out/src/node/memberexpressionnode.js~memberexpressionnode",
+    "MemberExpressionNode.html",
+    "<span>MemberExpressionNode</span> <span class=\"search-result-import-path\">jsdoc-knight/out/src/node/MemberExpressionNode.js</span>"
+  ],
+  [
+    "astnode#_formatjsdoccomment",
+    "ASTNode.html#instance-_formatJSDocComment",
+    "ASTNode#_formatJSDocComment"
+  ],
+  [
+    "astnode#_isjsdoccomment",
+    "ASTNode.html#instance-_isJSDocComment",
+    "ASTNode#_isJSDocComment"
+  ],
+  [
+    "astnode#_mergecomment",
+    "ASTNode.html#instance-_mergeComment",
+    "ASTNode#_mergeComment"
+  ],
+  [
+    "astnode#_parsejsdoccomment",
+    "ASTNode.html#instance-_parseJSDocComment",
+    "ASTNode#_parseJSDocComment"
+  ],
+  [
+    "astnode#addcomments",
+    "ASTNode.html#instance-addComments",
+    "ASTNode#addComments"
+  ],
+  [
+    "astnode#children",
+    "ASTNode.html#instance-children",
+    "ASTNode#children"
+  ],
+  [
+    "astnode#node",
+    "ASTNode.html#instance-node",
+    "ASTNode#node"
+  ],
+  [
+    "astnode.comment",
+    "ASTNode.html#static-Comment",
+    "ASTNode.Comment"
+  ],
+  [
+    "converter._generate",
+    "Converter.html#static-_generate",
+    "Converter._generate"
+  ],
+  [
+    "converter._parse",
+    "Converter.html#static-_parse",
+    "Converter._parse"
+  ],
+  [
+    "converter._walk",
+    "Converter.html#static-_walk",
+    "Converter._walk"
+  ],
+  [
+    "converter.convert",
+    "Converter.html#static-convert",
+    "Converter.convert"
+  ],
+  [
+    "functionexpressionnode#updatebyclass",
+    "FunctionExpressionNode.html#instance-updateByClass",
+    "FunctionExpressionNode#updateByClass"
+  ],
+  [
+    "external:ast",
+    "external%3AAST.html",
+    "external:AST"
+  ]
+]

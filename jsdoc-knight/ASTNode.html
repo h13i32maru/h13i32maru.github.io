@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/prettify/lang-css.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function(){
+      prettyPrint();
+    });
+  </script>
+
+  
+  
+</head>
+<body class="layout-container">
+
+<nav class="navigation" data-ice="nav"><h1><a href="./">HOME</a> | <a href="@readme.html">README</a></h1>
+
+<div data-ice="classWrap">
+  <h2>Class</h2>
+  <ul>
+    
+  <li data-ice="classDoc"><span><a href="ASTNode.html">ASTNode</a></span></li>
+<li data-ice="classDoc"><span><a href="AssignmentExpressionNode.html">AssignmentExpressionNode</a></span></li>
+<li data-ice="classDoc"><span><a href="Converter.html">Converter</a></span></li>
+<li data-ice="classDoc"><span><a href="FunctionDeclarationNode.html">FunctionDeclarationNode</a></span></li>
+<li data-ice="classDoc"><span><a href="FunctionExpressionNode.html">FunctionExpressionNode</a></span></li>
+<li data-ice="classDoc"><span><a href="IdentifierNode.html">IdentifierNode</a></span></li>
+<li data-ice="classDoc"><span><a href="LiteralNode.html">LiteralNode</a></span></li>
+<li data-ice="classDoc"><span><a href="MemberExpressionNode.html">MemberExpressionNode</a></span></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+<div class="content" data-ice="content"><div class="header-notice">
+  
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import ASTNode from &apos;jsdoc-knight/out/src/node/ASTNode.js&apos;</code></pre></div>
+  <span data-ice="access">public</span>
+  <span data-ice="kind">class</span>
+  
+  
+  
+  
+</div>
+
+<div class="self-detail detail">
+  <h1 data-ice="name">ASTNode</h1>
+
+  
+  <div class="flat-list" data-ice="directSubclass"><h4>Direct Subclass:</h4><span><a href="AssignmentExpressionNode.html">AssignmentExpressionNode</a></span>, <span><a href="FunctionExpressionNode.html">FunctionExpressionNode</a></span>, <span><a href="IdentifierNode.html">IdentifierNode</a></span>, <span><a href="LiteralNode.html">LiteralNode</a></span>, <span><a href="MemberExpressionNode.html">MemberExpressionNode</a></span></div>
+  <div class="flat-list" data-ice="indirectSubclass"><h4>Indirect Subclass:</h4><span><a href="FunctionDeclarationNode.html">FunctionDeclarationNode</a></span></div>
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  <div data-ice="description"><p>represent empty AST node.</p></div>
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+
+
+
+
+
+
+
+<div data-ice="constructorSummary"><h2>Constructor Summary</h2><table class="summary" data-ice="summary">
+  <thead><tr><td data-ice="title" colspan="3">Public Constructor</td></tr></thead>
+  <tbody>
+  
+  <tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+    </td>
+    <td>
+      <div>
+        <p>
+          <span data-ice="name"><span><a href="ASTNode.html#global-ASTNode">ASTNode</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>create instance.</p></div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+<div data-ice="memberSummary"><h2>Member Summary</h2><table class="summary" data-ice="summary">
+  <thead><tr><td data-ice="title" colspan="3">Public Members</td></tr></thead>
+  <tbody>
+  
+  <tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      <span class="readonly" data-ice="readonly">readonly</span>
+    </td>
+    <td>
+      <div>
+        <p>
+          <span data-ice="name"><span><a href="ASTNode.html#instance-children">children</a></span></span><span data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey/Parser_API">AST</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>AST children raw nodes of self.</p></div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      <span class="readonly" data-ice="readonly">readonly</span>
+    </td>
+    <td>
+      <div>
+        <p>
+          <span data-ice="name"><span><a href="ASTNode.html#instance-node">node</a></span></span><span data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey/Parser_API">AST</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>AST raw node.</p></div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+<div data-ice="methodSummary"><h2>Method Summary</h2><table class="summary" data-ice="summary">
+  <thead><tr><td data-ice="title" colspan="3">Public Methods</td></tr></thead>
+  <tbody>
+  
+  <tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+    </td>
+    <td>
+      <div>
+        <p>
+          <span data-ice="name"><span><a href="ASTNode.html#instance-addComments">addComments</a></span></span><span data-ice="signature">(comments: <span><a href="ASTNode.html#static-Comment">Comment</a>[]</span>, leading: <span>boolean</span>)</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>add comments to self.</p></div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+</tbody>
+</table>
+<table class="summary" data-ice="summary">
+  <thead><tr><td data-ice="title" colspan="3">Private Methods</td></tr></thead>
+  <tbody>
+  
+  <tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">private</span>
+      
+      
+      
+    </td>
+    <td>
+      <div>
+        <p>
+          <span data-ice="name"><span><a href="ASTNode.html#instance-_formatJSDocComment">_formatJSDocComment</a></span></span><span data-ice="signature">(comment: <span><a href="ASTNode.html#static-Comment">Comment</a></span>): <span><a href="ASTNode.html#static-Comment">Comment</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>format JSDoc comment.</p></div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">private</span>
+      
+      
+      
+    </td>
+    <td>
+      <div>
+        <p>
+          <span data-ice="name"><span><a href="ASTNode.html#instance-_isJSDocComment">_isJSDocComment</a></span></span><span data-ice="signature">(comment: <span><a href="ASTNode.html#static-Comment">Comment</a></span>)</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>is comment JSDoc style?</p></div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">private</span>
+      
+      
+      
+    </td>
+    <td>
+      <div>
+        <p>
+          <span data-ice="name"><span><a href="ASTNode.html#instance-_mergeComment">_mergeComment</a></span></span><span data-ice="signature">(targetNode: <span><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey/Parser_API">AST</a></span>, otherNode: <span><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey/Parser_API">AST</a></span>, reverse: <span>boolean</span>)</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>merge other node comment to target node comment.</p></div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">private</span>
+      
+      
+      
+    </td>
+    <td>
+      <div>
+        <p>
+          <span data-ice="name"><span><a href="ASTNode.html#instance-_parseJSDocComment">_parseJSDocComment</a></span></span><span data-ice="signature">(comment: <span><a href="ASTNode.html#static-Comment">Comment</a></span>): <span>string[]</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>parse JSDoc comment to each lines.</p></div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+<div data-ice="typedefSummary"><h2>Typedef Summary</h2><table class="summary" data-ice="summary">
+  <thead><tr><td data-ice="title" colspan="3">Static Public Typedefs</td></tr></thead>
+  <tbody>
+  
+  <tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+    </td>
+    <td>
+      <div>
+        <p>
+          <span data-ice="name"><span><a href="ASTNode.html#static-Comment">Comment</a></span></span><span data-ice="signature">: <span>Object</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+
+
+
+
+
+
+
+
+
+<div data-ice="constructorDetails"><h2 data-ice="title">Public Constructors</h2>
+
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="global-ASTNode">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    <span data-ice="name">ASTNode</span>
+    <span class="right-info">
+      
+      
+    </span>
+  </h3>
+
+  
+  
+  <div data-ice="description"><p>create instance.</p></div>
+  
+  
+
+  <div data-ice="properties">
+</div>
+
+  
+
+  
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+</div>
+</div>
+<div data-ice="memberDetails"><h2 data-ice="title">Public Members</h2>
+
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-children">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    <span data-ice="readonly">readonly</span>
+    <span data-ice="name">children</span><span data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey/Parser_API">AST</a></span></span>
+    <span class="right-info">
+      
+      
+    </span>
+  </h3>
+
+  
+  
+  <div data-ice="description"><p>AST children raw nodes of self.</p></div>
+  
+  
+
+  <div data-ice="properties">
+</div>
+
+  
+
+  
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-node">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    <span data-ice="readonly">readonly</span>
+    <span data-ice="name">node</span><span data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey/Parser_API">AST</a></span></span>
+    <span class="right-info">
+      
+      
+    </span>
+  </h3>
+
+  
+  
+  <div data-ice="description"><p>AST raw node.</p></div>
+  
+  
+
+  <div data-ice="properties">
+</div>
+
+  
+
+  
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+</div>
+</div>
+<div data-ice="methodDetails"><h2 data-ice="title">Public Methods</h2>
+
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-addComments">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    <span data-ice="name">addComments</span><span data-ice="signature">(comments: <span><a href="ASTNode.html#static-Comment">Comment</a>[]</span>, leading: <span>boolean</span>)</span>
+    <span class="right-info">
+      
+      
+    </span>
+  </h3>
+
+  
+  
+  <div data-ice="description"><p>add comments to self.</p></div>
+  
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">comments</td>
+      <td data-ice="type"><span><a href="ASTNode.html#static-Comment">Comment</a>[]</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">leading</td>
+      <td data-ice="type"><span>boolean</span></td>
+      <td data-ice="appendix"><ul><li>optional</li>
+<li>default: true</li></ul></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  
+
+  
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+</div>
+<h2 data-ice="title">Private Methods</h2>
+
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-_formatJSDocComment">
+    <span class="access" data-ice="access">private</span>
+    
+    
+    
+    <span data-ice="name">_formatJSDocComment</span><span data-ice="signature">(comment: <span><a href="ASTNode.html#static-Comment">Comment</a></span>): <span><a href="ASTNode.html#static-Comment">Comment</a></span></span>
+    <span class="right-info">
+      
+      
+    </span>
+  </h3>
+
+  
+  
+  <div data-ice="description"><p>format JSDoc comment.</p></div>
+  
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">comment</td>
+      <td data-ice="type"><span><a href="ASTNode.html#static-Comment">Comment</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tr>
+        <td class="return-type" data-ice="returnType"><span><a href="ASTNode.html#static-Comment">Comment</a></span></td>
+        <td class="return-desc" data-ice="returnDescription"><p>formatted comment.</p></td>
+      </tr>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-_isJSDocComment">
+    <span class="access" data-ice="access">private</span>
+    
+    
+    
+    <span data-ice="name">_isJSDocComment</span><span data-ice="signature">(comment: <span><a href="ASTNode.html#static-Comment">Comment</a></span>)</span>
+    <span class="right-info">
+      
+      
+    </span>
+  </h3>
+
+  
+  
+  <div data-ice="description"><p>is comment JSDoc style?</p></div>
+  
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">comment</td>
+      <td data-ice="type"><span><a href="ASTNode.html#static-Comment">Comment</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  
+
+  
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-_mergeComment">
+    <span class="access" data-ice="access">private</span>
+    
+    
+    
+    <span data-ice="name">_mergeComment</span><span data-ice="signature">(targetNode: <span><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey/Parser_API">AST</a></span>, otherNode: <span><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey/Parser_API">AST</a></span>, reverse: <span>boolean</span>)</span>
+    <span class="right-info">
+      
+      
+    </span>
+  </h3>
+
+  
+  
+  <div data-ice="description"><p>merge other node comment to target node comment.</p></div>
+  
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">targetNode</td>
+      <td data-ice="type"><span><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey/Parser_API">AST</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">otherNode</td>
+      <td data-ice="type"><span><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey/Parser_API">AST</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">reverse</td>
+      <td data-ice="type"><span>boolean</span></td>
+      <td data-ice="appendix"><ul><li>optional</li>
+<li>default: false</li></ul></td>
+      <td data-ice="description"><p>if true, otherNode comment + targetNode comment. if false, targetNode comment + otherNode comment.</p></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  
+
+  
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-_parseJSDocComment">
+    <span class="access" data-ice="access">private</span>
+    
+    
+    
+    <span data-ice="name">_parseJSDocComment</span><span data-ice="signature">(comment: <span><a href="ASTNode.html#static-Comment">Comment</a></span>): <span>string[]</span></span>
+    <span class="right-info">
+      
+      
+    </span>
+  </h3>
+
+  
+  
+  <div data-ice="description"><p>parse JSDoc comment to each lines.</p></div>
+  
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">comment</td>
+      <td data-ice="type"><span><a href="ASTNode.html#static-Comment">Comment</a></span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tr>
+        <td class="return-type" data-ice="returnType"><span>string[]</span></td>
+        
+      </tr>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+</div>
+</div>
+<div data-ice="typedefDetails"><h2 data-ice="title">Static Public Typedefs</h2>
+
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-Comment">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    <span data-ice="name">Comment</span><span data-ice="signature">: <span>Object</span></span>
+    <span class="right-info">
+      
+      
+    </span>
+  </h3>
+
+  
+  
+  
+  
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Properties:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">type</td>
+      <td data-ice="type"><span>string</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">value</td>
+      <td data-ice="type"><span>string</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  
+
+  
+  
+  
+
+  
+
+  
+
+  
+  
+  
+  
+</div>
+</div>
+
+
+
+
+
+
+</div>
+
+<footer class="footer">
+  <div data-ice="fileFooter"></div>
+  Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc</a>
+  with <a href="https://github.com/h13i32maru/jsdoc-cloudy">jsdoc-cloudy</a>
+  on <span data-ice="date">Sun Mar 22 2015 15:17:07 GMT+0900 (JST)</span>
+</footer>
+
+<div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+  <ul class="search-result"></ul>
+</div>
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+</body>
+</html>
