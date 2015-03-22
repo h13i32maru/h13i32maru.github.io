@@ -42,17 +42,17 @@ h1 {
 h2 {
   margin-top: 24px;
   margin-bottom: 10px;
-  font-size: 24px;
+  font-size: 20px;
   border-bottom: solid 1px #ddd;
   font-weight: 300;
 }
 
 h3 {
   position: relative;
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 12px;
   background-color: #E2E2E2;
-  padding: 2px;
+  padding: 4px;
   font-weight: 300;
 }
 
@@ -230,11 +230,23 @@ table.params td p {
 }
 
 .content .detail > * {
-  margin: 10px 0;
+  margin: 15px 0;
+}
+
+.content .detail > h3 {
+  color: black;
+}
+
+.content .detail > div {
+  margin-left: 10px;
 }
 
 .content .detail .throw p {
   margin: 0;
+}
+
+.content .detail + .detail {
+  margin-top: 30px;
 }
 
 .content .detail .throw td:first-child {
@@ -260,12 +272,17 @@ table.params td p {
 }
 
 .return-type {
+  padding-right: 10px;
   font-weight: normal;
 }
 
 .return-desc {
   margin-left: 10px;
   margin-top: 4px;
+}
+
+.return-desc p {
+  margin: 0;
 }
 
 .deprecated, .experimental {
