@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/prettify/lang-css.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', function(){
+      prettyPrint();
+    });
+  </script>
+
+  
+  
+</head>
+<body class="layout-container">
+
+<nav class="navigation" data-ice="nav"><h1><a href="./">HOME</a> | <a href="@index.html">INDEX</a></h1>
+
+<div data-ice="classWrap">
+  <h2>Class</h2>
+  <ul>
+    
+  <li data-ice="classDoc"><span><a href="%40class-src%7CColorLogger.js~ColorLogger.html">ColorLogger</a></span></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+
+<div data-ice="fileWrap">
+  <h2>File</h2>
+  <ul>
+    
+  <li data-ice="fileDoc"><span><a href="%40file-src%7CColorLogger.js.html">src/ColorLogger.js</a></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/ColorLogger.js</h1>
+<pre class="source-code line-number"><code class="prettyprint linenums" data-ice="content">// ASCII ESCAPE SEQUENCE http://www5c.biglobe.ne.jp/~ecb/assembler2/b_2.html
+let levelToColor = {
+  v: &apos;[35m[V]&apos;, // purple
+  d: &apos;[34m[D]&apos;, // blue
+  i: &apos;[32m[I]&apos;, // green
+  w: &apos;[33m[W]&apos;, // yellow
+  e: &apos;[31m[E]&apos;  // red
+};
+
+/**
+ * display colorful log. now, not support browser.
+ *
+ * format:
+ * ``[LogLevel] [Time] [File] log text``
+ *
+ * format with tag:
+ * ``[LogLevel] [Time] [File] [Tag] log text``
+ *
+ * log level and color:
+ * - verbose: purple
+ * - debug: blue
+ * - info: green
+ * - warning: yellow
+ * - error: red
+ *
+ * @example
+ * import Logger from &apos;color-logger&apos;
+ *
+ * // simple usage
+ * Logger.v(&apos;verbose log&apos;);
+ *
+ * // tag usage
+ * let logger = new Logger(&apos;MyTag&apos;);
+ * logger.d(&apos;debug log&apos;);
+ */
+export default class ColorLogger {
+  /**
+   * log information.
+   * @return {string} - file name and line number.
+   * @private
+   */
+  static _getInfo() {
+    let info;
+    try {
+      throw new Error();
+    } catch (e) {
+      let lines = e.stack.split(&apos;\n&apos;);
+      let line = lines[4];
+      let matched = line.match(/\/([^/]*?:\d+:\d+)/);
+      info = matched[1];
+    }
+
+    return info;
+  }
+
+  /**
+   * if false, not display log. default is true.
+   */
+  static set debug(v) {
+    this._debug = v;
+  }
+
+  /**
+   * display log.
+   * @param {string} level - log level. v, d, i, w, e.
+   * @param {...*} msg - log message.
+   * @returns {string} - formatted log message.
+   * @private
+   */
+  static _output(level, ...msg) {
+    if (!this._debug) return &apos;&apos;;
+
+    let text = [];
+    for (let m of msg) {
+      if (typeof m === &apos;object&apos;) {
+        text.push(JSON.stringify(m, null, 2));
+      } else {
+        text.push(m);
+      }
+    }
+
+    let color = levelToColor[level];
+    let info = this._getInfo();
+    let d = new Date();
+    let now = `${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}.${d.getMilliseconds()}`;
+    let log = `${color} [${now}] [${info}] ${text.join(&apos; &apos;)}[0m`;
+    console.log(log);
+    return log;
+  }
+
+  /**
+   * display verbose(purple) log.
+   * @param {...*} msg - log message.
+   * @returns {string} formatted log message.
+   */
+  static v(...msg) {
+    return this._output(&apos;v&apos;, ...msg);
+  }
+
+  /**
+   * display debug(blue) log.
+   * @param {...*} msg - log message.
+   * @returns {string} formatted log message.
+   */
+  static d(...msg) {
+    return this._output(&apos;d&apos;, ...msg);
+  }
+
+  /**
+   * display info(green) log.
+   * @param {...*} msg - log message.
+   * @returns {string} formatted log message.
+   */
+  static i(...msg) {
+    return this._output(&apos;i&apos;, ...msg);
+  }
+
+  /**
+   * display warning(yellow) log.
+   * @param {...*} msg - log message.
+   * @returns {string} formatted log message.
+   */
+  static w(...msg) {
+    return this._output(&apos;w&apos;, ...msg);
+  }
+
+  /**
+   * display warning(red) log.
+   * @param {...*} msg - log message.
+   * @returns {string} formatted log message.
+   */
+  static e(...msg) {
+    return this._output(&apos;e&apos;, ...msg);
+  }
+
+  /**
+   * create instance.
+   * @param {string} tag - tag text.
+   */
+  constructor(tag) {
+    this._tag = tag;
+  }
+
+  /**
+   * display verbose(purple) log and tag.
+   * @param {...*} msg - log message.
+   * @returns {string} formatted log message.
+   */
+  v(...msg) {
+    return this.constructor._output(&apos;v&apos;, `[${this._tag}]`, ...msg);
+  }
+
+  /**
+   * display debug(blue) log and tag.
+   * @param {...*} msg - log message.
+   * @returns {string} formatted log message.
+   */
+  d(...msg) {
+    return this.constructor._output(&apos;d&apos;, `[${this._tag}]`, ...msg);
+  }
+
+  /**
+   * display info(green) log and tag.
+   * @param {...*} msg - log message.
+   * @returns {string} formatted log message.
+   */
+  i(...msg) {
+    return this.constructor._output(&apos;i&apos;, `[${this._tag}]`, ...msg);
+  }
+
+  /**
+   * display warning(yellow) log and tag.
+   * @param {...*} msg - log message.
+   * @returns {string} formatted log message.
+   */
+  w(...msg) {
+    return this.constructor._output(&apos;w&apos;, `[${this._tag}]`, ...msg);
+  }
+
+  /**
+   * display error(red) log and tag.
+   * @param {...*} msg - log message.
+   * @returns {string} formatted log message.
+   */
+  e(...msg) {
+    return this.constructor._output(&apos;e&apos;, `[${this._tag}]`, ...msg);
+  }
+}
+
+ColorLogger.debug = true;
+</code></pre>
+</div>
+
+<footer class="footer">
+  <span class="version" data-ice="version">version: 0.0.1</span>
+  <span class="url"><a data-ice="url" href="https://github.com/h13i32maru/color-logger">https://github.com/h13i32maru/color-logger</a></span>
+  Generated by <a href="https://github.com/h13i32maru/esdoc">ESDoc</a>
+</footer>
+
+<div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+  <ul class="search-result"></ul>
+</div>
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+</body>
+</html>
