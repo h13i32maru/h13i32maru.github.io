@@ -8,25 +8,25 @@
     <script src="/prettify/prettify.js"></script>
 </head>
 <body>
-<p><a href="https://travis-ci.org/h13i32maru/esdoc"><img src="https://travis-ci.org/h13i32maru/esdoc.svg?branch=master" alt="Build Status"></a>
-<a href="https://coveralls.io/r/h13i32maru/esdoc"><img src="https://coveralls.io/repos/h13i32maru/esdoc/badge.svg" alt="Coverage Status"></a></p>
-<h1 id="esdoc">ESDoc</h1>
-<p><a href="https://github.com/h13i32maru/esdoc">ESDoc</a> is API Documentation Generator for JavaScript(like JSDoc).</p>
+<nav>
+  <a class="title" href="./">ESDoc</a>
+  <ul>
+    <li><a href="./config.html">Config</a></li>
+    <li><a href="./tags.html">Tags</a></li>
+    <li><a href="./customize.html">Customize</a></li>
+    <li style="position: relative; top: 5px;"><a href="https://github.com/h13i32maru/esdoc"><img src="image/github.png" width="24px"></a></li>
+  </ul>
+</nav>
+
+<article class="content">
+<p><strong>CAUTION: ESDoc is super alpha version!</strong></p>
+<p>ESDoc is API Documentation Generator for JavaScript.</p>
+<p>ESDoc targets at ES6. if you want to target at ES5, might better to use <a href="http://usejsdoc.org/">JSDoc</a>.</p>
 <ul>
 <li><a href="#demo">Demo</a></li>
 <li><a href="#install">Install</a></li>
 <li><a href="#usage">Usage</a></li>
-<li><a href="#config">Config</a></li>
-<li><a href="#tags">Tags</a><ul>
-<li><a href="#for-common">For Common</a></li>
-<li><a href="#for-class">For Class</a></li>
-<li><a href="#for-method-and-function">For Method And Function</a></li>
-<li><a href="#for-member-and-variable">For Member And Variable</a></li>
-<li><a href="#for-member-and-variable">For Virtual</a></li>
-</ul>
-</li>
-<li><a href="#api">API</a></li>
-<li><a href="#internal-data-structure">Internal Data Structure</a></li>
+<li><a href="#example">Example</a></li>
 </ul>
 <h1 id="demo">Demo</h1>
 <p>TODO: create more better demo.</p>
@@ -35,408 +35,46 @@
 <li><a href="http://h13i32maru.github.io/esdoc-test-fixture/">http://h13i32maru.github.io/esdoc-test-fixture/</a></li>
 </ul>
 <h1 id="install">Install</h1>
-<p>sorry, not yet publish to npmjs.org</p>
-<pre><code>npm install -g h13i32maru.esdoc
+<p>sorry, not yet publish to npmjs.org.</p>
+<p>because I want use <a href="https://www.npmjs.com/package/esdoc">https://www.npmjs.com/package/esdoc</a>, but the name is already used with empty software :(</p>
+<pre><code>git clone https://github.com/h13i32maru/esdoc
+cd esdoc
+npm install
+npm run build
+./bin/esdoc -h
 </code></pre><h1 id="usage">Usage</h1>
 <p>with config file.</p>
 <pre><code>esdoc -c esdoc.json
 </code></pre><p>with directory path</p>
 <pre><code>esdoc ./path/to/js/dir
-</code></pre><h1 id="config">Config</h1>
-<p>ESDoc config file.</p>
+</code></pre><h1 id="example">Example</h1>
+<pre><code>├── esdoc.json
+└── src/MyClass.js
+</code></pre><p><code>src/MyClass.js</code></p>
+<pre><code class="lang-javascript">/**
+ * this is MyClass.
+ */
+export default class MyClass {
+  /**
+   * @param {number} param this is param.
+   * @return {number} this is return.
+   */
+  method(param){}
+}
+</code></pre>
+<p><code>esdoc.json</code></p>
 <pre><code class="lang-json">{
-  &quot;source&quot;: &quot;./path/to/src&quot;,
-  &quot;destination&quot;: &quot;./path/to/esdoc&quot;,
-  &quot;pattern&quot;: &quot;\\.js$&quot;,
-  &quot;access&quot;: [&quot;public&quot;, &quot;protected&quot;, &quot;private&quot;],
-  &quot;onlyExported&quot;: true,
-  &quot;importPathPrefix&quot;: &quot;&quot;,
-  &quot;readme&quot;: &quot;./path/to/README.md&quot;,
-  &quot;package&quot;: &quot;./path/to/package.json&quot;,
-  &quot;styles&quot;: [&quot;./path/to/style.css&quot;],
-  &quot;scripts&quot;: [&quot;./path/to/script.js&quot;]
+  &quot;source&quot;: &quot;./src&quot;,
+  &quot;destination&quot;: &quot;./esdoc&quot;,
 }
 </code></pre>
-<ul>
-<li><code>source</code> (required)<ul>
-<li>directory path of JavaScript source codes.</li>
-</ul>
-</li>
-<li><code>destination</code> (required)<ul>
-<li>output directory path.</li>
-</ul>
-</li>
-<li><code>pattern</code><ul>
-<li>process only files that are matched with the regexp.</li>
-<li>default: <code>null</code></li>
-</ul>
-</li>
-<li><code>access</code><ul>
-<li>process only symbols(class, method, function, etc...) that are have the access(public, protected and private).</li>
-<li>default: <code>[&quot;public&quot;, &quot;protected&quot;, &quot;private&quot;]</code></li>
-</ul>
-</li>
-<li><code>onlyExported</code><ul>
-<li>process only symbols that are exported(ES6 export syntax).</li>
-<li>e.g. <code>export MyClass {...}</code> is exported, <code>MyClass{}</code> is not exported.</li>
-<li>default: <code>false</code></li>
-</ul>
-</li>
-<li><code>importPathPrefix</code><ul>
-<li>display symbol&#39;s import path with the prefix.</li>
-<li>e.g. if <code>MyClass</code> in <code>src/foo/MyClass.js</code>, import path is <code>import MyClass from &#39;src/foo/MyClass.js&#39;</code>. but specified the prefix with <code>importPathPrefix: &quot;out&quot;</code>, import path is <code>import MyClass from &#39;out/src/foo/MyClass.js&#39;</code>.</li>
-<li>default: <code>&quot;&quot;</code></li>
-</ul>
-</li>
-<li><code>readme</code><ul>
-<li>includes README.md into out put document.</li>
-<li>default: null</li>
-</ul>
-</li>
-<li><code>package</code><ul>
-<li>use info(version, url, etc...) in package.json</li>
-</ul>
-</li>
-<li><code>styles</code><ul>
-<li>includes styles into out put document.</li>
-<li>default: <code>null</code></li>
-</ul>
-</li>
-<li><code>scripts</code><ul>
-<li>includes scripts into out put document.</li>
-<li>default: <code>null</code></li>
-</ul>
-</li>
-</ul>
-<h1 id="tags">Tags</h1>
-<p>Documentation tags are similar to JSDoc tags.</p>
-<p>e.g.</p>
-<pre><code class="lang-javascript">/**
- * this is MyClass description.
- * @example
- * let myClass = new MyClass();
- */
-class MyClass {
-  /**
-   * this is constructor description.
-   * @param {number} arg1 this is arg1 description.
-   * @param {string[]} arg2 this is arg2 description.
-   */ 
-  constructor(arg1, arg2) {...}
-}
-</code></pre>
-<h3 id="for-common">For Common</h3>
-<h4 id="-access">@access</h4>
-<p><code>@access &lt;public|protected|private&gt;</code></p>
-<p>alias are <code>@public</code>, <code>@protected</code> and <code>@private</code>.</p>
-<pre><code class="lang-javascript">/**
- * @access public
- */
-class MyClass {
-  /**
-   * @private
-   */
-  _method(){...}
-}
-</code></pre>
-<h4 id="-deprecated">@deprecated</h4>
-<p><code>@deprecated [description]</code></p>
-<pre><code class="lang-javascript">/**
- * @deprecated use MyClassEx instead of this.
- */
-class MyClass{...}
-</code></pre>
-<h4 id="-desc">@desc</h4>
-<p><code>@desc &lt;description&gt;</code></p>
-<p>the first line is processed as automatically @desc.</p>
-<pre><code class="lang-javascript">/**
- * @desc this is description.
- */
-class MyClass{...}
-
-/**
- * this is description.
- */
-class MyClass{...}
-</code></pre>
-<h4 id="-example">@example</h4>
-<p><code>@example &lt;JavaScript&gt;</code></p>
-<pre><code class="lang-javascript">/**
- * @example
- * let myClass = new MyClass();
- * let result = myClass.foo();
- * console.log(result);
- * 
- * @example
- * let result MyClass.bar();
- * console.log(result);
- */
-class MyClass{...}
-</code></pre>
-<h4 id="-experimental">@experimental</h4>
-<p><code>@experimental [description]</code></p>
-<pre><code class="lang-javascript">/**
- * @experimental this class includes breaking change.
- */
-class MyClass{...}
-</code></pre>
-<h4 id="-ignore">@ignore</h4>
-<p><code>@ignore</code></p>
-<p>symbol is not diaplayed in document.</p>
-<pre><code class="lang-javascript">/**
- * @ignore
- */
-class MyClass{...}
-</code></pre>
-<h4 id="-see">@see</h4>
-<p><code>@see &lt;URL&gt;</code></p>
-<pre><code class="lang-javascript">/**
- * @see http://example.com
- * @see http://example.org
- */
-class MyClass{...}
-</code></pre>
-<h4 id="-since">@since</h4>
-<p><code>@since &lt;version&gt;</code></p>
-<pre><code class="lang-javascript">/**
- * @since 0.0.1
- */
-class MyClass{...}
-</code></pre>
-<h4 id="-todo">@todo</h4>
-<p><code>@todo &lt;description&gt;</code></p>
-<pre><code class="lang-javascript">/**
- * @todo support multi byte character.
- * @todo cache calculation result.
- */
-class MyClass{...}
-</code></pre>
-<h4 id="-version">@version</h4>
-<p><code>@version &lt;version&gt;</code></p>
-<pre><code class="lang-javascript">/**
- * @version 1.2.3
- */
-class MyClass{...}
-</code></pre>
-<h3 id="for-class">For Class</h3>
-<h4 id="-extends">@extends</h4>
-<p><code>@extends &lt;symbol&gt;</code></p>
-<p>normally automatically detected. because ES6 has the extends syntax. howerver, you want to use this tag if you want to explicitly specify.</p>
-<pre><code class="lang-javascript">/**
- * @extends {SuperClass1}
- * @extends {SuperClass2}
- */
-class MyClass extends mix(SuperClass1, SuperClass2) {...}
-</code></pre>
-<h4 id="-implements">@implements</h4>
-<p><code>@implements &lt;symbol&gt;</code></p>
-<pre><code class="lang-javascript">/**
- * @implements {MyInterface1}
- * @implements {MyInterface2}
- */
-class MyClass {...}
-</code></pre>
-<h4 id="-interface">@interface</h4>
-<p><code>@interface</code></p>
-<pre><code class="lang-javascript">/**
- * @interface
- */
-class MyInterface {...}
-</code></pre>
-<h3 id="for-method-and-function">For Method And Function</h3>
-<h4 id="-abstract">@abstract</h4>
-<p><code>@abstract</code></p>
-<pre><code class="lang-javascript">class MyClass {
-  /**
-   * this method must be overridden by sub class.
-   * @abstract
-   */
-  method(){...}
-}
-</code></pre>
-<h4 id="-emits">@emits</h4>
-<p><code>@emits &lt;symbol&gt; [description]</code></p>
-<pre><code class="lang-javascript">class MyClass {
-  /**
-   * @emits {MyEvent1} emit event when foo.
-   * @emits {MyEvent2} emit event when bar.
-   */
-  method(){...}
-}
-</code></pre>
-<h4 id="-listens">@listens</h4>
-<p><code>@listens &lt;symbol&gt; [description]</code></p>
-<pre><code class="lang-javascript">class MyClass {
-  /**
-   * @listens {MyEvent1} listen event because foo.
-   * @listens {MyEvent2} listen event because bar.
-   */
-  method(){...}
-}
-</code></pre>
-<h4 id="-override">@override</h4>
-<p><code>@override</code></p>
-<pre><code class="lang-javascript">class MyClass extends SuperClass {
-  /**
-   * @override
-   */
-  method(){...}
-}
-</code></pre>
-<h4 id="-param">@param</h4>
-<p><code>@param &lt;type&gt; &lt;name&gt; [description]</code></p>
-<pre><code class="lang-javascript">class MyClass {
-  /**
-   * @param {number} p this is p description.
-   */
-  method(p){...}
-}
-</code></pre>
-<table>
-<thead>
-<tr>
-<th>pattern</th>
-<th>syntax</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Array</td>
-<td><code>@param {number[]} p</code></td>
-</tr>
-<tr>
-<td>Union</td>
-<td><code>@param {number｜string} p</code></td>
-</tr>
-<tr>
-<td>Nullable</td>
-<td><code>@param {?number} p</code></td>
-</tr>
-<tr>
-<td>Not Nullable</td>
-<td><code>@param {!number} p</code></td>
-</tr>
-<tr>
-<td>Spread</td>
-<td><code>@param {...number} p</code></td>
-</tr>
-<tr>
-<td>Optional</td>
-<td><code>@param {number} [p]</code></td>
-</tr>
-<tr>
-<td>Default</td>
-<td><code>@param {number} [p=10]</code></td>
-</tr>
-<tr>
-<td>Object</td>
-<td><code>@param {Object} p</code> <br> <code>@param {number} p.foo</code> <br> <code>@param {string} p.bar</code></td>
-</tr>
-</tbody>
-</table>
-<h4 id="-return">@return</h4>
-<p><code>@return &lt;type&gt; [description]</code></p>
-<pre><code class="lang-javascript">class MyClass {
-  /**
-   * @return {number} this is description.
-   */
-  method(){...}
-}
-</code></pre>
-<p>if return Object, can use <code>@property &lt;type&gt; &lt;name&gt; [description]</code> for each properties.</p>
-<pre><code class="lang-javascript">class MyClass {
-  /**
-   * @return {Object} this is description.
-   * @property {number} foo this is description.
-   * @property {number} bar this is description.
-   */
-  method(){...}
-}
-</code></pre>
-<h4 id="-throws">@throws</h4>
-<p><code>@throws &lt;symbol&gt; [description]</code></p>
-<pre><code class="lang-javascript">class MyClass {
-  /**
-   * @throws {MyError1} throw error when foo.
-   * @throws {MyError2} throw error when bar.
-   */
-  method(){...}
-}
-</code></pre>
-<h3 id="for-member-and-variable">For Member And Variable</h3>
-<h4 id="-type">@type</h4>
-<p><code>@type &lt;type&gt;</code></p>
-<pre><code class="lang-javascript">class MyClass {
-  constructor() {
-    /**
-     * @type {number}
-     */
-    this.p = 123;
-  }
-}
-</code></pre>
-<p>if type is Object, can use <code>@property &lt;type&gt; &lt;name&gt; [description]</code> for each properties.</p>
-<pre><code class="lang-javascript">class MyClass {
-  constructor() {
-    /**
-     * @type {Object}
-     * @property {number} p.foo
-     * @property {string} p.bar
-     */
-    this.p = {foo: 123, bar: &quot;abc&quot;};
-  }
-}
-</code></pre>
-<h3 id="for-virtual">For Virtual</h3>
-<h4 id="-external">@external</h4>
-<p><code>@external &lt;symbol&gt;</code></p>
-<p>should be use with <code>@see</code>.</p>
-<pre><code class="lang-javascript">/**
- * @external {XMLHttpRequest}
- * @see https://developer.mozilla.org/en/docs/Web/API/XMLHttpRequest
- */
-</code></pre>
-<h4 id="-typedef">@typedef</h4>
-<p><code>@typedef &lt;type&gt; &lt;name&gt;</code></p>
-<pre><code class="lang-javascript">/**
- * @typedef {number|string} MyType
- */
-</code></pre>
-<p>if type is Object, can use <code>@property &lt;type&gt; &lt;name&gt; [description]</code> for each properties.</p>
-<pre><code class="lang-javascript">/**
- * @typedef {Object} MyType
- * @property {number} foo this is description.
- * @property {string} bar this is description.
- */
-</code></pre>
-<h3 id="for-internal">For Internal</h3>
-<p>the following tags are usually no need to use.</p>
-<ul>
-<li>@kind</li>
-<li>@static</li>
-<li>@name</li>
-<li>@memberof</li>
-<li>@longname</li>
-<li>@export</li>
-<li>@importPath</li>
-<li>@importStyle</li>
-<li>@lineNumber</li>
-<li>@content</li>
-</ul>
-<h1 id="api">API</h1>
-<pre><code class="lang-javascript">import esdoc from &#39;esdoc&#39;;
-
-esdoc(config, (results, config)=&gt;{
-  console.log(results);
-});
-</code></pre>
-<h1 id="internal-data-structure">Internal Data Structure</h1>
-<ul>
-<li>todo</li>
-</ul>
-<h1 id="license">License</h1>
+<p>exec esdoc</p>
+<pre><code>esdoc -c esdoc.json
+open ./esdoc/index.html
+</code></pre><h1 id="license">License</h1>
 <p>MIT</p>
 
+</article>
 
 <script src="/script/pretty.js"></script>
 </body>

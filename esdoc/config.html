@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>ESDoc</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/prettify/prettify-tomorrow.css">
+    <script src="/prettify/prettify.js"></script>
+</head>
+<body>
+<nav>
+  <a class="title" href="./">ESDoc</a>
+  <ul>
+    <li><a href="./config.html">Config</a></li>
+    <li><a href="./tags.html">Tags</a></li>
+    <li><a href="./customize.html">Customize</a></li>
+    <li style="position: relative; top: 5px;"><a href="https://github.com/h13i32maru/esdoc"><img src="image/github.png" width="24px"></a></li>
+  </ul>
+</nav>
+
+<article class="content">
+<h1 id="config">Config</h1>
+<p>ESDoc config file.</p>
+<pre><code class="lang-json">{
+  &quot;source&quot;: &quot;./path/to/src&quot;,
+  &quot;destination&quot;: &quot;./path/to/esdoc&quot;,
+  &quot;pattern&quot;: &quot;\\.js$&quot;,
+  &quot;access&quot;: [&quot;public&quot;, &quot;protected&quot;, &quot;private&quot;],
+  &quot;onlyExported&quot;: true,
+  &quot;importPathPrefix&quot;: &quot;&quot;,
+  &quot;readme&quot;: &quot;./path/to/README.md&quot;,
+  &quot;package&quot;: &quot;./path/to/package.json&quot;,
+  &quot;styles&quot;: [&quot;./path/to/style.css&quot;],
+  &quot;scripts&quot;: [&quot;./path/to/script.js&quot;]
+}
+</code></pre>
+<ul>
+<li><code>source</code> (required)<ul>
+<li>directory path of JavaScript source codes.</li>
+<li>path is based on current directory.</li>
+</ul>
+</li>
+<li><code>destination</code> (required)<ul>
+<li>output directory path.</li>
+<li>path is based on current directory.</li>
+</ul>
+</li>
+<li><code>pattern</code><ul>
+<li>process only files that are matched with the regexp.</li>
+<li>default: <code>\\.js$</code></li>
+</ul>
+</li>
+<li><code>access</code><ul>
+<li>process only symbols(class, method, function, etc...) that are have the access(public, protected and private).</li>
+<li>default: <code>[&quot;public&quot;, &quot;protected&quot;]</code></li>
+</ul>
+</li>
+<li><code>onlyExported</code><ul>
+<li>process only symbols that are exported(ES6 export syntax).</li>
+<li>e.g. <code>export MyClass {...}</code> is exported, <code>MyClass{}</code> is not exported.</li>
+<li>default: <code>true</code></li>
+</ul>
+</li>
+<li><code>importPathPrefix</code><ul>
+<li>display symbol&#39;s import path with the prefix.</li>
+<li>e.g. if <code>MyClass</code> in <code>src/foo/MyClass.js</code>, import path is <code>import MyClass from &#39;src/foo/MyClass.js&#39;</code>. but specified the prefix with <code>importPathPrefix: &quot;out&quot;</code>, import path is <code>import MyClass from &#39;out/src/foo/MyClass.js&#39;</code>.</li>
+<li>default: <code>&quot;&quot;</code></li>
+</ul>
+</li>
+<li><code>readme</code><ul>
+<li>includes README.md into out put document.</li>
+<li>path is based on current directory.</li>
+<li>default: <code>./README.md</code></li>
+</ul>
+</li>
+<li><code>package</code><ul>
+<li>use info(version, url, etc...) in package.json(npm)</li>
+<li>path is based on current directory.</li>
+<li>default: <code>./package.json</code></li>
+</ul>
+</li>
+<li><code>styles</code><ul>
+<li>includes styles into out put document.</li>
+<li>path is based on current directory.</li>
+<li>default: <code>null</code></li>
+</ul>
+</li>
+<li><code>scripts</code><ul>
+<li>includes scripts into out put document.</li>
+<li>path is based on current directory.</li>
+<li>default: <code>null</code></li>
+</ul>
+</li>
+</ul>
+
+</article>
+
+<script src="/script/pretty.js"></script>
+</body>
+</html>
