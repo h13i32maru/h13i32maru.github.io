@@ -90,7 +90,7 @@ class MyClass {
 <h2 id="for-common">For Common</h2>
 <h4 id="-access">@access</h4>
 <p>syntax: <code>@access &lt;public|protected|private&gt;</code></p>
-<p>alias are <code>@public</code>, <code>@protected</code> and <code>@private</code>.</p>
+<p>Alias are <code>@public</code>, <code>@protected</code> and <code>@private</code>.</p>
 <pre><code class="lang-javascript">/**
  * @access public
  */
@@ -112,7 +112,8 @@ class MyClass{...}
 <hr>
 <h4 id="-desc">@desc</h4>
 <p>syntax: <code>@desc &lt;description&gt;</code></p>
-<p>the first line is processed as automatically @desc.</p>
+<p><code>&lt;description&gt;</code> supports markdown.</p>
+<p>Normally you don&#39;t need to use <code>@desc</code>, because first section in doc comment is determined automatically as <code>@desc</code>.</p>
 <pre><code class="lang-javascript">/**
  * @desc this is description.
  */
@@ -149,7 +150,7 @@ class MyClass{...}
 <hr>
 <h4 id="-ignore">@ignore</h4>
 <p>syntax: <code>@ignore</code></p>
-<p>symbol is not diaplayed in document.</p>
+<p>Symbol is not displayed in document.</p>
 <pre><code class="lang-javascript">/**
  * @ignore
  */
@@ -193,7 +194,7 @@ class MyClass{...}
 <h2 id="for-class">For Class</h2>
 <h4 id="-extends">@extends</h4>
 <p>syntax: <code>@extends &lt;symbol&gt;</code></p>
-<p>normally automatically detected. because ES6 has the extends syntax. howerver, you want to use this tag if you want to explicitly specify.</p>
+<p>Normally you don&#39;t need to use <code>@extends</code>. because ES6 has the Class-Extends syntax. however, you can use this tag if you want to explicitly specify.</p>
 <pre><code class="lang-javascript">/**
  * @extends {SuperClass1}
  * @extends {SuperClass2}
@@ -264,7 +265,7 @@ class MyInterface {...}
 <hr>
 <h4 id="-param">@param</h4>
 <p>syntax: <code>@param &lt;type&gt; &lt;name&gt; [description]</code></p>
-<p>about <code>&lt;type&gt;</code> to see <a href="#type-syntax">Type Syntax</a></p>
+<p>About <code>&lt;type&gt;</code> to see <a href="#type-syntax">Type Syntax</a></p>
 <pre><code class="lang-javascript">class MyClass {
   /**
    * @param {number} p this is p description.
@@ -275,7 +276,7 @@ class MyInterface {...}
 <hr>
 <h4 id="-return">@return</h4>
 <p>syntax: <code>@return &lt;type&gt; [description]</code></p>
-<p>about <code>&lt;type&gt;</code> to see <a href="#type-syntax">Type Syntax</a></p>
+<p>About <code>&lt;type&gt;</code> to see <a href="#type-syntax">Type Syntax</a></p>
 <pre><code class="lang-javascript">class MyClass {
   /**
    * @return {number} this is description.
@@ -283,7 +284,7 @@ class MyInterface {...}
   method(){...}
 }
 </code></pre>
-<p>if return Object, can use <code>@property &lt;type&gt; &lt;name&gt; [description]</code> for each properties.</p>
+<p>If return Object, you can use <code>@property &lt;type&gt; &lt;name&gt; [description]</code> for each properties.</p>
 <pre><code class="lang-javascript">class MyClass {
   /**
    * @return {Object} this is description.
@@ -308,7 +309,7 @@ class MyInterface {...}
 <h2 id="for-member-and-variable">For Member And Variable</h2>
 <h4 id="-type">@type</h4>
 <p>syntax: <code>@type &lt;type&gt;</code></p>
-<p>about <code>&lt;type&gt;</code> to see <a href="#type-syntax">Type Syntax</a></p>
+<p>About <code>&lt;type&gt;</code> to see <a href="#type-syntax">Type Syntax</a></p>
 <pre><code class="lang-javascript">class MyClass {
   constructor() {
     /**
@@ -318,7 +319,7 @@ class MyInterface {...}
   }
 }
 </code></pre>
-<p>if type is Object, can use <code>@property &lt;type&gt; &lt;name&gt; [description]</code> for each properties.</p>
+<p>If <code>&lt;type&gt;</code> is Object, you can use <code>@property &lt;type&gt; &lt;name&gt; [description]</code> for each properties.</p>
 <pre><code class="lang-javascript">class MyClass {
   constructor() {
     /**
@@ -333,8 +334,7 @@ class MyInterface {...}
 <hr>
 <h2 id="for-virtual">For Virtual</h2>
 <h4 id="-external">@external</h4>
-<p>syntax: <code>@external &lt;symbol&gt;</code></p>
-<p>should be use with <code>@see</code>.</p>
+<p>syntax: <code>@external &lt;symbol&gt; &lt;URL&gt;</code></p>
 <pre><code class="lang-javascript">/**
  * @external {XMLHttpRequest} https://developer.mozilla.org/en/docs/Web/API/XMLHttpRequest
  */
@@ -342,12 +342,12 @@ class MyInterface {...}
 <hr>
 <h4 id="-typedef">@typedef</h4>
 <p>syntax: <code>@typedef &lt;type&gt; &lt;name&gt;</code></p>
-<p>about <code>&lt;type&gt;</code> to see <a href="#type-syntax">Type Syntax</a></p>
+<p>About <code>&lt;type&gt;</code> to see <a href="#type-syntax">Type Syntax</a></p>
 <pre><code class="lang-javascript">/**
  * @typedef {number|string} MyType
  */
 </code></pre>
-<p>if type is Object, can use <code>@property &lt;type&gt; &lt;name&gt; [description]</code> for each properties.</p>
+<p>If <code>&lt;type&gt;</code> is Object, you can use <code>@property &lt;type&gt; &lt;name&gt; [description]</code> for each properties.</p>
 <pre><code class="lang-javascript">/**
  * @typedef {Object} MyType
  * @property {number} foo this is description.
@@ -417,7 +417,7 @@ function(...paramName){...}
 function(...paramName){...}
 </code></pre>
 <h2 id="for-internal">For Internal</h2>
-<p>the following tags are usually no need to use.</p>
+<p>The following tags are usually no need to use.</p>
 <ul>
 <li>@kind</li>
 <li>@static</li>

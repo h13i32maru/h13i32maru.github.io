@@ -1,0 +1,2527 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  
+  
+</head>
+<body class="layout-container">
+
+<nav class="navigation" data-ice="nav"><h1><a href="./">HOME</a> | <a href="@index.html">INDEX</a></h1>
+
+<div data-ice="classWrap">
+  <h2>Class</h2>
+  <ul>
+    
+  <li data-ice="classDoc"><span><a href="%40class-src%7CUtil%7CASTUtil.js~ASTUtil.html">ASTUtil</a></span></li>
+<li data-ice="classDoc"><span><a href="%40class-src%7CDoc%7CAbstractDoc.js~AbstractDoc.html">AbstractDoc</a></span></li>
+<li data-ice="classDoc"><span><a href="%40class-src%7CDoc%7CAssignmentDoc.js~AssignmentDoc.html">AssignmentDoc</a></span></li>
+<li data-ice="classDoc"><span><a href="%40class-src%7CDoc%7CClassDoc.js~ClassDoc.html">ClassDoc</a></span></li>
+<li data-ice="classDoc"><span><a href="%40class-src%7CPublisher%7Cbuilder%7CClassDocBuilder.js~ClassDocBuilder.html">ClassDocBuilder</a></span></li>
+<li data-ice="classDoc"><span><a href="%40class-src%7CParser%7CCommentParser.js~CommentParser.html">CommentParser</a></span></li>
+<li data-ice="classDoc"><span><a href="%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html">DocBuilder</a></span></li>
+<li data-ice="classDoc"><span><a href="%40class-src%7CFactory%7CDocFactory.js~DocFactory.html">DocFactory</a></span></li>
+<li data-ice="classDoc"><span><a href="%40class-src%7CPublisher%7Cbuilder%7CDocResolver.js~DocResolver.html">DocResolver</a></span></li>
+<li data-ice="classDoc"><span><a href="%40class-src%7CESDoc.js~ESDoc.html">ESDoc</a></span></li>
+<li data-ice="classDoc"><span><a href="%40class-src%7CESDocCLI.js~ESDocCLI.html">ESDocCLI</a></span></li>
+<li data-ice="classDoc"><span><a href="%40class-src%7CParser%7CESParser.js~ESParser.html">ESParser</a></span></li>
+<li data-ice="classDoc"><span><a href="%40class-src%7CDoc%7CExternalDoc.js~ExternalDoc.html">ExternalDoc</a></span></li>
+<li data-ice="classDoc"><span><a href="%40class-src%7CDoc%7CFileDoc.js~FileDoc.html">FileDoc</a></span></li>
+<li data-ice="classDoc"><span><a href="%40class-src%7CPublisher%7Cbuilder%7CFileDocBuilder.js~FileDocBuilder.html">FileDocBuilder</a></span></li>
+<li data-ice="classDoc"><span><a href="%40class-src%7CDoc%7CFunctionDoc.js~FunctionDoc.html">FunctionDoc</a></span></li>
+<li data-ice="classDoc"><span><a href="%40class-src%7CPublisher%7Cbuilder%7CIndexDocBuilder.js~IndexDocBuilder.html">IndexDocBuilder</a></span></li>
+<li data-ice="classDoc"><span><a href="%40class-src%7CDoc%7CMemberDoc.js~MemberDoc.html">MemberDoc</a></span></li>
+<li data-ice="classDoc"><span><a href="%40class-src%7CDoc%7CMethodDoc.js~MethodDoc.html">MethodDoc</a></span></li>
+<li data-ice="classDoc"><span><a href="%40class-src%7CParser%7CParamParser.js~ParamParser.html">ParamParser</a></span></li>
+<li data-ice="classDoc"><span><a href="%40class-src%7CUtil%7CPathResolver.js~PathResolver.html">PathResolver</a></span></li>
+<li data-ice="classDoc"><span><a href="%40class-src%7CPublisher%7Cbuilder%7CReadmeDocBuilder.js~ReadmeDocBuilder.html">ReadmeDocBuilder</a></span></li>
+<li data-ice="classDoc"><span><a href="%40class-src%7CPublisher%7Cbuilder%7CSearchIndexBuilder.js~SearchIndexBuilder.html">SearchIndexBuilder</a></span></li>
+<li data-ice="classDoc"><span><a href="%40class-src%7CPublisher%7Cbuilder%7CSingleDocBuilder.js~SingleDocBuilder.html">SingleDocBuilder</a></span></li>
+<li data-ice="classDoc"><span><a href="%40class-src%7CPublisher%7Cbuilder%7CStaticFileBuilder.js~StaticFileBuilder.html">StaticFileBuilder</a></span></li>
+<li data-ice="classDoc"><span><a href="%40class-src%7CDoc%7CTypedefDoc.js~TypedefDoc.html">TypedefDoc</a></span></li>
+<li data-ice="classDoc"><span><a href="%40class-src%7CDoc%7CVariableDoc.js~VariableDoc.html">VariableDoc</a></span></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+<div data-ice="typedefWrap">
+  <h2><a href="@typedef.html">Typedef</a></h2>
+  <ul>
+    
+  <li data-ice="typedefDoc"><span><a href="%40typedef.html#static-typedef-DocObject">DocObject</a></span></li>
+<li data-ice="typedefDoc"><span><a href="%40typedef.html#static-typedef-DocTypedef">DocTypedef</a></span></li>
+<li data-ice="typedefDoc"><span><a href="%40typedef.html#static-typedef-ESDocConfig">ESDocConfig</a></span></li>
+<li data-ice="typedefDoc"><span><a href="%40typedef.html#static-typedef-IceCapInstanceTypedef">IceCapInstanceTypedef</a></span></li>
+<li data-ice="typedefDoc"><span><a href="%40typedef.html#static-typedef-PackageTypedef">PackageTypedef</a></span></li>
+<li data-ice="typedefDoc"><span><a href="%40typedef.html#static-typedef-TaffyCursor">TaffyCursor</a></span></li>
+<li data-ice="typedefDoc"><span><a href="%40typedef.html#static-typedef-Tag">Tag</a></span></li>
+</ul>
+</div>
+
+<div data-ice="fileWrap">
+  <h2>File</h2>
+  <ul>
+    
+  <li data-ice="fileDoc"><span><a href="%40file-src%7CDoc%7CAbstractDoc.js.html#lineNumber1">src/Doc/AbstractDoc.js</a></span></li>
+<li data-ice="fileDoc"><span><a href="%40file-src%7CDoc%7CAssignmentDoc.js.html#lineNumber1">src/Doc/AssignmentDoc.js</a></span></li>
+<li data-ice="fileDoc"><span><a href="%40file-src%7CDoc%7CClassDoc.js.html#lineNumber1">src/Doc/ClassDoc.js</a></span></li>
+<li data-ice="fileDoc"><span><a href="%40file-src%7CDoc%7CExternalDoc.js.html#lineNumber1">src/Doc/ExternalDoc.js</a></span></li>
+<li data-ice="fileDoc"><span><a href="%40file-src%7CDoc%7CFileDoc.js.html#lineNumber1">src/Doc/FileDoc.js</a></span></li>
+<li data-ice="fileDoc"><span><a href="%40file-src%7CDoc%7CFunctionDoc.js.html#lineNumber1">src/Doc/FunctionDoc.js</a></span></li>
+<li data-ice="fileDoc"><span><a href="%40file-src%7CDoc%7CMemberDoc.js.html#lineNumber1">src/Doc/MemberDoc.js</a></span></li>
+<li data-ice="fileDoc"><span><a href="%40file-src%7CDoc%7CMethodDoc.js.html#lineNumber1">src/Doc/MethodDoc.js</a></span></li>
+<li data-ice="fileDoc"><span><a href="%40file-src%7CDoc%7CTypedefDoc.js.html#lineNumber1">src/Doc/TypedefDoc.js</a></span></li>
+<li data-ice="fileDoc"><span><a href="%40file-src%7CDoc%7CVariableDoc.js.html#lineNumber1">src/Doc/VariableDoc.js</a></span></li>
+<li data-ice="fileDoc"><span><a href="%40file-src%7CESDoc.js.html#lineNumber1">src/ESDoc.js</a></span></li>
+<li data-ice="fileDoc"><span><a href="%40file-src%7CESDocCLI.js.html#lineNumber2">src/ESDocCLI.js</a></span></li>
+<li data-ice="fileDoc"><span><a href="%40file-src%7CFactory%7CDocFactory.js.html#lineNumber1">src/Factory/DocFactory.js</a></span></li>
+<li data-ice="fileDoc"><span><a href="%40file-src%7CParser%7CCommentParser.js.html#lineNumber1">src/Parser/CommentParser.js</a></span></li>
+<li data-ice="fileDoc"><span><a href="%40file-src%7CParser%7CESParser.js.html#lineNumber1">src/Parser/ESParser.js</a></span></li>
+<li data-ice="fileDoc"><span><a href="%40file-src%7CParser%7CParamParser.js.html#lineNumber1">src/Parser/ParamParser.js</a></span></li>
+<li data-ice="fileDoc"><span><a href="%40file-src%7CPublisher%7Cbuilder%7CClassDocBuilder.js.html#lineNumber1">src/Publisher/builder/ClassDocBuilder.js</a></span></li>
+<li data-ice="fileDoc"><span><a href="%40file-src%7CPublisher%7Cbuilder%7CDocBuilder.js.html#lineNumber1">src/Publisher/builder/DocBuilder.js</a></span></li>
+<li data-ice="fileDoc"><span><a href="%40file-src%7CPublisher%7Cbuilder%7CDocResolver.js.html#lineNumber1">src/Publisher/builder/DocResolver.js</a></span></li>
+<li data-ice="fileDoc"><span><a href="%40file-src%7CPublisher%7Cbuilder%7CFileDocBuilder.js.html#lineNumber1">src/Publisher/builder/FileDocBuilder.js</a></span></li>
+<li data-ice="fileDoc"><span><a href="%40file-src%7CPublisher%7Cbuilder%7CIndexDocBuilder.js.html#lineNumber1">src/Publisher/builder/IndexDocBuilder.js</a></span></li>
+<li data-ice="fileDoc"><span><a href="%40file-src%7CPublisher%7Cbuilder%7CReadmeDocBuilder.js.html#lineNumber1">src/Publisher/builder/ReadmeDocBuilder.js</a></span></li>
+<li data-ice="fileDoc"><span><a href="%40file-src%7CPublisher%7Cbuilder%7CSearchIndexBuilder.js.html#lineNumber1">src/Publisher/builder/SearchIndexBuilder.js</a></span></li>
+<li data-ice="fileDoc"><span><a href="%40file-src%7CPublisher%7Cbuilder%7CSingleDocBuilder.js.html#lineNumber1">src/Publisher/builder/SingleDocBuilder.js</a></span></li>
+<li data-ice="fileDoc"><span><a href="%40file-src%7CPublisher%7Cbuilder%7CStaticFileBuilder.js.html#lineNumber1">src/Publisher/builder/StaticFileBuilder.js</a></span></li>
+<li data-ice="fileDoc"><span><a href="%40file-src%7CPublisher%7Cbuilder%7Cutil.js.html#lineNumber1">src/Publisher/builder/util.js</a></span></li>
+<li data-ice="fileDoc"><span><a href="%40file-src%7CPublisher%7Cpublish.js.html#lineNumber1">src/Publisher/publish.js</a></span></li>
+<li data-ice="fileDoc"><span><a href="%40file-src%7CTypedef%7Ctypedef.js.html#lineNumber50">src/Typedef/typedef.js</a></span></li>
+<li data-ice="fileDoc"><span><a href="%40file-src%7CUtil%7CASTUtil.js.html#lineNumber1">src/Util/ASTUtil.js</a></span></li>
+<li data-ice="fileDoc"><span><a href="%40file-src%7CUtil%7CPathResolver.js.html#lineNumber1">src/Util/PathResolver.js</a></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><div class="header-notice">
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import DocBuilder from &apos;<span><a href="%40file-src%7CPublisher%7Cbuilder%7CDocBuilder.js.html#lineNumber8">esdoc/out/src/Publisher/builder/DocBuilder.js</a></span>&apos;</code></pre></div>
+  <span data-ice="access">public</span>
+  <span data-ice="kind">class</span>
+  
+  
+  
+  <span data-ice="source">| <span><a href="%40file-src%7CPublisher%7Cbuilder%7CDocBuilder.js.html#lineNumber8">source</a></span></span>
+</div>
+
+<div class="self-detail detail">
+  <h1 data-ice="name">DocBuilder</h1>
+
+  
+  <div class="flat-list" data-ice="directSubclass"><h4>Direct Subclass:</h4><span><a href="%40class-src%7CPublisher%7Cbuilder%7CClassDocBuilder.js~ClassDocBuilder.html">ClassDocBuilder</a></span>, <span><a href="%40class-src%7CPublisher%7Cbuilder%7CFileDocBuilder.js~FileDocBuilder.html">FileDocBuilder</a></span>, <span><a href="%40class-src%7CPublisher%7Cbuilder%7CIndexDocBuilder.js~IndexDocBuilder.html">IndexDocBuilder</a></span>, <span><a href="%40class-src%7CPublisher%7Cbuilder%7CReadmeDocBuilder.js~ReadmeDocBuilder.html">ReadmeDocBuilder</a></span>, <span><a href="%40class-src%7CPublisher%7Cbuilder%7CSearchIndexBuilder.js~SearchIndexBuilder.html">SearchIndexBuilder</a></span>, <span><a href="%40class-src%7CPublisher%7Cbuilder%7CSingleDocBuilder.js~SingleDocBuilder.html">SingleDocBuilder</a></span>, <span><a href="%40class-src%7CPublisher%7Cbuilder%7CStaticFileBuilder.js~StaticFileBuilder.html">StaticFileBuilder</a></span></div>
+  
+  
+  
+  
+  
+
+  
+  
+  
+
+  
+
+  
+
+  
+</div>
+
+
+
+
+<div data-ice="memberSummary"><h2>Member Summary</h2><table class="summary" data-ice="summary">
+  <thead><tr><td data-ice="title" colspan="3">Public Members</td></tr></thead>
+  <tbody>
+  
+  <tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html#instance-member-_config">_config</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html#instance-member-_data">_data</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+<div data-ice="methodSummary"><h2>Method Summary</h2><table class="summary" data-ice="summary">
+  <thead><tr><td data-ice="title" colspan="3">Public Methods</td></tr></thead>
+  <tbody>
+  
+  <tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html#instance-method-_buildDeprecatedHTML">_buildDeprecatedHTML</a></span></span><span data-ice="signature">(doc: <span>*</span>): <span>string</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html#instance-method-_buildDetailDocs">_buildDetailDocs</a></span></span><span data-ice="signature">(docs: <span>*</span>, title: <span>*</span>): <span>*</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html#instance-method-_buildDetailHTML">_buildDetailHTML</a></span></span><span data-ice="signature">(doc: <span>*</span>, kind: <span>*</span>, title: <span>*</span>, isStatic: <span>boolean</span>): <span>*</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html#instance-method-_buildDocLinkHTML">_buildDocLinkHTML</a></span></span><span data-ice="signature">(longname: <span>*</span>, text: <span>*</span>, inner: <span>boolean</span>, kind: <span>*</span>): <span>string</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html#instance-method-_buildDocsLinkHTML">_buildDocsLinkHTML</a></span></span><span data-ice="signature">(longnames: <span>*</span>, text: <span>*</span>, inner: <span>boolean</span>, separator: <span>string</span>): <span>string</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html#instance-method-_buildExperimentalHTML">_buildExperimentalHTML</a></span></span><span data-ice="signature">(doc: <span>*</span>): <span>string</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html#instance-method-_buildFileDocLinkHTML">_buildFileDocLinkHTML</a></span></span><span data-ice="signature">(doc: <span>*</span>, text: <span>*</span>): <span>string</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html#instance-method-_buildLayoutDoc">_buildLayoutDoc</a></span></span><span data-ice="signature">(): <span>*</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html#instance-method-_buildNavDoc">_buildNavDoc</a></span></span><span data-ice="signature">(): <span>*</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html#instance-method-_buildOverrideMethod">_buildOverrideMethod</a></span></span><span data-ice="signature">(doc: <span>*</span>): <span>*</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html#instance-method-_buildProperties">_buildProperties</a></span></span><span data-ice="signature">(properties: <span>*[]</span>, title: <span>string</span>): <span>*</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html#instance-method-_buildSignatureHTML">_buildSignatureHTML</a></span></span><span data-ice="signature">(doc: <span>*</span>): <span>*</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html#instance-method-_buildSummaryDoc">_buildSummaryDoc</a></span></span><span data-ice="signature">(docs: <span>*</span>, title: <span>*</span>, innerLink: <span>*</span>): <span>*</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html#instance-method-_buildSummaryHTML">_buildSummaryHTML</a></span></span><span data-ice="signature">(doc: <span>*</span>, kind: <span>*</span>, title: <span>*</span>, isStatic: <span>boolean</span>): <span>*</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html#instance-method-_find">_find</a></span></span><span data-ice="signature">(cond: <span>...*</span>): <span>*</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html#instance-method-_findAccessDocs">_findAccessDocs</a></span></span><span data-ice="signature">(doc: <span>*</span>, kind: <span>*</span>, isStatic: <span>boolean</span>): <span>*</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html#instance-method-_findByName">_findByName</a></span></span><span data-ice="signature">(name: <span>*</span>, kind: <span>*</span>): <span>*</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html#instance-method-_getInfo">_getInfo</a></span></span><span data-ice="signature">(): <span>*</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html#instance-method-_getOutputFileName">_getOutputFileName</a></span></span><span data-ice="signature">(doc: <span>*</span>): <span>string</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html#instance-method-_getURL">_getURL</a></span></span><span data-ice="signature">(doc: <span>*</span>): <span>*</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html#instance-method-_orderedFind">_orderedFind</a></span></span><span data-ice="signature">(order: <span>*</span>, cond: <span>...*</span>): <span>*</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html#instance-method-_readTemplate">_readTemplate</a></span></span><span data-ice="signature">(fileName: <span>*</span>): <span>*</span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html#instance-method-constructor">constructor</a></span></span><span data-ice="signature">(data: <span>*</span>, config: <span>*</span>)</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      <span class="abstract" data-ice="abstract">abstract</span>
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html#instance-method-exec">exec</a></span></span><span data-ice="signature">(callback: <span>*</span>)</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+
+
+
+
+
+
+<div data-ice="memberDetails"><h2 data-ice="title">Public Members</h2>
+
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-member-_config">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    <span data-ice="name">_config</span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="%40file-src%7CPublisher%7Cbuilder%7CDocBuilder.js.html#lineNumber11">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-member-_data">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    <span data-ice="name">_data</span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="%40file-src%7CPublisher%7Cbuilder%7CDocBuilder.js.html#lineNumber10">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+</div>
+<div data-ice="methodDetails"><h2 data-ice="title">Public Methods</h2>
+
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-_buildDeprecatedHTML">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    <span data-ice="name">_buildDeprecatedHTML</span><span data-ice="signature">(doc: <span>*</span>): <span>string</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="%40file-src%7CPublisher%7Cbuilder%7CDocBuilder.js.html#lineNumber582">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">doc</td>
+      <td data-ice="type"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tr>
+        <td class="return-type" data-ice="returnType"><span>string</span></td>
+        
+      </tr>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-_buildDetailDocs">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    <span data-ice="name">_buildDetailDocs</span><span data-ice="signature">(docs: <span>*</span>, title: <span>*</span>): <span>*</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="%40file-src%7CPublisher%7Cbuilder%7CDocBuilder.js.html#lineNumber258">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">docs</td>
+      <td data-ice="type"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">title</td>
+      <td data-ice="type"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tr>
+        <td class="return-type" data-ice="returnType"><span>*</span></td>
+        
+      </tr>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-_buildDetailHTML">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    <span data-ice="name">_buildDetailHTML</span><span data-ice="signature">(doc: <span>*</span>, kind: <span>*</span>, title: <span>*</span>, isStatic: <span>boolean</span>): <span>*</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="%40file-src%7CPublisher%7Cbuilder%7CDocBuilder.js.html#lineNumber240">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">doc</td>
+      <td data-ice="type"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">kind</td>
+      <td data-ice="type"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">title</td>
+      <td data-ice="type"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">isStatic</td>
+      <td data-ice="type"><span>boolean</span></td>
+      <td data-ice="appendix"><ul><li>optional</li>
+<li>default: true</li></ul></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tr>
+        <td class="return-type" data-ice="returnType"><span>*</span></td>
+        
+      </tr>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-_buildDocLinkHTML">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    <span data-ice="name">_buildDocLinkHTML</span><span data-ice="signature">(longname: <span>*</span>, text: <span>*</span>, inner: <span>boolean</span>, kind: <span>*</span>): <span>string</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="%40file-src%7CPublisher%7Cbuilder%7CDocBuilder.js.html#lineNumber430">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">longname</td>
+      <td data-ice="type"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">text</td>
+      <td data-ice="type"><span>*</span></td>
+      <td data-ice="appendix"><ul><li>optional</li>
+<li>default: null</li></ul></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">inner</td>
+      <td data-ice="type"><span>boolean</span></td>
+      <td data-ice="appendix"><ul><li>optional</li>
+<li>default: false</li></ul></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">kind</td>
+      <td data-ice="type"><span>*</span></td>
+      <td data-ice="appendix"><ul><li>optional</li>
+<li>default: null</li></ul></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tr>
+        <td class="return-type" data-ice="returnType"><span>string</span></td>
+        
+      </tr>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-_buildDocsLinkHTML">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    <span data-ice="name">_buildDocsLinkHTML</span><span data-ice="signature">(longnames: <span>*</span>, text: <span>*</span>, inner: <span>boolean</span>, separator: <span>string</span>): <span>string</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="%40file-src%7CPublisher%7Cbuilder%7CDocBuilder.js.html#lineNumber473">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">longnames</td>
+      <td data-ice="type"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">text</td>
+      <td data-ice="type"><span>*</span></td>
+      <td data-ice="appendix"><ul><li>optional</li>
+<li>default: null</li></ul></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">inner</td>
+      <td data-ice="type"><span>boolean</span></td>
+      <td data-ice="appendix"><ul><li>optional</li>
+<li>default: false</li></ul></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">separator</td>
+      <td data-ice="type"><span>string</span></td>
+      <td data-ice="appendix"><ul><li>optional</li>
+<li>default: 
+</li></ul></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tr>
+        <td class="return-type" data-ice="returnType"><span>string</span></td>
+        
+      </tr>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-_buildExperimentalHTML">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    <span data-ice="name">_buildExperimentalHTML</span><span data-ice="signature">(doc: <span>*</span>): <span>string</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="%40file-src%7CPublisher%7Cbuilder%7CDocBuilder.js.html#lineNumber592">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">doc</td>
+      <td data-ice="type"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tr>
+        <td class="return-type" data-ice="returnType"><span>string</span></td>
+        
+      </tr>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-_buildFileDocLinkHTML">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    <span data-ice="name">_buildFileDocLinkHTML</span><span data-ice="signature">(doc: <span>*</span>, text: <span>*</span>): <span>string</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="%40file-src%7CPublisher%7Cbuilder%7CDocBuilder.js.html#lineNumber413">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">doc</td>
+      <td data-ice="type"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">text</td>
+      <td data-ice="type"><span>*</span></td>
+      <td data-ice="appendix"><ul><li>optional</li>
+<li>default: null</li></ul></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tr>
+        <td class="return-type" data-ice="returnType"><span>string</span></td>
+        
+      </tr>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-_buildLayoutDoc">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    <span data-ice="name">_buildLayoutDoc</span><span data-ice="signature">(): <span>*</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="%40file-src%7CPublisher%7Cbuilder%7CDocBuilder.js.html#lineNumber87">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tr>
+        <td class="return-type" data-ice="returnType"><span>*</span></td>
+        
+      </tr>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-_buildNavDoc">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    <span data-ice="name">_buildNavDoc</span><span data-ice="signature">(): <span>*</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="%40file-src%7CPublisher%7Cbuilder%7CDocBuilder.js.html#lineNumber111">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tr>
+        <td class="return-type" data-ice="returnType"><span>*</span></td>
+        
+      </tr>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-_buildOverrideMethod">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    <span data-ice="name">_buildOverrideMethod</span><span data-ice="signature">(doc: <span>*</span>): <span>*</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="%40file-src%7CPublisher%7Cbuilder%7CDocBuilder.js.html#lineNumber602">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">doc</td>
+      <td data-ice="type"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tr>
+        <td class="return-type" data-ice="returnType"><span>*</span></td>
+        
+      </tr>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-_buildProperties">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    <span data-ice="name">_buildProperties</span><span data-ice="signature">(properties: <span>*[]</span>, title: <span>string</span>): <span>*</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="%40file-src%7CPublisher%7Cbuilder%7CDocBuilder.js.html#lineNumber539">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">properties</td>
+      <td data-ice="type"><span>*[]</span></td>
+      <td data-ice="appendix"><ul><li>optional</li>
+<li>default: []</li></ul></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">title</td>
+      <td data-ice="type"><span>string</span></td>
+      <td data-ice="appendix"><ul><li>optional</li>
+<li>default: Properties:</li></ul></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tr>
+        <td class="return-type" data-ice="returnType"><span>*</span></td>
+        
+      </tr>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-_buildSignatureHTML">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    <span data-ice="name">_buildSignatureHTML</span><span data-ice="signature">(doc: <span>*</span>): <span>*</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="%40file-src%7CPublisher%7Cbuilder%7CDocBuilder.js.html#lineNumber489">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">doc</td>
+      <td data-ice="type"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tr>
+        <td class="return-type" data-ice="returnType"><span>*</span></td>
+        
+      </tr>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-_buildSummaryDoc">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    <span data-ice="name">_buildSummaryDoc</span><span data-ice="signature">(docs: <span>*</span>, title: <span>*</span>, innerLink: <span>*</span>): <span>*</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="%40file-src%7CPublisher%7Cbuilder%7CDocBuilder.js.html#lineNumber206">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">docs</td>
+      <td data-ice="type"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">title</td>
+      <td data-ice="type"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">innerLink</td>
+      <td data-ice="type"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tr>
+        <td class="return-type" data-ice="returnType"><span>*</span></td>
+        
+      </tr>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-_buildSummaryHTML">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    <span data-ice="name">_buildSummaryHTML</span><span data-ice="signature">(doc: <span>*</span>, kind: <span>*</span>, title: <span>*</span>, isStatic: <span>boolean</span>): <span>*</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="%40file-src%7CPublisher%7Cbuilder%7CDocBuilder.js.html#lineNumber186">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">doc</td>
+      <td data-ice="type"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">kind</td>
+      <td data-ice="type"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">title</td>
+      <td data-ice="type"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">isStatic</td>
+      <td data-ice="type"><span>boolean</span></td>
+      <td data-ice="appendix"><ul><li>optional</li>
+<li>default: true</li></ul></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tr>
+        <td class="return-type" data-ice="returnType"><span>*</span></td>
+        
+      </tr>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-_find">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    <span data-ice="name">_find</span><span data-ice="signature">(cond: <span>...*</span>): <span>*</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="%40file-src%7CPublisher%7Cbuilder%7CDocBuilder.js.html#lineNumber22">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">cond</td>
+      <td data-ice="type"><span>...*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tr>
+        <td class="return-type" data-ice="returnType"><span>*</span></td>
+        
+      </tr>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-_findAccessDocs">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    <span data-ice="name">_findAccessDocs</span><span data-ice="signature">(doc: <span>*</span>, kind: <span>*</span>, isStatic: <span>boolean</span>): <span>*</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="%40file-src%7CPublisher%7Cbuilder%7CDocBuilder.js.html#lineNumber160">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">doc</td>
+      <td data-ice="type"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">kind</td>
+      <td data-ice="type"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">isStatic</td>
+      <td data-ice="type"><span>boolean</span></td>
+      <td data-ice="appendix"><ul><li>optional</li>
+<li>default: true</li></ul></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tr>
+        <td class="return-type" data-ice="returnType"><span>*</span></td>
+        
+      </tr>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-_findByName">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    <span data-ice="name">_findByName</span><span data-ice="signature">(name: <span>*</span>, kind: <span>*</span>): <span>*</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="%40file-src%7CPublisher%7Cbuilder%7CDocBuilder.js.html#lineNumber26">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">name</td>
+      <td data-ice="type"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">kind</td>
+      <td data-ice="type"><span>*</span></td>
+      <td data-ice="appendix"><ul><li>optional</li>
+<li>default: null</li></ul></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tr>
+        <td class="return-type" data-ice="returnType"><span>*</span></td>
+        
+      </tr>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-_getInfo">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    <span data-ice="name">_getInfo</span><span data-ice="signature">(): <span>*</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="%40file-src%7CPublisher%7Cbuilder%7CDocBuilder.js.html#lineNumber68">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tr>
+        <td class="return-type" data-ice="returnType"><span>*</span></td>
+        
+      </tr>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-_getOutputFileName">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    <span data-ice="name">_getOutputFileName</span><span data-ice="signature">(doc: <span>*</span>): <span>string</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="%40file-src%7CPublisher%7Cbuilder%7CDocBuilder.js.html#lineNumber384">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">doc</td>
+      <td data-ice="type"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tr>
+        <td class="return-type" data-ice="returnType"><span>string</span></td>
+        
+      </tr>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-_getURL">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    <span data-ice="name">_getURL</span><span data-ice="signature">(doc: <span>*</span>): <span>*</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="%40file-src%7CPublisher%7Cbuilder%7CDocBuilder.js.html#lineNumber368">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">doc</td>
+      <td data-ice="type"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tr>
+        <td class="return-type" data-ice="returnType"><span>*</span></td>
+        
+      </tr>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-_orderedFind">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    <span data-ice="name">_orderedFind</span><span data-ice="signature">(order: <span>*</span>, cond: <span>...*</span>): <span>*</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="%40file-src%7CPublisher%7Cbuilder%7CDocBuilder.js.html#lineNumber53">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">order</td>
+      <td data-ice="type"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">cond</td>
+      <td data-ice="type"><span>...*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tr>
+        <td class="return-type" data-ice="returnType"><span>*</span></td>
+        
+      </tr>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-_readTemplate">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    <span data-ice="name">_readTemplate</span><span data-ice="signature">(fileName: <span>*</span>): <span>*</span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="%40file-src%7CPublisher%7Cbuilder%7CDocBuilder.js.html#lineNumber63">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">fileName</td>
+      <td data-ice="type"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tr>
+        <td class="return-type" data-ice="returnType"><span>*</span></td>
+        
+      </tr>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-constructor">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    <span data-ice="name">constructor</span><span data-ice="signature">(data: <span>*</span>, config: <span>*</span>)</span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="%40file-src%7CPublisher%7Cbuilder%7CDocBuilder.js.html#lineNumber9">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">data</td>
+      <td data-ice="type"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+<tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">config</td>
+      <td data-ice="type"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-exec">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    <span class="abstract" data-ice="abstract">abstract</span>
+    
+    <span data-ice="name">exec</span><span data-ice="signature">(callback: <span>*</span>)</span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="%40file-src%7CPublisher%7Cbuilder%7CDocBuilder.js.html#lineNumber19">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  
+
+  
+
+  <div data-ice="properties"><div data-ice="properties">
+  <h4 data-ice="title">Params:</h4>
+  <table class="params">
+    <thead>
+    <tr><td>Name</td><td>Type</td><td>Attribute</td><td>Description</td></tr>
+    </thead>
+    <tbody>
+    
+    <tr data-ice="property" data-depth="0">
+      <td data-ice="name" data-depth="0">callback</td>
+      <td data-ice="type"><span>*</span></td>
+      <td data-ice="appendix"></td>
+      <td data-ice="description"></td>
+    </tr>
+</tbody>
+  </table>
+</div>
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+</div>
+</div>
+
+<footer class="footer">
+  <span class="version" data-ice="version">version: 0.0.1</span>
+  <span class="url"><a data-ice="url" href="https://github.com/h13i32maru/esdoc">https://github.com/h13i32maru/esdoc</a></span>
+  Generated by <a href="https://esdoc.org">ESDoc</a>
+</footer>
+
+<div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+  <ul class="search-result"></ul>
+</div>
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+</body>
+</html>

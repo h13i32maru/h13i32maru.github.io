@@ -24,7 +24,8 @@
 <pre><code class="lang-json">{
   &quot;source&quot;: &quot;./path/to/src&quot;,
   &quot;destination&quot;: &quot;./path/to/esdoc&quot;,
-  &quot;pattern&quot;: &quot;\\.js$&quot;,
+  &quot;includes&quot;: [&quot;\\.js$&quot;],
+  &quot;excludes&quot;: [&quot;\\.config\\.js$&quot;],
   &quot;access&quot;: [&quot;public&quot;, &quot;protected&quot;, &quot;private&quot;],
   &quot;onlyExported&quot;: true,
   &quot;importPathPrefix&quot;: &quot;&quot;,
@@ -36,59 +37,64 @@
 </code></pre>
 <ul>
 <li><code>source</code> (required)<ul>
-<li>directory path of JavaScript source codes.</li>
-<li>path is based on current directory.</li>
+<li>Directory path of JavaScript source codes.</li>
+<li>Path is based on current directory.</li>
 </ul>
 </li>
 <li><code>destination</code> (required)<ul>
-<li>output directory path.</li>
-<li>path is based on current directory.</li>
+<li>Output directory path.</li>
+<li>Path is based on current directory.</li>
 </ul>
 </li>
-<li><code>pattern</code><ul>
-<li>process only files that are matched with the regexp.</li>
-<li>default: <code>\\.js$</code></li>
+<li><code>includes</code><ul>
+<li>Process files that are matched with the regexp at any one.</li>
+<li>Default: <code>[&quot;\\.js$&quot;]</code></li>
+</ul>
+</li>
+<li><code>excludes</code>  <ul>
+<li>Not process files that are matched with the regexp at any one.</li>
+<li>Default: <code>[&quot;\\.config\\.js$&quot;]</code></li>
 </ul>
 </li>
 <li><code>access</code><ul>
-<li>process only symbols(class, method, function, etc...) that are have the access(public, protected and private).</li>
-<li>default: <code>[&quot;public&quot;, &quot;protected&quot;]</code></li>
+<li>Process only symbols(class, method, function, etc...) that are have the access(public, protected and private).</li>
+<li>Default: <code>[&quot;public&quot;, &quot;protected&quot;]</code></li>
 </ul>
 </li>
 <li><code>onlyExported</code><ul>
-<li>process only symbols that are exported(ES6 export syntax).</li>
+<li>Process only symbols that are exported(ES6 export syntax).</li>
 <li>e.g. <code>export MyClass {...}</code> is exported, <code>MyClass{}</code> is not exported.</li>
-<li>default: <code>true</code></li>
+<li>Default: <code>true</code></li>
 </ul>
 </li>
 <li><code>importPathPrefix</code><ul>
-<li>display symbol&#39;s import path with the prefix.</li>
+<li>Display symbol&#39;s import path with the prefix.</li>
 <li>e.g. if <code>MyClass</code> in <code>src/foo/MyClass.js</code>, import path is <code>import MyClass from &#39;src/foo/MyClass.js&#39;</code>. but specified the prefix with <code>importPathPrefix: &quot;out&quot;</code>, import path is <code>import MyClass from &#39;out/src/foo/MyClass.js&#39;</code>.</li>
-<li>default: <code>&quot;&quot;</code></li>
+<li>Default: <code>&quot;&quot;</code></li>
 </ul>
 </li>
 <li><code>readme</code><ul>
-<li>includes README.md into out put document.</li>
+<li>Includes README.md into out put document.</li>
 <li>path is based on current directory.</li>
 <li>default: <code>./README.md</code></li>
 </ul>
 </li>
 <li><code>package</code><ul>
-<li>use info(version, url, etc...) in package.json(npm)</li>
-<li>path is based on current directory.</li>
+<li>Use info(version, url, etc...) in package.json(npm)</li>
+<li>Path is based on current directory.</li>
 <li>default: <code>./package.json</code></li>
 </ul>
 </li>
 <li><code>styles</code><ul>
-<li>includes styles into out put document.</li>
-<li>path is based on current directory.</li>
-<li>default: <code>null</code></li>
+<li>Includes styles into out put document.</li>
+<li>Path is based on current directory.</li>
+<li>Default: <code>null</code></li>
 </ul>
 </li>
 <li><code>scripts</code><ul>
-<li>includes scripts into out put document.</li>
-<li>path is based on current directory.</li>
-<li>default: <code>null</code></li>
+<li>Includes scripts into out put document.</li>
+<li>Path is based on current directory.</li>
+<li>Default: <code>null</code></li>
 </ul>
 </li>
 </ul>
