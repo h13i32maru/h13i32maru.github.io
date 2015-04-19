@@ -97,7 +97,7 @@
 <li data-ice="fileDoc"><span><a href="%40file-src%7CPublisher%7Cbuilder%7CStaticFileBuilder.js.html#lineNumber1">src/Publisher/builder/StaticFileBuilder.js</a></span></li>
 <li data-ice="fileDoc"><span><a href="%40file-src%7CPublisher%7Cbuilder%7Cutil.js.html#lineNumber1">src/Publisher/builder/util.js</a></span></li>
 <li data-ice="fileDoc"><span><a href="%40file-src%7CPublisher%7Cpublish.js.html#lineNumber1">src/Publisher/publish.js</a></span></li>
-<li data-ice="fileDoc"><span><a href="%40file-src%7CTypedef%7Ctypedef.js.html#lineNumber50">src/Typedef/typedef.js</a></span></li>
+<li data-ice="fileDoc"><span><a href="%40file-src%7CTypedef%7Ctypedef.js.html#lineNumber51">src/Typedef/typedef.js</a></span></li>
 <li data-ice="fileDoc"><span><a href="%40file-src%7CUtil%7CASTUtil.js.html#lineNumber1">src/Util/ASTUtil.js</a></span></li>
 <li data-ice="fileDoc"><span><a href="%40file-src%7CUtil%7CPathResolver.js.html#lineNumber1">src/Util/PathResolver.js</a></span></li>
 </ul>
@@ -138,9 +138,9 @@ export default class ESDoc {
     this._setDefaultConfig(config);
 
     Logger.debug = !!config.debug;
-    let pattern = new RegExp(config.pattern);
-    let pathPrefix = config.importPathPrefix;
+    let includes = config.includes.map((v) =&gt; new RegExp(v));
     let excludes = config.excludes.map((v) =&gt; new RegExp(v));
+    let pathPrefix = config.importPathPrefix;
 
     let packageName = null;
     let mainFilePath = null;
@@ -158,10 +158,14 @@ export default class ESDoc {
     let results = [];
 
     this._walk(config.source, (filePath)=&gt;{
-      if (pattern) {
-        let matched = filePath.match(pattern);
-        if (!matched) return;
+      let match = false;
+      for (let reg of includes) {
+        if (filePath.match(reg)) {
+          match = true;
+          break;
+        }
       }
+      if (!match) return;
 
       for (let reg of excludes) {
         if (filePath.match(reg)) return;
@@ -180,9 +184,9 @@ export default class ESDoc {
    * @private
    */
   static _setDefaultConfig(config) {
-    if (!config.pattern) config.pattern = &apos;\\.js$&apos;;
+    if (!config.includes) config.includes = [&apos;\\.js$&apos;];
 
-    if (!config.excludes) config.excludes = [];
+    if (!config.excludes) config.excludes = [&apos;\\.config\\.js$&apos;];
 
     if (!config.access) config.access = [&apos;public&apos;, &apos;protected&apos;];
 

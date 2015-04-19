@@ -97,7 +97,7 @@
 <li data-ice="fileDoc"><span><a href="%40file-src%7CPublisher%7Cbuilder%7CStaticFileBuilder.js.html#lineNumber1">src/Publisher/builder/StaticFileBuilder.js</a></span></li>
 <li data-ice="fileDoc"><span><a href="%40file-src%7CPublisher%7Cbuilder%7Cutil.js.html#lineNumber1">src/Publisher/builder/util.js</a></span></li>
 <li data-ice="fileDoc"><span><a href="%40file-src%7CPublisher%7Cpublish.js.html#lineNumber1">src/Publisher/publish.js</a></span></li>
-<li data-ice="fileDoc"><span><a href="%40file-src%7CTypedef%7Ctypedef.js.html#lineNumber50">src/Typedef/typedef.js</a></span></li>
+<li data-ice="fileDoc"><span><a href="%40file-src%7CTypedef%7Ctypedef.js.html#lineNumber51">src/Typedef/typedef.js</a></span></li>
 <li data-ice="fileDoc"><span><a href="%40file-src%7CUtil%7CASTUtil.js.html#lineNumber1">src/Util/ASTUtil.js</a></span></li>
 <li data-ice="fileDoc"><span><a href="%40file-src%7CUtil%7CPathResolver.js.html#lineNumber1">src/Util/PathResolver.js</a></span></li>
 </ul>
@@ -287,6 +287,7 @@ export default class ParamParser {
     let result = {};
 
     ASTUtil.traverse(body, function(node, parent){
+      // `return` in Function is not the body&apos;s `return`
       if (node.type.includes(&apos;Function&apos;)) {
         this.skip();
         return;
@@ -308,6 +309,7 @@ export default class ParamParser {
           result.types = [&apos;string&apos;];
           break;
         default:
+          // todo: more better guess.
           result.types = [&apos;*&apos;];
       }
     });
