@@ -1,32 +1,61 @@
+html {
+  background: #fffaf0;
+  font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif;
+  font-weight: 500;
+}
+
+body {
+  margin-left: 1em;
+}
+
+h1 {
+  margin: 1em 0 0;
+}
+
+article {
+  margin-left: 1em;
+}
+
+p {
+  margin: 0.5em 0;
+}
+
 a {
   text-decoration: none;
   color: #4183c4;
 }
 
-ul {
-  padding-left: 10px;
-}
-
-li {
-  list-style: none;
-  font-weight: bold;
-}
-
-p {
-  margin: 0 1em;
-}
-
-.icon {
-  width: 18px;
-}
-
-a.repo {
+.icon-twitter {
   display: inline-block;
-  width: 24px;
-  height: 24px;
-  background: url(../image/octocat.png) no-repeat;
-  background-size: 24px;
-  vertical-align: bottom;
+  width: 28px;
+  height: 22px;
+  background: url("../image/twitter.png");
+  background-size: 28px 22px;
+}
 
-  display: none;
+.icon-github {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background: url("../image/github.png");
+  background-size: 28px 28px;
+}
+
+.icon-blog {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  color: white;
+  background: #444;
+  text-align: center;
+  line-height: 32px;
+  border-radius: 6px;
+  font-size: 18px;
+}
+.icon-blog:before {
+  content: "32";
+}
+
+.title {
+  font-size: 40px;
 }
