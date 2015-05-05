@@ -116,6 +116,14 @@ img.screen-shot {
 }
 
 @media screen and (min-width: 0px) and (max-device-width: 600px) {
+  nav {
+    position: static;
+  }
+
+  article.content {
+    margin-top: 20px;
+  }
+
   img.screen-shot {
     max-width: 280px;
   }
