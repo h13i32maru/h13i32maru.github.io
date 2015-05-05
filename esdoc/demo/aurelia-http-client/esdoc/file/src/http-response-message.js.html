@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">src/http-response-message.js | Aurelia:HttpClient API Document</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  
+  
+</head>
+<body class="layout-container">
+
+<header>
+  <a href="./">Home</a>
+  <a href="symbols.html">Symbol</a>
+  <a href="source.html">Source</a>
+  <a href="test.html">Test</a>
+  <a data-ice="repoURL" href="http://github.com/aurelia/http-client" class="repo-url-github">Repository</a>
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div data-ice="classWrap">
+  <h2>Class</h2>
+  <ul>
+    
+  <li data-ice="classDoc"><span><a href="class/src/headers.js~Headers.html">Headers</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/http-client.js~HttpClient.html">HttpClient</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/http-request-message.js~HttpRequestMessage.html">HttpRequestMessage</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/http-response-message.js~HttpResponseMessage.html">HttpResponseMessage</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/jsonp-request-message.js~JSONPRequestMessage.html">JSONPRequestMessage</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/request-builder.js~RequestBuilder.html">RequestBuilder</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/request-message-processor.js~RequestMessageProcessor.html">RequestMessageProcessor</a></span></li>
+</ul>
+</div>
+
+
+
+<div data-ice="functionWrap">
+  <h2><a href="function/">Function</a></h2>
+  <ul>
+    
+  <li data-ice="functionDoc"><span><a href="function/index.html#static-function-callbackParameterNameTransformer">callbackParameterNameTransformer</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-contentTransformer">contentTransformer</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-createHttpRequestMessageProcessor">createHttpRequestMessageProcessor</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-createJSONPRequestMessageProcessor">createJSONPRequestMessageProcessor</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-credentialsTransformer">credentialsTransformer</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-headerTransformer">headerTransformer</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-progressTransformer">progressTransformer</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-responseTypeTransformer">responseTypeTransformer</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-timeoutTransformer">timeoutTransformer</a></span></li>
+</ul>
+</div>
+
+<div data-ice="variableWrap">
+  <h2><a href="variable/">Variable</a></h2>
+  <ul>
+    
+  <li data-ice="variableDoc"><span><a href="variable/index.html#static-variable-mimeTypes">mimeTypes</a></span></li>
+</ul>
+</div>
+
+
+
+
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/http-response-message.js</h1>
+<pre class="source-code line-number"><code class="prettyprint linenums" data-ice="content">/*jshint -W093 */
+import {Headers} from &apos;./headers&apos;;
+
+export class HttpResponseMessage {
+  constructor(requestMessage, xhr, responseType, reviver){
+    this.requestMessage = requestMessage;
+    this.statusCode = xhr.status;
+    this.response = xhr.response;
+    this.isSuccess = xhr.status &gt;= 200 &amp;&amp; xhr.status &lt; 400;
+    this.statusText = xhr.statusText;
+    this.reviver = reviver;
+    this.mimeType = null;
+
+    if(xhr.getAllResponseHeaders){
+      try{
+        this.headers = Headers.parse(xhr.getAllResponseHeaders());
+      }catch(err){
+        //if this fails it means the xhr was a mock object so the `requestHeaders` property should be used
+        if(xhr.requestHeaders) this.headers = { headers:xhr.requestHeaders };
+      }
+    }else {
+      this.headers = new Headers();
+    }
+
+    var contentType;
+    if(this.headers &amp;&amp; this.headers.headers) contentType = this.headers.headers[&quot;Content-Type&quot;];
+    if(contentType) {
+      this.mimeType = responseType = contentType.split(&quot;;&quot;)[0].trim();
+      if(mimeTypes.hasOwnProperty(this.mimeType)) responseType = mimeTypes[this.mimeType];
+    }
+    this.responseType = responseType;
+  }
+
+  get content(){
+    try{
+      if(this._content !== undefined){
+        return this._content;
+      }
+
+      if(this.response === undefined || this.response === null){
+        return this._content = this.response;
+      }
+
+      if(this.responseType === &apos;json&apos;){
+        return this._content = JSON.parse(this.response, this.reviver);
+      }
+
+      if(this.reviver){
+        return this._content = this.reviver(this.response);
+      }
+
+      return this._content = this.response;
+    }catch(e){
+      if(this.isSuccess){
+        throw e;
+      }
+
+      return this._content = null;
+    }
+  }
+}
+
+/**
+ * MimeTypes mapped to responseTypes
+ *
+ * @type {Object}
+ */
+export var mimeTypes = {
+  &quot;text/html&quot;: &quot;html&quot;,
+  &quot;text/javascript&quot;: &quot;js&quot;,
+  &quot;application/javascript&quot;: &quot;js&quot;,
+  &quot;text/json&quot;: &quot;json&quot;,
+  &quot;application/json&quot;: &quot;json&quot;,
+  &quot;application/rss+xml&quot;: &quot;rss&quot;,
+  &quot;application/atom+xml&quot;: &quot;atom&quot;,
+  &quot;application/xhtml+xml&quot;: &quot;xhtml&quot;,
+  &quot;text/markdown&quot;: &quot;md&quot;,
+  &quot;text/xml&quot;: &quot;xml&quot;,
+  &quot;text/mathml&quot;: &quot;mml&quot;,
+  &quot;application/xml&quot;: &quot;xml&quot;,
+  &quot;text/yml&quot;: &quot;yml&quot;,
+  &quot;text/csv&quot;: &quot;csv&quot;,
+  &quot;text/css&quot;: &quot;css&quot;,
+  &quot;text/less&quot;: &quot;less&quot;,
+  &quot;text/stylus&quot;: &quot;styl&quot;,
+  &quot;text/scss&quot;: &quot;scss&quot;,
+  &quot;text/sass&quot;: &quot;sass&quot;,
+  &quot;text/plain&quot;: &quot;txt&quot;
+};
+</code></pre>
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(0.0.2)</span></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+</body>
+</html>

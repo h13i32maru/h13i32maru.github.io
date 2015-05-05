@@ -1,0 +1,665 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": null,
+      "specifiers": [
+        {
+          "type": "ExportSpecifier",
+          "exported": {
+            "type": "Identifier",
+            "name": "HttpClient",
+            "range": [
+              92,
+              102
+            ],
+            "loc": {
+              "start": {
+                "line": 7,
+                "column": 8
+              },
+              "end": {
+                "line": 7,
+                "column": 18
+              }
+            }
+          },
+          "local": {
+            "type": "Identifier",
+            "name": "HttpClient",
+            "range": [
+              92,
+              102
+            ],
+            "loc": {
+              "start": {
+                "line": 7,
+                "column": 8
+              },
+              "end": {
+                "line": 7,
+                "column": 18
+              }
+            }
+          },
+          "range": [
+            92,
+            102
+          ],
+          "loc": {
+            "start": {
+              "line": 7,
+              "column": 8
+            },
+            "end": {
+              "line": 7,
+              "column": 18
+            }
+          }
+        }
+      ],
+      "source": {
+        "type": "Literal",
+        "value": "./http-client",
+        "raw": "'./http-client'",
+        "range": [
+          109,
+          124
+        ],
+        "loc": {
+          "start": {
+            "line": 7,
+            "column": 25
+          },
+          "end": {
+            "line": 7,
+            "column": 40
+          }
+        }
+      },
+      "range": [
+        84,
+        125
+      ],
+      "loc": {
+        "start": {
+          "line": 7,
+          "column": 0
+        },
+        "end": {
+          "line": 7,
+          "column": 41
+        }
+      },
+      "leadingComments": [
+        {
+          "type": "Block",
+          "value": "*\n * An extensible HTTP client provided by Aurelia.\n *\n * @module HttpClient\n ",
+          "range": [
+            0,
+            82
+          ],
+          "loc": {
+            "start": {
+              "line": 1,
+              "column": 0
+            },
+            "end": {
+              "line": 5,
+              "column": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": null,
+      "specifiers": [
+        {
+          "type": "ExportSpecifier",
+          "exported": {
+            "type": "Identifier",
+            "name": "HttpRequestMessage",
+            "range": [
+              134,
+              152
+            ],
+            "loc": {
+              "start": {
+                "line": 8,
+                "column": 8
+              },
+              "end": {
+                "line": 8,
+                "column": 26
+              }
+            }
+          },
+          "local": {
+            "type": "Identifier",
+            "name": "HttpRequestMessage",
+            "range": [
+              134,
+              152
+            ],
+            "loc": {
+              "start": {
+                "line": 8,
+                "column": 8
+              },
+              "end": {
+                "line": 8,
+                "column": 26
+              }
+            }
+          },
+          "range": [
+            134,
+            152
+          ],
+          "loc": {
+            "start": {
+              "line": 8,
+              "column": 8
+            },
+            "end": {
+              "line": 8,
+              "column": 26
+            }
+          }
+        }
+      ],
+      "source": {
+        "type": "Literal",
+        "value": "./http-request-message",
+        "raw": "'./http-request-message'",
+        "range": [
+          159,
+          183
+        ],
+        "loc": {
+          "start": {
+            "line": 8,
+            "column": 33
+          },
+          "end": {
+            "line": 8,
+            "column": 57
+          }
+        }
+      },
+      "range": [
+        126,
+        184
+      ],
+      "loc": {
+        "start": {
+          "line": 8,
+          "column": 0
+        },
+        "end": {
+          "line": 8,
+          "column": 58
+        }
+      }
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": null,
+      "specifiers": [
+        {
+          "type": "ExportSpecifier",
+          "exported": {
+            "type": "Identifier",
+            "name": "HttpResponseMessage",
+            "range": [
+              193,
+              212
+            ],
+            "loc": {
+              "start": {
+                "line": 9,
+                "column": 8
+              },
+              "end": {
+                "line": 9,
+                "column": 27
+              }
+            }
+          },
+          "local": {
+            "type": "Identifier",
+            "name": "HttpResponseMessage",
+            "range": [
+              193,
+              212
+            ],
+            "loc": {
+              "start": {
+                "line": 9,
+                "column": 8
+              },
+              "end": {
+                "line": 9,
+                "column": 27
+              }
+            }
+          },
+          "range": [
+            193,
+            212
+          ],
+          "loc": {
+            "start": {
+              "line": 9,
+              "column": 8
+            },
+            "end": {
+              "line": 9,
+              "column": 27
+            }
+          }
+        },
+        {
+          "type": "ExportSpecifier",
+          "exported": {
+            "type": "Identifier",
+            "name": "mimeTypes",
+            "range": [
+              214,
+              223
+            ],
+            "loc": {
+              "start": {
+                "line": 9,
+                "column": 29
+              },
+              "end": {
+                "line": 9,
+                "column": 38
+              }
+            }
+          },
+          "local": {
+            "type": "Identifier",
+            "name": "mimeTypes",
+            "range": [
+              214,
+              223
+            ],
+            "loc": {
+              "start": {
+                "line": 9,
+                "column": 29
+              },
+              "end": {
+                "line": 9,
+                "column": 38
+              }
+            }
+          },
+          "range": [
+            214,
+            223
+          ],
+          "loc": {
+            "start": {
+              "line": 9,
+              "column": 29
+            },
+            "end": {
+              "line": 9,
+              "column": 38
+            }
+          }
+        }
+      ],
+      "source": {
+        "type": "Literal",
+        "value": "./http-response-message",
+        "raw": "'./http-response-message'",
+        "range": [
+          230,
+          255
+        ],
+        "loc": {
+          "start": {
+            "line": 9,
+            "column": 45
+          },
+          "end": {
+            "line": 9,
+            "column": 70
+          }
+        }
+      },
+      "range": [
+        185,
+        256
+      ],
+      "loc": {
+        "start": {
+          "line": 9,
+          "column": 0
+        },
+        "end": {
+          "line": 9,
+          "column": 71
+        }
+      }
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": null,
+      "specifiers": [
+        {
+          "type": "ExportSpecifier",
+          "exported": {
+            "type": "Identifier",
+            "name": "JSONPRequestMessage",
+            "range": [
+              265,
+              284
+            ],
+            "loc": {
+              "start": {
+                "line": 10,
+                "column": 8
+              },
+              "end": {
+                "line": 10,
+                "column": 27
+              }
+            }
+          },
+          "local": {
+            "type": "Identifier",
+            "name": "JSONPRequestMessage",
+            "range": [
+              265,
+              284
+            ],
+            "loc": {
+              "start": {
+                "line": 10,
+                "column": 8
+              },
+              "end": {
+                "line": 10,
+                "column": 27
+              }
+            }
+          },
+          "range": [
+            265,
+            284
+          ],
+          "loc": {
+            "start": {
+              "line": 10,
+              "column": 8
+            },
+            "end": {
+              "line": 10,
+              "column": 27
+            }
+          }
+        }
+      ],
+      "source": {
+        "type": "Literal",
+        "value": "./jsonp-request-message",
+        "raw": "'./jsonp-request-message'",
+        "range": [
+          291,
+          316
+        ],
+        "loc": {
+          "start": {
+            "line": 10,
+            "column": 34
+          },
+          "end": {
+            "line": 10,
+            "column": 59
+          }
+        }
+      },
+      "range": [
+        257,
+        317
+      ],
+      "loc": {
+        "start": {
+          "line": 10,
+          "column": 0
+        },
+        "end": {
+          "line": 10,
+          "column": 60
+        }
+      }
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": null,
+      "specifiers": [
+        {
+          "type": "ExportSpecifier",
+          "exported": {
+            "type": "Identifier",
+            "name": "Headers",
+            "range": [
+              326,
+              333
+            ],
+            "loc": {
+              "start": {
+                "line": 11,
+                "column": 8
+              },
+              "end": {
+                "line": 11,
+                "column": 15
+              }
+            }
+          },
+          "local": {
+            "type": "Identifier",
+            "name": "Headers",
+            "range": [
+              326,
+              333
+            ],
+            "loc": {
+              "start": {
+                "line": 11,
+                "column": 8
+              },
+              "end": {
+                "line": 11,
+                "column": 15
+              }
+            }
+          },
+          "range": [
+            326,
+            333
+          ],
+          "loc": {
+            "start": {
+              "line": 11,
+              "column": 8
+            },
+            "end": {
+              "line": 11,
+              "column": 15
+            }
+          }
+        }
+      ],
+      "source": {
+        "type": "Literal",
+        "value": "./headers",
+        "raw": "'./headers'",
+        "range": [
+          340,
+          351
+        ],
+        "loc": {
+          "start": {
+            "line": 11,
+            "column": 22
+          },
+          "end": {
+            "line": 11,
+            "column": 33
+          }
+        }
+      },
+      "range": [
+        318,
+        352
+      ],
+      "loc": {
+        "start": {
+          "line": 11,
+          "column": 0
+        },
+        "end": {
+          "line": 11,
+          "column": 34
+        }
+      }
+    },
+    {
+      "type": "ExportNamedDeclaration",
+      "declaration": null,
+      "specifiers": [
+        {
+          "type": "ExportSpecifier",
+          "exported": {
+            "type": "Identifier",
+            "name": "RequestBuilder",
+            "range": [
+              361,
+              375
+            ],
+            "loc": {
+              "start": {
+                "line": 12,
+                "column": 8
+              },
+              "end": {
+                "line": 12,
+                "column": 22
+              }
+            }
+          },
+          "local": {
+            "type": "Identifier",
+            "name": "RequestBuilder",
+            "range": [
+              361,
+              375
+            ],
+            "loc": {
+              "start": {
+                "line": 12,
+                "column": 8
+              },
+              "end": {
+                "line": 12,
+                "column": 22
+              }
+            }
+          },
+          "range": [
+            361,
+            375
+          ],
+          "loc": {
+            "start": {
+              "line": 12,
+              "column": 8
+            },
+            "end": {
+              "line": 12,
+              "column": 22
+            }
+          }
+        }
+      ],
+      "source": {
+        "type": "Literal",
+        "value": "./request-builder",
+        "raw": "'./request-builder'",
+        "range": [
+          382,
+          401
+        ],
+        "loc": {
+          "start": {
+            "line": 12,
+            "column": 29
+          },
+          "end": {
+            "line": 12,
+            "column": 48
+          }
+        }
+      },
+      "range": [
+        353,
+        402
+      ],
+      "loc": {
+        "start": {
+          "line": 12,
+          "column": 0
+        },
+        "end": {
+          "line": 12,
+          "column": 49
+        }
+      }
+    }
+  ],
+  "sourceType": "module",
+  "range": [
+    84,
+    402
+  ],
+  "loc": {
+    "start": {
+      "line": 7,
+      "column": 0
+    },
+    "end": {
+      "line": 12,
+      "column": 49
+    }
+  },
+  "comments": [
+    {
+      "type": "Block",
+      "value": "*\n * An extensible HTTP client provided by Aurelia.\n *\n * @module HttpClient\n ",
+      "range": [
+        0,
+        82
+      ],
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 5,
+          "column": 3
+        }
+      }
+    }
+  ]
+}

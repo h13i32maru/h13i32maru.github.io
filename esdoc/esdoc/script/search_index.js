@@ -1,1287 +1,2972 @@
-window.jsdocCloudySearchIndex = [
+window.esdocSearchIndex = [
+  [
+    "esdoc/out/src/publisher/builder/astdocbuilder.js~astdocbuilder",
+    "class/src/Publisher/Builder/ASTDocBuilder.js~ASTDocBuilder.html",
+    "<span>ASTDocBuilder</span> <span class=\"search-result-import-path\">esdoc/out/src/Publisher/Builder/ASTDocBuilder.js</span>",
+    "class"
+  ],
   [
     "esdoc/out/src/util/astutil.js~astutil",
-    "%40class-src%7CUtil%7CASTUtil.js~ASTUtil.html",
-    "<span>ASTUtil</span> <span class=\"search-result-import-path\">esdoc/out/src/Util/ASTUtil.js</span>"
+    "class/src/Util/ASTUtil.js~ASTUtil.html",
+    "<span>ASTUtil</span> <span class=\"search-result-import-path\">esdoc/out/src/Util/ASTUtil.js</span>",
+    "class"
   ],
   [
     "esdoc/out/src/doc/abstractdoc.js~abstractdoc",
-    "%40class-src%7CDoc%7CAbstractDoc.js~AbstractDoc.html",
-    "<span>AbstractDoc</span> <span class=\"search-result-import-path\">esdoc/out/src/Doc/AbstractDoc.js</span>"
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html",
+    "<span>AbstractDoc</span> <span class=\"search-result-import-path\">esdoc/out/src/Doc/AbstractDoc.js</span>",
+    "class"
   ],
   [
     "esdoc/out/src/doc/assignmentdoc.js~assignmentdoc",
-    "%40class-src%7CDoc%7CAssignmentDoc.js~AssignmentDoc.html",
-    "<span>AssignmentDoc</span> <span class=\"search-result-import-path\">esdoc/out/src/Doc/AssignmentDoc.js</span>"
+    "class/src/Doc/AssignmentDoc.js~AssignmentDoc.html",
+    "<span>AssignmentDoc</span> <span class=\"search-result-import-path\">esdoc/out/src/Doc/AssignmentDoc.js</span>",
+    "class"
   ],
   [
     "esdoc/out/src/doc/classdoc.js~classdoc",
-    "%40class-src%7CDoc%7CClassDoc.js~ClassDoc.html",
-    "<span>ClassDoc</span> <span class=\"search-result-import-path\">esdoc/out/src/Doc/ClassDoc.js</span>"
+    "class/src/Doc/ClassDoc.js~ClassDoc.html",
+    "<span>ClassDoc</span> <span class=\"search-result-import-path\">esdoc/out/src/Doc/ClassDoc.js</span>",
+    "class"
   ],
   [
     "esdoc/out/src/publisher/builder/classdocbuilder.js~classdocbuilder",
-    "%40class-src%7CPublisher%7Cbuilder%7CClassDocBuilder.js~ClassDocBuilder.html",
-    "<span>ClassDocBuilder</span> <span class=\"search-result-import-path\">esdoc/out/src/Publisher/builder/ClassDocBuilder.js</span>"
+    "class/src/Publisher/Builder/ClassDocBuilder.js~ClassDocBuilder.html",
+    "<span>ClassDocBuilder</span> <span class=\"search-result-import-path\">esdoc/out/src/Publisher/Builder/ClassDocBuilder.js</span>",
+    "class"
   ],
   [
     "esdoc/out/src/parser/commentparser.js~commentparser",
-    "%40class-src%7CParser%7CCommentParser.js~CommentParser.html",
-    "<span>CommentParser</span> <span class=\"search-result-import-path\">esdoc/out/src/Parser/CommentParser.js</span>"
+    "class/src/Parser/CommentParser.js~CommentParser.html",
+    "<span>CommentParser</span> <span class=\"search-result-import-path\">esdoc/out/src/Parser/CommentParser.js</span>",
+    "class"
+  ],
+  [
+    "esdoc/out/src/publisher/builder/coveragebuilder.js~coveragebuilder",
+    "class/src/Publisher/Builder/CoverageBuilder.js~CoverageBuilder.html",
+    "<span>CoverageBuilder</span> <span class=\"search-result-import-path\">esdoc/out/src/Publisher/Builder/CoverageBuilder.js</span>",
+    "class"
   ],
   [
     "esdoc/out/src/publisher/builder/docbuilder.js~docbuilder",
-    "%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html",
-    "<span>DocBuilder</span> <span class=\"search-result-import-path\">esdoc/out/src/Publisher/builder/DocBuilder.js</span>"
+    "class/src/Publisher/Builder/DocBuilder.js~DocBuilder.html",
+    "<span>DocBuilder</span> <span class=\"search-result-import-path\">esdoc/out/src/Publisher/Builder/DocBuilder.js</span>",
+    "class"
   ],
   [
     "esdoc/out/src/factory/docfactory.js~docfactory",
-    "%40class-src%7CFactory%7CDocFactory.js~DocFactory.html",
-    "<span>DocFactory</span> <span class=\"search-result-import-path\">esdoc/out/src/Factory/DocFactory.js</span>"
+    "class/src/Factory/DocFactory.js~DocFactory.html",
+    "<span>DocFactory</span> <span class=\"search-result-import-path\">esdoc/out/src/Factory/DocFactory.js</span>",
+    "class"
   ],
   [
     "esdoc/out/src/publisher/builder/docresolver.js~docresolver",
-    "%40class-src%7CPublisher%7Cbuilder%7CDocResolver.js~DocResolver.html",
-    "<span>DocResolver</span> <span class=\"search-result-import-path\">esdoc/out/src/Publisher/builder/DocResolver.js</span>"
+    "class/src/Publisher/Builder/DocResolver.js~DocResolver.html",
+    "<span>DocResolver</span> <span class=\"search-result-import-path\">esdoc/out/src/Publisher/Builder/DocResolver.js</span>",
+    "class"
   ],
   [
     "esdoc~esdoc",
-    "%40class-src%7CESDoc.js~ESDoc.html",
-    "<span>ESDoc</span> <span class=\"search-result-import-path\">esdoc</span>"
+    "class/src/ESDoc.js~ESDoc.html",
+    "<span>ESDoc</span> <span class=\"search-result-import-path\">esdoc</span>",
+    "class"
   ],
   [
     "esdoc/out/src/esdoccli.js~esdoccli",
-    "%40class-src%7CESDocCLI.js~ESDocCLI.html",
-    "<span>ESDocCLI</span> <span class=\"search-result-import-path\">esdoc/out/src/ESDocCLI.js</span>"
+    "class/src/ESDocCLI.js~ESDocCLI.html",
+    "<span>ESDocCLI</span> <span class=\"search-result-import-path\">esdoc/out/src/ESDocCLI.js</span>",
+    "class"
   ],
   [
     "esdoc/out/src/parser/esparser.js~esparser",
-    "%40class-src%7CParser%7CESParser.js~ESParser.html",
-    "<span>ESParser</span> <span class=\"search-result-import-path\">esdoc/out/src/Parser/ESParser.js</span>"
+    "class/src/Parser/ESParser.js~ESParser.html",
+    "<span>ESParser</span> <span class=\"search-result-import-path\">esdoc/out/src/Parser/ESParser.js</span>",
+    "class"
   ],
   [
     "esdoc/out/src/doc/externaldoc.js~externaldoc",
-    "%40class-src%7CDoc%7CExternalDoc.js~ExternalDoc.html",
-    "<span>ExternalDoc</span> <span class=\"search-result-import-path\">esdoc/out/src/Doc/ExternalDoc.js</span>"
+    "class/src/Doc/ExternalDoc.js~ExternalDoc.html",
+    "<span>ExternalDoc</span> <span class=\"search-result-import-path\">esdoc/out/src/Doc/ExternalDoc.js</span>",
+    "class"
   ],
   [
     "esdoc/out/src/doc/filedoc.js~filedoc",
-    "%40class-src%7CDoc%7CFileDoc.js~FileDoc.html",
-    "<span>FileDoc</span> <span class=\"search-result-import-path\">esdoc/out/src/Doc/FileDoc.js</span>"
+    "class/src/Doc/FileDoc.js~FileDoc.html",
+    "<span>FileDoc</span> <span class=\"search-result-import-path\">esdoc/out/src/Doc/FileDoc.js</span>",
+    "class"
   ],
   [
     "esdoc/out/src/publisher/builder/filedocbuilder.js~filedocbuilder",
-    "%40class-src%7CPublisher%7Cbuilder%7CFileDocBuilder.js~FileDocBuilder.html",
-    "<span>FileDocBuilder</span> <span class=\"search-result-import-path\">esdoc/out/src/Publisher/builder/FileDocBuilder.js</span>"
+    "class/src/Publisher/Builder/FileDocBuilder.js~FileDocBuilder.html",
+    "<span>FileDocBuilder</span> <span class=\"search-result-import-path\">esdoc/out/src/Publisher/Builder/FileDocBuilder.js</span>",
+    "class"
+  ],
+  [
+    "esdoc/out/src/publisher/builder/testfiledocbuilder.js~filedocbuilder",
+    "class/src/Publisher/Builder/TestFileDocBuilder.js~FileDocBuilder.html",
+    "<span>FileDocBuilder</span> <span class=\"search-result-import-path\">esdoc/out/src/Publisher/Builder/TestFileDocBuilder.js</span>",
+    "class"
   ],
   [
     "esdoc/out/src/doc/functiondoc.js~functiondoc",
-    "%40class-src%7CDoc%7CFunctionDoc.js~FunctionDoc.html",
-    "<span>FunctionDoc</span> <span class=\"search-result-import-path\">esdoc/out/src/Doc/FunctionDoc.js</span>"
+    "class/src/Doc/FunctionDoc.js~FunctionDoc.html",
+    "<span>FunctionDoc</span> <span class=\"search-result-import-path\">esdoc/out/src/Doc/FunctionDoc.js</span>",
+    "class"
+  ],
+  [
+    "esdoc/out/src/publisher/builder/identifiersdocbuilder.js~identifiersdocbuilder",
+    "class/src/Publisher/Builder/IdentifiersDocBuilder.js~IdentifiersDocBuilder.html",
+    "<span>IdentifiersDocBuilder</span> <span class=\"search-result-import-path\">esdoc/out/src/Publisher/Builder/IdentifiersDocBuilder.js</span>",
+    "class"
   ],
   [
     "esdoc/out/src/publisher/builder/indexdocbuilder.js~indexdocbuilder",
-    "%40class-src%7CPublisher%7Cbuilder%7CIndexDocBuilder.js~IndexDocBuilder.html",
-    "<span>IndexDocBuilder</span> <span class=\"search-result-import-path\">esdoc/out/src/Publisher/builder/IndexDocBuilder.js</span>"
+    "class/src/Publisher/Builder/IndexDocBuilder.js~IndexDocBuilder.html",
+    "<span>IndexDocBuilder</span> <span class=\"search-result-import-path\">esdoc/out/src/Publisher/Builder/IndexDocBuilder.js</span>",
+    "class"
   ],
   [
     "esdoc/out/src/doc/memberdoc.js~memberdoc",
-    "%40class-src%7CDoc%7CMemberDoc.js~MemberDoc.html",
-    "<span>MemberDoc</span> <span class=\"search-result-import-path\">esdoc/out/src/Doc/MemberDoc.js</span>"
+    "class/src/Doc/MemberDoc.js~MemberDoc.html",
+    "<span>MemberDoc</span> <span class=\"search-result-import-path\">esdoc/out/src/Doc/MemberDoc.js</span>",
+    "class"
   ],
   [
     "esdoc/out/src/doc/methoddoc.js~methoddoc",
-    "%40class-src%7CDoc%7CMethodDoc.js~MethodDoc.html",
-    "<span>MethodDoc</span> <span class=\"search-result-import-path\">esdoc/out/src/Doc/MethodDoc.js</span>"
+    "class/src/Doc/MethodDoc.js~MethodDoc.html",
+    "<span>MethodDoc</span> <span class=\"search-result-import-path\">esdoc/out/src/Doc/MethodDoc.js</span>",
+    "class"
   ],
   [
     "esdoc/out/src/parser/paramparser.js~paramparser",
-    "%40class-src%7CParser%7CParamParser.js~ParamParser.html",
-    "<span>ParamParser</span> <span class=\"search-result-import-path\">esdoc/out/src/Parser/ParamParser.js</span>"
+    "class/src/Parser/ParamParser.js~ParamParser.html",
+    "<span>ParamParser</span> <span class=\"search-result-import-path\">esdoc/out/src/Parser/ParamParser.js</span>",
+    "class"
   ],
   [
     "esdoc/out/src/util/pathresolver.js~pathresolver",
-    "%40class-src%7CUtil%7CPathResolver.js~PathResolver.html",
-    "<span>PathResolver</span> <span class=\"search-result-import-path\">esdoc/out/src/Util/PathResolver.js</span>"
-  ],
-  [
-    "esdoc/out/src/publisher/builder/readmedocbuilder.js~readmedocbuilder",
-    "%40class-src%7CPublisher%7Cbuilder%7CReadmeDocBuilder.js~ReadmeDocBuilder.html",
-    "<span>ReadmeDocBuilder</span> <span class=\"search-result-import-path\">esdoc/out/src/Publisher/builder/ReadmeDocBuilder.js</span>"
+    "class/src/Util/PathResolver.js~PathResolver.html",
+    "<span>PathResolver</span> <span class=\"search-result-import-path\">esdoc/out/src/Util/PathResolver.js</span>",
+    "class"
   ],
   [
     "esdoc/out/src/publisher/builder/searchindexbuilder.js~searchindexbuilder",
-    "%40class-src%7CPublisher%7Cbuilder%7CSearchIndexBuilder.js~SearchIndexBuilder.html",
-    "<span>SearchIndexBuilder</span> <span class=\"search-result-import-path\">esdoc/out/src/Publisher/builder/SearchIndexBuilder.js</span>"
+    "class/src/Publisher/Builder/SearchIndexBuilder.js~SearchIndexBuilder.html",
+    "<span>SearchIndexBuilder</span> <span class=\"search-result-import-path\">esdoc/out/src/Publisher/Builder/SearchIndexBuilder.js</span>",
+    "class"
   ],
   [
     "esdoc/out/src/publisher/builder/singledocbuilder.js~singledocbuilder",
-    "%40class-src%7CPublisher%7Cbuilder%7CSingleDocBuilder.js~SingleDocBuilder.html",
-    "<span>SingleDocBuilder</span> <span class=\"search-result-import-path\">esdoc/out/src/Publisher/builder/SingleDocBuilder.js</span>"
+    "class/src/Publisher/Builder/SingleDocBuilder.js~SingleDocBuilder.html",
+    "<span>SingleDocBuilder</span> <span class=\"search-result-import-path\">esdoc/out/src/Publisher/Builder/SingleDocBuilder.js</span>",
+    "class"
+  ],
+  [
+    "esdoc/out/src/publisher/builder/sourcedocbuilder.js~sourcedocbuilder",
+    "class/src/Publisher/Builder/SourceDocBuilder.js~SourceDocBuilder.html",
+    "<span>SourceDocBuilder</span> <span class=\"search-result-import-path\">esdoc/out/src/Publisher/Builder/SourceDocBuilder.js</span>",
+    "class"
   ],
   [
     "esdoc/out/src/publisher/builder/staticfilebuilder.js~staticfilebuilder",
-    "%40class-src%7CPublisher%7Cbuilder%7CStaticFileBuilder.js~StaticFileBuilder.html",
-    "<span>StaticFileBuilder</span> <span class=\"search-result-import-path\">esdoc/out/src/Publisher/builder/StaticFileBuilder.js</span>"
+    "class/src/Publisher/Builder/StaticFileBuilder.js~StaticFileBuilder.html",
+    "<span>StaticFileBuilder</span> <span class=\"search-result-import-path\">esdoc/out/src/Publisher/Builder/StaticFileBuilder.js</span>",
+    "class"
+  ],
+  [
+    "esdoc/out/src/doc/testdoc.js~testdoc",
+    "class/src/Doc/TestDoc.js~TestDoc.html",
+    "<span>TestDoc</span> <span class=\"search-result-import-path\">esdoc/out/src/Doc/TestDoc.js</span>",
+    "class"
+  ],
+  [
+    "esdoc/out/src/publisher/builder/testdocbuilder.js~testdocbuilder",
+    "class/src/Publisher/Builder/TestDocBuilder.js~TestDocBuilder.html",
+    "<span>TestDocBuilder</span> <span class=\"search-result-import-path\">esdoc/out/src/Publisher/Builder/TestDocBuilder.js</span>",
+    "class"
+  ],
+  [
+    "esdoc/out/src/factory/testdocfactory.js~testdocfactory",
+    "class/src/Factory/TestDocFactory.js~TestDocFactory.html",
+    "<span>TestDocFactory</span> <span class=\"search-result-import-path\">esdoc/out/src/Factory/TestDocFactory.js</span>",
+    "class"
+  ],
+  [
+    "esdoc/out/src/doc/testfiledoc.js~testfiledoc",
+    "class/src/Doc/TestFileDoc.js~TestFileDoc.html",
+    "<span>TestFileDoc</span> <span class=\"search-result-import-path\">esdoc/out/src/Doc/TestFileDoc.js</span>",
+    "class"
   ],
   [
     "esdoc/out/src/doc/typedefdoc.js~typedefdoc",
-    "%40class-src%7CDoc%7CTypedefDoc.js~TypedefDoc.html",
-    "<span>TypedefDoc</span> <span class=\"search-result-import-path\">esdoc/out/src/Doc/TypedefDoc.js</span>"
+    "class/src/Doc/TypedefDoc.js~TypedefDoc.html",
+    "<span>TypedefDoc</span> <span class=\"search-result-import-path\">esdoc/out/src/Doc/TypedefDoc.js</span>",
+    "class"
   ],
   [
     "esdoc/out/src/doc/variabledoc.js~variabledoc",
-    "%40class-src%7CDoc%7CVariableDoc.js~VariableDoc.html",
-    "<span>VariableDoc</span> <span class=\"search-result-import-path\">esdoc/out/src/Doc/VariableDoc.js</span>"
+    "class/src/Doc/VariableDoc.js~VariableDoc.html",
+    "<span>VariableDoc</span> <span class=\"search-result-import-path\">esdoc/out/src/Doc/VariableDoc.js</span>",
+    "class"
+  ],
+  [
+    "esdoc/out/src/publisher/builder/util.js~dateforutc",
+    "function/index.html#static-function-dateForUTC",
+    "<span>dateForUTC</span> <span class=\"search-result-import-path\">esdoc/out/src/Publisher/Builder/util.js</span>",
+    "function"
+  ],
+  [
+    "esdoc/out/src/publisher/builder/util.js~markdown",
+    "function/index.html#static-function-markdown",
+    "<span>markdown</span> <span class=\"search-result-import-path\">esdoc/out/src/Publisher/Builder/util.js</span>",
+    "function"
+  ],
+  [
+    "esdoc/out/src/publisher/publish.js~publish",
+    "function/index.html#static-function-publish",
+    "<span>publish</span> <span class=\"search-result-import-path\">esdoc/out/src/Publisher/publish.js</span>",
+    "function"
+  ],
+  [
+    "esdoc/out/src/publisher/builder/util.js~shorten",
+    "function/index.html#static-function-shorten",
+    "<span>shorten</span> <span class=\"search-result-import-path\">esdoc/out/src/Publisher/Builder/util.js</span>",
+    "function"
+  ],
+  [
+    "abstractdoc src/doc/abstractdoc.js~abstractdoc,abstractdoc",
+    "test-file/src/DocTest/AbstractDocTest.js.html#lineNumber4",
+    "AbstractDoc:",
+    "test"
+  ],
+  [
+    "abstractdoc#@undocument src/doc/abstractdoc.js~abstractdoc#@undocument,abstractdoc#@undocument",
+    "test-file/src/DocTest/AbstractDocTest.js.html#lineNumber15",
+    "AbstractDoc: has undocument tag.",
+    "test"
+  ],
+  [
+    "abstractdoc#@unknown src/doc/abstractdoc.js~abstractdoc#@unknown,abstractdoc#@unknown",
+    "test-file/src/DocTest/AbstractDocTest.js.html#lineNumber7",
+    "AbstractDoc: has unknown tag.",
+    "test"
+  ],
+  [
+    "builtinexternal/ecmascriptexternal.js~array",
+    "external/index.html",
+    "BuiltinExternal/ECMAScriptExternal.js~Array",
+    "external"
+  ],
+  [
+    "builtinexternal/ecmascriptexternal.js~arraybuffer",
+    "external/index.html",
+    "BuiltinExternal/ECMAScriptExternal.js~ArrayBuffer",
+    "external"
+  ],
+  [
+    "builtinexternal/ecmascriptexternal.js~boolean",
+    "external/index.html",
+    "BuiltinExternal/ECMAScriptExternal.js~Boolean",
+    "external"
+  ],
+  [
+    "builtinexternal/ecmascriptexternal.js~dataview",
+    "external/index.html",
+    "BuiltinExternal/ECMAScriptExternal.js~DataView",
+    "external"
+  ],
+  [
+    "builtinexternal/ecmascriptexternal.js~date",
+    "external/index.html",
+    "BuiltinExternal/ECMAScriptExternal.js~Date",
+    "external"
+  ],
+  [
+    "builtinexternal/ecmascriptexternal.js~error",
+    "external/index.html",
+    "BuiltinExternal/ECMAScriptExternal.js~Error",
+    "external"
+  ],
+  [
+    "builtinexternal/ecmascriptexternal.js~evalerror",
+    "external/index.html",
+    "BuiltinExternal/ECMAScriptExternal.js~EvalError",
+    "external"
+  ],
+  [
+    "builtinexternal/ecmascriptexternal.js~float32array",
+    "external/index.html",
+    "BuiltinExternal/ECMAScriptExternal.js~Float32Array",
+    "external"
+  ],
+  [
+    "builtinexternal/ecmascriptexternal.js~float64array",
+    "external/index.html",
+    "BuiltinExternal/ECMAScriptExternal.js~Float64Array",
+    "external"
+  ],
+  [
+    "builtinexternal/ecmascriptexternal.js~function",
+    "external/index.html",
+    "BuiltinExternal/ECMAScriptExternal.js~Function",
+    "external"
+  ],
+  [
+    "builtinexternal/ecmascriptexternal.js~generator",
+    "external/index.html",
+    "BuiltinExternal/ECMAScriptExternal.js~Generator",
+    "external"
+  ],
+  [
+    "builtinexternal/ecmascriptexternal.js~generatorfunction",
+    "external/index.html",
+    "BuiltinExternal/ECMAScriptExternal.js~GeneratorFunction",
+    "external"
+  ],
+  [
+    "builtinexternal/ecmascriptexternal.js~infinity",
+    "external/index.html",
+    "BuiltinExternal/ECMAScriptExternal.js~Infinity",
+    "external"
+  ],
+  [
+    "builtinexternal/ecmascriptexternal.js~int16array",
+    "external/index.html",
+    "BuiltinExternal/ECMAScriptExternal.js~Int16Array",
+    "external"
+  ],
+  [
+    "builtinexternal/ecmascriptexternal.js~int32array",
+    "external/index.html",
+    "BuiltinExternal/ECMAScriptExternal.js~Int32Array",
+    "external"
+  ],
+  [
+    "builtinexternal/ecmascriptexternal.js~int8array",
+    "external/index.html",
+    "BuiltinExternal/ECMAScriptExternal.js~Int8Array",
+    "external"
+  ],
+  [
+    "builtinexternal/ecmascriptexternal.js~internalerror",
+    "external/index.html",
+    "BuiltinExternal/ECMAScriptExternal.js~InternalError",
+    "external"
+  ],
+  [
+    "builtinexternal/ecmascriptexternal.js~json",
+    "external/index.html",
+    "BuiltinExternal/ECMAScriptExternal.js~JSON",
+    "external"
+  ],
+  [
+    "builtinexternal/ecmascriptexternal.js~map",
+    "external/index.html",
+    "BuiltinExternal/ECMAScriptExternal.js~Map",
+    "external"
+  ],
+  [
+    "builtinexternal/ecmascriptexternal.js~nan",
+    "external/index.html",
+    "BuiltinExternal/ECMAScriptExternal.js~NaN",
+    "external"
+  ],
+  [
+    "builtinexternal/ecmascriptexternal.js~number",
+    "external/index.html",
+    "BuiltinExternal/ECMAScriptExternal.js~Number",
+    "external"
+  ],
+  [
+    "builtinexternal/ecmascriptexternal.js~object",
+    "external/index.html",
+    "BuiltinExternal/ECMAScriptExternal.js~Object",
+    "external"
+  ],
+  [
+    "builtinexternal/ecmascriptexternal.js~promise",
+    "external/index.html",
+    "BuiltinExternal/ECMAScriptExternal.js~Promise",
+    "external"
+  ],
+  [
+    "builtinexternal/ecmascriptexternal.js~proxy",
+    "external/index.html",
+    "BuiltinExternal/ECMAScriptExternal.js~Proxy",
+    "external"
+  ],
+  [
+    "builtinexternal/ecmascriptexternal.js~rangeerror",
+    "external/index.html",
+    "BuiltinExternal/ECMAScriptExternal.js~RangeError",
+    "external"
+  ],
+  [
+    "builtinexternal/ecmascriptexternal.js~referenceerror",
+    "external/index.html",
+    "BuiltinExternal/ECMAScriptExternal.js~ReferenceError",
+    "external"
+  ],
+  [
+    "builtinexternal/ecmascriptexternal.js~reflect",
+    "external/index.html",
+    "BuiltinExternal/ECMAScriptExternal.js~Reflect",
+    "external"
+  ],
+  [
+    "builtinexternal/ecmascriptexternal.js~regexp",
+    "external/index.html",
+    "BuiltinExternal/ECMAScriptExternal.js~RegExp",
+    "external"
+  ],
+  [
+    "builtinexternal/ecmascriptexternal.js~set",
+    "external/index.html",
+    "BuiltinExternal/ECMAScriptExternal.js~Set",
+    "external"
+  ],
+  [
+    "builtinexternal/ecmascriptexternal.js~string",
+    "external/index.html",
+    "BuiltinExternal/ECMAScriptExternal.js~String",
+    "external"
+  ],
+  [
+    "builtinexternal/ecmascriptexternal.js~symbol",
+    "external/index.html",
+    "BuiltinExternal/ECMAScriptExternal.js~Symbol",
+    "external"
+  ],
+  [
+    "builtinexternal/ecmascriptexternal.js~syntaxerror",
+    "external/index.html",
+    "BuiltinExternal/ECMAScriptExternal.js~SyntaxError",
+    "external"
+  ],
+  [
+    "builtinexternal/ecmascriptexternal.js~typeerror",
+    "external/index.html",
+    "BuiltinExternal/ECMAScriptExternal.js~TypeError",
+    "external"
+  ],
+  [
+    "builtinexternal/ecmascriptexternal.js~urierror",
+    "external/index.html",
+    "BuiltinExternal/ECMAScriptExternal.js~URIError",
+    "external"
+  ],
+  [
+    "builtinexternal/ecmascriptexternal.js~uint16array",
+    "external/index.html",
+    "BuiltinExternal/ECMAScriptExternal.js~Uint16Array",
+    "external"
+  ],
+  [
+    "builtinexternal/ecmascriptexternal.js~uint32array",
+    "external/index.html",
+    "BuiltinExternal/ECMAScriptExternal.js~Uint32Array",
+    "external"
+  ],
+  [
+    "builtinexternal/ecmascriptexternal.js~uint8array",
+    "external/index.html",
+    "BuiltinExternal/ECMAScriptExternal.js~Uint8Array",
+    "external"
+  ],
+  [
+    "builtinexternal/ecmascriptexternal.js~uint8clampedarray",
+    "external/index.html",
+    "BuiltinExternal/ECMAScriptExternal.js~Uint8ClampedArray",
+    "external"
+  ],
+  [
+    "builtinexternal/ecmascriptexternal.js~weakmap",
+    "external/index.html",
+    "BuiltinExternal/ECMAScriptExternal.js~WeakMap",
+    "external"
+  ],
+  [
+    "builtinexternal/ecmascriptexternal.js~weakset",
+    "external/index.html",
+    "BuiltinExternal/ECMAScriptExternal.js~WeakSet",
+    "external"
+  ],
+  [
+    "builtinexternal/ecmascriptexternal.js~boolean",
+    "external/index.html",
+    "BuiltinExternal/ECMAScriptExternal.js~boolean",
+    "external"
+  ],
+  [
+    "builtinexternal/ecmascriptexternal.js~function",
+    "external/index.html",
+    "BuiltinExternal/ECMAScriptExternal.js~function",
+    "external"
+  ],
+  [
+    "builtinexternal/ecmascriptexternal.js~null",
+    "external/index.html",
+    "BuiltinExternal/ECMAScriptExternal.js~null",
+    "external"
+  ],
+  [
+    "builtinexternal/ecmascriptexternal.js~number",
+    "external/index.html",
+    "BuiltinExternal/ECMAScriptExternal.js~number",
+    "external"
+  ],
+  [
+    "builtinexternal/ecmascriptexternal.js~object",
+    "external/index.html",
+    "BuiltinExternal/ECMAScriptExternal.js~object",
+    "external"
+  ],
+  [
+    "builtinexternal/ecmascriptexternal.js~string",
+    "external/index.html",
+    "BuiltinExternal/ECMAScriptExternal.js~string",
+    "external"
+  ],
+  [
+    "builtinexternal/ecmascriptexternal.js~undefined",
+    "external/index.html",
+    "BuiltinExternal/ECMAScriptExternal.js~undefined",
+    "external"
+  ],
+  [
+    "builtinexternal/webapiexternal.js~canvasrenderingcontext2d",
+    "external/index.html",
+    "BuiltinExternal/WebAPIExternal.js~CanvasRenderingContext2D",
+    "external"
+  ],
+  [
+    "builtinexternal/webapiexternal.js~documentfragment",
+    "external/index.html",
+    "BuiltinExternal/WebAPIExternal.js~DocumentFragment",
+    "external"
+  ],
+  [
+    "builtinexternal/webapiexternal.js~element",
+    "external/index.html",
+    "BuiltinExternal/WebAPIExternal.js~Element",
+    "external"
+  ],
+  [
+    "builtinexternal/webapiexternal.js~event",
+    "external/index.html",
+    "BuiltinExternal/WebAPIExternal.js~Event",
+    "external"
+  ],
+  [
+    "builtinexternal/webapiexternal.js~node",
+    "external/index.html",
+    "BuiltinExternal/WebAPIExternal.js~Node",
+    "external"
+  ],
+  [
+    "builtinexternal/webapiexternal.js~nodelist",
+    "external/index.html",
+    "BuiltinExternal/WebAPIExternal.js~NodeList",
+    "external"
+  ],
+  [
+    "builtinexternal/webapiexternal.js~xmlhttprequest",
+    "external/index.html",
+    "BuiltinExternal/WebAPIExternal.js~XMLHttpRequest",
+    "external"
+  ],
+  [
+    "commentparser src/parser/commentparser.js~commentparser,commentparser",
+    "test-file/src/UnitTest/CommentParserTest.js.html#lineNumber5",
+    "CommentParser:",
+    "test"
+  ],
+  [
+    "commentparser.parse src/parser/commentparser.js~commentparser.parse,commentparser.parse",
+    "test-file/src/UnitTest/CommentParserTest.js.html#lineNumber7",
+    "CommentParser: can parse doc comment.",
+    "test"
+  ],
+  [
+    "commentparser.parse src/parser/commentparser.js~commentparser.parse,commentparser.parse",
+    "test-file/src/UnitTest/CommentParserTest.js.html#lineNumber39",
+    "CommentParser: return empty with line comment.",
+    "test"
+  ],
+  [
+    "commentparser.isesdoc src/parser/commentparser.js~commentparser.isesdoc,commentparser.isesdoc",
+    "test-file/src/UnitTest/CommentParserTest.js.html#lineNumber29",
+    "CommentParser: return empty with non doc comment.",
+    "test"
+  ],
+  [
+    "coveragebuilder src/publisher/builder/coveragebuilder.js~coveragebuilder,coveragebuilder",
+    "test-file/src/BuilderTest/CoverageDocTest.js.html#lineNumber5",
+    "Coverage:",
+    "test"
+  ],
+  [
+    "coveragebuilder#exec src/publisher/builder/coveragebuilder.js~coveragebuilder#exec,coveragebuilder#exec",
+    "test-file/src/BuilderTest/CoverageDocTest.js.html#lineNumber8",
+    "Coverage: has coverage.json",
+    "test"
+  ],
+  [
+    "docresolver src/publisher/builder/docresolver.js~docresolver,docresolver",
+    "test-file/src/BuilderTest/DocResolverTest.js.html#lineNumber4",
+    "DocResolver:",
+    "test"
+  ],
+  [
+    "docresolver#_resolveignore src/publisher/builder/docresolver.js~docresolver#_resolveignore,docresolver#_resolveignore",
+    "test-file/src/BuilderTest/DocResolverTest.js.html#lineNumber9",
+    "DocResolver: does not ignore identifier that does not have @ignore.",
+    "test"
+  ],
+  [
+    "docresolver#_resolveignore src/publisher/builder/docresolver.js~docresolver#_resolveignore,docresolver#_resolveignore",
+    "test-file/src/BuilderTest/DocResolverTest.js.html#lineNumber24",
+    "DocResolver: ignores identifier that have @ignore.",
+    "test"
+  ],
+  [
+    "esdoccli src/esdoccli.js~esdoccli,esdoccli",
+    "test-file/src/UnitTest/ESDocCLITest.js.html#lineNumber7",
+    "ESDocCLI:",
+    "test"
+  ],
+  [
+    "esdoccli#exec esdoccli#_createconfigfromjsonfile src/esdoccli.js~esdoccli#exec,esdoccli#exec src/esdoccli.js~esdoccli#_createconfigfromjsonfile,esdoccli#_createconfigfromjsonfile",
+    "test-file/src/UnitTest/ESDocCLITest.js.html#lineNumber13",
+    "ESDocCLI: can execute with config file.",
+    "test"
+  ],
+  [
+    "esdoccli#exec esdoccli#_createconfigfrompath src/esdoccli.js~esdoccli#exec,esdoccli#exec src/esdoccli.js~esdoccli#_createconfigfrompath,esdoccli#_createconfigfrompath",
+    "test-file/src/UnitTest/ESDocCLITest.js.html#lineNumber26",
+    "ESDocCLI: can execute with directory path",
+    "test"
+  ],
+  [
+    "",
+    "test-file/src/BuilderTest/TestDocTest.js.html#lineNumber31",
+    "Identifier to Test:",
+    "test"
+  ],
+  [
+    "classdocbuilder src/publisher/builder/classdocbuilder.js~classdocbuilder,classdocbuilder",
+    "test-file/src/BuilderTest/TestDocTest.js.html#lineNumber33",
+    "Identifier to Test: ClassDocBuilder:",
+    "test"
+  ],
+  [
+    "classdocbuilder#_buildclassdoc src/publisher/builder/classdocbuilder.js~classdocbuilder#_buildclassdoc,classdocbuilder#_buildclassdoc",
+    "test-file/src/BuilderTest/TestDocTest.js.html#lineNumber37",
+    "Identifier to Test: ClassDocBuilder: has test",
+    "test"
+  ],
+  [
+    "identifiersdocbuilder src/publisher/builder/identifiersdocbuilder.js~identifiersdocbuilder,identifiersdocbuilder",
+    "test-file/src/BuilderTest/IdentifiersDocTest.js.html#lineNumber4",
+    "Identifiers:",
+    "test"
+  ],
+  [
+    "identifiersdocbuilder#_buildidentifierdoc src/publisher/builder/identifiersdocbuilder.js~identifiersdocbuilder#_buildidentifierdoc,identifiersdocbuilder#_buildidentifierdoc",
+    "test-file/src/BuilderTest/IdentifiersDocTest.js.html#lineNumber8",
+    "Identifiers: has class summary.",
+    "test"
+  ],
+  [
+    "identifiersdocbuilder#_buildidentifierdoc src/publisher/builder/identifiersdocbuilder.js~identifiersdocbuilder#_buildidentifierdoc,identifiersdocbuilder#_buildidentifierdoc",
+    "test-file/src/BuilderTest/IdentifiersDocTest.js.html#lineNumber23",
+    "Identifiers: has function summary.",
+    "test"
+  ],
+  [
+    "identifiersdocbuilder#_buildidentifierdoc src/publisher/builder/identifiersdocbuilder.js~identifiersdocbuilder#_buildidentifierdoc,identifiersdocbuilder#_buildidentifierdoc",
+    "test-file/src/BuilderTest/IdentifiersDocTest.js.html#lineNumber16",
+    "Identifiers: has interface summary.",
+    "test"
+  ],
+  [
+    "identifiersdocbuilder#_buildidentifierdoc src/publisher/builder/identifiersdocbuilder.js~identifiersdocbuilder#_buildidentifierdoc,identifiersdocbuilder#_buildidentifierdoc",
+    "test-file/src/BuilderTest/IdentifiersDocTest.js.html#lineNumber39",
+    "Identifiers: has typedef summary.",
+    "test"
+  ],
+  [
+    "identifiersdocbuilder#_buildidentifierdoc src/publisher/builder/identifiersdocbuilder.js~identifiersdocbuilder#_buildidentifierdoc,identifiersdocbuilder#_buildidentifierdoc",
+    "test-file/src/BuilderTest/IdentifiersDocTest.js.html#lineNumber31",
+    "Identifiers: has variable summary.",
+    "test"
+  ],
+  [
+    "indexdocbuilder src/publisher/builder/indexdocbuilder.js~indexdocbuilder,indexdocbuilder",
+    "test-file/src/BuilderTest/IndexDocTest.js.html#lineNumber4",
+    "Index:",
+    "test"
+  ],
+  [
+    "indexdocbuilder#_buildindexdoc src/publisher/builder/indexdocbuilder.js~indexdocbuilder#_buildindexdoc,indexdocbuilder#_buildindexdoc",
+    "test-file/src/BuilderTest/IndexDocTest.js.html#lineNumber8",
+    "Index: has README.md",
+    "test"
+  ],
+  [
+    "indexdocbuilder#_buildindexdoc src/publisher/builder/indexdocbuilder.js~indexdocbuilder#_buildindexdoc,indexdocbuilder#_buildindexdoc",
+    "test-file/src/BuilderTest/IndexDocTest.js.html#lineNumber13",
+    "Index: has coverage badge",
+    "test"
+  ],
+  [
+    "filedocbuilder src/publisher/builder/filedocbuilder.js~filedocbuilder,filedocbuilder",
+    "test-file/src/BuilderTest/FileDocTest.js.html#lineNumber4",
+    "MyClass.js.html:",
+    "test"
+  ],
+  [
+    "filedocbuilder#exec filedocbuilder#_buildfiledoc src/publisher/builder/filedocbuilder.js~filedocbuilder#exec,filedocbuilder#exec src/publisher/builder/filedocbuilder.js~filedocbuilder#_buildfiledoc,filedocbuilder#_buildfiledoc",
+    "test-file/src/BuilderTest/FileDocTest.js.html#lineNumber11",
+    "MyClass.js.html: has source code.",
+    "test"
+  ],
+  [
+    "classdocbuilder src/publisher/builder/classdocbuilder.js~classdocbuilder,classdocbuilder",
+    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber4",
+    "MyClass1:",
+    "test"
+  ],
+  [
+    "classdocbuilder#_buildclassdoc src/publisher/builder/classdocbuilder.js~classdocbuilder#_buildclassdoc,classdocbuilder#_buildclassdoc",
+    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber316",
+    "MyClass1: has constructor detail.",
+    "test"
+  ],
+  [
+    "classdocbuilder#_buildclassdoc src/publisher/builder/classdocbuilder.js~classdocbuilder#_buildclassdoc,classdocbuilder#_buildclassdoc",
+    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber129",
+    "MyClass1: has constructor summary.",
+    "test"
+  ],
+  [
+    "docbuilder#_gettitle src/publisher/builder/docbuilder.js~docbuilder#_gettitle,docbuilder#_gettitle",
+    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber8",
+    "MyClass1: has document title",
+    "test"
+  ],
+  [
+    "classdocbuilder#_buildclassdoc src/publisher/builder/classdocbuilder.js~classdocbuilder#_buildclassdoc,classdocbuilder#_buildclassdoc",
+    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber13",
+    "MyClass1: has header notice.",
+    "test"
+  ],
+  [
+    "classdocbuilder#_buildinheritedsummaryhtml src/publisher/builder/classdocbuilder.js~classdocbuilder#_buildinheritedsummaryhtml,classdocbuilder#_buildinheritedsummaryhtml",
+    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber214",
+    "MyClass1: has inherited summary.",
+    "test"
+  ],
+  [
+    "classdocbuilder#_buildclassdoc src/publisher/builder/classdocbuilder.js~classdocbuilder#_buildclassdoc,classdocbuilder#_buildclassdoc",
+    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber331",
+    "MyClass1: has member detail.",
+    "test"
+  ],
+  [
+    "classdocbuilder#_buildclassdoc src/publisher/builder/classdocbuilder.js~classdocbuilder#_buildclassdoc,classdocbuilder#_buildclassdoc",
+    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber139",
+    "MyClass1: has member summary.",
+    "test"
+  ],
+  [
+    "classdocbuilder#_buildclassdoc src/publisher/builder/classdocbuilder.js~classdocbuilder#_buildclassdoc,classdocbuilder#_buildclassdoc",
+    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber367",
+    "MyClass1: has method detail.",
+    "test"
+  ],
+  [
+    "classdocbuilder#_buildclassdoc src/publisher/builder/classdocbuilder.js~classdocbuilder#_buildclassdoc,classdocbuilder#_buildclassdoc",
+    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber184",
+    "MyClass1: has method summary.",
+    "test"
+  ],
+  [
+    "classdocbuilder#_buildclassdoc classdocbuilder#_buildextendschainhtml classdocbuilder#_buildindirectsubclasshtml classdocbuilder#_builddirectsubclasshtml src/publisher/builder/classdocbuilder.js~classdocbuilder#_buildclassdoc,classdocbuilder#_buildclassdoc src/publisher/builder/classdocbuilder.js~classdocbuilder#_buildextendschainhtml,classdocbuilder#_buildextendschainhtml src/publisher/builder/classdocbuilder.js~classdocbuilder#_buildindirectsubclasshtml,classdocbuilder#_buildindirectsubclasshtml src/publisher/builder/classdocbuilder.js~classdocbuilder#_builddirectsubclasshtml,classdocbuilder#_builddirectsubclasshtml",
+    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber31",
+    "MyClass1: has self detail.",
+    "test"
+  ],
+  [
+    "classdocbuilder#_buildclassdoc src/publisher/builder/classdocbuilder.js~classdocbuilder#_buildclassdoc,classdocbuilder#_buildclassdoc",
+    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber272",
+    "MyClass1: has static member detail.",
+    "test"
+  ],
+  [
+    "classdocbuilder#_buildclassdoc src/publisher/builder/classdocbuilder.js~classdocbuilder#_buildclassdoc,classdocbuilder#_buildclassdoc",
+    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber84",
+    "MyClass1: has static member summary.",
+    "test"
+  ],
+  [
+    "classdocbuilder#_buildclassdoc src/publisher/builder/classdocbuilder.js~classdocbuilder#_buildclassdoc,classdocbuilder#_buildclassdoc",
+    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber297",
+    "MyClass1: has static method detail.",
+    "test"
+  ],
+  [
+    "classdocbuilder#_buildclassdoc src/publisher/builder/classdocbuilder.js~classdocbuilder#_buildclassdoc,classdocbuilder#_buildclassdoc",
+    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber110",
+    "MyClass1: has static method summary.",
+    "test"
+  ],
+  [
+    "singledocbuilder src/publisher/builder/singledocbuilder.js~singledocbuilder,singledocbuilder",
+    "test-file/src/BuilderTest/FunctionDocTest.js.html#lineNumber4",
+    "MyFunction:",
+    "test"
+  ],
+  [
+    "singledocbuilder#_buildsingledoc src/publisher/builder/singledocbuilder.js~singledocbuilder#_buildsingledoc,singledocbuilder#_buildsingledoc",
+    "test-file/src/BuilderTest/FunctionDocTest.js.html#lineNumber24",
+    "MyFunction: has detail.",
+    "test"
+  ],
+  [
+    "singledocbuilder#_buildsingledoc src/publisher/builder/singledocbuilder.js~singledocbuilder#_buildsingledoc,singledocbuilder#_buildsingledoc",
+    "test-file/src/BuilderTest/FunctionDocTest.js.html#lineNumber8",
+    "MyFunction: has summary.",
+    "test"
+  ],
+  [
+    "singledocbuilder src/publisher/builder/singledocbuilder.js~singledocbuilder,singledocbuilder",
+    "test-file/src/BuilderTest/TypedefDocTest.js.html#lineNumber4",
+    "MyTypedef:",
+    "test"
+  ],
+  [
+    "singledocbuilder#_buildsingledoc src/publisher/builder/singledocbuilder.js~singledocbuilder#_buildsingledoc,singledocbuilder#_buildsingledoc",
+    "test-file/src/BuilderTest/TypedefDocTest.js.html#lineNumber16",
+    "MyTypedef: has detail.",
+    "test"
+  ],
+  [
+    "singledocbuilder#_buildsingledoc src/publisher/builder/singledocbuilder.js~singledocbuilder#_buildsingledoc,singledocbuilder#_buildsingledoc",
+    "test-file/src/BuilderTest/TypedefDocTest.js.html#lineNumber8",
+    "MyTypedef: has summary.",
+    "test"
+  ],
+  [
+    "singledocbuilder src/publisher/builder/singledocbuilder.js~singledocbuilder,singledocbuilder",
+    "test-file/src/BuilderTest/VariableDocTest.js.html#lineNumber4",
+    "MyVariable:",
+    "test"
+  ],
+  [
+    "singledocbuilder#_buildsingledoc src/publisher/builder/singledocbuilder.js~singledocbuilder#_buildsingledoc,singledocbuilder#_buildsingledoc",
+    "test-file/src/BuilderTest/VariableDocTest.js.html#lineNumber19",
+    "MyVariable: has detail.",
+    "test"
+  ],
+  [
+    "singledocbuilder#_buildsingledoc src/publisher/builder/singledocbuilder.js~singledocbuilder#_buildsingledoc,singledocbuilder#_buildsingledoc",
+    "test-file/src/BuilderTest/VariableDocTest.js.html#lineNumber8",
+    "MyVariable: has summary.",
+    "test"
+  ],
+  [
+    "docbuilder#_buildnavdoc src/publisher/builder/docbuilder.js~docbuilder#_buildnavdoc,docbuilder#_buildnavdoc",
+    "test-file/src/BuilderTest/NavDocTest.js.html#lineNumber4",
+    "Nav:",
+    "test"
+  ],
+  [
+    "docbuilder#_buildnavdoc src/publisher/builder/docbuilder.js~docbuilder#_buildnavdoc,docbuilder#_buildnavdoc",
+    "test-file/src/BuilderTest/NavDocTest.js.html#lineNumber8",
+    "Nav: has class nav.",
+    "test"
+  ],
+  [
+    "docbuilder#_buildnavdoc src/publisher/builder/docbuilder.js~docbuilder#_buildnavdoc,docbuilder#_buildnavdoc",
+    "test-file/src/BuilderTest/NavDocTest.js.html#lineNumber48",
+    "Nav: has external nav.",
+    "test"
+  ],
+  [
+    "docbuilder#_buildnavdoc src/publisher/builder/docbuilder.js~docbuilder#_buildnavdoc,docbuilder#_buildnavdoc",
+    "test-file/src/BuilderTest/NavDocTest.js.html#lineNumber24",
+    "Nav: has function nav.",
+    "test"
+  ],
+  [
+    "docbuilder#_buildnavdoc src/publisher/builder/docbuilder.js~docbuilder#_buildnavdoc,docbuilder#_buildnavdoc",
+    "test-file/src/BuilderTest/NavDocTest.js.html#lineNumber16",
+    "Nav: has interface nav.",
+    "test"
+  ],
+  [
+    "docbuilder#_buildnavdoc src/publisher/builder/docbuilder.js~docbuilder#_buildnavdoc,docbuilder#_buildnavdoc",
+    "test-file/src/BuilderTest/NavDocTest.js.html#lineNumber40",
+    "Nav: has typedef nav.",
+    "test"
+  ],
+  [
+    "docbuilder#_buildnavdoc src/publisher/builder/docbuilder.js~docbuilder#_buildnavdoc,docbuilder#_buildnavdoc",
+    "test-file/src/BuilderTest/NavDocTest.js.html#lineNumber32",
+    "Nav: has variable nav.",
+    "test"
+  ],
+  [
+    "paramparser src/parser/paramparser.js~paramparser,paramparser",
+    "test-file/src/UnitTest/ParamParserTest.js.html#lineNumber5",
+    "ParamParser:",
+    "test"
+  ],
+  [
+    "paramparser.parseparamvalue src/parser/paramparser.js~paramparser.parseparamvalue,paramparser.parseparamvalue",
+    "test-file/src/UnitTest/ParamParserTest.js.html#lineNumber42",
+    "ParamParser: parse param value with complex",
+    "test"
+  ],
+  [
+    "paramparser.parseparamvalue src/parser/paramparser.js~paramparser.parseparamvalue,paramparser.parseparamvalue",
+    "test-file/src/UnitTest/ParamParserTest.js.html#lineNumber17",
+    "ParamParser: parse param value with hyphen prefix.",
+    "test"
+  ],
+  [
+    "paramparser.parseparamvalue src/parser/paramparser.js~paramparser.parseparamvalue,paramparser.parseparamvalue",
+    "test-file/src/UnitTest/ParamParserTest.js.html#lineNumber34",
+    "ParamParser: parse param value without param desc",
+    "test"
+  ],
+  [
+    "paramparser.parseparamvalue src/parser/paramparser.js~paramparser.parseparamvalue,paramparser.parseparamvalue",
+    "test-file/src/UnitTest/ParamParserTest.js.html#lineNumber26",
+    "ParamParser: parse param value without param name",
+    "test"
+  ],
+  [
+    "paramparser.parseparamvalue src/parser/paramparser.js~paramparser.parseparamvalue,paramparser.parseparamvalue",
+    "test-file/src/UnitTest/ParamParserTest.js.html#lineNumber8",
+    "ParamParser: parse param value.",
+    "test"
+  ],
+  [
+    "paramparser.parseparam src/parser/paramparser.js~paramparser.parseparam,paramparser.parseparam",
+    "test-file/src/UnitTest/ParamParserTest.js.html#lineNumber66",
+    "ParamParser: parse param with complex.",
+    "test"
+  ],
+  [
+    "paramparser.parseparam src/parser/paramparser.js~paramparser.parseparam,paramparser.parseparam",
+    "test-file/src/UnitTest/ParamParserTest.js.html#lineNumber81",
+    "ParamParser: parse param with complex.",
+    "test"
+  ],
+  [
+    "paramparser.parseparam src/parser/paramparser.js~paramparser.parseparam,paramparser.parseparam",
+    "test-file/src/UnitTest/ParamParserTest.js.html#lineNumber98",
+    "ParamParser: parse param with complex.",
+    "test"
+  ],
+  [
+    "paramparser.parseparam src/parser/paramparser.js~paramparser.parseparam,paramparser.parseparam",
+    "test-file/src/UnitTest/ParamParserTest.js.html#lineNumber51",
+    "ParamParser: parse param.",
+    "test"
+  ],
+  [
+    "testdocbuilder src/publisher/builder/testdocbuilder.js~testdocbuilder,testdocbuilder",
+    "test-file/src/BuilderTest/TestDocTest.js.html#lineNumber4",
+    "TestDocBuilder:",
+    "test"
+  ],
+  [
+    "testdocbuilder#_buildtestdescribedochtml src/publisher/builder/testdocbuilder.js~testdocbuilder#_buildtestdescribedochtml,testdocbuilder#_buildtestdescribedochtml",
+    "test-file/src/BuilderTest/TestDocTest.js.html#lineNumber8",
+    "TestDocBuilder: has test description.",
+    "test"
+  ],
+  [
+    "testdocbuilder#_buildtestdescribedochtml src/publisher/builder/testdocbuilder.js~testdocbuilder#_buildtestdescribedochtml,testdocbuilder#_buildtestdescribedochtml",
+    "test-file/src/BuilderTest/TestDocTest.js.html#lineNumber22",
+    "TestDocBuilder: has test target.",
+    "test"
+  ],
+  [
+    "testdocfactory#_pushformocha src/factory/testdocfactory.js~testdocfactory#_pushformocha,testdocfactory#_pushformocha",
+    "test-file/src/BuilderTest/TestDocTest.js.html#lineNumber45",
+    "Use describe style mocha interface",
+    "test"
+  ],
+  [
+    "",
+    "test-file/src/BuilderTest/TestDocTest.js.html#lineNumber49",
+    "Use describe style mocha interface Nested describe",
+    "test"
+  ],
+  [
+    "",
+    "test-file/src/BuilderTest/TestDocTest.js.html#lineNumber50",
+    "Use describe style mocha interface Nested describe Nested it in describe",
+    "test"
+  ],
+  [
+    "",
+    "test-file/src/BuilderTest/TestDocTest.js.html#lineNumber54",
+    "Use describe style mocha interface Use context style mocha interface",
+    "test"
+  ],
+  [
+    "",
+    "test-file/src/BuilderTest/TestDocTest.js.html#lineNumber55",
+    "Use describe style mocha interface Use context style mocha interface Nested it in context",
+    "test"
+  ],
+  [
+    "",
+    "test-file/src/BuilderTest/TestDocTest.js.html#lineNumber46",
+    "Use describe style mocha interface Use it style mocha interface",
+    "test"
+  ],
+  [
+    "testdocfactory#_pushformocha src/factory/testdocfactory.js~testdocfactory#_pushformocha,testdocfactory#_pushformocha",
+    "test-file/src/BuilderTest/TestDocTest.js.html#lineNumber63",
+    "Use suite style mocha interface",
+    "test"
+  ],
+  [
+    "",
+    "test-file/src/BuilderTest/TestDocTest.js.html#lineNumber67",
+    "Use suite style mocha interface Nested suite",
+    "test"
+  ],
+  [
+    "",
+    "test-file/src/BuilderTest/TestDocTest.js.html#lineNumber68",
+    "Use suite style mocha interface Nested suite Nested test",
+    "test"
+  ],
+  [
+    "",
+    "test-file/src/BuilderTest/TestDocTest.js.html#lineNumber64",
+    "Use suite style mocha interface Use test style mocha interface",
+    "test"
+  ],
+  [
+    "src/buildertest/classdoctest.js",
+    "test-file/src/BuilderTest/ClassDocTest.js.html",
+    "src/BuilderTest/ClassDocTest.js",
+    "testFile"
+  ],
+  [
+    "src/buildertest/coveragedoctest.js",
+    "test-file/src/BuilderTest/CoverageDocTest.js.html",
+    "src/BuilderTest/CoverageDocTest.js",
+    "testFile"
+  ],
+  [
+    "src/buildertest/docresolvertest.js",
+    "test-file/src/BuilderTest/DocResolverTest.js.html",
+    "src/BuilderTest/DocResolverTest.js",
+    "testFile"
+  ],
+  [
+    "src/buildertest/filedoctest.js",
+    "test-file/src/BuilderTest/FileDocTest.js.html",
+    "src/BuilderTest/FileDocTest.js",
+    "testFile"
+  ],
+  [
+    "src/buildertest/functiondoctest.js",
+    "test-file/src/BuilderTest/FunctionDocTest.js.html",
+    "src/BuilderTest/FunctionDocTest.js",
+    "testFile"
+  ],
+  [
+    "src/buildertest/identifiersdoctest.js",
+    "test-file/src/BuilderTest/IdentifiersDocTest.js.html",
+    "src/BuilderTest/IdentifiersDocTest.js",
+    "testFile"
+  ],
+  [
+    "src/buildertest/indexdoctest.js",
+    "test-file/src/BuilderTest/IndexDocTest.js.html",
+    "src/BuilderTest/IndexDocTest.js",
+    "testFile"
+  ],
+  [
+    "src/buildertest/navdoctest.js",
+    "test-file/src/BuilderTest/NavDocTest.js.html",
+    "src/BuilderTest/NavDocTest.js",
+    "testFile"
+  ],
+  [
+    "src/buildertest/testdoctest.js",
+    "test-file/src/BuilderTest/TestDocTest.js.html",
+    "src/BuilderTest/TestDocTest.js",
+    "testFile"
+  ],
+  [
+    "src/buildertest/typedefdoctest.js",
+    "test-file/src/BuilderTest/TypedefDocTest.js.html",
+    "src/BuilderTest/TypedefDocTest.js",
+    "testFile"
+  ],
+  [
+    "src/buildertest/variabledoctest.js",
+    "test-file/src/BuilderTest/VariableDocTest.js.html",
+    "src/BuilderTest/VariableDocTest.js",
+    "testFile"
   ],
   [
     "src/doc/abstractdoc.js",
-    "%40file-src%7CDoc%7CAbstractDoc.js.html",
-    "src/Doc/AbstractDoc.js"
+    "file/src/Doc/AbstractDoc.js.html",
+    "src/Doc/AbstractDoc.js",
+    "file"
   ],
   [
     "src/doc/abstractdoc.js~abstractdoc#@abstract",
-    "%40class-src%7CDoc%7CAbstractDoc.js~AbstractDoc.html#instance-method-@abstract",
-    "src/Doc/AbstractDoc.js~AbstractDoc#@abstract"
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@abstract",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@abstract",
+    "method"
   ],
   [
     "src/doc/abstractdoc.js~abstractdoc#@access",
-    "%40class-src%7CDoc%7CAbstractDoc.js~AbstractDoc.html#instance-method-@access",
-    "src/Doc/AbstractDoc.js~AbstractDoc#@access"
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@access",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@access",
+    "method"
   ],
   [
     "src/doc/abstractdoc.js~abstractdoc#@content",
-    "%40class-src%7CDoc%7CAbstractDoc.js~AbstractDoc.html#instance-method-@content",
-    "src/Doc/AbstractDoc.js~AbstractDoc#@content"
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@content",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@content",
+    "method"
   ],
   [
     "src/doc/abstractdoc.js~abstractdoc#@deprecated",
-    "%40class-src%7CDoc%7CAbstractDoc.js~AbstractDoc.html#instance-method-@deprecated",
-    "src/Doc/AbstractDoc.js~AbstractDoc#@deprecated"
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@deprecated",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@deprecated",
+    "method"
   ],
   [
     "src/doc/abstractdoc.js~abstractdoc#@desc",
-    "%40class-src%7CDoc%7CAbstractDoc.js~AbstractDoc.html#instance-method-@desc",
-    "src/Doc/AbstractDoc.js~AbstractDoc#@desc"
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@desc",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@desc",
+    "method"
   ],
   [
     "src/doc/abstractdoc.js~abstractdoc#@emits",
-    "%40class-src%7CDoc%7CAbstractDoc.js~AbstractDoc.html#instance-method-@emits",
-    "src/Doc/AbstractDoc.js~AbstractDoc#@emits"
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@emits",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@emits",
+    "method"
   ],
   [
     "src/doc/abstractdoc.js~abstractdoc#@example",
-    "%40class-src%7CDoc%7CAbstractDoc.js~AbstractDoc.html#instance-method-@example",
-    "src/Doc/AbstractDoc.js~AbstractDoc#@example"
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@example",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@example",
+    "method"
   ],
   [
     "src/doc/abstractdoc.js~abstractdoc#@experimental",
-    "%40class-src%7CDoc%7CAbstractDoc.js~AbstractDoc.html#instance-method-@experimental",
-    "src/Doc/AbstractDoc.js~AbstractDoc#@experimental"
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@experimental",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@experimental",
+    "method"
   ],
   [
     "src/doc/abstractdoc.js~abstractdoc#@export",
-    "%40class-src%7CDoc%7CAbstractDoc.js~AbstractDoc.html#instance-method-@export",
-    "src/Doc/AbstractDoc.js~AbstractDoc#@export"
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@export",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@export",
+    "method"
   ],
   [
     "src/doc/abstractdoc.js~abstractdoc#@generator",
-    "%40class-src%7CDoc%7CAbstractDoc.js~AbstractDoc.html#instance-method-@generator",
-    "src/Doc/AbstractDoc.js~AbstractDoc#@generator"
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@generator",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@generator",
+    "method"
   ],
   [
     "src/doc/abstractdoc.js~abstractdoc#@ignore",
-    "%40class-src%7CDoc%7CAbstractDoc.js~AbstractDoc.html#instance-method-@ignore",
-    "src/Doc/AbstractDoc.js~AbstractDoc#@ignore"
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@ignore",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@ignore",
+    "method"
   ],
   [
     "src/doc/abstractdoc.js~abstractdoc#@importpath",
-    "%40class-src%7CDoc%7CAbstractDoc.js~AbstractDoc.html#instance-method-@importPath",
-    "src/Doc/AbstractDoc.js~AbstractDoc#@importPath"
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@importPath",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@importPath",
+    "method"
   ],
   [
     "src/doc/abstractdoc.js~abstractdoc#@importstyle",
-    "%40class-src%7CDoc%7CAbstractDoc.js~AbstractDoc.html#instance-method-@importStyle",
-    "src/Doc/AbstractDoc.js~AbstractDoc#@importStyle"
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@importStyle",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@importStyle",
+    "method"
   ],
   [
     "src/doc/abstractdoc.js~abstractdoc#@kind",
-    "%40class-src%7CDoc%7CAbstractDoc.js~AbstractDoc.html#instance-method-@kind",
-    "src/Doc/AbstractDoc.js~AbstractDoc#@kind"
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@kind",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@kind",
+    "method"
   ],
   [
     "src/doc/abstractdoc.js~abstractdoc#@linenumber",
-    "%40class-src%7CDoc%7CAbstractDoc.js~AbstractDoc.html#instance-method-@lineNumber",
-    "src/Doc/AbstractDoc.js~AbstractDoc#@lineNumber"
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@lineNumber",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@lineNumber",
+    "method"
   ],
   [
     "src/doc/abstractdoc.js~abstractdoc#@listens",
-    "%40class-src%7CDoc%7CAbstractDoc.js~AbstractDoc.html#instance-method-@listens",
-    "src/Doc/AbstractDoc.js~AbstractDoc#@listens"
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@listens",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@listens",
+    "method"
   ],
   [
     "src/doc/abstractdoc.js~abstractdoc#@longname",
-    "%40class-src%7CDoc%7CAbstractDoc.js~AbstractDoc.html#instance-method-@longname",
-    "src/Doc/AbstractDoc.js~AbstractDoc#@longname"
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@longname",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@longname",
+    "method"
   ],
   [
     "src/doc/abstractdoc.js~abstractdoc#@member",
-    "%40class-src%7CDoc%7CAbstractDoc.js~AbstractDoc.html#instance-method-@member",
-    "src/Doc/AbstractDoc.js~AbstractDoc#@member"
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@member",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@member",
+    "method"
   ],
   [
     "src/doc/abstractdoc.js~abstractdoc#@memberof",
-    "%40class-src%7CDoc%7CAbstractDoc.js~AbstractDoc.html#instance-method-@memberof",
-    "src/Doc/AbstractDoc.js~AbstractDoc#@memberof"
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@memberof",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@memberof",
+    "method"
   ],
   [
     "src/doc/abstractdoc.js~abstractdoc#@name",
-    "%40class-src%7CDoc%7CAbstractDoc.js~AbstractDoc.html#instance-method-@name",
-    "src/Doc/AbstractDoc.js~AbstractDoc#@name"
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@name",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@name",
+    "method"
   ],
   [
     "src/doc/abstractdoc.js~abstractdoc#@override",
-    "%40class-src%7CDoc%7CAbstractDoc.js~AbstractDoc.html#instance-method-@override",
-    "src/Doc/AbstractDoc.js~AbstractDoc#@override"
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@override",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@override",
+    "method"
   ],
   [
     "src/doc/abstractdoc.js~abstractdoc#@param",
-    "%40class-src%7CDoc%7CAbstractDoc.js~AbstractDoc.html#instance-method-@param",
-    "src/Doc/AbstractDoc.js~AbstractDoc#@param"
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@param",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@param",
+    "method"
+  ],
+  [
+    "src/doc/abstractdoc.js~abstractdoc#@private",
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@private",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@private",
+    "method"
   ],
   [
     "src/doc/abstractdoc.js~abstractdoc#@property",
-    "%40class-src%7CDoc%7CAbstractDoc.js~AbstractDoc.html#instance-method-@property",
-    "src/Doc/AbstractDoc.js~AbstractDoc#@property"
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@property",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@property",
+    "method"
+  ],
+  [
+    "src/doc/abstractdoc.js~abstractdoc#@protected",
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@protected",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@protected",
+    "method"
+  ],
+  [
+    "src/doc/abstractdoc.js~abstractdoc#@public",
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@public",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@public",
+    "method"
   ],
   [
     "src/doc/abstractdoc.js~abstractdoc#@return",
-    "%40class-src%7CDoc%7CAbstractDoc.js~AbstractDoc.html#instance-method-@return",
-    "src/Doc/AbstractDoc.js~AbstractDoc#@return"
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@return",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@return",
+    "method"
   ],
   [
     "src/doc/abstractdoc.js~abstractdoc#@see",
-    "%40class-src%7CDoc%7CAbstractDoc.js~AbstractDoc.html#instance-method-@see",
-    "src/Doc/AbstractDoc.js~AbstractDoc#@see"
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@see",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@see",
+    "method"
   ],
   [
     "src/doc/abstractdoc.js~abstractdoc#@since",
-    "%40class-src%7CDoc%7CAbstractDoc.js~AbstractDoc.html#instance-method-@since",
-    "src/Doc/AbstractDoc.js~AbstractDoc#@since"
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@since",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@since",
+    "method"
   ],
   [
     "src/doc/abstractdoc.js~abstractdoc#@static",
-    "%40class-src%7CDoc%7CAbstractDoc.js~AbstractDoc.html#instance-method-@static",
-    "src/Doc/AbstractDoc.js~AbstractDoc#@static"
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@static",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@static",
+    "method"
   ],
   [
     "src/doc/abstractdoc.js~abstractdoc#@throws",
-    "%40class-src%7CDoc%7CAbstractDoc.js~AbstractDoc.html#instance-method-@throws",
-    "src/Doc/AbstractDoc.js~AbstractDoc#@throws"
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@throws",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@throws",
+    "method"
   ],
   [
     "src/doc/abstractdoc.js~abstractdoc#@todo",
-    "%40class-src%7CDoc%7CAbstractDoc.js~AbstractDoc.html#instance-method-@todo",
-    "src/Doc/AbstractDoc.js~AbstractDoc#@todo"
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@todo",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@todo",
+    "method"
   ],
   [
     "src/doc/abstractdoc.js~abstractdoc#@type",
-    "%40class-src%7CDoc%7CAbstractDoc.js~AbstractDoc.html#instance-method-@type",
-    "src/Doc/AbstractDoc.js~AbstractDoc#@type"
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@type",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@type",
+    "method"
+  ],
+  [
+    "src/doc/abstractdoc.js~abstractdoc#@undocument",
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@undocument",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@undocument",
+    "method"
   ],
   [
     "src/doc/abstractdoc.js~abstractdoc#@unknown",
-    "%40class-src%7CDoc%7CAbstractDoc.js~AbstractDoc.html#instance-method-@unknown",
-    "src/Doc/AbstractDoc.js~AbstractDoc#@unknown"
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@unknown",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@unknown",
+    "method"
   ],
   [
     "src/doc/abstractdoc.js~abstractdoc#@variation",
-    "%40class-src%7CDoc%7CAbstractDoc.js~AbstractDoc.html#instance-method-@variation",
-    "src/Doc/AbstractDoc.js~AbstractDoc#@variation"
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@variation",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@variation",
+    "method"
   ],
   [
     "src/doc/abstractdoc.js~abstractdoc#@version",
-    "%40class-src%7CDoc%7CAbstractDoc.js~AbstractDoc.html#instance-method-@version",
-    "src/Doc/AbstractDoc.js~AbstractDoc#@version"
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@version",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@version",
+    "method"
   ],
   [
     "src/doc/abstractdoc.js~abstractdoc#_apply",
-    "%40class-src%7CDoc%7CAbstractDoc.js~AbstractDoc.html#instance-method-_apply",
-    "src/Doc/AbstractDoc.js~AbstractDoc#_apply"
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-_apply",
+    "src/Doc/AbstractDoc.js~AbstractDoc#_apply",
+    "method"
   ],
   [
     "src/doc/abstractdoc.js~abstractdoc#_ast",
-    "%40class-src%7CDoc%7CAbstractDoc.js~AbstractDoc.html#instance-member-_ast",
-    "src/Doc/AbstractDoc.js~AbstractDoc#_ast"
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-member-_ast",
+    "src/Doc/AbstractDoc.js~AbstractDoc#_ast",
+    "member"
   ],
   [
     "src/doc/abstractdoc.js~abstractdoc#_commenttags",
-    "%40class-src%7CDoc%7CAbstractDoc.js~AbstractDoc.html#instance-member-_commentTags",
-    "src/Doc/AbstractDoc.js~AbstractDoc#_commentTags"
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-member-_commentTags",
+    "src/Doc/AbstractDoc.js~AbstractDoc#_commentTags",
+    "member"
   ],
   [
     "src/doc/abstractdoc.js~abstractdoc#_find",
-    "%40class-src%7CDoc%7CAbstractDoc.js~AbstractDoc.html#instance-method-_find",
-    "src/Doc/AbstractDoc.js~AbstractDoc#_find"
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-_find",
+    "src/Doc/AbstractDoc.js~AbstractDoc#_find",
+    "method"
   ],
   [
     "src/doc/abstractdoc.js~abstractdoc#_findall",
-    "%40class-src%7CDoc%7CAbstractDoc.js~AbstractDoc.html#instance-method-_findAll",
-    "src/Doc/AbstractDoc.js~AbstractDoc#_findAll"
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-_findAll",
+    "src/Doc/AbstractDoc.js~AbstractDoc#_findAll",
+    "method"
   ],
   [
     "src/doc/abstractdoc.js~abstractdoc#_findalltagvalues",
-    "%40class-src%7CDoc%7CAbstractDoc.js~AbstractDoc.html#instance-method-_findAllTagValues",
-    "src/Doc/AbstractDoc.js~AbstractDoc#_findAllTagValues"
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-_findAllTagValues",
+    "src/Doc/AbstractDoc.js~AbstractDoc#_findAllTagValues",
+    "method"
   ],
   [
     "src/doc/abstractdoc.js~abstractdoc#_findtagvalue",
-    "%40class-src%7CDoc%7CAbstractDoc.js~AbstractDoc.html#instance-method-_findTagValue",
-    "src/Doc/AbstractDoc.js~AbstractDoc#_findTagValue"
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-_findTagValue",
+    "src/Doc/AbstractDoc.js~AbstractDoc#_findTagValue",
+    "method"
   ],
   [
     "src/doc/abstractdoc.js~abstractdoc#_flattenmemberexpression",
-    "%40class-src%7CDoc%7CAbstractDoc.js~AbstractDoc.html#instance-method-_flattenMemberExpression",
-    "src/Doc/AbstractDoc.js~AbstractDoc#_flattenMemberExpression"
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-_flattenMemberExpression",
+    "src/Doc/AbstractDoc.js~AbstractDoc#_flattenMemberExpression",
+    "method"
   ],
   [
     "src/doc/abstractdoc.js~abstractdoc#_node",
-    "%40class-src%7CDoc%7CAbstractDoc.js~AbstractDoc.html#instance-member-_node",
-    "src/Doc/AbstractDoc.js~AbstractDoc#_node"
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-member-_node",
+    "src/Doc/AbstractDoc.js~AbstractDoc#_node",
+    "member"
   ],
   [
     "src/doc/abstractdoc.js~abstractdoc#_pathresolver",
-    "%40class-src%7CDoc%7CAbstractDoc.js~AbstractDoc.html#instance-member-_pathResolver",
-    "src/Doc/AbstractDoc.js~AbstractDoc#_pathResolver"
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-member-_pathResolver",
+    "src/Doc/AbstractDoc.js~AbstractDoc#_pathResolver",
+    "member"
   ],
   [
     "src/doc/abstractdoc.js~abstractdoc#_resolvelongname",
-    "%40class-src%7CDoc%7CAbstractDoc.js~AbstractDoc.html#instance-method-_resolveLongname",
-    "src/Doc/AbstractDoc.js~AbstractDoc#_resolveLongname"
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-_resolveLongname",
+    "src/Doc/AbstractDoc.js~AbstractDoc#_resolveLongname",
+    "method"
   ],
   [
     "src/doc/abstractdoc.js~abstractdoc#_value",
-    "%40class-src%7CDoc%7CAbstractDoc.js~AbstractDoc.html#instance-member-_value",
-    "src/Doc/AbstractDoc.js~AbstractDoc#_value"
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-member-_value",
+    "src/Doc/AbstractDoc.js~AbstractDoc#_value",
+    "member"
   ],
   [
     "src/doc/abstractdoc.js~abstractdoc#constructor",
-    "%40class-src%7CDoc%7CAbstractDoc.js~AbstractDoc.html#instance-method-constructor",
-    "src/Doc/AbstractDoc.js~AbstractDoc#constructor"
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-constructor-constructor",
+    "src/Doc/AbstractDoc.js~AbstractDoc#constructor",
+    "method"
   ],
   [
     "src/doc/abstractdoc.js~abstractdoc#value",
-    "%40class-src%7CDoc%7CAbstractDoc.js~AbstractDoc.html#instance-method-value",
-    "src/Doc/AbstractDoc.js~AbstractDoc#value"
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-get-value",
+    "src/Doc/AbstractDoc.js~AbstractDoc#value",
+    "member"
   ],
   [
     "src/doc/assignmentdoc.js",
-    "%40file-src%7CDoc%7CAssignmentDoc.js.html",
-    "src/Doc/AssignmentDoc.js"
+    "file/src/Doc/AssignmentDoc.js.html",
+    "src/Doc/AssignmentDoc.js",
+    "file"
   ],
   [
     "src/doc/assignmentdoc.js~assignmentdoc#@kind",
-    "%40class-src%7CDoc%7CAssignmentDoc.js~AssignmentDoc.html#instance-method-@kind",
-    "src/Doc/AssignmentDoc.js~AssignmentDoc#@kind"
+    "class/src/Doc/AssignmentDoc.js~AssignmentDoc.html#instance-method-@kind",
+    "src/Doc/AssignmentDoc.js~AssignmentDoc#@kind",
+    "method"
   ],
   [
     "src/doc/assignmentdoc.js~assignmentdoc#@memberof",
-    "%40class-src%7CDoc%7CAssignmentDoc.js~AssignmentDoc.html#instance-method-@memberof",
-    "src/Doc/AssignmentDoc.js~AssignmentDoc#@memberof"
+    "class/src/Doc/AssignmentDoc.js~AssignmentDoc.html#instance-method-@memberof",
+    "src/Doc/AssignmentDoc.js~AssignmentDoc#@memberof",
+    "method"
   ],
   [
     "src/doc/assignmentdoc.js~assignmentdoc#@name",
-    "%40class-src%7CDoc%7CAssignmentDoc.js~AssignmentDoc.html#instance-method-@name",
-    "src/Doc/AssignmentDoc.js~AssignmentDoc#@name"
+    "class/src/Doc/AssignmentDoc.js~AssignmentDoc.html#instance-method-@name",
+    "src/Doc/AssignmentDoc.js~AssignmentDoc#@name",
+    "method"
   ],
   [
     "src/doc/classdoc.js",
-    "%40file-src%7CDoc%7CClassDoc.js.html",
-    "src/Doc/ClassDoc.js"
+    "file/src/Doc/ClassDoc.js.html",
+    "src/Doc/ClassDoc.js",
+    "file"
   ],
   [
     "src/doc/classdoc.js~classdoc#@extends",
-    "%40class-src%7CDoc%7CClassDoc.js~ClassDoc.html#instance-method-@extends",
-    "src/Doc/ClassDoc.js~ClassDoc#@extends"
+    "class/src/Doc/ClassDoc.js~ClassDoc.html#instance-method-@extends",
+    "src/Doc/ClassDoc.js~ClassDoc#@extends",
+    "method"
   ],
   [
     "src/doc/classdoc.js~classdoc#@implements",
-    "%40class-src%7CDoc%7CClassDoc.js~ClassDoc.html#instance-method-@implements",
-    "src/Doc/ClassDoc.js~ClassDoc#@implements"
+    "class/src/Doc/ClassDoc.js~ClassDoc.html#instance-method-@implements",
+    "src/Doc/ClassDoc.js~ClassDoc#@implements",
+    "method"
   ],
   [
     "src/doc/classdoc.js~classdoc#@interface",
-    "%40class-src%7CDoc%7CClassDoc.js~ClassDoc.html#instance-method-@interface",
-    "src/Doc/ClassDoc.js~ClassDoc#@interface"
+    "class/src/Doc/ClassDoc.js~ClassDoc.html#instance-method-@interface",
+    "src/Doc/ClassDoc.js~ClassDoc#@interface",
+    "method"
   ],
   [
     "src/doc/classdoc.js~classdoc#@kind",
-    "%40class-src%7CDoc%7CClassDoc.js~ClassDoc.html#instance-method-@kind",
-    "src/Doc/ClassDoc.js~ClassDoc#@kind"
+    "class/src/Doc/ClassDoc.js~ClassDoc.html#instance-method-@kind",
+    "src/Doc/ClassDoc.js~ClassDoc#@kind",
+    "method"
   ],
   [
     "src/doc/classdoc.js~classdoc#@memberof",
-    "%40class-src%7CDoc%7CClassDoc.js~ClassDoc.html#instance-method-@memberof",
-    "src/Doc/ClassDoc.js~ClassDoc#@memberof"
+    "class/src/Doc/ClassDoc.js~ClassDoc.html#instance-method-@memberof",
+    "src/Doc/ClassDoc.js~ClassDoc#@memberof",
+    "method"
   ],
   [
     "src/doc/classdoc.js~classdoc#@name",
-    "%40class-src%7CDoc%7CClassDoc.js~ClassDoc.html#instance-method-@name",
-    "src/Doc/ClassDoc.js~ClassDoc#@name"
+    "class/src/Doc/ClassDoc.js~ClassDoc.html#instance-method-@name",
+    "src/Doc/ClassDoc.js~ClassDoc#@name",
+    "method"
   ],
   [
     "src/doc/classdoc.js~classdoc#_apply",
-    "%40class-src%7CDoc%7CClassDoc.js~ClassDoc.html#instance-method-_apply",
-    "src/Doc/ClassDoc.js~ClassDoc#_apply"
+    "class/src/Doc/ClassDoc.js~ClassDoc.html#instance-method-_apply",
+    "src/Doc/ClassDoc.js~ClassDoc#_apply",
+    "method"
   ],
   [
     "src/doc/externaldoc.js",
-    "%40file-src%7CDoc%7CExternalDoc.js.html",
-    "src/Doc/ExternalDoc.js"
+    "file/src/Doc/ExternalDoc.js.html",
+    "src/Doc/ExternalDoc.js",
+    "file"
+  ],
+  [
+    "src/doc/externaldoc.js~externaldoc#@external",
+    "class/src/Doc/ExternalDoc.js~ExternalDoc.html#instance-method-@external",
+    "src/Doc/ExternalDoc.js~ExternalDoc#@external",
+    "method"
   ],
   [
     "src/doc/externaldoc.js~externaldoc#@kind",
-    "%40class-src%7CDoc%7CExternalDoc.js~ExternalDoc.html#instance-method-@kind",
-    "src/Doc/ExternalDoc.js~ExternalDoc#@kind"
+    "class/src/Doc/ExternalDoc.js~ExternalDoc.html#instance-method-@kind",
+    "src/Doc/ExternalDoc.js~ExternalDoc#@kind",
+    "method"
   ],
   [
     "src/doc/externaldoc.js~externaldoc#@longname",
-    "%40class-src%7CDoc%7CExternalDoc.js~ExternalDoc.html#instance-method-@longname",
-    "src/Doc/ExternalDoc.js~ExternalDoc#@longname"
+    "class/src/Doc/ExternalDoc.js~ExternalDoc.html#instance-method-@longname",
+    "src/Doc/ExternalDoc.js~ExternalDoc#@longname",
+    "method"
   ],
   [
     "src/doc/externaldoc.js~externaldoc#@memberof",
-    "%40class-src%7CDoc%7CExternalDoc.js~ExternalDoc.html#instance-method-@memberof",
-    "src/Doc/ExternalDoc.js~ExternalDoc#@memberof"
+    "class/src/Doc/ExternalDoc.js~ExternalDoc.html#instance-method-@memberof",
+    "src/Doc/ExternalDoc.js~ExternalDoc#@memberof",
+    "method"
   ],
   [
     "src/doc/externaldoc.js~externaldoc#@name",
-    "%40class-src%7CDoc%7CExternalDoc.js~ExternalDoc.html#instance-method-@name",
-    "src/Doc/ExternalDoc.js~ExternalDoc#@name"
+    "class/src/Doc/ExternalDoc.js~ExternalDoc.html#instance-method-@name",
+    "src/Doc/ExternalDoc.js~ExternalDoc#@name",
+    "method"
   ],
   [
     "src/doc/externaldoc.js~externaldoc#_apply",
-    "%40class-src%7CDoc%7CExternalDoc.js~ExternalDoc.html#instance-method-_apply",
-    "src/Doc/ExternalDoc.js~ExternalDoc#_apply"
+    "class/src/Doc/ExternalDoc.js~ExternalDoc.html#instance-method-_apply",
+    "src/Doc/ExternalDoc.js~ExternalDoc#_apply",
+    "method"
   ],
   [
     "src/doc/filedoc.js",
-    "%40file-src%7CDoc%7CFileDoc.js.html",
-    "src/Doc/FileDoc.js"
+    "file/src/Doc/FileDoc.js.html",
+    "src/Doc/FileDoc.js",
+    "file"
   ],
   [
     "src/doc/filedoc.js~filedoc#@content",
-    "%40class-src%7CDoc%7CFileDoc.js~FileDoc.html#instance-method-@content",
-    "src/Doc/FileDoc.js~FileDoc#@content"
+    "class/src/Doc/FileDoc.js~FileDoc.html#instance-method-@content",
+    "src/Doc/FileDoc.js~FileDoc#@content",
+    "method"
   ],
   [
     "src/doc/filedoc.js~filedoc#@kind",
-    "%40class-src%7CDoc%7CFileDoc.js~FileDoc.html#instance-method-@kind",
-    "src/Doc/FileDoc.js~FileDoc#@kind"
+    "class/src/Doc/FileDoc.js~FileDoc.html#instance-method-@kind",
+    "src/Doc/FileDoc.js~FileDoc#@kind",
+    "method"
   ],
   [
     "src/doc/filedoc.js~filedoc#@longname",
-    "%40class-src%7CDoc%7CFileDoc.js~FileDoc.html#instance-method-@longname",
-    "src/Doc/FileDoc.js~FileDoc#@longname"
+    "class/src/Doc/FileDoc.js~FileDoc.html#instance-method-@longname",
+    "src/Doc/FileDoc.js~FileDoc#@longname",
+    "method"
   ],
   [
     "src/doc/filedoc.js~filedoc#@name",
-    "%40class-src%7CDoc%7CFileDoc.js~FileDoc.html#instance-method-@name",
-    "src/Doc/FileDoc.js~FileDoc#@name"
+    "class/src/Doc/FileDoc.js~FileDoc.html#instance-method-@name",
+    "src/Doc/FileDoc.js~FileDoc#@name",
+    "method"
   ],
   [
     "src/doc/filedoc.js~filedoc#_apply",
-    "%40class-src%7CDoc%7CFileDoc.js~FileDoc.html#instance-method-_apply",
-    "src/Doc/FileDoc.js~FileDoc#_apply"
+    "class/src/Doc/FileDoc.js~FileDoc.html#instance-method-_apply",
+    "src/Doc/FileDoc.js~FileDoc#_apply",
+    "method"
   ],
   [
     "src/doc/functiondoc.js",
-    "%40file-src%7CDoc%7CFunctionDoc.js.html",
-    "src/Doc/FunctionDoc.js"
+    "file/src/Doc/FunctionDoc.js.html",
+    "src/Doc/FunctionDoc.js",
+    "file"
   ],
   [
     "src/doc/functiondoc.js~functiondoc#@generator",
-    "%40class-src%7CDoc%7CFunctionDoc.js~FunctionDoc.html#instance-method-@generator",
-    "src/Doc/FunctionDoc.js~FunctionDoc#@generator"
+    "class/src/Doc/FunctionDoc.js~FunctionDoc.html#instance-method-@generator",
+    "src/Doc/FunctionDoc.js~FunctionDoc#@generator",
+    "method"
   ],
   [
     "src/doc/functiondoc.js~functiondoc#@kind",
-    "%40class-src%7CDoc%7CFunctionDoc.js~FunctionDoc.html#instance-method-@kind",
-    "src/Doc/FunctionDoc.js~FunctionDoc#@kind"
+    "class/src/Doc/FunctionDoc.js~FunctionDoc.html#instance-method-@kind",
+    "src/Doc/FunctionDoc.js~FunctionDoc#@kind",
+    "method"
   ],
   [
     "src/doc/functiondoc.js~functiondoc#@memberof",
-    "%40class-src%7CDoc%7CFunctionDoc.js~FunctionDoc.html#instance-method-@memberof",
-    "src/Doc/FunctionDoc.js~FunctionDoc#@memberof"
+    "class/src/Doc/FunctionDoc.js~FunctionDoc.html#instance-method-@memberof",
+    "src/Doc/FunctionDoc.js~FunctionDoc#@memberof",
+    "method"
   ],
   [
     "src/doc/functiondoc.js~functiondoc#@name",
-    "%40class-src%7CDoc%7CFunctionDoc.js~FunctionDoc.html#instance-method-@name",
-    "src/Doc/FunctionDoc.js~FunctionDoc#@name"
+    "class/src/Doc/FunctionDoc.js~FunctionDoc.html#instance-method-@name",
+    "src/Doc/FunctionDoc.js~FunctionDoc#@name",
+    "method"
+  ],
+  [
+    "src/doc/functiondoc.js~functiondoc#@param",
+    "class/src/Doc/FunctionDoc.js~FunctionDoc.html#instance-method-@param",
+    "src/Doc/FunctionDoc.js~FunctionDoc#@param",
+    "method"
+  ],
+  [
+    "src/doc/functiondoc.js~functiondoc#@return",
+    "class/src/Doc/FunctionDoc.js~FunctionDoc.html#instance-method-@return",
+    "src/Doc/FunctionDoc.js~FunctionDoc#@return",
+    "method"
   ],
   [
     "src/doc/memberdoc.js",
-    "%40file-src%7CDoc%7CMemberDoc.js.html",
-    "src/Doc/MemberDoc.js"
+    "file/src/Doc/MemberDoc.js.html",
+    "src/Doc/MemberDoc.js",
+    "file"
   ],
   [
     "src/doc/memberdoc.js~memberdoc#@kind",
-    "%40class-src%7CDoc%7CMemberDoc.js~MemberDoc.html#instance-method-@kind",
-    "src/Doc/MemberDoc.js~MemberDoc#@kind"
+    "class/src/Doc/MemberDoc.js~MemberDoc.html#instance-method-@kind",
+    "src/Doc/MemberDoc.js~MemberDoc#@kind",
+    "method"
   ],
   [
     "src/doc/memberdoc.js~memberdoc#@memberof",
-    "%40class-src%7CDoc%7CMemberDoc.js~MemberDoc.html#instance-method-@memberof",
-    "src/Doc/MemberDoc.js~MemberDoc#@memberof"
+    "class/src/Doc/MemberDoc.js~MemberDoc.html#instance-method-@memberof",
+    "src/Doc/MemberDoc.js~MemberDoc#@memberof",
+    "method"
   ],
   [
     "src/doc/memberdoc.js~memberdoc#@name",
-    "%40class-src%7CDoc%7CMemberDoc.js~MemberDoc.html#instance-method-@name",
-    "src/Doc/MemberDoc.js~MemberDoc#@name"
+    "class/src/Doc/MemberDoc.js~MemberDoc.html#instance-method-@name",
+    "src/Doc/MemberDoc.js~MemberDoc#@name",
+    "method"
   ],
   [
     "src/doc/memberdoc.js~memberdoc#@static",
-    "%40class-src%7CDoc%7CMemberDoc.js~MemberDoc.html#instance-method-@static",
-    "src/Doc/MemberDoc.js~MemberDoc#@static"
+    "class/src/Doc/MemberDoc.js~MemberDoc.html#instance-method-@static",
+    "src/Doc/MemberDoc.js~MemberDoc#@static",
+    "method"
+  ],
+  [
+    "src/doc/memberdoc.js~memberdoc#@type",
+    "class/src/Doc/MemberDoc.js~MemberDoc.html#instance-method-@type",
+    "src/Doc/MemberDoc.js~MemberDoc#@type",
+    "method"
   ],
   [
     "src/doc/memberdoc.js~memberdoc#_apply",
-    "%40class-src%7CDoc%7CMemberDoc.js~MemberDoc.html#instance-method-_apply",
-    "src/Doc/MemberDoc.js~MemberDoc#_apply"
+    "class/src/Doc/MemberDoc.js~MemberDoc.html#instance-method-_apply",
+    "src/Doc/MemberDoc.js~MemberDoc#_apply",
+    "method"
   ],
   [
     "src/doc/methoddoc.js",
-    "%40file-src%7CDoc%7CMethodDoc.js.html",
-    "src/Doc/MethodDoc.js"
+    "file/src/Doc/MethodDoc.js.html",
+    "src/Doc/MethodDoc.js",
+    "file"
   ],
   [
     "src/doc/methoddoc.js~methoddoc#@generator",
-    "%40class-src%7CDoc%7CMethodDoc.js~MethodDoc.html#instance-method-@generator",
-    "src/Doc/MethodDoc.js~MethodDoc#@generator"
+    "class/src/Doc/MethodDoc.js~MethodDoc.html#instance-method-@generator",
+    "src/Doc/MethodDoc.js~MethodDoc#@generator",
+    "method"
   ],
   [
     "src/doc/methoddoc.js~methoddoc#@kind",
-    "%40class-src%7CDoc%7CMethodDoc.js~MethodDoc.html#instance-method-@kind",
-    "src/Doc/MethodDoc.js~MethodDoc#@kind"
+    "class/src/Doc/MethodDoc.js~MethodDoc.html#instance-method-@kind",
+    "src/Doc/MethodDoc.js~MethodDoc#@kind",
+    "method"
   ],
   [
     "src/doc/methoddoc.js~methoddoc#@memberof",
-    "%40class-src%7CDoc%7CMethodDoc.js~MethodDoc.html#instance-method-@memberof",
-    "src/Doc/MethodDoc.js~MethodDoc#@memberof"
+    "class/src/Doc/MethodDoc.js~MethodDoc.html#instance-method-@memberof",
+    "src/Doc/MethodDoc.js~MethodDoc#@memberof",
+    "method"
   ],
   [
     "src/doc/methoddoc.js~methoddoc#@name",
-    "%40class-src%7CDoc%7CMethodDoc.js~MethodDoc.html#instance-method-@name",
-    "src/Doc/MethodDoc.js~MethodDoc#@name"
+    "class/src/Doc/MethodDoc.js~MethodDoc.html#instance-method-@name",
+    "src/Doc/MethodDoc.js~MethodDoc#@name",
+    "method"
   ],
   [
     "src/doc/methoddoc.js~methoddoc#@param",
-    "%40class-src%7CDoc%7CMethodDoc.js~MethodDoc.html#instance-method-@param",
-    "src/Doc/MethodDoc.js~MethodDoc#@param"
+    "class/src/Doc/MethodDoc.js~MethodDoc.html#instance-method-@param",
+    "src/Doc/MethodDoc.js~MethodDoc#@param",
+    "method"
   ],
   [
     "src/doc/methoddoc.js~methoddoc#@return",
-    "%40class-src%7CDoc%7CMethodDoc.js~MethodDoc.html#instance-method-@return",
-    "src/Doc/MethodDoc.js~MethodDoc#@return"
+    "class/src/Doc/MethodDoc.js~MethodDoc.html#instance-method-@return",
+    "src/Doc/MethodDoc.js~MethodDoc#@return",
+    "method"
+  ],
+  [
+    "src/doc/methoddoc.js~methoddoc#@type",
+    "class/src/Doc/MethodDoc.js~MethodDoc.html#instance-method-@type",
+    "src/Doc/MethodDoc.js~MethodDoc#@type",
+    "method"
   ],
   [
     "src/doc/methoddoc.js~methoddoc#_apply",
-    "%40class-src%7CDoc%7CMethodDoc.js~MethodDoc.html#instance-method-_apply",
-    "src/Doc/MethodDoc.js~MethodDoc#_apply"
+    "class/src/Doc/MethodDoc.js~MethodDoc.html#instance-method-_apply",
+    "src/Doc/MethodDoc.js~MethodDoc#_apply",
+    "method"
+  ],
+  [
+    "src/doc/testdoc.js",
+    "file/src/Doc/TestDoc.js.html",
+    "src/Doc/TestDoc.js",
+    "file"
+  ],
+  [
+    "src/doc/testdoc.js~testdoc#@desc",
+    "class/src/Doc/TestDoc.js~TestDoc.html#instance-method-@desc",
+    "src/Doc/TestDoc.js~TestDoc#@desc",
+    "method"
+  ],
+  [
+    "src/doc/testdoc.js~testdoc#@kind",
+    "class/src/Doc/TestDoc.js~TestDoc.html#instance-method-@kind",
+    "src/Doc/TestDoc.js~TestDoc#@kind",
+    "method"
+  ],
+  [
+    "src/doc/testdoc.js~testdoc#@memberof",
+    "class/src/Doc/TestDoc.js~TestDoc.html#instance-method-@memberof",
+    "src/Doc/TestDoc.js~TestDoc#@memberof",
+    "method"
+  ],
+  [
+    "src/doc/testdoc.js~testdoc#@name",
+    "class/src/Doc/TestDoc.js~TestDoc.html#instance-method-@name",
+    "src/Doc/TestDoc.js~TestDoc#@name",
+    "method"
+  ],
+  [
+    "src/doc/testdoc.js~testdoc#@testtarget",
+    "class/src/Doc/TestDoc.js~TestDoc.html#instance-method-@testTarget",
+    "src/Doc/TestDoc.js~TestDoc#@testTarget",
+    "method"
+  ],
+  [
+    "src/doc/testdoc.js~testdoc#_apply",
+    "class/src/Doc/TestDoc.js~TestDoc.html#instance-method-_apply",
+    "src/Doc/TestDoc.js~TestDoc#_apply",
+    "method"
+  ],
+  [
+    "src/doc/testfiledoc.js",
+    "file/src/Doc/TestFileDoc.js.html",
+    "src/Doc/TestFileDoc.js",
+    "file"
+  ],
+  [
+    "src/doc/testfiledoc.js~testfiledoc#@kind",
+    "class/src/Doc/TestFileDoc.js~TestFileDoc.html#instance-method-@kind",
+    "src/Doc/TestFileDoc.js~TestFileDoc#@kind",
+    "method"
   ],
   [
     "src/doc/typedefdoc.js",
-    "%40file-src%7CDoc%7CTypedefDoc.js.html",
-    "src/Doc/TypedefDoc.js"
+    "file/src/Doc/TypedefDoc.js.html",
+    "src/Doc/TypedefDoc.js",
+    "file"
   ],
   [
     "src/doc/typedefdoc.js~typedefdoc#@kind",
-    "%40class-src%7CDoc%7CTypedefDoc.js~TypedefDoc.html#instance-method-@kind",
-    "src/Doc/TypedefDoc.js~TypedefDoc#@kind"
+    "class/src/Doc/TypedefDoc.js~TypedefDoc.html#instance-method-@kind",
+    "src/Doc/TypedefDoc.js~TypedefDoc#@kind",
+    "method"
   ],
   [
     "src/doc/typedefdoc.js~typedefdoc#@memberof",
-    "%40class-src%7CDoc%7CTypedefDoc.js~TypedefDoc.html#instance-method-@memberof",
-    "src/Doc/TypedefDoc.js~TypedefDoc#@memberof"
+    "class/src/Doc/TypedefDoc.js~TypedefDoc.html#instance-method-@memberof",
+    "src/Doc/TypedefDoc.js~TypedefDoc#@memberof",
+    "method"
   ],
   [
     "src/doc/typedefdoc.js~typedefdoc#@name",
-    "%40class-src%7CDoc%7CTypedefDoc.js~TypedefDoc.html#instance-method-@name",
-    "src/Doc/TypedefDoc.js~TypedefDoc#@name"
+    "class/src/Doc/TypedefDoc.js~TypedefDoc.html#instance-method-@name",
+    "src/Doc/TypedefDoc.js~TypedefDoc#@name",
+    "method"
   ],
   [
     "src/doc/typedefdoc.js~typedefdoc#@typedef",
-    "%40class-src%7CDoc%7CTypedefDoc.js~TypedefDoc.html#instance-method-@typedef",
-    "src/Doc/TypedefDoc.js~TypedefDoc#@typedef"
+    "class/src/Doc/TypedefDoc.js~TypedefDoc.html#instance-method-@typedef",
+    "src/Doc/TypedefDoc.js~TypedefDoc#@typedef",
+    "method"
   ],
   [
     "src/doc/typedefdoc.js~typedefdoc#_apply",
-    "%40class-src%7CDoc%7CTypedefDoc.js~TypedefDoc.html#instance-method-_apply",
-    "src/Doc/TypedefDoc.js~TypedefDoc#_apply"
+    "class/src/Doc/TypedefDoc.js~TypedefDoc.html#instance-method-_apply",
+    "src/Doc/TypedefDoc.js~TypedefDoc#_apply",
+    "method"
   ],
   [
     "src/doc/variabledoc.js",
-    "%40file-src%7CDoc%7CVariableDoc.js.html",
-    "src/Doc/VariableDoc.js"
+    "file/src/Doc/VariableDoc.js.html",
+    "src/Doc/VariableDoc.js",
+    "file"
   ],
   [
     "src/doc/variabledoc.js~variabledoc#@kind",
-    "%40class-src%7CDoc%7CVariableDoc.js~VariableDoc.html#instance-method-@kind",
-    "src/Doc/VariableDoc.js~VariableDoc#@kind"
+    "class/src/Doc/VariableDoc.js~VariableDoc.html#instance-method-@kind",
+    "src/Doc/VariableDoc.js~VariableDoc#@kind",
+    "method"
   ],
   [
     "src/doc/variabledoc.js~variabledoc#@memberof",
-    "%40class-src%7CDoc%7CVariableDoc.js~VariableDoc.html#instance-method-@memberof",
-    "src/Doc/VariableDoc.js~VariableDoc#@memberof"
+    "class/src/Doc/VariableDoc.js~VariableDoc.html#instance-method-@memberof",
+    "src/Doc/VariableDoc.js~VariableDoc#@memberof",
+    "method"
   ],
   [
     "src/doc/variabledoc.js~variabledoc#@name",
-    "%40class-src%7CDoc%7CVariableDoc.js~VariableDoc.html#instance-method-@name",
-    "src/Doc/VariableDoc.js~VariableDoc#@name"
+    "class/src/Doc/VariableDoc.js~VariableDoc.html#instance-method-@name",
+    "src/Doc/VariableDoc.js~VariableDoc#@name",
+    "method"
+  ],
+  [
+    "src/doc/variabledoc.js~variabledoc#@type",
+    "class/src/Doc/VariableDoc.js~VariableDoc.html#instance-method-@type",
+    "src/Doc/VariableDoc.js~VariableDoc#@type",
+    "method"
+  ],
+  [
+    "src/doctest/abstractdoctest.js",
+    "test-file/src/DocTest/AbstractDocTest.js.html",
+    "src/DocTest/AbstractDocTest.js",
+    "testFile"
   ],
   [
     "src/esdoc.js",
-    "%40file-src%7CESDoc.js.html",
-    "src/ESDoc.js"
+    "file/src/ESDoc.js.html",
+    "src/ESDoc.js",
+    "file"
+  ],
+  [
+    "src/esdoc.js~esdoc._generatefortest",
+    "class/src/ESDoc.js~ESDoc.html#static-method-_generateForTest",
+    "src/ESDoc.js~ESDoc._generateForTest",
+    "method"
   ],
   [
     "src/esdoc.js~esdoc._setdefaultconfig",
-    "%40class-src%7CESDoc.js~ESDoc.html#static-method-_setDefaultConfig",
-    "src/ESDoc.js~ESDoc._setDefaultConfig"
+    "class/src/ESDoc.js~ESDoc.html#static-method-_setDefaultConfig",
+    "src/ESDoc.js~ESDoc._setDefaultConfig",
+    "method"
   ],
   [
     "src/esdoc.js~esdoc._traverse",
-    "%40class-src%7CESDoc.js~ESDoc.html#static-method-_traverse",
-    "src/ESDoc.js~ESDoc._traverse"
+    "class/src/ESDoc.js~ESDoc.html#static-method-_traverse",
+    "src/ESDoc.js~ESDoc._traverse",
+    "method"
+  ],
+  [
+    "src/esdoc.js~esdoc._traversefortest",
+    "class/src/ESDoc.js~ESDoc.html#static-method-_traverseForTest",
+    "src/ESDoc.js~ESDoc._traverseForTest",
+    "method"
+  ],
+  [
+    "src/esdoc.js~esdoc._usebuiltinexternal",
+    "class/src/ESDoc.js~ESDoc.html#static-method-_useBuiltinExternal",
+    "src/ESDoc.js~ESDoc._useBuiltinExternal",
+    "method"
   ],
   [
     "src/esdoc.js~esdoc._walk",
-    "%40class-src%7CESDoc.js~ESDoc.html#static-method-_walk",
-    "src/ESDoc.js~ESDoc._walk"
+    "class/src/ESDoc.js~ESDoc.html#static-method-_walk",
+    "src/ESDoc.js~ESDoc._walk",
+    "method"
   ],
   [
     "src/esdoc.js~esdoc.generate",
-    "%40class-src%7CESDoc.js~ESDoc.html#static-method-generate",
-    "src/ESDoc.js~ESDoc.generate"
+    "class/src/ESDoc.js~ESDoc.html#static-method-generate",
+    "src/ESDoc.js~ESDoc.generate",
+    "method"
   ],
   [
     "src/esdoccli.js",
-    "%40file-src%7CESDocCLI.js.html",
-    "src/ESDocCLI.js"
+    "file/src/ESDocCLI.js.html",
+    "src/ESDocCLI.js",
+    "file"
   ],
   [
     "src/esdoccli.js~esdoccli#_argv",
-    "%40class-src%7CESDocCLI.js~ESDocCLI.html#instance-member-_argv",
-    "src/ESDocCLI.js~ESDocCLI#_argv"
+    "class/src/ESDocCLI.js~ESDocCLI.html#instance-member-_argv",
+    "src/ESDocCLI.js~ESDocCLI#_argv",
+    "member"
   ],
   [
     "src/esdoccli.js~esdoccli#_createconfigfromjsonfile",
-    "%40class-src%7CESDocCLI.js~ESDocCLI.html#instance-method-_createConfigFromJSONFile",
-    "src/ESDocCLI.js~ESDocCLI#_createConfigFromJSONFile"
+    "class/src/ESDocCLI.js~ESDocCLI.html#instance-method-_createConfigFromJSONFile",
+    "src/ESDocCLI.js~ESDocCLI#_createConfigFromJSONFile",
+    "method"
   ],
   [
     "src/esdoccli.js~esdoccli#_createconfigfrompath",
-    "%40class-src%7CESDocCLI.js~ESDocCLI.html#instance-method-_createConfigFromPath",
-    "src/ESDocCLI.js~ESDocCLI#_createConfigFromPath"
+    "class/src/ESDocCLI.js~ESDocCLI.html#instance-method-_createConfigFromPath",
+    "src/ESDocCLI.js~ESDocCLI#_createConfigFromPath",
+    "method"
+  ],
+  [
+    "src/esdoccli.js~esdoccli#_findpackagejson",
+    "class/src/ESDocCLI.js~ESDocCLI.html#instance-method-_findPackageJSON",
+    "src/ESDocCLI.js~ESDocCLI#_findPackageJSON",
+    "method"
+  ],
+  [
+    "src/esdoccli.js~esdoccli#_packageobj",
+    "class/src/ESDocCLI.js~ESDocCLI.html#instance-member-_packageObj",
+    "src/ESDocCLI.js~ESDocCLI#_packageObj",
+    "member"
   ],
   [
     "src/esdoccli.js~esdoccli#_showhelp",
-    "%40class-src%7CESDocCLI.js~ESDocCLI.html#instance-method-_showHelp",
-    "src/ESDocCLI.js~ESDocCLI#_showHelp"
+    "class/src/ESDocCLI.js~ESDocCLI.html#instance-method-_showHelp",
+    "src/ESDocCLI.js~ESDocCLI#_showHelp",
+    "method"
+  ],
+  [
+    "src/esdoccli.js~esdoccli#_showversion",
+    "class/src/ESDocCLI.js~ESDocCLI.html#instance-method-_showVersion",
+    "src/ESDocCLI.js~ESDocCLI#_showVersion",
+    "method"
   ],
   [
     "src/esdoccli.js~esdoccli#constructor",
-    "%40class-src%7CESDocCLI.js~ESDocCLI.html#instance-method-constructor",
-    "src/ESDocCLI.js~ESDocCLI#constructor"
+    "class/src/ESDocCLI.js~ESDocCLI.html#instance-constructor-constructor",
+    "src/ESDocCLI.js~ESDocCLI#constructor",
+    "method"
   ],
   [
     "src/esdoccli.js~esdoccli#exec",
-    "%40class-src%7CESDocCLI.js~ESDocCLI.html#instance-method-exec",
-    "src/ESDocCLI.js~ESDocCLI#exec"
+    "class/src/ESDocCLI.js~ESDocCLI.html#instance-method-exec",
+    "src/ESDocCLI.js~ESDocCLI#exec",
+    "method"
   ],
   [
     "src/factory/docfactory.js",
-    "%40file-src%7CFactory%7CDocFactory.js.html",
-    "src/Factory/DocFactory.js"
+    "file/src/Factory/DocFactory.js.html",
+    "src/Factory/DocFactory.js",
+    "file"
   ],
   [
     "src/factory/docfactory.js~docfactory#_ast",
-    "%40class-src%7CFactory%7CDocFactory.js~DocFactory.html#instance-member-_ast",
-    "src/Factory/DocFactory.js~DocFactory#_ast"
+    "class/src/Factory/DocFactory.js~DocFactory.html#instance-member-_ast",
+    "src/Factory/DocFactory.js~DocFactory#_ast",
+    "member"
   ],
   [
     "src/factory/docfactory.js~docfactory#_copy",
-    "%40class-src%7CFactory%7CDocFactory.js~DocFactory.html#instance-method-_copy",
-    "src/Factory/DocFactory.js~DocFactory#_copy"
+    "class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_copy",
+    "src/Factory/DocFactory.js~DocFactory#_copy",
+    "method"
   ],
   [
     "src/factory/docfactory.js~docfactory#_createdoc",
-    "%40class-src%7CFactory%7CDocFactory.js~DocFactory.html#instance-method-_createDoc",
-    "src/Factory/DocFactory.js~DocFactory#_createDoc"
+    "class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_createDoc",
+    "src/Factory/DocFactory.js~DocFactory#_createDoc",
+    "method"
   ],
   [
     "src/factory/docfactory.js~docfactory#_decideassignmenttype",
-    "%40class-src%7CFactory%7CDocFactory.js~DocFactory.html#instance-method-_decideAssignmentType",
-    "src/Factory/DocFactory.js~DocFactory#_decideAssignmentType"
+    "class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_decideAssignmentType",
+    "src/Factory/DocFactory.js~DocFactory#_decideAssignmentType",
+    "method"
+  ],
+  [
+    "src/factory/docfactory.js~docfactory#_decideclassdeclarationtype",
+    "class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_decideClassDeclarationType",
+    "src/Factory/DocFactory.js~DocFactory#_decideClassDeclarationType",
+    "method"
   ],
   [
     "src/factory/docfactory.js~docfactory#_decideexpressionstatementtype",
-    "%40class-src%7CFactory%7CDocFactory.js~DocFactory.html#instance-method-_decideExpressionStatementType",
-    "src/Factory/DocFactory.js~DocFactory#_decideExpressionStatementType"
+    "class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_decideExpressionStatementType",
+    "src/Factory/DocFactory.js~DocFactory#_decideExpressionStatementType",
+    "method"
+  ],
+  [
+    "src/factory/docfactory.js~docfactory#_decidefunctiondeclarationtype",
+    "class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_decideFunctionDeclarationType",
+    "src/Factory/DocFactory.js~DocFactory#_decideFunctionDeclarationType",
+    "method"
+  ],
+  [
+    "src/factory/docfactory.js~docfactory#_decidemethoddefinitiontype",
+    "class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_decideMethodDefinitionType",
+    "src/Factory/DocFactory.js~DocFactory#_decideMethodDefinitionType",
+    "method"
   ],
   [
     "src/factory/docfactory.js~docfactory#_decidetype",
-    "%40class-src%7CFactory%7CDocFactory.js~DocFactory.html#instance-method-_decideType",
-    "src/Factory/DocFactory.js~DocFactory#_decideType"
+    "class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_decideType",
+    "src/Factory/DocFactory.js~DocFactory#_decideType",
+    "method"
   ],
   [
     "src/factory/docfactory.js~docfactory#_decidevariabletype",
-    "%40class-src%7CFactory%7CDocFactory.js~DocFactory.html#instance-method-_decideVariableType",
-    "src/Factory/DocFactory.js~DocFactory#_decideVariableType"
+    "class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_decideVariableType",
+    "src/Factory/DocFactory.js~DocFactory#_decideVariableType",
+    "method"
+  ],
+  [
+    "src/factory/docfactory.js~docfactory#_findup",
+    "class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_findUp",
+    "src/Factory/DocFactory.js~DocFactory#_findUp",
+    "method"
   ],
   [
     "src/factory/docfactory.js~docfactory#_islastnodeinparent",
-    "%40class-src%7CFactory%7CDocFactory.js~DocFactory.html#instance-method-_isLastNodeInParent",
-    "src/Factory/DocFactory.js~DocFactory#_isLastNodeInParent"
+    "class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_isLastNodeInParent",
+    "src/Factory/DocFactory.js~DocFactory#_isLastNodeInParent",
+    "method"
+  ],
+  [
+    "src/factory/docfactory.js~docfactory#_istopdepthinbody",
+    "class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_isTopDepthInBody",
+    "src/Factory/DocFactory.js~DocFactory#_isTopDepthInBody",
+    "method"
   ],
   [
     "src/factory/docfactory.js~docfactory#_pathresolver",
-    "%40class-src%7CFactory%7CDocFactory.js~DocFactory.html#instance-member-_pathResolver",
-    "src/Factory/DocFactory.js~DocFactory#_pathResolver"
+    "class/src/Factory/DocFactory.js~DocFactory.html#instance-member-_pathResolver",
+    "src/Factory/DocFactory.js~DocFactory#_pathResolver",
+    "member"
+  ],
+  [
+    "src/factory/docfactory.js~docfactory#_processedclassnodes",
+    "class/src/Factory/DocFactory.js~DocFactory.html#instance-member-_processedClassNodes",
+    "src/Factory/DocFactory.js~DocFactory#_processedClassNodes",
+    "member"
   ],
   [
     "src/factory/docfactory.js~docfactory#_results",
-    "%40class-src%7CFactory%7CDocFactory.js~DocFactory.html#instance-member-_results",
-    "src/Factory/DocFactory.js~DocFactory#_results"
+    "class/src/Factory/DocFactory.js~DocFactory.html#instance-member-_results",
+    "src/Factory/DocFactory.js~DocFactory#_results",
+    "member"
   ],
   [
     "src/factory/docfactory.js~docfactory#_traversecomments",
-    "%40class-src%7CFactory%7CDocFactory.js~DocFactory.html#instance-method-_traverseComments",
-    "src/Factory/DocFactory.js~DocFactory#_traverseComments"
+    "class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_traverseComments",
+    "src/Factory/DocFactory.js~DocFactory#_traverseComments",
+    "method"
   ],
   [
     "src/factory/docfactory.js~docfactory#_unwrapexportdeclaration",
-    "%40class-src%7CFactory%7CDocFactory.js~DocFactory.html#instance-method-_unwrapExportDeclaration",
-    "src/Factory/DocFactory.js~DocFactory#_unwrapExportDeclaration"
-  ],
-  [
-    "src/factory/docfactory.js~docfactory#_workonnoncommentnode",
-    "%40class-src%7CFactory%7CDocFactory.js~DocFactory.html#instance-method-_workOnNonCommentNode",
-    "src/Factory/DocFactory.js~DocFactory#_workOnNonCommentNode"
+    "class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_unwrapExportDeclaration",
+    "src/Factory/DocFactory.js~DocFactory#_unwrapExportDeclaration",
+    "method"
   ],
   [
     "src/factory/docfactory.js~docfactory#constructor",
-    "%40class-src%7CFactory%7CDocFactory.js~DocFactory.html#instance-method-constructor",
-    "src/Factory/DocFactory.js~DocFactory#constructor"
+    "class/src/Factory/DocFactory.js~DocFactory.html#instance-constructor-constructor",
+    "src/Factory/DocFactory.js~DocFactory#constructor",
+    "method"
   ],
   [
     "src/factory/docfactory.js~docfactory#push",
-    "%40class-src%7CFactory%7CDocFactory.js~DocFactory.html#instance-method-push",
-    "src/Factory/DocFactory.js~DocFactory#push"
+    "class/src/Factory/DocFactory.js~DocFactory.html#instance-method-push",
+    "src/Factory/DocFactory.js~DocFactory#push",
+    "method"
   ],
   [
     "src/factory/docfactory.js~docfactory#results",
-    "%40class-src%7CFactory%7CDocFactory.js~DocFactory.html#instance-method-results",
-    "src/Factory/DocFactory.js~DocFactory#results"
+    "class/src/Factory/DocFactory.js~DocFactory.html#instance-get-results",
+    "src/Factory/DocFactory.js~DocFactory#results",
+    "member"
+  ],
+  [
+    "src/factory/testdocfactory.js",
+    "file/src/Factory/TestDocFactory.js.html",
+    "src/Factory/TestDocFactory.js",
+    "file"
+  ],
+  [
+    "src/factory/testdocfactory.js~testdocfactory#_ast",
+    "class/src/Factory/TestDocFactory.js~TestDocFactory.html#instance-member-_ast",
+    "src/Factory/TestDocFactory.js~TestDocFactory#_ast",
+    "member"
+  ],
+  [
+    "src/factory/testdocfactory.js~testdocfactory#_pathresolver",
+    "class/src/Factory/TestDocFactory.js~TestDocFactory.html#instance-member-_pathResolver",
+    "src/Factory/TestDocFactory.js~TestDocFactory#_pathResolver",
+    "member"
+  ],
+  [
+    "src/factory/testdocfactory.js~testdocfactory#_pushformocha",
+    "class/src/Factory/TestDocFactory.js~TestDocFactory.html#instance-method-_pushForMocha",
+    "src/Factory/TestDocFactory.js~TestDocFactory#_pushForMocha",
+    "method"
+  ],
+  [
+    "src/factory/testdocfactory.js~testdocfactory#_results",
+    "class/src/Factory/TestDocFactory.js~TestDocFactory.html#instance-member-_results",
+    "src/Factory/TestDocFactory.js~TestDocFactory#_results",
+    "member"
+  ],
+  [
+    "src/factory/testdocfactory.js~testdocfactory#_type",
+    "class/src/Factory/TestDocFactory.js~TestDocFactory.html#instance-member-_type",
+    "src/Factory/TestDocFactory.js~TestDocFactory#_type",
+    "member"
+  ],
+  [
+    "src/factory/testdocfactory.js~testdocfactory#constructor",
+    "class/src/Factory/TestDocFactory.js~TestDocFactory.html#instance-constructor-constructor",
+    "src/Factory/TestDocFactory.js~TestDocFactory#constructor",
+    "method"
+  ],
+  [
+    "src/factory/testdocfactory.js~testdocfactory#push",
+    "class/src/Factory/TestDocFactory.js~TestDocFactory.html#instance-method-push",
+    "src/Factory/TestDocFactory.js~TestDocFactory#push",
+    "method"
+  ],
+  [
+    "src/factory/testdocfactory.js~testdocfactory#results",
+    "class/src/Factory/TestDocFactory.js~TestDocFactory.html#instance-get-results",
+    "src/Factory/TestDocFactory.js~TestDocFactory#results",
+    "member"
+  ],
+  [
+    "src/factory/testdocfactory.js~testdocfactory._getuniqueid",
+    "class/src/Factory/TestDocFactory.js~TestDocFactory.html#static-method-_getUniqueId",
+    "src/Factory/TestDocFactory.js~TestDocFactory._getUniqueId",
+    "method"
+  ],
+  [
+    "src/factory/testdocfactory.js~testdocfactory._sequence",
+    "class/src/Factory/TestDocFactory.js~TestDocFactory.html#static-member-_sequence",
+    "src/Factory/TestDocFactory.js~TestDocFactory._sequence",
+    "member"
   ],
   [
     "src/parser/commentparser.js",
-    "%40file-src%7CParser%7CCommentParser.js.html",
-    "src/Parser/CommentParser.js"
+    "file/src/Parser/CommentParser.js.html",
+    "src/Parser/CommentParser.js",
+    "file"
   ],
   [
     "src/parser/commentparser.js~commentparser.isesdoc",
-    "%40class-src%7CParser%7CCommentParser.js~CommentParser.html#static-method-isESDoc",
-    "src/Parser/CommentParser.js~CommentParser.isESDoc"
+    "class/src/Parser/CommentParser.js~CommentParser.html#static-method-isESDoc",
+    "src/Parser/CommentParser.js~CommentParser.isESDoc",
+    "method"
   ],
   [
     "src/parser/commentparser.js~commentparser.parse",
-    "%40class-src%7CParser%7CCommentParser.js~CommentParser.html#static-method-parse",
-    "src/Parser/CommentParser.js~CommentParser.parse"
-  ],
-  [
-    "src/parser/commentparser.js~tag",
-    "%40typedef.html#static-typedef-Tag",
-    "src/Parser/CommentParser.js~Tag"
+    "class/src/Parser/CommentParser.js~CommentParser.html#static-method-parse",
+    "src/Parser/CommentParser.js~CommentParser.parse",
+    "method"
   ],
   [
     "src/parser/esparser.js",
-    "%40file-src%7CParser%7CESParser.js.html",
-    "src/Parser/ESParser.js"
+    "file/src/Parser/ESParser.js.html",
+    "src/Parser/ESParser.js",
+    "file"
   ],
   [
     "src/parser/esparser.js~esparser.parse",
-    "%40class-src%7CParser%7CESParser.js~ESParser.html#static-method-parse",
-    "src/Parser/ESParser.js~ESParser.parse"
+    "class/src/Parser/ESParser.js~ESParser.html#static-method-parse",
+    "src/Parser/ESParser.js~ESParser.parse",
+    "method"
   ],
   [
     "src/parser/paramparser.js",
-    "%40file-src%7CParser%7CParamParser.js.html",
-    "src/Parser/ParamParser.js"
+    "file/src/Parser/ParamParser.js.html",
+    "src/Parser/ParamParser.js",
+    "file"
   ],
   [
     "src/parser/paramparser.js~paramparser.guessparams",
-    "%40class-src%7CParser%7CParamParser.js~ParamParser.html#static-method-guessParams",
-    "src/Parser/ParamParser.js~ParamParser.guessParams"
+    "class/src/Parser/ParamParser.js~ParamParser.html#static-method-guessParams",
+    "src/Parser/ParamParser.js~ParamParser.guessParams",
+    "method"
   ],
   [
     "src/parser/paramparser.js~paramparser.guessreturnparam",
-    "%40class-src%7CParser%7CParamParser.js~ParamParser.html#static-method-guessReturnParam",
-    "src/Parser/ParamParser.js~ParamParser.guessReturnParam"
+    "class/src/Parser/ParamParser.js~ParamParser.html#static-method-guessReturnParam",
+    "src/Parser/ParamParser.js~ParamParser.guessReturnParam",
+    "method"
+  ],
+  [
+    "src/parser/paramparser.js~paramparser.guesstype",
+    "class/src/Parser/ParamParser.js~ParamParser.html#static-method-guessType",
+    "src/Parser/ParamParser.js~ParamParser.guessType",
+    "method"
   ],
   [
     "src/parser/paramparser.js~paramparser.parseparam",
-    "%40class-src%7CParser%7CParamParser.js~ParamParser.html#static-method-parseParam",
-    "src/Parser/ParamParser.js~ParamParser.parseParam"
+    "class/src/Parser/ParamParser.js~ParamParser.html#static-method-parseParam",
+    "src/Parser/ParamParser.js~ParamParser.parseParam",
+    "method"
   ],
   [
     "src/parser/paramparser.js~paramparser.parseparamvalue",
-    "%40class-src%7CParser%7CParamParser.js~ParamParser.html#static-method-parseParamValue",
-    "src/Parser/ParamParser.js~ParamParser.parseParamValue"
+    "class/src/Parser/ParamParser.js~ParamParser.html#static-method-parseParamValue",
+    "src/Parser/ParamParser.js~ParamParser.parseParamValue",
+    "method"
+  ],
+  [
+    "src/publisher/builder/astdocbuilder.js",
+    "file/src/Publisher/Builder/ASTDocBuilder.js.html",
+    "src/Publisher/Builder/ASTDocBuilder.js",
+    "file"
+  ],
+  [
+    "src/publisher/builder/astdocbuilder.js~astdocbuilder#_asts",
+    "class/src/Publisher/Builder/ASTDocBuilder.js~ASTDocBuilder.html#instance-member-_asts",
+    "src/Publisher/Builder/ASTDocBuilder.js~ASTDocBuilder#_asts",
+    "member"
+  ],
+  [
+    "src/publisher/builder/astdocbuilder.js~astdocbuilder#constructor",
+    "class/src/Publisher/Builder/ASTDocBuilder.js~ASTDocBuilder.html#instance-constructor-constructor",
+    "src/Publisher/Builder/ASTDocBuilder.js~ASTDocBuilder#constructor",
+    "method"
+  ],
+  [
+    "src/publisher/builder/astdocbuilder.js~astdocbuilder#exec",
+    "class/src/Publisher/Builder/ASTDocBuilder.js~ASTDocBuilder.html#instance-method-exec",
+    "src/Publisher/Builder/ASTDocBuilder.js~ASTDocBuilder#exec",
+    "method"
   ],
   [
     "src/publisher/builder/classdocbuilder.js",
-    "%40file-src%7CPublisher%7Cbuilder%7CClassDocBuilder.js.html",
-    "src/Publisher/builder/ClassDocBuilder.js"
+    "file/src/Publisher/Builder/ClassDocBuilder.js.html",
+    "src/Publisher/Builder/ClassDocBuilder.js",
+    "file"
+  ],
+  [
+    "src/publisher/builder/classdocbuilder.js~classdocbuilder#_buildclassdoc",
+    "class/src/Publisher/Builder/ClassDocBuilder.js~ClassDocBuilder.html#instance-method-_buildClassDoc",
+    "src/Publisher/Builder/ClassDocBuilder.js~ClassDocBuilder#_buildClassDoc",
+    "method"
   ],
   [
     "src/publisher/builder/classdocbuilder.js~classdocbuilder#_builddirectsubclasshtml",
-    "%40class-src%7CPublisher%7Cbuilder%7CClassDocBuilder.js~ClassDocBuilder.html#instance-method-_buildDirectSubclassHTML",
-    "src/Publisher/builder/ClassDocBuilder.js~ClassDocBuilder#_buildDirectSubclassHTML"
+    "class/src/Publisher/Builder/ClassDocBuilder.js~ClassDocBuilder.html#instance-method-_buildDirectSubclassHTML",
+    "src/Publisher/Builder/ClassDocBuilder.js~ClassDocBuilder#_buildDirectSubclassHTML",
+    "method"
   ],
   [
     "src/publisher/builder/classdocbuilder.js~classdocbuilder#_buildextendschainhtml",
-    "%40class-src%7CPublisher%7Cbuilder%7CClassDocBuilder.js~ClassDocBuilder.html#instance-method-_buildExtendsChainHTML",
-    "src/Publisher/builder/ClassDocBuilder.js~ClassDocBuilder#_buildExtendsChainHTML"
+    "class/src/Publisher/Builder/ClassDocBuilder.js~ClassDocBuilder.html#instance-method-_buildExtendsChainHTML",
+    "src/Publisher/Builder/ClassDocBuilder.js~ClassDocBuilder#_buildExtendsChainHTML",
+    "method"
   ],
   [
     "src/publisher/builder/classdocbuilder.js~classdocbuilder#_buildindirectsubclasshtml",
-    "%40class-src%7CPublisher%7Cbuilder%7CClassDocBuilder.js~ClassDocBuilder.html#instance-method-_buildIndirectSubclassHTML",
-    "src/Publisher/builder/ClassDocBuilder.js~ClassDocBuilder#_buildIndirectSubclassHTML"
+    "class/src/Publisher/Builder/ClassDocBuilder.js~ClassDocBuilder.html#instance-method-_buildIndirectSubclassHTML",
+    "src/Publisher/Builder/ClassDocBuilder.js~ClassDocBuilder#_buildIndirectSubclassHTML",
+    "method"
   ],
   [
     "src/publisher/builder/classdocbuilder.js~classdocbuilder#_buildinheritedsummaryhtml",
-    "%40class-src%7CPublisher%7Cbuilder%7CClassDocBuilder.js~ClassDocBuilder.html#instance-method-_buildInheritedSummaryHTML",
-    "src/Publisher/builder/ClassDocBuilder.js~ClassDocBuilder#_buildInheritedSummaryHTML"
-  ],
-  [
-    "src/publisher/builder/classdocbuilder.js~classdocbuilder#_buildobjectdoc",
-    "%40class-src%7CPublisher%7Cbuilder%7CClassDocBuilder.js~ClassDocBuilder.html#instance-method-_buildObjectDoc",
-    "src/Publisher/builder/ClassDocBuilder.js~ClassDocBuilder#_buildObjectDoc"
+    "class/src/Publisher/Builder/ClassDocBuilder.js~ClassDocBuilder.html#instance-method-_buildInheritedSummaryHTML",
+    "src/Publisher/Builder/ClassDocBuilder.js~ClassDocBuilder#_buildInheritedSummaryHTML",
+    "method"
   ],
   [
     "src/publisher/builder/classdocbuilder.js~classdocbuilder#_buildvariationhtml",
-    "%40class-src%7CPublisher%7Cbuilder%7CClassDocBuilder.js~ClassDocBuilder.html#instance-method-_buildVariationHTML",
-    "src/Publisher/builder/ClassDocBuilder.js~ClassDocBuilder#_buildVariationHTML"
+    "class/src/Publisher/Builder/ClassDocBuilder.js~ClassDocBuilder.html#instance-method-_buildVariationHTML",
+    "src/Publisher/Builder/ClassDocBuilder.js~ClassDocBuilder#_buildVariationHTML",
+    "method"
   ],
   [
     "src/publisher/builder/classdocbuilder.js~classdocbuilder#exec",
-    "%40class-src%7CPublisher%7Cbuilder%7CClassDocBuilder.js~ClassDocBuilder.html#instance-method-exec",
-    "src/Publisher/builder/ClassDocBuilder.js~ClassDocBuilder#exec"
+    "class/src/Publisher/Builder/ClassDocBuilder.js~ClassDocBuilder.html#instance-method-exec",
+    "src/Publisher/Builder/ClassDocBuilder.js~ClassDocBuilder#exec",
+    "method"
+  ],
+  [
+    "src/publisher/builder/coveragebuilder.js",
+    "file/src/Publisher/Builder/CoverageBuilder.js.html",
+    "src/Publisher/Builder/CoverageBuilder.js",
+    "file"
+  ],
+  [
+    "src/publisher/builder/coveragebuilder.js~coveragebuilder#exec",
+    "class/src/Publisher/Builder/CoverageBuilder.js~CoverageBuilder.html#instance-method-exec",
+    "src/Publisher/Builder/CoverageBuilder.js~CoverageBuilder#exec",
+    "method"
   ],
   [
     "src/publisher/builder/docbuilder.js",
-    "%40file-src%7CPublisher%7Cbuilder%7CDocBuilder.js.html",
-    "src/Publisher/builder/DocBuilder.js"
+    "file/src/Publisher/Builder/DocBuilder.js.html",
+    "src/Publisher/Builder/DocBuilder.js",
+    "file"
+  ],
+  [
+    "src/publisher/builder/docbuilder.js~docbuilder#_buildcoveragehtml",
+    "class/src/Publisher/Builder/DocBuilder.js~DocBuilder.html#instance-method-_buildCoverageHTML",
+    "src/Publisher/Builder/DocBuilder.js~DocBuilder#_buildCoverageHTML",
+    "method"
   ],
   [
     "src/publisher/builder/docbuilder.js~docbuilder#_builddeprecatedhtml",
-    "%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html#instance-method-_buildDeprecatedHTML",
-    "src/Publisher/builder/DocBuilder.js~DocBuilder#_buildDeprecatedHTML"
+    "class/src/Publisher/Builder/DocBuilder.js~DocBuilder.html#instance-method-_buildDeprecatedHTML",
+    "src/Publisher/Builder/DocBuilder.js~DocBuilder#_buildDeprecatedHTML",
+    "method"
   ],
   [
     "src/publisher/builder/docbuilder.js~docbuilder#_builddetaildocs",
-    "%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html#instance-method-_buildDetailDocs",
-    "src/Publisher/builder/DocBuilder.js~DocBuilder#_buildDetailDocs"
+    "class/src/Publisher/Builder/DocBuilder.js~DocBuilder.html#instance-method-_buildDetailDocs",
+    "src/Publisher/Builder/DocBuilder.js~DocBuilder#_buildDetailDocs",
+    "method"
   ],
   [
     "src/publisher/builder/docbuilder.js~docbuilder#_builddetailhtml",
-    "%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html#instance-method-_buildDetailHTML",
-    "src/Publisher/builder/DocBuilder.js~DocBuilder#_buildDetailHTML"
+    "class/src/Publisher/Builder/DocBuilder.js~DocBuilder.html#instance-method-_buildDetailHTML",
+    "src/Publisher/Builder/DocBuilder.js~DocBuilder#_buildDetailHTML",
+    "method"
   ],
   [
     "src/publisher/builder/docbuilder.js~docbuilder#_builddoclinkhtml",
-    "%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html#instance-method-_buildDocLinkHTML",
-    "src/Publisher/builder/DocBuilder.js~DocBuilder#_buildDocLinkHTML"
+    "class/src/Publisher/Builder/DocBuilder.js~DocBuilder.html#instance-method-_buildDocLinkHTML",
+    "src/Publisher/Builder/DocBuilder.js~DocBuilder#_buildDocLinkHTML",
+    "method"
   ],
   [
     "src/publisher/builder/docbuilder.js~docbuilder#_builddocslinkhtml",
-    "%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html#instance-method-_buildDocsLinkHTML",
-    "src/Publisher/builder/DocBuilder.js~DocBuilder#_buildDocsLinkHTML"
+    "class/src/Publisher/Builder/DocBuilder.js~DocBuilder.html#instance-method-_buildDocsLinkHTML",
+    "src/Publisher/Builder/DocBuilder.js~DocBuilder#_buildDocsLinkHTML",
+    "method"
   ],
   [
     "src/publisher/builder/docbuilder.js~docbuilder#_buildexperimentalhtml",
-    "%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html#instance-method-_buildExperimentalHTML",
-    "src/Publisher/builder/DocBuilder.js~DocBuilder#_buildExperimentalHTML"
+    "class/src/Publisher/Builder/DocBuilder.js~DocBuilder.html#instance-method-_buildExperimentalHTML",
+    "src/Publisher/Builder/DocBuilder.js~DocBuilder#_buildExperimentalHTML",
+    "method"
   ],
   [
     "src/publisher/builder/docbuilder.js~docbuilder#_buildfiledoclinkhtml",
-    "%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html#instance-method-_buildFileDocLinkHTML",
-    "src/Publisher/builder/DocBuilder.js~DocBuilder#_buildFileDocLinkHTML"
+    "class/src/Publisher/Builder/DocBuilder.js~DocBuilder.html#instance-method-_buildFileDocLinkHTML",
+    "src/Publisher/Builder/DocBuilder.js~DocBuilder#_buildFileDocLinkHTML",
+    "method"
   ],
   [
     "src/publisher/builder/docbuilder.js~docbuilder#_buildlayoutdoc",
-    "%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html#instance-method-_buildLayoutDoc",
-    "src/Publisher/builder/DocBuilder.js~DocBuilder#_buildLayoutDoc"
+    "class/src/Publisher/Builder/DocBuilder.js~DocBuilder.html#instance-method-_buildLayoutDoc",
+    "src/Publisher/Builder/DocBuilder.js~DocBuilder#_buildLayoutDoc",
+    "method"
   ],
   [
     "src/publisher/builder/docbuilder.js~docbuilder#_buildnavdoc",
-    "%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html#instance-method-_buildNavDoc",
-    "src/Publisher/builder/DocBuilder.js~DocBuilder#_buildNavDoc"
+    "class/src/Publisher/Builder/DocBuilder.js~DocBuilder.html#instance-method-_buildNavDoc",
+    "src/Publisher/Builder/DocBuilder.js~DocBuilder#_buildNavDoc",
+    "method"
   ],
   [
     "src/publisher/builder/docbuilder.js~docbuilder#_buildoverridemethod",
-    "%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html#instance-method-_buildOverrideMethod",
-    "src/Publisher/builder/DocBuilder.js~DocBuilder#_buildOverrideMethod"
+    "class/src/Publisher/Builder/DocBuilder.js~DocBuilder.html#instance-method-_buildOverrideMethod",
+    "src/Publisher/Builder/DocBuilder.js~DocBuilder#_buildOverrideMethod",
+    "method"
   ],
   [
     "src/publisher/builder/docbuilder.js~docbuilder#_buildproperties",
-    "%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html#instance-method-_buildProperties",
-    "src/Publisher/builder/DocBuilder.js~DocBuilder#_buildProperties"
+    "class/src/Publisher/Builder/DocBuilder.js~DocBuilder.html#instance-method-_buildProperties",
+    "src/Publisher/Builder/DocBuilder.js~DocBuilder#_buildProperties",
+    "method"
   ],
   [
     "src/publisher/builder/docbuilder.js~docbuilder#_buildsignaturehtml",
-    "%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html#instance-method-_buildSignatureHTML",
-    "src/Publisher/builder/DocBuilder.js~DocBuilder#_buildSignatureHTML"
+    "class/src/Publisher/Builder/DocBuilder.js~DocBuilder.html#instance-method-_buildSignatureHTML",
+    "src/Publisher/Builder/DocBuilder.js~DocBuilder#_buildSignatureHTML",
+    "method"
   ],
   [
     "src/publisher/builder/docbuilder.js~docbuilder#_buildsummarydoc",
-    "%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html#instance-method-_buildSummaryDoc",
-    "src/Publisher/builder/DocBuilder.js~DocBuilder#_buildSummaryDoc"
+    "class/src/Publisher/Builder/DocBuilder.js~DocBuilder.html#instance-method-_buildSummaryDoc",
+    "src/Publisher/Builder/DocBuilder.js~DocBuilder#_buildSummaryDoc",
+    "method"
   ],
   [
     "src/publisher/builder/docbuilder.js~docbuilder#_buildsummaryhtml",
-    "%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html#instance-method-_buildSummaryHTML",
-    "src/Publisher/builder/DocBuilder.js~DocBuilder#_buildSummaryHTML"
+    "class/src/Publisher/Builder/DocBuilder.js~DocBuilder.html#instance-method-_buildSummaryHTML",
+    "src/Publisher/Builder/DocBuilder.js~DocBuilder#_buildSummaryHTML",
+    "method"
+  ],
+  [
+    "src/publisher/builder/docbuilder.js~docbuilder#_buildtypedoclinkhtml",
+    "class/src/Publisher/Builder/DocBuilder.js~DocBuilder.html#instance-method-_buildTypeDocLinkHTML",
+    "src/Publisher/Builder/DocBuilder.js~DocBuilder#_buildTypeDocLinkHTML",
+    "method"
   ],
   [
     "src/publisher/builder/docbuilder.js~docbuilder#_config",
-    "%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html#instance-member-_config",
-    "src/Publisher/builder/DocBuilder.js~DocBuilder#_config"
+    "class/src/Publisher/Builder/DocBuilder.js~DocBuilder.html#instance-member-_config",
+    "src/Publisher/Builder/DocBuilder.js~DocBuilder#_config",
+    "member"
   ],
   [
     "src/publisher/builder/docbuilder.js~docbuilder#_data",
-    "%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html#instance-member-_data",
-    "src/Publisher/builder/DocBuilder.js~DocBuilder#_data"
+    "class/src/Publisher/Builder/DocBuilder.js~DocBuilder.html#instance-member-_data",
+    "src/Publisher/Builder/DocBuilder.js~DocBuilder#_data",
+    "member"
   ],
   [
     "src/publisher/builder/docbuilder.js~docbuilder#_find",
-    "%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html#instance-method-_find",
-    "src/Publisher/builder/DocBuilder.js~DocBuilder#_find"
+    "class/src/Publisher/Builder/DocBuilder.js~DocBuilder.html#instance-method-_find",
+    "src/Publisher/Builder/DocBuilder.js~DocBuilder#_find",
+    "method"
   ],
   [
     "src/publisher/builder/docbuilder.js~docbuilder#_findaccessdocs",
-    "%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html#instance-method-_findAccessDocs",
-    "src/Publisher/builder/DocBuilder.js~DocBuilder#_findAccessDocs"
+    "class/src/Publisher/Builder/DocBuilder.js~DocBuilder.html#instance-method-_findAccessDocs",
+    "src/Publisher/Builder/DocBuilder.js~DocBuilder#_findAccessDocs",
+    "method"
   ],
   [
     "src/publisher/builder/docbuilder.js~docbuilder#_findbyname",
-    "%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html#instance-method-_findByName",
-    "src/Publisher/builder/DocBuilder.js~DocBuilder#_findByName"
+    "class/src/Publisher/Builder/DocBuilder.js~DocBuilder.html#instance-method-_findByName",
+    "src/Publisher/Builder/DocBuilder.js~DocBuilder#_findByName",
+    "method"
+  ],
+  [
+    "src/publisher/builder/docbuilder.js~docbuilder#_getbaseurl",
+    "class/src/Publisher/Builder/DocBuilder.js~DocBuilder.html#instance-method-_getBaseUrl",
+    "src/Publisher/Builder/DocBuilder.js~DocBuilder#_getBaseUrl",
+    "method"
   ],
   [
     "src/publisher/builder/docbuilder.js~docbuilder#_getinfo",
-    "%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html#instance-method-_getInfo",
-    "src/Publisher/builder/DocBuilder.js~DocBuilder#_getInfo"
+    "class/src/Publisher/Builder/DocBuilder.js~DocBuilder.html#instance-method-_getInfo",
+    "src/Publisher/Builder/DocBuilder.js~DocBuilder#_getInfo",
+    "method"
   ],
   [
     "src/publisher/builder/docbuilder.js~docbuilder#_getoutputfilename",
-    "%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html#instance-method-_getOutputFileName",
-    "src/Publisher/builder/DocBuilder.js~DocBuilder#_getOutputFileName"
+    "class/src/Publisher/Builder/DocBuilder.js~DocBuilder.html#instance-method-_getOutputFileName",
+    "src/Publisher/Builder/DocBuilder.js~DocBuilder#_getOutputFileName",
+    "method"
+  ],
+  [
+    "src/publisher/builder/docbuilder.js~docbuilder#_gettitle",
+    "class/src/Publisher/Builder/DocBuilder.js~DocBuilder.html#instance-method-_getTitle",
+    "src/Publisher/Builder/DocBuilder.js~DocBuilder#_getTitle",
+    "method"
   ],
   [
     "src/publisher/builder/docbuilder.js~docbuilder#_geturl",
-    "%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html#instance-method-_getURL",
-    "src/Publisher/builder/DocBuilder.js~DocBuilder#_getURL"
+    "class/src/Publisher/Builder/DocBuilder.js~DocBuilder.html#instance-method-_getURL",
+    "src/Publisher/Builder/DocBuilder.js~DocBuilder#_getURL",
+    "method"
   ],
   [
     "src/publisher/builder/docbuilder.js~docbuilder#_orderedfind",
-    "%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html#instance-method-_orderedFind",
-    "src/Publisher/builder/DocBuilder.js~DocBuilder#_orderedFind"
+    "class/src/Publisher/Builder/DocBuilder.js~DocBuilder.html#instance-method-_orderedFind",
+    "src/Publisher/Builder/DocBuilder.js~DocBuilder#_orderedFind",
+    "method"
   ],
   [
     "src/publisher/builder/docbuilder.js~docbuilder#_readtemplate",
-    "%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html#instance-method-_readTemplate",
-    "src/Publisher/builder/DocBuilder.js~DocBuilder#_readTemplate"
+    "class/src/Publisher/Builder/DocBuilder.js~DocBuilder.html#instance-method-_readTemplate",
+    "src/Publisher/Builder/DocBuilder.js~DocBuilder#_readTemplate",
+    "method"
   ],
   [
     "src/publisher/builder/docbuilder.js~docbuilder#constructor",
-    "%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html#instance-method-constructor",
-    "src/Publisher/builder/DocBuilder.js~DocBuilder#constructor"
+    "class/src/Publisher/Builder/DocBuilder.js~DocBuilder.html#instance-constructor-constructor",
+    "src/Publisher/Builder/DocBuilder.js~DocBuilder#constructor",
+    "method"
   ],
   [
     "src/publisher/builder/docbuilder.js~docbuilder#exec",
-    "%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html#instance-method-exec",
-    "src/Publisher/builder/DocBuilder.js~DocBuilder#exec"
+    "class/src/Publisher/Builder/DocBuilder.js~DocBuilder.html#instance-method-exec",
+    "src/Publisher/Builder/DocBuilder.js~DocBuilder#exec",
+    "method"
   ],
   [
     "src/publisher/builder/docresolver.js",
-    "%40file-src%7CPublisher%7Cbuilder%7CDocResolver.js.html",
-    "src/Publisher/builder/DocResolver.js"
+    "file/src/Publisher/Builder/DocResolver.js.html",
+    "src/Publisher/Builder/DocResolver.js",
+    "file"
   ],
   [
     "src/publisher/builder/docresolver.js~docresolver#_builder",
-    "%40class-src%7CPublisher%7Cbuilder%7CDocResolver.js~DocResolver.html#instance-member-_builder",
-    "src/Publisher/builder/DocResolver.js~DocResolver#_builder"
+    "class/src/Publisher/Builder/DocResolver.js~DocResolver.html#instance-member-_builder",
+    "src/Publisher/Builder/DocResolver.js~DocResolver#_builder",
+    "member"
   ],
   [
     "src/publisher/builder/docresolver.js~docresolver#_data",
-    "%40class-src%7CPublisher%7Cbuilder%7CDocResolver.js~DocResolver.html#instance-member-_data",
-    "src/Publisher/builder/DocResolver.js~DocResolver#_data"
+    "class/src/Publisher/Builder/DocResolver.js~DocResolver.html#instance-member-_data",
+    "src/Publisher/Builder/DocResolver.js~DocResolver#_data",
+    "member"
   ],
   [
     "src/publisher/builder/docresolver.js~docresolver#_resolveaccess",
-    "%40class-src%7CPublisher%7Cbuilder%7CDocResolver.js~DocResolver.html#instance-method-_resolveAccess",
-    "src/Publisher/builder/DocResolver.js~DocResolver#_resolveAccess"
+    "class/src/Publisher/Builder/DocResolver.js~DocResolver.html#instance-method-_resolveAccess",
+    "src/Publisher/Builder/DocResolver.js~DocResolver#_resolveAccess",
+    "method"
+  ],
+  [
+    "src/publisher/builder/docresolver.js~docresolver#_resolveduplication",
+    "class/src/Publisher/Builder/DocResolver.js~DocResolver.html#instance-method-_resolveDuplication",
+    "src/Publisher/Builder/DocResolver.js~DocResolver#_resolveDuplication",
+    "method"
   ],
   [
     "src/publisher/builder/docresolver.js~docresolver#_resolveextendschain",
-    "%40class-src%7CPublisher%7Cbuilder%7CDocResolver.js~DocResolver.html#instance-method-_resolveExtendsChain",
-    "src/Publisher/builder/DocResolver.js~DocResolver#_resolveExtendsChain"
+    "class/src/Publisher/Builder/DocResolver.js~DocResolver.html#instance-method-_resolveExtendsChain",
+    "src/Publisher/Builder/DocResolver.js~DocResolver#_resolveExtendsChain",
+    "method"
   ],
   [
     "src/publisher/builder/docresolver.js~docresolver#_resolveignore",
-    "%40class-src%7CPublisher%7Cbuilder%7CDocResolver.js~DocResolver.html#instance-method-_resolveIgnore",
-    "src/Publisher/builder/DocResolver.js~DocResolver#_resolveIgnore"
+    "class/src/Publisher/Builder/DocResolver.js~DocResolver.html#instance-method-_resolveIgnore",
+    "src/Publisher/Builder/DocResolver.js~DocResolver#_resolveIgnore",
+    "method"
   ],
   [
     "src/publisher/builder/docresolver.js~docresolver#_resolvelink",
-    "%40class-src%7CPublisher%7Cbuilder%7CDocResolver.js~DocResolver.html#instance-method-_resolveLink",
-    "src/Publisher/builder/DocResolver.js~DocResolver#_resolveLink"
+    "class/src/Publisher/Builder/DocResolver.js~DocResolver.html#instance-method-_resolveLink",
+    "src/Publisher/Builder/DocResolver.js~DocResolver#_resolveLink",
+    "method"
   ],
   [
     "src/publisher/builder/docresolver.js~docresolver#_resolvemarkdown",
-    "%40class-src%7CPublisher%7Cbuilder%7CDocResolver.js~DocResolver.html#instance-method-_resolveMarkdown",
-    "src/Publisher/builder/DocResolver.js~DocResolver#_resolveMarkdown"
+    "class/src/Publisher/Builder/DocResolver.js~DocResolver.html#instance-method-_resolveMarkdown",
+    "src/Publisher/Builder/DocResolver.js~DocResolver#_resolveMarkdown",
+    "method"
   ],
   [
-    "src/publisher/builder/docresolver.js~docresolver#_resolveonlyexported",
-    "%40class-src%7CPublisher%7Cbuilder%7CDocResolver.js~DocResolver.html#instance-method-_resolveOnlyExported",
-    "src/Publisher/builder/DocResolver.js~DocResolver#_resolveOnlyExported"
+    "src/publisher/builder/docresolver.js~docresolver#_resolvetestrelation",
+    "class/src/Publisher/Builder/DocResolver.js~DocResolver.html#instance-method-_resolveTestRelation",
+    "src/Publisher/Builder/DocResolver.js~DocResolver#_resolveTestRelation",
+    "method"
   ],
   [
-    "src/publisher/builder/docresolver.js~docresolver#access",
-    "%40class-src%7CPublisher%7Cbuilder%7CDocResolver.js~DocResolver.html#instance-member-access",
-    "src/Publisher/builder/DocResolver.js~DocResolver#access"
+    "src/publisher/builder/docresolver.js~docresolver#_resolveundocumentidentifier",
+    "class/src/Publisher/Builder/DocResolver.js~DocResolver.html#instance-method-_resolveUndocumentIdentifier",
+    "src/Publisher/Builder/DocResolver.js~DocResolver#_resolveUndocumentIdentifier",
+    "method"
+  ],
+  [
+    "src/publisher/builder/docresolver.js~docresolver#_resolveunexportidentifier",
+    "class/src/Publisher/Builder/DocResolver.js~DocResolver.html#instance-method-_resolveUnexportIdentifier",
+    "src/Publisher/Builder/DocResolver.js~DocResolver#_resolveUnexportIdentifier",
+    "method"
   ],
   [
     "src/publisher/builder/docresolver.js~docresolver#constructor",
-    "%40class-src%7CPublisher%7Cbuilder%7CDocResolver.js~DocResolver.html#instance-method-constructor",
-    "src/Publisher/builder/DocResolver.js~DocResolver#constructor"
-  ],
-  [
-    "src/publisher/builder/docresolver.js~docresolver#ignore",
-    "%40class-src%7CPublisher%7Cbuilder%7CDocResolver.js~DocResolver.html#instance-member-ignore",
-    "src/Publisher/builder/DocResolver.js~DocResolver#ignore"
+    "class/src/Publisher/Builder/DocResolver.js~DocResolver.html#instance-constructor-constructor",
+    "src/Publisher/Builder/DocResolver.js~DocResolver#constructor",
+    "method"
   ],
   [
     "src/publisher/builder/docresolver.js~docresolver#resolve",
-    "%40class-src%7CPublisher%7Cbuilder%7CDocResolver.js~DocResolver.html#instance-method-resolve",
-    "src/Publisher/builder/DocResolver.js~DocResolver#resolve"
+    "class/src/Publisher/Builder/DocResolver.js~DocResolver.html#instance-method-resolve",
+    "src/Publisher/Builder/DocResolver.js~DocResolver#resolve",
+    "method"
   ],
   [
     "src/publisher/builder/filedocbuilder.js",
-    "%40file-src%7CPublisher%7Cbuilder%7CFileDocBuilder.js.html",
-    "src/Publisher/builder/FileDocBuilder.js"
+    "file/src/Publisher/Builder/FileDocBuilder.js.html",
+    "src/Publisher/Builder/FileDocBuilder.js",
+    "file"
   ],
   [
     "src/publisher/builder/filedocbuilder.js~filedocbuilder#_buildfiledoc",
-    "%40class-src%7CPublisher%7Cbuilder%7CFileDocBuilder.js~FileDocBuilder.html#instance-method-_buildFileDoc",
-    "src/Publisher/builder/FileDocBuilder.js~FileDocBuilder#_buildFileDoc"
+    "class/src/Publisher/Builder/FileDocBuilder.js~FileDocBuilder.html#instance-method-_buildFileDoc",
+    "src/Publisher/Builder/FileDocBuilder.js~FileDocBuilder#_buildFileDoc",
+    "method"
   ],
   [
     "src/publisher/builder/filedocbuilder.js~filedocbuilder#exec",
-    "%40class-src%7CPublisher%7Cbuilder%7CFileDocBuilder.js~FileDocBuilder.html#instance-method-exec",
-    "src/Publisher/builder/FileDocBuilder.js~FileDocBuilder#exec"
+    "class/src/Publisher/Builder/FileDocBuilder.js~FileDocBuilder.html#instance-method-exec",
+    "src/Publisher/Builder/FileDocBuilder.js~FileDocBuilder#exec",
+    "method"
+  ],
+  [
+    "src/publisher/builder/identifiersdocbuilder.js",
+    "file/src/Publisher/Builder/IdentifiersDocBuilder.js.html",
+    "src/Publisher/Builder/IdentifiersDocBuilder.js",
+    "file"
+  ],
+  [
+    "src/publisher/builder/identifiersdocbuilder.js~identifiersdocbuilder#_buildidentifierdoc",
+    "class/src/Publisher/Builder/IdentifiersDocBuilder.js~IdentifiersDocBuilder.html#instance-method-_buildIdentifierDoc",
+    "src/Publisher/Builder/IdentifiersDocBuilder.js~IdentifiersDocBuilder#_buildIdentifierDoc",
+    "method"
+  ],
+  [
+    "src/publisher/builder/identifiersdocbuilder.js~identifiersdocbuilder#exec",
+    "class/src/Publisher/Builder/IdentifiersDocBuilder.js~IdentifiersDocBuilder.html#instance-method-exec",
+    "src/Publisher/Builder/IdentifiersDocBuilder.js~IdentifiersDocBuilder#exec",
+    "method"
   ],
   [
     "src/publisher/builder/indexdocbuilder.js",
-    "%40file-src%7CPublisher%7Cbuilder%7CIndexDocBuilder.js.html",
-    "src/Publisher/builder/IndexDocBuilder.js"
+    "file/src/Publisher/Builder/IndexDocBuilder.js.html",
+    "src/Publisher/Builder/IndexDocBuilder.js",
+    "file"
   ],
   [
     "src/publisher/builder/indexdocbuilder.js~indexdocbuilder#_buildindexdoc",
-    "%40class-src%7CPublisher%7Cbuilder%7CIndexDocBuilder.js~IndexDocBuilder.html#instance-method-_buildIndexDoc",
-    "src/Publisher/builder/IndexDocBuilder.js~IndexDocBuilder#_buildIndexDoc"
+    "class/src/Publisher/Builder/IndexDocBuilder.js~IndexDocBuilder.html#instance-method-_buildIndexDoc",
+    "src/Publisher/Builder/IndexDocBuilder.js~IndexDocBuilder#_buildIndexDoc",
+    "method"
+  ],
+  [
+    "src/publisher/builder/indexdocbuilder.js~indexdocbuilder#_coverage",
+    "class/src/Publisher/Builder/IndexDocBuilder.js~IndexDocBuilder.html#instance-member-_coverage",
+    "src/Publisher/Builder/IndexDocBuilder.js~IndexDocBuilder#_coverage",
+    "member"
+  ],
+  [
+    "src/publisher/builder/indexdocbuilder.js~indexdocbuilder#constructor",
+    "class/src/Publisher/Builder/IndexDocBuilder.js~IndexDocBuilder.html#instance-constructor-constructor",
+    "src/Publisher/Builder/IndexDocBuilder.js~IndexDocBuilder#constructor",
+    "method"
   ],
   [
     "src/publisher/builder/indexdocbuilder.js~indexdocbuilder#exec",
-    "%40class-src%7CPublisher%7Cbuilder%7CIndexDocBuilder.js~IndexDocBuilder.html#instance-method-exec",
-    "src/Publisher/builder/IndexDocBuilder.js~IndexDocBuilder#exec"
-  ],
-  [
-    "src/publisher/builder/readmedocbuilder.js",
-    "%40file-src%7CPublisher%7Cbuilder%7CReadmeDocBuilder.js.html",
-    "src/Publisher/builder/ReadmeDocBuilder.js"
-  ],
-  [
-    "src/publisher/builder/readmedocbuilder.js~readmedocbuilder#_buildreadmedoc",
-    "%40class-src%7CPublisher%7Cbuilder%7CReadmeDocBuilder.js~ReadmeDocBuilder.html#instance-method-_buildReadmeDoc",
-    "src/Publisher/builder/ReadmeDocBuilder.js~ReadmeDocBuilder#_buildReadmeDoc"
-  ],
-  [
-    "src/publisher/builder/readmedocbuilder.js~readmedocbuilder#exec",
-    "%40class-src%7CPublisher%7Cbuilder%7CReadmeDocBuilder.js~ReadmeDocBuilder.html#instance-method-exec",
-    "src/Publisher/builder/ReadmeDocBuilder.js~ReadmeDocBuilder#exec"
+    "class/src/Publisher/Builder/IndexDocBuilder.js~IndexDocBuilder.html#instance-method-exec",
+    "src/Publisher/Builder/IndexDocBuilder.js~IndexDocBuilder#exec",
+    "method"
   ],
   [
     "src/publisher/builder/searchindexbuilder.js",
-    "%40file-src%7CPublisher%7Cbuilder%7CSearchIndexBuilder.js.html",
-    "src/Publisher/builder/SearchIndexBuilder.js"
+    "file/src/Publisher/Builder/SearchIndexBuilder.js.html",
+    "src/Publisher/Builder/SearchIndexBuilder.js",
+    "file"
   ],
   [
     "src/publisher/builder/searchindexbuilder.js~searchindexbuilder#exec",
-    "%40class-src%7CPublisher%7Cbuilder%7CSearchIndexBuilder.js~SearchIndexBuilder.html#instance-method-exec",
-    "src/Publisher/builder/SearchIndexBuilder.js~SearchIndexBuilder#exec"
+    "class/src/Publisher/Builder/SearchIndexBuilder.js~SearchIndexBuilder.html#instance-method-exec",
+    "src/Publisher/Builder/SearchIndexBuilder.js~SearchIndexBuilder#exec",
+    "method"
   ],
   [
     "src/publisher/builder/singledocbuilder.js",
-    "%40file-src%7CPublisher%7Cbuilder%7CSingleDocBuilder.js.html",
-    "src/Publisher/builder/SingleDocBuilder.js"
+    "file/src/Publisher/Builder/SingleDocBuilder.js.html",
+    "src/Publisher/Builder/SingleDocBuilder.js",
+    "file"
   ],
   [
     "src/publisher/builder/singledocbuilder.js~singledocbuilder#_buildsingledoc",
-    "%40class-src%7CPublisher%7Cbuilder%7CSingleDocBuilder.js~SingleDocBuilder.html#instance-method-_buildSingleDoc",
-    "src/Publisher/builder/SingleDocBuilder.js~SingleDocBuilder#_buildSingleDoc"
+    "class/src/Publisher/Builder/SingleDocBuilder.js~SingleDocBuilder.html#instance-method-_buildSingleDoc",
+    "src/Publisher/Builder/SingleDocBuilder.js~SingleDocBuilder#_buildSingleDoc",
+    "method"
   ],
   [
     "src/publisher/builder/singledocbuilder.js~singledocbuilder#exec",
-    "%40class-src%7CPublisher%7Cbuilder%7CSingleDocBuilder.js~SingleDocBuilder.html#instance-method-exec",
-    "src/Publisher/builder/SingleDocBuilder.js~SingleDocBuilder#exec"
+    "class/src/Publisher/Builder/SingleDocBuilder.js~SingleDocBuilder.html#instance-method-exec",
+    "src/Publisher/Builder/SingleDocBuilder.js~SingleDocBuilder#exec",
+    "method"
+  ],
+  [
+    "src/publisher/builder/sourcedocbuilder.js",
+    "file/src/Publisher/Builder/SourceDocBuilder.js.html",
+    "src/Publisher/Builder/SourceDocBuilder.js",
+    "file"
+  ],
+  [
+    "src/publisher/builder/sourcedocbuilder.js~sourcedocbuilder#_buildsourcehtml",
+    "class/src/Publisher/Builder/SourceDocBuilder.js~SourceDocBuilder.html#instance-method-_buildSourceHTML",
+    "src/Publisher/Builder/SourceDocBuilder.js~SourceDocBuilder#_buildSourceHTML",
+    "method"
+  ],
+  [
+    "src/publisher/builder/sourcedocbuilder.js~sourcedocbuilder#_coverage",
+    "class/src/Publisher/Builder/SourceDocBuilder.js~SourceDocBuilder.html#instance-member-_coverage",
+    "src/Publisher/Builder/SourceDocBuilder.js~SourceDocBuilder#_coverage",
+    "member"
+  ],
+  [
+    "src/publisher/builder/sourcedocbuilder.js~sourcedocbuilder#constructor",
+    "class/src/Publisher/Builder/SourceDocBuilder.js~SourceDocBuilder.html#instance-constructor-constructor",
+    "src/Publisher/Builder/SourceDocBuilder.js~SourceDocBuilder#constructor",
+    "method"
+  ],
+  [
+    "src/publisher/builder/sourcedocbuilder.js~sourcedocbuilder#exec",
+    "class/src/Publisher/Builder/SourceDocBuilder.js~SourceDocBuilder.html#instance-method-exec",
+    "src/Publisher/Builder/SourceDocBuilder.js~SourceDocBuilder#exec",
+    "method"
   ],
   [
     "src/publisher/builder/staticfilebuilder.js",
-    "%40file-src%7CPublisher%7Cbuilder%7CStaticFileBuilder.js.html",
-    "src/Publisher/builder/StaticFileBuilder.js"
+    "file/src/Publisher/Builder/StaticFileBuilder.js.html",
+    "src/Publisher/Builder/StaticFileBuilder.js",
+    "file"
   ],
   [
     "src/publisher/builder/staticfilebuilder.js~staticfilebuilder#exec",
-    "%40class-src%7CPublisher%7Cbuilder%7CStaticFileBuilder.js~StaticFileBuilder.html#instance-method-exec",
-    "src/Publisher/builder/StaticFileBuilder.js~StaticFileBuilder#exec"
+    "class/src/Publisher/Builder/StaticFileBuilder.js~StaticFileBuilder.html#instance-method-exec",
+    "src/Publisher/Builder/StaticFileBuilder.js~StaticFileBuilder#exec",
+    "method"
+  ],
+  [
+    "src/publisher/builder/testdocbuilder.js",
+    "file/src/Publisher/Builder/TestDocBuilder.js.html",
+    "src/Publisher/Builder/TestDocBuilder.js",
+    "file"
+  ],
+  [
+    "src/publisher/builder/testdocbuilder.js~testdocbuilder#_buildtestdescribedochtml",
+    "class/src/Publisher/Builder/TestDocBuilder.js~TestDocBuilder.html#instance-method-_buildTestDescribeDocHTML",
+    "src/Publisher/Builder/TestDocBuilder.js~TestDocBuilder#_buildTestDescribeDocHTML",
+    "method"
+  ],
+  [
+    "src/publisher/builder/testdocbuilder.js~testdocbuilder#_buildtestdochtml",
+    "class/src/Publisher/Builder/TestDocBuilder.js~TestDocBuilder.html#instance-method-_buildTestDocHTML",
+    "src/Publisher/Builder/TestDocBuilder.js~TestDocBuilder#_buildTestDocHTML",
+    "method"
+  ],
+  [
+    "src/publisher/builder/testdocbuilder.js~testdocbuilder#exec",
+    "class/src/Publisher/Builder/TestDocBuilder.js~TestDocBuilder.html#instance-method-exec",
+    "src/Publisher/Builder/TestDocBuilder.js~TestDocBuilder#exec",
+    "method"
+  ],
+  [
+    "src/publisher/builder/testfiledocbuilder.js",
+    "file/src/Publisher/Builder/TestFileDocBuilder.js.html",
+    "src/Publisher/Builder/TestFileDocBuilder.js",
+    "file"
+  ],
+  [
+    "src/publisher/builder/testfiledocbuilder.js~filedocbuilder#_buildfiledoc",
+    "class/src/Publisher/Builder/TestFileDocBuilder.js~FileDocBuilder.html#instance-method-_buildFileDoc",
+    "src/Publisher/Builder/TestFileDocBuilder.js~FileDocBuilder#_buildFileDoc",
+    "method"
+  ],
+  [
+    "src/publisher/builder/testfiledocbuilder.js~filedocbuilder#exec",
+    "class/src/Publisher/Builder/TestFileDocBuilder.js~FileDocBuilder.html#instance-method-exec",
+    "src/Publisher/Builder/TestFileDocBuilder.js~FileDocBuilder#exec",
+    "method"
   ],
   [
     "src/publisher/builder/util.js",
-    "%40file-src%7CPublisher%7Cbuilder%7Cutil.js.html",
-    "src/Publisher/builder/util.js"
+    "file/src/Publisher/Builder/util.js.html",
+    "src/Publisher/Builder/util.js",
+    "file"
   ],
   [
     "src/publisher/publish.js",
-    "%40file-src%7CPublisher%7Cpublish.js.html",
-    "src/Publisher/publish.js"
+    "file/src/Publisher/publish.js.html",
+    "src/Publisher/publish.js",
+    "file"
   ],
   [
     "src/typedef/typedef.js",
-    "%40file-src%7CTypedef%7Ctypedef.js.html",
-    "src/Typedef/typedef.js"
+    "file/src/Typedef/typedef.js.html",
+    "src/Typedef/typedef.js",
+    "file"
+  ],
+  [
+    "src/typedef/typedef.js~ast",
+    "external/index.html",
+    "src/Typedef/typedef.js~AST",
+    "external"
+  ],
+  [
+    "src/typedef/typedef.js~astnode",
+    "external/index.html",
+    "src/Typedef/typedef.js~ASTNode",
+    "external"
+  ],
+  [
+    "src/typedef/typedef.js~coverageobject",
+    "typedef/index.html#static-typedef-CoverageObject",
+    "src/Typedef/typedef.js~CoverageObject",
+    "typedef"
   ],
   [
     "src/typedef/typedef.js~docobject",
-    "%40typedef.html#static-typedef-DocObject",
-    "src/Typedef/typedef.js~DocObject"
+    "typedef/index.html#static-typedef-DocObject",
+    "src/Typedef/typedef.js~DocObject",
+    "typedef"
   ],
   [
     "src/typedef/typedef.js~doctypedef",
-    "%40typedef.html#static-typedef-DocTypedef",
-    "src/Typedef/typedef.js~DocTypedef"
+    "typedef/index.html#static-typedef-DocTypedef",
+    "src/Typedef/typedef.js~DocTypedef",
+    "typedef"
+  ],
+  [
+    "src/typedef/typedef.js~esdoccliargv",
+    "typedef/index.html#static-typedef-ESDocCLIArgv",
+    "src/Typedef/typedef.js~ESDocCLIArgv",
+    "typedef"
   ],
   [
     "src/typedef/typedef.js~esdocconfig",
-    "%40typedef.html#static-typedef-ESDocConfig",
-    "src/Typedef/typedef.js~ESDocConfig"
+    "typedef/index.html#static-typedef-ESDocConfig",
+    "src/Typedef/typedef.js~ESDocConfig",
+    "typedef"
+  ],
+  [
+    "src/typedef/typedef.js~icecap",
+    "external/index.html",
+    "src/Typedef/typedef.js~IceCap",
+    "external"
   ],
   [
     "src/typedef/typedef.js~icecapinstancetypedef",
-    "%40typedef.html#static-typedef-IceCapInstanceTypedef",
-    "src/Typedef/typedef.js~IceCapInstanceTypedef"
+    "typedef/index.html#static-typedef-IceCapInstanceTypedef",
+    "src/Typedef/typedef.js~IceCapInstanceTypedef",
+    "typedef"
+  ],
+  [
+    "src/typedef/typedef.js~npmpackageobject",
+    "external/index.html",
+    "src/Typedef/typedef.js~NPMPackageObject",
+    "external"
   ],
   [
     "src/typedef/typedef.js~packagetypedef",
-    "%40typedef.html#static-typedef-PackageTypedef",
-    "src/Typedef/typedef.js~PackageTypedef"
+    "typedef/index.html#static-typedef-PackageTypedef",
+    "src/Typedef/typedef.js~PackageTypedef",
+    "typedef"
+  ],
+  [
+    "src/typedef/typedef.js~parsedparam",
+    "typedef/index.html#static-typedef-ParsedParam",
+    "src/Typedef/typedef.js~ParsedParam",
+    "typedef"
+  ],
+  [
+    "src/typedef/typedef.js~taffy",
+    "external/index.html",
+    "src/Typedef/typedef.js~Taffy",
+    "external"
   ],
   [
     "src/typedef/typedef.js~taffycursor",
-    "%40typedef.html#static-typedef-TaffyCursor",
-    "src/Typedef/typedef.js~TaffyCursor"
+    "typedef/index.html#static-typedef-TaffyCursor",
+    "src/Typedef/typedef.js~TaffyCursor",
+    "typedef"
+  ],
+  [
+    "src/typedef/typedef.js~tag",
+    "typedef/index.html#static-typedef-Tag",
+    "src/Typedef/typedef.js~Tag",
+    "typedef"
+  ],
+  [
+    "src/unittest/commentparsertest.js",
+    "test-file/src/UnitTest/CommentParserTest.js.html",
+    "src/UnitTest/CommentParserTest.js",
+    "testFile"
+  ],
+  [
+    "src/unittest/esdocclitest.js",
+    "test-file/src/UnitTest/ESDocCLITest.js.html",
+    "src/UnitTest/ESDocCLITest.js",
+    "testFile"
+  ],
+  [
+    "src/unittest/paramparsertest.js",
+    "test-file/src/UnitTest/ParamParserTest.js.html",
+    "src/UnitTest/ParamParserTest.js",
+    "testFile"
   ],
   [
     "src/util/astutil.js",
-    "%40file-src%7CUtil%7CASTUtil.js.html",
-    "src/Util/ASTUtil.js"
+    "file/src/Util/ASTUtil.js.html",
+    "src/Util/ASTUtil.js",
+    "file"
   ],
   [
     "src/util/astutil.js~astutil.findpathinimportdeclaration",
-    "%40class-src%7CUtil%7CASTUtil.js~ASTUtil.html#static-method-findPathInImportDeclaration",
-    "src/Util/ASTUtil.js~ASTUtil.findPathInImportDeclaration"
+    "class/src/Util/ASTUtil.js~ASTUtil.html#static-method-findPathInImportDeclaration",
+    "src/Util/ASTUtil.js~ASTUtil.findPathInImportDeclaration",
+    "method"
   ],
   [
     "src/util/astutil.js~astutil.traverse",
-    "%40class-src%7CUtil%7CASTUtil.js~ASTUtil.html#static-method-traverse",
-    "src/Util/ASTUtil.js~ASTUtil.traverse"
+    "class/src/Util/ASTUtil.js~ASTUtil.html#static-method-traverse",
+    "src/Util/ASTUtil.js~ASTUtil.traverse",
+    "method"
   ],
   [
     "src/util/pathresolver.js",
-    "%40file-src%7CUtil%7CPathResolver.js.html",
-    "src/Util/PathResolver.js"
+    "file/src/Util/PathResolver.js.html",
+    "src/Util/PathResolver.js",
+    "file"
   ],
   [
     "src/util/pathresolver.js~pathresolver#_filepath",
-    "%40class-src%7CUtil%7CPathResolver.js~PathResolver.html#instance-member-_filePath",
-    "src/Util/PathResolver.js~PathResolver#_filePath"
+    "class/src/Util/PathResolver.js~PathResolver.html#instance-member-_filePath",
+    "src/Util/PathResolver.js~PathResolver#_filePath",
+    "member"
   ],
   [
     "src/util/pathresolver.js~pathresolver#_indirpath",
-    "%40class-src%7CUtil%7CPathResolver.js~PathResolver.html#instance-member-_inDirPath",
-    "src/Util/PathResolver.js~PathResolver#_inDirPath"
+    "class/src/Util/PathResolver.js~PathResolver.html#instance-member-_inDirPath",
+    "src/Util/PathResolver.js~PathResolver#_inDirPath",
+    "member"
   ],
   [
     "src/util/pathresolver.js~pathresolver#_mainfilepath",
-    "%40class-src%7CUtil%7CPathResolver.js~PathResolver.html#instance-member-_mainFilePath",
-    "src/Util/PathResolver.js~PathResolver#_mainFilePath"
+    "class/src/Util/PathResolver.js~PathResolver.html#instance-member-_mainFilePath",
+    "src/Util/PathResolver.js~PathResolver#_mainFilePath",
+    "member"
   ],
   [
     "src/util/pathresolver.js~pathresolver#_packagename",
-    "%40class-src%7CUtil%7CPathResolver.js~PathResolver.html#instance-member-_packageName",
-    "src/Util/PathResolver.js~PathResolver#_packageName"
+    "class/src/Util/PathResolver.js~PathResolver.html#instance-member-_packageName",
+    "src/Util/PathResolver.js~PathResolver#_packageName",
+    "member"
   ],
   [
     "src/util/pathresolver.js~pathresolver#_pathprefix",
-    "%40class-src%7CUtil%7CPathResolver.js~PathResolver.html#instance-member-_pathPrefix",
-    "src/Util/PathResolver.js~PathResolver#_pathPrefix"
+    "class/src/Util/PathResolver.js~PathResolver.html#instance-member-_pathPrefix",
+    "src/Util/PathResolver.js~PathResolver#_pathPrefix",
+    "member"
   ],
   [
     "src/util/pathresolver.js~pathresolver#_prefixedfilepath",
-    "%40class-src%7CUtil%7CPathResolver.js~PathResolver.html#instance-member-_prefixedFilePath",
-    "src/Util/PathResolver.js~PathResolver#_prefixedFilePath"
-  ],
-  [
-    "src/util/pathresolver.js~pathresolver#_prefixedfilepath",
-    "%40class-src%7CUtil%7CPathResolver.js~PathResolver.html#instance-member-_prefixedFilePath",
-    "src/Util/PathResolver.js~PathResolver#_prefixedFilePath"
+    "class/src/Util/PathResolver.js~PathResolver.html#instance-member-_prefixedFilePath",
+    "src/Util/PathResolver.js~PathResolver#_prefixedFilePath",
+    "member"
   ],
   [
     "src/util/pathresolver.js~pathresolver#constructor",
-    "%40class-src%7CUtil%7CPathResolver.js~PathResolver.html#instance-method-constructor",
-    "src/Util/PathResolver.js~PathResolver#constructor"
+    "class/src/Util/PathResolver.js~PathResolver.html#instance-constructor-constructor",
+    "src/Util/PathResolver.js~PathResolver#constructor",
+    "method"
   ],
   [
     "src/util/pathresolver.js~pathresolver#filefullpath",
-    "%40class-src%7CUtil%7CPathResolver.js~PathResolver.html#instance-method-fileFullPath",
-    "src/Util/PathResolver.js~PathResolver#fileFullPath"
+    "class/src/Util/PathResolver.js~PathResolver.html#instance-get-fileFullPath",
+    "src/Util/PathResolver.js~PathResolver#fileFullPath",
+    "member"
   ],
   [
     "src/util/pathresolver.js~pathresolver#filepath",
-    "%40class-src%7CUtil%7CPathResolver.js~PathResolver.html#instance-method-filePath",
-    "src/Util/PathResolver.js~PathResolver#filePath"
+    "class/src/Util/PathResolver.js~PathResolver.html#instance-get-filePath",
+    "src/Util/PathResolver.js~PathResolver#filePath",
+    "member"
   ],
   [
     "src/util/pathresolver.js~pathresolver#importpath",
-    "%40class-src%7CUtil%7CPathResolver.js~PathResolver.html#instance-method-importPath",
-    "src/Util/PathResolver.js~PathResolver#importPath"
+    "class/src/Util/PathResolver.js~PathResolver.html#instance-get-importPath",
+    "src/Util/PathResolver.js~PathResolver#importPath",
+    "member"
   ],
   [
     "src/util/pathresolver.js~pathresolver#resolve",
-    "%40class-src%7CUtil%7CPathResolver.js~PathResolver.html#instance-method-resolve",
-    "src/Util/PathResolver.js~PathResolver#resolve"
+    "class/src/Util/PathResolver.js~PathResolver.html#instance-method-resolve",
+    "src/Util/PathResolver.js~PathResolver#resolve",
+    "method"
   ]
 ]

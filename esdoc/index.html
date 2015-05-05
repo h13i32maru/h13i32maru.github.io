@@ -3,45 +3,47 @@
 <head>
     <meta charset="utf-8"/>
     <title>ESDoc</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/prettify/prettify-tomorrow.css">
-    <script src="/prettify/prettify.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./prettify/prettify-tomorrow.css">
+    <script src="./prettify/prettify.js"></script>
+    <script src="./script/inner-link.js"></script>
 </head>
 <body>
 <nav>
   <a class="title" href="./">ESDoc</a>
   <ul>
+    <li><a href="./tutorial.html">Tutorial</a></li>
     <li><a href="./config.html">Config</a></li>
     <li><a href="./tags.html">Tags</a></li>
-    <li><a href="./customize.html">Customize</a></li>
+    <li><a href="./faq.html">FAQ</a></li>
     <li style="position: relative; top: 5px;"><a href="https://github.com/h13i32maru/esdoc"><img src="image/github.png" width="24px"></a></li>
   </ul>
 </nav>
 
 <article class="content">
-<p><strong>CAUTION: ESDoc is super alpha version!</strong></p>
-<p>ESDoc is API Documentation Generator for JavaScript.</p>
-<p>ESDoc targets at ES6 and Class-based OOP. if you want to target at ES5, might better to use <a href="http://usejsdoc.org/">JSDoc</a>.</p>
+<p>ESDoc is API Documentation Generator for JavaScript(ES6).</p>
+<p><img class="screen-shot" src="./image/top.png"></p>
+<h1 id="feature">Feature</h1>
 <ul>
-<li><a href="#demo">Demo</a></li>
-<li><a href="#install">Install</a></li>
-<li><a href="#usage">Usage</a></li>
-<li><a href="#example">Example</a></li>
+<li>Generate detailed document.</li>
+<li>Measure document coverage.</li>
+<li>Associate test code to document.</li>
+<li>Target at ES6 <code>class</code> and <code>import/export</code> style.</li>
 </ul>
 <h1 id="demo">Demo</h1>
-<p>TODO: create more better demo.</p>
 <ul>
-<li><a href="http://h13i32maru.github.io/color-logger/">http://h13i32maru.github.io/color-logger/</a></li>
-<li><a href="http://h13i32maru.github.io/esdoc-test-fixture/">http://h13i32maru.github.io/esdoc-test-fixture/</a></li>
+<li><a href="https://esdoc.org/esdoc">ESDoc</a> (self hosting)</li>
+<li>A ES6 software that does not have document tag.<ul>
+<li><a href="https://esdoc.org/demo/aurelia-http-client/esdoc">Aurelia HTTP Client</a></li>
+<li><a href="https://esdoc.org/demo/aurelia-validation/esdoc">Aurelia Validation</a></li>
+</ul>
+</li>
 </ul>
 <h1 id="install">Install</h1>
 <pre><code>npm install -g esdoc
 esdoc -h
 </code></pre><h1 id="usage">Usage</h1>
-<p>with config file.</p>
 <pre><code>esdoc -c esdoc.json
-</code></pre><p>with directory path</p>
-<pre><code>esdoc ./path/to/js/dir
 </code></pre><h1 id="example">Example</h1>
 <pre><code>├── esdoc.json
 └── src/MyClass.js
@@ -71,6 +73,11 @@ open ./esdoc/index.html
 
 </article>
 
-<script src="/script/pretty.js"></script>
+<footer>
+© 2015 <a href="https://twitter.com/h13i32maru">Ryo Maruyama</a>. All rights reserved.
+</footer>
+
+<script src="./script/pretty.js"></script>
+<script src="./script/analytics.js"></script>
 </body>
 </html>

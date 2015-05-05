@@ -1,0 +1,39 @@
+{
+  "coverage": "21.25%",
+  "expectCount": 80,
+  "actualCount": 17,
+  "files": {
+    "src/headers.js": {
+      "expectCount": 9,
+      "actualCount": 1
+    },
+    "src/http-client.js": {
+      "expectCount": 18,
+      "actualCount": 12
+    },
+    "src/http-request-message.js": {
+      "expectCount": 8,
+      "actualCount": 0
+    },
+    "src/http-response-message.js": {
+      "expectCount": 16,
+      "actualCount": 1
+    },
+    "src/jsonp-request-message.js": {
+      "expectCount": 9,
+      "actualCount": 0
+    },
+    "src/request-builder.js": {
+      "expectCount": 7,
+      "actualCount": 3
+    },
+    "src/request-message-processor.js": {
+      "expectCount": 6,
+      "actualCount": 0
+    },
+    "src/transformers.js": {
+      "expectCount": 7,
+      "actualCount": 0
+    }
+  }
+}

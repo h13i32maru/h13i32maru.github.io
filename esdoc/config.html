@@ -3,17 +3,19 @@
 <head>
     <meta charset="utf-8"/>
     <title>ESDoc</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/prettify/prettify-tomorrow.css">
-    <script src="/prettify/prettify.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./prettify/prettify-tomorrow.css">
+    <script src="./prettify/prettify.js"></script>
+    <script src="./script/inner-link.js"></script>
 </head>
 <body>
 <nav>
   <a class="title" href="./">ESDoc</a>
   <ul>
+    <li><a href="./tutorial.html">Tutorial</a></li>
     <li><a href="./config.html">Config</a></li>
     <li><a href="./tags.html">Tags</a></li>
-    <li><a href="./customize.html">Customize</a></li>
+    <li><a href="./faq.html">FAQ</a></li>
     <li style="position: relative; top: 5px;"><a href="https://github.com/h13i32maru/esdoc"><img src="image/github.png" width="24px"></a></li>
   </ul>
 </nav>
@@ -21,86 +23,185 @@
 <article class="content">
 <h1 id="config">Config</h1>
 <p>ESDoc config file.</p>
+<p>minimum config</p>
 <pre><code class="lang-json">{
   &quot;source&quot;: &quot;./path/to/src&quot;,
   &quot;destination&quot;: &quot;./path/to/esdoc&quot;,
-  &quot;includes&quot;: [&quot;\\.js$&quot;],
-  &quot;excludes&quot;: [&quot;\\.config\\.js$&quot;],
-  &quot;access&quot;: [&quot;public&quot;, &quot;protected&quot;, &quot;private&quot;],
-  &quot;onlyExported&quot;: true,
+}
+</code></pre>
+<p>full config</p>
+<pre><code class="lang-json">{
+  &quot;source&quot;: &quot;./path/to/src&quot;,
+  &quot;destination&quot;: &quot;./path/to/esdoc&quot;,
+  &quot;includes&quot;: [&quot;\\.(js|es6)$&quot;],
+  &quot;excludes&quot;: [&quot;\\.config\\.(js|es6)$&quot;],
+  &quot;access&quot;: [&quot;public&quot;, &quot;protected&quot;],
+  &quot;autoPrivate&quot;: true,
+  &quot;unexportIdentifier&quot;: false,
+  &quot;undocumentIdentifier&quot;: true,
+  &quot;builtinExternal&quot;: true,
   &quot;importPathPrefix&quot;: &quot;&quot;,
-  &quot;readme&quot;: &quot;./path/to/README.md&quot;,
-  &quot;package&quot;: &quot;./path/to/package.json&quot;,
+  &quot;index&quot;: &quot;./README.md&quot;,
+  &quot;package&quot;: &quot;./package.json&quot;,
+  &quot;coverage&quot;: true,
+  &quot;test&quot;: {
+    &quot;type&quot;: &quot;mocha&quot;,
+    &quot;source&quot;: &quot;./test/src&quot;,
+    &quot;includes&quot;: [&quot;Test\\.(js|es6)$&quot;],
+    &quot;excludes&quot;: [&quot;\\.config\\.(js|es6)$&quot;]
+  }
+  &quot;title&quot;: &quot;My Software Name&quot;,
   &quot;styles&quot;: [&quot;./path/to/style.css&quot;],
   &quot;scripts&quot;: [&quot;./path/to/script.js&quot;]
 }
 </code></pre>
-<ul>
-<li><code>source</code> (required)<ul>
-<li>Directory path of JavaScript source codes.</li>
-<li>Path is based on current directory.</li>
-</ul>
-</li>
-<li><code>destination</code> (required)<ul>
-<li>Output directory path.</li>
-<li>Path is based on current directory.</li>
-</ul>
-</li>
-<li><code>includes</code><ul>
-<li>Process files that are matched with the regexp at any one.</li>
-<li>Default: <code>[&quot;\\.js$&quot;]</code></li>
-</ul>
-</li>
-<li><code>excludes</code>  <ul>
-<li>Not process files that are matched with the regexp at any one.</li>
-<li>Default: <code>[&quot;\\.config\\.js$&quot;]</code></li>
-</ul>
-</li>
-<li><code>access</code><ul>
-<li>Process only symbols(class, method, function, etc...) that are have the access(public, protected and private).</li>
-<li>Default: <code>[&quot;public&quot;, &quot;protected&quot;]</code></li>
-</ul>
-</li>
-<li><code>onlyExported</code><ul>
-<li>Process only symbols that are exported(ES6 export syntax).</li>
-<li>e.g. <code>export MyClass {...}</code> is exported, <code>MyClass{}</code> is not exported.</li>
-<li>Default: <code>true</code></li>
-</ul>
-</li>
-<li><code>importPathPrefix</code><ul>
-<li>Display symbol&#39;s import path with the prefix.</li>
-<li>e.g. if <code>MyClass</code> in <code>src/foo/MyClass.js</code>, import path is <code>import MyClass from &#39;src/foo/MyClass.js&#39;</code>. but specified the prefix with <code>importPathPrefix: &quot;out&quot;</code>, import path is <code>import MyClass from &#39;out/src/foo/MyClass.js&#39;</code>.</li>
-<li>Default: <code>&quot;&quot;</code></li>
-</ul>
-</li>
-<li><code>readme</code><ul>
-<li>Includes README.md into out put document.</li>
-<li>path is based on current directory.</li>
-<li>default: <code>./README.md</code></li>
-</ul>
-</li>
-<li><code>package</code><ul>
-<li>Use info(version, url, etc...) in package.json(npm)</li>
-<li>Path is based on current directory.</li>
-<li>default: <code>./package.json</code></li>
-</ul>
-</li>
-<li><code>styles</code><ul>
-<li>Includes styles into out put document.</li>
-<li>Path is based on current directory.</li>
-<li>Default: <code>null</code></li>
-</ul>
-</li>
-<li><code>scripts</code><ul>
-<li>Includes scripts into out put document.</li>
-<li>Path is based on current directory.</li>
-<li>Default: <code>null</code></li>
-</ul>
-</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Required</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>source</code></td>
+<td>true</td>
+<td>-</td>
+<td>JavaScript source codes directory path.</td>
+</tr>
+<tr>
+<td><code>destination</code></td>
+<td>true</td>
+<td>-</td>
+<td>Output directory path.</td>
+</tr>
+<tr>
+<td><code>includes</code></td>
+<td>-</td>
+<td><code>[&quot;\\.(js&#124;es6)$&quot;]</code></td>
+<td>Process files that are matched with the regexp at any one.</td>
+</tr>
+<tr>
+<td><code>excludes</code></td>
+<td>-</td>
+<td><code>[&quot;\\.config\\.(js&#124;es6)$&quot;]</code></td>
+<td>Not process files that are matched with the regexp at any one.</td>
+</tr>
+<tr>
+<td><code>access</code></td>
+<td>-</td>
+<td><code>[&quot;public&quot;, &quot;protected&quot;]</code></td>
+<td>Process only identifiers(class, method, etc...) that are have the access(public, protected and private).</td>
+</tr>
+<tr>
+<td><code>autoPrivate</code></td>
+<td>-</td>
+<td><code>true</code></td>
+<td>Deal with identifiers beginning with &quot;_&quot; as a private. <br> e.g. <code>this._foo</code> is private. but <code>/** @public */ this._foo</code> is public.</td>
+</tr>
+<tr>
+<td><code>unexportIdentifier</code></td>
+<td>-</td>
+<td><code>false</code></td>
+<td>If true, also process unexported Identifiers. <br> e.g. <code>export class MyClass</code> is exported, <code>class MyClass</code> is not exported.</td>
+</tr>
+<tr>
+<td><code>undocumentIdentifier</code></td>
+<td>-</td>
+<td><code>true</code></td>
+<td>If true, also process undocument Identifiers. <br> e.g. <code>/** @foo bar */ class MyClass</code> is document identifier, <code>class MyClass</code> is undocument identifier.</td>
+</tr>
+<tr>
+<td><code>builtinExternal</code></td>
+<td>-</td>
+<td><code>true</code></td>
+<td>If true, use built-in external tag. The built-in external has number, string, boolean, Promise, Map, etc...</td>
+</tr>
+<tr>
+<td><code>importPathPrefix</code></td>
+<td>-</td>
+<td><code>&quot;&quot;</code></td>
+<td>Display identifier&#39;s import path with the prefix. <br> e.g. if <code>MyClass</code> in <code>src/foo/MyClass.js</code>, import path is <code>import MyClass from &#39;src/foo/MyClass.js&#39;</code>. <br> but specified the prefix with <code>importPathPrefix: &quot;out&quot;</code>, import path is <code>import MyClass from &#39;out/src/foo/MyClass.js&#39;</code>.</td>
+</tr>
+<tr>
+<td><code>index</code></td>
+<td>-</td>
+<td><code>./README.md</code></td>
+<td>Includes file into index page of document</td>
+</tr>
+<tr>
+<td><code>package</code></td>
+<td>-</td>
+<td><code>./package.json</code></td>
+<td>Use package.json info.</td>
+</tr>
+<tr>
+<td><code>coverage</code></td>
+<td>-</td>
+<td><code>true</code></td>
+<td>If true, output document coverage.</td>
+</tr>
+<tr>
+<td><code>test</code></td>
+<td>-</td>
+<td><code>null</code></td>
+<td>If specified, Generate document from test code.</td>
+</tr>
+<tr>
+<td><code>test.type</code></td>
+<td>true</td>
+<td>-</td>
+<td>Test code type. Now only support &quot;mocha&quot;.</td>
+</tr>
+<tr>
+<td><code>test.source</code></td>
+<td>true</td>
+<td>-</td>
+<td>Test codes directory path.</td>
+</tr>
+<tr>
+<td><code>test.includes</code></td>
+<td>-</td>
+<td><code>[&quot;(spec&#124;Spec&#124;test&#124;Test)\\.(js&#124;es6)$&quot;]</code></td>
+<td>Process files that are matched with the regexp at any one.</td>
+</tr>
+<tr>
+<td><code>test.excludes</code></td>
+<td>-</td>
+<td><code>[&quot;\\.config\\.(js&#124;es6)$&quot;]</code></td>
+<td>Not process files that are matched with the regexp at any one.</td>
+</tr>
+<tr>
+<td><code>title</code></td>
+<td>-</td>
+<td>&quot;&quot;</td>
+<td>Use title for output.</td>
+</tr>
+<tr>
+<td><code>styles</code></td>
+<td>-</td>
+<td><code>null</code></td>
+<td>Includes styles into output document.</td>
+</tr>
+<tr>
+<td><code>scripts</code></td>
+<td>-</td>
+<td><code>null</code></td>
+<td>Includes scripts into output document.</td>
+</tr>
+</tbody>
+</table>
+<p>Note: A file path in config is based on current directory.</p>
 
 </article>
 
-<script src="/script/pretty.js"></script>
+<footer>
+© 2015 <a href="https://twitter.com/h13i32maru">Ryo Maruyama</a>. All rights reserved.
+</footer>
+
+<script src="./script/pretty.js"></script>
+<script src="./script/analytics.js"></script>
 </body>
 </html>

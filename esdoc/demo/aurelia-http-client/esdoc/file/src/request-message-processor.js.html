@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">src/request-message-processor.js | Aurelia:HttpClient API Document</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  
+  
+</head>
+<body class="layout-container">
+
+<header>
+  <a href="./">Home</a>
+  <a href="symbols.html">Symbol</a>
+  <a href="source.html">Source</a>
+  <a href="test.html">Test</a>
+  <a data-ice="repoURL" href="http://github.com/aurelia/http-client" class="repo-url-github">Repository</a>
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div data-ice="classWrap">
+  <h2>Class</h2>
+  <ul>
+    
+  <li data-ice="classDoc"><span><a href="class/src/headers.js~Headers.html">Headers</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/http-client.js~HttpClient.html">HttpClient</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/http-request-message.js~HttpRequestMessage.html">HttpRequestMessage</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/http-response-message.js~HttpResponseMessage.html">HttpResponseMessage</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/jsonp-request-message.js~JSONPRequestMessage.html">JSONPRequestMessage</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/request-builder.js~RequestBuilder.html">RequestBuilder</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/request-message-processor.js~RequestMessageProcessor.html">RequestMessageProcessor</a></span></li>
+</ul>
+</div>
+
+
+
+<div data-ice="functionWrap">
+  <h2><a href="function/">Function</a></h2>
+  <ul>
+    
+  <li data-ice="functionDoc"><span><a href="function/index.html#static-function-callbackParameterNameTransformer">callbackParameterNameTransformer</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-contentTransformer">contentTransformer</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-createHttpRequestMessageProcessor">createHttpRequestMessageProcessor</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-createJSONPRequestMessageProcessor">createJSONPRequestMessageProcessor</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-credentialsTransformer">credentialsTransformer</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-headerTransformer">headerTransformer</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-progressTransformer">progressTransformer</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-responseTypeTransformer">responseTypeTransformer</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-timeoutTransformer">timeoutTransformer</a></span></li>
+</ul>
+</div>
+
+<div data-ice="variableWrap">
+  <h2><a href="variable/">Variable</a></h2>
+  <ul>
+    
+  <li data-ice="variableDoc"><span><a href="variable/index.html#static-variable-mimeTypes">mimeTypes</a></span></li>
+</ul>
+</div>
+
+
+
+
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/request-message-processor.js</h1>
+<pre class="source-code line-number"><code class="prettyprint linenums" data-ice="content">import core from &apos;core-js&apos;;
+import {HttpResponseMessage} from &apos;./http-response-message&apos;;
+import {join, buildQueryString} from &apos;aurelia-path&apos;;
+
+function buildFullUrl(message){
+  var url = join(message.baseUrl, message.url),
+      qs;
+
+  if(message.params){
+    qs = buildQueryString(message.params);
+    url = qs ? `${url}?${qs}` : url;
+  }
+
+  message.fullUrl = url;
+}
+
+export class RequestMessageProcessor {
+  constructor(xhrType, transformers){
+    this.XHRType = xhrType;
+    this.transformers = transformers;
+  }
+
+  abort(){
+    //The logic here is if the xhr object is not set then there is nothing to abort so the intent was carried out
+    if(this.xhr){
+      this.xhr.abort();
+    }
+  }
+
+  process(client, message){
+    return new Promise((resolve, reject) =&gt; {
+      var xhr = this.xhr = new this.XHRType(),
+          transformers = this.transformers,
+          i, ii;
+
+      buildFullUrl(message);
+      xhr.open(message.method, message.fullUrl, true);
+
+      for(i = 0, ii = transformers.length; i &lt; ii; ++i){
+        transformers[i](client, this, message, xhr);
+      }
+
+      xhr.onload = (e) =&gt; {
+        var response = new HttpResponseMessage(message, xhr, message.responseType, message.reviver);
+        if(response.isSuccess){
+          resolve(response);
+        }else{
+          reject(response);
+        }
+      };
+
+      xhr.ontimeout = (e) =&gt; {
+        reject(new HttpResponseMessage(message, {
+          response:e,
+          status:xhr.status,
+          statusText:xhr.statusText
+        }, &apos;timeout&apos;));
+      };
+
+      xhr.onerror = (e) =&gt; {
+        reject(new HttpResponseMessage(message, {
+          response:e,
+          status:xhr.status,
+          statusText:xhr.statusText
+        }, &apos;error&apos;));
+      };
+
+      xhr.onabort = (e) =&gt; {
+        reject(new HttpResponseMessage(message, {
+          response:e,
+          status:xhr.status,
+          statusText:xhr.statusText
+        }, &apos;abort&apos;));
+      };
+
+      xhr.send(message.content);
+    });
+  }
+}
+</code></pre>
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(0.0.2)</span></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+</body>
+</html>

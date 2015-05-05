@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl">
+  <title data-ice="title">Aurelia:HttpClient API Document</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  
+  
+</head>
+<body class="layout-container">
+
+<header>
+  <a href="./">Home</a>
+  <a href="symbols.html">Symbol</a>
+  <a href="source.html">Source</a>
+  <a href="test.html">Test</a>
+  <a data-ice="repoURL" href="http://github.com/aurelia/http-client" class="repo-url-github">Repository</a>
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div data-ice="classWrap">
+  <h2>Class</h2>
+  <ul>
+    
+  <li data-ice="classDoc"><span><a href="class/src/headers.js~Headers.html">Headers</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/http-client.js~HttpClient.html">HttpClient</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/http-request-message.js~HttpRequestMessage.html">HttpRequestMessage</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/http-response-message.js~HttpResponseMessage.html">HttpResponseMessage</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/jsonp-request-message.js~JSONPRequestMessage.html">JSONPRequestMessage</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/request-builder.js~RequestBuilder.html">RequestBuilder</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/request-message-processor.js~RequestMessageProcessor.html">RequestMessageProcessor</a></span></li>
+</ul>
+</div>
+
+
+
+<div data-ice="functionWrap">
+  <h2><a href="function/">Function</a></h2>
+  <ul>
+    
+  <li data-ice="functionDoc"><span><a href="function/index.html#static-function-callbackParameterNameTransformer">callbackParameterNameTransformer</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-contentTransformer">contentTransformer</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-createHttpRequestMessageProcessor">createHttpRequestMessageProcessor</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-createJSONPRequestMessageProcessor">createJSONPRequestMessageProcessor</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-credentialsTransformer">credentialsTransformer</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-headerTransformer">headerTransformer</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-progressTransformer">progressTransformer</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-responseTypeTransformer">responseTypeTransformer</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-timeoutTransformer">timeoutTransformer</a></span></li>
+</ul>
+</div>
+
+<div data-ice="variableWrap">
+  <h2><a href="variable/">Variable</a></h2>
+  <ul>
+    
+  <li data-ice="variableDoc"><span><a href="variable/index.html#static-variable-mimeTypes">mimeTypes</a></span></li>
+</ul>
+</div>
+
+
+
+
+</nav>
+
+<div class="content" data-ice="content"><div data-ice="index"><h1 id="aurelia-http-client">aurelia-http-client</h1>
+<p><a href="https://zenhub.io"><img src="https://raw.githubusercontent.com/ZenHubIO/support/master/zenhub-badge.png" alt="ZenHub"></a>
+<a href="https://gitter.im/aurelia/discuss?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://badges.gitter.im/Join%20Chat.svg" alt="Join the chat at https://gitter.im/aurelia/discuss"></a></p>
+<p>This library is part of the <a href="http://www.aurelia.io/">Aurelia</a> platform and contains a simple, restful, message-based wrapper around XMLHttpRequest.</p>
+<blockquote>
+<p>To keep up to date on <a href="http://www.aurelia.io/">Aurelia</a>, please visit and subscribe to <a href="http://blog.durandal.io/">the official blog</a>. If you have questions, we invite you to <a href="https://gitter.im/aurelia/discuss">join us on Gitter</a>. If you would like to have deeper insight into our development process, please install the <a href="https://zenhub.io">ZenHub</a> Chrome Extension and visit any of our repository&apos;s boards. You can get an overview of all Aurelia work by visiting <a href="https://github.com/aurelia/framework#boards">the framework board</a>.</p>
+</blockquote>
+<h2 id="polyfills">Polyfills</h2>
+<ul>
+<li>Depending on target browser(s), <a href="https://github.com/zloirock/core-js">core-js</a> may be required for <code>Promise</code> support.</li>
+</ul>
+<h2 id="dependencies">Dependencies</h2>
+<ul>
+<li><a href="https://github.com/aurelia/path">aurelia-path</a></li>
+</ul>
+<h2 id="used-by">Used By</h2>
+<p>This library is used directly by applications only.</p>
+<h2 id="platform-support">Platform Support</h2>
+<p>This library can be used in the <strong>browser</strong> only.</p>
+<h2 id="building-the-code">Building The Code</h2>
+<p>To build the code, follow these steps.</p>
+<ol>
+<li>Ensure that <a href="http://nodejs.org/">NodeJS</a> is installed. This provides the platform on which the build tooling runs.</li>
+<li><p>From the project folder, execute the following command:</p>
+<pre><code class="lang-shell"><pre class="source-code"><code class="prettyprint">npm install</code></pre>
+</code></pre>
+</li>
+<li><p>Ensure that <a href="http://gulpjs.com/">Gulp</a> is installed. If you need to install it, use the following command:</p>
+<pre><code class="lang-shell"><pre class="source-code"><code class="prettyprint">npm install -g gulp</code></pre>
+</code></pre>
+</li>
+<li><p>To build the code, you can now run:</p>
+<pre><code class="lang-shell"><pre class="source-code"><code class="prettyprint">gulp build</code></pre>
+</code></pre>
+</li>
+<li><p>You will find the compiled code in the <code>dist</code> folder, available in three module formats: AMD, CommonJS and ES6.</p>
+</li>
+<li><p>See <code>gulpfile.js</code> for other tasks related to generating the docs and linting.</p>
+</li>
+</ol>
+<h2 id="running-the-tests">Running The Tests</h2>
+<p>To run the unit tests, first ensure that you have followed the steps above in order to install all dependencies and successfully build the library. Once you have done that, proceed with these additional steps:</p>
+<ol>
+<li><p>Ensure that the <a href="http://karma-runner.github.io/">Karma</a> CLI is installed. If you need to install it, use the following command:</p>
+<pre><code class="lang-shell"><pre class="source-code"><code class="prettyprint">npm install -g karma-cli</code></pre>
+</code></pre>
+</li>
+<li><p>Ensure that <a href="http://jspm.io/">jspm</a> is installed. If you need to install it, use the following commnand:</p>
+<pre><code class="lang-shell"><pre class="source-code"><code class="prettyprint">npm install -g jspm</code></pre>
+</code></pre>
+</li>
+<li><p>Install the client-side dependencies with jspm:</p>
+<pre><code class="lang-shell"><pre class="source-code"><code class="prettyprint">jspm install</code></pre>
+</code></pre>
+</li>
+<li><p>You can now run the tests with this command:</p>
+<pre><code class="lang-shell"><pre class="source-code"><code class="prettyprint">karma start</code></pre>
+</code></pre>
+</li>
+</ol>
+</div>
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(0.0.2)</span></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+</body>
+</html>

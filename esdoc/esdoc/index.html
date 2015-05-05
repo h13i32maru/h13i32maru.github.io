@@ -2,6 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <base data-ice="baseUrl">
+  <title data-ice="title">ESDoc API Document</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -10,111 +12,124 @@
 </head>
 <body class="layout-container">
 
-<nav class="navigation" data-ice="nav"><h1><a href="./">HOME</a> | <a href="@index.html">INDEX</a></h1>
+<header>
+  <a href="./">Home</a>
+  <a href="identifiers.html">Identifier</a>
+  <a href="source.html">Source</a>
+  <a href="test.html" data-ice="testLink">Test</a>
+  <a data-ice="repoURL" href="https://github.com/h13i32maru/esdoc" class="repo-url-github">Repository</a>
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
 
-<div data-ice="classWrap">
+<nav class="navigation" data-ice="nav"><div data-ice="classWrap">
   <h2>Class</h2>
   <ul>
     
-  <li data-ice="classDoc"><span><a href="%40class-src%7CUtil%7CASTUtil.js~ASTUtil.html">ASTUtil</a></span></li>
-<li data-ice="classDoc"><span><a href="%40class-src%7CDoc%7CAbstractDoc.js~AbstractDoc.html">AbstractDoc</a></span></li>
-<li data-ice="classDoc"><span><a href="%40class-src%7CDoc%7CAssignmentDoc.js~AssignmentDoc.html">AssignmentDoc</a></span></li>
-<li data-ice="classDoc"><span><a href="%40class-src%7CDoc%7CClassDoc.js~ClassDoc.html">ClassDoc</a></span></li>
-<li data-ice="classDoc"><span><a href="%40class-src%7CPublisher%7Cbuilder%7CClassDocBuilder.js~ClassDocBuilder.html">ClassDocBuilder</a></span></li>
-<li data-ice="classDoc"><span><a href="%40class-src%7CParser%7CCommentParser.js~CommentParser.html">CommentParser</a></span></li>
-<li data-ice="classDoc"><span><a href="%40class-src%7CPublisher%7Cbuilder%7CDocBuilder.js~DocBuilder.html">DocBuilder</a></span></li>
-<li data-ice="classDoc"><span><a href="%40class-src%7CFactory%7CDocFactory.js~DocFactory.html">DocFactory</a></span></li>
-<li data-ice="classDoc"><span><a href="%40class-src%7CPublisher%7Cbuilder%7CDocResolver.js~DocResolver.html">DocResolver</a></span></li>
-<li data-ice="classDoc"><span><a href="%40class-src%7CESDoc.js~ESDoc.html">ESDoc</a></span></li>
-<li data-ice="classDoc"><span><a href="%40class-src%7CESDocCLI.js~ESDocCLI.html">ESDocCLI</a></span></li>
-<li data-ice="classDoc"><span><a href="%40class-src%7CParser%7CESParser.js~ESParser.html">ESParser</a></span></li>
-<li data-ice="classDoc"><span><a href="%40class-src%7CDoc%7CExternalDoc.js~ExternalDoc.html">ExternalDoc</a></span></li>
-<li data-ice="classDoc"><span><a href="%40class-src%7CDoc%7CFileDoc.js~FileDoc.html">FileDoc</a></span></li>
-<li data-ice="classDoc"><span><a href="%40class-src%7CPublisher%7Cbuilder%7CFileDocBuilder.js~FileDocBuilder.html">FileDocBuilder</a></span></li>
-<li data-ice="classDoc"><span><a href="%40class-src%7CDoc%7CFunctionDoc.js~FunctionDoc.html">FunctionDoc</a></span></li>
-<li data-ice="classDoc"><span><a href="%40class-src%7CPublisher%7Cbuilder%7CIndexDocBuilder.js~IndexDocBuilder.html">IndexDocBuilder</a></span></li>
-<li data-ice="classDoc"><span><a href="%40class-src%7CDoc%7CMemberDoc.js~MemberDoc.html">MemberDoc</a></span></li>
-<li data-ice="classDoc"><span><a href="%40class-src%7CDoc%7CMethodDoc.js~MethodDoc.html">MethodDoc</a></span></li>
-<li data-ice="classDoc"><span><a href="%40class-src%7CParser%7CParamParser.js~ParamParser.html">ParamParser</a></span></li>
-<li data-ice="classDoc"><span><a href="%40class-src%7CUtil%7CPathResolver.js~PathResolver.html">PathResolver</a></span></li>
-<li data-ice="classDoc"><span><a href="%40class-src%7CPublisher%7Cbuilder%7CReadmeDocBuilder.js~ReadmeDocBuilder.html">ReadmeDocBuilder</a></span></li>
-<li data-ice="classDoc"><span><a href="%40class-src%7CPublisher%7Cbuilder%7CSearchIndexBuilder.js~SearchIndexBuilder.html">SearchIndexBuilder</a></span></li>
-<li data-ice="classDoc"><span><a href="%40class-src%7CPublisher%7Cbuilder%7CSingleDocBuilder.js~SingleDocBuilder.html">SingleDocBuilder</a></span></li>
-<li data-ice="classDoc"><span><a href="%40class-src%7CPublisher%7Cbuilder%7CStaticFileBuilder.js~StaticFileBuilder.html">StaticFileBuilder</a></span></li>
-<li data-ice="classDoc"><span><a href="%40class-src%7CDoc%7CTypedefDoc.js~TypedefDoc.html">TypedefDoc</a></span></li>
-<li data-ice="classDoc"><span><a href="%40class-src%7CDoc%7CVariableDoc.js~VariableDoc.html">VariableDoc</a></span></li>
+  <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/ASTDocBuilder.js~ASTDocBuilder.html">ASTDocBuilder</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Util/ASTUtil.js~ASTUtil.html">ASTUtil</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Doc/AbstractDoc.js~AbstractDoc.html">AbstractDoc</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Doc/AssignmentDoc.js~AssignmentDoc.html">AssignmentDoc</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Doc/ClassDoc.js~ClassDoc.html">ClassDoc</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/ClassDocBuilder.js~ClassDocBuilder.html">ClassDocBuilder</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Parser/CommentParser.js~CommentParser.html">CommentParser</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/CoverageBuilder.js~CoverageBuilder.html">CoverageBuilder</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/DocBuilder.js~DocBuilder.html">DocBuilder</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Factory/DocFactory.js~DocFactory.html">DocFactory</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/DocResolver.js~DocResolver.html">DocResolver</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/ESDoc.js~ESDoc.html">ESDoc</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/ESDocCLI.js~ESDocCLI.html">ESDocCLI</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Parser/ESParser.js~ESParser.html">ESParser</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Doc/ExternalDoc.js~ExternalDoc.html">ExternalDoc</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Doc/FileDoc.js~FileDoc.html">FileDoc</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/FileDocBuilder.js~FileDocBuilder.html">FileDocBuilder</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/TestFileDocBuilder.js~FileDocBuilder.html">FileDocBuilder</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Doc/FunctionDoc.js~FunctionDoc.html">FunctionDoc</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/IdentifiersDocBuilder.js~IdentifiersDocBuilder.html">IdentifiersDocBuilder</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/IndexDocBuilder.js~IndexDocBuilder.html">IndexDocBuilder</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Doc/MemberDoc.js~MemberDoc.html">MemberDoc</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Doc/MethodDoc.js~MethodDoc.html">MethodDoc</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Parser/ParamParser.js~ParamParser.html">ParamParser</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Util/PathResolver.js~PathResolver.html">PathResolver</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/SearchIndexBuilder.js~SearchIndexBuilder.html">SearchIndexBuilder</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/SingleDocBuilder.js~SingleDocBuilder.html">SingleDocBuilder</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/SourceDocBuilder.js~SourceDocBuilder.html">SourceDocBuilder</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/StaticFileBuilder.js~StaticFileBuilder.html">StaticFileBuilder</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Doc/TestDoc.js~TestDoc.html">TestDoc</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/TestDocBuilder.js~TestDocBuilder.html">TestDocBuilder</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Factory/TestDocFactory.js~TestDocFactory.html">TestDocFactory</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Doc/TestFileDoc.js~TestFileDoc.html">TestFileDoc</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Doc/TypedefDoc.js~TypedefDoc.html">TypedefDoc</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Doc/VariableDoc.js~VariableDoc.html">VariableDoc</a></span></li>
 </ul>
 </div>
 
 
 
-
+<div data-ice="functionWrap">
+  <h2><a href="function/">Function</a></h2>
+  <ul>
+    
+  <li data-ice="functionDoc"><span><a href="function/index.html#static-function-dateForUTC">dateForUTC</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-markdown">markdown</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-publish">publish</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-shorten">shorten</a></span></li>
+</ul>
+</div>
 
 
 
 <div data-ice="typedefWrap">
-  <h2><a href="@typedef.html">Typedef</a></h2>
+  <h2><a href="typedef/">Typedef</a></h2>
   <ul>
     
-  <li data-ice="typedefDoc"><span><a href="%40typedef.html#static-typedef-DocObject">DocObject</a></span></li>
-<li data-ice="typedefDoc"><span><a href="%40typedef.html#static-typedef-DocTypedef">DocTypedef</a></span></li>
-<li data-ice="typedefDoc"><span><a href="%40typedef.html#static-typedef-ESDocConfig">ESDocConfig</a></span></li>
-<li data-ice="typedefDoc"><span><a href="%40typedef.html#static-typedef-IceCapInstanceTypedef">IceCapInstanceTypedef</a></span></li>
-<li data-ice="typedefDoc"><span><a href="%40typedef.html#static-typedef-PackageTypedef">PackageTypedef</a></span></li>
-<li data-ice="typedefDoc"><span><a href="%40typedef.html#static-typedef-TaffyCursor">TaffyCursor</a></span></li>
-<li data-ice="typedefDoc"><span><a href="%40typedef.html#static-typedef-Tag">Tag</a></span></li>
+  <li data-ice="typedefDoc"><span><a href="typedef/index.html#static-typedef-CoverageObject">CoverageObject</a></span></li>
+<li data-ice="typedefDoc"><span><a href="typedef/index.html#static-typedef-DocObject">DocObject</a></span></li>
+<li data-ice="typedefDoc"><span><a href="typedef/index.html#static-typedef-DocTypedef">DocTypedef</a></span></li>
+<li data-ice="typedefDoc"><span><a href="typedef/index.html#static-typedef-ESDocCLIArgv">ESDocCLIArgv</a></span></li>
+<li data-ice="typedefDoc"><span><a href="typedef/index.html#static-typedef-ESDocConfig">ESDocConfig</a></span></li>
+<li data-ice="typedefDoc"><span><a href="typedef/index.html#static-typedef-IceCapInstanceTypedef">IceCapInstanceTypedef</a></span></li>
+<li data-ice="typedefDoc"><span><a href="typedef/index.html#static-typedef-PackageTypedef">PackageTypedef</a></span></li>
+<li data-ice="typedefDoc"><span><a href="typedef/index.html#static-typedef-ParsedParam">ParsedParam</a></span></li>
+<li data-ice="typedefDoc"><span><a href="typedef/index.html#static-typedef-TaffyCursor">TaffyCursor</a></span></li>
+<li data-ice="typedefDoc"><span><a href="typedef/index.html#static-typedef-Tag">Tag</a></span></li>
 </ul>
 </div>
 
-<div data-ice="fileWrap">
-  <h2>File</h2>
+<div data-ice="externalWrap">
+  <h2>External</h2>
   <ul>
     
-  <li data-ice="fileDoc"><span><a href="%40file-src%7CDoc%7CAbstractDoc.js.html#lineNumber1">src/Doc/AbstractDoc.js</a></span></li>
-<li data-ice="fileDoc"><span><a href="%40file-src%7CDoc%7CAssignmentDoc.js.html#lineNumber1">src/Doc/AssignmentDoc.js</a></span></li>
-<li data-ice="fileDoc"><span><a href="%40file-src%7CDoc%7CClassDoc.js.html#lineNumber1">src/Doc/ClassDoc.js</a></span></li>
-<li data-ice="fileDoc"><span><a href="%40file-src%7CDoc%7CExternalDoc.js.html#lineNumber1">src/Doc/ExternalDoc.js</a></span></li>
-<li data-ice="fileDoc"><span><a href="%40file-src%7CDoc%7CFileDoc.js.html#lineNumber1">src/Doc/FileDoc.js</a></span></li>
-<li data-ice="fileDoc"><span><a href="%40file-src%7CDoc%7CFunctionDoc.js.html#lineNumber1">src/Doc/FunctionDoc.js</a></span></li>
-<li data-ice="fileDoc"><span><a href="%40file-src%7CDoc%7CMemberDoc.js.html#lineNumber1">src/Doc/MemberDoc.js</a></span></li>
-<li data-ice="fileDoc"><span><a href="%40file-src%7CDoc%7CMethodDoc.js.html#lineNumber1">src/Doc/MethodDoc.js</a></span></li>
-<li data-ice="fileDoc"><span><a href="%40file-src%7CDoc%7CTypedefDoc.js.html#lineNumber1">src/Doc/TypedefDoc.js</a></span></li>
-<li data-ice="fileDoc"><span><a href="%40file-src%7CDoc%7CVariableDoc.js.html#lineNumber1">src/Doc/VariableDoc.js</a></span></li>
-<li data-ice="fileDoc"><span><a href="%40file-src%7CESDoc.js.html#lineNumber1">src/ESDoc.js</a></span></li>
-<li data-ice="fileDoc"><span><a href="%40file-src%7CESDocCLI.js.html#lineNumber2">src/ESDocCLI.js</a></span></li>
-<li data-ice="fileDoc"><span><a href="%40file-src%7CFactory%7CDocFactory.js.html#lineNumber1">src/Factory/DocFactory.js</a></span></li>
-<li data-ice="fileDoc"><span><a href="%40file-src%7CParser%7CCommentParser.js.html#lineNumber1">src/Parser/CommentParser.js</a></span></li>
-<li data-ice="fileDoc"><span><a href="%40file-src%7CParser%7CESParser.js.html#lineNumber1">src/Parser/ESParser.js</a></span></li>
-<li data-ice="fileDoc"><span><a href="%40file-src%7CParser%7CParamParser.js.html#lineNumber1">src/Parser/ParamParser.js</a></span></li>
-<li data-ice="fileDoc"><span><a href="%40file-src%7CPublisher%7Cbuilder%7CClassDocBuilder.js.html#lineNumber1">src/Publisher/builder/ClassDocBuilder.js</a></span></li>
-<li data-ice="fileDoc"><span><a href="%40file-src%7CPublisher%7Cbuilder%7CDocBuilder.js.html#lineNumber1">src/Publisher/builder/DocBuilder.js</a></span></li>
-<li data-ice="fileDoc"><span><a href="%40file-src%7CPublisher%7Cbuilder%7CDocResolver.js.html#lineNumber1">src/Publisher/builder/DocResolver.js</a></span></li>
-<li data-ice="fileDoc"><span><a href="%40file-src%7CPublisher%7Cbuilder%7CFileDocBuilder.js.html#lineNumber1">src/Publisher/builder/FileDocBuilder.js</a></span></li>
-<li data-ice="fileDoc"><span><a href="%40file-src%7CPublisher%7Cbuilder%7CIndexDocBuilder.js.html#lineNumber1">src/Publisher/builder/IndexDocBuilder.js</a></span></li>
-<li data-ice="fileDoc"><span><a href="%40file-src%7CPublisher%7Cbuilder%7CReadmeDocBuilder.js.html#lineNumber1">src/Publisher/builder/ReadmeDocBuilder.js</a></span></li>
-<li data-ice="fileDoc"><span><a href="%40file-src%7CPublisher%7Cbuilder%7CSearchIndexBuilder.js.html#lineNumber1">src/Publisher/builder/SearchIndexBuilder.js</a></span></li>
-<li data-ice="fileDoc"><span><a href="%40file-src%7CPublisher%7Cbuilder%7CSingleDocBuilder.js.html#lineNumber1">src/Publisher/builder/SingleDocBuilder.js</a></span></li>
-<li data-ice="fileDoc"><span><a href="%40file-src%7CPublisher%7Cbuilder%7CStaticFileBuilder.js.html#lineNumber1">src/Publisher/builder/StaticFileBuilder.js</a></span></li>
-<li data-ice="fileDoc"><span><a href="%40file-src%7CPublisher%7Cbuilder%7Cutil.js.html#lineNumber1">src/Publisher/builder/util.js</a></span></li>
-<li data-ice="fileDoc"><span><a href="%40file-src%7CPublisher%7Cpublish.js.html#lineNumber1">src/Publisher/publish.js</a></span></li>
-<li data-ice="fileDoc"><span><a href="%40file-src%7CTypedef%7Ctypedef.js.html#lineNumber51">src/Typedef/typedef.js</a></span></li>
-<li data-ice="fileDoc"><span><a href="%40file-src%7CUtil%7CASTUtil.js.html#lineNumber1">src/Util/ASTUtil.js</a></span></li>
-<li data-ice="fileDoc"><span><a href="%40file-src%7CUtil%7CPathResolver.js.html#lineNumber1">src/Util/PathResolver.js</a></span></li>
+  <li data-ice="externalDoc"><span><a href="https://github.com/estree/estree">AST</a></span></li>
+<li data-ice="externalDoc"><span><a href="https://github.com/estree/estree">ASTNode</a></span></li>
+<li data-ice="externalDoc"><span><a href="https://github.com/h13i32maru/ice-cap">IceCap</a></span></li>
+<li data-ice="externalDoc"><span><a href="https://docs.npmjs.com/files/package.json">NPMPackageObject</a></span></li>
+<li data-ice="externalDoc"><span><a href="http://www.taffydb.com/">Taffy</a></span></li>
 </ul>
 </div>
 </nav>
 
-<div class="content" data-ice="content"><div data-ice="readme"><p><a href="https://travis-ci.org/h13i32maru/esdoc"><img src="https://travis-ci.org/h13i32maru/esdoc.svg?branch=master" alt="Build Status"></a>
-<a href="https://coveralls.io/r/h13i32maru/esdoc"><img src="https://coveralls.io/repos/h13i32maru/esdoc/badge.svg" alt="Coverage Status"></a></p>
+<div class="content" data-ice="content"><div data-ice="index"><p><a href="https://travis-ci.org/h13i32maru/esdoc"><img src="https://travis-ci.org/h13i32maru/esdoc.svg?branch=master" alt="Build Status"></a>
+<a href="https://coveralls.io/r/h13i32maru/esdoc"><img src="https://coveralls.io/repos/h13i32maru/esdoc/badge.svg" alt="Coverage Status"></a>
+<span class="esdoc-coverage"><a href="https://esdoc.org" class="esdoc-coverage-wrap">
+    <span class="esdoc-coverage-label">document</span><span class="esdoc-coverage-ratio esdoc-coverage-high">94%</span>
+    </a></span></p>
 <h1 id="esdoc">ESDoc</h1>
 <p><strong>CAUTION: ESDoc is super alpha version!</strong></p>
 <p>ESDoc is API Documentation Generator for JavaScript.</p>
-<p>ESDoc targets at ES6 and Class-based OOP. if you want to target at ES5, might better to use <a href="http://usejsdoc.org/">JSDoc</a>.</p>
+<h1 id="feature">Feature</h1>
 <ul>
-<li><a href="#demo">Demo</a></li>
-<li><a href="#install">Install</a></li>
-<li><a href="#usage">Usage</a></li>
-<li><a href="#example">Example</a></li>
+<li>Target at ES6 <code>class</code> and <code>import/export</code> style.<ul>
+<li>If you want to target at ES5, might better to use <a href="http://usejsdoc.org/">JSDoc</a>.</li>
+</ul>
+</li>
+<li>Document coverage of source code.</li>
+<li>Generate document from test code.</li>
 </ul>
 <h1 id="demo">Demo</h1>
 <p>TODO: create more better demo.</p>
@@ -126,10 +141,7 @@
 <pre><code><pre class="source-code"><code class="prettyprint">npm install -g esdoc
 esdoc -h</code></pre>
 </code></pre><h1 id="usage">Usage</h1>
-<p>with config file.</p>
 <pre><code><pre class="source-code"><code class="prettyprint">esdoc -c esdoc.json</code></pre>
-</code></pre><p>with directory path</p>
-<pre><code><pre class="source-code"><code class="prettyprint">esdoc ./path/to/js/dir</code></pre>
 </code></pre><h1 id="example">Example</h1>
 <pre><code><pre class="source-code"><code class="prettyprint">&#x251C;&#x2500;&#x2500; esdoc.json
 &#x2514;&#x2500;&#x2500; src/MyClass.js</code></pre>
@@ -162,20 +174,14 @@ open ./esdoc/index.html</code></pre>
 </div>
 
 <footer class="footer">
-  <span class="version" data-ice="version">version: 0.0.1</span>
-  <span class="url"><a data-ice="url" href="https://github.com/h13i32maru/esdoc">https://github.com/h13i32maru/esdoc</a></span>
-  Generated by <a href="https://esdoc.org">ESDoc</a>
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(0.0.2)</span></a>
 </footer>
 
-<div class="search-box">
-  <span>
-    <img src="./image/search.png">
-    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
-  </span>
-  <ul class="search-result"></ul>
-</div>
 <script src="script/search_index.js"></script>
 <script src="script/search.js"></script>
 <script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
 </body>
 </html>

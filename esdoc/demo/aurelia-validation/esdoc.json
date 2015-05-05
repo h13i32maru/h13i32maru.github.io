@@ -1,0 +1,14 @@
+{
+  "debug": true,
+  "source": "./validation/src",
+  "destination": "./esdoc",
+  "access": ["public", "protected", "private"],
+  "index": "./validation/README.md",
+  "package": "./validation/package.json",
+  "title": "Aurelia:Validation",
+  "test": {
+    "type": "Mocha",
+    "source": "./validation/test",
+    "includes": ["\\.spec\\.js$"]
+  }
+}

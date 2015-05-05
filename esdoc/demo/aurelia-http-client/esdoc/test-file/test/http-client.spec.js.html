@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">test/http-client.spec.js | Aurelia:HttpClient API Document</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  
+  
+</head>
+<body class="layout-container">
+
+<header>
+  <a href="./">Home</a>
+  <a href="symbols.html">Symbol</a>
+  <a href="source.html">Source</a>
+  <a href="test.html">Test</a>
+  <a data-ice="repoURL" href="http://github.com/aurelia/http-client" class="repo-url-github">Repository</a>
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div data-ice="classWrap">
+  <h2>Class</h2>
+  <ul>
+    
+  <li data-ice="classDoc"><span><a href="class/src/headers.js~Headers.html">Headers</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/http-client.js~HttpClient.html">HttpClient</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/http-request-message.js~HttpRequestMessage.html">HttpRequestMessage</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/http-response-message.js~HttpResponseMessage.html">HttpResponseMessage</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/jsonp-request-message.js~JSONPRequestMessage.html">JSONPRequestMessage</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/request-builder.js~RequestBuilder.html">RequestBuilder</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/request-message-processor.js~RequestMessageProcessor.html">RequestMessageProcessor</a></span></li>
+</ul>
+</div>
+
+
+
+<div data-ice="functionWrap">
+  <h2><a href="function/">Function</a></h2>
+  <ul>
+    
+  <li data-ice="functionDoc"><span><a href="function/index.html#static-function-callbackParameterNameTransformer">callbackParameterNameTransformer</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-contentTransformer">contentTransformer</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-createHttpRequestMessageProcessor">createHttpRequestMessageProcessor</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-createJSONPRequestMessageProcessor">createJSONPRequestMessageProcessor</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-credentialsTransformer">credentialsTransformer</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-headerTransformer">headerTransformer</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-progressTransformer">progressTransformer</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-responseTypeTransformer">responseTypeTransformer</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-timeoutTransformer">timeoutTransformer</a></span></li>
+</ul>
+</div>
+
+<div data-ice="variableWrap">
+  <h2><a href="variable/">Variable</a></h2>
+  <ul>
+    
+  <li data-ice="variableDoc"><span><a href="variable/index.html#static-variable-mimeTypes">mimeTypes</a></span></li>
+</ul>
+</div>
+
+
+
+
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">test/http-client.spec.js</h1>
+<pre class="source-code line-number"><code class="prettyprint linenums" data-ice="content">import {HttpClient} from &apos;../src/index&apos;;
+import {HttpRequestMessage, HttpResponseMessage} from &apos;../src/index&apos;;
+import {Headers} from &apos;../src/index&apos;;
+
+describe(&apos;http client&apos;, () =&gt; {
+
+  var baseUrl = &quot;http://example.com/&quot;;
+
+  beforeEach(() =&gt; {
+    jasmine.Ajax.install();
+  });
+
+  afterEach(() =&gt; {
+    jasmine.Ajax.uninstall();
+  });
+
+  describe(&apos;get&apos;, () =&gt; {
+
+    describe(&apos;request&apos;, () =&gt; {
+
+      it(&apos;should make expected request&apos;, () =&gt; {
+        var client = new HttpClient()
+          .configure(x =&gt; x.withBaseUrl(baseUrl));
+
+        client.get(&apos;some/cool/path&apos;);
+
+        var request = jasmine.Ajax.requests.mostRecent();
+
+        expect(request.url).toBe(`${baseUrl}some/cool/path`);
+        expect(request.method).toBe(&apos;GET&apos;);
+        expect(request.data()).toEqual({});
+      });
+
+      it(&apos;should provide expected request headers&apos;, () =&gt; {
+        var client = new HttpClient()
+          .configure(x =&gt; {
+            x.withBaseUrl(baseUrl);
+            x.withHeader(&apos;Authorization&apos;, &apos;bearer 123&apos;);
+          });
+
+        client.get(&apos;some/cool/path&apos;);
+
+        var request = jasmine.Ajax.requests.mostRecent();
+
+        expect(request.requestHeaders[&apos;Authorization&apos;]).toBe(&apos;bearer 123&apos;);
+      });
+
+    });
+
+    describe(&apos;response&apos;, () =&gt; {
+
+      it(&apos;should succeed on 200 response&apos;, (done) =&gt; {
+        var client = new HttpClient()
+          .configure(x =&gt; x.withBaseUrl(baseUrl));
+
+        client.get(&apos;some/cool/path&apos;).then(response =&gt; {
+          expect(response.isSuccess).toBe(true);
+          done();
+        });
+
+        var request = jasmine.Ajax.requests.mostRecent();
+
+        request.respondWith({ status: 200 });
+      });
+
+      it(&apos;should retrieve correct content&apos;, (done) =&gt; {
+        var client = new HttpClient()
+          .configure(x =&gt; x.withBaseUrl(baseUrl));
+
+        client.get(&apos;some/cool/path&apos;).then(response =&gt; {
+          expect(response.content.name).toBe(&apos;Martin&apos;);
+          done();
+        });
+
+        var request = jasmine.Ajax.requests.mostRecent();
+
+        request.respondWith({ status: 200, responseText: &apos;{&quot;name&quot;:&quot;Martin&quot;}&apos; });
+      });
+
+      it(&apos;should not succeed on 500 response&apos;, (done) =&gt; {
+        var client = new HttpClient()
+          .configure(x =&gt; x.withBaseUrl(baseUrl));
+
+        client.get(&apos;some/cool/path&apos;).catch(response =&gt; {
+          expect(response.isSuccess).toBe(false);
+          done();
+        });
+
+        var request = jasmine.Ajax.requests.mostRecent();
+
+        request.respondWith({ status: 500 });
+
+      });
+
+    });
+
+  });
+
+  describe(&apos;put&apos;, () =&gt; {
+
+    describe(&apos;request&apos;, () =&gt; {
+
+      it(&apos;should make expected request&apos;, () =&gt; {
+        var content = { firstName: &quot;John&quot;, lastName: &quot;Doe&quot; };
+        var client = new HttpClient()
+          .configure(x =&gt; {
+            x.withBaseUrl(baseUrl);
+            x.withHeader(&apos;Content-Type&apos;, &apos;application/json&apos;);
+          });
+
+        client.put(&apos;some/cool/path&apos;, content);
+
+        var request = jasmine.Ajax.requests.mostRecent();
+
+        expect(request.url).toBe(`${baseUrl}some/cool/path`);
+        expect(request.method).toBe(&apos;PUT&apos;);
+        expect(request.data()).toEqual(content);
+      });
+
+      it(&apos;should only include content properties specified in the replacer array&apos;, () =&gt; {
+        var content = { firstName: &quot;John&quot;, lastName: &quot;Doe&quot; };
+        var client = new HttpClient()
+          .configure(x =&gt; {
+            x.withBaseUrl(baseUrl);
+            x.withHeader(&apos;Content-Type&apos;, &apos;application/json&apos;);
+          });
+
+        client.createRequest(&apos;some/cool/path&apos;)
+          .asPut()
+          .withContent(content)
+          .withReplacer([&apos;firstName&apos;])
+          .send();
+
+        var request = jasmine.Ajax.requests.mostRecent();
+
+        expect(request.data()).not.toEqual(content);
+        expect(request.data()).toEqual({ firstName: &quot;John&quot; });
+      });
+
+      it(&apos;should provide expected request headers&apos;, () =&gt; {
+        var client = new HttpClient()
+          .configure(x =&gt; {
+            x.withBaseUrl(baseUrl);
+            x.withHeader(&apos;Authorization&apos;, &apos;bearer 123&apos;);
+          });
+
+        client.put(&apos;some/cool/path&apos;);
+
+        var request = jasmine.Ajax.requests.mostRecent();
+
+        expect(request.requestHeaders[&apos;Authorization&apos;]).toBe(&apos;bearer 123&apos;);
+      });
+
+    });
+
+    describe(&apos;response&apos;, () =&gt; {
+
+      it(&apos;should succeed on 200 response&apos;, (done) =&gt; {
+        var client = new HttpClient()
+          .configure(x =&gt; x.withBaseUrl(baseUrl));
+
+        client.get(&apos;some/cool/path&apos;).then(response =&gt; {
+          expect(response.isSuccess).toBe(true);
+          done();
+        });
+
+        var request = jasmine.Ajax.requests.mostRecent();
+
+        request.respondWith({ status: 200 });
+      });
+
+      it(&apos;should retrieve correct content&apos;, (done) =&gt; {
+        var client = new HttpClient()
+          .configure(x =&gt; x.withBaseUrl(baseUrl));
+
+        client.put(&apos;some/cool/path&apos;).then(response =&gt; {
+          expect(response.content.name).toBe(&apos;Martin&apos;);
+          done();
+        });
+
+        var request = jasmine.Ajax.requests.mostRecent();
+
+        request.respondWith({ status: 200, responseText: &apos;{&quot;name&quot;:&quot;Martin&quot;}&apos; });
+      });
+
+      it(&apos;should not succeed on 500 response&apos;, (done) =&gt; {
+        var client = new HttpClient()
+          .configure(x =&gt; x.withBaseUrl(baseUrl));
+
+        client.put(&apos;some/cool/path&apos;).catch(response =&gt; {
+          expect(response.isSuccess).toBe(false);
+          done();
+        });
+
+        var request = jasmine.Ajax.requests.mostRecent();
+
+        request.respondWith({ status: 500 });
+
+      });
+
+    });
+
+  });
+
+  describe(&apos;patch&apos;, () =&gt; {
+
+    describe(&apos;request&apos;, () =&gt; {
+
+      it(&apos;should make expected request&apos;, () =&gt; {
+        var content = { firstName: &quot;John&quot;, lastName: &quot;Doe&quot; };
+        var client = new HttpClient()
+          .configure(x =&gt; {
+            x.withBaseUrl(baseUrl);
+            x.withHeader(&apos;Content-Type&apos;, &apos;application/json&apos;);
+          });
+
+        client.patch(&apos;some/cool/path&apos;, content);
+
+        var request = jasmine.Ajax.requests.mostRecent();
+
+        expect(request.url).toBe(`${baseUrl}some/cool/path`);
+        expect(request.method).toBe(&apos;PATCH&apos;);
+        expect(request.data()).toEqual(content);
+      });
+
+      it(&apos;should only include content properties specified in the replacer array&apos;, () =&gt; {
+        var content = { firstName: &quot;John&quot;, lastName: &quot;Doe&quot; };
+        var client = new HttpClient()
+          .configure(x =&gt; {
+            x.withBaseUrl(baseUrl);
+            x.withHeader(&apos;Content-Type&apos;, &apos;application/json&apos;);
+          });
+
+        client.createRequest(&apos;some/cool/path&apos;)
+          .asPatch()
+          .withContent(content)
+          .withReplacer([&apos;firstName&apos;])
+          .send();
+
+        var request = jasmine.Ajax.requests.mostRecent();
+
+        expect(request.data()).not.toEqual(content);
+        expect(request.data()).toEqual({ firstName: &quot;John&quot; });
+      });
+
+      it(&apos;should provide expected request headers&apos;, () =&gt; {
+        var client = new HttpClient()
+          .configure(x =&gt; {
+            x.withBaseUrl(baseUrl);
+            x.withHeader(&apos;Authorization&apos;, &apos;bearer 123&apos;);
+          });
+
+        client.patch(&apos;some/cool/path&apos;);
+
+        var request = jasmine.Ajax.requests.mostRecent();
+
+        expect(request.requestHeaders[&apos;Authorization&apos;]).toBe(&apos;bearer 123&apos;);
+      });
+
+    });
+
+    describe(&apos;response&apos;, () =&gt; {
+
+      it(&apos;should succeed on 200 response&apos;, (done) =&gt; {
+        var client = new HttpClient()
+          .configure(x =&gt; x.withBaseUrl(baseUrl));
+
+        client.put(&apos;some/cool/path&apos;).then(response =&gt; {
+          expect(response.isSuccess).toBe(true);
+          done();
+        });
+
+        var request = jasmine.Ajax.requests.mostRecent();
+
+        request.respondWith({ status: 200 });
+      });
+
+      it(&apos;should retrieve correct content&apos;, (done) =&gt; {
+        var client = new HttpClient()
+          .configure(x =&gt; x.withBaseUrl(baseUrl));
+
+        client.patch(&apos;some/cool/path&apos;).then(response =&gt; {
+          expect(response.content.name).toBe(&apos;Martin&apos;);
+          done();
+        });
+
+        var request = jasmine.Ajax.requests.mostRecent();
+
+        request.respondWith({ status: 200, responseText: &apos;{&quot;name&quot;:&quot;Martin&quot;}&apos; });
+      });
+
+      it(&apos;should not succeed on 500 response&apos;, (done) =&gt; {
+        var client = new HttpClient()
+          .configure(x =&gt; x.withBaseUrl(baseUrl));
+
+        client.patch(&apos;some/cool/path&apos;).catch(response =&gt; {
+          expect(response.isSuccess).toBe(false);
+          done();
+        });
+
+        var request = jasmine.Ajax.requests.mostRecent();
+
+        request.respondWith({ status: 500 });
+
+      });
+
+    });
+
+  });
+
+  describe(&apos;post&apos;, () =&gt; {
+
+    describe(&apos;request&apos;, () =&gt; {
+
+      it(&apos;should make expected request&apos;, () =&gt; {
+        var content = { firstName: &quot;John&quot;, lastName: &quot;Doe&quot; };
+        var client = new HttpClient()
+          .configure(x =&gt; {
+            x.withBaseUrl(baseUrl);
+            x.withHeader(&apos;Content-Type&apos;, &apos;application/json&apos;);
+          });
+
+        client.post(&apos;some/cool/path&apos;, content);
+
+        var request = jasmine.Ajax.requests.mostRecent();
+
+        expect(request.url).toBe(`${baseUrl}some/cool/path`);
+        expect(request.method).toBe(&apos;POST&apos;);
+        expect(request.data()).toEqual(content);
+      });
+
+      it(&apos;should only include content properties specified in the replacer array&apos;, () =&gt; {
+        var content = { firstName: &quot;John&quot;, lastName: &quot;Doe&quot; };
+        var client = new HttpClient()
+          .configure(x =&gt; {
+            x.withBaseUrl(baseUrl);
+            x.withHeader(&apos;Content-Type&apos;, &apos;application/json&apos;);
+          });
+
+        client.createRequest(&apos;some/cool/path&apos;)
+          .asPost()
+          .withContent(content)
+          .withReplacer([&apos;firstName&apos;])
+          .send();
+
+        var request = jasmine.Ajax.requests.mostRecent();
+
+        expect(request.data()).not.toEqual(content);
+        expect(request.data()).toEqual({ firstName: &quot;John&quot; });
+      });
+
+      it(&apos;should provide expected request headers&apos;, () =&gt; {
+        var client = new HttpClient()
+          .configure(x =&gt; {
+            x.withBaseUrl(baseUrl);
+            x.withHeader(&apos;Authorization&apos;, &apos;bearer 123&apos;);
+          });
+
+        client.post(&apos;some/cool/path&apos;);
+
+        var request = jasmine.Ajax.requests.mostRecent();
+
+        expect(request.requestHeaders[&apos;Authorization&apos;]).toBe(&apos;bearer 123&apos;);
+      });
+
+    });
+
+    describe(&apos;response&apos;, () =&gt; {
+
+      it(&apos;should succeed on 201 response&apos;, (done) =&gt; {
+        var client = new HttpClient()
+          .configure(x =&gt; x.withBaseUrl(baseUrl));
+
+        client.post(&apos;some/cool/path&apos;).then(response =&gt; {
+          expect(response.isSuccess).toBe(true);
+          done();
+        });
+
+        var request = jasmine.Ajax.requests.mostRecent();
+
+        request.respondWith({ status: 201 });
+      });
+
+      it(&apos;should retrieve correct content&apos;, (done) =&gt; {
+        var client = new HttpClient()
+          .configure(x =&gt; x.withBaseUrl(baseUrl));
+
+        client.post(&apos;some/cool/path&apos;).then(response =&gt; {
+          expect(response.content.name).toBe(&apos;Martin&apos;);
+          done();
+        });
+
+        var request = jasmine.Ajax.requests.mostRecent();
+
+        request.respondWith({ status: 201, responseText: &apos;{&quot;name&quot;:&quot;Martin&quot;}&apos; });
+      });
+
+      it(&apos;should not succeed on 500 response&apos;, (done) =&gt; {
+        var client = new HttpClient()
+          .configure(x =&gt; x.withBaseUrl(baseUrl));
+
+        client.post(&apos;some/cool/path&apos;).catch(response =&gt; {
+          expect(response.isSuccess).toBe(false);
+          done();
+        });
+
+        var request = jasmine.Ajax.requests.mostRecent();
+
+        request.respondWith({ status: 500 });
+
+      });
+
+    });
+  });
+
+  describe(&apos;delete&apos;, () =&gt; {
+
+    describe(&apos;request&apos;, () =&gt; {
+
+      it(&apos;should make expected request&apos;, () =&gt; {
+        var client = new HttpClient()
+          .configure(x =&gt; x.withBaseUrl(baseUrl));
+
+        client.delete(&apos;some/cool/path&apos;);
+
+        var request = jasmine.Ajax.requests.mostRecent();
+
+        expect(request.url).toBe(`${baseUrl}some/cool/path`);
+        expect(request.method).toBe(&apos;DELETE&apos;);
+        expect(request.data()).toEqual({});
+      });
+
+      it(&apos;should provide expected request headers&apos;, () =&gt; {
+        var client = new HttpClient()
+          .configure(x =&gt; {
+            x.withBaseUrl(baseUrl);
+            x.withHeader(&apos;Authorization&apos;, &apos;bearer 123&apos;);
+          });
+
+        client.delete(&apos;some/cool/path&apos;);
+
+        var request = jasmine.Ajax.requests.mostRecent();
+
+        expect(request.requestHeaders[&apos;Authorization&apos;]).toBe(&apos;bearer 123&apos;);
+      });
+
+    });
+
+    describe(&apos;response&apos;, () =&gt; {
+
+      it(&apos;should succeed on 200 response&apos;, (done) =&gt; {
+        var client = new HttpClient()
+          .configure(x =&gt; x.withBaseUrl(baseUrl));
+
+        client.delete(&apos;some/cool/path&apos;).then(response =&gt; {
+          expect(response.isSuccess).toBe(true);
+          done();
+        });
+
+        var request = jasmine.Ajax.requests.mostRecent();
+
+        request.respondWith({ status: 200 });
+      });
+
+      it(&apos;should not succeed on 500 response&apos;, (done) =&gt; {
+        var client = new HttpClient()
+          .configure(x =&gt; x.withBaseUrl(baseUrl));
+
+        client.delete(&apos;some/cool/path&apos;).catch(response =&gt; {
+          expect(response.isSuccess).toBe(false);
+          done();
+        });
+
+        var request = jasmine.Ajax.requests.mostRecent();
+
+        request.respondWith({ status: 500 });
+
+      });
+
+    });
+
+  });
+
+  describe(&apos;send&apos;, () =&gt; {
+
+    it(&apos;should reject on onerror&apos;, (done) =&gt; {
+      var client = new HttpClient();
+
+      client.send(new HttpRequestMessage(&apos;GET&apos;, &apos;some/cool/url&apos;)).catch(response =&gt; {
+        expect(response instanceof HttpResponseMessage).toBe(true);
+        expect(response.responseType).toBe(&apos;error&apos;);
+        done();
+      });
+
+      jasmine.Ajax.requests.mostRecent().responseError();
+
+    });
+
+    it(&apos;should reject on ontimeout&apos;, (done) =&gt; {
+        jasmine.clock().install()
+        var client = new HttpClient();
+
+        client.send(new HttpRequestMessage(&apos;GET&apos;, &apos;some/cool/url&apos;)).catch(response =&gt; {
+          expect(response instanceof HttpResponseMessage).toBe(true);
+          expect(response.responseType).toBe(&apos;timeout&apos;);
+          done();
+        });
+
+        jasmine.Ajax.requests.mostRecent().responseTimeout();
+        jasmine.clock().uninstall();
+    });
+
+    it(&apos;should reject when aborted&apos;, (done) =&gt; {
+      var client = new HttpClient();
+
+      var promise = client.send(new HttpRequestMessage(&apos;GET&apos;, &apos;some/cool/url&apos;));
+      promise.catch((response, reason) =&gt; {
+        expect(response instanceof HttpResponseMessage).toBe(true);
+        expect(response.responseType).toBe(&apos;abort&apos;);
+        done();
+      });
+
+      promise.abort();
+    });
+
+    it(&apos;can parse request headers&apos;, (done) =&gt; {
+      var client = new HttpClient();
+
+      client.send(new HttpRequestMessage(&apos;GET&apos;, &apos;some/cool/url&apos;)).then(response =&gt; {
+        expect(response.headers.get(&apos;Access-Control-Allow-Origin&apos;)).toBe(&apos;http://www.example.com&apos;);
+        done();
+      }).catch(e =&gt; {
+        console.log(e);
+        done();
+      });
+
+      var request = jasmine.Ajax.requests.mostRecent();
+      request.respondWith({
+        status: 200,
+        responseHeaders: [{ name: &apos;Access-Control-Allow-Origin&apos;, value: &apos;http://www.example.com&apos;}]
+      });
+
+    });
+
+    it(&apos;can parse multiple request headers&apos;, (done) =&gt; {
+      var client = new HttpClient();
+
+      client.send(new HttpRequestMessage(&apos;GET&apos;, &apos;some/cool/url&apos;)).then(response =&gt; {
+        expect(response.headers.get(&apos;Access-Control-Allow-Origin&apos;)).toBe(&apos;http://www.example.com&apos;);
+        expect(response.headers.get(&apos;Content-Type&apos;)).toBe(&apos;application/json&apos;);
+        done();
+      });
+
+      var request = jasmine.Ajax.requests.mostRecent();
+      request.respondWith({
+        status: 200,
+        responseHeaders: [
+          { name: &apos;Access-Control-Allow-Origin&apos;, value: &apos;http://www.example.com&apos;},
+          { name: &apos;Content-Type&apos;, value: &apos;application/json&apos;}
+        ]
+      });
+
+    });
+
+    it(&apos;can parse header values containing :&apos;, (done) =&gt; {
+      var client = new HttpClient();
+
+      client.send(new HttpRequestMessage(&apos;GET&apos;, &apos;some/cool/url&apos;)).then(response =&gt; {
+        expect(response.headers.get(&apos;Some-Cosy-Header&apos;)).toBe(&apos;foo:bar&apos;);
+        done();
+      });
+
+      var request = jasmine.Ajax.requests.mostRecent();
+      request.respondWith({
+        status: 200,
+        responseHeaders: [{ name: &apos;Some-Cosy-Header&apos;, value: &apos;foo:bar&apos;}]
+      });
+    });
+
+    it(&apos;should set callback on upload progress&apos;, () =&gt; {
+      var client = new HttpClient();
+      var callback = function(){};
+
+      client.createRequest(&apos;some/cool/url&apos;)
+        .asGet()
+        .withProgressCallback(callback)
+        .send();
+
+      var response = jasmine.Ajax.requests.mostRecent();
+      expect(response.upload.onprogress).toBe(callback);
+    });
+
+  });
+
+});
+</code></pre>
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(0.0.2)</span></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+</body>
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">test/http-response-message.spec.js | Aurelia:HttpClient API Document</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  
+  
+</head>
+<body class="layout-container">
+
+<header>
+  <a href="./">Home</a>
+  <a href="symbols.html">Symbol</a>
+  <a href="source.html">Source</a>
+  <a href="test.html">Test</a>
+  <a data-ice="repoURL" href="http://github.com/aurelia/http-client" class="repo-url-github">Repository</a>
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div data-ice="classWrap">
+  <h2>Class</h2>
+  <ul>
+    
+  <li data-ice="classDoc"><span><a href="class/src/headers.js~Headers.html">Headers</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/http-client.js~HttpClient.html">HttpClient</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/http-request-message.js~HttpRequestMessage.html">HttpRequestMessage</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/http-response-message.js~HttpResponseMessage.html">HttpResponseMessage</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/jsonp-request-message.js~JSONPRequestMessage.html">JSONPRequestMessage</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/request-builder.js~RequestBuilder.html">RequestBuilder</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/request-message-processor.js~RequestMessageProcessor.html">RequestMessageProcessor</a></span></li>
+</ul>
+</div>
+
+
+
+<div data-ice="functionWrap">
+  <h2><a href="function/">Function</a></h2>
+  <ul>
+    
+  <li data-ice="functionDoc"><span><a href="function/index.html#static-function-callbackParameterNameTransformer">callbackParameterNameTransformer</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-contentTransformer">contentTransformer</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-createHttpRequestMessageProcessor">createHttpRequestMessageProcessor</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-createJSONPRequestMessageProcessor">createJSONPRequestMessageProcessor</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-credentialsTransformer">credentialsTransformer</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-headerTransformer">headerTransformer</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-progressTransformer">progressTransformer</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-responseTypeTransformer">responseTypeTransformer</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-timeoutTransformer">timeoutTransformer</a></span></li>
+</ul>
+</div>
+
+<div data-ice="variableWrap">
+  <h2><a href="variable/">Variable</a></h2>
+  <ul>
+    
+  <li data-ice="variableDoc"><span><a href="variable/index.html#static-variable-mimeTypes">mimeTypes</a></span></li>
+</ul>
+</div>
+
+
+
+
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">test/http-response-message.spec.js</h1>
+<pre class="source-code line-number"><code class="prettyprint linenums" data-ice="content">import {HttpResponseMessage, mimeTypes} from &apos;../src/http-response-message&apos;;
+import {Headers} from &apos;../src/headers&apos;;
+
+describe(&quot;HttpResponseMessage&quot;, () =&gt; {
+
+  describe(&quot;constructor&quot;, () =&gt; {
+    it(&quot;should have a isSuccess defined by the xhr.status&quot;, () =&gt; {
+      //1xx informal
+      expect(new HttpResponseMessage({}, {status: 100}).isSuccess).toBeFalsy();
+      expect(new HttpResponseMessage({}, {status: 199}).isSuccess).toBeFalsy();
+
+      //2xx success
+      expect(new HttpResponseMessage({}, {status: 200}).isSuccess).toBeTruthy();
+      expect(new HttpResponseMessage({}, {status: 299}).isSuccess).toBeTruthy();
+
+      //3xx redirection
+      expect(new HttpResponseMessage({}, {status: 300}).isSuccess).toBeTruthy();
+      expect(new HttpResponseMessage({}, {status: 399}).isSuccess).toBeTruthy();
+
+      //4xx client error
+      expect(new HttpResponseMessage({}, {status: 400}).isSuccess).toBeFalsy();
+      expect(new HttpResponseMessage({}, {status: 499}).isSuccess).toBeFalsy();
+
+      //5xx server error
+      expect(new HttpResponseMessage({}, {status: 400}).isSuccess).toBeFalsy();
+      expect(new HttpResponseMessage({}, {status: 499}).isSuccess).toBeFalsy();
+    });
+
+    //This may seem superfluous but it&apos;s surprising how many bugs stem from constructors no longer working as expected
+    it(&quot;have the xhr.status, xhr.response, xhr.statusText, responseType, reviver and headers as fields&quot;, () =&gt; {
+      //Everything that can be an object is set to one for reference checking
+      let xhr = {status: 200, response: {}, statusText: {}};
+      let responseType = {}, reviver = {}, requestMessage = {};
+      let httpResponse = new HttpResponseMessage(requestMessage, xhr, responseType, reviver);
+
+      expect(httpResponse.requestMessage).toBe(requestMessage);
+      expect(httpResponse.statusCode).toBe(xhr.status);
+      expect(httpResponse.response).toBe(xhr.response);
+      expect(httpResponse.statusText).toBe(xhr.statusText);
+      expect(httpResponse.responseType).toBe(responseType);
+      expect(httpResponse.reviver).toBe(reviver);
+      expect(httpResponse.headers).toEqual(jasmine.any(Headers));
+    });
+
+    it(&quot;will call the Headers.parse() if xhr.getAllResponseHeaders() is defined&quot;, () =&gt; {
+      let parseSpy = spyOn(Headers, &apos;parse&apos;);
+      let xhrMock = jasmine.createSpyObj(&quot;xhr&quot;, [&quot;getAllResponseHeaders&quot;]);
+      xhrMock.getAllResponseHeaders.and.returnValue(&quot;&quot;);
+
+      new HttpResponseMessage({}, xhrMock);
+      expect(xhrMock.getAllResponseHeaders).toHaveBeenCalled();
+      expect(parseSpy).toHaveBeenCalledWith(&quot;&quot;);
+    });
+
+    it(&quot;will set responseType to an aliased version of the mimetype detected in the Content-Type header, will also store the original mimetype as mimeType&quot;, () =&gt; {
+      runContentTypeExpectations([
+        {contentType:&quot;text/yml&quot;,mimeType:&quot;text/yml&quot;,type:&quot;yml&quot;},
+        {contentType:&quot;text/xml&quot;,mimeType:&quot;text/xml&quot;,type:&quot;xml&quot;},
+        {contentType:&quot;text/markdown&quot;,mimeType:&quot;text/markdown&quot;,type:&quot;md&quot;}
+      ]);
+    });
+
+    it(&quot;will split the Content-Type using the ; delimeter and use the first part as the mimeType&quot;, () =&gt; {
+      runContentTypeExpectations([
+        {contentType:&quot;text/html; charset=utf-8&quot;,mimeType:&quot;text/html&quot;,type:&quot;html&quot;},
+        {contentType:&quot;application/atom+xml; type=feed&quot;,mimeType:&quot;application/atom+xml&quot;,type:&quot;atom&quot;},
+        {contentType:&quot;application/json;   odata=verbose&quot;,mimeType:&quot;application/json&quot;,type:&quot;json&quot;}
+      ]);
+    });
+
+    it(&quot;will use the mimeType as the responseType if there is no alias for it in the mimeTypes map&quot;, () =&gt; {
+      runContentTypeExpectations([
+        {contentType:&quot;text/foo&quot;,mimeType:&quot;text/foo&quot;,type:&quot;text/foo&quot;},
+        {contentType:&quot;text/foo; charset=utf-8&quot;,mimeType:&quot;text/foo&quot;,type:&quot;text/foo&quot;}
+      ]);
+    });
+
+    it(&quot;will set responseType to the responseType specified in the request if no Content-Type header was found, mimeType will be null&quot;, () =&gt; {
+      runContentTypeExpectations([
+        {contentType:undefined,mimeType:null,type:&quot;json&quot;,requestType:&quot;json&quot;},
+        {contentType:undefined,mimeType:null,type:&quot;html&quot;,requestType:&quot;html&quot;},
+        {contentType:undefined,mimeType:null,type:&quot;text/html&quot;,requestType:&quot;text/html&quot;},
+        {contentType:undefined,mimeType:null,type:&quot;something&quot;,requestType:&quot;something&quot;}
+      ]);
+    });
+
+    it(&quot;will use json if no responseType for the request was null&quot;, () =&gt; {
+      runContentTypeExpectations([
+        {contentType:undefined,mimeType:null,type:null,requestType:&quot;json&quot;}
+      ]);
+    });
+  });
+
+  describe(&quot;content&quot;, () =&gt; {
+    it(&quot;will return _content if defined&quot;, () =&gt; {
+      let httpResponse = new HttpResponseMessage(null,{});
+      let _content = httpResponse._content = {};
+
+      expect(httpResponse.content).toBe(_content);
+    });
+
+    it(&quot;will return undefined if response is undefined&quot;, () =&gt; {
+      let httpResponse = new HttpResponseMessage(null, {});
+      expect(httpResponse.content).toBeUndefined();
+    });
+
+    it(&quot;will return null if response is null&quot;, () =&gt; {
+      let httpResponse = new HttpResponseMessage(null, {response: null});
+      expect(httpResponse.content).toBeNull();
+    });
+
+    it(&quot;will JSON.parse if the response type is &apos;json&apos;&quot;, () =&gt; {
+      let response = {}, reviver = {}, content = {};
+      let parseSpy = spyOn(JSON, &apos;parse&apos;).and.returnValue(content);
+      let httpResponse = new HttpResponseMessage(null, {response: response}, &apos;json&apos;, reviver);
+
+      expect(httpResponse.content).toBe(content);
+      expect(parseSpy).toHaveBeenCalledWith(response, reviver);
+    });
+
+    it(&quot;will call the reviver if the response type is not &apos;json&apos; and the reviver is defined&quot;, () =&gt; {
+      let response = {};
+      let reviverSpy = jasmine.createSpy(&quot;reviver&quot;).and.returnValue(response);
+      let httpResponse = new HttpResponseMessage(null, {response: response}, &apos;notJson&apos;, reviverSpy);
+
+      expect(httpResponse.content).toBe(response);
+      expect(reviverSpy).toHaveBeenCalledWith(response);
+    });
+
+    it(&quot;will return the response if the reviver is not set and the response type is not json&quot;, () =&gt; {
+      let response = {};
+      let httpResponse = new HttpResponseMessage(null, {response: response}, &apos;notJson&apos;);
+
+      expect(httpResponse.content).toBe(response);
+    });
+
+    it(&quot;will catch expections on content if the response was not successful&quot;, () =&gt; {
+      let reviverSpy = jasmine.createSpy(&quot;reviver&quot;).and.throwError();
+      let httpResponse = new HttpResponseMessage(null, {status : 404, response : {}}, &apos;notJson&apos;, reviverSpy);
+
+      expect(httpResponse.content).toBeNull();
+      expect(reviverSpy).toHaveBeenCalled();
+    });
+
+    it(&quot;will throw on content if the response was successful&quot;, () =&gt; {
+      let reviverSpy = jasmine.createSpy(&quot;reviver&quot;).and.throwError();
+      let httpResponse = new HttpResponseMessage(null, {status : 200, response : {}}, &apos;notJson&apos;, reviverSpy);
+
+      expect(() =&gt; httpResponse.content).toThrow();
+      expect(reviverSpy).toHaveBeenCalled();
+    });
+  });
+});
+
+/**
+ * Run an array of expectations for testing content-type headers and responseTypes
+ *
+ * Sets up a request to have a response with a certain Content-Type and checks if the
+ * response has the correct `responseType` set.
+ * Will check if the `responseType` has been aliased according to the `mimeTypes` map.
+ * Will check if the response has the original mimetype stored in the `mimeType` property.
+ *
+ * an expectation object should be the following format:
+ * {
+ *  contentType:&quot;text/html; charset=utf-8&quot;,
+ *  mimeType:&quot;text/html&quot;,
+ *  type:&quot;html&quot;,
+ *  requestType:&quot;json&quot;
+ * },
+ *
+ *
+ * With these settings it will set the Content-Type header to &quot;text/html; charset=utf-8&quot; in the mock response,
+ * and expect it to be resolved to a `mimeType` of &quot;text/html&quot; and aliased with the responseType &quot;html&quot;
+ *
+ * The requestType property is optional and will be set as the `responseType` in the request message.
+ */
+function runContentTypeExpectations(expectations){
+  let reviver = {};
+  expectations.map((expectation)=&gt;{
+    var headers = new Headers();
+    //use json as the default `responseType` in the request message
+    expectation.requestType = expectation.requestType||&quot;json&quot;;
+    //set a content-type in the response header
+    if(expectation.contentType) headers.add(&apos;Content-Type&apos;, expectation.contentType);
+
+    jasmine.Ajax.withMock(() =&gt; {
+      var xhr = new XMLHttpRequest();
+      headers.configureXHR(xhr);
+      //check if content-type was correctly set in the xhr headers
+      expect(xhr.requestHeaders[&apos;Content-Type&apos;]).toBe(expectation.contentType);
+
+      let httpResponse = new HttpResponseMessage(null, xhr, expectation.requestType, reviver);
+
+      //expect mimetype to be converted to it&apos;s alias if it is defined in the `mimeTypes` list
+      if(mimeTypes[expectation.mimeType]) expect(httpResponse.responseType).toBe(expectation.type);
+      //expect original mimetype to be stored in `mimeType`
+      expect(httpResponse.mimeType).toBe(expectation.mimeType);
+    });
+  });
+}
+</code></pre>
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(0.0.2)</span></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+</body>
+</html>

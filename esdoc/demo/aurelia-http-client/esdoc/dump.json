@@ -1,0 +1,4540 @@
+[
+  {
+    "kind": "file",
+    "static": true,
+    "variation": null,
+    "name": "src/headers.js",
+    "memberof": null,
+    "longname": "src/headers.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1,
+    "content": "export class Headers {\n  constructor(headers={}){\n    this.headers = headers;\n  }\n\n  add(key, value){\n    this.headers[key] = value;\n  }\n\n  get(key){\n    return this.headers[key];\n  }\n\n  clear(){\n    this.headers = {};\n  }\n\n  configureXHR(xhr){\n    var headers = this.headers, key;\n\n    for(key in headers){\n      xhr.setRequestHeader(key, headers[key]);\n    }\n  }\n\n  /**\n   * XmlHttpRequest's getAllResponseHeaders() method returns a string of response\n   * headers according to the format described here:\n   * http://www.w3.org/TR/XMLHttpRequest/#the-getallresponseheaders-method\n   * This method parses that string into a user-friendly key/value pair object.\n   */\n  static parse(headerStr){\n    var headers = new Headers();\n    if (!headerStr) {\n      return headers;\n    }\n\n    var headerPairs = headerStr.split('\\u000d\\u000a');\n    for (var i = 0; i < headerPairs.length; i++) {\n      var headerPair = headerPairs[i];\n      // Can't use split() here because it does the wrong thing\n      // if the header value has the string \": \" in it.\n      var index = headerPair.indexOf('\\u003a\\u0020');\n      if (index > 0) {\n        var key = headerPair.substring(0, index);\n        var val = headerPair.substring(index + 2);\n        headers.add(key,val);\n      }\n    }\n\n    return headers;\n  }\n}\n"
+  },
+  {
+    "kind": "class",
+    "static": true,
+    "variation": null,
+    "name": "Headers",
+    "memberof": "src/headers.js",
+    "longname": "src/headers.js~Headers",
+    "access": null,
+    "export": true,
+    "importPath": "aurelia-http-client/src/headers.js",
+    "importStyle": "{Headers}",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "kind": "constructor",
+    "static": false,
+    "variation": null,
+    "name": "constructor",
+    "memberof": "src/headers.js~Headers",
+    "longname": "src/headers.js~Headers#constructor",
+    "access": null,
+    "description": null,
+    "lineNumber": 2,
+    "undocument": true,
+    "params": [
+      {
+        "name": "headers",
+        "optional": true,
+        "types": [
+          "{}"
+        ],
+        "defaultRaw": {},
+        "defaultValue": "{}"
+      }
+    ],
+    "generator": false
+  },
+  {
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "headers",
+    "memberof": "src/headers.js~Headers",
+    "longname": "src/headers.js~Headers#headers",
+    "access": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "kind": "method",
+    "static": false,
+    "variation": null,
+    "name": "add",
+    "memberof": "src/headers.js~Headers",
+    "longname": "src/headers.js~Headers#add",
+    "access": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "params": [
+      {
+        "name": "key",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "value",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "generator": false
+  },
+  {
+    "kind": "method",
+    "static": false,
+    "variation": null,
+    "name": "get",
+    "memberof": "src/headers.js~Headers",
+    "longname": "src/headers.js~Headers#get",
+    "access": null,
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true,
+    "params": [
+      {
+        "name": "key",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "generator": false
+  },
+  {
+    "kind": "method",
+    "static": false,
+    "variation": null,
+    "name": "clear",
+    "memberof": "src/headers.js~Headers",
+    "longname": "src/headers.js~Headers#clear",
+    "access": null,
+    "description": null,
+    "lineNumber": 14,
+    "undocument": true,
+    "params": [],
+    "generator": false
+  },
+  {
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "headers",
+    "memberof": "src/headers.js~Headers",
+    "longname": "src/headers.js~Headers#headers",
+    "access": null,
+    "description": null,
+    "lineNumber": 15,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "kind": "method",
+    "static": false,
+    "variation": null,
+    "name": "configureXHR",
+    "memberof": "src/headers.js~Headers",
+    "longname": "src/headers.js~Headers#configureXHR",
+    "access": null,
+    "description": null,
+    "lineNumber": 18,
+    "undocument": true,
+    "params": [
+      {
+        "name": "xhr",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "generator": false
+  },
+  {
+    "kind": "method",
+    "static": true,
+    "variation": null,
+    "name": "parse",
+    "memberof": "src/headers.js~Headers",
+    "longname": "src/headers.js~Headers.parse",
+    "access": null,
+    "description": "XmlHttpRequest's getAllResponseHeaders() method returns a string of response\nheaders according to the format described here:\nhttp://www.w3.org/TR/XMLHttpRequest/#the-getallresponseheaders-method\nThis method parses that string into a user-friendly key/value pair object.",
+    "lineNumber": 32,
+    "params": [
+      {
+        "name": "headerStr",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "generator": false
+  },
+  {
+    "kind": "file",
+    "static": true,
+    "variation": null,
+    "name": "src/http-client.js",
+    "memberof": null,
+    "longname": "src/http-client.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1,
+    "content": "import core from 'core-js';\nimport {Headers} from './headers';\nimport {RequestBuilder} from './request-builder';\nimport {HttpRequestMessage,createHttpRequestMessageProcessor} from './http-request-message';\nimport {JSONPRequestMessage,createJSONPRequestMessageProcessor} from './jsonp-request-message';\n\nfunction trackRequestStart(client, processor){\n  client.pendingRequests.push(processor);\n  client.isRequesting = true;\n}\n\nfunction trackRequestEnd(client, processor){\n  var index = client.pendingRequests.indexOf(processor);\n\n  client.pendingRequests.splice(index, 1);\n  client.isRequesting = client.pendingRequests.length > 0;\n\n  if(!client.isRequesting){\n    var evt = new window.CustomEvent('aurelia-http-client-requests-drained', { bubbles: true, cancelable: true });\n    setTimeout(() => document.dispatchEvent(evt), 1);\n  }\n}\n\n/**\n* The main HTTP client object.\n*\n* @class HttpClient\n* @constructor\n*/\nexport class HttpClient {\n  constructor(){\n    this.requestTransformers = [];\n    this.requestProcessorFactories = new Map();\n    this.requestProcessorFactories.set(HttpRequestMessage, createHttpRequestMessageProcessor);\n    this.requestProcessorFactories.set(JSONPRequestMessage, createJSONPRequestMessageProcessor);\n    this.pendingRequests = [];\n    this.isRequesting = false;\n  }\n\n  /**\n   * Configure this HttpClient with default settings to be used by all requests.\n   *\n   * @method configure\n   * @param {Function} fn A function that takes a RequestBuilder as an argument.\n   * @chainable\n   */\n  configure(fn){\n    var builder = new RequestBuilder(this);\n    fn(builder);\n    this.requestTransformers = builder.transformers;\n    return this;\n  }\n\n  /**\n   * Returns a new RequestBuilder for this HttpClient instance that can be used to build and send HTTP requests.\n   *\n   * @method createRequest\n   * @param url The target URL.\n   * @type RequestBuilder\n   */\n  createRequest(url){\n    let builder = new RequestBuilder(this);\n\n    if(url) {\n      builder.withUrl(url);\n    }\n\n    return builder;\n  }\n\n  /**\n   * Sends a message using the underlying networking stack.\n   *\n   * @method send\n   * @param message A configured HttpRequestMessage or JSONPRequestMessage.\n   * @param {Array} transformers A collection of transformers to apply to the HTTP request.\n   * @return {Promise} A cancellable promise object.\n   */\n  send(message, transformers){\n    var createProcessor = this.requestProcessorFactories.get(message.constructor),\n        processor, promise, i, ii;\n\n    if(!createProcessor){\n      throw new Error(`No request message processor factory for ${message.constructor}.`);\n    }\n\n    processor = createProcessor();\n    trackRequestStart(this, processor);\n\n    transformers = transformers || this.requestTransformers;\n\n    for(i = 0, ii = transformers.length; i < ii; ++i){\n      transformers[i](this, processor, message);\n    }\n\n    promise = processor.process(this, message).then(response => {\n      trackRequestEnd(this, processor);\n      return response;\n    }).catch(response => {\n      trackRequestEnd(this, processor);\n      throw response;\n    });\n\n    promise.abort = promise.cancel = function() {\n      processor.abort();\n    };\n\n    return promise;\n  }\n\n  /**\n   * Sends an HTTP DELETE request.\n   *\n   * @method delete\n   * @param {String} url The target URL.\n   * @return {Promise} A cancellable promise object.\n   */\n  delete(url){\n    return this.createRequest(url).asDelete().send();\n  }\n\n  /**\n   * Sends an HTTP GET request.\n   *\n   * @method get\n   * @param {String} url The target URL.\n   * @return {Promise} A cancellable promise object.\n   */\n  get(url){\n    return this.createRequest(url).asGet().send();\n  }\n\n  /**\n   * Sends an HTTP HEAD request.\n   *\n   * @method head\n   * @param {String} url The target URL.\n   * @return {Promise} A cancellable promise object.\n   */\n  head(url){\n    return this.createRequest(url).asHead().send();\n  }\n\n  /**\n   * Sends a JSONP request.\n   *\n   * @method jsonp\n   * @param {String} url The target URL.\n   * @return {Promise} A cancellable promise object.\n   */\n  jsonp(url, callbackParameterName='jsoncallback'){\n    return this.createRequest(url).asJsonp(callbackParameterName).send();\n  }\n\n  /**\n   * Sends an HTTP OPTIONS request.\n   *\n   * @method options\n   * @param {String} url The target URL.\n   * @return {Promise} A cancellable promise object.\n   */\n  options(url){\n    return this.createRequest(url).asOptions().send();\n  }\n\n  /**\n   * Sends an HTTP PUT request.\n   *\n   * @method put\n   * @param {String} url The target URL.\n   * @param {Object} url The request payload.\n   * @return {Promise} A cancellable promise object.\n   */\n  put(url, content){\n    return this.createRequest(url).asPut().withContent(content).send();\n  }\n\n  /**\n   * Sends an HTTP PATCH request.\n   *\n   * @method patch\n   * @param {String} url The target URL.\n   * @param {Object} url The request payload.\n   * @return {Promise} A cancellable promise object.\n   */\n  patch(url, content){\n    return this.createRequest(url).asPatch().withContent(content).send();\n  }\n\n  /**\n   * Sends an HTTP POST request.\n   *\n   * @method post\n   * @param {String} url The target URL.\n   * @param {Object} url The request payload.\n   * @return {Promise} A cancellable promise object.\n   */\n  post(url, content){\n    return this.createRequest(url).asPost().withContent(content).send();\n  }\n}\n"
+  },
+  {
+    "kind": "function",
+    "static": true,
+    "variation": null,
+    "name": "trackRequestStart",
+    "memberof": "src/http-client.js",
+    "longname": "src/http-client.js~trackRequestStart",
+    "access": null,
+    "export": false,
+    "importPath": "aurelia-http-client/src/http-client.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "params": [
+      {
+        "name": "client",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "processor",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "generator": false
+  },
+  {
+    "kind": "function",
+    "static": true,
+    "variation": null,
+    "name": "trackRequestEnd",
+    "memberof": "src/http-client.js",
+    "longname": "src/http-client.js~trackRequestEnd",
+    "access": null,
+    "export": false,
+    "importPath": "aurelia-http-client/src/http-client.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 12,
+    "undocument": true,
+    "params": [
+      {
+        "name": "client",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "processor",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "generator": false
+  },
+  {
+    "kind": "class",
+    "static": true,
+    "variation": null,
+    "name": "HttpClient",
+    "memberof": "src/http-client.js",
+    "longname": "src/http-client.js~HttpClient",
+    "access": null,
+    "export": true,
+    "importPath": "aurelia-http-client/src/http-client.js",
+    "importStyle": "{HttpClient}",
+    "description": "The main HTTP client object.",
+    "lineNumber": 30,
+    "unknown": [
+      {
+        "tagName": "@class",
+        "tagValue": "HttpClient"
+      },
+      {
+        "tagName": "@constructor",
+        "tagValue": ""
+      }
+    ],
+    "interface": false
+  },
+  {
+    "kind": "constructor",
+    "static": false,
+    "variation": null,
+    "name": "constructor",
+    "memberof": "src/http-client.js~HttpClient",
+    "longname": "src/http-client.js~HttpClient#constructor",
+    "access": null,
+    "description": null,
+    "lineNumber": 31,
+    "undocument": true,
+    "params": [],
+    "generator": false
+  },
+  {
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "requestTransformers",
+    "memberof": "src/http-client.js~HttpClient",
+    "longname": "src/http-client.js~HttpClient#requestTransformers",
+    "access": null,
+    "description": null,
+    "lineNumber": 32,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "requestProcessorFactories",
+    "memberof": "src/http-client.js~HttpClient",
+    "longname": "src/http-client.js~HttpClient#requestProcessorFactories",
+    "access": null,
+    "description": null,
+    "lineNumber": 33,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "pendingRequests",
+    "memberof": "src/http-client.js~HttpClient",
+    "longname": "src/http-client.js~HttpClient#pendingRequests",
+    "access": null,
+    "description": null,
+    "lineNumber": 36,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "isRequesting",
+    "memberof": "src/http-client.js~HttpClient",
+    "longname": "src/http-client.js~HttpClient#isRequesting",
+    "access": null,
+    "description": null,
+    "lineNumber": 37,
+    "undocument": true,
+    "type": {
+      "types": [
+        "boolean"
+      ]
+    }
+  },
+  {
+    "kind": "method",
+    "static": false,
+    "variation": null,
+    "name": "configure",
+    "memberof": "src/http-client.js~HttpClient",
+    "longname": "src/http-client.js~HttpClient#configure",
+    "access": null,
+    "description": "Configure this HttpClient with default settings to be used by all requests.",
+    "lineNumber": 47,
+    "unknown": [
+      {
+        "tagName": "@method",
+        "tagValue": "configure"
+      },
+      {
+        "tagName": "@chainable",
+        "tagValue": ""
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "fn",
+        "description": "A function that takes a RequestBuilder as an argument."
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "generator": false
+  },
+  {
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "requestTransformers",
+    "memberof": "src/http-client.js~HttpClient",
+    "longname": "src/http-client.js~HttpClient#requestTransformers",
+    "access": null,
+    "description": null,
+    "lineNumber": 50,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "kind": "method",
+    "static": false,
+    "variation": null,
+    "name": "createRequest",
+    "memberof": "src/http-client.js~HttpClient",
+    "longname": "src/http-client.js~HttpClient#createRequest",
+    "access": null,
+    "description": "Returns a new RequestBuilder for this HttpClient instance that can be used to build and send HTTP requests.",
+    "lineNumber": 61,
+    "unknown": [
+      {
+        "tagName": "@method",
+        "tagValue": "createRequest"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "url",
+        "description": "The target URL."
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "type": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": null
+    },
+    "generator": false
+  },
+  {
+    "kind": "method",
+    "static": false,
+    "variation": null,
+    "name": "send",
+    "memberof": "src/http-client.js~HttpClient",
+    "longname": "src/http-client.js~HttpClient#send",
+    "access": null,
+    "description": "Sends a message using the underlying networking stack.",
+    "lineNumber": 79,
+    "unknown": [
+      {
+        "tagName": "@method",
+        "tagValue": "send"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "message",
+        "description": "A configured HttpRequestMessage or JSONPRequestMessage."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "transformers",
+        "description": "A collection of transformers to apply to the HTTP request."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise"
+      ],
+      "spread": false,
+      "description": "A cancellable promise object."
+    },
+    "generator": false
+  },
+  {
+    "kind": "method",
+    "static": false,
+    "variation": null,
+    "name": "delete",
+    "memberof": "src/http-client.js~HttpClient",
+    "longname": "src/http-client.js~HttpClient#delete",
+    "access": null,
+    "description": "Sends an HTTP DELETE request.",
+    "lineNumber": 118,
+    "unknown": [
+      {
+        "tagName": "@method",
+        "tagValue": "delete"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "url",
+        "description": "The target URL."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise"
+      ],
+      "spread": false,
+      "description": "A cancellable promise object."
+    },
+    "generator": false
+  },
+  {
+    "kind": "method",
+    "static": false,
+    "variation": null,
+    "name": "get",
+    "memberof": "src/http-client.js~HttpClient",
+    "longname": "src/http-client.js~HttpClient#get",
+    "access": null,
+    "description": "Sends an HTTP GET request.",
+    "lineNumber": 129,
+    "unknown": [
+      {
+        "tagName": "@method",
+        "tagValue": "get"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "url",
+        "description": "The target URL."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise"
+      ],
+      "spread": false,
+      "description": "A cancellable promise object."
+    },
+    "generator": false
+  },
+  {
+    "kind": "method",
+    "static": false,
+    "variation": null,
+    "name": "head",
+    "memberof": "src/http-client.js~HttpClient",
+    "longname": "src/http-client.js~HttpClient#head",
+    "access": null,
+    "description": "Sends an HTTP HEAD request.",
+    "lineNumber": 140,
+    "unknown": [
+      {
+        "tagName": "@method",
+        "tagValue": "head"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "url",
+        "description": "The target URL."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise"
+      ],
+      "spread": false,
+      "description": "A cancellable promise object."
+    },
+    "generator": false
+  },
+  {
+    "kind": "method",
+    "static": false,
+    "variation": null,
+    "name": "jsonp",
+    "memberof": "src/http-client.js~HttpClient",
+    "longname": "src/http-client.js~HttpClient#jsonp",
+    "access": null,
+    "description": "Sends a JSONP request.",
+    "lineNumber": 151,
+    "unknown": [
+      {
+        "tagName": "@method",
+        "tagValue": "jsonp"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "url",
+        "description": "The target URL."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise"
+      ],
+      "spread": false,
+      "description": "A cancellable promise object."
+    },
+    "generator": false
+  },
+  {
+    "kind": "method",
+    "static": false,
+    "variation": null,
+    "name": "options",
+    "memberof": "src/http-client.js~HttpClient",
+    "longname": "src/http-client.js~HttpClient#options",
+    "access": null,
+    "description": "Sends an HTTP OPTIONS request.",
+    "lineNumber": 162,
+    "unknown": [
+      {
+        "tagName": "@method",
+        "tagValue": "options"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "url",
+        "description": "The target URL."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise"
+      ],
+      "spread": false,
+      "description": "A cancellable promise object."
+    },
+    "generator": false
+  },
+  {
+    "kind": "method",
+    "static": false,
+    "variation": null,
+    "name": "put",
+    "memberof": "src/http-client.js~HttpClient",
+    "longname": "src/http-client.js~HttpClient#put",
+    "access": null,
+    "description": "Sends an HTTP PUT request.",
+    "lineNumber": 174,
+    "unknown": [
+      {
+        "tagName": "@method",
+        "tagValue": "put"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "url",
+        "description": "The target URL."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "url",
+        "description": "The request payload."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise"
+      ],
+      "spread": false,
+      "description": "A cancellable promise object."
+    },
+    "generator": false
+  },
+  {
+    "kind": "method",
+    "static": false,
+    "variation": null,
+    "name": "patch",
+    "memberof": "src/http-client.js~HttpClient",
+    "longname": "src/http-client.js~HttpClient#patch",
+    "access": null,
+    "description": "Sends an HTTP PATCH request.",
+    "lineNumber": 186,
+    "unknown": [
+      {
+        "tagName": "@method",
+        "tagValue": "patch"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "url",
+        "description": "The target URL."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "url",
+        "description": "The request payload."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise"
+      ],
+      "spread": false,
+      "description": "A cancellable promise object."
+    },
+    "generator": false
+  },
+  {
+    "kind": "method",
+    "static": false,
+    "variation": null,
+    "name": "post",
+    "memberof": "src/http-client.js~HttpClient",
+    "longname": "src/http-client.js~HttpClient#post",
+    "access": null,
+    "description": "Sends an HTTP POST request.",
+    "lineNumber": 198,
+    "unknown": [
+      {
+        "tagName": "@method",
+        "tagValue": "post"
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "url",
+        "description": "The target URL."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "url",
+        "description": "The request payload."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise"
+      ],
+      "spread": false,
+      "description": "A cancellable promise object."
+    },
+    "generator": false
+  },
+  {
+    "kind": "file",
+    "static": true,
+    "variation": null,
+    "name": "src/http-request-message.js",
+    "memberof": null,
+    "longname": "src/http-request-message.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1,
+    "content": "import {Headers} from './headers';\nimport {RequestMessageProcessor} from './request-message-processor';\nimport {\n  timeoutTransformer,\n  credentialsTransformer,\n  progressTransformer,\n  responseTypeTransformer,\n  headerTransformer,\n  contentTransformer\n} from './transformers';\n\nexport class HttpRequestMessage {\n  constructor(method, url, content, headers){\n    this.method = method;\n    this.url = url;\n    this.content = content;\n    this.headers = headers || new Headers();\n    this.responseType = 'json'; //text, arraybuffer, blob, document\n  }\n}\n\nexport function createHttpRequestMessageProcessor(){\n  return new RequestMessageProcessor(XMLHttpRequest, [\n    timeoutTransformer,\n    credentialsTransformer,\n    progressTransformer,\n    responseTypeTransformer,\n    headerTransformer,\n    contentTransformer\n  ]);\n}\n"
+  },
+  {
+    "kind": "class",
+    "static": true,
+    "variation": null,
+    "name": "HttpRequestMessage",
+    "memberof": "src/http-request-message.js",
+    "longname": "src/http-request-message.js~HttpRequestMessage",
+    "access": null,
+    "export": true,
+    "importPath": "aurelia-http-client/src/http-request-message.js",
+    "importStyle": "{HttpRequestMessage}",
+    "description": null,
+    "lineNumber": 12,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "kind": "constructor",
+    "static": false,
+    "variation": null,
+    "name": "constructor",
+    "memberof": "src/http-request-message.js~HttpRequestMessage",
+    "longname": "src/http-request-message.js~HttpRequestMessage#constructor",
+    "access": null,
+    "description": null,
+    "lineNumber": 13,
+    "undocument": true,
+    "params": [
+      {
+        "name": "method",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "url",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "content",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "headers",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "generator": false
+  },
+  {
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "method",
+    "memberof": "src/http-request-message.js~HttpRequestMessage",
+    "longname": "src/http-request-message.js~HttpRequestMessage#method",
+    "access": null,
+    "description": null,
+    "lineNumber": 14,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "url",
+    "memberof": "src/http-request-message.js~HttpRequestMessage",
+    "longname": "src/http-request-message.js~HttpRequestMessage#url",
+    "access": null,
+    "description": null,
+    "lineNumber": 15,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "content",
+    "memberof": "src/http-request-message.js~HttpRequestMessage",
+    "longname": "src/http-request-message.js~HttpRequestMessage#content",
+    "access": null,
+    "description": null,
+    "lineNumber": 16,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "headers",
+    "memberof": "src/http-request-message.js~HttpRequestMessage",
+    "longname": "src/http-request-message.js~HttpRequestMessage#headers",
+    "access": null,
+    "description": null,
+    "lineNumber": 17,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "responseType",
+    "memberof": "src/http-request-message.js~HttpRequestMessage",
+    "longname": "src/http-request-message.js~HttpRequestMessage#responseType",
+    "access": null,
+    "description": null,
+    "lineNumber": 18,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    }
+  },
+  {
+    "kind": "function",
+    "static": true,
+    "variation": null,
+    "name": "createHttpRequestMessageProcessor",
+    "memberof": "src/http-request-message.js",
+    "longname": "src/http-request-message.js~createHttpRequestMessageProcessor",
+    "access": null,
+    "export": true,
+    "importPath": "aurelia-http-client/src/http-request-message.js",
+    "importStyle": "{createHttpRequestMessageProcessor}",
+    "description": null,
+    "lineNumber": 22,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "generator": false
+  },
+  {
+    "kind": "file",
+    "static": true,
+    "variation": null,
+    "name": "src/http-response-message.js",
+    "memberof": null,
+    "longname": "src/http-response-message.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 2,
+    "content": "/*jshint -W093 */\nimport {Headers} from './headers';\n\nexport class HttpResponseMessage {\n  constructor(requestMessage, xhr, responseType, reviver){\n    this.requestMessage = requestMessage;\n    this.statusCode = xhr.status;\n    this.response = xhr.response;\n    this.isSuccess = xhr.status >= 200 && xhr.status < 400;\n    this.statusText = xhr.statusText;\n    this.reviver = reviver;\n    this.mimeType = null;\n\n    if(xhr.getAllResponseHeaders){\n      try{\n        this.headers = Headers.parse(xhr.getAllResponseHeaders());\n      }catch(err){\n        //if this fails it means the xhr was a mock object so the `requestHeaders` property should be used\n        if(xhr.requestHeaders) this.headers = { headers:xhr.requestHeaders };\n      }\n    }else {\n      this.headers = new Headers();\n    }\n\n    var contentType;\n    if(this.headers && this.headers.headers) contentType = this.headers.headers[\"Content-Type\"];\n    if(contentType) {\n      this.mimeType = responseType = contentType.split(\";\")[0].trim();\n      if(mimeTypes.hasOwnProperty(this.mimeType)) responseType = mimeTypes[this.mimeType];\n    }\n    this.responseType = responseType;\n  }\n\n  get content(){\n    try{\n      if(this._content !== undefined){\n        return this._content;\n      }\n\n      if(this.response === undefined || this.response === null){\n        return this._content = this.response;\n      }\n\n      if(this.responseType === 'json'){\n        return this._content = JSON.parse(this.response, this.reviver);\n      }\n\n      if(this.reviver){\n        return this._content = this.reviver(this.response);\n      }\n\n      return this._content = this.response;\n    }catch(e){\n      if(this.isSuccess){\n        throw e;\n      }\n\n      return this._content = null;\n    }\n  }\n}\n\n/**\n * MimeTypes mapped to responseTypes\n *\n * @type {Object}\n */\nexport var mimeTypes = {\n  \"text/html\": \"html\",\n  \"text/javascript\": \"js\",\n  \"application/javascript\": \"js\",\n  \"text/json\": \"json\",\n  \"application/json\": \"json\",\n  \"application/rss+xml\": \"rss\",\n  \"application/atom+xml\": \"atom\",\n  \"application/xhtml+xml\": \"xhtml\",\n  \"text/markdown\": \"md\",\n  \"text/xml\": \"xml\",\n  \"text/mathml\": \"mml\",\n  \"application/xml\": \"xml\",\n  \"text/yml\": \"yml\",\n  \"text/csv\": \"csv\",\n  \"text/css\": \"css\",\n  \"text/less\": \"less\",\n  \"text/stylus\": \"styl\",\n  \"text/scss\": \"scss\",\n  \"text/sass\": \"sass\",\n  \"text/plain\": \"txt\"\n};\n"
+  },
+  {
+    "kind": "class",
+    "static": true,
+    "variation": null,
+    "name": "HttpResponseMessage",
+    "memberof": "src/http-response-message.js",
+    "longname": "src/http-response-message.js~HttpResponseMessage",
+    "access": null,
+    "export": true,
+    "importPath": "aurelia-http-client/src/http-response-message.js",
+    "importStyle": "{HttpResponseMessage}",
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "kind": "constructor",
+    "static": false,
+    "variation": null,
+    "name": "constructor",
+    "memberof": "src/http-response-message.js~HttpResponseMessage",
+    "longname": "src/http-response-message.js~HttpResponseMessage#constructor",
+    "access": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "params": [
+      {
+        "name": "requestMessage",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "xhr",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "responseType",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "reviver",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "generator": false
+  },
+  {
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "requestMessage",
+    "memberof": "src/http-response-message.js~HttpResponseMessage",
+    "longname": "src/http-response-message.js~HttpResponseMessage#requestMessage",
+    "access": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "statusCode",
+    "memberof": "src/http-response-message.js~HttpResponseMessage",
+    "longname": "src/http-response-message.js~HttpResponseMessage#statusCode",
+    "access": null,
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "response",
+    "memberof": "src/http-response-message.js~HttpResponseMessage",
+    "longname": "src/http-response-message.js~HttpResponseMessage#response",
+    "access": null,
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "isSuccess",
+    "memberof": "src/http-response-message.js~HttpResponseMessage",
+    "longname": "src/http-response-message.js~HttpResponseMessage#isSuccess",
+    "access": null,
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "statusText",
+    "memberof": "src/http-response-message.js~HttpResponseMessage",
+    "longname": "src/http-response-message.js~HttpResponseMessage#statusText",
+    "access": null,
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "reviver",
+    "memberof": "src/http-response-message.js~HttpResponseMessage",
+    "longname": "src/http-response-message.js~HttpResponseMessage#reviver",
+    "access": null,
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "mimeType",
+    "memberof": "src/http-response-message.js~HttpResponseMessage",
+    "longname": "src/http-response-message.js~HttpResponseMessage#mimeType",
+    "access": null,
+    "description": null,
+    "lineNumber": 12,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "headers",
+    "memberof": "src/http-response-message.js~HttpResponseMessage",
+    "longname": "src/http-response-message.js~HttpResponseMessage#headers",
+    "access": null,
+    "description": null,
+    "lineNumber": 16,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "headers",
+    "memberof": "src/http-response-message.js~HttpResponseMessage",
+    "longname": "src/http-response-message.js~HttpResponseMessage#headers",
+    "access": null,
+    "description": null,
+    "lineNumber": 19,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "headers",
+    "memberof": "src/http-response-message.js~HttpResponseMessage",
+    "longname": "src/http-response-message.js~HttpResponseMessage#headers",
+    "access": null,
+    "description": null,
+    "lineNumber": 22,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "mimeType",
+    "memberof": "src/http-response-message.js~HttpResponseMessage",
+    "longname": "src/http-response-message.js~HttpResponseMessage#mimeType",
+    "access": null,
+    "description": null,
+    "lineNumber": 28,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "responseType",
+    "memberof": "src/http-response-message.js~HttpResponseMessage",
+    "longname": "src/http-response-message.js~HttpResponseMessage#responseType",
+    "access": null,
+    "description": null,
+    "lineNumber": 31,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "kind": "get",
+    "static": false,
+    "variation": null,
+    "name": "content",
+    "memberof": "src/http-response-message.js~HttpResponseMessage",
+    "longname": "src/http-response-message.js~HttpResponseMessage#content",
+    "access": null,
+    "description": null,
+    "lineNumber": 34,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "generator": false
+  },
+  {
+    "kind": "variable",
+    "static": true,
+    "variation": null,
+    "name": "mimeTypes",
+    "memberof": "src/http-response-message.js",
+    "longname": "src/http-response-message.js~mimeTypes",
+    "access": null,
+    "export": true,
+    "importPath": "aurelia-http-client/src/http-response-message.js",
+    "importStyle": "{mimeTypes}",
+    "description": "MimeTypes mapped to responseTypes",
+    "lineNumber": 68,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "kind": "file",
+    "static": true,
+    "variation": null,
+    "name": "src/index.js",
+    "memberof": null,
+    "longname": "src/index.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 7,
+    "content": "/**\n * An extensible HTTP client provided by Aurelia.\n *\n * @module HttpClient\n */\n\nexport {HttpClient} from './http-client';\nexport {HttpRequestMessage} from './http-request-message';\nexport {HttpResponseMessage, mimeTypes} from './http-response-message';\nexport {JSONPRequestMessage} from './jsonp-request-message';\nexport {Headers} from './headers';\nexport {RequestBuilder} from './request-builder';\n"
+  },
+  {
+    "kind": "file",
+    "static": true,
+    "variation": null,
+    "name": "src/jsonp-request-message.js",
+    "memberof": null,
+    "longname": "src/jsonp-request-message.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1,
+    "content": "import {Headers} from './headers';\nimport {RequestMessageProcessor} from './request-message-processor';\nimport {\n  timeoutTransformer,\n  callbackParameterNameTransformer\n} from './transformers';\n\nexport class JSONPRequestMessage {\n  constructor(url, callbackParameterName){\n    this.method = 'JSONP';\n    this.url = url;\n    this.content = undefined;\n    this.headers = new Headers();\n    this.responseType = 'jsonp';\n    this.callbackParameterName = callbackParameterName;\n  }\n}\n\nclass JSONPXHR {\n  open(method, url){\n    this.method = method;\n    this.url = url;\n    this.callbackName = 'jsonp_callback_' + Math.round(100000 * Math.random());\n  }\n\n  send(){\n    var url = this.url + (this.url.indexOf('?') >= 0 ? '&' : '?') + this.callbackParameterName + '=' + this.callbackName;\n\n    window[this.callbackName] = (data) => {\n      delete window[this.callbackName];\n      document.body.removeChild(script);\n\n      if(this.status === undefined){\n        this.status = 200;\n        this.statusText = 'OK';\n        this.response = data;\n        this.onload(this);\n      }\n    };\n\n    var script = document.createElement('script');\n    script.src = url;\n    document.body.appendChild(script);\n\n    if(this.timeout !== undefined){\n      setTimeout(() => {\n        if(this.status === undefined){\n          this.status = 0;\n          this.ontimeout(new Error('timeout'));\n        }\n      }, this.timeout);\n    }\n  }\n\n  abort(){\n    if(this.status === undefined){\n      this.status = 0;\n      this.onabort(new Error('abort'));\n    }\n  }\n\n  setRequestHeader(){}\n}\n\nexport function createJSONPRequestMessageProcessor(){\n  return new RequestMessageProcessor(JSONPXHR, [\n    timeoutTransformer,\n    callbackParameterNameTransformer\n  ]);\n}\n"
+  },
+  {
+    "kind": "class",
+    "static": true,
+    "variation": null,
+    "name": "JSONPRequestMessage",
+    "memberof": "src/jsonp-request-message.js",
+    "longname": "src/jsonp-request-message.js~JSONPRequestMessage",
+    "access": null,
+    "export": true,
+    "importPath": "aurelia-http-client/src/jsonp-request-message.js",
+    "importStyle": "{JSONPRequestMessage}",
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "kind": "constructor",
+    "static": false,
+    "variation": null,
+    "name": "constructor",
+    "memberof": "src/jsonp-request-message.js~JSONPRequestMessage",
+    "longname": "src/jsonp-request-message.js~JSONPRequestMessage#constructor",
+    "access": null,
+    "description": null,
+    "lineNumber": 9,
+    "undocument": true,
+    "params": [
+      {
+        "name": "url",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "callbackParameterName",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "generator": false
+  },
+  {
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "method",
+    "memberof": "src/jsonp-request-message.js~JSONPRequestMessage",
+    "longname": "src/jsonp-request-message.js~JSONPRequestMessage#method",
+    "access": null,
+    "description": null,
+    "lineNumber": 10,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    }
+  },
+  {
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "url",
+    "memberof": "src/jsonp-request-message.js~JSONPRequestMessage",
+    "longname": "src/jsonp-request-message.js~JSONPRequestMessage#url",
+    "access": null,
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "content",
+    "memberof": "src/jsonp-request-message.js~JSONPRequestMessage",
+    "longname": "src/jsonp-request-message.js~JSONPRequestMessage#content",
+    "access": null,
+    "description": null,
+    "lineNumber": 12,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "headers",
+    "memberof": "src/jsonp-request-message.js~JSONPRequestMessage",
+    "longname": "src/jsonp-request-message.js~JSONPRequestMessage#headers",
+    "access": null,
+    "description": null,
+    "lineNumber": 13,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "responseType",
+    "memberof": "src/jsonp-request-message.js~JSONPRequestMessage",
+    "longname": "src/jsonp-request-message.js~JSONPRequestMessage#responseType",
+    "access": null,
+    "description": null,
+    "lineNumber": 14,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    }
+  },
+  {
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "callbackParameterName",
+    "memberof": "src/jsonp-request-message.js~JSONPRequestMessage",
+    "longname": "src/jsonp-request-message.js~JSONPRequestMessage#callbackParameterName",
+    "access": null,
+    "description": null,
+    "lineNumber": 15,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "kind": "class",
+    "static": true,
+    "variation": null,
+    "name": "JSONPXHR",
+    "memberof": "src/jsonp-request-message.js",
+    "longname": "src/jsonp-request-message.js~JSONPXHR",
+    "access": null,
+    "export": false,
+    "importPath": "aurelia-http-client/src/jsonp-request-message.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 19,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "kind": "method",
+    "static": false,
+    "variation": null,
+    "name": "open",
+    "memberof": "src/jsonp-request-message.js~JSONPXHR",
+    "longname": "src/jsonp-request-message.js~JSONPXHR#open",
+    "access": null,
+    "description": null,
+    "lineNumber": 20,
+    "undocument": true,
+    "params": [
+      {
+        "name": "method",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "url",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "generator": false
+  },
+  {
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "method",
+    "memberof": "src/jsonp-request-message.js~JSONPXHR",
+    "longname": "src/jsonp-request-message.js~JSONPXHR#method",
+    "access": null,
+    "description": null,
+    "lineNumber": 21,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "url",
+    "memberof": "src/jsonp-request-message.js~JSONPXHR",
+    "longname": "src/jsonp-request-message.js~JSONPXHR#url",
+    "access": null,
+    "description": null,
+    "lineNumber": 22,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "callbackName",
+    "memberof": "src/jsonp-request-message.js~JSONPXHR",
+    "longname": "src/jsonp-request-message.js~JSONPXHR#callbackName",
+    "access": null,
+    "description": null,
+    "lineNumber": 23,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "kind": "method",
+    "static": false,
+    "variation": null,
+    "name": "send",
+    "memberof": "src/jsonp-request-message.js~JSONPXHR",
+    "longname": "src/jsonp-request-message.js~JSONPXHR#send",
+    "access": null,
+    "description": null,
+    "lineNumber": 26,
+    "undocument": true,
+    "params": [],
+    "generator": false
+  },
+  {
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "status",
+    "memberof": "src/jsonp-request-message.js~JSONPXHR",
+    "longname": "src/jsonp-request-message.js~JSONPXHR#status",
+    "access": null,
+    "description": null,
+    "lineNumber": 34,
+    "undocument": true,
+    "type": {
+      "types": [
+        "number"
+      ]
+    }
+  },
+  {
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "statusText",
+    "memberof": "src/jsonp-request-message.js~JSONPXHR",
+    "longname": "src/jsonp-request-message.js~JSONPXHR#statusText",
+    "access": null,
+    "description": null,
+    "lineNumber": 35,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    }
+  },
+  {
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "response",
+    "memberof": "src/jsonp-request-message.js~JSONPXHR",
+    "longname": "src/jsonp-request-message.js~JSONPXHR#response",
+    "access": null,
+    "description": null,
+    "lineNumber": 36,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "status",
+    "memberof": "src/jsonp-request-message.js~JSONPXHR",
+    "longname": "src/jsonp-request-message.js~JSONPXHR#status",
+    "access": null,
+    "description": null,
+    "lineNumber": 48,
+    "undocument": true,
+    "type": {
+      "types": [
+        "number"
+      ]
+    }
+  },
+  {
+    "kind": "method",
+    "static": false,
+    "variation": null,
+    "name": "abort",
+    "memberof": "src/jsonp-request-message.js~JSONPXHR",
+    "longname": "src/jsonp-request-message.js~JSONPXHR#abort",
+    "access": null,
+    "description": null,
+    "lineNumber": 55,
+    "undocument": true,
+    "params": [],
+    "generator": false
+  },
+  {
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "status",
+    "memberof": "src/jsonp-request-message.js~JSONPXHR",
+    "longname": "src/jsonp-request-message.js~JSONPXHR#status",
+    "access": null,
+    "description": null,
+    "lineNumber": 57,
+    "undocument": true,
+    "type": {
+      "types": [
+        "number"
+      ]
+    }
+  },
+  {
+    "kind": "method",
+    "static": false,
+    "variation": null,
+    "name": "setRequestHeader",
+    "memberof": "src/jsonp-request-message.js~JSONPXHR",
+    "longname": "src/jsonp-request-message.js~JSONPXHR#setRequestHeader",
+    "access": null,
+    "description": null,
+    "lineNumber": 62,
+    "undocument": true,
+    "params": [],
+    "generator": false
+  },
+  {
+    "kind": "function",
+    "static": true,
+    "variation": null,
+    "name": "createJSONPRequestMessageProcessor",
+    "memberof": "src/jsonp-request-message.js",
+    "longname": "src/jsonp-request-message.js~createJSONPRequestMessageProcessor",
+    "access": null,
+    "export": true,
+    "importPath": "aurelia-http-client/src/jsonp-request-message.js",
+    "importStyle": "{createJSONPRequestMessageProcessor}",
+    "description": null,
+    "lineNumber": 65,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "generator": false
+  },
+  {
+    "kind": "file",
+    "static": true,
+    "variation": null,
+    "name": "src/request-builder.js",
+    "memberof": null,
+    "longname": "src/request-builder.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1,
+    "content": "import {join} from 'aurelia-path';\nimport {HttpRequestMessage} from './http-request-message';\nimport {JSONPRequestMessage} from './jsonp-request-message';\n\n/**\n * A builder class allowing fluent composition of HTTP requests.\n *\n * @class RequestBuilder\n * @constructor\n */\nexport class RequestBuilder {\n  constructor(client){\n    this.client = client;\n    this.transformers = client.requestTransformers.slice(0);\n    this.useJsonp = false;\n  }\n\n  /**\n   * Adds a user-defined request transformer to the RequestBuilder.\n   *\n   * @method addHelper\n   * @param {String} name The name of the helper to add.\n   * @param {Function} fn The helper function.\n   * @chainable\n   */\n  static addHelper(name, fn){\n    RequestBuilder.prototype[name] = function(){\n      this.transformers.push(fn.apply(this, arguments));\n      return this;\n    };\n  }\n\n  /**\n   * Sends the request.\n   *\n   * @method send\n   * @return {Promise} A cancellable promise object.\n   */\n  send(){\n    let message = this.useJsonp ? new JSONPRequestMessage() : new HttpRequestMessage();\n    return this.client.send(message, this.transformers);\n  }\n}\n\nRequestBuilder.addHelper('asDelete', function(){\n  return function(client, processor, message){\n    message.method = 'DELETE';\n  };\n});\n\nRequestBuilder.addHelper('asGet', function(){\n  return function(client, processor, message){\n    message.method = 'GET';\n  };\n});\n\nRequestBuilder.addHelper('asHead', function(){\n  return function(client, processor, message){\n    message.method = 'HEAD';\n  };\n});\n\nRequestBuilder.addHelper('asOptions', function(){\n  return function(client, processor, message){\n    message.method = 'OPTIONS';\n  };\n});\n\nRequestBuilder.addHelper('asPatch', function(){\n  return function(client, processor, message){\n    message.method = 'PATCH';\n  };\n});\n\nRequestBuilder.addHelper('asPost', function(){\n  return function(client, processor, message){\n    message.method = 'POST';\n  };\n});\n\nRequestBuilder.addHelper('asPut', function(){\n  return function(client, processor, message){\n    message.method = 'PUT';\n  };\n});\n\nRequestBuilder.addHelper('asJsonp', function(callbackParameterName){\n  this.useJsonp = true;\n  return function(client, processor, message){\n    message.callbackParameterName = callbackParameterName;\n  };\n});\n\nRequestBuilder.addHelper('withUrl', function(url){\n  return function(client, processor, message){\n    message.url = url;\n  };\n});\n\nRequestBuilder.addHelper('withContent', function(content){\n  return function(client, processor, message){\n    message.content = content;\n  };\n});\n\nRequestBuilder.addHelper('withBaseUrl', function(baseUrl){\n  return function(client, processor, message){\n    message.baseUrl = baseUrl;\n  };\n});\n\nRequestBuilder.addHelper('withParams', function(params){\n  return function(client, processor, message){\n    message.params = params;\n  };\n});\n\nRequestBuilder.addHelper('withResponseType', function(responseType){\n  return function(client, processor, message){\n    message.responseType = responseType;\n  };\n});\n\nRequestBuilder.addHelper('withTimeout', function(timeout){\n  return function(client, processor, message){\n    message.timeout = timeout;\n  };\n});\n\nRequestBuilder.addHelper('withHeader', function(key, value){\n  return function(client, processor, message){\n    message.headers.add(key, value);\n  };\n});\n\nRequestBuilder.addHelper('withCredentials', function(value){\n  return function(client, processor, message){\n    message.withCredentials = value;\n  };\n});\n\nRequestBuilder.addHelper('withReviver', function(reviver){\n  return function(client, processor, message){\n    message.reviver = reviver;\n  };\n});\n\nRequestBuilder.addHelper('withReplacer', function(replacer){\n  return function(client, processor, message){\n    message.replacer = replacer;\n  };\n});\n\nRequestBuilder.addHelper('withProgressCallback', function(progressCallback){\n  return function(client, processor, message){\n    message.progressCallback = progressCallback;\n  };\n});\n\nRequestBuilder.addHelper('withCallbackParameterName', function(callbackParameterName){\n  return function(client, processor, message){\n    message.callbackParameterName = callbackParameterName;\n  };\n});\n"
+  },
+  {
+    "kind": "class",
+    "static": true,
+    "variation": null,
+    "name": "RequestBuilder",
+    "memberof": "src/request-builder.js",
+    "longname": "src/request-builder.js~RequestBuilder",
+    "access": null,
+    "export": true,
+    "importPath": "aurelia-http-client/src/request-builder.js",
+    "importStyle": "{RequestBuilder}",
+    "description": "A builder class allowing fluent composition of HTTP requests.",
+    "lineNumber": 11,
+    "unknown": [
+      {
+        "tagName": "@class",
+        "tagValue": "RequestBuilder"
+      },
+      {
+        "tagName": "@constructor",
+        "tagValue": ""
+      }
+    ],
+    "interface": false
+  },
+  {
+    "kind": "constructor",
+    "static": false,
+    "variation": null,
+    "name": "constructor",
+    "memberof": "src/request-builder.js~RequestBuilder",
+    "longname": "src/request-builder.js~RequestBuilder#constructor",
+    "access": null,
+    "description": null,
+    "lineNumber": 12,
+    "undocument": true,
+    "params": [
+      {
+        "name": "client",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "generator": false
+  },
+  {
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "client",
+    "memberof": "src/request-builder.js~RequestBuilder",
+    "longname": "src/request-builder.js~RequestBuilder#client",
+    "access": null,
+    "description": null,
+    "lineNumber": 13,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "transformers",
+    "memberof": "src/request-builder.js~RequestBuilder",
+    "longname": "src/request-builder.js~RequestBuilder#transformers",
+    "access": null,
+    "description": null,
+    "lineNumber": 14,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "useJsonp",
+    "memberof": "src/request-builder.js~RequestBuilder",
+    "longname": "src/request-builder.js~RequestBuilder#useJsonp",
+    "access": null,
+    "description": null,
+    "lineNumber": 15,
+    "undocument": true,
+    "type": {
+      "types": [
+        "boolean"
+      ]
+    }
+  },
+  {
+    "kind": "method",
+    "static": true,
+    "variation": null,
+    "name": "addHelper",
+    "memberof": "src/request-builder.js~RequestBuilder",
+    "longname": "src/request-builder.js~RequestBuilder.addHelper",
+    "access": null,
+    "description": "Adds a user-defined request transformer to the RequestBuilder.",
+    "lineNumber": 26,
+    "unknown": [
+      {
+        "tagName": "@method",
+        "tagValue": "addHelper"
+      },
+      {
+        "tagName": "@chainable",
+        "tagValue": ""
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "name",
+        "description": "The name of the helper to add."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Function"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "fn",
+        "description": "The helper function."
+      }
+    ],
+    "generator": false
+  },
+  {
+    "kind": "method",
+    "static": false,
+    "variation": null,
+    "name": "send",
+    "memberof": "src/request-builder.js~RequestBuilder",
+    "longname": "src/request-builder.js~RequestBuilder#send",
+    "access": null,
+    "description": "Sends the request.",
+    "lineNumber": 39,
+    "unknown": [
+      {
+        "tagName": "@method",
+        "tagValue": "send"
+      }
+    ],
+    "params": [],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Promise"
+      ],
+      "spread": false,
+      "description": "A cancellable promise object."
+    },
+    "generator": false
+  },
+  {
+    "kind": "file",
+    "static": true,
+    "variation": null,
+    "name": "src/request-message-processor.js",
+    "memberof": null,
+    "longname": "src/request-message-processor.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1,
+    "content": "import core from 'core-js';\nimport {HttpResponseMessage} from './http-response-message';\nimport {join, buildQueryString} from 'aurelia-path';\n\nfunction buildFullUrl(message){\n  var url = join(message.baseUrl, message.url),\n      qs;\n\n  if(message.params){\n    qs = buildQueryString(message.params);\n    url = qs ? `${url}?${qs}` : url;\n  }\n\n  message.fullUrl = url;\n}\n\nexport class RequestMessageProcessor {\n  constructor(xhrType, transformers){\n    this.XHRType = xhrType;\n    this.transformers = transformers;\n  }\n\n  abort(){\n    //The logic here is if the xhr object is not set then there is nothing to abort so the intent was carried out\n    if(this.xhr){\n      this.xhr.abort();\n    }\n  }\n\n  process(client, message){\n    return new Promise((resolve, reject) => {\n      var xhr = this.xhr = new this.XHRType(),\n          transformers = this.transformers,\n          i, ii;\n\n      buildFullUrl(message);\n      xhr.open(message.method, message.fullUrl, true);\n\n      for(i = 0, ii = transformers.length; i < ii; ++i){\n        transformers[i](client, this, message, xhr);\n      }\n\n      xhr.onload = (e) => {\n        var response = new HttpResponseMessage(message, xhr, message.responseType, message.reviver);\n        if(response.isSuccess){\n          resolve(response);\n        }else{\n          reject(response);\n        }\n      };\n\n      xhr.ontimeout = (e) => {\n        reject(new HttpResponseMessage(message, {\n          response:e,\n          status:xhr.status,\n          statusText:xhr.statusText\n        }, 'timeout'));\n      };\n\n      xhr.onerror = (e) => {\n        reject(new HttpResponseMessage(message, {\n          response:e,\n          status:xhr.status,\n          statusText:xhr.statusText\n        }, 'error'));\n      };\n\n      xhr.onabort = (e) => {\n        reject(new HttpResponseMessage(message, {\n          response:e,\n          status:xhr.status,\n          statusText:xhr.statusText\n        }, 'abort'));\n      };\n\n      xhr.send(message.content);\n    });\n  }\n}\n"
+  },
+  {
+    "kind": "function",
+    "static": true,
+    "variation": null,
+    "name": "buildFullUrl",
+    "memberof": "src/request-message-processor.js",
+    "longname": "src/request-message-processor.js~buildFullUrl",
+    "access": null,
+    "export": false,
+    "importPath": "aurelia-http-client/src/request-message-processor.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "params": [
+      {
+        "name": "message",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "generator": false
+  },
+  {
+    "kind": "class",
+    "static": true,
+    "variation": null,
+    "name": "RequestMessageProcessor",
+    "memberof": "src/request-message-processor.js",
+    "longname": "src/request-message-processor.js~RequestMessageProcessor",
+    "access": null,
+    "export": true,
+    "importPath": "aurelia-http-client/src/request-message-processor.js",
+    "importStyle": "{RequestMessageProcessor}",
+    "description": null,
+    "lineNumber": 17,
+    "undocument": true,
+    "interface": false
+  },
+  {
+    "kind": "constructor",
+    "static": false,
+    "variation": null,
+    "name": "constructor",
+    "memberof": "src/request-message-processor.js~RequestMessageProcessor",
+    "longname": "src/request-message-processor.js~RequestMessageProcessor#constructor",
+    "access": null,
+    "description": null,
+    "lineNumber": 18,
+    "undocument": true,
+    "params": [
+      {
+        "name": "xhrType",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "transformers",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "generator": false
+  },
+  {
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "XHRType",
+    "memberof": "src/request-message-processor.js~RequestMessageProcessor",
+    "longname": "src/request-message-processor.js~RequestMessageProcessor#XHRType",
+    "access": null,
+    "description": null,
+    "lineNumber": 19,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "kind": "member",
+    "static": false,
+    "variation": null,
+    "name": "transformers",
+    "memberof": "src/request-message-processor.js~RequestMessageProcessor",
+    "longname": "src/request-message-processor.js~RequestMessageProcessor#transformers",
+    "access": null,
+    "description": null,
+    "lineNumber": 20,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "kind": "method",
+    "static": false,
+    "variation": null,
+    "name": "abort",
+    "memberof": "src/request-message-processor.js~RequestMessageProcessor",
+    "longname": "src/request-message-processor.js~RequestMessageProcessor#abort",
+    "access": null,
+    "description": null,
+    "lineNumber": 23,
+    "undocument": true,
+    "params": [],
+    "generator": false
+  },
+  {
+    "kind": "method",
+    "static": false,
+    "variation": null,
+    "name": "process",
+    "memberof": "src/request-message-processor.js~RequestMessageProcessor",
+    "longname": "src/request-message-processor.js~RequestMessageProcessor#process",
+    "access": null,
+    "description": null,
+    "lineNumber": 30,
+    "undocument": true,
+    "params": [
+      {
+        "name": "client",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "message",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    },
+    "generator": false
+  },
+  {
+    "kind": "file",
+    "static": true,
+    "variation": null,
+    "name": "src/transformers.js",
+    "memberof": null,
+    "longname": "src/transformers.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1,
+    "content": "export function timeoutTransformer(client, processor, message, xhr){\n  if(message.timeout !== undefined){\n    xhr.timeout = message.timeout;\n  }\n}\n\nexport function callbackParameterNameTransformer(client, processor, message, xhr){\n  if(message.callbackParameterName !== undefined){\n    xhr.callbackParameterName = message.callbackParameterName;\n  }\n}\n\nexport function credentialsTransformer(client, processor, message, xhr){\n  if(message.withCredentials !== undefined){\n    xhr.withCredentials = message.withCredentials;\n  }\n}\n\nexport function progressTransformer(client, processor, message, xhr){\n  if(message.progressCallback){\n    xhr.upload.onprogress = message.progressCallback;\n  }\n}\n\nexport function responseTypeTransformer(client, processor, message, xhr){\n  var responseType = message.responseType;\n\n  if(responseType === 'json'){\n    responseType = 'text'; //IE does not support json\n  }\n\n  xhr.responseType = responseType;\n}\n\nexport function headerTransformer(client, processor, message, xhr){\n  message.headers.configureXHR(xhr);\n}\n\nexport function contentTransformer(client, processor, message, xhr){\n  if(window.FormData && message.content instanceof FormData){\n    return;\n  }\n\n  if(window.Blob && message.content instanceof Blob){\n    return;\n  }\n\n  if(window.ArrayBufferView && message.content instanceof ArrayBufferView){\n    return;\n  }\n\n  if(message.content instanceof Document){\n    return;\n  }\n\n  if(typeof message.content === 'string'){\n    return;\n  }\n\n  if(message.content === null || message.content === undefined){\n    return;\n  }\n\n  message.content = JSON.stringify(message.content, message.replacer);\n}\n"
+  },
+  {
+    "kind": "function",
+    "static": true,
+    "variation": null,
+    "name": "timeoutTransformer",
+    "memberof": "src/transformers.js",
+    "longname": "src/transformers.js~timeoutTransformer",
+    "access": null,
+    "export": true,
+    "importPath": "aurelia-http-client/src/transformers.js",
+    "importStyle": "{timeoutTransformer}",
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "params": [
+      {
+        "name": "client",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "processor",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "message",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "xhr",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "generator": false
+  },
+  {
+    "kind": "function",
+    "static": true,
+    "variation": null,
+    "name": "callbackParameterNameTransformer",
+    "memberof": "src/transformers.js",
+    "longname": "src/transformers.js~callbackParameterNameTransformer",
+    "access": null,
+    "export": true,
+    "importPath": "aurelia-http-client/src/transformers.js",
+    "importStyle": "{callbackParameterNameTransformer}",
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "params": [
+      {
+        "name": "client",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "processor",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "message",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "xhr",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "generator": false
+  },
+  {
+    "kind": "function",
+    "static": true,
+    "variation": null,
+    "name": "credentialsTransformer",
+    "memberof": "src/transformers.js",
+    "longname": "src/transformers.js~credentialsTransformer",
+    "access": null,
+    "export": true,
+    "importPath": "aurelia-http-client/src/transformers.js",
+    "importStyle": "{credentialsTransformer}",
+    "description": null,
+    "lineNumber": 13,
+    "undocument": true,
+    "params": [
+      {
+        "name": "client",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "processor",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "message",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "xhr",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "generator": false
+  },
+  {
+    "kind": "function",
+    "static": true,
+    "variation": null,
+    "name": "progressTransformer",
+    "memberof": "src/transformers.js",
+    "longname": "src/transformers.js~progressTransformer",
+    "access": null,
+    "export": true,
+    "importPath": "aurelia-http-client/src/transformers.js",
+    "importStyle": "{progressTransformer}",
+    "description": null,
+    "lineNumber": 19,
+    "undocument": true,
+    "params": [
+      {
+        "name": "client",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "processor",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "message",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "xhr",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "generator": false
+  },
+  {
+    "kind": "function",
+    "static": true,
+    "variation": null,
+    "name": "responseTypeTransformer",
+    "memberof": "src/transformers.js",
+    "longname": "src/transformers.js~responseTypeTransformer",
+    "access": null,
+    "export": true,
+    "importPath": "aurelia-http-client/src/transformers.js",
+    "importStyle": "{responseTypeTransformer}",
+    "description": null,
+    "lineNumber": 25,
+    "undocument": true,
+    "params": [
+      {
+        "name": "client",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "processor",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "message",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "xhr",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "generator": false
+  },
+  {
+    "kind": "function",
+    "static": true,
+    "variation": null,
+    "name": "headerTransformer",
+    "memberof": "src/transformers.js",
+    "longname": "src/transformers.js~headerTransformer",
+    "access": null,
+    "export": true,
+    "importPath": "aurelia-http-client/src/transformers.js",
+    "importStyle": "{headerTransformer}",
+    "description": null,
+    "lineNumber": 35,
+    "undocument": true,
+    "params": [
+      {
+        "name": "client",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "processor",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "message",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "xhr",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "generator": false
+  },
+  {
+    "kind": "function",
+    "static": true,
+    "variation": null,
+    "name": "contentTransformer",
+    "memberof": "src/transformers.js",
+    "longname": "src/transformers.js~contentTransformer",
+    "access": null,
+    "export": true,
+    "importPath": "aurelia-http-client/src/transformers.js",
+    "importStyle": "{contentTransformer}",
+    "description": null,
+    "lineNumber": 39,
+    "undocument": true,
+    "params": [
+      {
+        "name": "client",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "processor",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "message",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "xhr",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "generator": false
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "DefaultExternal/BuiltinExternal.js",
+    "longname": "DefaultExternal/BuiltinExternal.js~Infinity",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "DefaultExternal/BuiltinExternal.js",
+    "longname": "DefaultExternal/BuiltinExternal.js~NaN",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "DefaultExternal/BuiltinExternal.js",
+    "longname": "DefaultExternal/BuiltinExternal.js~undefined",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "DefaultExternal/BuiltinExternal.js",
+    "longname": "DefaultExternal/BuiltinExternal.js~null",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "DefaultExternal/BuiltinExternal.js",
+    "longname": "DefaultExternal/BuiltinExternal.js~Object",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "DefaultExternal/BuiltinExternal.js",
+    "longname": "DefaultExternal/BuiltinExternal.js~object",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "DefaultExternal/BuiltinExternal.js",
+    "longname": "DefaultExternal/BuiltinExternal.js~Function",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "DefaultExternal/BuiltinExternal.js",
+    "longname": "DefaultExternal/BuiltinExternal.js~function",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "DefaultExternal/BuiltinExternal.js",
+    "longname": "DefaultExternal/BuiltinExternal.js~Boolean",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "DefaultExternal/BuiltinExternal.js",
+    "longname": "DefaultExternal/BuiltinExternal.js~boolean",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "DefaultExternal/BuiltinExternal.js",
+    "longname": "DefaultExternal/BuiltinExternal.js~Symbol",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "DefaultExternal/BuiltinExternal.js",
+    "longname": "DefaultExternal/BuiltinExternal.js~Error",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "DefaultExternal/BuiltinExternal.js",
+    "longname": "DefaultExternal/BuiltinExternal.js~EvalError",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "DefaultExternal/BuiltinExternal.js",
+    "longname": "DefaultExternal/BuiltinExternal.js~InternalError",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "DefaultExternal/BuiltinExternal.js",
+    "longname": "DefaultExternal/BuiltinExternal.js~RangeError",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "DefaultExternal/BuiltinExternal.js",
+    "longname": "DefaultExternal/BuiltinExternal.js~ReferenceError",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "DefaultExternal/BuiltinExternal.js",
+    "longname": "DefaultExternal/BuiltinExternal.js~SyntaxError",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "DefaultExternal/BuiltinExternal.js",
+    "longname": "DefaultExternal/BuiltinExternal.js~TypeError",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "DefaultExternal/BuiltinExternal.js",
+    "longname": "DefaultExternal/BuiltinExternal.js~URIError",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "DefaultExternal/BuiltinExternal.js",
+    "longname": "DefaultExternal/BuiltinExternal.js~Number",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "DefaultExternal/BuiltinExternal.js",
+    "longname": "DefaultExternal/BuiltinExternal.js~number",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "DefaultExternal/BuiltinExternal.js",
+    "longname": "DefaultExternal/BuiltinExternal.js~Date",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "DefaultExternal/BuiltinExternal.js",
+    "longname": "DefaultExternal/BuiltinExternal.js~String",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "DefaultExternal/BuiltinExternal.js",
+    "longname": "DefaultExternal/BuiltinExternal.js~string",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "DefaultExternal/BuiltinExternal.js",
+    "longname": "DefaultExternal/BuiltinExternal.js~RegExp",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "DefaultExternal/BuiltinExternal.js",
+    "longname": "DefaultExternal/BuiltinExternal.js~Array",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "DefaultExternal/BuiltinExternal.js",
+    "longname": "DefaultExternal/BuiltinExternal.js~Int8Array",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "DefaultExternal/BuiltinExternal.js",
+    "longname": "DefaultExternal/BuiltinExternal.js~Uint8Array",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "DefaultExternal/BuiltinExternal.js",
+    "longname": "DefaultExternal/BuiltinExternal.js~Uint8ClampedArray",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "DefaultExternal/BuiltinExternal.js",
+    "longname": "DefaultExternal/BuiltinExternal.js~Int16Array",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "DefaultExternal/BuiltinExternal.js",
+    "longname": "DefaultExternal/BuiltinExternal.js~Uint16Array",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "DefaultExternal/BuiltinExternal.js",
+    "longname": "DefaultExternal/BuiltinExternal.js~Int32Array",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "DefaultExternal/BuiltinExternal.js",
+    "longname": "DefaultExternal/BuiltinExternal.js~Uint32Array",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "DefaultExternal/BuiltinExternal.js",
+    "longname": "DefaultExternal/BuiltinExternal.js~Float32Array",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "DefaultExternal/BuiltinExternal.js",
+    "longname": "DefaultExternal/BuiltinExternal.js~Float64Array",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "DefaultExternal/BuiltinExternal.js",
+    "longname": "DefaultExternal/BuiltinExternal.js~Map",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "DefaultExternal/BuiltinExternal.js",
+    "longname": "DefaultExternal/BuiltinExternal.js~Set",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "DefaultExternal/BuiltinExternal.js",
+    "longname": "DefaultExternal/BuiltinExternal.js~WeakMap",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "DefaultExternal/BuiltinExternal.js",
+    "longname": "DefaultExternal/BuiltinExternal.js~WeakSet",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "DefaultExternal/BuiltinExternal.js",
+    "longname": "DefaultExternal/BuiltinExternal.js~ArrayBuffer",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "DefaultExternal/BuiltinExternal.js",
+    "longname": "DefaultExternal/BuiltinExternal.js~DataView",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "DefaultExternal/BuiltinExternal.js",
+    "longname": "DefaultExternal/BuiltinExternal.js~JSON",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "DefaultExternal/BuiltinExternal.js",
+    "longname": "DefaultExternal/BuiltinExternal.js~Promise",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "DefaultExternal/BuiltinExternal.js",
+    "longname": "DefaultExternal/BuiltinExternal.js~Generator",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "DefaultExternal/BuiltinExternal.js",
+    "longname": "DefaultExternal/BuiltinExternal.js~GeneratorFunction",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "DefaultExternal/BuiltinExternal.js",
+    "longname": "DefaultExternal/BuiltinExternal.js~Reflect",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "DefaultExternal/BuiltinExternal.js",
+    "longname": "DefaultExternal/BuiltinExternal.js~Proxy",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "CanvasRenderingContext2D",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D",
+    "memberof": "DefaultExternal/WebAPIExternal.js",
+    "longname": "DefaultExternal/WebAPIExternal.js~CanvasRenderingContext2D",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "DocumentFragment",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment",
+    "memberof": "DefaultExternal/WebAPIExternal.js",
+    "longname": "DefaultExternal/WebAPIExternal.js~DocumentFragment",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Element",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/API/Element",
+    "memberof": "DefaultExternal/WebAPIExternal.js",
+    "longname": "DefaultExternal/WebAPIExternal.js~Element",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Event",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/API/Event",
+    "memberof": "DefaultExternal/WebAPIExternal.js",
+    "longname": "DefaultExternal/WebAPIExternal.js~Event",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "Node",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/API/Node",
+    "memberof": "DefaultExternal/WebAPIExternal.js",
+    "longname": "DefaultExternal/WebAPIExternal.js~Node",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "NodeList",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/API/NodeList",
+    "memberof": "DefaultExternal/WebAPIExternal.js",
+    "longname": "DefaultExternal/WebAPIExternal.js~NodeList",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "external",
+    "static": true,
+    "variation": null,
+    "name": "XMLHttpRequest",
+    "externalLink": "https://developer.mozilla.org/en/docs/Web/API/XMLHttpRequest",
+    "memberof": "DefaultExternal/WebAPIExternal.js",
+    "longname": "DefaultExternal/WebAPIExternal.js~XMLHttpRequest",
+    "access": null,
+    "description": null,
+    "defaultExternal": true
+  },
+  {
+    "kind": "testFile",
+    "static": true,
+    "variation": null,
+    "name": "test/headers.spec.js",
+    "memberof": null,
+    "longname": "test/headers.spec.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1,
+    "content": "import {Headers} from '../src/index';\n\ndescribe('headers', () => {\n\n  it('can add header value', () => {\n    var headers = new Headers();\n    headers.add('Authorization', '123');\n\n    expect(headers.headers['Authorization']).toBe('123');\n  });\n\n  it('can get header value', () => {\n    var headers = new Headers();\n    headers.add('Authorization', '123');\n\n    expect(headers.get('Authorization')).toBe('123');\n  });\n\n  it('will clear headers on clear', () => {\n    var headers = new Headers();\n    headers.add('Authorization', '123');\n\n    expect(headers.get('Authorization')).toBe('123');\n\n    headers.clear();\n\n    expect(headers.get('Authorization')).toBeUndefined();\n    expect(headers.headers).toEqual({});\n  });\n\n  it('configureXHR should add the headers', () => {\n    var headers = new Headers();\n    headers.add('Authorization', '123');\n    headers.add('Content-Type', 'application/json');\n\n    jasmine.Ajax.withMock(() => {\n      var xhr = new XMLHttpRequest();\n\n      headers.configureXHR(xhr);\n\n      expect(xhr.requestHeaders['Authorization']).toBe('123');\n      expect(xhr.requestHeaders['Content-Type']).toBe('application/json');\n    });\n\n\n  });\n\n  describe(\"parse()\", () => {\n    it(\"should return a new instance on undefined, null or empty string\", () => {\n      expect(Headers.parse()).toEqual(jasmine.any(Headers));\n      expect(Headers.parse(null)).toEqual(jasmine.any(Headers));\n      expect(Headers.parse(\"\")).toEqual(jasmine.any(Headers));\n    });\n\n    it(\"should parse header strings\", () => {\n      let headers = Headers.parse('key1: value1\\u000d\\u000akey2: value2');\n\n      expect(headers.get('key1')).toBe('value1');\n      expect(headers.get('key2')).toBe('value2');\n    });\n\n    it(\"should parse headers with values of ': '\", () => {\n      let headers = Headers.parse('key1: value1\\u000d\\u000akey2: key: value');\n\n      expect(headers.get('key1')).toBe('value1');\n      expect(headers.get('key2')).toBe('key: value');\n    });\n  });\n\n});\n"
+  },
+  {
+    "kind": "testDescribe",
+    "static": true,
+    "variation": null,
+    "name": "describe0",
+    "testId": 0,
+    "memberof": "test/headers.spec.js",
+    "testDepth": 0,
+    "longname": "test/headers.spec.js~describe0",
+    "access": null,
+    "description": "headers",
+    "lineNumber": 3
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it1",
+    "testId": 1,
+    "memberof": "test/headers.spec.js~describe0",
+    "testDepth": 1,
+    "longname": "test/headers.spec.js~describe0.it1",
+    "access": null,
+    "description": "can add header value",
+    "lineNumber": 5
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it2",
+    "testId": 2,
+    "memberof": "test/headers.spec.js~describe0",
+    "testDepth": 1,
+    "longname": "test/headers.spec.js~describe0.it2",
+    "access": null,
+    "description": "can get header value",
+    "lineNumber": 12
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it3",
+    "testId": 3,
+    "memberof": "test/headers.spec.js~describe0",
+    "testDepth": 1,
+    "longname": "test/headers.spec.js~describe0.it3",
+    "access": null,
+    "description": "will clear headers on clear",
+    "lineNumber": 19
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it4",
+    "testId": 4,
+    "memberof": "test/headers.spec.js~describe0",
+    "testDepth": 1,
+    "longname": "test/headers.spec.js~describe0.it4",
+    "access": null,
+    "description": "configureXHR should add the headers",
+    "lineNumber": 31
+  },
+  {
+    "kind": "testDescribe",
+    "static": true,
+    "variation": null,
+    "name": "describe5",
+    "testId": 5,
+    "memberof": "test/headers.spec.js~describe0",
+    "testDepth": 1,
+    "longname": "test/headers.spec.js~describe0.describe5",
+    "access": null,
+    "description": "parse()",
+    "lineNumber": 48
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it6",
+    "testId": 6,
+    "memberof": "test/headers.spec.js~describe0.describe5",
+    "testDepth": 2,
+    "longname": "test/headers.spec.js~describe0.describe5.it6",
+    "access": null,
+    "description": "should return a new instance on undefined, null or empty string",
+    "lineNumber": 49
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it7",
+    "testId": 7,
+    "memberof": "test/headers.spec.js~describe0.describe5",
+    "testDepth": 2,
+    "longname": "test/headers.spec.js~describe0.describe5.it7",
+    "access": null,
+    "description": "should parse header strings",
+    "lineNumber": 55
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it8",
+    "testId": 8,
+    "memberof": "test/headers.spec.js~describe0.describe5",
+    "testDepth": 2,
+    "longname": "test/headers.spec.js~describe0.describe5.it8",
+    "access": null,
+    "description": "should parse headers with values of ': '",
+    "lineNumber": 62
+  },
+  {
+    "kind": "testFile",
+    "static": true,
+    "variation": null,
+    "name": "test/http-client.spec.js",
+    "memberof": null,
+    "longname": "test/http-client.spec.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1,
+    "content": "import {HttpClient} from '../src/index';\nimport {HttpRequestMessage, HttpResponseMessage} from '../src/index';\nimport {Headers} from '../src/index';\n\ndescribe('http client', () => {\n\n  var baseUrl = \"http://example.com/\";\n\n  beforeEach(() => {\n    jasmine.Ajax.install();\n  });\n\n  afterEach(() => {\n    jasmine.Ajax.uninstall();\n  });\n\n  describe('get', () => {\n\n    describe('request', () => {\n\n      it('should make expected request', () => {\n        var client = new HttpClient()\n          .configure(x => x.withBaseUrl(baseUrl));\n\n        client.get('some/cool/path');\n\n        var request = jasmine.Ajax.requests.mostRecent();\n\n        expect(request.url).toBe(`${baseUrl}some/cool/path`);\n        expect(request.method).toBe('GET');\n        expect(request.data()).toEqual({});\n      });\n\n      it('should provide expected request headers', () => {\n        var client = new HttpClient()\n          .configure(x => {\n            x.withBaseUrl(baseUrl);\n            x.withHeader('Authorization', 'bearer 123');\n          });\n\n        client.get('some/cool/path');\n\n        var request = jasmine.Ajax.requests.mostRecent();\n\n        expect(request.requestHeaders['Authorization']).toBe('bearer 123');\n      });\n\n    });\n\n    describe('response', () => {\n\n      it('should succeed on 200 response', (done) => {\n        var client = new HttpClient()\n          .configure(x => x.withBaseUrl(baseUrl));\n\n        client.get('some/cool/path').then(response => {\n          expect(response.isSuccess).toBe(true);\n          done();\n        });\n\n        var request = jasmine.Ajax.requests.mostRecent();\n\n        request.respondWith({ status: 200 });\n      });\n\n      it('should retrieve correct content', (done) => {\n        var client = new HttpClient()\n          .configure(x => x.withBaseUrl(baseUrl));\n\n        client.get('some/cool/path').then(response => {\n          expect(response.content.name).toBe('Martin');\n          done();\n        });\n\n        var request = jasmine.Ajax.requests.mostRecent();\n\n        request.respondWith({ status: 200, responseText: '{\"name\":\"Martin\"}' });\n      });\n\n      it('should not succeed on 500 response', (done) => {\n        var client = new HttpClient()\n          .configure(x => x.withBaseUrl(baseUrl));\n\n        client.get('some/cool/path').catch(response => {\n          expect(response.isSuccess).toBe(false);\n          done();\n        });\n\n        var request = jasmine.Ajax.requests.mostRecent();\n\n        request.respondWith({ status: 500 });\n\n      });\n\n    });\n\n  });\n\n  describe('put', () => {\n\n    describe('request', () => {\n\n      it('should make expected request', () => {\n        var content = { firstName: \"John\", lastName: \"Doe\" };\n        var client = new HttpClient()\n          .configure(x => {\n            x.withBaseUrl(baseUrl);\n            x.withHeader('Content-Type', 'application/json');\n          });\n\n        client.put('some/cool/path', content);\n\n        var request = jasmine.Ajax.requests.mostRecent();\n\n        expect(request.url).toBe(`${baseUrl}some/cool/path`);\n        expect(request.method).toBe('PUT');\n        expect(request.data()).toEqual(content);\n      });\n\n      it('should only include content properties specified in the replacer array', () => {\n        var content = { firstName: \"John\", lastName: \"Doe\" };\n        var client = new HttpClient()\n          .configure(x => {\n            x.withBaseUrl(baseUrl);\n            x.withHeader('Content-Type', 'application/json');\n          });\n\n        client.createRequest('some/cool/path')\n          .asPut()\n          .withContent(content)\n          .withReplacer(['firstName'])\n          .send();\n\n        var request = jasmine.Ajax.requests.mostRecent();\n\n        expect(request.data()).not.toEqual(content);\n        expect(request.data()).toEqual({ firstName: \"John\" });\n      });\n\n      it('should provide expected request headers', () => {\n        var client = new HttpClient()\n          .configure(x => {\n            x.withBaseUrl(baseUrl);\n            x.withHeader('Authorization', 'bearer 123');\n          });\n\n        client.put('some/cool/path');\n\n        var request = jasmine.Ajax.requests.mostRecent();\n\n        expect(request.requestHeaders['Authorization']).toBe('bearer 123');\n      });\n\n    });\n\n    describe('response', () => {\n\n      it('should succeed on 200 response', (done) => {\n        var client = new HttpClient()\n          .configure(x => x.withBaseUrl(baseUrl));\n\n        client.get('some/cool/path').then(response => {\n          expect(response.isSuccess).toBe(true);\n          done();\n        });\n\n        var request = jasmine.Ajax.requests.mostRecent();\n\n        request.respondWith({ status: 200 });\n      });\n\n      it('should retrieve correct content', (done) => {\n        var client = new HttpClient()\n          .configure(x => x.withBaseUrl(baseUrl));\n\n        client.put('some/cool/path').then(response => {\n          expect(response.content.name).toBe('Martin');\n          done();\n        });\n\n        var request = jasmine.Ajax.requests.mostRecent();\n\n        request.respondWith({ status: 200, responseText: '{\"name\":\"Martin\"}' });\n      });\n\n      it('should not succeed on 500 response', (done) => {\n        var client = new HttpClient()\n          .configure(x => x.withBaseUrl(baseUrl));\n\n        client.put('some/cool/path').catch(response => {\n          expect(response.isSuccess).toBe(false);\n          done();\n        });\n\n        var request = jasmine.Ajax.requests.mostRecent();\n\n        request.respondWith({ status: 500 });\n\n      });\n\n    });\n\n  });\n\n  describe('patch', () => {\n\n    describe('request', () => {\n\n      it('should make expected request', () => {\n        var content = { firstName: \"John\", lastName: \"Doe\" };\n        var client = new HttpClient()\n          .configure(x => {\n            x.withBaseUrl(baseUrl);\n            x.withHeader('Content-Type', 'application/json');\n          });\n\n        client.patch('some/cool/path', content);\n\n        var request = jasmine.Ajax.requests.mostRecent();\n\n        expect(request.url).toBe(`${baseUrl}some/cool/path`);\n        expect(request.method).toBe('PATCH');\n        expect(request.data()).toEqual(content);\n      });\n\n      it('should only include content properties specified in the replacer array', () => {\n        var content = { firstName: \"John\", lastName: \"Doe\" };\n        var client = new HttpClient()\n          .configure(x => {\n            x.withBaseUrl(baseUrl);\n            x.withHeader('Content-Type', 'application/json');\n          });\n\n        client.createRequest('some/cool/path')\n          .asPatch()\n          .withContent(content)\n          .withReplacer(['firstName'])\n          .send();\n\n        var request = jasmine.Ajax.requests.mostRecent();\n\n        expect(request.data()).not.toEqual(content);\n        expect(request.data()).toEqual({ firstName: \"John\" });\n      });\n\n      it('should provide expected request headers', () => {\n        var client = new HttpClient()\n          .configure(x => {\n            x.withBaseUrl(baseUrl);\n            x.withHeader('Authorization', 'bearer 123');\n          });\n\n        client.patch('some/cool/path');\n\n        var request = jasmine.Ajax.requests.mostRecent();\n\n        expect(request.requestHeaders['Authorization']).toBe('bearer 123');\n      });\n\n    });\n\n    describe('response', () => {\n\n      it('should succeed on 200 response', (done) => {\n        var client = new HttpClient()\n          .configure(x => x.withBaseUrl(baseUrl));\n\n        client.put('some/cool/path').then(response => {\n          expect(response.isSuccess).toBe(true);\n          done();\n        });\n\n        var request = jasmine.Ajax.requests.mostRecent();\n\n        request.respondWith({ status: 200 });\n      });\n\n      it('should retrieve correct content', (done) => {\n        var client = new HttpClient()\n          .configure(x => x.withBaseUrl(baseUrl));\n\n        client.patch('some/cool/path').then(response => {\n          expect(response.content.name).toBe('Martin');\n          done();\n        });\n\n        var request = jasmine.Ajax.requests.mostRecent();\n\n        request.respondWith({ status: 200, responseText: '{\"name\":\"Martin\"}' });\n      });\n\n      it('should not succeed on 500 response', (done) => {\n        var client = new HttpClient()\n          .configure(x => x.withBaseUrl(baseUrl));\n\n        client.patch('some/cool/path').catch(response => {\n          expect(response.isSuccess).toBe(false);\n          done();\n        });\n\n        var request = jasmine.Ajax.requests.mostRecent();\n\n        request.respondWith({ status: 500 });\n\n      });\n\n    });\n\n  });\n\n  describe('post', () => {\n\n    describe('request', () => {\n\n      it('should make expected request', () => {\n        var content = { firstName: \"John\", lastName: \"Doe\" };\n        var client = new HttpClient()\n          .configure(x => {\n            x.withBaseUrl(baseUrl);\n            x.withHeader('Content-Type', 'application/json');\n          });\n\n        client.post('some/cool/path', content);\n\n        var request = jasmine.Ajax.requests.mostRecent();\n\n        expect(request.url).toBe(`${baseUrl}some/cool/path`);\n        expect(request.method).toBe('POST');\n        expect(request.data()).toEqual(content);\n      });\n\n      it('should only include content properties specified in the replacer array', () => {\n        var content = { firstName: \"John\", lastName: \"Doe\" };\n        var client = new HttpClient()\n          .configure(x => {\n            x.withBaseUrl(baseUrl);\n            x.withHeader('Content-Type', 'application/json');\n          });\n\n        client.createRequest('some/cool/path')\n          .asPost()\n          .withContent(content)\n          .withReplacer(['firstName'])\n          .send();\n\n        var request = jasmine.Ajax.requests.mostRecent();\n\n        expect(request.data()).not.toEqual(content);\n        expect(request.data()).toEqual({ firstName: \"John\" });\n      });\n\n      it('should provide expected request headers', () => {\n        var client = new HttpClient()\n          .configure(x => {\n            x.withBaseUrl(baseUrl);\n            x.withHeader('Authorization', 'bearer 123');\n          });\n\n        client.post('some/cool/path');\n\n        var request = jasmine.Ajax.requests.mostRecent();\n\n        expect(request.requestHeaders['Authorization']).toBe('bearer 123');\n      });\n\n    });\n\n    describe('response', () => {\n\n      it('should succeed on 201 response', (done) => {\n        var client = new HttpClient()\n          .configure(x => x.withBaseUrl(baseUrl));\n\n        client.post('some/cool/path').then(response => {\n          expect(response.isSuccess).toBe(true);\n          done();\n        });\n\n        var request = jasmine.Ajax.requests.mostRecent();\n\n        request.respondWith({ status: 201 });\n      });\n\n      it('should retrieve correct content', (done) => {\n        var client = new HttpClient()\n          .configure(x => x.withBaseUrl(baseUrl));\n\n        client.post('some/cool/path').then(response => {\n          expect(response.content.name).toBe('Martin');\n          done();\n        });\n\n        var request = jasmine.Ajax.requests.mostRecent();\n\n        request.respondWith({ status: 201, responseText: '{\"name\":\"Martin\"}' });\n      });\n\n      it('should not succeed on 500 response', (done) => {\n        var client = new HttpClient()\n          .configure(x => x.withBaseUrl(baseUrl));\n\n        client.post('some/cool/path').catch(response => {\n          expect(response.isSuccess).toBe(false);\n          done();\n        });\n\n        var request = jasmine.Ajax.requests.mostRecent();\n\n        request.respondWith({ status: 500 });\n\n      });\n\n    });\n  });\n\n  describe('delete', () => {\n\n    describe('request', () => {\n\n      it('should make expected request', () => {\n        var client = new HttpClient()\n          .configure(x => x.withBaseUrl(baseUrl));\n\n        client.delete('some/cool/path');\n\n        var request = jasmine.Ajax.requests.mostRecent();\n\n        expect(request.url).toBe(`${baseUrl}some/cool/path`);\n        expect(request.method).toBe('DELETE');\n        expect(request.data()).toEqual({});\n      });\n\n      it('should provide expected request headers', () => {\n        var client = new HttpClient()\n          .configure(x => {\n            x.withBaseUrl(baseUrl);\n            x.withHeader('Authorization', 'bearer 123');\n          });\n\n        client.delete('some/cool/path');\n\n        var request = jasmine.Ajax.requests.mostRecent();\n\n        expect(request.requestHeaders['Authorization']).toBe('bearer 123');\n      });\n\n    });\n\n    describe('response', () => {\n\n      it('should succeed on 200 response', (done) => {\n        var client = new HttpClient()\n          .configure(x => x.withBaseUrl(baseUrl));\n\n        client.delete('some/cool/path').then(response => {\n          expect(response.isSuccess).toBe(true);\n          done();\n        });\n\n        var request = jasmine.Ajax.requests.mostRecent();\n\n        request.respondWith({ status: 200 });\n      });\n\n      it('should not succeed on 500 response', (done) => {\n        var client = new HttpClient()\n          .configure(x => x.withBaseUrl(baseUrl));\n\n        client.delete('some/cool/path').catch(response => {\n          expect(response.isSuccess).toBe(false);\n          done();\n        });\n\n        var request = jasmine.Ajax.requests.mostRecent();\n\n        request.respondWith({ status: 500 });\n\n      });\n\n    });\n\n  });\n\n  describe('send', () => {\n\n    it('should reject on onerror', (done) => {\n      var client = new HttpClient();\n\n      client.send(new HttpRequestMessage('GET', 'some/cool/url')).catch(response => {\n        expect(response instanceof HttpResponseMessage).toBe(true);\n        expect(response.responseType).toBe('error');\n        done();\n      });\n\n      jasmine.Ajax.requests.mostRecent().responseError();\n\n    });\n\n    it('should reject on ontimeout', (done) => {\n        jasmine.clock().install()\n        var client = new HttpClient();\n\n        client.send(new HttpRequestMessage('GET', 'some/cool/url')).catch(response => {\n          expect(response instanceof HttpResponseMessage).toBe(true);\n          expect(response.responseType).toBe('timeout');\n          done();\n        });\n\n        jasmine.Ajax.requests.mostRecent().responseTimeout();\n        jasmine.clock().uninstall();\n    });\n\n    it('should reject when aborted', (done) => {\n      var client = new HttpClient();\n\n      var promise = client.send(new HttpRequestMessage('GET', 'some/cool/url'));\n      promise.catch((response, reason) => {\n        expect(response instanceof HttpResponseMessage).toBe(true);\n        expect(response.responseType).toBe('abort');\n        done();\n      });\n\n      promise.abort();\n    });\n\n    it('can parse request headers', (done) => {\n      var client = new HttpClient();\n\n      client.send(new HttpRequestMessage('GET', 'some/cool/url')).then(response => {\n        expect(response.headers.get('Access-Control-Allow-Origin')).toBe('http://www.example.com');\n        done();\n      }).catch(e => {\n        console.log(e);\n        done();\n      });\n\n      var request = jasmine.Ajax.requests.mostRecent();\n      request.respondWith({\n        status: 200,\n        responseHeaders: [{ name: 'Access-Control-Allow-Origin', value: 'http://www.example.com'}]\n      });\n\n    });\n\n    it('can parse multiple request headers', (done) => {\n      var client = new HttpClient();\n\n      client.send(new HttpRequestMessage('GET', 'some/cool/url')).then(response => {\n        expect(response.headers.get('Access-Control-Allow-Origin')).toBe('http://www.example.com');\n        expect(response.headers.get('Content-Type')).toBe('application/json');\n        done();\n      });\n\n      var request = jasmine.Ajax.requests.mostRecent();\n      request.respondWith({\n        status: 200,\n        responseHeaders: [\n          { name: 'Access-Control-Allow-Origin', value: 'http://www.example.com'},\n          { name: 'Content-Type', value: 'application/json'}\n        ]\n      });\n\n    });\n\n    it('can parse header values containing :', (done) => {\n      var client = new HttpClient();\n\n      client.send(new HttpRequestMessage('GET', 'some/cool/url')).then(response => {\n        expect(response.headers.get('Some-Cosy-Header')).toBe('foo:bar');\n        done();\n      });\n\n      var request = jasmine.Ajax.requests.mostRecent();\n      request.respondWith({\n        status: 200,\n        responseHeaders: [{ name: 'Some-Cosy-Header', value: 'foo:bar'}]\n      });\n    });\n\n    it('should set callback on upload progress', () => {\n      var client = new HttpClient();\n      var callback = function(){};\n\n      client.createRequest('some/cool/url')\n        .asGet()\n        .withProgressCallback(callback)\n        .send();\n\n      var response = jasmine.Ajax.requests.mostRecent();\n      expect(response.upload.onprogress).toBe(callback);\n    });\n\n  });\n\n});\n"
+  },
+  {
+    "kind": "testDescribe",
+    "static": true,
+    "variation": null,
+    "name": "describe9",
+    "testId": 9,
+    "memberof": "test/http-client.spec.js",
+    "testDepth": 0,
+    "longname": "test/http-client.spec.js~describe9",
+    "access": null,
+    "description": "http client",
+    "lineNumber": 5
+  },
+  {
+    "kind": "testDescribe",
+    "static": true,
+    "variation": null,
+    "name": "describe10",
+    "testId": 10,
+    "memberof": "test/http-client.spec.js~describe9",
+    "testDepth": 1,
+    "longname": "test/http-client.spec.js~describe9.describe10",
+    "access": null,
+    "description": "get",
+    "lineNumber": 17
+  },
+  {
+    "kind": "testDescribe",
+    "static": true,
+    "variation": null,
+    "name": "describe11",
+    "testId": 11,
+    "memberof": "test/http-client.spec.js~describe9.describe10",
+    "testDepth": 2,
+    "longname": "test/http-client.spec.js~describe9.describe10.describe11",
+    "access": null,
+    "description": "request",
+    "lineNumber": 19
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it12",
+    "testId": 12,
+    "memberof": "test/http-client.spec.js~describe9.describe10.describe11",
+    "testDepth": 3,
+    "longname": "test/http-client.spec.js~describe9.describe10.describe11.it12",
+    "access": null,
+    "description": "should make expected request",
+    "lineNumber": 21
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it13",
+    "testId": 13,
+    "memberof": "test/http-client.spec.js~describe9.describe10.describe11",
+    "testDepth": 3,
+    "longname": "test/http-client.spec.js~describe9.describe10.describe11.it13",
+    "access": null,
+    "description": "should provide expected request headers",
+    "lineNumber": 34
+  },
+  {
+    "kind": "testDescribe",
+    "static": true,
+    "variation": null,
+    "name": "describe14",
+    "testId": 14,
+    "memberof": "test/http-client.spec.js~describe9.describe10",
+    "testDepth": 2,
+    "longname": "test/http-client.spec.js~describe9.describe10.describe14",
+    "access": null,
+    "description": "response",
+    "lineNumber": 50
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it15",
+    "testId": 15,
+    "memberof": "test/http-client.spec.js~describe9.describe10.describe14",
+    "testDepth": 3,
+    "longname": "test/http-client.spec.js~describe9.describe10.describe14.it15",
+    "access": null,
+    "description": "should succeed on 200 response",
+    "lineNumber": 52
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it16",
+    "testId": 16,
+    "memberof": "test/http-client.spec.js~describe9.describe10.describe14",
+    "testDepth": 3,
+    "longname": "test/http-client.spec.js~describe9.describe10.describe14.it16",
+    "access": null,
+    "description": "should retrieve correct content",
+    "lineNumber": 66
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it17",
+    "testId": 17,
+    "memberof": "test/http-client.spec.js~describe9.describe10.describe14",
+    "testDepth": 3,
+    "longname": "test/http-client.spec.js~describe9.describe10.describe14.it17",
+    "access": null,
+    "description": "should not succeed on 500 response",
+    "lineNumber": 80
+  },
+  {
+    "kind": "testDescribe",
+    "static": true,
+    "variation": null,
+    "name": "describe18",
+    "testId": 18,
+    "memberof": "test/http-client.spec.js~describe9",
+    "testDepth": 1,
+    "longname": "test/http-client.spec.js~describe9.describe18",
+    "access": null,
+    "description": "put",
+    "lineNumber": 99
+  },
+  {
+    "kind": "testDescribe",
+    "static": true,
+    "variation": null,
+    "name": "describe19",
+    "testId": 19,
+    "memberof": "test/http-client.spec.js~describe9.describe18",
+    "testDepth": 2,
+    "longname": "test/http-client.spec.js~describe9.describe18.describe19",
+    "access": null,
+    "description": "request",
+    "lineNumber": 101
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it20",
+    "testId": 20,
+    "memberof": "test/http-client.spec.js~describe9.describe18.describe19",
+    "testDepth": 3,
+    "longname": "test/http-client.spec.js~describe9.describe18.describe19.it20",
+    "access": null,
+    "description": "should make expected request",
+    "lineNumber": 103
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it21",
+    "testId": 21,
+    "memberof": "test/http-client.spec.js~describe9.describe18.describe19",
+    "testDepth": 3,
+    "longname": "test/http-client.spec.js~describe9.describe18.describe19.it21",
+    "access": null,
+    "description": "should only include content properties specified in the replacer array",
+    "lineNumber": 120
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it22",
+    "testId": 22,
+    "memberof": "test/http-client.spec.js~describe9.describe18.describe19",
+    "testDepth": 3,
+    "longname": "test/http-client.spec.js~describe9.describe18.describe19.it22",
+    "access": null,
+    "description": "should provide expected request headers",
+    "lineNumber": 140
+  },
+  {
+    "kind": "testDescribe",
+    "static": true,
+    "variation": null,
+    "name": "describe23",
+    "testId": 23,
+    "memberof": "test/http-client.spec.js~describe9.describe18",
+    "testDepth": 2,
+    "longname": "test/http-client.spec.js~describe9.describe18.describe23",
+    "access": null,
+    "description": "response",
+    "lineNumber": 156
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it24",
+    "testId": 24,
+    "memberof": "test/http-client.spec.js~describe9.describe18.describe23",
+    "testDepth": 3,
+    "longname": "test/http-client.spec.js~describe9.describe18.describe23.it24",
+    "access": null,
+    "description": "should succeed on 200 response",
+    "lineNumber": 158
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it25",
+    "testId": 25,
+    "memberof": "test/http-client.spec.js~describe9.describe18.describe23",
+    "testDepth": 3,
+    "longname": "test/http-client.spec.js~describe9.describe18.describe23.it25",
+    "access": null,
+    "description": "should retrieve correct content",
+    "lineNumber": 172
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it26",
+    "testId": 26,
+    "memberof": "test/http-client.spec.js~describe9.describe18.describe23",
+    "testDepth": 3,
+    "longname": "test/http-client.spec.js~describe9.describe18.describe23.it26",
+    "access": null,
+    "description": "should not succeed on 500 response",
+    "lineNumber": 186
+  },
+  {
+    "kind": "testDescribe",
+    "static": true,
+    "variation": null,
+    "name": "describe27",
+    "testId": 27,
+    "memberof": "test/http-client.spec.js~describe9",
+    "testDepth": 1,
+    "longname": "test/http-client.spec.js~describe9.describe27",
+    "access": null,
+    "description": "patch",
+    "lineNumber": 205
+  },
+  {
+    "kind": "testDescribe",
+    "static": true,
+    "variation": null,
+    "name": "describe28",
+    "testId": 28,
+    "memberof": "test/http-client.spec.js~describe9.describe27",
+    "testDepth": 2,
+    "longname": "test/http-client.spec.js~describe9.describe27.describe28",
+    "access": null,
+    "description": "request",
+    "lineNumber": 207
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it29",
+    "testId": 29,
+    "memberof": "test/http-client.spec.js~describe9.describe27.describe28",
+    "testDepth": 3,
+    "longname": "test/http-client.spec.js~describe9.describe27.describe28.it29",
+    "access": null,
+    "description": "should make expected request",
+    "lineNumber": 209
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it30",
+    "testId": 30,
+    "memberof": "test/http-client.spec.js~describe9.describe27.describe28",
+    "testDepth": 3,
+    "longname": "test/http-client.spec.js~describe9.describe27.describe28.it30",
+    "access": null,
+    "description": "should only include content properties specified in the replacer array",
+    "lineNumber": 226
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it31",
+    "testId": 31,
+    "memberof": "test/http-client.spec.js~describe9.describe27.describe28",
+    "testDepth": 3,
+    "longname": "test/http-client.spec.js~describe9.describe27.describe28.it31",
+    "access": null,
+    "description": "should provide expected request headers",
+    "lineNumber": 246
+  },
+  {
+    "kind": "testDescribe",
+    "static": true,
+    "variation": null,
+    "name": "describe32",
+    "testId": 32,
+    "memberof": "test/http-client.spec.js~describe9.describe27",
+    "testDepth": 2,
+    "longname": "test/http-client.spec.js~describe9.describe27.describe32",
+    "access": null,
+    "description": "response",
+    "lineNumber": 262
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it33",
+    "testId": 33,
+    "memberof": "test/http-client.spec.js~describe9.describe27.describe32",
+    "testDepth": 3,
+    "longname": "test/http-client.spec.js~describe9.describe27.describe32.it33",
+    "access": null,
+    "description": "should succeed on 200 response",
+    "lineNumber": 264
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it34",
+    "testId": 34,
+    "memberof": "test/http-client.spec.js~describe9.describe27.describe32",
+    "testDepth": 3,
+    "longname": "test/http-client.spec.js~describe9.describe27.describe32.it34",
+    "access": null,
+    "description": "should retrieve correct content",
+    "lineNumber": 278
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it35",
+    "testId": 35,
+    "memberof": "test/http-client.spec.js~describe9.describe27.describe32",
+    "testDepth": 3,
+    "longname": "test/http-client.spec.js~describe9.describe27.describe32.it35",
+    "access": null,
+    "description": "should not succeed on 500 response",
+    "lineNumber": 292
+  },
+  {
+    "kind": "testDescribe",
+    "static": true,
+    "variation": null,
+    "name": "describe36",
+    "testId": 36,
+    "memberof": "test/http-client.spec.js~describe9",
+    "testDepth": 1,
+    "longname": "test/http-client.spec.js~describe9.describe36",
+    "access": null,
+    "description": "post",
+    "lineNumber": 311
+  },
+  {
+    "kind": "testDescribe",
+    "static": true,
+    "variation": null,
+    "name": "describe37",
+    "testId": 37,
+    "memberof": "test/http-client.spec.js~describe9.describe36",
+    "testDepth": 2,
+    "longname": "test/http-client.spec.js~describe9.describe36.describe37",
+    "access": null,
+    "description": "request",
+    "lineNumber": 313
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it38",
+    "testId": 38,
+    "memberof": "test/http-client.spec.js~describe9.describe36.describe37",
+    "testDepth": 3,
+    "longname": "test/http-client.spec.js~describe9.describe36.describe37.it38",
+    "access": null,
+    "description": "should make expected request",
+    "lineNumber": 315
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it39",
+    "testId": 39,
+    "memberof": "test/http-client.spec.js~describe9.describe36.describe37",
+    "testDepth": 3,
+    "longname": "test/http-client.spec.js~describe9.describe36.describe37.it39",
+    "access": null,
+    "description": "should only include content properties specified in the replacer array",
+    "lineNumber": 332
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it40",
+    "testId": 40,
+    "memberof": "test/http-client.spec.js~describe9.describe36.describe37",
+    "testDepth": 3,
+    "longname": "test/http-client.spec.js~describe9.describe36.describe37.it40",
+    "access": null,
+    "description": "should provide expected request headers",
+    "lineNumber": 352
+  },
+  {
+    "kind": "testDescribe",
+    "static": true,
+    "variation": null,
+    "name": "describe41",
+    "testId": 41,
+    "memberof": "test/http-client.spec.js~describe9.describe36",
+    "testDepth": 2,
+    "longname": "test/http-client.spec.js~describe9.describe36.describe41",
+    "access": null,
+    "description": "response",
+    "lineNumber": 368
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it42",
+    "testId": 42,
+    "memberof": "test/http-client.spec.js~describe9.describe36.describe41",
+    "testDepth": 3,
+    "longname": "test/http-client.spec.js~describe9.describe36.describe41.it42",
+    "access": null,
+    "description": "should succeed on 201 response",
+    "lineNumber": 370
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it43",
+    "testId": 43,
+    "memberof": "test/http-client.spec.js~describe9.describe36.describe41",
+    "testDepth": 3,
+    "longname": "test/http-client.spec.js~describe9.describe36.describe41.it43",
+    "access": null,
+    "description": "should retrieve correct content",
+    "lineNumber": 384
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it44",
+    "testId": 44,
+    "memberof": "test/http-client.spec.js~describe9.describe36.describe41",
+    "testDepth": 3,
+    "longname": "test/http-client.spec.js~describe9.describe36.describe41.it44",
+    "access": null,
+    "description": "should not succeed on 500 response",
+    "lineNumber": 398
+  },
+  {
+    "kind": "testDescribe",
+    "static": true,
+    "variation": null,
+    "name": "describe45",
+    "testId": 45,
+    "memberof": "test/http-client.spec.js~describe9",
+    "testDepth": 1,
+    "longname": "test/http-client.spec.js~describe9.describe45",
+    "access": null,
+    "description": "delete",
+    "lineNumber": 416
+  },
+  {
+    "kind": "testDescribe",
+    "static": true,
+    "variation": null,
+    "name": "describe46",
+    "testId": 46,
+    "memberof": "test/http-client.spec.js~describe9.describe45",
+    "testDepth": 2,
+    "longname": "test/http-client.spec.js~describe9.describe45.describe46",
+    "access": null,
+    "description": "request",
+    "lineNumber": 418
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it47",
+    "testId": 47,
+    "memberof": "test/http-client.spec.js~describe9.describe45.describe46",
+    "testDepth": 3,
+    "longname": "test/http-client.spec.js~describe9.describe45.describe46.it47",
+    "access": null,
+    "description": "should make expected request",
+    "lineNumber": 420
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it48",
+    "testId": 48,
+    "memberof": "test/http-client.spec.js~describe9.describe45.describe46",
+    "testDepth": 3,
+    "longname": "test/http-client.spec.js~describe9.describe45.describe46.it48",
+    "access": null,
+    "description": "should provide expected request headers",
+    "lineNumber": 433
+  },
+  {
+    "kind": "testDescribe",
+    "static": true,
+    "variation": null,
+    "name": "describe49",
+    "testId": 49,
+    "memberof": "test/http-client.spec.js~describe9.describe45",
+    "testDepth": 2,
+    "longname": "test/http-client.spec.js~describe9.describe45.describe49",
+    "access": null,
+    "description": "response",
+    "lineNumber": 449
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it50",
+    "testId": 50,
+    "memberof": "test/http-client.spec.js~describe9.describe45.describe49",
+    "testDepth": 3,
+    "longname": "test/http-client.spec.js~describe9.describe45.describe49.it50",
+    "access": null,
+    "description": "should succeed on 200 response",
+    "lineNumber": 451
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it51",
+    "testId": 51,
+    "memberof": "test/http-client.spec.js~describe9.describe45.describe49",
+    "testDepth": 3,
+    "longname": "test/http-client.spec.js~describe9.describe45.describe49.it51",
+    "access": null,
+    "description": "should not succeed on 500 response",
+    "lineNumber": 465
+  },
+  {
+    "kind": "testDescribe",
+    "static": true,
+    "variation": null,
+    "name": "describe52",
+    "testId": 52,
+    "memberof": "test/http-client.spec.js~describe9",
+    "testDepth": 1,
+    "longname": "test/http-client.spec.js~describe9.describe52",
+    "access": null,
+    "description": "send",
+    "lineNumber": 484
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it53",
+    "testId": 53,
+    "memberof": "test/http-client.spec.js~describe9.describe52",
+    "testDepth": 2,
+    "longname": "test/http-client.spec.js~describe9.describe52.it53",
+    "access": null,
+    "description": "should reject on onerror",
+    "lineNumber": 486
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it54",
+    "testId": 54,
+    "memberof": "test/http-client.spec.js~describe9.describe52",
+    "testDepth": 2,
+    "longname": "test/http-client.spec.js~describe9.describe52.it54",
+    "access": null,
+    "description": "should reject on ontimeout",
+    "lineNumber": 499
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it55",
+    "testId": 55,
+    "memberof": "test/http-client.spec.js~describe9.describe52",
+    "testDepth": 2,
+    "longname": "test/http-client.spec.js~describe9.describe52.it55",
+    "access": null,
+    "description": "should reject when aborted",
+    "lineNumber": 513
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it56",
+    "testId": 56,
+    "memberof": "test/http-client.spec.js~describe9.describe52",
+    "testDepth": 2,
+    "longname": "test/http-client.spec.js~describe9.describe52.it56",
+    "access": null,
+    "description": "can parse request headers",
+    "lineNumber": 526
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it57",
+    "testId": 57,
+    "memberof": "test/http-client.spec.js~describe9.describe52",
+    "testDepth": 2,
+    "longname": "test/http-client.spec.js~describe9.describe52.it57",
+    "access": null,
+    "description": "can parse multiple request headers",
+    "lineNumber": 545
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it58",
+    "testId": 58,
+    "memberof": "test/http-client.spec.js~describe9.describe52",
+    "testDepth": 2,
+    "longname": "test/http-client.spec.js~describe9.describe52.it58",
+    "access": null,
+    "description": "can parse header values containing :",
+    "lineNumber": 565
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it59",
+    "testId": 59,
+    "memberof": "test/http-client.spec.js~describe9.describe52",
+    "testDepth": 2,
+    "longname": "test/http-client.spec.js~describe9.describe52.it59",
+    "access": null,
+    "description": "should set callback on upload progress",
+    "lineNumber": 580
+  },
+  {
+    "kind": "testFile",
+    "static": true,
+    "variation": null,
+    "name": "test/http-request-message.spec.js",
+    "memberof": null,
+    "longname": "test/http-request-message.spec.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1,
+    "content": "import {HttpRequestMessage, createHttpRequestMessageProcessor} from '../src/http-request-message';\nimport {Headers} from '../src/headers';\nimport {RequestMessageProcessor} from '../src/request-message-processor';\nimport {\n  timeoutTransformer,\n  credentialsTransformer,\n  progressTransformer,\n  responseTypeTransformer,\n  headerTransformer,\n  contentTransformer\n  } from '../src/transformers';\n\ndescribe(\"http-request-message\", () => {\n\n  it(\"should have a constructor that takes in the method, url, content and headers\", () => {\n    let method = {}, url = {}, content = {}, headers = {};\n    let httpRequestMessage = new HttpRequestMessage(method, url, content, headers);\n\n    expect(httpRequestMessage.method).toBe(method);\n    expect(httpRequestMessage.url).toBe(url);\n    expect(httpRequestMessage.content).toBe(content);\n    expect(httpRequestMessage.headers).toBe(headers);\n    expect(httpRequestMessage.responseType).toBe('json');\n  });\n\n  it(\"have a constructor should default the headers if not provided\", () => {\n    let method = {}, url = {}, content = {};\n    let httpRequestMessage = new HttpRequestMessage(method, url, content);\n    expect(httpRequestMessage.headers).toEqual(jasmine.any(Headers));\n  });\n\n  describe(\"createHttpRequestMessageProcessor\",() => {\n    it(\"should create a RequestMessageProcessor with an XMLHttpRequest and the correct transformers\", () => {\n      let httpProcessor = createHttpRequestMessageProcessor();\n\n      expect(httpProcessor).toEqual(jasmine.any(RequestMessageProcessor));\n      expect(httpProcessor.XHRType).toBe(XMLHttpRequest);\n      expect(httpProcessor.transformers).toContain(timeoutTransformer);\n      expect(httpProcessor.transformers).toContain(credentialsTransformer);\n      expect(httpProcessor.transformers).toContain(progressTransformer);\n      expect(httpProcessor.transformers).toContain(responseTypeTransformer);\n      expect(httpProcessor.transformers).toContain(headerTransformer);\n      expect(httpProcessor.transformers).toContain(contentTransformer);\n    });\n  });\n\n});\n"
+  },
+  {
+    "kind": "testDescribe",
+    "static": true,
+    "variation": null,
+    "name": "describe60",
+    "testId": 60,
+    "memberof": "test/http-request-message.spec.js",
+    "testDepth": 0,
+    "longname": "test/http-request-message.spec.js~describe60",
+    "access": null,
+    "description": "http-request-message",
+    "lineNumber": 13
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it61",
+    "testId": 61,
+    "memberof": "test/http-request-message.spec.js~describe60",
+    "testDepth": 1,
+    "longname": "test/http-request-message.spec.js~describe60.it61",
+    "access": null,
+    "description": "should have a constructor that takes in the method, url, content and headers",
+    "lineNumber": 15
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it62",
+    "testId": 62,
+    "memberof": "test/http-request-message.spec.js~describe60",
+    "testDepth": 1,
+    "longname": "test/http-request-message.spec.js~describe60.it62",
+    "access": null,
+    "description": "have a constructor should default the headers if not provided",
+    "lineNumber": 26
+  },
+  {
+    "kind": "testDescribe",
+    "static": true,
+    "variation": null,
+    "name": "describe63",
+    "testId": 63,
+    "memberof": "test/http-request-message.spec.js~describe60",
+    "testDepth": 1,
+    "longname": "test/http-request-message.spec.js~describe60.describe63",
+    "access": null,
+    "description": "createHttpRequestMessageProcessor",
+    "lineNumber": 32
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it64",
+    "testId": 64,
+    "memberof": "test/http-request-message.spec.js~describe60.describe63",
+    "testDepth": 2,
+    "longname": "test/http-request-message.spec.js~describe60.describe63.it64",
+    "access": null,
+    "description": "should create a RequestMessageProcessor with an XMLHttpRequest and the correct transformers",
+    "lineNumber": 33
+  },
+  {
+    "kind": "testFile",
+    "static": true,
+    "variation": null,
+    "name": "test/http-response-message.spec.js",
+    "memberof": null,
+    "longname": "test/http-response-message.spec.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1,
+    "content": "import {HttpResponseMessage, mimeTypes} from '../src/http-response-message';\nimport {Headers} from '../src/headers';\n\ndescribe(\"HttpResponseMessage\", () => {\n\n  describe(\"constructor\", () => {\n    it(\"should have a isSuccess defined by the xhr.status\", () => {\n      //1xx informal\n      expect(new HttpResponseMessage({}, {status: 100}).isSuccess).toBeFalsy();\n      expect(new HttpResponseMessage({}, {status: 199}).isSuccess).toBeFalsy();\n\n      //2xx success\n      expect(new HttpResponseMessage({}, {status: 200}).isSuccess).toBeTruthy();\n      expect(new HttpResponseMessage({}, {status: 299}).isSuccess).toBeTruthy();\n\n      //3xx redirection\n      expect(new HttpResponseMessage({}, {status: 300}).isSuccess).toBeTruthy();\n      expect(new HttpResponseMessage({}, {status: 399}).isSuccess).toBeTruthy();\n\n      //4xx client error\n      expect(new HttpResponseMessage({}, {status: 400}).isSuccess).toBeFalsy();\n      expect(new HttpResponseMessage({}, {status: 499}).isSuccess).toBeFalsy();\n\n      //5xx server error\n      expect(new HttpResponseMessage({}, {status: 400}).isSuccess).toBeFalsy();\n      expect(new HttpResponseMessage({}, {status: 499}).isSuccess).toBeFalsy();\n    });\n\n    //This may seem superfluous but it's surprising how many bugs stem from constructors no longer working as expected\n    it(\"have the xhr.status, xhr.response, xhr.statusText, responseType, reviver and headers as fields\", () => {\n      //Everything that can be an object is set to one for reference checking\n      let xhr = {status: 200, response: {}, statusText: {}};\n      let responseType = {}, reviver = {}, requestMessage = {};\n      let httpResponse = new HttpResponseMessage(requestMessage, xhr, responseType, reviver);\n\n      expect(httpResponse.requestMessage).toBe(requestMessage);\n      expect(httpResponse.statusCode).toBe(xhr.status);\n      expect(httpResponse.response).toBe(xhr.response);\n      expect(httpResponse.statusText).toBe(xhr.statusText);\n      expect(httpResponse.responseType).toBe(responseType);\n      expect(httpResponse.reviver).toBe(reviver);\n      expect(httpResponse.headers).toEqual(jasmine.any(Headers));\n    });\n\n    it(\"will call the Headers.parse() if xhr.getAllResponseHeaders() is defined\", () => {\n      let parseSpy = spyOn(Headers, 'parse');\n      let xhrMock = jasmine.createSpyObj(\"xhr\", [\"getAllResponseHeaders\"]);\n      xhrMock.getAllResponseHeaders.and.returnValue(\"\");\n\n      new HttpResponseMessage({}, xhrMock);\n      expect(xhrMock.getAllResponseHeaders).toHaveBeenCalled();\n      expect(parseSpy).toHaveBeenCalledWith(\"\");\n    });\n\n    it(\"will set responseType to an aliased version of the mimetype detected in the Content-Type header, will also store the original mimetype as mimeType\", () => {\n      runContentTypeExpectations([\n        {contentType:\"text/yml\",mimeType:\"text/yml\",type:\"yml\"},\n        {contentType:\"text/xml\",mimeType:\"text/xml\",type:\"xml\"},\n        {contentType:\"text/markdown\",mimeType:\"text/markdown\",type:\"md\"}\n      ]);\n    });\n\n    it(\"will split the Content-Type using the ; delimeter and use the first part as the mimeType\", () => {\n      runContentTypeExpectations([\n        {contentType:\"text/html; charset=utf-8\",mimeType:\"text/html\",type:\"html\"},\n        {contentType:\"application/atom+xml; type=feed\",mimeType:\"application/atom+xml\",type:\"atom\"},\n        {contentType:\"application/json;   odata=verbose\",mimeType:\"application/json\",type:\"json\"}\n      ]);\n    });\n\n    it(\"will use the mimeType as the responseType if there is no alias for it in the mimeTypes map\", () => {\n      runContentTypeExpectations([\n        {contentType:\"text/foo\",mimeType:\"text/foo\",type:\"text/foo\"},\n        {contentType:\"text/foo; charset=utf-8\",mimeType:\"text/foo\",type:\"text/foo\"}\n      ]);\n    });\n\n    it(\"will set responseType to the responseType specified in the request if no Content-Type header was found, mimeType will be null\", () => {\n      runContentTypeExpectations([\n        {contentType:undefined,mimeType:null,type:\"json\",requestType:\"json\"},\n        {contentType:undefined,mimeType:null,type:\"html\",requestType:\"html\"},\n        {contentType:undefined,mimeType:null,type:\"text/html\",requestType:\"text/html\"},\n        {contentType:undefined,mimeType:null,type:\"something\",requestType:\"something\"}\n      ]);\n    });\n\n    it(\"will use json if no responseType for the request was null\", () => {\n      runContentTypeExpectations([\n        {contentType:undefined,mimeType:null,type:null,requestType:\"json\"}\n      ]);\n    });\n  });\n\n  describe(\"content\", () => {\n    it(\"will return _content if defined\", () => {\n      let httpResponse = new HttpResponseMessage(null,{});\n      let _content = httpResponse._content = {};\n\n      expect(httpResponse.content).toBe(_content);\n    });\n\n    it(\"will return undefined if response is undefined\", () => {\n      let httpResponse = new HttpResponseMessage(null, {});\n      expect(httpResponse.content).toBeUndefined();\n    });\n\n    it(\"will return null if response is null\", () => {\n      let httpResponse = new HttpResponseMessage(null, {response: null});\n      expect(httpResponse.content).toBeNull();\n    });\n\n    it(\"will JSON.parse if the response type is 'json'\", () => {\n      let response = {}, reviver = {}, content = {};\n      let parseSpy = spyOn(JSON, 'parse').and.returnValue(content);\n      let httpResponse = new HttpResponseMessage(null, {response: response}, 'json', reviver);\n\n      expect(httpResponse.content).toBe(content);\n      expect(parseSpy).toHaveBeenCalledWith(response, reviver);\n    });\n\n    it(\"will call the reviver if the response type is not 'json' and the reviver is defined\", () => {\n      let response = {};\n      let reviverSpy = jasmine.createSpy(\"reviver\").and.returnValue(response);\n      let httpResponse = new HttpResponseMessage(null, {response: response}, 'notJson', reviverSpy);\n\n      expect(httpResponse.content).toBe(response);\n      expect(reviverSpy).toHaveBeenCalledWith(response);\n    });\n\n    it(\"will return the response if the reviver is not set and the response type is not json\", () => {\n      let response = {};\n      let httpResponse = new HttpResponseMessage(null, {response: response}, 'notJson');\n\n      expect(httpResponse.content).toBe(response);\n    });\n\n    it(\"will catch expections on content if the response was not successful\", () => {\n      let reviverSpy = jasmine.createSpy(\"reviver\").and.throwError();\n      let httpResponse = new HttpResponseMessage(null, {status : 404, response : {}}, 'notJson', reviverSpy);\n\n      expect(httpResponse.content).toBeNull();\n      expect(reviverSpy).toHaveBeenCalled();\n    });\n\n    it(\"will throw on content if the response was successful\", () => {\n      let reviverSpy = jasmine.createSpy(\"reviver\").and.throwError();\n      let httpResponse = new HttpResponseMessage(null, {status : 200, response : {}}, 'notJson', reviverSpy);\n\n      expect(() => httpResponse.content).toThrow();\n      expect(reviverSpy).toHaveBeenCalled();\n    });\n  });\n});\n\n/**\n * Run an array of expectations for testing content-type headers and responseTypes\n *\n * Sets up a request to have a response with a certain Content-Type and checks if the\n * response has the correct `responseType` set.\n * Will check if the `responseType` has been aliased according to the `mimeTypes` map.\n * Will check if the response has the original mimetype stored in the `mimeType` property.\n *\n * an expectation object should be the following format:\n * {\n *  contentType:\"text/html; charset=utf-8\",\n *  mimeType:\"text/html\",\n *  type:\"html\",\n *  requestType:\"json\"\n * },\n *\n *\n * With these settings it will set the Content-Type header to \"text/html; charset=utf-8\" in the mock response,\n * and expect it to be resolved to a `mimeType` of \"text/html\" and aliased with the responseType \"html\"\n *\n * The requestType property is optional and will be set as the `responseType` in the request message.\n */\nfunction runContentTypeExpectations(expectations){\n  let reviver = {};\n  expectations.map((expectation)=>{\n    var headers = new Headers();\n    //use json as the default `responseType` in the request message\n    expectation.requestType = expectation.requestType||\"json\";\n    //set a content-type in the response header\n    if(expectation.contentType) headers.add('Content-Type', expectation.contentType);\n\n    jasmine.Ajax.withMock(() => {\n      var xhr = new XMLHttpRequest();\n      headers.configureXHR(xhr);\n      //check if content-type was correctly set in the xhr headers\n      expect(xhr.requestHeaders['Content-Type']).toBe(expectation.contentType);\n\n      let httpResponse = new HttpResponseMessage(null, xhr, expectation.requestType, reviver);\n\n      //expect mimetype to be converted to it's alias if it is defined in the `mimeTypes` list\n      if(mimeTypes[expectation.mimeType]) expect(httpResponse.responseType).toBe(expectation.type);\n      //expect original mimetype to be stored in `mimeType`\n      expect(httpResponse.mimeType).toBe(expectation.mimeType);\n    });\n  });\n}\n"
+  },
+  {
+    "kind": "testDescribe",
+    "static": true,
+    "variation": null,
+    "name": "describe65",
+    "testId": 65,
+    "memberof": "test/http-response-message.spec.js",
+    "testDepth": 0,
+    "longname": "test/http-response-message.spec.js~describe65",
+    "access": null,
+    "description": "HttpResponseMessage",
+    "lineNumber": 4
+  },
+  {
+    "kind": "testDescribe",
+    "static": true,
+    "variation": null,
+    "name": "describe66",
+    "testId": 66,
+    "memberof": "test/http-response-message.spec.js~describe65",
+    "testDepth": 1,
+    "longname": "test/http-response-message.spec.js~describe65.describe66",
+    "access": null,
+    "description": "constructor",
+    "lineNumber": 6
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it67",
+    "testId": 67,
+    "memberof": "test/http-response-message.spec.js~describe65.describe66",
+    "testDepth": 2,
+    "longname": "test/http-response-message.spec.js~describe65.describe66.it67",
+    "access": null,
+    "description": "should have a isSuccess defined by the xhr.status",
+    "lineNumber": 7
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it68",
+    "testId": 68,
+    "memberof": "test/http-response-message.spec.js~describe65.describe66",
+    "testDepth": 2,
+    "longname": "test/http-response-message.spec.js~describe65.describe66.it68",
+    "access": null,
+    "description": "have the xhr.status, xhr.response, xhr.statusText, responseType, reviver and headers as fields",
+    "lineNumber": 30
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it69",
+    "testId": 69,
+    "memberof": "test/http-response-message.spec.js~describe65.describe66",
+    "testDepth": 2,
+    "longname": "test/http-response-message.spec.js~describe65.describe66.it69",
+    "access": null,
+    "description": "will call the Headers.parse() if xhr.getAllResponseHeaders() is defined",
+    "lineNumber": 45
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it70",
+    "testId": 70,
+    "memberof": "test/http-response-message.spec.js~describe65.describe66",
+    "testDepth": 2,
+    "longname": "test/http-response-message.spec.js~describe65.describe66.it70",
+    "access": null,
+    "description": "will set responseType to an aliased version of the mimetype detected in the Content-Type header, will also store the original mimetype as mimeType",
+    "lineNumber": 55
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it71",
+    "testId": 71,
+    "memberof": "test/http-response-message.spec.js~describe65.describe66",
+    "testDepth": 2,
+    "longname": "test/http-response-message.spec.js~describe65.describe66.it71",
+    "access": null,
+    "description": "will split the Content-Type using the ; delimeter and use the first part as the mimeType",
+    "lineNumber": 63
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it72",
+    "testId": 72,
+    "memberof": "test/http-response-message.spec.js~describe65.describe66",
+    "testDepth": 2,
+    "longname": "test/http-response-message.spec.js~describe65.describe66.it72",
+    "access": null,
+    "description": "will use the mimeType as the responseType if there is no alias for it in the mimeTypes map",
+    "lineNumber": 71
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it73",
+    "testId": 73,
+    "memberof": "test/http-response-message.spec.js~describe65.describe66",
+    "testDepth": 2,
+    "longname": "test/http-response-message.spec.js~describe65.describe66.it73",
+    "access": null,
+    "description": "will set responseType to the responseType specified in the request if no Content-Type header was found, mimeType will be null",
+    "lineNumber": 78
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it74",
+    "testId": 74,
+    "memberof": "test/http-response-message.spec.js~describe65.describe66",
+    "testDepth": 2,
+    "longname": "test/http-response-message.spec.js~describe65.describe66.it74",
+    "access": null,
+    "description": "will use json if no responseType for the request was null",
+    "lineNumber": 87
+  },
+  {
+    "kind": "testDescribe",
+    "static": true,
+    "variation": null,
+    "name": "describe75",
+    "testId": 75,
+    "memberof": "test/http-response-message.spec.js~describe65",
+    "testDepth": 1,
+    "longname": "test/http-response-message.spec.js~describe65.describe75",
+    "access": null,
+    "description": "content",
+    "lineNumber": 94
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it76",
+    "testId": 76,
+    "memberof": "test/http-response-message.spec.js~describe65.describe75",
+    "testDepth": 2,
+    "longname": "test/http-response-message.spec.js~describe65.describe75.it76",
+    "access": null,
+    "description": "will return _content if defined",
+    "lineNumber": 95
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it77",
+    "testId": 77,
+    "memberof": "test/http-response-message.spec.js~describe65.describe75",
+    "testDepth": 2,
+    "longname": "test/http-response-message.spec.js~describe65.describe75.it77",
+    "access": null,
+    "description": "will return undefined if response is undefined",
+    "lineNumber": 102
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it78",
+    "testId": 78,
+    "memberof": "test/http-response-message.spec.js~describe65.describe75",
+    "testDepth": 2,
+    "longname": "test/http-response-message.spec.js~describe65.describe75.it78",
+    "access": null,
+    "description": "will return null if response is null",
+    "lineNumber": 107
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it79",
+    "testId": 79,
+    "memberof": "test/http-response-message.spec.js~describe65.describe75",
+    "testDepth": 2,
+    "longname": "test/http-response-message.spec.js~describe65.describe75.it79",
+    "access": null,
+    "description": "will JSON.parse if the response type is 'json'",
+    "lineNumber": 112
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it80",
+    "testId": 80,
+    "memberof": "test/http-response-message.spec.js~describe65.describe75",
+    "testDepth": 2,
+    "longname": "test/http-response-message.spec.js~describe65.describe75.it80",
+    "access": null,
+    "description": "will call the reviver if the response type is not 'json' and the reviver is defined",
+    "lineNumber": 121
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it81",
+    "testId": 81,
+    "memberof": "test/http-response-message.spec.js~describe65.describe75",
+    "testDepth": 2,
+    "longname": "test/http-response-message.spec.js~describe65.describe75.it81",
+    "access": null,
+    "description": "will return the response if the reviver is not set and the response type is not json",
+    "lineNumber": 130
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it82",
+    "testId": 82,
+    "memberof": "test/http-response-message.spec.js~describe65.describe75",
+    "testDepth": 2,
+    "longname": "test/http-response-message.spec.js~describe65.describe75.it82",
+    "access": null,
+    "description": "will catch expections on content if the response was not successful",
+    "lineNumber": 137
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it83",
+    "testId": 83,
+    "memberof": "test/http-response-message.spec.js~describe65.describe75",
+    "testDepth": 2,
+    "longname": "test/http-response-message.spec.js~describe65.describe75.it83",
+    "access": null,
+    "description": "will throw on content if the response was successful",
+    "lineNumber": 145
+  },
+  {
+    "kind": "testFile",
+    "static": true,
+    "variation": null,
+    "name": "test/jsonp-request-message.spec.js",
+    "memberof": null,
+    "longname": "test/jsonp-request-message.spec.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1,
+    "content": "import {JSONPRequestMessage, createJSONPRequestMessageProcessor} from '../src/jsonp-request-message';\nimport {Headers} from '../src/headers';\nimport {RequestMessageProcessor} from '../src/request-message-processor';\nimport { timeoutTransformer, callbackParameterNameTransformer } from '../src/transformers';\n\ndescribe(\"JSONPRequestMessage\", () => {\n  it(\"should have a constructor that correctly sets the methods and response type\", () => {\n    let url = {}, callbackName = {};\n    let jsonpRequest = new JSONPRequestMessage(url, callbackName);\n    expect(jsonpRequest.method).toBe('JSONP');\n    expect(jsonpRequest.url).toBe(url);\n    expect(jsonpRequest.content).toBeUndefined();\n    expect(jsonpRequest.headers).toEqual(jasmine.any(Headers));\n    expect(jsonpRequest.responseType).toBe('jsonp');\n    expect(jsonpRequest.callbackParameterName).toBe(callbackName);\n  });\n\n  describe(\"createJSONPRequestMessageProcessor\",() => {\n    it(\"should create a RequestMessageProcessor with an JSONPXHR and the correct transformers\", () => {\n      let httpProcessor = createJSONPRequestMessageProcessor();\n\n      expect(httpProcessor).toEqual(jasmine.any(RequestMessageProcessor));\n      expect(httpProcessor.XHRType).toBeDefined();\n      expect(httpProcessor.transformers).toContain(timeoutTransformer);\n      expect(httpProcessor.transformers).toContain(callbackParameterNameTransformer);\n    });\n  });\n\n  //TODO : Will have to create a jsonp preprocessor for karma to test an actual request\n});\n"
+  },
+  {
+    "kind": "testDescribe",
+    "static": true,
+    "variation": null,
+    "name": "describe84",
+    "testId": 84,
+    "memberof": "test/jsonp-request-message.spec.js",
+    "testDepth": 0,
+    "longname": "test/jsonp-request-message.spec.js~describe84",
+    "access": null,
+    "description": "JSONPRequestMessage",
+    "lineNumber": 6
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it85",
+    "testId": 85,
+    "memberof": "test/jsonp-request-message.spec.js~describe84",
+    "testDepth": 1,
+    "longname": "test/jsonp-request-message.spec.js~describe84.it85",
+    "access": null,
+    "description": "should have a constructor that correctly sets the methods and response type",
+    "lineNumber": 7
+  },
+  {
+    "kind": "testDescribe",
+    "static": true,
+    "variation": null,
+    "name": "describe86",
+    "testId": 86,
+    "memberof": "test/jsonp-request-message.spec.js~describe84",
+    "testDepth": 1,
+    "longname": "test/jsonp-request-message.spec.js~describe84.describe86",
+    "access": null,
+    "description": "createJSONPRequestMessageProcessor",
+    "lineNumber": 18
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it87",
+    "testId": 87,
+    "memberof": "test/jsonp-request-message.spec.js~describe84.describe86",
+    "testDepth": 2,
+    "longname": "test/jsonp-request-message.spec.js~describe84.describe86.it87",
+    "access": null,
+    "description": "should create a RequestMessageProcessor with an JSONPXHR and the correct transformers",
+    "lineNumber": 19
+  },
+  {
+    "kind": "testFile",
+    "static": true,
+    "variation": null,
+    "name": "test/request-message-processor.spec.js",
+    "memberof": null,
+    "longname": "test/request-message-processor.spec.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1,
+    "content": "import {RequestMessageProcessor} from '../src/request-message-processor';\nimport {HttpResponseMessage} from '../src/http-response-message';\n\ndescribe(\"Request message processor\", () => {\n  it(\"constructor() correctly setup the xhrType and the transformers\", () => {\n    var xhrType = {};\n    var transformers = {};\n    var processor = new RequestMessageProcessor(xhrType, transformers);\n\n    expect(processor.XHRType).toBe(xhrType);\n    expect(processor.transformers).toBe(transformers);\n  });\n\n  it(\"abort() tell the request to abort\", () => {\n    var processor = new RequestMessageProcessor();\n    let xhr = processor.xhr = jasmine.createSpyObj('xhr', ['abort']);\n    processor.abort();\n    expect(xhr.abort).toHaveBeenCalled();\n  });\n\n  it(\"abort() won't throw if the request hasn't started yet\", () => {\n    var processor = new RequestMessageProcessor();\n    expect(() => processor.abort()).not.toThrow();\n  });\n\n  describe(\"process()\", () => {\n    let openSpy, sendSpy, transformers, reqProcessor, message, client;\n\n    class MockXhrType {\n      constructor() {\n        this.open = openSpy = jasmine.createSpy(\"open\");\n        this.send = sendSpy = jasmine.createSpy(\"send\");\n      }\n    }\n\n    beforeEach(() => {\n      transformers = [];\n      reqProcessor = new RequestMessageProcessor(MockXhrType, transformers);\n      message = {\n        method: 'get',\n        params: [],\n        baseUrl: '',\n        url: 'some/url',\n        content: {},\n        responseType: \"test\",\n        reviver: (obj) => obj\n      };\n      client = {};\n    });\n\n    it(\"should create a new instance of the XHRType\", () => {\n      reqProcessor.process(client, message);\n      expect(reqProcessor.xhr).toEqual(jasmine.any(MockXhrType));\n    });\n\n    it(\"should call xhr.open with the method, full url and ajax set to true\", () => {\n      reqProcessor.process(client, message);\n      expect(openSpy).toHaveBeenCalledWith(message.method, message.url, true);\n    });\n\n    it(\"should call xhr.send with the message content\", () => {\n      reqProcessor.process(client, message);\n      expect(sendSpy).toHaveBeenCalledWith(message.content);\n    });\n\n    it(\"will combine the message baseUrl and message url and set it to the fullUrl\", () => {\n      message.baseUrl = \"/the/base\";\n      message.url = \"and/the/path\";\n\n      reqProcessor.process(client, message);\n      expect(message.fullUrl).toBe(\"/the/base/and/the/path\");\n    });\n\n    it(\"should run through all the transformers\", () => {\n      let transformSpy = jasmine.createSpy(\"transformSpy\");\n      reqProcessor.transformers.push(transformSpy);\n      reqProcessor.transformers.push(transformSpy);\n      reqProcessor.process(client, message);\n\n      expect(transformSpy).toHaveBeenCalledWith(client, reqProcessor, message, reqProcessor.xhr);\n      expect(transformSpy.calls.count()).toBe(2);\n    });\n\n    //The next couple of functions are breaking the idea of a unit test and treading\n    //into integration tests but spying on the constructor of HttpResponseMessage isn't possible\n    it(\"will resolve if the onload response is successful\", (done) => {\n      let responseObj = {};\n\n      reqProcessor.process(client, message)\n        .then((response) => {\n          expect(response).toEqual(jasmine.any(HttpResponseMessage));\n          expect(response.requestMessage).toBe(message);\n          expect(response.statusCode).toBe(200);\n          expect(response.response).toBe(responseObj);\n          expect(response.responseType).toBe(\"test\");\n          expect(response.statusText).toBe(\"status test\");\n          expect(response.reviver).toBe(message.reviver);\n        })\n        .catch(() => expect(false).toBeTruthy(\"Should have failed\"))\n        .then(done);\n\n      let xhr = reqProcessor.xhr;\n      xhr.status = 200;\n      xhr.statusText = \"status test\";\n      xhr.response = responseObj;\n      xhr.onload();\n    });\n\n    it(\"will reject if the onload response has failed\", (done) => {\n      let responseObj = {};\n\n      reqProcessor.process(client, message)\n        .then((response) => expect(false).toBeTruthy(\"This should have failed\"))\n        .catch((response) => {\n          expect(response).toEqual(jasmine.any(HttpResponseMessage));\n          expect(response.requestMessage).toBe(message);\n          expect(response.statusCode).toBe(401);\n          expect(response.response).toBe(responseObj);\n          expect(response.responseType).toBe(\"test\");\n          expect(response.statusText).toBe(\"status test\");\n          expect(response.reviver).toBe(message.reviver);\n        })\n        .then(done);\n\n      let xhr = reqProcessor.xhr;\n      xhr.status = 401;\n      xhr.statusText = \"status test\";\n      xhr.response = responseObj;\n      xhr.onload();\n    });\n\n    it(\"will reject if the ontimeout was called\", (done) => {\n      let errorResponse = {};\n      reqProcessor.process(client, message)\n        .then((response) => expect(false).toBeTruthy(\"This should have failed\"))\n        .catch((response) => {\n          expect(response).toEqual(jasmine.any(HttpResponseMessage));\n          expect(response.requestMessage).toBe(message);\n          expect(response.response).toBe(errorResponse);\n          expect(response.responseType).toBe(\"timeout\");\n        })\n        .then(done);\n\n      let xhr = reqProcessor.xhr;\n      xhr.ontimeout(errorResponse);\n    });\n\n    it(\"will reject if the onerror was called\", (done) => {\n      let errorResponse = {};\n      reqProcessor.process(client, message)\n        .then((response) => expect(false).toBeTruthy(\"This should have failed\"))\n        .catch((response) => {\n          expect(response).toEqual(jasmine.any(HttpResponseMessage));\n          expect(response.requestMessage).toBe(message);\n          expect(response.response).toBe(errorResponse);\n          expect(response.responseType).toBe(\"error\");\n        })\n        .then(done);\n\n      let xhr = reqProcessor.xhr;\n      xhr.onerror(errorResponse);\n    });\n\n    it(\"will reject if the onabort was called\", (done) => {\n      let errorResponse = {};\n      reqProcessor.process(client, message)\n        .then((response) => expect(false).toBeTruthy(\"This should have failed\"))\n        .catch((response) => {\n          expect(response).toEqual(jasmine.any(HttpResponseMessage));\n          expect(response.requestMessage).toBe(message);\n          expect(response.response).toBe(errorResponse);\n          expect(response.responseType).toBe(\"abort\");\n        })\n        .then(done);\n\n      let xhr = reqProcessor.xhr;\n      xhr.status = 200;\n      xhr.onabort(errorResponse);\n    });\n  });\n});\n"
+  },
+  {
+    "kind": "testDescribe",
+    "static": true,
+    "variation": null,
+    "name": "describe88",
+    "testId": 88,
+    "memberof": "test/request-message-processor.spec.js",
+    "testDepth": 0,
+    "longname": "test/request-message-processor.spec.js~describe88",
+    "access": null,
+    "description": "Request message processor",
+    "lineNumber": 4
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it89",
+    "testId": 89,
+    "memberof": "test/request-message-processor.spec.js~describe88",
+    "testDepth": 1,
+    "longname": "test/request-message-processor.spec.js~describe88.it89",
+    "access": null,
+    "description": "constructor() correctly setup the xhrType and the transformers",
+    "lineNumber": 5
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it90",
+    "testId": 90,
+    "memberof": "test/request-message-processor.spec.js~describe88",
+    "testDepth": 1,
+    "longname": "test/request-message-processor.spec.js~describe88.it90",
+    "access": null,
+    "description": "abort() tell the request to abort",
+    "lineNumber": 14
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it91",
+    "testId": 91,
+    "memberof": "test/request-message-processor.spec.js~describe88",
+    "testDepth": 1,
+    "longname": "test/request-message-processor.spec.js~describe88.it91",
+    "access": null,
+    "description": "abort() won't throw if the request hasn't started yet",
+    "lineNumber": 21
+  },
+  {
+    "kind": "testDescribe",
+    "static": true,
+    "variation": null,
+    "name": "describe92",
+    "testId": 92,
+    "memberof": "test/request-message-processor.spec.js~describe88",
+    "testDepth": 1,
+    "longname": "test/request-message-processor.spec.js~describe88.describe92",
+    "access": null,
+    "description": "process()",
+    "lineNumber": 26
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it93",
+    "testId": 93,
+    "memberof": "test/request-message-processor.spec.js~describe88.describe92",
+    "testDepth": 2,
+    "longname": "test/request-message-processor.spec.js~describe88.describe92.it93",
+    "access": null,
+    "description": "should create a new instance of the XHRType",
+    "lineNumber": 51
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it94",
+    "testId": 94,
+    "memberof": "test/request-message-processor.spec.js~describe88.describe92",
+    "testDepth": 2,
+    "longname": "test/request-message-processor.spec.js~describe88.describe92.it94",
+    "access": null,
+    "description": "should call xhr.open with the method, full url and ajax set to true",
+    "lineNumber": 56
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it95",
+    "testId": 95,
+    "memberof": "test/request-message-processor.spec.js~describe88.describe92",
+    "testDepth": 2,
+    "longname": "test/request-message-processor.spec.js~describe88.describe92.it95",
+    "access": null,
+    "description": "should call xhr.send with the message content",
+    "lineNumber": 61
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it96",
+    "testId": 96,
+    "memberof": "test/request-message-processor.spec.js~describe88.describe92",
+    "testDepth": 2,
+    "longname": "test/request-message-processor.spec.js~describe88.describe92.it96",
+    "access": null,
+    "description": "will combine the message baseUrl and message url and set it to the fullUrl",
+    "lineNumber": 66
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it97",
+    "testId": 97,
+    "memberof": "test/request-message-processor.spec.js~describe88.describe92",
+    "testDepth": 2,
+    "longname": "test/request-message-processor.spec.js~describe88.describe92.it97",
+    "access": null,
+    "description": "should run through all the transformers",
+    "lineNumber": 74
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it98",
+    "testId": 98,
+    "memberof": "test/request-message-processor.spec.js~describe88.describe92",
+    "testDepth": 2,
+    "longname": "test/request-message-processor.spec.js~describe88.describe92.it98",
+    "access": null,
+    "description": "will resolve if the onload response is successful",
+    "lineNumber": 86
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it99",
+    "testId": 99,
+    "memberof": "test/request-message-processor.spec.js~describe88.describe92",
+    "testDepth": 2,
+    "longname": "test/request-message-processor.spec.js~describe88.describe92.it99",
+    "access": null,
+    "description": "will reject if the onload response has failed",
+    "lineNumber": 109
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it100",
+    "testId": 100,
+    "memberof": "test/request-message-processor.spec.js~describe88.describe92",
+    "testDepth": 2,
+    "longname": "test/request-message-processor.spec.js~describe88.describe92.it100",
+    "access": null,
+    "description": "will reject if the ontimeout was called",
+    "lineNumber": 132
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it101",
+    "testId": 101,
+    "memberof": "test/request-message-processor.spec.js~describe88.describe92",
+    "testDepth": 2,
+    "longname": "test/request-message-processor.spec.js~describe88.describe92.it101",
+    "access": null,
+    "description": "will reject if the onerror was called",
+    "lineNumber": 148
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it102",
+    "testId": 102,
+    "memberof": "test/request-message-processor.spec.js~describe88.describe92",
+    "testDepth": 2,
+    "longname": "test/request-message-processor.spec.js~describe88.describe92.it102",
+    "access": null,
+    "description": "will reject if the onabort was called",
+    "lineNumber": 164
+  },
+  {
+    "kind": "testFile",
+    "static": true,
+    "variation": null,
+    "name": "test/transformers.spec.js",
+    "memberof": null,
+    "longname": "test/transformers.spec.js",
+    "access": null,
+    "description": null,
+    "lineNumber": 1,
+    "content": "import * as Transforms from '../src/transformers';\n\ndescribe('transformers', () => {\n\n  it(\"timeout should set the xhr timeout to the message timeout if defined in the message\", () => {\n    let xhr = {};\n\n    Transforms.timeoutTransformer(null, null, {}, xhr);\n    expect(xhr.timeout).toBeUndefined();\n\n    Transforms.timeoutTransformer(null, null, {timeout: 200}, xhr);\n    expect(xhr.timeout).toBe(200);\n  });\n\n  it(\"callbackParameterNameTransformer should set the xhr.callbackParameterName if defined in the message\", () => {\n    let xhr = {};\n\n    Transforms.callbackParameterNameTransformer(null, null, {}, xhr);\n    expect(xhr.callbackParameterName).toBeUndefined();\n\n    Transforms.callbackParameterNameTransformer(null, null, {callbackParameterName: 'foo'}, xhr);\n    expect(xhr.callbackParameterName).toBe('foo');\n  });\n\n  it(\"credentialsTransformer should set the xhr.withCredentials if defined in the message\", () => {\n    let xhr = {}, credentials = {};\n\n    Transforms.credentialsTransformer(null, null, {}, xhr);\n    expect(xhr.withCredentials).toBeUndefined();\n\n    Transforms.credentialsTransformer(null, null, {withCredentials: credentials}, xhr);\n    expect(xhr.withCredentials).toBe(credentials);\n  });\n\n\n  it(\"responseTypeTransformer should change the responseType to text when it's json\", () => {\n    let xhr = {upload: {}},\n        progressCallback = {};\n\n    Transforms.progressTransformer(null, null, {}, xhr);\n    expect(xhr.upload.onprogress).toBeUndefined();\n\n    Transforms.progressTransformer(null, null, {progressCallback: progressCallback}, xhr);\n    expect(xhr.upload.onprogress).toBe(progressCallback);\n  });\n\n\n});\n"
+  },
+  {
+    "kind": "testDescribe",
+    "static": true,
+    "variation": null,
+    "name": "describe103",
+    "testId": 103,
+    "memberof": "test/transformers.spec.js",
+    "testDepth": 0,
+    "longname": "test/transformers.spec.js~describe103",
+    "access": null,
+    "description": "transformers",
+    "lineNumber": 3
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it104",
+    "testId": 104,
+    "memberof": "test/transformers.spec.js~describe103",
+    "testDepth": 1,
+    "longname": "test/transformers.spec.js~describe103.it104",
+    "access": null,
+    "description": "timeout should set the xhr timeout to the message timeout if defined in the message",
+    "lineNumber": 5
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it105",
+    "testId": 105,
+    "memberof": "test/transformers.spec.js~describe103",
+    "testDepth": 1,
+    "longname": "test/transformers.spec.js~describe103.it105",
+    "access": null,
+    "description": "callbackParameterNameTransformer should set the xhr.callbackParameterName if defined in the message",
+    "lineNumber": 15
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it106",
+    "testId": 106,
+    "memberof": "test/transformers.spec.js~describe103",
+    "testDepth": 1,
+    "longname": "test/transformers.spec.js~describe103.it106",
+    "access": null,
+    "description": "credentialsTransformer should set the xhr.withCredentials if defined in the message",
+    "lineNumber": 25
+  },
+  {
+    "kind": "testIt",
+    "static": true,
+    "variation": null,
+    "name": "it107",
+    "testId": 107,
+    "memberof": "test/transformers.spec.js~describe103",
+    "testDepth": 1,
+    "longname": "test/transformers.spec.js~describe103.it107",
+    "access": null,
+    "description": "responseTypeTransformer should change the responseType to text when it's json",
+    "lineNumber": 36
+  }
+]
