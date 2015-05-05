@@ -8289,8 +8289,8 @@
                                           "arguments": [
                                             {
                                               "type": "Literal",
-                                              "value": ", ",
-                                              "raw": "', '",
+                                              "value": "\n",
+                                              "raw": "'\\n'",
                                               "range": [
                                                 3116,
                                                 3120

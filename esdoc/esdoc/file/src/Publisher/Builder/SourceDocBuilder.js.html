@@ -207,7 +207,7 @@ export default class SourceDocBuilder extends DocBuilder {
       ice.text(&apos;lines&apos;, lines);
       ice.text(&apos;updated&apos;, date);
       ice.text(&apos;size&apos;, `${stat.size} byte`);
-      ice.load(&apos;identifier&apos;, identifiers.join(&apos;, &apos;) || &apos;-&apos;);
+      ice.load(&apos;identifier&apos;, identifiers.join(&apos;\n&apos;) || &apos;-&apos;);
     });
     return ice.html;
   }
