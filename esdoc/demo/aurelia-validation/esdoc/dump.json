@@ -7761,11 +7761,11 @@
     "variation": null,
     "name": "Infinity",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
-    "memberof": "DefaultExternal/BuiltinExternal.js",
-    "longname": "DefaultExternal/BuiltinExternal.js~Infinity",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Infinity",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -7773,11 +7773,11 @@
     "variation": null,
     "name": "NaN",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
-    "memberof": "DefaultExternal/BuiltinExternal.js",
-    "longname": "DefaultExternal/BuiltinExternal.js~NaN",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~NaN",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -7785,11 +7785,11 @@
     "variation": null,
     "name": "undefined",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
-    "memberof": "DefaultExternal/BuiltinExternal.js",
-    "longname": "DefaultExternal/BuiltinExternal.js~undefined",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~undefined",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -7797,11 +7797,11 @@
     "variation": null,
     "name": "null",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
-    "memberof": "DefaultExternal/BuiltinExternal.js",
-    "longname": "DefaultExternal/BuiltinExternal.js~null",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~null",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -7809,11 +7809,11 @@
     "variation": null,
     "name": "Object",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
-    "memberof": "DefaultExternal/BuiltinExternal.js",
-    "longname": "DefaultExternal/BuiltinExternal.js~Object",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Object",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -7821,11 +7821,11 @@
     "variation": null,
     "name": "object",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
-    "memberof": "DefaultExternal/BuiltinExternal.js",
-    "longname": "DefaultExternal/BuiltinExternal.js~object",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~object",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -7833,11 +7833,11 @@
     "variation": null,
     "name": "Function",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
-    "memberof": "DefaultExternal/BuiltinExternal.js",
-    "longname": "DefaultExternal/BuiltinExternal.js~Function",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Function",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -7845,11 +7845,11 @@
     "variation": null,
     "name": "function",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
-    "memberof": "DefaultExternal/BuiltinExternal.js",
-    "longname": "DefaultExternal/BuiltinExternal.js~function",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~function",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -7857,11 +7857,11 @@
     "variation": null,
     "name": "Boolean",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
-    "memberof": "DefaultExternal/BuiltinExternal.js",
-    "longname": "DefaultExternal/BuiltinExternal.js~Boolean",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Boolean",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -7869,11 +7869,11 @@
     "variation": null,
     "name": "boolean",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
-    "memberof": "DefaultExternal/BuiltinExternal.js",
-    "longname": "DefaultExternal/BuiltinExternal.js~boolean",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~boolean",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -7881,11 +7881,11 @@
     "variation": null,
     "name": "Symbol",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
-    "memberof": "DefaultExternal/BuiltinExternal.js",
-    "longname": "DefaultExternal/BuiltinExternal.js~Symbol",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Symbol",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -7893,11 +7893,11 @@
     "variation": null,
     "name": "Error",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
-    "memberof": "DefaultExternal/BuiltinExternal.js",
-    "longname": "DefaultExternal/BuiltinExternal.js~Error",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Error",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -7905,11 +7905,11 @@
     "variation": null,
     "name": "EvalError",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
-    "memberof": "DefaultExternal/BuiltinExternal.js",
-    "longname": "DefaultExternal/BuiltinExternal.js~EvalError",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~EvalError",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -7917,11 +7917,11 @@
     "variation": null,
     "name": "InternalError",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
-    "memberof": "DefaultExternal/BuiltinExternal.js",
-    "longname": "DefaultExternal/BuiltinExternal.js~InternalError",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~InternalError",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -7929,11 +7929,11 @@
     "variation": null,
     "name": "RangeError",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
-    "memberof": "DefaultExternal/BuiltinExternal.js",
-    "longname": "DefaultExternal/BuiltinExternal.js~RangeError",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~RangeError",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -7941,11 +7941,11 @@
     "variation": null,
     "name": "ReferenceError",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
-    "memberof": "DefaultExternal/BuiltinExternal.js",
-    "longname": "DefaultExternal/BuiltinExternal.js~ReferenceError",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~ReferenceError",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -7953,11 +7953,11 @@
     "variation": null,
     "name": "SyntaxError",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
-    "memberof": "DefaultExternal/BuiltinExternal.js",
-    "longname": "DefaultExternal/BuiltinExternal.js~SyntaxError",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~SyntaxError",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -7965,11 +7965,11 @@
     "variation": null,
     "name": "TypeError",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
-    "memberof": "DefaultExternal/BuiltinExternal.js",
-    "longname": "DefaultExternal/BuiltinExternal.js~TypeError",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~TypeError",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -7977,11 +7977,11 @@
     "variation": null,
     "name": "URIError",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
-    "memberof": "DefaultExternal/BuiltinExternal.js",
-    "longname": "DefaultExternal/BuiltinExternal.js~URIError",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~URIError",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -7989,11 +7989,11 @@
     "variation": null,
     "name": "Number",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
-    "memberof": "DefaultExternal/BuiltinExternal.js",
-    "longname": "DefaultExternal/BuiltinExternal.js~Number",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Number",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -8001,11 +8001,11 @@
     "variation": null,
     "name": "number",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
-    "memberof": "DefaultExternal/BuiltinExternal.js",
-    "longname": "DefaultExternal/BuiltinExternal.js~number",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~number",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -8013,11 +8013,11 @@
     "variation": null,
     "name": "Date",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
-    "memberof": "DefaultExternal/BuiltinExternal.js",
-    "longname": "DefaultExternal/BuiltinExternal.js~Date",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Date",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -8025,11 +8025,11 @@
     "variation": null,
     "name": "String",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
-    "memberof": "DefaultExternal/BuiltinExternal.js",
-    "longname": "DefaultExternal/BuiltinExternal.js~String",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~String",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -8037,11 +8037,11 @@
     "variation": null,
     "name": "string",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
-    "memberof": "DefaultExternal/BuiltinExternal.js",
-    "longname": "DefaultExternal/BuiltinExternal.js~string",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~string",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -8049,11 +8049,11 @@
     "variation": null,
     "name": "RegExp",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
-    "memberof": "DefaultExternal/BuiltinExternal.js",
-    "longname": "DefaultExternal/BuiltinExternal.js~RegExp",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~RegExp",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -8061,11 +8061,11 @@
     "variation": null,
     "name": "Array",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
-    "memberof": "DefaultExternal/BuiltinExternal.js",
-    "longname": "DefaultExternal/BuiltinExternal.js~Array",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Array",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -8073,11 +8073,11 @@
     "variation": null,
     "name": "Int8Array",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
-    "memberof": "DefaultExternal/BuiltinExternal.js",
-    "longname": "DefaultExternal/BuiltinExternal.js~Int8Array",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Int8Array",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -8085,11 +8085,11 @@
     "variation": null,
     "name": "Uint8Array",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
-    "memberof": "DefaultExternal/BuiltinExternal.js",
-    "longname": "DefaultExternal/BuiltinExternal.js~Uint8Array",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Uint8Array",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -8097,11 +8097,11 @@
     "variation": null,
     "name": "Uint8ClampedArray",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
-    "memberof": "DefaultExternal/BuiltinExternal.js",
-    "longname": "DefaultExternal/BuiltinExternal.js~Uint8ClampedArray",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Uint8ClampedArray",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -8109,11 +8109,11 @@
     "variation": null,
     "name": "Int16Array",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
-    "memberof": "DefaultExternal/BuiltinExternal.js",
-    "longname": "DefaultExternal/BuiltinExternal.js~Int16Array",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Int16Array",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -8121,11 +8121,11 @@
     "variation": null,
     "name": "Uint16Array",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
-    "memberof": "DefaultExternal/BuiltinExternal.js",
-    "longname": "DefaultExternal/BuiltinExternal.js~Uint16Array",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Uint16Array",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -8133,11 +8133,11 @@
     "variation": null,
     "name": "Int32Array",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
-    "memberof": "DefaultExternal/BuiltinExternal.js",
-    "longname": "DefaultExternal/BuiltinExternal.js~Int32Array",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Int32Array",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -8145,11 +8145,11 @@
     "variation": null,
     "name": "Uint32Array",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
-    "memberof": "DefaultExternal/BuiltinExternal.js",
-    "longname": "DefaultExternal/BuiltinExternal.js~Uint32Array",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Uint32Array",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -8157,11 +8157,11 @@
     "variation": null,
     "name": "Float32Array",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
-    "memberof": "DefaultExternal/BuiltinExternal.js",
-    "longname": "DefaultExternal/BuiltinExternal.js~Float32Array",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Float32Array",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -8169,11 +8169,11 @@
     "variation": null,
     "name": "Float64Array",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
-    "memberof": "DefaultExternal/BuiltinExternal.js",
-    "longname": "DefaultExternal/BuiltinExternal.js~Float64Array",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Float64Array",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -8181,11 +8181,11 @@
     "variation": null,
     "name": "Map",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
-    "memberof": "DefaultExternal/BuiltinExternal.js",
-    "longname": "DefaultExternal/BuiltinExternal.js~Map",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Map",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -8193,11 +8193,11 @@
     "variation": null,
     "name": "Set",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
-    "memberof": "DefaultExternal/BuiltinExternal.js",
-    "longname": "DefaultExternal/BuiltinExternal.js~Set",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Set",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -8205,11 +8205,11 @@
     "variation": null,
     "name": "WeakMap",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
-    "memberof": "DefaultExternal/BuiltinExternal.js",
-    "longname": "DefaultExternal/BuiltinExternal.js~WeakMap",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~WeakMap",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -8217,11 +8217,11 @@
     "variation": null,
     "name": "WeakSet",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
-    "memberof": "DefaultExternal/BuiltinExternal.js",
-    "longname": "DefaultExternal/BuiltinExternal.js~WeakSet",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~WeakSet",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -8229,11 +8229,11 @@
     "variation": null,
     "name": "ArrayBuffer",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
-    "memberof": "DefaultExternal/BuiltinExternal.js",
-    "longname": "DefaultExternal/BuiltinExternal.js~ArrayBuffer",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~ArrayBuffer",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -8241,11 +8241,11 @@
     "variation": null,
     "name": "DataView",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
-    "memberof": "DefaultExternal/BuiltinExternal.js",
-    "longname": "DefaultExternal/BuiltinExternal.js~DataView",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~DataView",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -8253,11 +8253,11 @@
     "variation": null,
     "name": "JSON",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
-    "memberof": "DefaultExternal/BuiltinExternal.js",
-    "longname": "DefaultExternal/BuiltinExternal.js~JSON",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~JSON",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -8265,11 +8265,11 @@
     "variation": null,
     "name": "Promise",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
-    "memberof": "DefaultExternal/BuiltinExternal.js",
-    "longname": "DefaultExternal/BuiltinExternal.js~Promise",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Promise",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -8277,11 +8277,11 @@
     "variation": null,
     "name": "Generator",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
-    "memberof": "DefaultExternal/BuiltinExternal.js",
-    "longname": "DefaultExternal/BuiltinExternal.js~Generator",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Generator",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -8289,11 +8289,11 @@
     "variation": null,
     "name": "GeneratorFunction",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
-    "memberof": "DefaultExternal/BuiltinExternal.js",
-    "longname": "DefaultExternal/BuiltinExternal.js~GeneratorFunction",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~GeneratorFunction",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -8301,11 +8301,11 @@
     "variation": null,
     "name": "Reflect",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
-    "memberof": "DefaultExternal/BuiltinExternal.js",
-    "longname": "DefaultExternal/BuiltinExternal.js~Reflect",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Reflect",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -8313,11 +8313,11 @@
     "variation": null,
     "name": "Proxy",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
-    "memberof": "DefaultExternal/BuiltinExternal.js",
-    "longname": "DefaultExternal/BuiltinExternal.js~Proxy",
+    "memberof": "BuiltinExternal/ECMAScriptExternal.js",
+    "longname": "BuiltinExternal/ECMAScriptExternal.js~Proxy",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -8325,11 +8325,11 @@
     "variation": null,
     "name": "CanvasRenderingContext2D",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D",
-    "memberof": "DefaultExternal/WebAPIExternal.js",
-    "longname": "DefaultExternal/WebAPIExternal.js~CanvasRenderingContext2D",
+    "memberof": "BuiltinExternal/WebAPIExternal.js",
+    "longname": "BuiltinExternal/WebAPIExternal.js~CanvasRenderingContext2D",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -8337,11 +8337,11 @@
     "variation": null,
     "name": "DocumentFragment",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment",
-    "memberof": "DefaultExternal/WebAPIExternal.js",
-    "longname": "DefaultExternal/WebAPIExternal.js~DocumentFragment",
+    "memberof": "BuiltinExternal/WebAPIExternal.js",
+    "longname": "BuiltinExternal/WebAPIExternal.js~DocumentFragment",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -8349,11 +8349,11 @@
     "variation": null,
     "name": "Element",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/API/Element",
-    "memberof": "DefaultExternal/WebAPIExternal.js",
-    "longname": "DefaultExternal/WebAPIExternal.js~Element",
+    "memberof": "BuiltinExternal/WebAPIExternal.js",
+    "longname": "BuiltinExternal/WebAPIExternal.js~Element",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -8361,11 +8361,11 @@
     "variation": null,
     "name": "Event",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/API/Event",
-    "memberof": "DefaultExternal/WebAPIExternal.js",
-    "longname": "DefaultExternal/WebAPIExternal.js~Event",
+    "memberof": "BuiltinExternal/WebAPIExternal.js",
+    "longname": "BuiltinExternal/WebAPIExternal.js~Event",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -8373,11 +8373,11 @@
     "variation": null,
     "name": "Node",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/API/Node",
-    "memberof": "DefaultExternal/WebAPIExternal.js",
-    "longname": "DefaultExternal/WebAPIExternal.js~Node",
+    "memberof": "BuiltinExternal/WebAPIExternal.js",
+    "longname": "BuiltinExternal/WebAPIExternal.js~Node",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -8385,11 +8385,11 @@
     "variation": null,
     "name": "NodeList",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/API/NodeList",
-    "memberof": "DefaultExternal/WebAPIExternal.js",
-    "longname": "DefaultExternal/WebAPIExternal.js~NodeList",
+    "memberof": "BuiltinExternal/WebAPIExternal.js",
+    "longname": "BuiltinExternal/WebAPIExternal.js~NodeList",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "external",
@@ -8397,11 +8397,11 @@
     "variation": null,
     "name": "XMLHttpRequest",
     "externalLink": "https://developer.mozilla.org/en/docs/Web/API/XMLHttpRequest",
-    "memberof": "DefaultExternal/WebAPIExternal.js",
-    "longname": "DefaultExternal/WebAPIExternal.js~XMLHttpRequest",
+    "memberof": "BuiltinExternal/WebAPIExternal.js",
+    "longname": "BuiltinExternal/WebAPIExternal.js~XMLHttpRequest",
     "access": null,
     "description": null,
-    "defaultExternal": true
+    "builtinExternal": true
   },
   {
     "kind": "testFile",

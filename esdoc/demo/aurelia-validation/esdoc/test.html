@@ -14,9 +14,9 @@
 
 <header>
   <a href="./">Home</a>
-  <a href="symbols.html">Symbol</a>
+  <a href="identifiers.html">Identifier</a>
   <a href="source.html">Source</a>
-  <a href="test.html">Test</a>
+  <a href="test.html" data-ice="testLink">Test</a>
   <a data-ice="repoURL" href="https://github.com/aurelia/validation" class="repo-url-github">Repository</a>
   <div class="search-box">
   <span>
@@ -112,31 +112,30 @@
 <table class="test-summary">
   <thead>
     <tr>
-      <td>Description</td>
-      <td>Target</td>
+      <td class="test-description">Description</td>
+      <td class="test-target">Identifier</td>
       <td class="test-count">Count</td>
     </tr>
   </thead>
 
   <tbody data-ice="tests">
-  
 <tr class="test-describe" data-ice="testDescribe" style="display: none;" data-test-depth="0">
   <td data-ice="testDescription" style="padding-left: 10px"><span class="toggle closed"></span><span><a href="test-file/test/asyncValidation.spec.js.html#lineNumber12"><p>Tests on async validation: validation rule</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td data-ice="testCount">2</td>
 </tr>
 
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/asyncValidation.spec.js.html#lineNumber13"><p>should fulfil a valid validation and resolve to true</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/asyncValidation.spec.js.html#lineNumber20"><p>should fulfil an invalid validation and resolve to false</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 
@@ -144,20 +143,20 @@
 <tr class="test-describe" data-ice="testDescribe" style="display: none;" data-test-depth="0">
   <td data-ice="testDescription" style="padding-left: 10px"><span class="toggle closed"></span><span><a href="test-file/test/asyncValidation.spec.js.html#lineNumber28"><p>Tests on async validation: validation collection</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td data-ice="testCount">2</td>
 </tr>
 
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/asyncValidation.spec.js.html#lineNumber29"><p>should fulfil with a valid validation</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/asyncValidation.spec.js.html#lineNumber37"><p>should fulfil with an invalid validation</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 
@@ -165,20 +164,20 @@
 <tr class="test-describe" data-ice="testDescribe" style="display: none;" data-test-depth="0">
   <td data-ice="testDescription" style="padding-left: 10px"><span class="toggle closed"></span><span><a href="test-file/test/asyncValidation.spec.js.html#lineNumber47"><p>Tests on async validation: validation collection with inner collection</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td data-ice="testCount">2</td>
 </tr>
 
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/asyncValidation.spec.js.html#lineNumber48"><p>should fulfil a valid validation</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/asyncValidation.spec.js.html#lineNumber59"><p>should fulfil an invalid validation</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 
@@ -186,56 +185,56 @@
 <tr class="test-describe" data-ice="testDescribe" style="display: none;" data-test-depth="0">
   <td data-ice="testDescription" style="padding-left: 10px"><span class="toggle closed"></span><span><a href="test-file/test/i18n.spec.js.html#lineNumber23"><p>I18N tests: messages</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td data-ice="testCount">8</td>
 </tr>
 
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/i18n.spec.js.html#lineNumber24"><p>should use a default message (en-US) without loading a locale</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/i18n.spec.js.html#lineNumber37"><p>should result in properly translated default error message for nl-BE</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/i18n.spec.js.html#lineNumber50"><p>should result in properly translated default error message for nl-NL</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/i18n.spec.js.html#lineNumber63"><p>can change locale on the fly</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/i18n.spec.js.html#lineNumber79"><p>should result in properly translated default error message for de-DE</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/i18n.spec.js.html#lineNumber92"><p>should result in properly translated default error message for fr-FR</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/i18n.spec.js.html#lineNumber106"><p>should result in properly translated default error message for es-MX</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/i18n.spec.js.html#lineNumber119"><p>should result in properly translated default error message for en-US</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 
@@ -243,20 +242,20 @@
 <tr class="test-describe" data-ice="testDescribe" style="display: none;" data-test-depth="0">
   <td data-ice="testDescription" style="padding-left: 10px"><span class="toggle closed"></span><span><a href="test-file/test/i18n.spec.js.html#lineNumber133"><p>I18N tests: number</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td data-ice="testCount">2</td>
 </tr>
 
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/i18n.spec.js.html#lineNumber134"><p>should use a default number format (en-US) without loading a locale</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/i18n.spec.js.html#lineNumber154"><p>should result in properly translated error message</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 
@@ -264,38 +263,38 @@
 <tr class="test-describe" data-ice="testDescribe" style="display: none;" data-test-depth="0">
   <td data-ice="testDescription" style="padding-left: 10px"><span class="toggle closed"></span><span><a href="test-file/test/logicalOperators/if-else.integration.spec.js.html#lineNumber20"><p>Integration tests with &apos;if&apos; and &apos;else&apos;</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td data-ice="testCount">5</td>
 </tr>
 
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/logicalOperators/if-else.integration.spec.js.html#lineNumber21"><p>should work with a simple if statement</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/logicalOperators/if-else.integration.spec.js.html#lineNumber45"><p>should work with isNotEmpty</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/logicalOperators/if-else.integration.spec.js.html#lineNumber70"><p>should work with a simple if and else statement</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/logicalOperators/if-else.integration.spec.js.html#lineNumber106"><p>should work with nested if and else statement</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/logicalOperators/if-else.integration.spec.js.html#lineNumber162"><p>should work with endIf and else statement</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 
@@ -303,32 +302,32 @@
 <tr class="test-describe" data-ice="testDescribe" style="display: none;" data-test-depth="0">
   <td data-ice="testDescription" style="padding-left: 10px"><span class="toggle closed"></span><span><a href="test-file/test/logicalOperators/switch-case.integration.spec.js.html#lineNumber20"><p>Integration tests with switch cases</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td data-ice="testCount">4</td>
 </tr>
 
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/logicalOperators/switch-case.integration.spec.js.html#lineNumber21"><p>should work with a simple switch statement</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/logicalOperators/switch-case.integration.spec.js.html#lineNumber70"><p>should work with a simple switch statement containing a default</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/logicalOperators/switch-case.integration.spec.js.html#lineNumber125"><p>should work with a simple switch statement containing an endcase</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/logicalOperators/switch-case.integration.spec.js.html#lineNumber173"><p>should allow the switch-expression to be optional</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 
@@ -336,32 +335,32 @@
 <tr class="test-describe" data-ice="testDescribe" style="display: none;" data-test-depth="0">
   <td data-ice="testDescription" style="padding-left: 10px"><span class="toggle closed"></span><span><a href="test-file/test/nested-properties.spec.js.html#lineNumber25"><p>Nested property tests</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td data-ice="testCount">4</td>
 </tr>
 
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/nested-properties.spec.js.html#lineNumber26"><p>should work on empty, nested properties</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/nested-properties.spec.js.html#lineNumber35"><p>should bind to nested properties</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/nested-properties.spec.js.html#lineNumber67"><p>should recover when any part of the nested property path changes</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/nested-properties.spec.js.html#lineNumber111"><p>should exist only if the observer-locator cannot handle nested paths </p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 
@@ -369,86 +368,86 @@
 <tr class="test-describe" data-ice="testDescribe" style="display: none;" data-test-depth="0">
   <td data-ice="testDescription" style="padding-left: 10px"><span class="toggle closed"></span><span><a href="test-file/test/on-validate.spec.js.html#lineNumber19"><p>Tests on onValidate callbacks</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td data-ice="testCount">13</td>
 </tr>
 
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/on-validate.spec.js.html#lineNumber20"><p>should call the callback even if the result is not valid</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/on-validate.spec.js.html#lineNumber35"><p>should correctly handle the result of the callback if it returns true for a property</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/on-validate.spec.js.html#lineNumber45"><p>should correctly handle the result of the callback if it returns a promise that returns true for a property</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/on-validate.spec.js.html#lineNumber55"><p>should correctly handle the result of the callback if it returns null for a property</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/on-validate.spec.js.html#lineNumber65"><p>should correctly handle the result of the callback if it returns an empty string for a property</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/on-validate.spec.js.html#lineNumber77"><p>should correctly handle the result of the callback if it returns false for a property</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/on-validate.spec.js.html#lineNumber88"><p>should not overwrite an already failing property</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/on-validate.spec.js.html#lineNumber100"><p>should correctly handle the result of the callback if it returns a promise that returns false for a property</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/on-validate.spec.js.html#lineNumber112"><p>should correctly handle the result of the callback if it returns a non empty string for a property</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/on-validate.spec.js.html#lineNumber124"><p>should call the callback if the result is invalid due to a previous callback</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/on-validate.spec.js.html#lineNumber138"><p>should not have to return values for properties that are now valid</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/on-validate.spec.js.html#lineNumber157"><p>should not have to return values for properties that are now valid and have no other validation rules</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/on-validate.spec.js.html#lineNumber175"><p>should have a mechanism to determine rejected promises</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 
@@ -456,20 +455,20 @@
 <tr class="test-describe" data-ice="testDescribe" style="display: none;" data-test-depth="0">
   <td data-ice="testDescription" style="padding-left: 10px"><span class="toggle closed"></span><span><a href="test-file/test/path-observer.spec.js.html#lineNumber5"><p>PathObserver tests</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td data-ice="testCount">2</td>
 </tr>
 
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/path-observer.spec.js.html#lineNumber6"><p>should be able to track a path (2 parts)</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/path-observer.spec.js.html#lineNumber42"><p>should be able to track a path (3 parts)</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 
@@ -477,50 +476,50 @@
 <tr class="test-describe" data-ice="testDescribe" style="display: none;" data-test-depth="0">
   <td data-ice="testDescription" style="padding-left: 10px"><span class="toggle closed"></span><span><a href="test-file/test/validateCustomAttribute/validate-custom-attribute.spec.js.html#lineNumber65"><p>Tests on ValidateCustomAttribute</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td data-ice="testCount">8</td>
 </tr>
 
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validateCustomAttribute/validate-custom-attribute.spec.js.html#lineNumber66"><p>should be working with a simple use case</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validateCustomAttribute/validate-custom-attribute.spec.js.html#lineNumber119"><p>should be working with a different view strategy</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validateCustomAttribute/validate-custom-attribute.spec.js.html#lineNumber173"><p>should be working with a bindings that contain a valueFormatter</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validateCustomAttribute/validate-custom-attribute.spec.js.html#lineNumber227"><p>should add &quot;success&quot; to properties that have no rules defined</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validateCustomAttribute/validate-custom-attribute.spec.js.html#lineNumber265"><p>should be working even before validate() is called</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validateCustomAttribute/validate-custom-attribute.spec.js.html#lineNumber366"><p>should be working with nested properties</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validateCustomAttribute/validate-custom-attribute.spec.js.html#lineNumber418"><p>should only use the &quot;value.bind&quot; if no extra &quot;validate&quot; attribute is present</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 
@@ -528,14 +527,14 @@
 <tr class="test-describe" data-ice="testDescribe" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span class="toggle closed"></span><span><a href="test-file/test/validateCustomAttribute/validate-custom-attribute.spec.js.html#lineNumber310"><p>Tests on ValidateCustomAttribute</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td data-ice="testCount">1</td>
 </tr>
 
 <tr data-ice="testIt" style="display: none;" data-test-depth="2">
   <td data-ice="testDescription" style="padding-left: 30px"><span><a href="test-file/test/validateCustomAttribute/validate-custom-attribute.spec.js.html#lineNumber311"><p>should be working if labels have no proper &quot;for&quot; attribute</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 
@@ -543,170 +542,170 @@
 <tr class="test-describe" data-ice="testDescribe" style="display: none;" data-test-depth="0">
   <td data-ice="testDescription" style="padding-left: 10px"><span class="toggle closed"></span><span><a href="test-file/test/validation-api.spec.js.html#lineNumber25"><p>Some simple API tests</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td data-ice="testCount">27</td>
 </tr>
 
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation-api.spec.js.html#lineNumber26"><p>on containsOnly()</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation-api.spec.js.html#lineNumber33"><p>on containsOnlyAlpha()</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation-api.spec.js.html#lineNumber41"><p>on containsOnlyAlphaOrWhitespace()</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation-api.spec.js.html#lineNumber49"><p>on containsOnlyAlphanumericsOrWhitespace()</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation-api.spec.js.html#lineNumber58"><p>on containsOnlyAlphanumerics()</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation-api.spec.js.html#lineNumber67"><p>on containsOnlyDigits()</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation-api.spec.js.html#lineNumber75"><p>on containsOnlyLetters()</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation-api.spec.js.html#lineNumber84"><p>on containsOnlyLettersOrWhitespace()</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation-api.spec.js.html#lineNumber93"><p>on hasLengthBetween()</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation-api.spec.js.html#lineNumber102"><p>on hasMinLength()</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation-api.spec.js.html#lineNumber109"><p>on hasMaxLength()</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation-api.spec.js.html#lineNumber116"><p>on isBetween()</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation-api.spec.js.html#lineNumber125"><p>on isEmail()</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation-api.spec.js.html#lineNumber132"><p>on isEqualTo()</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation-api.spec.js.html#lineNumber139"><p>on isGreaterThan()</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation-api.spec.js.html#lineNumber147"><p>on isGreaterThanOrEqualTo()</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation-api.spec.js.html#lineNumber155"><p>on isLessThan()</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation-api.spec.js.html#lineNumber163"><p>on isLessThanOrEqualTo()</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation-api.spec.js.html#lineNumber171"><p>on isIn()</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation-api.spec.js.html#lineNumber179"><p>on isNotEmpty()</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation-api.spec.js.html#lineNumber187"><p>on isNumber()</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation-api.spec.js.html#lineNumber196"><p>on isStrongPassword()</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation-api.spec.js.html#lineNumber204"><p>on isNotEqualTo()</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation-api.spec.js.html#lineNumber212"><p>on matches()</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation-api.spec.js.html#lineNumber219"><p>on passes()</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation-api.spec.js.html#lineNumber232"><p>on withMessage()</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation-api.spec.js.html#lineNumber242"><p>on onValidate()</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 
@@ -714,26 +713,26 @@
 <tr class="test-describe" data-ice="testDescribe" style="display: none;" data-test-depth="0">
   <td data-ice="testDescription" style="padding-left: 10px"><span class="toggle closed"></span><span><a href="test-file/test/validation-api.spec.js.html#lineNumber250"><p>Some simple tests on .result</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td data-ice="testCount">3</td>
 </tr>
 
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation-api.spec.js.html#lineNumber251"><p>on individual valid properties</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation-api.spec.js.html#lineNumber265"><p>on individual invalid properties</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation-api.spec.js.html#lineNumber280"><p>on individual invalid properties after reset</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 
@@ -741,20 +740,20 @@
 <tr class="test-describe" data-ice="testDescribe" style="display: none;" data-test-depth="0">
   <td data-ice="testDescription" style="padding-left: 10px"><span class="toggle closed"></span><span><a href="test-file/test/validation-api.spec.js.html#lineNumber308"><p>Some simple configuration API tests</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td data-ice="testCount">2</td>
 </tr>
 
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation-api.spec.js.html#lineNumber309"><p>on computedFrom with a single dependencies</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation-api.spec.js.html#lineNumber327"><p>on computedFrom with an array of string dependencies</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 
@@ -762,50 +761,50 @@
 <tr class="test-describe" data-ice="testDescribe" style="display: none;" data-test-depth="0">
   <td data-ice="testDescription" style="padding-left: 10px"><span class="toggle closed"></span><span><a href="test-file/test/validation-config.spec.js.html#lineNumber4"><p>ValidationConfig</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td data-ice="testCount">7</td>
 </tr>
 
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation-config.spec.js.html#lineNumber5"><p>should have default values</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation-config.spec.js.html#lineNumber14"><p>should be configurable (API check)</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation-config.spec.js.html#lineNumber36"><p>should never change the defaults</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation-config.spec.js.html#lineNumber45"><p>should allow you to set values</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation-config.spec.js.html#lineNumber51"><p>should get values set on the parent when it does not have a value itself </p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation-config.spec.js.html#lineNumber58"><p>should get not copy the values but instead delegate to the parent</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation-config.spec.js.html#lineNumber68"><p>should allow to override parents with own values</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 
@@ -813,140 +812,140 @@
 <tr class="test-describe" data-ice="testDescribe" style="display: none;" data-test-depth="0">
   <td data-ice="testDescription" style="padding-left: 10px"><span class="toggle closed"></span><span><a href="test-file/test/validation.spec.js.html#lineNumber21"><p>Basic validation tests</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td data-ice="testCount">22</td>
 </tr>
 
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation.spec.js.html#lineNumber22"><p>should fail if a notempty property is null</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation.spec.js.html#lineNumber31"><p>should fail if a notempty property is an empty string</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation.spec.js.html#lineNumber40"><p>should fail if a notempty property contains only whitespace</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation.spec.js.html#lineNumber49"><p>should not fail if a notempty property is a random string</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation.spec.js.html#lineNumber58"><p>should fail if an array is empty</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation.spec.js.html#lineNumber67"><p>should not fail on an array with elements</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation.spec.js.html#lineNumber76"><p>should not fail on an array with empty element</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation.spec.js.html#lineNumber85"><p>should not fail if value is a function</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation.spec.js.html#lineNumber95"><p>should evaluate immediately without marking the property as dirty</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation.spec.js.html#lineNumber120"><p>should update the validation automatically when the property changes with nested properties</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation.spec.js.html#lineNumber139"><p>should update the validation automatically when the property changes</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation.spec.js.html#lineNumber156"><p>should not update if the value continuously changes and a debounce time is set on the validation</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation.spec.js.html#lineNumber179"><p>should not update if the value continuously changes and a debounce time is set on the property</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation.spec.js.html#lineNumber203"><p>should update the validation when validate() is called</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation.spec.js.html#lineNumber217"><p>should update if an array gains elements</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation.spec.js.html#lineNumber237"><p>should update if an array is overwritten</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation.spec.js.html#lineNumber248"><p>should use a custom message if one is provided</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation.spec.js.html#lineNumber264"><p>should use a custom message function if one is provided</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation.spec.js.html#lineNumber284"><p>should complete when validation is valid</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation.spec.js.html#lineNumber295"><p>should reject when validation is invalid</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation.spec.js.html#lineNumber308"><p>should set isValidating when validating</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validation.spec.js.html#lineNumber321"><p>should only set the result based on the latest value</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 
@@ -954,32 +953,32 @@
 <tr class="test-describe" data-ice="testDescribe" style="display: none;" data-test-depth="0">
   <td data-ice="testDescription" style="padding-left: 10px"><span class="toggle closed"></span><span><a href="test-file/test/validationRules/alpha-or-whitespace.spec.js.html#lineNumber6"><p>Tests on AlphaOrWhitespaceValidationRule</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td data-ice="testCount">4</td>
 </tr>
 
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/alpha-or-whitespace.spec.js.html#lineNumber7"><p>should be working with only alpha</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/alpha-or-whitespace.spec.js.html#lineNumber14"><p>should be working with whitespaces</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/alpha-or-whitespace.spec.js.html#lineNumber22"><p>should be working with a combination of alpha characters and whitespaces</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/alpha-or-whitespace.spec.js.html#lineNumber29"><p>should not be working with non alphanumerical characters</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 
@@ -987,32 +986,32 @@
 <tr class="test-describe" data-ice="testDescribe" style="display: none;" data-test-depth="0">
   <td data-ice="testDescription" style="padding-left: 10px"><span class="toggle closed"></span><span><a href="test-file/test/validationRules/alpha.spec.js.html#lineNumber6"><p>Tests on AlphaValidationRule</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td data-ice="testCount">4</td>
 </tr>
 
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/alpha.spec.js.html#lineNumber7"><p>should be working with only alpha</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/alpha.spec.js.html#lineNumber14"><p>should not be working with whitespaces</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/alpha.spec.js.html#lineNumber22"><p>should be working with a combination of alpha characters</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/alpha.spec.js.html#lineNumber29"><p>should not be working with non alphanumerical characters</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 
@@ -1020,38 +1019,38 @@
 <tr class="test-describe" data-ice="testDescribe" style="display: none;" data-test-depth="0">
   <td data-ice="testDescription" style="padding-left: 10px"><span class="toggle closed"></span><span><a href="test-file/test/validationRules/alphanumeric-or-whitespace.spec.js.html#lineNumber6"><p>Tests on AlphaNumericOrWhitespaceValidationRule</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td data-ice="testCount">5</td>
 </tr>
 
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/alphanumeric-or-whitespace.spec.js.html#lineNumber7"><p>should be working with only digits</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/alphanumeric-or-whitespace.spec.js.html#lineNumber16"><p>should be working with only characters</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/alphanumeric-or-whitespace.spec.js.html#lineNumber24"><p>should be working with a combination of alphanumeric characters</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/alphanumeric-or-whitespace.spec.js.html#lineNumber32"><p>should not be working with non alphanumerical characters</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/alphanumeric-or-whitespace.spec.js.html#lineNumber42"><p>should be working with whitespace characters</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 
@@ -1059,38 +1058,38 @@
 <tr class="test-describe" data-ice="testDescribe" style="display: none;" data-test-depth="0">
   <td data-ice="testDescription" style="padding-left: 10px"><span class="toggle closed"></span><span><a href="test-file/test/validationRules/alphanumeric.spec.js.html#lineNumber6"><p>Tests on AlphaNumericValidationRule</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td data-ice="testCount">5</td>
 </tr>
 
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/alphanumeric.spec.js.html#lineNumber7"><p>should be working with only digits</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/alphanumeric.spec.js.html#lineNumber16"><p>should be working with only characters</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/alphanumeric.spec.js.html#lineNumber24"><p>should be working with a combination of alphanumeric characters</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/alphanumeric.spec.js.html#lineNumber32"><p>should not be working with non alphanumerical characters</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/alphanumeric.spec.js.html#lineNumber42"><p>should not be working with whitespace characters</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 
@@ -1098,32 +1097,32 @@
 <tr class="test-describe" data-ice="testDescribe" style="display: none;" data-test-depth="0">
   <td data-ice="testDescription" style="padding-left: 10px"><span class="toggle closed"></span><span><a href="test-file/test/validationRules/between-length.spec.js.html#lineNumber7"><p>Tests on BetweenLengthValidationRule</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td data-ice="testCount">4</td>
 </tr>
 
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/between-length.spec.js.html#lineNumber8"><p>should be working with strings</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/between-length.spec.js.html#lineNumber18"><p>should trim strings before evaluating</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/between-length.spec.js.html#lineNumber27"><p>should be working with arrays</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/between-length.spec.js.html#lineNumber37"><p>should be working with with any object that has a &quot;length&quot; property</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 
@@ -1131,26 +1130,26 @@
 <tr class="test-describe" data-ice="testDescribe" style="display: none;" data-test-depth="0">
   <td data-ice="testDescription" style="padding-left: 10px"><span class="toggle closed"></span><span><a href="test-file/test/validationRules/between-value.spec.js.html#lineNumber7"><p>Tests on BetweenValueValidationRule</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td data-ice="testCount">3</td>
 </tr>
 
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/between-value.spec.js.html#lineNumber8"><p>should be working with integers</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/between-value.spec.js.html#lineNumber18"><p>should be working with decimals</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/between-value.spec.js.html#lineNumber29"><p>should be working with dates</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 
@@ -1158,128 +1157,128 @@
 <tr class="test-describe" data-ice="testDescribe" style="display: none;" data-test-depth="0">
   <td data-ice="testDescription" style="padding-left: 10px"><span class="toggle closed"></span><span><a href="test-file/test/validationRules/custom-function.spec.js.html#lineNumber6"><p>Tests on CustomFunctionValidationRule</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td data-ice="testCount">20</td>
 </tr>
 
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/custom-function.spec.js.html#lineNumber9"><p>should be working with simple funtions</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/custom-function.spec.js.html#lineNumber22"><p>should be passing the threshold around to the onValidate method</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/custom-function.spec.js.html#lineNumber38"><p>should be passing the threshold around to the message</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/custom-function.spec.js.html#lineNumber53"><p>should succeed when the function returns true</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/custom-function.spec.js.html#lineNumber60"><p>should succeed when the function returns null</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/custom-function.spec.js.html#lineNumber67"><p>should succeed when the function returns undefined</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/custom-function.spec.js.html#lineNumber74"><p>should succeed when the function returns an empty string</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/custom-function.spec.js.html#lineNumber81"><p>should fail when the function returns false</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/custom-function.spec.js.html#lineNumber88"><p>should fail when the function returns a message</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/custom-function.spec.js.html#lineNumber100"><p>should succeed when the function returns a promise that resolves to true</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/custom-function.spec.js.html#lineNumber107"><p>should succeed when the function returns a promise that resolves to null</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/custom-function.spec.js.html#lineNumber114"><p>should succeed when the function returns a promise that resolves to undefined</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/custom-function.spec.js.html#lineNumber121"><p>should succeed when the function returns a promise that resolves to  an empty string</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/custom-function.spec.js.html#lineNumber128"><p>should fail when the function returns a promise that resolves to  false</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/custom-function.spec.js.html#lineNumber135"><p>should fail when the function returns  a promise that resolves to a message</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/custom-function.spec.js.html#lineNumber143"><p>should fail when the function returns  a promise that rejects</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/custom-function.spec.js.html#lineNumber150"><p>should fail when the function returns  a promise that rejects to a true</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/custom-function.spec.js.html#lineNumber157"><p>should fail when the function returns  a promise that rejects to a undefined</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/custom-function.spec.js.html#lineNumber163"><p>should fail when the function returns  a promise that rejects to a null</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/custom-function.spec.js.html#lineNumber169"><p>should fail when the function returns  a promise that rejects to a message</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 
@@ -1287,32 +1286,32 @@
 <tr class="test-describe" data-ice="testDescribe" style="display: none;" data-test-depth="0">
   <td data-ice="testDescription" style="padding-left: 10px"><span class="toggle closed"></span><span><a href="test-file/test/validationRules/digit.spec.js.html#lineNumber6"><p>Tests on DigitValidationRule</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td data-ice="testCount">4</td>
 </tr>
 
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/digit.spec.js.html#lineNumber7"><p>should be working with strings</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/digit.spec.js.html#lineNumber14"><p>should be working with simple numbers</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/digit.spec.js.html#lineNumber21"><p>should not be working with decimals</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/digit.spec.js.html#lineNumber27"><p>should not be working with properly formatted numbers</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 
@@ -1320,50 +1319,50 @@
 <tr class="test-describe" data-ice="testDescribe" style="display: none;" data-test-depth="0">
   <td data-ice="testDescription" style="padding-left: 10px"><span class="toggle closed"></span><span><a href="test-file/test/validationRules/email.spec.js.html#lineNumber6"><p>Tests on EmailValidationRule</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td data-ice="testCount">7</td>
 </tr>
 
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/email.spec.js.html#lineNumber7"><p>should be working with valid isEmail addresses</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/email.spec.js.html#lineNumber16"><p>should not be working with missing @</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/email.spec.js.html#lineNumber23"><p>should not be working with addresses without identifier</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/email.spec.js.html#lineNumber30"><p>should not be working with duplicate @</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/email.spec.js.html#lineNumber37"><p>should not be working with duplicate .</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/email.spec.js.html#lineNumber45"><p>should not be working with duplicate _</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/email.spec.js.html#lineNumber53"><p>should not be working with addresses ending in dot</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 
@@ -1371,32 +1370,32 @@
 <tr class="test-describe" data-ice="testDescribe" style="display: none;" data-test-depth="0">
   <td data-ice="testDescription" style="padding-left: 10px"><span class="toggle closed"></span><span><a href="test-file/test/validationRules/equality.spec.js.html#lineNumber10"><p>Tests on EqualityValidationRule</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td data-ice="testCount">4</td>
 </tr>
 
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/equality.spec.js.html#lineNumber11"><p>should be working with equality</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/equality.spec.js.html#lineNumber24"><p>should be working with a function</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/equality.spec.js.html#lineNumber31"><p>should be working with inequality</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/equality.spec.js.html#lineNumber45"><p>should explain with the otherValueLabel, if present</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 
@@ -1404,26 +1403,26 @@
 <tr class="test-describe" data-ice="testDescribe" style="display: none;" data-test-depth="0">
   <td data-ice="testDescription" style="padding-left: 10px"><span class="toggle closed"></span><span><a href="test-file/test/validationRules/in-collection.spec.js.html#lineNumber6"><p>Tests on InCollectionValidationRule</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td data-ice="testCount">3</td>
 </tr>
 
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/in-collection.spec.js.html#lineNumber7"><p>should be working with string arrays</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/in-collection.spec.js.html#lineNumber15"><p>should be working with integer</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/in-collection.spec.js.html#lineNumber23"><p>should be working with decimals</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 
@@ -1431,26 +1430,26 @@
 <tr class="test-describe" data-ice="testDescribe" style="display: none;" data-test-depth="0">
   <td data-ice="testDescription" style="padding-left: 10px"><span class="toggle closed"></span><span><a href="test-file/test/validationRules/maximum-inclusive-value.spec.js.html#lineNumber6"><p>Tests on MaximumInclusiveValueValidationRule</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td data-ice="testCount">3</td>
 </tr>
 
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/maximum-inclusive-value.spec.js.html#lineNumber7"><p>should be working with integers</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/maximum-inclusive-value.spec.js.html#lineNumber17"><p>should be working with decimals</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/maximum-inclusive-value.spec.js.html#lineNumber28"><p>should be working with dates</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 
@@ -1458,32 +1457,32 @@
 <tr class="test-describe" data-ice="testDescribe" style="display: none;" data-test-depth="0">
   <td data-ice="testDescription" style="padding-left: 10px"><span class="toggle closed"></span><span><a href="test-file/test/validationRules/maximum-length.spec.js.html#lineNumber6"><p>Tests on MaximumLengthValidationRule</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td data-ice="testCount">4</td>
 </tr>
 
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/maximum-length.spec.js.html#lineNumber7"><p>should be working with strings</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/maximum-length.spec.js.html#lineNumber17"><p>should not trim strings before evaluating</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/maximum-length.spec.js.html#lineNumber26"><p>should be working with arrays</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/maximum-length.spec.js.html#lineNumber36"><p>should be working with with any object that has a &quot;length&quot; property</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 
@@ -1491,26 +1490,26 @@
 <tr class="test-describe" data-ice="testDescribe" style="display: none;" data-test-depth="0">
   <td data-ice="testDescription" style="padding-left: 10px"><span class="toggle closed"></span><span><a href="test-file/test/validationRules/maximum-value.spec.js.html#lineNumber6"><p>Tests on MaximumValueValidationRule</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td data-ice="testCount">3</td>
 </tr>
 
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/maximum-value.spec.js.html#lineNumber7"><p>should be working with integers</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/maximum-value.spec.js.html#lineNumber17"><p>should be working with decimals</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/maximum-value.spec.js.html#lineNumber28"><p>should be working with dates</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 
@@ -1518,26 +1517,26 @@
 <tr class="test-describe" data-ice="testDescribe" style="display: none;" data-test-depth="0">
   <td data-ice="testDescription" style="padding-left: 10px"><span class="toggle closed"></span><span><a href="test-file/test/validationRules/minimum-inclusive-value.spec.js.html#lineNumber6"><p>Tests on MinimumValueValidationRule</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td data-ice="testCount">3</td>
 </tr>
 
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/minimum-inclusive-value.spec.js.html#lineNumber7"><p>should be working with integers</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/minimum-inclusive-value.spec.js.html#lineNumber17"><p>should be working with decimals</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/minimum-inclusive-value.spec.js.html#lineNumber28"><p>should be working with dates</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 
@@ -1545,26 +1544,26 @@
 <tr class="test-describe" data-ice="testDescribe" style="display: none;" data-test-depth="0">
   <td data-ice="testDescription" style="padding-left: 10px"><span class="toggle closed"></span><span><a href="test-file/test/validationRules/minimum-value.spec.js.html#lineNumber6"><p>Tests on MinimumValueValidationRule</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td data-ice="testCount">3</td>
 </tr>
 
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/minimum-value.spec.js.html#lineNumber7"><p>should be working with integers</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/minimum-value.spec.js.html#lineNumber17"><p>should be working with decimals</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/minimum-value.spec.js.html#lineNumber28"><p>should be working with dates</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 
@@ -1572,32 +1571,32 @@
 <tr class="test-describe" data-ice="testDescribe" style="display: none;" data-test-depth="0">
   <td data-ice="testDescription" style="padding-left: 10px"><span class="toggle closed"></span><span><a href="test-file/test/validationRules/minum-length.spec.js.html#lineNumber6"><p>Tests on MinimumLengthValidationRule</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td data-ice="testCount">4</td>
 </tr>
 
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/minum-length.spec.js.html#lineNumber7"><p>should be working with strings</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/minum-length.spec.js.html#lineNumber17"><p>should not trim strings before evaluating</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/minum-length.spec.js.html#lineNumber26"><p>should be working with arrays</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/minum-length.spec.js.html#lineNumber36"><p>should be working with with any object that has a &quot;length&quot; property</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 
@@ -1605,38 +1604,38 @@
 <tr class="test-describe" data-ice="testDescribe" style="display: none;" data-test-depth="0">
   <td data-ice="testDescription" style="padding-left: 10px"><span class="toggle closed"></span><span><a href="test-file/test/validationRules/numeric.spec.js.html#lineNumber6"><p>Tests on NumericValidationRule</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td data-ice="testCount">5</td>
 </tr>
 
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/numeric.spec.js.html#lineNumber7"><p>should be working with strings</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/numeric.spec.js.html#lineNumber14"><p>should be working with simple numbers</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/numeric.spec.js.html#lineNumber21"><p>should be working with decimals</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/numeric.spec.js.html#lineNumber29"><p>should be working with properly formatted numbers</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/numeric.spec.js.html#lineNumber46"><p>should be working with un-properly formatted numbers</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 
@@ -1644,14 +1643,14 @@
 <tr class="test-describe" data-ice="testDescribe" style="display: none;" data-test-depth="0">
   <td data-ice="testDescription" style="padding-left: 10px"><span class="toggle closed"></span><span><a href="test-file/test/validationRules/regex.spec.js.html#lineNumber6"><p>Tests on RegexValidationRule</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td data-ice="testCount">1</td>
 </tr>
 
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/regex.spec.js.html#lineNumber8"><p>should be working</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 
@@ -1659,26 +1658,26 @@
 <tr class="test-describe" data-ice="testDescribe" style="display: none;" data-test-depth="0">
   <td data-ice="testDescription" style="padding-left: 10px"><span class="toggle closed"></span><span><a href="test-file/test/validationRules/strong-password.spec.js.html#lineNumber7"><p>Tests on StrongPasswordValidationRule</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td data-ice="testCount">3</td>
 </tr>
 
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/strong-password.spec.js.html#lineNumber8"><p>should be working with strong passwords</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/strong-password.spec.js.html#lineNumber15"><p>should not be working with a medium password</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/strong-password.spec.js.html#lineNumber26"><p>should give a correct translation</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 
@@ -1686,26 +1685,26 @@
 <tr class="test-describe" data-ice="testDescribe" style="display: none;" data-test-depth="0">
   <td data-ice="testDescription" style="padding-left: 10px"><span class="toggle closed"></span><span><a href="test-file/test/validationRules/strong-password.spec.js.html#lineNumber36"><p>tests on MediumPasswordValidationRule</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td data-ice="testCount">3</td>
 </tr>
 
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/strong-password.spec.js.html#lineNumber37"><p>should respect the minimum complexity level</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/strong-password.spec.js.html#lineNumber49"><p>should respect the minimum complexity level</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 <tr data-ice="testIt" style="display: none;" data-test-depth="1">
   <td data-ice="testDescription" style="padding-left: 20px"><span><a href="test-file/test/validationRules/strong-password.spec.js.html#lineNumber64"><p>should give a correct translation</p>
 </a></span></td>
-  <td data-ice="testTarget">-</td>
+  <td data-ice="testTarget" class="test-target">-</td>
   <td></td>
 </tr>
 

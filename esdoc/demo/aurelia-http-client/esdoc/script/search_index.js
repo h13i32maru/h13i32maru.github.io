@@ -102,327 +102,327 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
-    "defaultexternal/builtinexternal.js~array",
+    "builtinexternal/ecmascriptexternal.js~array",
     "external/index.html",
-    "DefaultExternal/BuiltinExternal.js~Array",
+    "BuiltinExternal/ECMAScriptExternal.js~Array",
     "external"
   ],
   [
-    "defaultexternal/builtinexternal.js~arraybuffer",
+    "builtinexternal/ecmascriptexternal.js~arraybuffer",
     "external/index.html",
-    "DefaultExternal/BuiltinExternal.js~ArrayBuffer",
+    "BuiltinExternal/ECMAScriptExternal.js~ArrayBuffer",
     "external"
   ],
   [
-    "defaultexternal/builtinexternal.js~boolean",
+    "builtinexternal/ecmascriptexternal.js~boolean",
     "external/index.html",
-    "DefaultExternal/BuiltinExternal.js~Boolean",
+    "BuiltinExternal/ECMAScriptExternal.js~Boolean",
     "external"
   ],
   [
-    "defaultexternal/builtinexternal.js~dataview",
+    "builtinexternal/ecmascriptexternal.js~dataview",
     "external/index.html",
-    "DefaultExternal/BuiltinExternal.js~DataView",
+    "BuiltinExternal/ECMAScriptExternal.js~DataView",
     "external"
   ],
   [
-    "defaultexternal/builtinexternal.js~date",
+    "builtinexternal/ecmascriptexternal.js~date",
     "external/index.html",
-    "DefaultExternal/BuiltinExternal.js~Date",
+    "BuiltinExternal/ECMAScriptExternal.js~Date",
     "external"
   ],
   [
-    "defaultexternal/builtinexternal.js~error",
+    "builtinexternal/ecmascriptexternal.js~error",
     "external/index.html",
-    "DefaultExternal/BuiltinExternal.js~Error",
+    "BuiltinExternal/ECMAScriptExternal.js~Error",
     "external"
   ],
   [
-    "defaultexternal/builtinexternal.js~evalerror",
+    "builtinexternal/ecmascriptexternal.js~evalerror",
     "external/index.html",
-    "DefaultExternal/BuiltinExternal.js~EvalError",
+    "BuiltinExternal/ECMAScriptExternal.js~EvalError",
     "external"
   ],
   [
-    "defaultexternal/builtinexternal.js~float32array",
+    "builtinexternal/ecmascriptexternal.js~float32array",
     "external/index.html",
-    "DefaultExternal/BuiltinExternal.js~Float32Array",
+    "BuiltinExternal/ECMAScriptExternal.js~Float32Array",
     "external"
   ],
   [
-    "defaultexternal/builtinexternal.js~float64array",
+    "builtinexternal/ecmascriptexternal.js~float64array",
     "external/index.html",
-    "DefaultExternal/BuiltinExternal.js~Float64Array",
+    "BuiltinExternal/ECMAScriptExternal.js~Float64Array",
     "external"
   ],
   [
-    "defaultexternal/builtinexternal.js~function",
+    "builtinexternal/ecmascriptexternal.js~function",
     "external/index.html",
-    "DefaultExternal/BuiltinExternal.js~Function",
+    "BuiltinExternal/ECMAScriptExternal.js~Function",
     "external"
   ],
   [
-    "defaultexternal/builtinexternal.js~generator",
+    "builtinexternal/ecmascriptexternal.js~generator",
     "external/index.html",
-    "DefaultExternal/BuiltinExternal.js~Generator",
+    "BuiltinExternal/ECMAScriptExternal.js~Generator",
     "external"
   ],
   [
-    "defaultexternal/builtinexternal.js~generatorfunction",
+    "builtinexternal/ecmascriptexternal.js~generatorfunction",
     "external/index.html",
-    "DefaultExternal/BuiltinExternal.js~GeneratorFunction",
+    "BuiltinExternal/ECMAScriptExternal.js~GeneratorFunction",
     "external"
   ],
   [
-    "defaultexternal/builtinexternal.js~infinity",
+    "builtinexternal/ecmascriptexternal.js~infinity",
     "external/index.html",
-    "DefaultExternal/BuiltinExternal.js~Infinity",
+    "BuiltinExternal/ECMAScriptExternal.js~Infinity",
     "external"
   ],
   [
-    "defaultexternal/builtinexternal.js~int16array",
+    "builtinexternal/ecmascriptexternal.js~int16array",
     "external/index.html",
-    "DefaultExternal/BuiltinExternal.js~Int16Array",
+    "BuiltinExternal/ECMAScriptExternal.js~Int16Array",
     "external"
   ],
   [
-    "defaultexternal/builtinexternal.js~int32array",
+    "builtinexternal/ecmascriptexternal.js~int32array",
     "external/index.html",
-    "DefaultExternal/BuiltinExternal.js~Int32Array",
+    "BuiltinExternal/ECMAScriptExternal.js~Int32Array",
     "external"
   ],
   [
-    "defaultexternal/builtinexternal.js~int8array",
+    "builtinexternal/ecmascriptexternal.js~int8array",
     "external/index.html",
-    "DefaultExternal/BuiltinExternal.js~Int8Array",
+    "BuiltinExternal/ECMAScriptExternal.js~Int8Array",
     "external"
   ],
   [
-    "defaultexternal/builtinexternal.js~internalerror",
+    "builtinexternal/ecmascriptexternal.js~internalerror",
     "external/index.html",
-    "DefaultExternal/BuiltinExternal.js~InternalError",
+    "BuiltinExternal/ECMAScriptExternal.js~InternalError",
     "external"
   ],
   [
-    "defaultexternal/builtinexternal.js~json",
+    "builtinexternal/ecmascriptexternal.js~json",
     "external/index.html",
-    "DefaultExternal/BuiltinExternal.js~JSON",
+    "BuiltinExternal/ECMAScriptExternal.js~JSON",
     "external"
   ],
   [
-    "defaultexternal/builtinexternal.js~map",
+    "builtinexternal/ecmascriptexternal.js~map",
     "external/index.html",
-    "DefaultExternal/BuiltinExternal.js~Map",
+    "BuiltinExternal/ECMAScriptExternal.js~Map",
     "external"
   ],
   [
-    "defaultexternal/builtinexternal.js~nan",
+    "builtinexternal/ecmascriptexternal.js~nan",
     "external/index.html",
-    "DefaultExternal/BuiltinExternal.js~NaN",
+    "BuiltinExternal/ECMAScriptExternal.js~NaN",
     "external"
   ],
   [
-    "defaultexternal/builtinexternal.js~number",
+    "builtinexternal/ecmascriptexternal.js~number",
     "external/index.html",
-    "DefaultExternal/BuiltinExternal.js~Number",
+    "BuiltinExternal/ECMAScriptExternal.js~Number",
     "external"
   ],
   [
-    "defaultexternal/builtinexternal.js~object",
+    "builtinexternal/ecmascriptexternal.js~object",
     "external/index.html",
-    "DefaultExternal/BuiltinExternal.js~Object",
+    "BuiltinExternal/ECMAScriptExternal.js~Object",
     "external"
   ],
   [
-    "defaultexternal/builtinexternal.js~promise",
+    "builtinexternal/ecmascriptexternal.js~promise",
     "external/index.html",
-    "DefaultExternal/BuiltinExternal.js~Promise",
+    "BuiltinExternal/ECMAScriptExternal.js~Promise",
     "external"
   ],
   [
-    "defaultexternal/builtinexternal.js~proxy",
+    "builtinexternal/ecmascriptexternal.js~proxy",
     "external/index.html",
-    "DefaultExternal/BuiltinExternal.js~Proxy",
+    "BuiltinExternal/ECMAScriptExternal.js~Proxy",
     "external"
   ],
   [
-    "defaultexternal/builtinexternal.js~rangeerror",
+    "builtinexternal/ecmascriptexternal.js~rangeerror",
     "external/index.html",
-    "DefaultExternal/BuiltinExternal.js~RangeError",
+    "BuiltinExternal/ECMAScriptExternal.js~RangeError",
     "external"
   ],
   [
-    "defaultexternal/builtinexternal.js~referenceerror",
+    "builtinexternal/ecmascriptexternal.js~referenceerror",
     "external/index.html",
-    "DefaultExternal/BuiltinExternal.js~ReferenceError",
+    "BuiltinExternal/ECMAScriptExternal.js~ReferenceError",
     "external"
   ],
   [
-    "defaultexternal/builtinexternal.js~reflect",
+    "builtinexternal/ecmascriptexternal.js~reflect",
     "external/index.html",
-    "DefaultExternal/BuiltinExternal.js~Reflect",
+    "BuiltinExternal/ECMAScriptExternal.js~Reflect",
     "external"
   ],
   [
-    "defaultexternal/builtinexternal.js~regexp",
+    "builtinexternal/ecmascriptexternal.js~regexp",
     "external/index.html",
-    "DefaultExternal/BuiltinExternal.js~RegExp",
+    "BuiltinExternal/ECMAScriptExternal.js~RegExp",
     "external"
   ],
   [
-    "defaultexternal/builtinexternal.js~set",
+    "builtinexternal/ecmascriptexternal.js~set",
     "external/index.html",
-    "DefaultExternal/BuiltinExternal.js~Set",
+    "BuiltinExternal/ECMAScriptExternal.js~Set",
     "external"
   ],
   [
-    "defaultexternal/builtinexternal.js~string",
+    "builtinexternal/ecmascriptexternal.js~string",
     "external/index.html",
-    "DefaultExternal/BuiltinExternal.js~String",
+    "BuiltinExternal/ECMAScriptExternal.js~String",
     "external"
   ],
   [
-    "defaultexternal/builtinexternal.js~symbol",
+    "builtinexternal/ecmascriptexternal.js~symbol",
     "external/index.html",
-    "DefaultExternal/BuiltinExternal.js~Symbol",
+    "BuiltinExternal/ECMAScriptExternal.js~Symbol",
     "external"
   ],
   [
-    "defaultexternal/builtinexternal.js~syntaxerror",
+    "builtinexternal/ecmascriptexternal.js~syntaxerror",
     "external/index.html",
-    "DefaultExternal/BuiltinExternal.js~SyntaxError",
+    "BuiltinExternal/ECMAScriptExternal.js~SyntaxError",
     "external"
   ],
   [
-    "defaultexternal/builtinexternal.js~typeerror",
+    "builtinexternal/ecmascriptexternal.js~typeerror",
     "external/index.html",
-    "DefaultExternal/BuiltinExternal.js~TypeError",
+    "BuiltinExternal/ECMAScriptExternal.js~TypeError",
     "external"
   ],
   [
-    "defaultexternal/builtinexternal.js~urierror",
+    "builtinexternal/ecmascriptexternal.js~urierror",
     "external/index.html",
-    "DefaultExternal/BuiltinExternal.js~URIError",
+    "BuiltinExternal/ECMAScriptExternal.js~URIError",
     "external"
   ],
   [
-    "defaultexternal/builtinexternal.js~uint16array",
+    "builtinexternal/ecmascriptexternal.js~uint16array",
     "external/index.html",
-    "DefaultExternal/BuiltinExternal.js~Uint16Array",
+    "BuiltinExternal/ECMAScriptExternal.js~Uint16Array",
     "external"
   ],
   [
-    "defaultexternal/builtinexternal.js~uint32array",
+    "builtinexternal/ecmascriptexternal.js~uint32array",
     "external/index.html",
-    "DefaultExternal/BuiltinExternal.js~Uint32Array",
+    "BuiltinExternal/ECMAScriptExternal.js~Uint32Array",
     "external"
   ],
   [
-    "defaultexternal/builtinexternal.js~uint8array",
+    "builtinexternal/ecmascriptexternal.js~uint8array",
     "external/index.html",
-    "DefaultExternal/BuiltinExternal.js~Uint8Array",
+    "BuiltinExternal/ECMAScriptExternal.js~Uint8Array",
     "external"
   ],
   [
-    "defaultexternal/builtinexternal.js~uint8clampedarray",
+    "builtinexternal/ecmascriptexternal.js~uint8clampedarray",
     "external/index.html",
-    "DefaultExternal/BuiltinExternal.js~Uint8ClampedArray",
+    "BuiltinExternal/ECMAScriptExternal.js~Uint8ClampedArray",
     "external"
   ],
   [
-    "defaultexternal/builtinexternal.js~weakmap",
+    "builtinexternal/ecmascriptexternal.js~weakmap",
     "external/index.html",
-    "DefaultExternal/BuiltinExternal.js~WeakMap",
+    "BuiltinExternal/ECMAScriptExternal.js~WeakMap",
     "external"
   ],
   [
-    "defaultexternal/builtinexternal.js~weakset",
+    "builtinexternal/ecmascriptexternal.js~weakset",
     "external/index.html",
-    "DefaultExternal/BuiltinExternal.js~WeakSet",
+    "BuiltinExternal/ECMAScriptExternal.js~WeakSet",
     "external"
   ],
   [
-    "defaultexternal/builtinexternal.js~boolean",
+    "builtinexternal/ecmascriptexternal.js~boolean",
     "external/index.html",
-    "DefaultExternal/BuiltinExternal.js~boolean",
+    "BuiltinExternal/ECMAScriptExternal.js~boolean",
     "external"
   ],
   [
-    "defaultexternal/builtinexternal.js~function",
+    "builtinexternal/ecmascriptexternal.js~function",
     "external/index.html",
-    "DefaultExternal/BuiltinExternal.js~function",
+    "BuiltinExternal/ECMAScriptExternal.js~function",
     "external"
   ],
   [
-    "defaultexternal/builtinexternal.js~null",
+    "builtinexternal/ecmascriptexternal.js~null",
     "external/index.html",
-    "DefaultExternal/BuiltinExternal.js~null",
+    "BuiltinExternal/ECMAScriptExternal.js~null",
     "external"
   ],
   [
-    "defaultexternal/builtinexternal.js~number",
+    "builtinexternal/ecmascriptexternal.js~number",
     "external/index.html",
-    "DefaultExternal/BuiltinExternal.js~number",
+    "BuiltinExternal/ECMAScriptExternal.js~number",
     "external"
   ],
   [
-    "defaultexternal/builtinexternal.js~object",
+    "builtinexternal/ecmascriptexternal.js~object",
     "external/index.html",
-    "DefaultExternal/BuiltinExternal.js~object",
+    "BuiltinExternal/ECMAScriptExternal.js~object",
     "external"
   ],
   [
-    "defaultexternal/builtinexternal.js~string",
+    "builtinexternal/ecmascriptexternal.js~string",
     "external/index.html",
-    "DefaultExternal/BuiltinExternal.js~string",
+    "BuiltinExternal/ECMAScriptExternal.js~string",
     "external"
   ],
   [
-    "defaultexternal/builtinexternal.js~undefined",
+    "builtinexternal/ecmascriptexternal.js~undefined",
     "external/index.html",
-    "DefaultExternal/BuiltinExternal.js~undefined",
+    "BuiltinExternal/ECMAScriptExternal.js~undefined",
     "external"
   ],
   [
-    "defaultexternal/webapiexternal.js~canvasrenderingcontext2d",
+    "builtinexternal/webapiexternal.js~canvasrenderingcontext2d",
     "external/index.html",
-    "DefaultExternal/WebAPIExternal.js~CanvasRenderingContext2D",
+    "BuiltinExternal/WebAPIExternal.js~CanvasRenderingContext2D",
     "external"
   ],
   [
-    "defaultexternal/webapiexternal.js~documentfragment",
+    "builtinexternal/webapiexternal.js~documentfragment",
     "external/index.html",
-    "DefaultExternal/WebAPIExternal.js~DocumentFragment",
+    "BuiltinExternal/WebAPIExternal.js~DocumentFragment",
     "external"
   ],
   [
-    "defaultexternal/webapiexternal.js~element",
+    "builtinexternal/webapiexternal.js~element",
     "external/index.html",
-    "DefaultExternal/WebAPIExternal.js~Element",
+    "BuiltinExternal/WebAPIExternal.js~Element",
     "external"
   ],
   [
-    "defaultexternal/webapiexternal.js~event",
+    "builtinexternal/webapiexternal.js~event",
     "external/index.html",
-    "DefaultExternal/WebAPIExternal.js~Event",
+    "BuiltinExternal/WebAPIExternal.js~Event",
     "external"
   ],
   [
-    "defaultexternal/webapiexternal.js~node",
+    "builtinexternal/webapiexternal.js~node",
     "external/index.html",
-    "DefaultExternal/WebAPIExternal.js~Node",
+    "BuiltinExternal/WebAPIExternal.js~Node",
     "external"
   ],
   [
-    "defaultexternal/webapiexternal.js~nodelist",
+    "builtinexternal/webapiexternal.js~nodelist",
     "external/index.html",
-    "DefaultExternal/WebAPIExternal.js~NodeList",
+    "BuiltinExternal/WebAPIExternal.js~NodeList",
     "external"
   ],
   [
-    "defaultexternal/webapiexternal.js~xmlhttprequest",
+    "builtinexternal/webapiexternal.js~xmlhttprequest",
     "external/index.html",
-    "DefaultExternal/WebAPIExternal.js~XMLHttpRequest",
+    "BuiltinExternal/WebAPIExternal.js~XMLHttpRequest",
     "external"
   ],
   [
@@ -1086,12 +1086,6 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "src/headers.js~headers#headers",
-    "class/src/headers.js~Headers.html#instance-member-headers",
-    "src/headers.js~Headers#headers",
-    "member"
-  ],
-  [
     "src/headers.js~headers.parse",
     "class/src/headers.js~Headers.html#static-method-parse",
     "src/headers.js~Headers.parse",
@@ -1194,12 +1188,6 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "src/http-client.js~httpclient#requesttransformers",
-    "class/src/http-client.js~HttpClient.html#instance-member-requestTransformers",
-    "src/http-client.js~HttpClient#requestTransformers",
-    "member"
-  ],
-  [
     "src/http-client.js~httpclient#send",
     "class/src/http-client.js~HttpClient.html#instance-method-send",
     "src/http-client.js~HttpClient#send",
@@ -1272,27 +1260,9 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "src/http-response-message.js~httpresponsemessage#headers",
-    "class/src/http-response-message.js~HttpResponseMessage.html#instance-member-headers",
-    "src/http-response-message.js~HttpResponseMessage#headers",
-    "member"
-  ],
-  [
-    "src/http-response-message.js~httpresponsemessage#headers",
-    "class/src/http-response-message.js~HttpResponseMessage.html#instance-member-headers",
-    "src/http-response-message.js~HttpResponseMessage#headers",
-    "member"
-  ],
-  [
     "src/http-response-message.js~httpresponsemessage#issuccess",
     "class/src/http-response-message.js~HttpResponseMessage.html#instance-member-isSuccess",
     "src/http-response-message.js~HttpResponseMessage#isSuccess",
-    "member"
-  ],
-  [
-    "src/http-response-message.js~httpresponsemessage#mimetype",
-    "class/src/http-response-message.js~HttpResponseMessage.html#instance-member-mimeType",
-    "src/http-response-message.js~HttpResponseMessage#mimeType",
     "member"
   ],
   [

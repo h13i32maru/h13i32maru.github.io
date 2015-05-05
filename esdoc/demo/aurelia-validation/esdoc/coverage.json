@@ -1,14 +1,14 @@
 {
-  "coverage": "11.25%",
-  "expectCount": 320,
+  "coverage": "12.2%",
+  "expectCount": 295,
   "actualCount": 36,
   "files": {
     "src/validation/validation-rules.js": {
-      "expectCount": 75,
+      "expectCount": 69,
       "actualCount": 1
     },
     "src/validation/debouncer.js": {
-      "expectCount": 7,
+      "expectCount": 5,
       "actualCount": 0
     },
     "src/validation/path-observer.js": {
@@ -16,7 +16,7 @@
       "actualCount": 0
     },
     "src/validation/validation-rules-collection.js": {
-      "expectCount": 30,
+      "expectCount": 26,
       "actualCount": 1
     },
     "src/validation/validate-custom-attribute-view-strategy.js": {
@@ -32,11 +32,11 @@
       "actualCount": 0
     },
     "src/validation/validation-group.js": {
-      "expectCount": 54,
+      "expectCount": 52,
       "actualCount": 33
     },
     "src/validation/validation-group-builder.js": {
-      "expectCount": 40,
+      "expectCount": 39,
       "actualCount": 0
     },
     "src/validation/validation-locale.js": {
@@ -44,30 +44,14 @@
       "actualCount": 0
     },
     "src/validation/validation-property.js": {
-      "expectCount": 17,
+      "expectCount": 15,
       "actualCount": 1
     },
     "src/validation/validation-result.js": {
-      "expectCount": 28,
+      "expectCount": 20,
       "actualCount": 0
     },
     "src/index.js": {
-      "expectCount": 1,
-      "actualCount": 0
-    },
-    "src/resources/en-US.js": {
-      "expectCount": 1,
-      "actualCount": 0
-    },
-    "src/resources/nl-BE.js": {
-      "expectCount": 1,
-      "actualCount": 0
-    },
-    "src/resources/nl-NL.js": {
-      "expectCount": 1,
-      "actualCount": 0
-    },
-    "src/resources/sv-SE.js": {
       "expectCount": 1,
       "actualCount": 0
     },
@@ -75,7 +59,19 @@
       "expectCount": 1,
       "actualCount": 0
     },
-    "src/resources/de-DE.js": {
+    "src/resources/sv-SE.js": {
+      "expectCount": 1,
+      "actualCount": 0
+    },
+    "src/resources/fr-FR.js": {
+      "expectCount": 1,
+      "actualCount": 0
+    },
+    "src/resources/en-US.js": {
+      "expectCount": 1,
+      "actualCount": 0
+    },
+    "src/resources/nl-NL.js": {
       "expectCount": 1,
       "actualCount": 0
     },
@@ -83,7 +79,11 @@
       "expectCount": 1,
       "actualCount": 0
     },
-    "src/resources/fr-FR.js": {
+    "src/resources/nl-BE.js": {
+      "expectCount": 1,
+      "actualCount": 0
+    },
+    "src/resources/de-DE.js": {
       "expectCount": 1,
       "actualCount": 0
     },
