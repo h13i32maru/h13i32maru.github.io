@@ -1,7 +1,7 @@
 {
-  "coverage": "94.48%",
-  "expectCount": 290,
-  "actualCount": 274,
+  "coverage": "94.5%",
+  "expectCount": 291,
+  "actualCount": 275,
   "files": {
     "src/Doc/AbstractDoc.js": {
       "expectCount": 52,
@@ -31,6 +31,14 @@
       "expectCount": 9,
       "actualCount": 9
     },
+    "src/Doc/AssignmentDoc.js": {
+      "expectCount": 4,
+      "actualCount": 4
+    },
+    "src/Doc/VariableDoc.js": {
+      "expectCount": 5,
+      "actualCount": 5
+    },
     "src/Doc/TestFileDoc.js": {
       "expectCount": 2,
       "actualCount": 2
@@ -38,14 +46,6 @@
     "src/Doc/TypedefDoc.js": {
       "expectCount": 6,
       "actualCount": 6
-    },
-    "src/Doc/VariableDoc.js": {
-      "expectCount": 5,
-      "actualCount": 5
-    },
-    "src/Doc/AssignmentDoc.js": {
-      "expectCount": 4,
-      "actualCount": 4
     },
     "src/Doc/MemberDoc.js": {
       "expectCount": 7,
@@ -95,11 +95,11 @@
       "expectCount": 2,
       "actualCount": 2
     },
-    "src/Publisher/Builder/TestFileDocBuilder.js": {
+    "src/Publisher/Builder/FileDocBuilder.js": {
       "expectCount": 3,
       "actualCount": 3
     },
-    "src/Publisher/Builder/FileDocBuilder.js": {
+    "src/Publisher/Builder/TestFileDocBuilder.js": {
       "expectCount": 3,
       "actualCount": 3
     },
@@ -116,8 +116,8 @@
       "actualCount": 6
     },
     "src/Util/PathResolver.js": {
-      "expectCount": 12,
-      "actualCount": 12
+      "expectCount": 13,
+      "actualCount": 13
     },
     "src/Publisher/Builder/SearchIndexBuilder.js": {
       "expectCount": 2,

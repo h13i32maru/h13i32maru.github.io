@@ -3782,7 +3782,7 @@
     "access": null,
     "description": null,
     "lineNumber": 10,
-    "content": "/**\n * Doc Comment Parser class.\n *\n * @example\n * for (let comment of node.leadingComments) {\n *   let tags = CommentParser.parse(comment);\n *   console.log(tags);\n * }\n */\nexport default class CommentParser {\n  /**\n   * parse comment to tags.\n   * @param {ASTNode} commentNode - comment node.\n   * @param {string} commentNode.value - comment body.\n   * @param {string} commentNode.type - Block or Line.\n   * @returns {Tag[]} parsed comment.\n   */\n  static parse(commentNode) {\n    if (!this.isESDoc(commentNode)) return [];\n\n    let comment = commentNode.value;\n\n    // TODO: refactor\n    comment = comment.replace(/^\\*\\s?/, ''); // remove first '*'\n    comment = comment.replace(/ $/, ''); // remove last ' '\n    comment = comment.replace(/^ *\\* ?/gm, ''); // remove line head '*'\n    if (comment.charAt(0) !== '@')  comment = '@desc ' + comment; // auto insert @desc\n    comment = comment.replace(/\\s*$/, ''); // remove tail space.\n    comment = comment.replace(/^(@\\w+)$/gm, '$1 \\\\TRUE'); // auto insert tag text to non-text tag (e.g. @interface)\n    comment = comment.replace(/^(@\\w+)\\s(.*)/gm, '\\\\Z$1\\\\Z$2'); // insert separator (\\\\Z@tag\\\\Ztext)\n    let lines = comment.split('\\\\Z');\n\n    let tagName = '';\n    let tagValue = '';\n    let tags = [];\n    for (let i = 0; i < lines.length; i++) {\n      let line = lines[i];\n      if (line.charAt(0) === '@') {\n        tagName = line;\n        let nextLine = lines[i + 1];\n        if (nextLine.charAt(0) === '@') {\n          tagValue = '';\n        } else {\n          tagValue = nextLine;\n          i++;\n        }\n        tagValue = tagValue.replace('\\\\TRUE', '').replace(/^\\n/, '').replace(/\\n*$/, '');\n        tags.push({tagName, tagValue});\n      }\n    }\n    return tags;\n  }\n\n  /**\n   * judge doc comment or not.\n   * @param {ASTNode} commentNode - comment node.\n   * @returns {boolean} if true, this comment node is doc comment.\n   */\n  static isESDoc(commentNode) {\n    if (commentNode.type !== 'Block') return false;\n    return commentNode.value.charAt(0) === '*';\n  }\n}\n"
+    "content": "/**\n * Doc Comment Parser class.\n *\n * @example\n * for (let comment of node.leadingComments) {\n *   let tags = CommentParser.parse(comment);\n *   console.log(tags);\n * }\n */\nexport default class CommentParser {\n  /**\n   * parse comment to tags.\n   * @param {ASTNode} commentNode - comment node.\n   * @param {string} commentNode.value - comment body.\n   * @param {string} commentNode.type - Block or Line.\n   * @returns {Tag[]} parsed comment.\n   */\n  static parse(commentNode) {\n    if (!this.isESDoc(commentNode)) return [];\n\n    let comment = commentNode.value;\n\n    // TODO: refactor\n    comment = comment.replace(/\\r\\n/gm, '\\n'); // for windows\n    comment = comment.replace(/^\\*\\s?/, ''); // remove first '*'\n    comment = comment.replace(/ $/, ''); // remove last ' '\n    comment = comment.replace(/^ *\\* ?/gm, ''); // remove line head '*'\n    if (comment.charAt(0) !== '@')  comment = '@desc ' + comment; // auto insert @desc\n    comment = comment.replace(/\\s*$/, ''); // remove tail space.\n    comment = comment.replace(/^(@\\w+)$/gm, '$1 \\\\TRUE'); // auto insert tag text to non-text tag (e.g. @interface)\n    comment = comment.replace(/^(@\\w+)\\s(.*)/gm, '\\\\Z$1\\\\Z$2'); // insert separator (\\\\Z@tag\\\\Ztext)\n    let lines = comment.split('\\\\Z');\n\n    let tagName = '';\n    let tagValue = '';\n    let tags = [];\n    for (let i = 0; i < lines.length; i++) {\n      let line = lines[i];\n      if (line.charAt(0) === '@') {\n        tagName = line;\n        let nextLine = lines[i + 1];\n        if (nextLine.charAt(0) === '@') {\n          tagValue = '';\n        } else {\n          tagValue = nextLine;\n          i++;\n        }\n        tagValue = tagValue.replace('\\\\TRUE', '').replace(/^\\n/, '').replace(/\\n*$/, '');\n        tags.push({tagName, tagValue});\n      }\n    }\n    return tags;\n  }\n\n  /**\n   * judge doc comment or not.\n   * @param {ASTNode} commentNode - comment node.\n   * @returns {boolean} if true, this comment node is doc comment.\n   */\n  static isESDoc(commentNode) {\n    if (commentNode.type !== 'Block') return false;\n    return commentNode.value.charAt(0) === '*';\n  }\n}\n"
   },
   {
     "kind": "class",
@@ -3869,7 +3869,7 @@
     "longname": "src/Parser/CommentParser.js~CommentParser.isESDoc",
     "access": null,
     "description": "judge doc comment or not.",
-    "lineNumber": 59,
+    "lineNumber": 60,
     "unknown": [
       {
         "tagName": "@returns",
@@ -8286,7 +8286,7 @@
     "access": null,
     "description": null,
     "lineNumber": 1,
-    "content": "import path from 'path';\nimport assert from 'assert';\n\n/**\n * file path resolver.\n * @example\n * let pathResolver = new PathResolver('./src', 'foo/bar.js', 'foo-bar', 'out/foo/bar.js', 'out');\n * pathResolver.importPath; // 'foo-bar'\n * pathResolver.filePath; // 'src/foo/bar.js'\n * pathResolver.resolve('./baz.js'); // 'src/foo/baz.js'\n */\nexport default class PathResolver {\n  /**\n   * create instance.\n   * @param {string} inDirPath - root directory path.\n   * @param {string} filePath - relative file path from root directory path.\n   * @param {string} [packageName] - npm package name.\n   * @param {string} [mainFilePath] - npm main file path.\n   * @param {string} [pathPrefix] - import path prefix.\n   */\n  constructor(inDirPath, filePath, packageName = null, mainFilePath = null, pathPrefix = '') {\n    assert(inDirPath);\n    assert(filePath);\n\n    /** @type {string} */\n    this._inDirPath = path.resolve(inDirPath);\n\n    /** @type {string} */\n    this._filePath = path.resolve(filePath);\n\n    /** @type {NPMPackageObject} */\n    this._packageName = packageName;\n\n    if (mainFilePath) {\n      /** @type {string} */\n      this._mainFilePath = path.resolve(mainFilePath);\n    }\n\n    /** @type {string} */\n    this._pathPrefix = pathPrefix || '';\n\n    if (this._pathPrefix) {\n      /** @type {string} */\n      this._prefixedFilePath = path.resolve(`${this._pathPrefix}${path.sep}${this.filePath}`);\n    } else {\n      this._prefixedFilePath = path.resolve(this.filePath);\n    }\n  }\n\n  /**\n   * import path that is considered package name, main file and path prefix.\n   * @type {string}\n   */\n  get importPath() {\n    if (this._mainFilePath === this._prefixedFilePath) {\n      return this._packageName;\n    }\n\n    let relativeFilePath = this.filePath;\n    if (this._packageName) {\n      return path.normalize(`${this._packageName}${path.sep}${this._pathPrefix}${path.sep}${relativeFilePath}`);\n    } else {\n      return `./${relativeFilePath}`;\n    }\n  }\n\n  /**\n   * file full path.\n   * @type {string}\n   */\n  get fileFullPath() {\n    return this._filePath;\n  }\n\n  /**\n   * file path that is relative path on root dir.\n   * @type {string}\n   */\n  get filePath() {\n    let relativeFilePath = path.relative(path.dirname(this._inDirPath), this._filePath);\n    return relativeFilePath;\n  }\n\n  /**\n   * resolve file path on this file.\n   * @param {string} relativePath - relative path on this file.\n   */\n  resolve(relativePath) {\n    let selfDirPath = path.dirname(this._filePath);\n    let resolvedPath = path.resolve(selfDirPath, relativePath);\n    let resolvedRelativePath = path.relative(path.dirname(this._inDirPath), resolvedPath);\n    return resolvedRelativePath;\n  }\n}\n"
+    "content": "import path from 'path';\nimport assert from 'assert';\nimport os from 'os';\n\n/**\n * file path resolver.\n * @example\n * let pathResolver = new PathResolver('./src', 'foo/bar.js', 'foo-bar', 'out/foo/bar.js', 'out');\n * pathResolver.importPath; // 'foo-bar'\n * pathResolver.filePath; // 'src/foo/bar.js'\n * pathResolver.resolve('./baz.js'); // 'src/foo/baz.js'\n */\nexport default class PathResolver {\n  /**\n   * create instance.\n   * @param {string} inDirPath - root directory path.\n   * @param {string} filePath - relative file path from root directory path.\n   * @param {string} [packageName] - npm package name.\n   * @param {string} [mainFilePath] - npm main file path.\n   * @param {string} [pathPrefix] - import path prefix.\n   */\n  constructor(inDirPath, filePath, packageName = null, mainFilePath = null, pathPrefix = '') {\n    assert(inDirPath);\n    assert(filePath);\n\n    /** @type {string} */\n    this._inDirPath = path.resolve(inDirPath);\n\n    /** @type {string} */\n    this._filePath = path.resolve(filePath);\n\n    /** @type {NPMPackageObject} */\n    this._packageName = packageName;\n\n    if (mainFilePath) {\n      /** @type {string} */\n      this._mainFilePath = path.resolve(mainFilePath);\n    }\n\n    /** @type {string} */\n    this._pathPrefix = pathPrefix || '';\n\n    if (this._pathPrefix) {\n      /** @type {string} */\n      this._prefixedFilePath = path.resolve(`${this._pathPrefix}${path.sep}${this.filePath}`);\n    } else {\n      this._prefixedFilePath = path.resolve(this.filePath);\n    }\n  }\n\n  /**\n   * import path that is considered package name, main file and path prefix.\n   * @type {string}\n   */\n  get importPath() {\n    if (this._mainFilePath === this._prefixedFilePath) {\n      return this._packageName;\n    }\n\n    let relativeFilePath = this.filePath;\n    let filePath;\n    if (this._packageName) {\n      filePath = path.normalize(`${this._packageName}${path.sep}${this._pathPrefix}${path.sep}${relativeFilePath}`);\n    } else {\n      filePath = `./${relativeFilePath}`;\n    }\n\n    return this._slash(filePath);\n  }\n\n  /**\n   * file full path.\n   * @type {string}\n   */\n  get fileFullPath() {\n    return this._slash(this._filePath);\n  }\n\n  /**\n   * file path that is relative path on root dir.\n   * @type {string}\n   */\n  get filePath() {\n    let relativeFilePath = path.relative(path.dirname(this._inDirPath), this._filePath);\n    return this._slash(relativeFilePath);\n  }\n\n  /**\n   * resolve file path on this file.\n   * @param {string} relativePath - relative path on this file.\n   */\n  resolve(relativePath) {\n    let selfDirPath = path.dirname(this._filePath);\n    let resolvedPath = path.resolve(selfDirPath, relativePath);\n    let resolvedRelativePath = path.relative(path.dirname(this._inDirPath), resolvedPath);\n    return this._slash(resolvedRelativePath);\n  }\n\n  /**\n   * convert 'back slash' to 'slash'.\n   * path separator is 'back slash' if platform is windows.\n   * @param {string} filePath - target file path.\n   * @returns {string} converted path.\n   * @private\n   */\n  _slash(filePath) {\n    if (os.platform() === 'win32') {\n      filePath = filePath.replace(/\\\\/g, '/');\n    }\n\n    return filePath;\n  }\n}\n"
   },
   {
     "kind": "class",
@@ -8303,7 +8303,7 @@
     "examples": [
       "let pathResolver = new PathResolver('./src', 'foo/bar.js', 'foo-bar', 'out/foo/bar.js', 'out');\npathResolver.importPath; // 'foo-bar'\npathResolver.filePath; // 'src/foo/bar.js'\npathResolver.resolve('./baz.js'); // 'src/foo/baz.js'"
     ],
-    "lineNumber": 12,
+    "lineNumber": 13,
     "interface": false
   },
   {
@@ -8315,7 +8315,7 @@
     "longname": "src/Util/PathResolver.js~PathResolver#constructor",
     "access": null,
     "description": "create instance.",
-    "lineNumber": 21,
+    "lineNumber": 22,
     "params": [
       {
         "nullable": null,
@@ -8379,7 +8379,7 @@
     "longname": "src/Util/PathResolver.js~PathResolver#_inDirPath",
     "access": null,
     "description": null,
-    "lineNumber": 26,
+    "lineNumber": 27,
     "type": {
       "nullable": null,
       "types": [
@@ -8398,7 +8398,7 @@
     "longname": "src/Util/PathResolver.js~PathResolver#_filePath",
     "access": null,
     "description": null,
-    "lineNumber": 29,
+    "lineNumber": 30,
     "type": {
       "nullable": null,
       "types": [
@@ -8417,7 +8417,7 @@
     "longname": "src/Util/PathResolver.js~PathResolver#_packageName",
     "access": null,
     "description": null,
-    "lineNumber": 32,
+    "lineNumber": 33,
     "type": {
       "nullable": null,
       "types": [
@@ -8436,7 +8436,7 @@
     "longname": "src/Util/PathResolver.js~PathResolver#_mainFilePath",
     "access": null,
     "description": null,
-    "lineNumber": 36,
+    "lineNumber": 37,
     "type": {
       "nullable": null,
       "types": [
@@ -8455,7 +8455,7 @@
     "longname": "src/Util/PathResolver.js~PathResolver#_pathPrefix",
     "access": null,
     "description": null,
-    "lineNumber": 40,
+    "lineNumber": 41,
     "type": {
       "nullable": null,
       "types": [
@@ -8474,7 +8474,7 @@
     "longname": "src/Util/PathResolver.js~PathResolver#_prefixedFilePath",
     "access": null,
     "description": null,
-    "lineNumber": 44,
+    "lineNumber": 45,
     "type": {
       "nullable": null,
       "types": [
@@ -8493,7 +8493,7 @@
     "longname": "src/Util/PathResolver.js~PathResolver#_prefixedFilePath",
     "access": null,
     "description": null,
-    "lineNumber": 46,
+    "lineNumber": 47,
     "undocument": true,
     "type": {
       "types": [
@@ -8510,7 +8510,7 @@
     "longname": "src/Util/PathResolver.js~PathResolver#importPath",
     "access": null,
     "description": "import path that is considered package name, main file and path prefix.",
-    "lineNumber": 54,
+    "lineNumber": 55,
     "type": {
       "nullable": null,
       "types": [
@@ -8530,7 +8530,7 @@
     "longname": "src/Util/PathResolver.js~PathResolver#fileFullPath",
     "access": null,
     "description": "file full path.",
-    "lineNumber": 71,
+    "lineNumber": 75,
     "type": {
       "nullable": null,
       "types": [
@@ -8550,7 +8550,7 @@
     "longname": "src/Util/PathResolver.js~PathResolver#filePath",
     "access": null,
     "description": "file path that is relative path on root dir.",
-    "lineNumber": 79,
+    "lineNumber": 83,
     "type": {
       "nullable": null,
       "types": [
@@ -8570,7 +8570,7 @@
     "longname": "src/Util/PathResolver.js~PathResolver#resolve",
     "access": null,
     "description": "resolve file path on this file.",
-    "lineNumber": 88,
+    "lineNumber": 92,
     "params": [
       {
         "nullable": null,
@@ -8587,6 +8587,44 @@
       "types": [
         "*"
       ]
+    },
+    "generator": false
+  },
+  {
+    "kind": "method",
+    "static": false,
+    "variation": null,
+    "name": "_slash",
+    "memberof": "src/Util/PathResolver.js~PathResolver",
+    "longname": "src/Util/PathResolver.js~PathResolver#_slash",
+    "access": "private",
+    "description": "convert 'back slash' to 'slash'.\npath separator is 'back slash' if platform is windows.",
+    "lineNumber": 106,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "{string} converted path."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "filePath",
+        "description": "target file path."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "string"
+      ],
+      "spread": false,
+      "description": "converted path."
     },
     "generator": false
   },

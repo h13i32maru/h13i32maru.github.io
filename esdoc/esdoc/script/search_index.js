@@ -961,13 +961,13 @@ window.esdocSearchIndex = [
   ],
   [
     "paramparser.parseparam src/parser/paramparser.js~paramparser.parseparam,paramparser.parseparam",
-    "test-file/src/UnitTest/ParamParserTest.js.html#lineNumber81",
+    "test-file/src/UnitTest/ParamParserTest.js.html#lineNumber98",
     "ParamParser: parse param with complex.",
     "test"
   ],
   [
     "paramparser.parseparam src/parser/paramparser.js~paramparser.parseparam,paramparser.parseparam",
-    "test-file/src/UnitTest/ParamParserTest.js.html#lineNumber98",
+    "test-file/src/UnitTest/ParamParserTest.js.html#lineNumber81",
     "ParamParser: parse param with complex.",
     "test"
   ],
@@ -2938,6 +2938,12 @@ window.esdocSearchIndex = [
     "class/src/Util/PathResolver.js~PathResolver.html#instance-member-_prefixedFilePath",
     "src/Util/PathResolver.js~PathResolver#_prefixedFilePath",
     "member"
+  ],
+  [
+    "src/util/pathresolver.js~pathresolver#_slash",
+    "class/src/Util/PathResolver.js~PathResolver.html#instance-method-_slash",
+    "src/Util/PathResolver.js~PathResolver#_slash",
+    "method"
   ],
   [
     "src/util/pathresolver.js~pathresolver#constructor",
