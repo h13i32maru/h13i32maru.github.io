@@ -234,6 +234,18 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "astutil src/util/astutil.js~astutil,astutil",
+    "test-file/src/UnitTest/ASTUtilTest.js.html#lineNumber4",
+    "ASTUtil:",
+    "test"
+  ],
+  [
+    "astutil.traverse src/util/astutil.js~astutil.traverse,astutil.traverse",
+    "test-file/src/UnitTest/ASTUtilTest.js.html#lineNumber6",
+    "ASTUtil: can traverse React JSX.",
+    "test"
+  ],
+  [
     "abstractdoc src/doc/abstractdoc.js~abstractdoc,abstractdoc",
     "test-file/src/DocTest/AbstractDocTest.js.html#lineNumber4",
     "AbstractDoc:",
@@ -955,12 +967,6 @@ window.esdocSearchIndex = [
   ],
   [
     "paramparser.parseparam src/parser/paramparser.js~paramparser.parseparam,paramparser.parseparam",
-    "test-file/src/UnitTest/ParamParserTest.js.html#lineNumber66",
-    "ParamParser: parse param with complex.",
-    "test"
-  ],
-  [
-    "paramparser.parseparam src/parser/paramparser.js~paramparser.parseparam,paramparser.parseparam",
     "test-file/src/UnitTest/ParamParserTest.js.html#lineNumber98",
     "ParamParser: parse param with complex.",
     "test"
@@ -968,6 +974,12 @@ window.esdocSearchIndex = [
   [
     "paramparser.parseparam src/parser/paramparser.js~paramparser.parseparam,paramparser.parseparam",
     "test-file/src/UnitTest/ParamParserTest.js.html#lineNumber81",
+    "ParamParser: parse param with complex.",
+    "test"
+  ],
+  [
+    "paramparser.parseparam src/parser/paramparser.js~paramparser.parseparam,paramparser.parseparam",
+    "test-file/src/UnitTest/ParamParserTest.js.html#lineNumber66",
     "ParamParser: parse param with complex.",
     "test"
   ],
@@ -2860,6 +2872,12 @@ window.esdocSearchIndex = [
     "typedef/index.html#static-typedef-Tag",
     "src/Typedef/typedef.js~Tag",
     "typedef"
+  ],
+  [
+    "src/unittest/astutiltest.js",
+    "test-file/src/UnitTest/ASTUtilTest.js.html",
+    "src/UnitTest/ASTUtilTest.js",
+    "testFile"
   ],
   [
     "src/unittest/commentparsertest.js",
