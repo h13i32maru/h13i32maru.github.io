@@ -588,6 +588,18 @@ window.esdocSearchIndex = [
     "external"
   ],
   [
+    "classdoc src/doc/classdoc.js~classdoc,classdoc",
+    "test-file/src/DocTest/ClassDocTest.js.html#lineNumber4",
+    "ClassDoc:",
+    "test"
+  ],
+  [
+    "classdoc#@extends src/doc/classdoc.js~classdoc#@extends,classdoc#@extends",
+    "test-file/src/DocTest/ClassDocTest.js.html#lineNumber7",
+    "ClassDoc: can parse nested extend.",
+    "test"
+  ],
+  [
     "commentparser src/parser/commentparser.js~commentparser,commentparser",
     "test-file/src/UnitTest/CommentParserTest.js.html#lineNumber5",
     "CommentParser:",
@@ -651,12 +663,6 @@ window.esdocSearchIndex = [
     "esdoccli#exec esdoccli#_createconfigfromjsonfile src/esdoccli.js~esdoccli#exec,esdoccli#exec src/esdoccli.js~esdoccli#_createconfigfromjsonfile,esdoccli#_createconfigfromjsonfile",
     "test-file/src/UnitTest/ESDocCLITest.js.html#lineNumber13",
     "ESDocCLI: can execute with config file.",
-    "test"
-  ],
-  [
-    "esdoccli#exec esdoccli#_createconfigfrompath src/esdoccli.js~esdoccli#exec,esdoccli#exec src/esdoccli.js~esdoccli#_createconfigfrompath,esdoccli#_createconfigfrompath",
-    "test-file/src/UnitTest/ESDocCLITest.js.html#lineNumber26",
-    "ESDocCLI: can execute with directory path",
     "test"
   ],
   [
@@ -973,13 +979,13 @@ window.esdocSearchIndex = [
   ],
   [
     "paramparser.parseparam src/parser/paramparser.js~paramparser.parseparam,paramparser.parseparam",
-    "test-file/src/UnitTest/ParamParserTest.js.html#lineNumber81",
+    "test-file/src/UnitTest/ParamParserTest.js.html#lineNumber66",
     "ParamParser: parse param with complex.",
     "test"
   ],
   [
     "paramparser.parseparam src/parser/paramparser.js~paramparser.parseparam,paramparser.parseparam",
-    "test-file/src/UnitTest/ParamParserTest.js.html#lineNumber66",
+    "test-file/src/UnitTest/ParamParserTest.js.html#lineNumber81",
     "ParamParser: parse param with complex.",
     "test"
   ],
@@ -1860,6 +1866,12 @@ window.esdocSearchIndex = [
     "testFile"
   ],
   [
+    "src/doctest/classdoctest.js",
+    "test-file/src/DocTest/ClassDocTest.js.html",
+    "src/DocTest/ClassDocTest.js",
+    "testFile"
+  ],
+  [
     "src/esdoc.js",
     "file/src/ESDoc.js.html",
     "src/ESDoc.js",
@@ -1923,12 +1935,6 @@ window.esdocSearchIndex = [
     "src/esdoccli.js~esdoccli#_createconfigfromjsonfile",
     "class/src/ESDocCLI.js~ESDocCLI.html#instance-method-_createConfigFromJSONFile",
     "src/ESDocCLI.js~ESDocCLI#_createConfigFromJSONFile",
-    "method"
-  ],
-  [
-    "src/esdoccli.js~esdoccli#_createconfigfrompath",
-    "class/src/ESDocCLI.js~ESDocCLI.html#instance-method-_createConfigFromPath",
-    "src/ESDocCLI.js~ESDocCLI#_createConfigFromPath",
     "method"
   ],
   [
@@ -2049,6 +2055,12 @@ window.esdocSearchIndex = [
     "src/factory/docfactory.js~docfactory#_istopdepthinbody",
     "class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_isTopDepthInBody",
     "src/Factory/DocFactory.js~DocFactory#_isTopDepthInBody",
+    "method"
+  ],
+  [
+    "src/factory/docfactory.js~docfactory#_joinseparatedexport",
+    "class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_joinSeparatedExport",
+    "src/Factory/DocFactory.js~DocFactory#_joinSeparatedExport",
     "method"
   ],
   [
@@ -2785,15 +2797,15 @@ window.esdocSearchIndex = [
   ],
   [
     "src/typedef/typedef.js~ast",
-    "external/index.html",
+    "typedef/index.html#static-typedef-AST",
     "src/Typedef/typedef.js~AST",
-    "external"
+    "typedef"
   ],
   [
     "src/typedef/typedef.js~astnode",
-    "external/index.html",
+    "typedef/index.html#static-typedef-ASTNode",
     "src/Typedef/typedef.js~ASTNode",
-    "external"
+    "typedef"
   ],
   [
     "src/typedef/typedef.js~coverageobject",
@@ -2827,9 +2839,9 @@ window.esdocSearchIndex = [
   ],
   [
     "src/typedef/typedef.js~icecap",
-    "external/index.html",
+    "typedef/index.html#static-typedef-IceCap",
     "src/Typedef/typedef.js~IceCap",
-    "external"
+    "typedef"
   ],
   [
     "src/typedef/typedef.js~icecapinstancetypedef",
@@ -2839,9 +2851,9 @@ window.esdocSearchIndex = [
   ],
   [
     "src/typedef/typedef.js~npmpackageobject",
-    "external/index.html",
+    "typedef/index.html#static-typedef-NPMPackageObject",
     "src/Typedef/typedef.js~NPMPackageObject",
-    "external"
+    "typedef"
   ],
   [
     "src/typedef/typedef.js~packagetypedef",
@@ -2857,9 +2869,9 @@ window.esdocSearchIndex = [
   ],
   [
     "src/typedef/typedef.js~taffy",
-    "external/index.html",
+    "typedef/index.html#static-typedef-Taffy",
     "src/Typedef/typedef.js~Taffy",
-    "external"
+    "typedef"
   ],
   [
     "src/typedef/typedef.js~taffycursor",

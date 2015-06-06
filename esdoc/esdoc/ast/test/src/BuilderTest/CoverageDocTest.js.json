@@ -822,8 +822,8 @@
                                   },
                                   {
                                     "type": "Literal",
-                                    "value": "81.48%",
-                                    "raw": "'81.48%'",
+                                    "value": "79.06%",
+                                    "raw": "'79.06%'",
                                     "range": [
                                       364,
                                       372
@@ -985,8 +985,8 @@
                                   },
                                   {
                                     "type": "Literal",
-                                    "value": 81,
-                                    "raw": "81",
+                                    "value": 86,
+                                    "raw": "86",
                                     "range": [
                                       414,
                                       416
@@ -1148,8 +1148,8 @@
                                   },
                                   {
                                     "type": "Literal",
-                                    "value": 66,
-                                    "raw": "66",
+                                    "value": 68,
+                                    "raw": "68",
                                     "range": [
                                       458,
                                       460
@@ -2555,11 +2555,11 @@
                                         "type": "Property",
                                         "key": {
                                           "type": "Literal",
-                                          "value": "src/OtherClass/SuperMyClass.js",
-                                          "raw": "\"src/OtherClass/SuperMyClass.js\"",
+                                          "value": "src/ExtendNest.js",
+                                          "raw": "\"src/ExtendNest.js\"",
                                           "range": [
                                             1162,
-                                            1194
+                                            1181
                                           ],
                                           "loc": {
                                             "start": {
@@ -2568,7 +2568,7 @@
                                             },
                                             "end": {
                                               "line": 43,
-                                              "column": 38
+                                              "column": 25
                                             }
                                           }
                                         },
@@ -2582,8 +2582,8 @@
                                                 "value": "expectCount",
                                                 "raw": "\"expectCount\"",
                                                 "range": [
-                                                  1206,
-                                                  1219
+                                                  1193,
+                                                  1206
                                                 ],
                                                 "loc": {
                                                   "start": {
@@ -2598,11 +2598,11 @@
                                               },
                                               "value": {
                                                 "type": "Literal",
-                                                "value": 19,
-                                                "raw": "19",
+                                                "value": 2,
+                                                "raw": "2",
                                                 "range": [
-                                                  1221,
-                                                  1223
+                                                  1208,
+                                                  1209
                                                 ],
                                                 "loc": {
                                                   "start": {
@@ -2611,7 +2611,7 @@
                                                   },
                                                   "end": {
                                                     "line": 44,
-                                                    "column": 25
+                                                    "column": 24
                                                   }
                                                 }
                                               },
@@ -2620,8 +2620,8 @@
                                               "shorthand": false,
                                               "computed": false,
                                               "range": [
-                                                1206,
-                                                1223
+                                                1193,
+                                                1209
                                               ],
                                               "loc": {
                                                 "start": {
@@ -2630,7 +2630,7 @@
                                                 },
                                                 "end": {
                                                   "line": 44,
-                                                  "column": 25
+                                                  "column": 24
                                                 }
                                               }
                                             },
@@ -2641,8 +2641,8 @@
                                                 "value": "actualCount",
                                                 "raw": "\"actualCount\"",
                                                 "range": [
-                                                  1233,
-                                                  1246
+                                                  1219,
+                                                  1232
                                                 ],
                                                 "loc": {
                                                   "start": {
@@ -2657,11 +2657,11 @@
                                               },
                                               "value": {
                                                 "type": "Literal",
-                                                "value": 19,
-                                                "raw": "19",
+                                                "value": 2,
+                                                "raw": "2",
                                                 "range": [
-                                                  1248,
-                                                  1250
+                                                  1234,
+                                                  1235
                                                 ],
                                                 "loc": {
                                                   "start": {
@@ -2670,7 +2670,7 @@
                                                   },
                                                   "end": {
                                                     "line": 45,
-                                                    "column": 25
+                                                    "column": 24
                                                   }
                                                 }
                                               },
@@ -2679,8 +2679,8 @@
                                               "shorthand": false,
                                               "computed": false,
                                               "range": [
-                                                1233,
-                                                1250
+                                                1219,
+                                                1235
                                               ],
                                               "loc": {
                                                 "start": {
@@ -2689,19 +2689,19 @@
                                                 },
                                                 "end": {
                                                   "line": 45,
-                                                  "column": 25
+                                                  "column": 24
                                                 }
                                               }
                                             }
                                           ],
                                           "range": [
-                                            1196,
-                                            1258
+                                            1183,
+                                            1243
                                           ],
                                           "loc": {
                                             "start": {
                                               "line": 43,
-                                              "column": 40
+                                              "column": 27
                                             },
                                             "end": {
                                               "line": 46,
@@ -2715,7 +2715,7 @@
                                         "computed": false,
                                         "range": [
                                           1162,
-                                          1258
+                                          1243
                                         ],
                                         "loc": {
                                           "start": {
@@ -2735,8 +2735,8 @@
                                           "value": "src/ReactJSX.js",
                                           "raw": "\"src/ReactJSX.js\"",
                                           "range": [
-                                            1266,
-                                            1283
+                                            1251,
+                                            1268
                                           ],
                                           "loc": {
                                             "start": {
@@ -2756,11 +2756,11 @@
                                               "type": "Property",
                                               "key": {
                                                 "type": "Literal",
-                                                "value": "actualCount",
-                                                "raw": "\"actualCount\"",
+                                                "value": "expectCount",
+                                                "raw": "\"expectCount\"",
                                                 "range": [
-                                                  1295,
-                                                  1308
+                                                  1280,
+                                                  1293
                                                 ],
                                                 "loc": {
                                                   "start": {
@@ -2778,8 +2778,8 @@
                                                 "value": 2,
                                                 "raw": "2",
                                                 "range": [
-                                                  1310,
-                                                  1311
+                                                  1295,
+                                                  1296
                                                 ],
                                                 "loc": {
                                                   "start": {
@@ -2797,8 +2797,8 @@
                                               "shorthand": false,
                                               "computed": false,
                                               "range": [
-                                                1295,
-                                                1311
+                                                1280,
+                                                1296
                                               ],
                                               "loc": {
                                                 "start": {
@@ -2815,11 +2815,11 @@
                                               "type": "Property",
                                               "key": {
                                                 "type": "Literal",
-                                                "value": "expectCount",
-                                                "raw": "\"expectCount\"",
+                                                "value": "actualCount",
+                                                "raw": "\"actualCount\"",
                                                 "range": [
-                                                  1321,
-                                                  1334
+                                                  1306,
+                                                  1319
                                                 ],
                                                 "loc": {
                                                   "start": {
@@ -2837,8 +2837,8 @@
                                                 "value": 2,
                                                 "raw": "2",
                                                 "range": [
-                                                  1336,
-                                                  1337
+                                                  1321,
+                                                  1322
                                                 ],
                                                 "loc": {
                                                   "start": {
@@ -2856,8 +2856,8 @@
                                               "shorthand": false,
                                               "computed": false,
                                               "range": [
-                                                1321,
-                                                1337
+                                                1306,
+                                                1322
                                               ],
                                               "loc": {
                                                 "start": {
@@ -2872,8 +2872,8 @@
                                             }
                                           ],
                                           "range": [
-                                            1285,
-                                            1345
+                                            1270,
+                                            1330
                                           ],
                                           "loc": {
                                             "start": {
@@ -2891,8 +2891,8 @@
                                         "shorthand": false,
                                         "computed": false,
                                         "range": [
-                                          1266,
-                                          1345
+                                          1251,
+                                          1330
                                         ],
                                         "loc": {
                                           "start": {
@@ -2909,11 +2909,11 @@
                                         "type": "Property",
                                         "key": {
                                           "type": "Literal",
-                                          "value": "src/myFunction.js",
-                                          "raw": "\"src/myFunction.js\"",
+                                          "value": "src/SeparateExport.js",
+                                          "raw": "\"src/SeparateExport.js\"",
                                           "range": [
-                                            1353,
-                                            1372
+                                            1338,
+                                            1361
                                           ],
                                           "loc": {
                                             "start": {
@@ -2922,7 +2922,7 @@
                                             },
                                             "end": {
                                               "line": 51,
-                                              "column": 25
+                                              "column": 29
                                             }
                                           }
                                         },
@@ -2936,8 +2936,8 @@
                                                 "value": "expectCount",
                                                 "raw": "\"expectCount\"",
                                                 "range": [
-                                                  1384,
-                                                  1397
+                                                  1373,
+                                                  1386
                                                 ],
                                                 "loc": {
                                                   "start": {
@@ -2952,11 +2952,11 @@
                                               },
                                               "value": {
                                                 "type": "Literal",
-                                                "value": 8,
-                                                "raw": "8",
+                                                "value": 3,
+                                                "raw": "3",
                                                 "range": [
-                                                  1399,
-                                                  1400
+                                                  1388,
+                                                  1389
                                                 ],
                                                 "loc": {
                                                   "start": {
@@ -2974,8 +2974,8 @@
                                               "shorthand": false,
                                               "computed": false,
                                               "range": [
-                                                1384,
-                                                1400
+                                                1373,
+                                                1389
                                               ],
                                               "loc": {
                                                 "start": {
@@ -2995,8 +2995,8 @@
                                                 "value": "actualCount",
                                                 "raw": "\"actualCount\"",
                                                 "range": [
-                                                  1410,
-                                                  1423
+                                                  1399,
+                                                  1412
                                                 ],
                                                 "loc": {
                                                   "start": {
@@ -3011,11 +3011,11 @@
                                               },
                                               "value": {
                                                 "type": "Literal",
-                                                "value": 6,
-                                                "raw": "6",
+                                                "value": 0,
+                                                "raw": "0",
                                                 "range": [
-                                                  1425,
-                                                  1426
+                                                  1414,
+                                                  1415
                                                 ],
                                                 "loc": {
                                                   "start": {
@@ -3033,8 +3033,8 @@
                                               "shorthand": false,
                                               "computed": false,
                                               "range": [
-                                                1410,
-                                                1426
+                                                1399,
+                                                1415
                                               ],
                                               "loc": {
                                                 "start": {
@@ -3049,13 +3049,13 @@
                                             }
                                           ],
                                           "range": [
-                                            1374,
-                                            1434
+                                            1363,
+                                            1423
                                           ],
                                           "loc": {
                                             "start": {
                                               "line": 51,
-                                              "column": 27
+                                              "column": 31
                                             },
                                             "end": {
                                               "line": 54,
@@ -3068,8 +3068,8 @@
                                         "shorthand": false,
                                         "computed": false,
                                         "range": [
-                                          1353,
-                                          1434
+                                          1338,
+                                          1423
                                         ],
                                         "loc": {
                                           "start": {
@@ -3086,11 +3086,11 @@
                                         "type": "Property",
                                         "key": {
                                           "type": "Literal",
-                                          "value": "src/myVariable.js",
-                                          "raw": "\"src/myVariable.js\"",
+                                          "value": "src/OtherClass/SuperMyClass.js",
+                                          "raw": "\"src/OtherClass/SuperMyClass.js\"",
                                           "range": [
-                                            1442,
-                                            1461
+                                            1431,
+                                            1463
                                           ],
                                           "loc": {
                                             "start": {
@@ -3099,6 +3099,183 @@
                                             },
                                             "end": {
                                               "line": 55,
+                                              "column": 38
+                                            }
+                                          }
+                                        },
+                                        "value": {
+                                          "type": "ObjectExpression",
+                                          "properties": [
+                                            {
+                                              "type": "Property",
+                                              "key": {
+                                                "type": "Literal",
+                                                "value": "expectCount",
+                                                "raw": "\"expectCount\"",
+                                                "range": [
+                                                  1475,
+                                                  1488
+                                                ],
+                                                "loc": {
+                                                  "start": {
+                                                    "line": 56,
+                                                    "column": 8
+                                                  },
+                                                  "end": {
+                                                    "line": 56,
+                                                    "column": 21
+                                                  }
+                                                }
+                                              },
+                                              "value": {
+                                                "type": "Literal",
+                                                "value": 19,
+                                                "raw": "19",
+                                                "range": [
+                                                  1490,
+                                                  1492
+                                                ],
+                                                "loc": {
+                                                  "start": {
+                                                    "line": 56,
+                                                    "column": 23
+                                                  },
+                                                  "end": {
+                                                    "line": 56,
+                                                    "column": 25
+                                                  }
+                                                }
+                                              },
+                                              "kind": "init",
+                                              "method": false,
+                                              "shorthand": false,
+                                              "computed": false,
+                                              "range": [
+                                                1475,
+                                                1492
+                                              ],
+                                              "loc": {
+                                                "start": {
+                                                  "line": 56,
+                                                  "column": 8
+                                                },
+                                                "end": {
+                                                  "line": 56,
+                                                  "column": 25
+                                                }
+                                              }
+                                            },
+                                            {
+                                              "type": "Property",
+                                              "key": {
+                                                "type": "Literal",
+                                                "value": "actualCount",
+                                                "raw": "\"actualCount\"",
+                                                "range": [
+                                                  1502,
+                                                  1515
+                                                ],
+                                                "loc": {
+                                                  "start": {
+                                                    "line": 57,
+                                                    "column": 8
+                                                  },
+                                                  "end": {
+                                                    "line": 57,
+                                                    "column": 21
+                                                  }
+                                                }
+                                              },
+                                              "value": {
+                                                "type": "Literal",
+                                                "value": 19,
+                                                "raw": "19",
+                                                "range": [
+                                                  1517,
+                                                  1519
+                                                ],
+                                                "loc": {
+                                                  "start": {
+                                                    "line": 57,
+                                                    "column": 23
+                                                  },
+                                                  "end": {
+                                                    "line": 57,
+                                                    "column": 25
+                                                  }
+                                                }
+                                              },
+                                              "kind": "init",
+                                              "method": false,
+                                              "shorthand": false,
+                                              "computed": false,
+                                              "range": [
+                                                1502,
+                                                1519
+                                              ],
+                                              "loc": {
+                                                "start": {
+                                                  "line": 57,
+                                                  "column": 8
+                                                },
+                                                "end": {
+                                                  "line": 57,
+                                                  "column": 25
+                                                }
+                                              }
+                                            }
+                                          ],
+                                          "range": [
+                                            1465,
+                                            1527
+                                          ],
+                                          "loc": {
+                                            "start": {
+                                              "line": 55,
+                                              "column": 40
+                                            },
+                                            "end": {
+                                              "line": 58,
+                                              "column": 7
+                                            }
+                                          }
+                                        },
+                                        "kind": "init",
+                                        "method": false,
+                                        "shorthand": false,
+                                        "computed": false,
+                                        "range": [
+                                          1431,
+                                          1527
+                                        ],
+                                        "loc": {
+                                          "start": {
+                                            "line": 55,
+                                            "column": 6
+                                          },
+                                          "end": {
+                                            "line": 58,
+                                            "column": 7
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "type": "Property",
+                                        "key": {
+                                          "type": "Literal",
+                                          "value": "src/myFunction.js",
+                                          "raw": "\"src/myFunction.js\"",
+                                          "range": [
+                                            1535,
+                                            1554
+                                          ],
+                                          "loc": {
+                                            "start": {
+                                              "line": 59,
+                                              "column": 6
+                                            },
+                                            "end": {
+                                              "line": 59,
                                               "column": 25
                                             }
                                           }
@@ -3113,35 +3290,35 @@
                                                 "value": "expectCount",
                                                 "raw": "\"expectCount\"",
                                                 "range": [
-                                                  1473,
-                                                  1486
+                                                  1566,
+                                                  1579
                                                 ],
                                                 "loc": {
                                                   "start": {
-                                                    "line": 56,
+                                                    "line": 60,
                                                     "column": 8
                                                   },
                                                   "end": {
-                                                    "line": 56,
+                                                    "line": 60,
                                                     "column": 21
                                                   }
                                                 }
                                               },
                                               "value": {
                                                 "type": "Literal",
-                                                "value": 5,
-                                                "raw": "5",
+                                                "value": 8,
+                                                "raw": "8",
                                                 "range": [
-                                                  1488,
-                                                  1489
+                                                  1581,
+                                                  1582
                                                 ],
                                                 "loc": {
                                                   "start": {
-                                                    "line": 56,
+                                                    "line": 60,
                                                     "column": 23
                                                   },
                                                   "end": {
-                                                    "line": 56,
+                                                    "line": 60,
                                                     "column": 24
                                                   }
                                                 }
@@ -3151,16 +3328,16 @@
                                               "shorthand": false,
                                               "computed": false,
                                               "range": [
-                                                1473,
-                                                1489
+                                                1566,
+                                                1582
                                               ],
                                               "loc": {
                                                 "start": {
-                                                  "line": 56,
+                                                  "line": 60,
                                                   "column": 8
                                                 },
                                                 "end": {
-                                                  "line": 56,
+                                                  "line": 60,
                                                   "column": 24
                                                 }
                                               }
@@ -3172,35 +3349,35 @@
                                                 "value": "actualCount",
                                                 "raw": "\"actualCount\"",
                                                 "range": [
-                                                  1499,
-                                                  1512
+                                                  1592,
+                                                  1605
                                                 ],
                                                 "loc": {
                                                   "start": {
-                                                    "line": 57,
+                                                    "line": 61,
                                                     "column": 8
                                                   },
                                                   "end": {
-                                                    "line": 57,
+                                                    "line": 61,
                                                     "column": 21
                                                   }
                                                 }
                                               },
                                               "value": {
                                                 "type": "Literal",
-                                                "value": 3,
-                                                "raw": "3",
+                                                "value": 6,
+                                                "raw": "6",
                                                 "range": [
-                                                  1514,
-                                                  1515
+                                                  1607,
+                                                  1608
                                                 ],
                                                 "loc": {
                                                   "start": {
-                                                    "line": 57,
+                                                    "line": 61,
                                                     "column": 23
                                                   },
                                                   "end": {
-                                                    "line": 57,
+                                                    "line": 61,
                                                     "column": 24
                                                   }
                                                 }
@@ -3210,32 +3387,32 @@
                                               "shorthand": false,
                                               "computed": false,
                                               "range": [
-                                                1499,
-                                                1515
+                                                1592,
+                                                1608
                                               ],
                                               "loc": {
                                                 "start": {
-                                                  "line": 57,
+                                                  "line": 61,
                                                   "column": 8
                                                 },
                                                 "end": {
-                                                  "line": 57,
+                                                  "line": 61,
                                                   "column": 24
                                                 }
                                               }
                                             }
                                           ],
                                           "range": [
-                                            1463,
-                                            1523
+                                            1556,
+                                            1616
                                           ],
                                           "loc": {
                                             "start": {
-                                              "line": 55,
+                                              "line": 59,
                                               "column": 27
                                             },
                                             "end": {
-                                              "line": 58,
+                                              "line": 62,
                                               "column": 7
                                             }
                                           }
@@ -3245,16 +3422,193 @@
                                         "shorthand": false,
                                         "computed": false,
                                         "range": [
-                                          1442,
-                                          1523
+                                          1535,
+                                          1616
                                         ],
                                         "loc": {
                                           "start": {
-                                            "line": 55,
+                                            "line": 59,
                                             "column": 6
                                           },
                                           "end": {
-                                            "line": 58,
+                                            "line": 62,
+                                            "column": 7
+                                          }
+                                        }
+                                      },
+                                      {
+                                        "type": "Property",
+                                        "key": {
+                                          "type": "Literal",
+                                          "value": "src/myVariable.js",
+                                          "raw": "\"src/myVariable.js\"",
+                                          "range": [
+                                            1624,
+                                            1643
+                                          ],
+                                          "loc": {
+                                            "start": {
+                                              "line": 63,
+                                              "column": 6
+                                            },
+                                            "end": {
+                                              "line": 63,
+                                              "column": 25
+                                            }
+                                          }
+                                        },
+                                        "value": {
+                                          "type": "ObjectExpression",
+                                          "properties": [
+                                            {
+                                              "type": "Property",
+                                              "key": {
+                                                "type": "Literal",
+                                                "value": "expectCount",
+                                                "raw": "\"expectCount\"",
+                                                "range": [
+                                                  1655,
+                                                  1668
+                                                ],
+                                                "loc": {
+                                                  "start": {
+                                                    "line": 64,
+                                                    "column": 8
+                                                  },
+                                                  "end": {
+                                                    "line": 64,
+                                                    "column": 21
+                                                  }
+                                                }
+                                              },
+                                              "value": {
+                                                "type": "Literal",
+                                                "value": 5,
+                                                "raw": "5",
+                                                "range": [
+                                                  1670,
+                                                  1671
+                                                ],
+                                                "loc": {
+                                                  "start": {
+                                                    "line": 64,
+                                                    "column": 23
+                                                  },
+                                                  "end": {
+                                                    "line": 64,
+                                                    "column": 24
+                                                  }
+                                                }
+                                              },
+                                              "kind": "init",
+                                              "method": false,
+                                              "shorthand": false,
+                                              "computed": false,
+                                              "range": [
+                                                1655,
+                                                1671
+                                              ],
+                                              "loc": {
+                                                "start": {
+                                                  "line": 64,
+                                                  "column": 8
+                                                },
+                                                "end": {
+                                                  "line": 64,
+                                                  "column": 24
+                                                }
+                                              }
+                                            },
+                                            {
+                                              "type": "Property",
+                                              "key": {
+                                                "type": "Literal",
+                                                "value": "actualCount",
+                                                "raw": "\"actualCount\"",
+                                                "range": [
+                                                  1681,
+                                                  1694
+                                                ],
+                                                "loc": {
+                                                  "start": {
+                                                    "line": 65,
+                                                    "column": 8
+                                                  },
+                                                  "end": {
+                                                    "line": 65,
+                                                    "column": 21
+                                                  }
+                                                }
+                                              },
+                                              "value": {
+                                                "type": "Literal",
+                                                "value": 3,
+                                                "raw": "3",
+                                                "range": [
+                                                  1696,
+                                                  1697
+                                                ],
+                                                "loc": {
+                                                  "start": {
+                                                    "line": 65,
+                                                    "column": 23
+                                                  },
+                                                  "end": {
+                                                    "line": 65,
+                                                    "column": 24
+                                                  }
+                                                }
+                                              },
+                                              "kind": "init",
+                                              "method": false,
+                                              "shorthand": false,
+                                              "computed": false,
+                                              "range": [
+                                                1681,
+                                                1697
+                                              ],
+                                              "loc": {
+                                                "start": {
+                                                  "line": 65,
+                                                  "column": 8
+                                                },
+                                                "end": {
+                                                  "line": 65,
+                                                  "column": 24
+                                                }
+                                              }
+                                            }
+                                          ],
+                                          "range": [
+                                            1645,
+                                            1705
+                                          ],
+                                          "loc": {
+                                            "start": {
+                                              "line": 63,
+                                              "column": 27
+                                            },
+                                            "end": {
+                                              "line": 66,
+                                              "column": 7
+                                            }
+                                          }
+                                        },
+                                        "kind": "init",
+                                        "method": false,
+                                        "shorthand": false,
+                                        "computed": false,
+                                        "range": [
+                                          1624,
+                                          1705
+                                        ],
+                                        "loc": {
+                                          "start": {
+                                            "line": 63,
+                                            "column": 6
+                                          },
+                                          "end": {
+                                            "line": 66,
                                             "column": 7
                                           }
                                         }
@@ -3262,7 +3616,7 @@
                                     ],
                                     "range": [
                                       500,
-                                      1529
+                                      1711
                                     ],
                                     "loc": {
                                       "start": {
@@ -3270,7 +3624,7 @@
                                         "column": 37
                                       },
                                       "end": {
-                                        "line": 59,
+                                        "line": 67,
                                         "column": 5
                                       }
                                     }
@@ -3278,7 +3632,7 @@
                                 ],
                                 "range": [
                                   467,
-                                  1530
+                                  1712
                                 ],
                                 "loc": {
                                   "start": {
@@ -3286,14 +3640,14 @@
                                     "column": 4
                                   },
                                   "end": {
-                                    "line": 59,
+                                    "line": 67,
                                     "column": 6
                                   }
                                 }
                               },
                               "range": [
                                 467,
-                                1531
+                                1713
                               ],
                               "loc": {
                                 "start": {
@@ -3301,7 +3655,7 @@
                                   "column": 4
                                 },
                                 "end": {
-                                  "line": 59,
+                                  "line": 67,
                                   "column": 7
                                 }
                               }
@@ -3309,7 +3663,7 @@
                           ],
                           "range": [
                             188,
-                            1535
+                            1717
                           ],
                           "loc": {
                             "start": {
@@ -3317,7 +3671,7 @@
                               "column": 30
                             },
                             "end": {
-                              "line": 60,
+                              "line": 68,
                               "column": 3
                             }
                           }
@@ -3326,7 +3680,7 @@
                         "expression": false,
                         "range": [
                           184,
-                          1535
+                          1717
                         ],
                         "loc": {
                           "start": {
@@ -3334,7 +3688,7 @@
                             "column": 26
                           },
                           "end": {
-                            "line": 60,
+                            "line": 68,
                             "column": 3
                           }
                         }
@@ -3342,7 +3696,7 @@
                     ],
                     "range": [
                       160,
-                      1536
+                      1718
                     ],
                     "loc": {
                       "start": {
@@ -3350,7 +3704,7 @@
                         "column": 2
                       },
                       "end": {
-                        "line": 60,
+                        "line": 68,
                         "column": 4
                       }
                     },
@@ -3359,7 +3713,7 @@
                   },
                   "range": [
                     160,
-                    1537
+                    1719
                   ],
                   "loc": {
                     "start": {
@@ -3367,7 +3721,7 @@
                       "column": 2
                     },
                     "end": {
-                      "line": 60,
+                      "line": 68,
                       "column": 5
                     }
                   },
@@ -3395,7 +3749,7 @@
               ],
               "range": [
                 117,
-                1539
+                1721
               ],
               "loc": {
                 "start": {
@@ -3403,7 +3757,7 @@
                   "column": 27
                 },
                 "end": {
-                  "line": 61,
+                  "line": 69,
                   "column": 1
                 }
               }
@@ -3412,7 +3766,7 @@
             "expression": false,
             "range": [
               112,
-              1539
+              1721
             ],
             "loc": {
               "start": {
@@ -3420,7 +3774,7 @@
                 "column": 22
               },
               "end": {
-                "line": 61,
+                "line": 69,
                 "column": 1
               }
             }
@@ -3428,7 +3782,7 @@
         ],
         "range": [
           90,
-          1540
+          1722
         ],
         "loc": {
           "start": {
@@ -3436,7 +3790,7 @@
             "column": 0
           },
           "end": {
-            "line": 61,
+            "line": 69,
             "column": 2
           }
         },
@@ -3445,7 +3799,7 @@
       },
       "range": [
         90,
-        1541
+        1723
       ],
       "loc": {
         "start": {
@@ -3453,7 +3807,7 @@
           "column": 0
         },
         "end": {
-          "line": 61,
+          "line": 69,
           "column": 3
         }
       },
@@ -3482,7 +3836,7 @@
   "sourceType": "module",
   "range": [
     0,
-    1541
+    1723
   ],
   "loc": {
     "start": {
@@ -3490,7 +3844,7 @@
       "column": 0
     },
     "end": {
-      "line": 61,
+      "line": 69,
       "column": 3
     }
   },

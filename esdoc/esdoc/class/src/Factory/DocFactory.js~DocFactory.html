@@ -88,30 +88,25 @@
   <h2><a href="typedef/">Typedef</a></h2>
   <ul>
     
-  <li data-ice="typedefDoc"><span><a href="typedef/index.html#static-typedef-CoverageObject">CoverageObject</a></span></li>
+  <li data-ice="typedefDoc"><span><a href="typedef/index.html#static-typedef-AST">AST</a></span></li>
+<li data-ice="typedefDoc"><span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span></li>
+<li data-ice="typedefDoc"><span><a href="typedef/index.html#static-typedef-CoverageObject">CoverageObject</a></span></li>
 <li data-ice="typedefDoc"><span><a href="typedef/index.html#static-typedef-DocObject">DocObject</a></span></li>
 <li data-ice="typedefDoc"><span><a href="typedef/index.html#static-typedef-DocTypedef">DocTypedef</a></span></li>
 <li data-ice="typedefDoc"><span><a href="typedef/index.html#static-typedef-ESDocCLIArgv">ESDocCLIArgv</a></span></li>
 <li data-ice="typedefDoc"><span><a href="typedef/index.html#static-typedef-ESDocConfig">ESDocConfig</a></span></li>
+<li data-ice="typedefDoc"><span><a href="typedef/index.html#static-typedef-IceCap">IceCap</a></span></li>
 <li data-ice="typedefDoc"><span><a href="typedef/index.html#static-typedef-IceCapInstanceTypedef">IceCapInstanceTypedef</a></span></li>
+<li data-ice="typedefDoc"><span><a href="typedef/index.html#static-typedef-NPMPackageObject">NPMPackageObject</a></span></li>
 <li data-ice="typedefDoc"><span><a href="typedef/index.html#static-typedef-PackageTypedef">PackageTypedef</a></span></li>
 <li data-ice="typedefDoc"><span><a href="typedef/index.html#static-typedef-ParsedParam">ParsedParam</a></span></li>
+<li data-ice="typedefDoc"><span><a href="typedef/index.html#static-typedef-Taffy">Taffy</a></span></li>
 <li data-ice="typedefDoc"><span><a href="typedef/index.html#static-typedef-TaffyCursor">TaffyCursor</a></span></li>
 <li data-ice="typedefDoc"><span><a href="typedef/index.html#static-typedef-Tag">Tag</a></span></li>
 </ul>
 </div>
 
-<div data-ice="externalWrap">
-  <h2>External</h2>
-  <ul>
-    
-  <li data-ice="externalDoc"><span><a href="https://github.com/estree/estree">AST</a></span></li>
-<li data-ice="externalDoc"><span><a href="https://github.com/estree/estree">ASTNode</a></span></li>
-<li data-ice="externalDoc"><span><a href="https://github.com/h13i32maru/ice-cap">IceCap</a></span></li>
-<li data-ice="externalDoc"><span><a href="https://docs.npmjs.com/files/package.json">NPMPackageObject</a></span></li>
-<li data-ice="externalDoc"><span><a href="http://www.taffydb.com/">Taffy</a></span></li>
-</ul>
-</div>
+
 </nav>
 
 <div class="content" data-ice="content"><div class="header-notice">
@@ -172,7 +167,7 @@ let results = factory.results;</code></pre>
     <td>
       <div>
         <p>
-           <span data-ice="name"><span><a href="class/src/Factory/DocFactory.js~DocFactory.html#instance-constructor-constructor">constructor</a></span></span><span data-ice="signature">(ast: <span><a href="https://github.com/estree/estree">AST</a></span>, pathResolver: <span><a href="class/src/Util/PathResolver.js~PathResolver.html">PathResolver</a></span>)</span>
+           <span data-ice="name"><span><a href="class/src/Factory/DocFactory.js~DocFactory.html#instance-constructor-constructor">constructor</a></span></span><span data-ice="signature">(ast: <span><a href="typedef/index.html#static-typedef-AST">AST</a></span>, pathResolver: <span><a href="class/src/Util/PathResolver.js~PathResolver.html">PathResolver</a></span>)</span>
         </p>
       </div>
       <div>
@@ -342,7 +337,7 @@ let results = factory.results;</code></pre>
     <td>
       <div>
         <p>
-           <span data-ice="name"><span><a href="class/src/Factory/DocFactory.js~DocFactory.html#instance-method-push">push</a></span></span><span data-ice="signature">(node: <span><a href="https://github.com/estree/estree">ASTNode</a></span>, parentNode: <span><a href="https://github.com/estree/estree">ASTNode</a></span>)</span>
+           <span data-ice="name"><span><a href="class/src/Factory/DocFactory.js~DocFactory.html#instance-method-push">push</a></span></span><span data-ice="signature">(node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>, parentNode: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>)</span>
         </p>
       </div>
       <div>
@@ -398,7 +393,7 @@ let results = factory.results;</code></pre>
     <td>
       <div>
         <p>
-           <span data-ice="name"><span><a href="class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_createDoc">_createDoc</a></span></span><span data-ice="signature">(node: <span><a href="https://github.com/estree/estree">ASTNode</a></span>, tags: <span><span><a href="typedef/index.html#static-typedef-Tag">Tag</a></span><span>[]</span></span>): <span><a href="class/src/Doc/AbstractDoc.js~AbstractDoc.html">AbstractDoc</a></span></span>
+           <span data-ice="name"><span><a href="class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_createDoc">_createDoc</a></span></span><span data-ice="signature">(node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>, tags: <span><span><a href="typedef/index.html#static-typedef-Tag">Tag</a></span><span>[]</span></span>): <span><a href="class/src/Doc/AbstractDoc.js~AbstractDoc.html">AbstractDoc</a></span></span>
         </p>
       </div>
       <div>
@@ -423,7 +418,7 @@ let results = factory.results;</code></pre>
     <td>
       <div>
         <p>
-           <span data-ice="name"><span><a href="class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_decideAssignmentType">_decideAssignmentType</a></span></span><span data-ice="signature">(node: <span><a href="https://github.com/estree/estree">ASTNode</a></span>): {type: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, node: <span><a href="https://github.com/estree/estree">ASTNode</a></span>}</span>
+           <span data-ice="name"><span><a href="class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_decideAssignmentType">_decideAssignmentType</a></span></span><span data-ice="signature">(node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>): {type: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>}</span>
         </p>
       </div>
       <div>
@@ -448,7 +443,7 @@ let results = factory.results;</code></pre>
     <td>
       <div>
         <p>
-           <span data-ice="name"><span><a href="class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_decideClassDeclarationType">_decideClassDeclarationType</a></span></span><span data-ice="signature">(node: <span><a href="https://github.com/estree/estree">ASTNode</a></span>): {type: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, node: <span><a href="https://github.com/estree/estree">ASTNode</a></span>}</span>
+           <span data-ice="name"><span><a href="class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_decideClassDeclarationType">_decideClassDeclarationType</a></span></span><span data-ice="signature">(node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>): {type: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>}</span>
         </p>
       </div>
       <div>
@@ -473,7 +468,7 @@ let results = factory.results;</code></pre>
     <td>
       <div>
         <p>
-           <span data-ice="name"><span><a href="class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_decideExpressionStatementType">_decideExpressionStatementType</a></span></span><span data-ice="signature">(node: <span><a href="https://github.com/estree/estree">ASTNode</a></span>): {type: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, node: <span><a href="https://github.com/estree/estree">ASTNode</a></span>}</span>
+           <span data-ice="name"><span><a href="class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_decideExpressionStatementType">_decideExpressionStatementType</a></span></span><span data-ice="signature">(node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>): {type: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>}</span>
         </p>
       </div>
       <div>
@@ -498,7 +493,7 @@ let results = factory.results;</code></pre>
     <td>
       <div>
         <p>
-           <span data-ice="name"><span><a href="class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_decideFunctionDeclarationType">_decideFunctionDeclarationType</a></span></span><span data-ice="signature">(node: <span><a href="https://github.com/estree/estree">ASTNode</a></span>): {type: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, node: <span><a href="https://github.com/estree/estree">ASTNode</a></span>}</span>
+           <span data-ice="name"><span><a href="class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_decideFunctionDeclarationType">_decideFunctionDeclarationType</a></span></span><span data-ice="signature">(node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>): {type: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>}</span>
         </p>
       </div>
       <div>
@@ -523,7 +518,7 @@ let results = factory.results;</code></pre>
     <td>
       <div>
         <p>
-           <span data-ice="name"><span><a href="class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_decideMethodDefinitionType">_decideMethodDefinitionType</a></span></span><span data-ice="signature">(node: <span><a href="https://github.com/estree/estree">ASTNode</a></span>): {type: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, node: <span><a href="https://github.com/estree/estree">ASTNode</a></span>}</span>
+           <span data-ice="name"><span><a href="class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_decideMethodDefinitionType">_decideMethodDefinitionType</a></span></span><span data-ice="signature">(node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>): {type: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>}</span>
         </p>
       </div>
       <div>
@@ -548,7 +543,7 @@ let results = factory.results;</code></pre>
     <td>
       <div>
         <p>
-           <span data-ice="name"><span><a href="class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_decideType">_decideType</a></span></span><span data-ice="signature">(tags: <span><span><a href="typedef/index.html#static-typedef-Tag">Tag</a></span><span>[]</span></span>, node: <span><a href="https://github.com/estree/estree">ASTNode</a></span>): {type: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, node: <span><a href="https://github.com/estree/estree">ASTNode</a></span>}</span>
+           <span data-ice="name"><span><a href="class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_decideType">_decideType</a></span></span><span data-ice="signature">(tags: <span><span><a href="typedef/index.html#static-typedef-Tag">Tag</a></span><span>[]</span></span>, node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>): {type: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>}</span>
         </p>
       </div>
       <div>
@@ -573,7 +568,7 @@ let results = factory.results;</code></pre>
     <td>
       <div>
         <p>
-           <span data-ice="name"><span><a href="class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_decideVariableType">_decideVariableType</a></span></span><span data-ice="signature">(node: <span><a href="https://github.com/estree/estree">ASTNode</a></span>): {type: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, node: <span><a href="https://github.com/estree/estree">ASTNode</a></span>}</span>
+           <span data-ice="name"><span><a href="class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_decideVariableType">_decideVariableType</a></span></span><span data-ice="signature">(node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>): {type: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>}</span>
         </p>
       </div>
       <div>
@@ -598,7 +593,7 @@ let results = factory.results;</code></pre>
     <td>
       <div>
         <p>
-           <span data-ice="name"><span><a href="class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_findUp">_findUp</a></span></span><span data-ice="signature">(node: <span><a href="https://github.com/estree/estree">ASTNode</a></span>, types: <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span>[]</span></span>): <span><a href="https://github.com/estree/estree">ASTNode</a></span></span>
+           <span data-ice="name"><span><a href="class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_findUp">_findUp</a></span></span><span data-ice="signature">(node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>, types: <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span>[]</span></span>): <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode|null</a></span></span>
         </p>
       </div>
       <div>
@@ -623,7 +618,7 @@ let results = factory.results;</code></pre>
     <td>
       <div>
         <p>
-           <span data-ice="name"><span><a href="class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_isLastNodeInParent">_isLastNodeInParent</a></span></span><span data-ice="signature">(node: <span><a href="https://github.com/estree/estree">ASTNode</a></span>, parentNode: <span><a href="https://github.com/estree/estree">ASTNode</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+           <span data-ice="name"><span><a href="class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_isLastNodeInParent">_isLastNodeInParent</a></span></span><span data-ice="signature">(node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>, parentNode: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
         </p>
       </div>
       <div>
@@ -648,7 +643,7 @@ let results = factory.results;</code></pre>
     <td>
       <div>
         <p>
-           <span data-ice="name"><span><a href="class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_isTopDepthInBody">_isTopDepthInBody</a></span></span><span data-ice="signature">(node: <span><a href="https://github.com/estree/estree">ASTNode</a></span>, body: <span><span><a href="https://github.com/estree/estree">ASTNode</a></span><span>[]</span></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+           <span data-ice="name"><span><a href="class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_isTopDepthInBody">_isTopDepthInBody</a></span></span><span data-ice="signature">(node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>, body: <span><span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span><span>[]</span></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
         </p>
       </div>
       <div>
@@ -673,7 +668,32 @@ let results = factory.results;</code></pre>
     <td>
       <div>
         <p>
-           <span data-ice="name"><span><a href="class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_traverseComments">_traverseComments</a></span></span><span data-ice="signature">(parentNode: <span><a href="https://github.com/estree/estree">ASTNode</a></span>, node: <span><a href="https://github.com/estree/estree">ASTNode</a></span>, comments: <span><span><a href="https://github.com/estree/estree">ASTNode</a></span><span>[]</span></span>): <span><span><a href="typedef/index.html#static-typedef-DocObject">DocObject</a></span><span>[]</span></span></span>
+           <span data-ice="name"><span><a href="class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_joinSeparatedExport">_joinSeparatedExport</a></span></span><span data-ice="signature">()</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>join separated export declaration in AST internal.</p></div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">private</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_traverseComments">_traverseComments</a></span></span><span data-ice="signature">(parentNode: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>, node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>, comments: <span><span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span><span>[]</span></span>): <span><span><a href="typedef/index.html#static-typedef-DocObject">DocObject</a></span><span>[]</span></span></span>
         </p>
       </div>
       <div>
@@ -698,7 +718,7 @@ let results = factory.results;</code></pre>
     <td>
       <div>
         <p>
-           <span data-ice="name"><span><a href="class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_unwrapExportDeclaration">_unwrapExportDeclaration</a></span></span><span data-ice="signature">(node: <span><a href="https://github.com/estree/estree">ASTNode</a></span>): <span><a href="https://github.com/estree/estree">ASTNode</a></span></span>
+           <span data-ice="name"><span><a href="class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_unwrapExportDeclaration">_unwrapExportDeclaration</a></span></span><span data-ice="signature">(node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>): <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode|null</a></span></span>
         </p>
       </div>
       <div>
@@ -729,7 +749,7 @@ let results = factory.results;</code></pre>
     
     
     
-    <span data-ice="name">constructor</span><span data-ice="signature">(ast: <span><a href="https://github.com/estree/estree">AST</a></span>, pathResolver: <span><a href="class/src/Util/PathResolver.js~PathResolver.html">PathResolver</a></span>)</span>
+    <span data-ice="name">constructor</span><span data-ice="signature">(ast: <span><a href="typedef/index.html#static-typedef-AST">AST</a></span>, pathResolver: <span><a href="class/src/Util/PathResolver.js~PathResolver.html">PathResolver</a></span>)</span>
     <span class="right-info">
       
       
@@ -755,7 +775,7 @@ let results = factory.results;</code></pre>
     
     <tr data-ice="property" data-depth="0">
       <td data-ice="name" data-depth="0">ast</td>
-      <td data-ice="type"><span><a href="https://github.com/estree/estree">AST</a></span></td>
+      <td data-ice="type"><span><a href="typedef/index.html#static-typedef-AST">AST</a></span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"><p>AST of source code.</p>
 </td>
@@ -1002,11 +1022,11 @@ let results = factory.results;</code></pre>
     
     
     
-    <span data-ice="name">push</span><span data-ice="signature">(node: <span><a href="https://github.com/estree/estree">ASTNode</a></span>, parentNode: <span><a href="https://github.com/estree/estree">ASTNode</a></span>)</span>
+    <span data-ice="name">push</span><span data-ice="signature">(node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>, parentNode: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>)</span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber59">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber92">source</a></span></span>
     </span>
   </h3>
 
@@ -1028,14 +1048,14 @@ let results = factory.results;</code></pre>
     
     <tr data-ice="property" data-depth="0">
       <td data-ice="name" data-depth="0">node</td>
-      <td data-ice="type"><span><a href="https://github.com/estree/estree">ASTNode</a></span></td>
+      <td data-ice="type"><span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"><p>target node.</p>
 </td>
     </tr>
 <tr data-ice="property" data-depth="0">
       <td data-ice="name" data-depth="0">parentNode</td>
-      <td data-ice="type"><span><a href="https://github.com/estree/estree">ASTNode</a></span></td>
+      <td data-ice="type"><span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"><p>parent node of target node.</p>
 </td>
@@ -1073,7 +1093,7 @@ let results = factory.results;</code></pre>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber444">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber477">source</a></span></span>
     </span>
   </h3>
 
@@ -1138,11 +1158,11 @@ let results = factory.results;</code></pre>
     
     
     
-    <span data-ice="name">_createDoc</span><span data-ice="signature">(node: <span><a href="https://github.com/estree/estree">ASTNode</a></span>, tags: <span><span><a href="typedef/index.html#static-typedef-Tag">Tag</a></span><span>[]</span></span>): <span><a href="class/src/Doc/AbstractDoc.js~AbstractDoc.html">AbstractDoc</a></span></span>
+    <span data-ice="name">_createDoc</span><span data-ice="signature">(node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>, tags: <span><span><a href="typedef/index.html#static-typedef-Tag">Tag</a></span><span>[]</span></span>): <span><a href="class/src/Doc/AbstractDoc.js~AbstractDoc.html">AbstractDoc</a></span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber156">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber189">source</a></span></span>
     </span>
   </h3>
 
@@ -1164,7 +1184,7 @@ let results = factory.results;</code></pre>
     
     <tr data-ice="property" data-depth="0">
       <td data-ice="name" data-depth="0">node</td>
-      <td data-ice="type"><span><a href="https://github.com/estree/estree">ASTNode</a></span></td>
+      <td data-ice="type"><span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"><p>target node.</p>
 </td>
@@ -1214,11 +1234,11 @@ let results = factory.results;</code></pre>
     
     
     
-    <span data-ice="name">_decideAssignmentType</span><span data-ice="signature">(node: <span><a href="https://github.com/estree/estree">ASTNode</a></span>): {type: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, node: <span><a href="https://github.com/estree/estree">ASTNode</a></span>}</span>
+    <span data-ice="name">_decideAssignmentType</span><span data-ice="signature">(node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>): {type: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>}</span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber355">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber388">source</a></span></span>
     </span>
   </h3>
 
@@ -1240,7 +1260,7 @@ let results = factory.results;</code></pre>
     
     <tr data-ice="property" data-depth="0">
       <td data-ice="name" data-depth="0">node</td>
-      <td data-ice="type"><span><a href="https://github.com/estree/estree">ASTNode</a></span></td>
+      <td data-ice="type"><span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"><p>target node that is assignment node.</p>
 </td>
@@ -1254,7 +1274,7 @@ let results = factory.results;</code></pre>
     <h4>Return:</h4>
     <table>
       <tr>
-        <td class="return-type" data-ice="returnType">{type: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, node: <span><a href="https://github.com/estree/estree">ASTNode</a></span>}</td>
+        <td class="return-type" data-ice="returnType">{type: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>}</td>
         <td class="return-desc" data-ice="returnDescription"><p>decided type.</p>
 </td>
       </tr>
@@ -1283,11 +1303,11 @@ let results = factory.results;</code></pre>
     
     
     
-    <span data-ice="name">_decideClassDeclarationType</span><span data-ice="signature">(node: <span><a href="https://github.com/estree/estree">ASTNode</a></span>): {type: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, node: <span><a href="https://github.com/estree/estree">ASTNode</a></span>}</span>
+    <span data-ice="name">_decideClassDeclarationType</span><span data-ice="signature">(node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>): {type: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>}</span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber235">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber268">source</a></span></span>
     </span>
   </h3>
 
@@ -1309,7 +1329,7 @@ let results = factory.results;</code></pre>
     
     <tr data-ice="property" data-depth="0">
       <td data-ice="name" data-depth="0">node</td>
-      <td data-ice="type"><span><a href="https://github.com/estree/estree">ASTNode</a></span></td>
+      <td data-ice="type"><span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"><p>target node that is class declaration node.</p>
 </td>
@@ -1323,7 +1343,7 @@ let results = factory.results;</code></pre>
     <h4>Return:</h4>
     <table>
       <tr>
-        <td class="return-type" data-ice="returnType">{type: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, node: <span><a href="https://github.com/estree/estree">ASTNode</a></span>}</td>
+        <td class="return-type" data-ice="returnType">{type: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>}</td>
         <td class="return-desc" data-ice="returnDescription"><p>decided type.</p>
 </td>
       </tr>
@@ -1352,11 +1372,11 @@ let results = factory.results;</code></pre>
     
     
     
-    <span data-ice="name">_decideExpressionStatementType</span><span data-ice="signature">(node: <span><a href="https://github.com/estree/estree">ASTNode</a></span>): {type: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, node: <span><a href="https://github.com/estree/estree">ASTNode</a></span>}</span>
+    <span data-ice="name">_decideExpressionStatementType</span><span data-ice="signature">(node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>): {type: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>}</span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber275">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber308">source</a></span></span>
     </span>
   </h3>
 
@@ -1378,7 +1398,7 @@ let results = factory.results;</code></pre>
     
     <tr data-ice="property" data-depth="0">
       <td data-ice="name" data-depth="0">node</td>
-      <td data-ice="type"><span><a href="https://github.com/estree/estree">ASTNode</a></span></td>
+      <td data-ice="type"><span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"><p>target node that is expression statement node.</p>
 </td>
@@ -1392,7 +1412,7 @@ let results = factory.results;</code></pre>
     <h4>Return:</h4>
     <table>
       <tr>
-        <td class="return-type" data-ice="returnType">{type: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, node: <span><a href="https://github.com/estree/estree">ASTNode</a></span>}</td>
+        <td class="return-type" data-ice="returnType">{type: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>}</td>
         <td class="return-desc" data-ice="returnDescription"><p>decided type.</p>
 </td>
       </tr>
@@ -1421,11 +1441,11 @@ let results = factory.results;</code></pre>
     
     
     
-    <span data-ice="name">_decideFunctionDeclarationType</span><span data-ice="signature">(node: <span><a href="https://github.com/estree/estree">ASTNode</a></span>): {type: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, node: <span><a href="https://github.com/estree/estree">ASTNode</a></span>}</span>
+    <span data-ice="name">_decideFunctionDeclarationType</span><span data-ice="signature">(node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>): {type: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>}</span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber263">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber296">source</a></span></span>
     </span>
   </h3>
 
@@ -1447,7 +1467,7 @@ let results = factory.results;</code></pre>
     
     <tr data-ice="property" data-depth="0">
       <td data-ice="name" data-depth="0">node</td>
-      <td data-ice="type"><span><a href="https://github.com/estree/estree">ASTNode</a></span></td>
+      <td data-ice="type"><span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"><p>target node that is function declaration node.</p>
 </td>
@@ -1461,7 +1481,7 @@ let results = factory.results;</code></pre>
     <h4>Return:</h4>
     <table>
       <tr>
-        <td class="return-type" data-ice="returnType">{type: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, node: <span><a href="https://github.com/estree/estree">ASTNode</a></span>}</td>
+        <td class="return-type" data-ice="returnType">{type: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>}</td>
         <td class="return-desc" data-ice="returnDescription"><p>decided type.</p>
 </td>
       </tr>
@@ -1490,11 +1510,11 @@ let results = factory.results;</code></pre>
     
     
     
-    <span data-ice="name">_decideMethodDefinitionType</span><span data-ice="signature">(node: <span><a href="https://github.com/estree/estree">ASTNode</a></span>): {type: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, node: <span><a href="https://github.com/estree/estree">ASTNode</a></span>}</span>
+    <span data-ice="name">_decideMethodDefinitionType</span><span data-ice="signature">(node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>): {type: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>}</span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber247">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber280">source</a></span></span>
     </span>
   </h3>
 
@@ -1516,7 +1536,7 @@ let results = factory.results;</code></pre>
     
     <tr data-ice="property" data-depth="0">
       <td data-ice="name" data-depth="0">node</td>
-      <td data-ice="type"><span><a href="https://github.com/estree/estree">ASTNode</a></span></td>
+      <td data-ice="type"><span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"><p>target node that is method definition node.</p>
 </td>
@@ -1530,7 +1550,7 @@ let results = factory.results;</code></pre>
     <h4>Return:</h4>
     <table>
       <tr>
-        <td class="return-type" data-ice="returnType">{type: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, node: <span><a href="https://github.com/estree/estree">ASTNode</a></span>}</td>
+        <td class="return-type" data-ice="returnType">{type: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>}</td>
         <td class="return-desc" data-ice="returnDescription"><p>decided type.</p>
 </td>
       </tr>
@@ -1559,11 +1579,11 @@ let results = factory.results;</code></pre>
     
     
     
-    <span data-ice="name">_decideType</span><span data-ice="signature">(tags: <span><span><a href="typedef/index.html#static-typedef-Tag">Tag</a></span><span>[]</span></span>, node: <span><a href="https://github.com/estree/estree">ASTNode</a></span>): {type: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, node: <span><a href="https://github.com/estree/estree">ASTNode</a></span>}</span>
+    <span data-ice="name">_decideType</span><span data-ice="signature">(tags: <span><span><a href="typedef/index.html#static-typedef-Tag">Tag</a></span><span>[]</span></span>, node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>): {type: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>}</span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber192">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber225">source</a></span></span>
     </span>
   </h3>
 
@@ -1592,7 +1612,7 @@ let results = factory.results;</code></pre>
     </tr>
 <tr data-ice="property" data-depth="0">
       <td data-ice="name" data-depth="0">node</td>
-      <td data-ice="type"><span><a href="https://github.com/estree/estree">ASTNode</a></span></td>
+      <td data-ice="type"><span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"><p>target node.</p>
 </td>
@@ -1606,7 +1626,7 @@ let results = factory.results;</code></pre>
     <h4>Return:</h4>
     <table>
       <tr>
-        <td class="return-type" data-ice="returnType">{type: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, node: <span><a href="https://github.com/estree/estree">ASTNode</a></span>}</td>
+        <td class="return-type" data-ice="returnType">{type: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>}</td>
         <td class="return-desc" data-ice="returnDescription"><p>decided type.</p>
 </td>
       </tr>
@@ -1635,11 +1655,11 @@ let results = factory.results;</code></pre>
     
     
     
-    <span data-ice="name">_decideVariableType</span><span data-ice="signature">(node: <span><a href="https://github.com/estree/estree">ASTNode</a></span>): {type: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, node: <span><a href="https://github.com/estree/estree">ASTNode</a></span>}</span>
+    <span data-ice="name">_decideVariableType</span><span data-ice="signature">(node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>): {type: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>}</span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber322">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber355">source</a></span></span>
     </span>
   </h3>
 
@@ -1661,7 +1681,7 @@ let results = factory.results;</code></pre>
     
     <tr data-ice="property" data-depth="0">
       <td data-ice="name" data-depth="0">node</td>
-      <td data-ice="type"><span><a href="https://github.com/estree/estree">ASTNode</a></span></td>
+      <td data-ice="type"><span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"><p>target node that is variable node.</p>
 </td>
@@ -1675,7 +1695,7 @@ let results = factory.results;</code></pre>
     <h4>Return:</h4>
     <table>
       <tr>
-        <td class="return-type" data-ice="returnType">{type: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, node: <span><a href="https://github.com/estree/estree">ASTNode</a></span>}</td>
+        <td class="return-type" data-ice="returnType">{type: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>, node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>}</td>
         <td class="return-desc" data-ice="returnDescription"><p>decided type.</p>
 </td>
       </tr>
@@ -1704,11 +1724,11 @@ let results = factory.results;</code></pre>
     
     
     
-    <span data-ice="name">_findUp</span><span data-ice="signature">(node: <span><a href="https://github.com/estree/estree">ASTNode</a></span>, types: <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span>[]</span></span>): <span><a href="https://github.com/estree/estree">ASTNode</a></span></span>
+    <span data-ice="name">_findUp</span><span data-ice="signature">(node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>, types: <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span>[]</span></span>): <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode|null</a></span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber455">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber488">source</a></span></span>
     </span>
   </h3>
 
@@ -1730,7 +1750,7 @@ let results = factory.results;</code></pre>
     
     <tr data-ice="property" data-depth="0">
       <td data-ice="name" data-depth="0">node</td>
-      <td data-ice="type"><span><a href="https://github.com/estree/estree">ASTNode</a></span></td>
+      <td data-ice="type"><span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"><p>start node.</p>
 </td>
@@ -1751,7 +1771,7 @@ let results = factory.results;</code></pre>
     <h4>Return:</h4>
     <table>
       <tr>
-        <td class="return-type" data-ice="returnType"><span><a href="https://github.com/estree/estree">ASTNode</a></span></td>
+        <td class="return-type" data-ice="returnType"><span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode|null</a></span></td>
         <td class="return-desc" data-ice="returnDescription"><p>found first node.</p>
 </td>
       </tr>
@@ -1780,11 +1800,11 @@ let results = factory.results;</code></pre>
     
     
     
-    <span data-ice="name">_isLastNodeInParent</span><span data-ice="signature">(node: <span><a href="https://github.com/estree/estree">ASTNode</a></span>, parentNode: <span><a href="https://github.com/estree/estree">ASTNode</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+    <span data-ice="name">_isLastNodeInParent</span><span data-ice="signature">(node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>, parentNode: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber407">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber440">source</a></span></span>
     </span>
   </h3>
 
@@ -1806,14 +1826,14 @@ let results = factory.results;</code></pre>
     
     <tr data-ice="property" data-depth="0">
       <td data-ice="name" data-depth="0">node</td>
-      <td data-ice="type"><span><a href="https://github.com/estree/estree">ASTNode</a></span></td>
+      <td data-ice="type"><span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"><p>target node.</p>
 </td>
     </tr>
 <tr data-ice="property" data-depth="0">
       <td data-ice="name" data-depth="0">parentNode</td>
-      <td data-ice="type"><span><a href="https://github.com/estree/estree">ASTNode</a></span></td>
+      <td data-ice="type"><span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"><p>target parent node.</p>
 </td>
@@ -1856,11 +1876,11 @@ let results = factory.results;</code></pre>
     
     
     
-    <span data-ice="name">_isTopDepthInBody</span><span data-ice="signature">(node: <span><a href="https://github.com/estree/estree">ASTNode</a></span>, body: <span><span><a href="https://github.com/estree/estree">ASTNode</a></span><span>[]</span></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+    <span data-ice="name">_isTopDepthInBody</span><span data-ice="signature">(node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>, body: <span><span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span><span>[]</span></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber423">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber456">source</a></span></span>
     </span>
   </h3>
 
@@ -1882,14 +1902,14 @@ let results = factory.results;</code></pre>
     
     <tr data-ice="property" data-depth="0">
       <td data-ice="name" data-depth="0">node</td>
-      <td data-ice="type"><span><a href="https://github.com/estree/estree">ASTNode</a></span></td>
+      <td data-ice="type"><span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"><p>target node.</p>
 </td>
     </tr>
 <tr data-ice="property" data-depth="0">
       <td data-ice="name" data-depth="0">body</td>
-      <td data-ice="type"><span><span><a href="https://github.com/estree/estree">ASTNode</a></span><span>[]</span></span></td>
+      <td data-ice="type"><span><span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span><span>[]</span></span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"><p>target body node.</p>
 </td>
@@ -1926,17 +1946,65 @@ let results = factory.results;</code></pre>
   
 </div>
 <div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-_joinSeparatedExport">
+    <span class="access" data-ice="access">private</span>
+    
+    
+    
+    
+    <span data-ice="name">_joinSeparatedExport</span><span data-ice="signature">()</span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber71">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>join separated export declaration in AST internal.</p>
+<pre><code class="lang-javascript"><pre class="source-code"><code class="prettyprint">class Foo {}
+
+export default Foo;</code></pre>
+</code></pre>
+<p>&#x2193;</p>
+<pre><code class="lang-javascript"><pre class="source-code"><code class="prettyprint">export default class Foo {}</code></pre>
+</code></pre>
+</div>
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
   <h3 data-ice="anchor" id="instance-method-_traverseComments">
     <span class="access" data-ice="access">private</span>
     
     
     
     
-    <span data-ice="name">_traverseComments</span><span data-ice="signature">(parentNode: <span><a href="https://github.com/estree/estree">ASTNode</a></span>, node: <span><a href="https://github.com/estree/estree">ASTNode</a></span>, comments: <span><span><a href="https://github.com/estree/estree">ASTNode</a></span><span>[]</span></span>): <span><span><a href="typedef/index.html#static-typedef-DocObject">DocObject</a></span><span>[]</span></span></span>
+    <span data-ice="name">_traverseComments</span><span data-ice="signature">(parentNode: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>, node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>, comments: <span><span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span><span>[]</span></span>): <span><span><a href="typedef/index.html#static-typedef-DocObject">DocObject</a></span><span>[]</span></span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber97">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber130">source</a></span></span>
     </span>
   </h3>
 
@@ -1958,21 +2026,21 @@ let results = factory.results;</code></pre>
     
     <tr data-ice="property" data-depth="0">
       <td data-ice="name" data-depth="0">parentNode</td>
-      <td data-ice="type"><span><a href="https://github.com/estree/estree">ASTNode</a></span></td>
+      <td data-ice="type"><span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"><p>parent of target node.</p>
 </td>
     </tr>
 <tr data-ice="property" data-depth="0">
       <td data-ice="name" data-depth="0">node</td>
-      <td data-ice="type"><span><a href="https://github.com/estree/estree">ASTNode</a></span></td>
+      <td data-ice="type"><span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"><p>target node.</p>
 </td>
     </tr>
 <tr data-ice="property" data-depth="0">
       <td data-ice="name" data-depth="0">comments</td>
-      <td data-ice="type"><span><span><a href="https://github.com/estree/estree">ASTNode</a></span><span>[]</span></span></td>
+      <td data-ice="type"><span><span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span><span>[]</span></span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"><p>comment nodes.</p>
 </td>
@@ -2015,11 +2083,11 @@ let results = factory.results;</code></pre>
     
     
     
-    <span data-ice="name">_unwrapExportDeclaration</span><span data-ice="signature">(node: <span><a href="https://github.com/estree/estree">ASTNode</a></span>): <span><a href="https://github.com/estree/estree">ASTNode</a></span></span>
+    <span data-ice="name">_unwrapExportDeclaration</span><span data-ice="signature">(node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>): <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode|null</a></span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber386">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber419">source</a></span></span>
     </span>
   </h3>
 
@@ -2041,7 +2109,7 @@ let results = factory.results;</code></pre>
     
     <tr data-ice="property" data-depth="0">
       <td data-ice="name" data-depth="0">node</td>
-      <td data-ice="type"><span><a href="https://github.com/estree/estree">ASTNode</a></span></td>
+      <td data-ice="type"><span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"><p>target node that is export declaration node.</p>
 </td>
@@ -2055,7 +2123,7 @@ let results = factory.results;</code></pre>
     <h4>Return:</h4>
     <table>
       <tr>
-        <td class="return-type" data-ice="returnType"><span><a href="https://github.com/estree/estree">ASTNode</a></span></td>
+        <td class="return-type" data-ice="returnType"><span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode|null</a></span></td>
         <td class="return-desc" data-ice="returnDescription"><p>unwrapped child node of exported node.</p>
 </td>
       </tr>
@@ -2081,7 +2149,7 @@ let results = factory.results;</code></pre>
 </div>
 
 <footer class="footer">
-  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(0.1.1)</span></a>
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(0.1.2)</span></a>
 </footer>
 
 <script src="script/search_index.js"></script>
@@ -2090,5 +2158,6 @@ let results = factory.results;</code></pre>
 <script src="script/inherited-summary.js"></script>
 <script src="script/test-summary.js"></script>
 <script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
 </body>
 </html>

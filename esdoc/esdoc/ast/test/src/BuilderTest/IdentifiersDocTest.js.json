@@ -758,8 +758,8 @@
                                               },
                                               {
                                                 "type": "Literal",
-                                                "value": "[data-ice=\"target\"]:nth-of-type(13)",
-                                                "raw": "'[data-ice=\"target\"]:nth-of-type(13)'",
+                                                "value": "[data-ice=\"target\"]:nth-of-type(14)",
+                                                "raw": "'[data-ice=\"target\"]:nth-of-type(14)'",
                                                 "range": [
                                                   561,
                                                   598

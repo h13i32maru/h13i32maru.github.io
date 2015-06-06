@@ -76,8 +76,8 @@
       "actualCount": 29
     },
     "src/Factory/DocFactory.js": {
-      "expectCount": 22,
-      "actualCount": 18
+      "expectCount": 23,
+      "actualCount": 19
     },
     "src/Publisher/Builder/DocResolver.js": {
       "expectCount": 14,
@@ -88,8 +88,8 @@
       "actualCount": 8
     },
     "src/ESDocCLI.js": {
-      "expectCount": 10,
-      "actualCount": 10
+      "expectCount": 9,
+      "actualCount": 9
     },
     "src/Parser/ESParser.js": {
       "expectCount": 2,

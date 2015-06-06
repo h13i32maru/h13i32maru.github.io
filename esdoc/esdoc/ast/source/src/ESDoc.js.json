@@ -8,10 +8,10 @@
           "type": "ImportDefaultSpecifier",
           "local": {
             "type": "Identifier",
-            "name": "babel",
+            "name": "es6shim",
             "range": [
               7,
-              12
+              14
             ],
             "loc": {
               "start": {
@@ -20,13 +20,13 @@
               },
               "end": {
                 "line": 1,
-                "column": 12
+                "column": 14
               }
             }
           },
           "range": [
             7,
-            12
+            14
           ],
           "loc": {
             "start": {
@@ -35,23 +35,23 @@
             },
             "end": {
               "line": 1,
-              "column": 12
+              "column": 14
             }
           }
         }
       ],
       "source": {
         "type": "Literal",
-        "value": "babel/polyfill",
-        "raw": "'babel/polyfill'",
+        "value": "core-js/shim",
+        "raw": "'core-js/shim'",
         "range": [
-          18,
+          20,
           34
         ],
         "loc": {
           "start": {
             "line": 1,
-            "column": 18
+            "column": 20
           },
           "end": {
             "line": 1,
