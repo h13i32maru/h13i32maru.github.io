@@ -1,4 +1,4 @@
-@import url(//fonts.googleapis.com/css?family=Roboto:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700);
 
 * {
   margin: 0;
@@ -366,7 +366,7 @@ table.params td p {
   margin: 0;
 }
 
-.deprecated, .experimental {
+.deprecated, .experimental, .instance-docs {
   border-left: solid 5px orange;
   padding-left: 4px;
   margin: 4px 0;
