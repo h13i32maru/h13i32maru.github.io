@@ -8549,7 +8549,7 @@
     "access": null,
     "description": null,
     "lineNumber": 1,
-    "content": "import fs from 'fs-extra';\n\nclass InvalidCodeLogger {\n  show(filePath, node) {\n    let lines = fs.readFileSync(filePath).toString().split('\\n');\n    let targetLines = [];\n    let start;\n    let end = node.loc.start.line;\n\n    if (node.leadingComments && node.leadingComments[0]) {\n      start = node.leadingComments[0].loc.start.line;\n    } else {\n      start = Math.max(0, end - 10);\n    }\n\n    for (let i = start - 1; i < end; i++) {\n      targetLines.push(`${i}| ` + lines[i]);\n    }\n\n    console.log('\u001b[31merror: could not process the following code.\u001b[32m');\n    console.log(filePath);\n    console.log(targetLines.join('\\n'));\n    console.log('\u001b[0m');\n  }\n}\n\nexport default new InvalidCodeLogger();\n"
+    "content": "import fs from 'fs-extra';\n\n/**\n * logger for invalid code which can not be parsed with ESDoc.\n */\nclass InvalidCodeLogger {\n\n  /**\n   * show log.\n   * @param {string} filePath - invalid code in this file.\n   * @param {ASTNode} node - fail parsing node.\n   */\n  show(filePath, node) {\n    let lines = fs.readFileSync(filePath).toString().split('\\n');\n    let targetLines = [];\n    let start;\n    let end = node.loc.start.line;\n\n    if (node.leadingComments && node.leadingComments[0]) {\n      start = node.leadingComments[0].loc.start.line;\n    } else {\n      start = Math.max(0, end - 10);\n    }\n\n    for (let i = start - 1; i < end; i++) {\n      targetLines.push(`${i}| ` + lines[i]);\n    }\n\n    console.log('\u001b[31merror: could not process the following code.\u001b[32m');\n    console.log(filePath);\n    console.log(targetLines.join('\\n'));\n    console.log('\u001b[0m');\n  }\n}\n\n/**\n * singleton for {@link InvalidCodeLogger}\n */\nexport default new InvalidCodeLogger();\n"
   },
   {
     "kind": "class",
@@ -8562,10 +8562,9 @@
     "export": true,
     "importPath": "esdoc/out/src/Util/InvalidCodeLogger.js",
     "importStyle": null,
-    "description": null,
-    "lineNumber": 3,
+    "description": "logger for invalid code which can not be parsed with ESDoc.",
+    "lineNumber": 6,
     "pseudoExport": true,
-    "undocument": true,
     "interface": false
   },
   {
@@ -8576,21 +8575,28 @@
     "memberof": "src/Util/InvalidCodeLogger.js~InvalidCodeLogger",
     "longname": "src/Util/InvalidCodeLogger.js~InvalidCodeLogger#show",
     "access": null,
-    "description": null,
-    "lineNumber": 4,
-    "undocument": true,
+    "description": "show log.",
+    "lineNumber": 13,
     "params": [
       {
-        "name": "filePath",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "filePath",
+        "description": "invalid code in this file."
       },
       {
-        "name": "node",
+        "nullable": null,
         "types": [
-          "*"
-        ]
+          "ASTNode"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "node",
+        "description": "fail parsing node."
       }
     ],
     "generator": false
@@ -8606,9 +8612,8 @@
     "export": true,
     "importPath": "esdoc/out/src/Util/InvalidCodeLogger.js",
     "importStyle": "invalidCodeLogger",
-    "description": null,
-    "lineNumber": 27,
-    "undocument": true,
+    "description": "singleton for {@link InvalidCodeLogger}",
+    "lineNumber": 39,
     "type": {
       "types": [
         "src/Util/InvalidCodeLogger.js~InvalidCodeLogger"

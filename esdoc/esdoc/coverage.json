@@ -1,7 +1,7 @@
 {
-  "coverage": "93.06%",
+  "coverage": "94.05%",
   "expectCount": 303,
-  "actualCount": 282,
+  "actualCount": 285,
   "files": {
     "src/Doc/FileDoc.js": {
       "expectCount": 6,
@@ -109,7 +109,7 @@
     },
     "src/Util/InvalidCodeLogger.js": {
       "expectCount": 3,
-      "actualCount": 0
+      "actualCount": 3
     },
     "src/Util/NamingUtil.js": {
       "expectCount": 2,
