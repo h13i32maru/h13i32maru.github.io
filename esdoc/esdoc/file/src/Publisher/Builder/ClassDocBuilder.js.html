@@ -48,12 +48,13 @@
 <li data-ice="classDoc"><span><a href="class/src/Doc/ExternalDoc.js~ExternalDoc.html">ExternalDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/FileDoc.js~FileDoc.html">FileDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/FileDocBuilder.js~FileDocBuilder.html">FileDocBuilder</a></span></li>
-<li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/TestFileDocBuilder.js~FileDocBuilder.html">FileDocBuilder</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/FunctionDoc.js~FunctionDoc.html">FunctionDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/IdentifiersDocBuilder.js~IdentifiersDocBuilder.html">IdentifiersDocBuilder</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/IndexDocBuilder.js~IndexDocBuilder.html">IndexDocBuilder</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Util/InvalidCodeLogger.js~InvalidCodeLogger.html">InvalidCodeLogger</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/MemberDoc.js~MemberDoc.html">MemberDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/MethodDoc.js~MethodDoc.html">MethodDoc</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Util/NamingUtil.js~NamingUtil.html">NamingUtil</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Parser/ParamParser.js~ParamParser.html">ParamParser</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Util/PathResolver.js~PathResolver.html">PathResolver</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/SearchIndexBuilder.js~SearchIndexBuilder.html">SearchIndexBuilder</a></span></li>
@@ -64,6 +65,7 @@
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/TestDocBuilder.js~TestDocBuilder.html">TestDocBuilder</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Factory/TestDocFactory.js~TestDocFactory.html">TestDocFactory</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/TestFileDoc.js~TestFileDoc.html">TestFileDoc</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/TestFileDocBuilder.js~TestFileDocBuilder.html">TestFileDocBuilder</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/TypedefDoc.js~TypedefDoc.html">TypedefDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/VariableDoc.js~VariableDoc.html">VariableDoc</a></span></li>
 </ul>
@@ -82,7 +84,13 @@
 </ul>
 </div>
 
-
+<div data-ice="variableWrap">
+  <h2><a href="variable/">Variable</a></h2>
+  <ul>
+    
+  <li data-ice="variableDoc"><span><a href="variable/index.html#static-variable-invalidCodeLogger">invalidCodeLogger</a></span></li>
+</ul>
+</div>
 
 <div data-ice="typedefWrap">
   <h2><a href="typedef/">Typedef</a></h2>
@@ -146,6 +154,9 @@ export default class ClassDocBuilder extends DocBuilder {
     let extendsChain = this._buildExtendsChainHTML(doc);
     let directSubclass = this._buildDirectSubclassHTML(doc);
     let indirectSubclass = this._buildIndirectSubclassHTML(doc);
+    let instanceDocs = this._find({kind: &apos;variable&apos;}).filter((v)=&gt; {
+      return v.type &amp;&amp; v.type.types.includes(doc.longname);
+    });
 
     let ice = new IceCap(this._readTemplate(&apos;class.html&apos;));
 
@@ -179,6 +190,12 @@ export default class ClassDocBuilder extends DocBuilder {
     ice.load(&apos;experimental&apos;, this._buildExperimentalHTML(doc));
     ice.load(&apos;see&apos;, this._buildDocsLinkHTML(doc.see), &apos;append&apos;);
     ice.load(&apos;todo&apos;, this._buildDocsLinkHTML(doc.todo), &apos;append&apos;);
+
+    ice.into(&apos;instanceDocs&apos;, instanceDocs, (instanceDocs, ice)=&gt;{
+      ice.loop(&apos;instanceDoc&apos;, instanceDocs, (i, instanceDoc, ice)=&gt;{
+        ice.load(&apos;instanceDoc&apos;, this._buildDocLinkHTML(instanceDoc.longname));
+      });
+    });
 
     ice.into(&apos;exampleDocs&apos;, doc.examples, (examples, ice)=&gt;{
       ice.loop(&apos;exampleDoc&apos;, examples, (i, example, ice)=&gt;{

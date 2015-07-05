@@ -48,12 +48,13 @@
 <li data-ice="classDoc"><span><a href="class/src/Doc/ExternalDoc.js~ExternalDoc.html">ExternalDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/FileDoc.js~FileDoc.html">FileDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/FileDocBuilder.js~FileDocBuilder.html">FileDocBuilder</a></span></li>
-<li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/TestFileDocBuilder.js~FileDocBuilder.html">FileDocBuilder</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/FunctionDoc.js~FunctionDoc.html">FunctionDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/IdentifiersDocBuilder.js~IdentifiersDocBuilder.html">IdentifiersDocBuilder</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/IndexDocBuilder.js~IndexDocBuilder.html">IndexDocBuilder</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Util/InvalidCodeLogger.js~InvalidCodeLogger.html">InvalidCodeLogger</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/MemberDoc.js~MemberDoc.html">MemberDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/MethodDoc.js~MethodDoc.html">MethodDoc</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Util/NamingUtil.js~NamingUtil.html">NamingUtil</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Parser/ParamParser.js~ParamParser.html">ParamParser</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Util/PathResolver.js~PathResolver.html">PathResolver</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/SearchIndexBuilder.js~SearchIndexBuilder.html">SearchIndexBuilder</a></span></li>
@@ -64,6 +65,7 @@
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/TestDocBuilder.js~TestDocBuilder.html">TestDocBuilder</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Factory/TestDocFactory.js~TestDocFactory.html">TestDocFactory</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/TestFileDoc.js~TestFileDoc.html">TestFileDoc</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/TestFileDocBuilder.js~TestFileDocBuilder.html">TestFileDocBuilder</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/TypedefDoc.js~TypedefDoc.html">TypedefDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/VariableDoc.js~VariableDoc.html">VariableDoc</a></span></li>
 </ul>
@@ -82,7 +84,13 @@
 </ul>
 </div>
 
-
+<div data-ice="variableWrap">
+  <h2><a href="variable/">Variable</a></h2>
+  <ul>
+    
+  <li data-ice="variableDoc"><span><a href="variable/index.html#static-variable-invalidCodeLogger">invalidCodeLogger</a></span></li>
+</ul>
+</div>
 
 <div data-ice="typedefWrap">
   <h2><a href="typedef/">Typedef</a></h2>
@@ -121,6 +129,7 @@ import VariableDoc from &apos;../Doc/VariableDoc.js&apos;;
 import AssignmentDoc from &apos;../Doc/AssignmentDoc.js&apos;;
 import TypedefDoc from &apos;../Doc/TypedefDoc.js&apos;;
 import ExternalDoc from &apos;../Doc/ExternalDoc.js&apos;;
+import ASTUtil from &apos;../Util/ASTUtil.js&apos;;
 
 let already = Symbol(&apos;already&apos;);
 let logger = new Logger(&apos;DocFactory&apos;);
@@ -152,7 +161,8 @@ export default class DocFactory {
     this._results = [];
     this._processedClassNodes = [];
 
-    this._joinSeparatedExport();
+    this._inspectExportDefaultDeclaration();
+    this._inspectExportNamedDeclaration();
 
     // file doc
     let doc = new FileDoc(ast, ast, pathResolver, []);
@@ -166,34 +176,168 @@ export default class DocFactory {
   }
 
   /**
-   * join separated export declaration in AST internal.
+   * inspect ExportDefaultDeclaration.
+   *
+   * case1: separated export
    *
    * ```javascript
    * class Foo {}
-   *
    * export default Foo;
    * ```
-   * &#x2193;
+   *
+   * case2: export instance(directly).
+   *
    * ```javascript
-   * export default class Foo {}
+   * class Foo {}
+   * export default new Foo();
+   * ```
+   *
+   * case3: export instance(indirectly).
+   *
+   * ```javascript
+   * class Foo {}
+   * let foo = new Foo();
+   * export default foo;
    * ```
    *
    * @private
+   * @todo support function export.
    */
-  _joinSeparatedExport() {
-    for (let node1 of this._ast.body) {
-      if (![&apos;ExportDefaultDeclaration&apos;, &apos;ExportNamedDeclaration&apos;].includes(node1.type)) continue;
+  _inspectExportDefaultDeclaration() {
+    let pseudoExportNodes = [];
 
-      for (let node2 of this._ast.body) {
-        if (!node2.id) continue;
-        if (node2.id.type !== &apos;Identifier&apos;) continue;
-        if (node2.id.name !== node1.declaration.name) continue;
+    for (let exportNode of this._ast.body) {
+      if (exportNode.type !== &apos;ExportDefaultDeclaration&apos;) continue;
 
-        node1.declaration = this._copy(node2);
-        node2.type = &apos;Identifier&apos;; // to ignore node2
-        break;
+      let targetClassName = null;
+      let targetVariableName = null;
+      let pseudoClassExport;
+
+      switch(exportNode.declaration.type) {
+        case &apos;NewExpression&apos;:
+          targetClassName = exportNode.declaration.callee.name;
+          targetVariableName = targetClassName.replace(/^./, c =&gt; c.toLowerCase());
+          pseudoClassExport = true;
+          break;
+        case &apos;Identifier&apos;:
+          let varNode = ASTUtil.findVariableDeclarationAndNewExpressionNode(exportNode.declaration.name, this._ast);
+          if (varNode) {
+              targetClassName = varNode.declarations[0].init.callee.name;
+              targetVariableName = exportNode.declaration.name;
+              pseudoClassExport = true;
+              varNode.type = &apos;Identifier&apos;; // to ignore
+          } else {
+            targetClassName = exportNode.declaration.name;
+            targetVariableName = targetClassName.replace(/^./, c =&gt; c.toLowerCase());
+            pseudoClassExport = false;
+          }
+          break;
+        default:
+          logger.w(`unknown export declaration type. type = &quot;${exportNode.declaration.type}&quot;`);
+          break;
+      }
+
+      let classNode = ASTUtil.findClassDeclarationNode(targetClassName, this._ast);
+      if (classNode) {
+        let pseudoExportNode1 = this._copy(exportNode);
+        pseudoExportNode1.declaration = this._copy(classNode);
+        pseudoExportNode1.leadingComments = null;
+        pseudoExportNode1.declaration.__esdoc__pseudo_export = pseudoClassExport;
+
+        let pseudoExportNode2 = this._copy(exportNode);
+        pseudoExportNode2.declaration = ASTUtil.createVariableDeclarationAndNewExpressionNode(targetVariableName, targetClassName, exportNode.loc);
+
+        pseudoExportNodes.push(pseudoExportNode1);
+        pseudoExportNodes.push(pseudoExportNode2);
+
+        classNode.type = &apos;Identifier&apos;; // to ignore
+        exportNode.type = &apos;Identifier&apos;; // to ignore
       }
     }
+
+    this._ast.body.push(...pseudoExportNodes);
+  }
+
+  /**
+   * inspect ExportNamedDeclaration.
+   *
+   * case1: separated export
+   *
+   * ```javascript
+   * class Foo {}
+   * export {Foo};
+   * ```
+   *
+   * case2: export instance(indirectly).
+   *
+   * ```javascript
+   * class Foo {}
+   * let foo = new Foo();
+   * export {foo};
+   * ```
+   *
+   * @private
+   * @todo support function export.
+   */
+  _inspectExportNamedDeclaration() {
+    let pseudoExportNodes = [];
+
+    for (let exportNode of this._ast.body) {
+      if (exportNode.type !== &apos;ExportNamedDeclaration&apos;) continue;
+
+      if (exportNode.declaration &amp;&amp; exportNode.declaration.type === &apos;VariableDeclaration&apos;) {
+        for (let declaration of exportNode.declaration.declarations) {
+          if (declaration.init.type !== &apos;NewExpression&apos;) continue;
+
+          let classNode = ASTUtil.findClassDeclarationNode(declaration.init.callee.name, this._ast);
+          if (classNode) {
+            let pseudoExportNode = this._copy(exportNode);
+            pseudoExportNode.declaration = this._copy(classNode);
+            pseudoExportNode.leadingComments = null;
+            pseudoExportNodes.push(pseudoExportNode);
+            pseudoExportNode.declaration.__esdoc__pseudo_export = true;
+            classNode.type = &apos;Identifier&apos;; // to ignore
+          }
+        }
+        continue;
+      }
+
+      for (let specifier of exportNode.specifiers) {
+        if (specifier.type !== &apos;ExportSpecifier&apos;) continue;
+
+        let targetClassName = null;
+        let pseudoClassExport;
+
+        let varNode = ASTUtil.findVariableDeclarationAndNewExpressionNode(specifier.exported.name, this._ast);
+        if (varNode) {
+          targetClassName = varNode.declarations[0].init.callee.name;
+          pseudoClassExport = true;
+
+          let pseudoExportNode = this._copy(exportNode);
+          pseudoExportNode.declaration = this._copy(varNode);
+          pseudoExportNode.specifiers = null;
+          pseudoExportNodes.push(pseudoExportNode);
+
+          varNode.type = &apos;Identifier&apos;; // to ignore
+        } else {
+          targetClassName = specifier.exported.name;
+          pseudoClassExport = false;
+        }
+
+        let classNode = ASTUtil.findClassDeclarationNode(targetClassName, this._ast);
+        if (classNode) {
+          let pseudoExportNode = this._copy(exportNode);
+          pseudoExportNode.declaration = this._copy(classNode);
+          pseudoExportNode.leadingComments = null;
+          pseudoExportNode.specifiers = null;
+          pseudoExportNode.declaration.__esdoc__pseudo_export = pseudoClassExport;
+          pseudoExportNodes.push(pseudoExportNode);
+          classNode.type = &apos;Identifier&apos;; // to ignore
+        }
+      }
+    }
+
+    this._ast.body.push(...pseudoExportNodes);
   }
 
   /**
@@ -268,7 +412,7 @@ export default class DocFactory {
     }
 
     if (comments.length === 0) {
-      comments = [{type: &apos;Block&apos;, value: &apos;* @undocument&apos;}];
+      comments = [{type: &apos;Block&apos;, value: &apos;* @_undocument&apos;}];
     }
 
     let results = [];
@@ -339,11 +483,11 @@ export default class DocFactory {
     for (let tag of tags) {
       let tagName = tag.tagName;
       switch (tagName) {
-        case &apos;@class&apos;:    type = &apos;Class&apos;; break;
-        case &apos;@member&apos;:   type = &apos;Member&apos;; break;
-        case &apos;@method&apos;:   type = &apos;Method&apos;; break;
-        case &apos;@function&apos;: type = &apos;Function&apos;; break;
-        case &apos;@var&apos;:      type = &apos;Variable&apos;; break;
+        case &apos;@_class&apos;:    type = &apos;Class&apos;; break;
+        case &apos;@_member&apos;:   type = &apos;Member&apos;; break;
+        case &apos;@_method&apos;:   type = &apos;Method&apos;; break;
+        case &apos;@_function&apos;: type = &apos;Function&apos;; break;
+        case &apos;@_var&apos;:      type = &apos;Variable&apos;; break;
         case &apos;@typedef&apos;:  type = &apos;Typedef&apos;; break;
         case &apos;@external&apos;: type = &apos;External&apos;; break;
       }

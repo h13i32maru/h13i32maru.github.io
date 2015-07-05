@@ -48,12 +48,13 @@
 <li data-ice="classDoc"><span><a href="class/src/Doc/ExternalDoc.js~ExternalDoc.html">ExternalDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/FileDoc.js~FileDoc.html">FileDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/FileDocBuilder.js~FileDocBuilder.html">FileDocBuilder</a></span></li>
-<li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/TestFileDocBuilder.js~FileDocBuilder.html">FileDocBuilder</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/FunctionDoc.js~FunctionDoc.html">FunctionDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/IdentifiersDocBuilder.js~IdentifiersDocBuilder.html">IdentifiersDocBuilder</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/IndexDocBuilder.js~IndexDocBuilder.html">IndexDocBuilder</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Util/InvalidCodeLogger.js~InvalidCodeLogger.html">InvalidCodeLogger</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/MemberDoc.js~MemberDoc.html">MemberDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/MethodDoc.js~MethodDoc.html">MethodDoc</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Util/NamingUtil.js~NamingUtil.html">NamingUtil</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Parser/ParamParser.js~ParamParser.html">ParamParser</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Util/PathResolver.js~PathResolver.html">PathResolver</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/SearchIndexBuilder.js~SearchIndexBuilder.html">SearchIndexBuilder</a></span></li>
@@ -64,6 +65,7 @@
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/TestDocBuilder.js~TestDocBuilder.html">TestDocBuilder</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Factory/TestDocFactory.js~TestDocFactory.html">TestDocFactory</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/TestFileDoc.js~TestFileDoc.html">TestFileDoc</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/TestFileDocBuilder.js~TestFileDocBuilder.html">TestFileDocBuilder</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/TypedefDoc.js~TypedefDoc.html">TypedefDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/VariableDoc.js~VariableDoc.html">VariableDoc</a></span></li>
 </ul>
@@ -82,7 +84,13 @@
 </ul>
 </div>
 
-
+<div data-ice="variableWrap">
+  <h2><a href="variable/">Variable</a></h2>
+  <ul>
+    
+  <li data-ice="variableDoc"><span><a href="variable/index.html#static-variable-invalidCodeLogger">invalidCodeLogger</a></span></li>
+</ul>
+</div>
 
 <div data-ice="typedefWrap">
   <h2><a href="typedef/">Typedef</a></h2>
@@ -110,17 +118,19 @@
 </nav>
 
 <div class="content" data-ice="content"><div class="header-notice">
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import ClassDoc from &apos;<span><a href="file/src/Doc/ClassDoc.js.html#lineNumber7">esdoc/out/src/Doc/ClassDoc.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import ClassDoc from &apos;<span><a href="file/src/Doc/ClassDoc.js.html#lineNumber8">esdoc/out/src/Doc/ClassDoc.js</a></span>&apos;</code></pre></div>
   <span data-ice="access">public</span>
   <span data-ice="kind">class</span>
   
   
   
-  <span data-ice="source">| <span><a href="file/src/Doc/ClassDoc.js.html#lineNumber7">source</a></span></span>
+  <span data-ice="source">| <span><a href="file/src/Doc/ClassDoc.js.html#lineNumber8">source</a></span></span>
 </div>
 
 <div class="self-detail detail">
   <h1 data-ice="name">ClassDoc</h1>
+
+  
 
   <div class="flat-list" data-ice="extendsChain"><h4>Extends:</h4><div><span><a href="class/src/Doc/AbstractDoc.js~AbstractDoc.html">AbstractDoc</a></span> &#x2192; ClassDoc</div></div>
   
@@ -159,6 +169,82 @@
   <tbody>
   
   <tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="class/src/Doc/ClassDoc.js~ClassDoc.html#instance-method-@_kind">@_kind</a></span></span><span data-ice="signature">()</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>specify <code>class</code> to kind.</p></div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="class/src/Doc/ClassDoc.js~ClassDoc.html#instance-method-@_memberof">@_memberof</a></span></span><span data-ice="signature">()</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>take out self memberof from file path.</p></div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="class/src/Doc/ClassDoc.js~ClassDoc.html#instance-method-@_name">@_name</a></span></span><span data-ice="signature">()</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>take out self name from self node</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
     <td>
       <span class="access" data-ice="access">public</span>
       
@@ -227,82 +313,6 @@
         
         
         <div data-ice="description"><p>for @interface</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-           <span data-ice="name"><span><a href="class/src/Doc/ClassDoc.js~ClassDoc.html#instance-method-@kind">@kind</a></span></span><span data-ice="signature">()</span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>specify <code>class</code> to kind.</p></div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-           <span data-ice="name"><span><a href="class/src/Doc/ClassDoc.js~ClassDoc.html#instance-method-@memberof">@memberof</a></span></span><span data-ice="signature">()</span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>take out self memberof from file path.</p></div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-           <span data-ice="name"><span><a href="class/src/Doc/ClassDoc.js~ClassDoc.html#instance-method-@name">@name</a></span></span><span data-ice="signature">()</span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>take out self name from self node</p>
 </div>
       </div>
     </td>
@@ -511,6 +521,420 @@
     <td>
       <div>
         <p>
+           <span data-ice="name"><span><a href="class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@_content">@_content</a></span></span><span data-ice="signature">()</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>for @_content, does not need to use this tag</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@_export">@_export</a></span></span><span data-ice="signature">()</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>for @_export, does not need to use this tag</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@_generator">@_generator</a></span></span><span data-ice="signature">()</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>for @_generator, does not need to use this tag</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@_importPath">@_importPath</a></span></span><span data-ice="signature">()</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>for @_importPath, does not need to use this tag</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@_importStyle">@_importStyle</a></span></span><span data-ice="signature">()</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>for @_importStyle, does not need to use this tag</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@_kind">@_kind</a></span></span><span data-ice="signature">()</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>for @_kind, does not need to use this tag</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@_lineNumber">@_lineNumber</a></span></span><span data-ice="signature">()</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>for @_lineNumber, does not need to use this tag</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@_longname">@_longname</a></span></span><span data-ice="signature">()</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>for @_longname, does not need to use this tag</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@_member">@_member</a></span></span><span data-ice="signature">()</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>for @_member.</p></div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@_memberof">@_memberof</a></span></span><span data-ice="signature">()</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>for @_memberof, does not need to use this tag</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@_name">@_name</a></span></span><span data-ice="signature">()</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>for @_name, does not need to use this tag</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@_pseudoExport">@_pseudoExport</a></span></span><span data-ice="signature">()</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>for @_pseudoExport, does not need to use this tag.</p></div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@_static">@_static</a></span></span><span data-ice="signature">()</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>for @_static, does not need to use this tag</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@_undocument">@_undocument</a></span></span><span data-ice="signature">()</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>for @_undocument, does not need to use this tag</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@_unknown">@_unknown</a></span></span><span data-ice="signature">()</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>for @_unknown, does not need to use this tag</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@_variation">@_variation</a></span></span><span data-ice="signature">()</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>for @_variation</p>
+</div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
            <span data-ice="name"><span><a href="class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@abstract">@abstract</a></span></span><span data-ice="signature">()</span>
         </p>
       </div>
@@ -543,32 +967,6 @@
         
         
         <div data-ice="description"><p>for @access, @public, @private, @protected</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-           <span data-ice="name"><span><a href="class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@content">@content</a></span></span><span data-ice="signature">()</span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>for @content, does not need to use this tag</p>
 </div>
       </div>
     </td>
@@ -716,58 +1114,6 @@
     <td>
       <div>
         <p>
-           <span data-ice="name"><span><a href="class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@export">@export</a></span></span><span data-ice="signature">()</span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>for @export, does not need to use this tag</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-           <span data-ice="name"><span><a href="class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@generator">@generator</a></span></span><span data-ice="signature">()</span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>for @generator, does not need to use this tag</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
            <span data-ice="name"><span><a href="class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@ignore">@ignore</a></span></span><span data-ice="signature">()</span>
         </p>
       </div>
@@ -793,110 +1139,6 @@
     <td>
       <div>
         <p>
-           <span data-ice="name"><span><a href="class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@importPath">@importPath</a></span></span><span data-ice="signature">()</span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>for @importPath, does not need to use this tag</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-           <span data-ice="name"><span><a href="class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@importStyle">@importStyle</a></span></span><span data-ice="signature">()</span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>for @importStyle, does not need to use this tag</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-           <span data-ice="name"><span><a href="class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@kind">@kind</a></span></span><span data-ice="signature">()</span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>for @kind, does not need to use this tag</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-           <span data-ice="name"><span><a href="class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@lineNumber">@lineNumber</a></span></span><span data-ice="signature">()</span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>for @lineNumber, does not need to use this tag</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
            <span data-ice="name"><span><a href="class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@listens">@listens</a></span></span><span data-ice="signature">()</span>
         </p>
       </div>
@@ -904,109 +1146,6 @@
         
         
         <div data-ice="description"><p>for @listens.</p></div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-           <span data-ice="name"><span><a href="class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@longname">@longname</a></span></span><span data-ice="signature">()</span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>for @longname, does not need to use this tag</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-           <span data-ice="name"><span><a href="class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@member">@member</a></span></span><span data-ice="signature">()</span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>for @member.</p></div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-           <span data-ice="name"><span><a href="class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@memberof">@memberof</a></span></span><span data-ice="signature">()</span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>for @memberof, does not need to use this tag</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-           <span data-ice="name"><span><a href="class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@name">@name</a></span></span><span data-ice="signature">()</span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>for @name, does not need to use this tag</p>
-</div>
       </div>
     </td>
     <td>
@@ -1254,32 +1393,6 @@
     <td>
       <div>
         <p>
-           <span data-ice="name"><span><a href="class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@static">@static</a></span></span><span data-ice="signature">()</span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>for @static, does not need to use this tag</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
            <span data-ice="name"><span><a href="class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@throws">@throws</a></span></span><span data-ice="signature">()</span>
         </p>
       </div>
@@ -1355,84 +1468,6 @@
     <td>
       <div>
         <p>
-           <span data-ice="name"><span><a href="class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@undocument">@undocument</a></span></span><span data-ice="signature">()</span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>for @undocument, does not need to use this tag</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-           <span data-ice="name"><span><a href="class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@unknown">@unknown</a></span></span><span data-ice="signature">()</span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>for @unknown, does not need to use this tag</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
-           <span data-ice="name"><span><a href="class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@variation">@variation</a></span></span><span data-ice="signature">()</span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>for @variation</p>
-</div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">public</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
            <span data-ice="name"><span><a href="class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@version">@version</a></span></span><span data-ice="signature">()</span>
         </p>
       </div>
@@ -1484,7 +1519,7 @@
     <td>
       <div>
         <p>
-           <span data-ice="name"><span><a href="class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-_find">_find</a></span></span><span data-ice="signature">(names: <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span>[]</span></span>): <span><a href="typedef/index.html#static-typedef-Tag">Tag|null</a></span></span>
+           <span data-ice="name"><span><a href="class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-_find">_find</a></span></span><span data-ice="signature">(names: <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span>[]</span></span>): <span><a href="typedef/index.html#static-typedef-Tag">Tag</a></span></span>
         </p>
       </div>
       <div>
@@ -1541,6 +1576,31 @@
         
         
         <div data-ice="description"><p>find all tag values.</p></div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">private</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-_findClassLongname">_findClassLongname</a></span></span><span data-ice="signature">(className: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>find class in same file, import or external.</p></div>
       </div>
     </td>
     <td>
@@ -1634,6 +1694,135 @@
 <div data-ice="methodDetails"><h2 data-ice="title">Public Methods</h2>
 
 <div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-@_kind">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    <span data-ice="name">@_kind</span><span data-ice="signature">()</span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/Doc/ClassDoc.js.html#lineNumber22">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>specify <code>class</code> to kind.</p>
+</div>
+
+  <div data-ice="override"><h4>Override:</h4><span><a href="class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@_kind">AbstractDoc#@_kind</a></span></div>
+
+  <div data-ice="properties">
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-@_memberof">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    <span data-ice="name">@_memberof</span><span data-ice="signature">()</span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/Doc/ClassDoc.js.html#lineNumber41">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>take out self memberof from file path.</p>
+</div>
+
+  <div data-ice="override"><h4>Override:</h4><span><a href="class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@_memberof">AbstractDoc#@_memberof</a></span></div>
+
+  <div data-ice="properties">
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-@_name">
+    <span class="access" data-ice="access">public</span>
+    
+    
+    
+    
+    <span data-ice="name">@_name</span><span data-ice="signature">()</span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/Doc/ClassDoc.js.html#lineNumber29">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>take out self name from self node</p>
+</div>
+
+  <div data-ice="override"><h4>Override:</h4><span><a href="class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@_name">AbstractDoc#@_name</a></span></div>
+
+  <div data-ice="properties">
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <div data-ice="tests">
+    <h4>Test:</h4>
+    <ul>
+      
+    <li data-ice="test"><span><a href="test-file/src/BuilderTest/nAnonymousTest.js.html#lineNumber7">Anonymous Anonymous Class</a></span></li>
+</ul>
+  </div>
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
   <h3 data-ice="anchor" id="instance-method-@extends">
     <span class="access" data-ice="access">public</span>
     
@@ -1644,7 +1833,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Doc/ClassDoc.js.html#lineNumber52">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Doc/ClassDoc.js.html#lineNumber58">source</a></span></span>
     </span>
   </h3>
 
@@ -1691,7 +1880,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Doc/ClassDoc.js.html#lineNumber84">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Doc/ClassDoc.js.html#lineNumber90">source</a></span></span>
     </span>
   </h3>
 
@@ -1732,7 +1921,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Doc/ClassDoc.js.html#lineNumber42">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Doc/ClassDoc.js.html#lineNumber48">source</a></span></span>
     </span>
   </h3>
 
@@ -1743,129 +1932,6 @@
 </div>
 
   
-
-  <div data-ice="properties">
-</div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-method-@kind">
-    <span class="access" data-ice="access">public</span>
-    
-    
-    
-    
-    <span data-ice="name">@kind</span><span data-ice="signature">()</span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/Doc/ClassDoc.js.html#lineNumber21">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  <div data-ice="description"><p>specify <code>class</code> to kind.</p>
-</div>
-
-  <div data-ice="override"><h4>Override:</h4><span><a href="class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@kind">AbstractDoc#@kind</a></span></div>
-
-  <div data-ice="properties">
-</div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-method-@memberof">
-    <span class="access" data-ice="access">public</span>
-    
-    
-    
-    
-    <span data-ice="name">@memberof</span><span data-ice="signature">()</span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/Doc/ClassDoc.js.html#lineNumber35">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  <div data-ice="description"><p>take out self memberof from file path.</p>
-</div>
-
-  <div data-ice="override"><h4>Override:</h4><span><a href="class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@memberof">AbstractDoc#@memberof</a></span></div>
-
-  <div data-ice="properties">
-</div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-method-@name">
-    <span class="access" data-ice="access">public</span>
-    
-    
-    
-    
-    <span data-ice="name">@name</span><span data-ice="signature">()</span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/Doc/ClassDoc.js.html#lineNumber28">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  <div data-ice="description"><p>take out self name from self node</p>
-</div>
-
-  <div data-ice="override"><h4>Override:</h4><span><a href="class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@name">AbstractDoc#@name</a></span></div>
 
   <div data-ice="properties">
 </div>
@@ -1898,7 +1964,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Doc/ClassDoc.js.html#lineNumber12">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Doc/ClassDoc.js.html#lineNumber13">source</a></span></span>
     </span>
   </h3>
 

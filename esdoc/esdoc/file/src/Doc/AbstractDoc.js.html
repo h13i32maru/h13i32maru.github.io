@@ -48,12 +48,13 @@
 <li data-ice="classDoc"><span><a href="class/src/Doc/ExternalDoc.js~ExternalDoc.html">ExternalDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/FileDoc.js~FileDoc.html">FileDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/FileDocBuilder.js~FileDocBuilder.html">FileDocBuilder</a></span></li>
-<li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/TestFileDocBuilder.js~FileDocBuilder.html">FileDocBuilder</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/FunctionDoc.js~FunctionDoc.html">FunctionDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/IdentifiersDocBuilder.js~IdentifiersDocBuilder.html">IdentifiersDocBuilder</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/IndexDocBuilder.js~IndexDocBuilder.html">IndexDocBuilder</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Util/InvalidCodeLogger.js~InvalidCodeLogger.html">InvalidCodeLogger</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/MemberDoc.js~MemberDoc.html">MemberDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/MethodDoc.js~MethodDoc.html">MethodDoc</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Util/NamingUtil.js~NamingUtil.html">NamingUtil</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Parser/ParamParser.js~ParamParser.html">ParamParser</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Util/PathResolver.js~PathResolver.html">PathResolver</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/SearchIndexBuilder.js~SearchIndexBuilder.html">SearchIndexBuilder</a></span></li>
@@ -64,6 +65,7 @@
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/TestDocBuilder.js~TestDocBuilder.html">TestDocBuilder</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Factory/TestDocFactory.js~TestDocFactory.html">TestDocFactory</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/TestFileDoc.js~TestFileDoc.html">TestFileDoc</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/TestFileDocBuilder.js~TestFileDocBuilder.html">TestFileDocBuilder</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/TypedefDoc.js~TypedefDoc.html">TypedefDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/VariableDoc.js~VariableDoc.html">VariableDoc</a></span></li>
 </ul>
@@ -82,7 +84,13 @@
 </ul>
 </div>
 
-
+<div data-ice="variableWrap">
+  <h2><a href="variable/">Variable</a></h2>
+  <ul>
+    
+  <li data-ice="variableDoc"><span><a href="variable/index.html#static-variable-invalidCodeLogger">invalidCodeLogger</a></span></li>
+</ul>
+</div>
 
 <div data-ice="typedefWrap">
   <h2><a href="typedef/">Typedef</a></h2>
@@ -134,6 +142,8 @@ export default class AbstractDoc {
     this._commentTags = commentTags;
     this._value = {};
 
+    Object.defineProperty(this._node, &apos;doc&apos;, {value: this});
+
     this._apply();
   }
 
@@ -147,28 +157,29 @@ export default class AbstractDoc {
    * @private
    */
   _apply() {
-    this[&apos;@kind&apos;]();
-    this[&apos;@static&apos;]();
-    this[&apos;@variation&apos;]();
-    this[&apos;@name&apos;]();
-    this[&apos;@memberof&apos;]();
-    this[&apos;@longname&apos;]();
+    this[&apos;@_kind&apos;]();
+    this[&apos;@_static&apos;]();
+    this[&apos;@_variation&apos;]();
+    this[&apos;@_name&apos;]();
+    this[&apos;@_memberof&apos;]();
+    this[&apos;@_longname&apos;]();
     this[&apos;@access&apos;]();
-    this[&apos;@export&apos;]();
-    this[&apos;@importPath&apos;]();
-    this[&apos;@importStyle&apos;]();
+    this[&apos;@_export&apos;]();
+    this[&apos;@_importPath&apos;]();
+    this[&apos;@_importStyle&apos;]();
     this[&apos;@desc&apos;]();
     this[&apos;@example&apos;]();
     this[&apos;@see&apos;]();
-    this[&apos;@lineNumber&apos;]();
+    this[&apos;@_lineNumber&apos;]();
     this[&apos;@deprecated&apos;]();
     this[&apos;@experimental&apos;]();
     this[&apos;@since&apos;]();
     this[&apos;@version&apos;]();
     this[&apos;@todo&apos;]();
     this[&apos;@ignore&apos;]();
-    this[&apos;@undocument&apos;]();
-    this[&apos;@unknown&apos;]();
+    this[&apos;@_pseudoExport&apos;]();
+    this[&apos;@_undocument&apos;]();
+    this[&apos;@_unknown&apos;]();
 
     this[&apos;@param&apos;]();
     this[&apos;@property&apos;]();
@@ -179,19 +190,19 @@ export default class AbstractDoc {
     this[&apos;@throws&apos;]();
     this[&apos;@emits&apos;]();
     this[&apos;@listens&apos;]();
-    this[&apos;@member&apos;]();
-    this[&apos;@content&apos;]();
-    this[&apos;@generator&apos;]();
+    this[&apos;@_member&apos;]();
+    this[&apos;@_content&apos;]();
+    this[&apos;@_generator&apos;]();
   }
 
-  /** for @kind, does not need to use this tag */
-  [&apos;@kind&apos;]() {
-    this._value.kind = this._findTagValue([&apos;@kind&apos;]);
+  /** for @_kind, does not need to use this tag */
+  [&apos;@_kind&apos;]() {
+    this._value.kind = this._findTagValue([&apos;@_kind&apos;]);
   }
 
-  /** for @static, does not need to use this tag */
-  [&apos;@static&apos;]() {
-    let tag = this._find([&apos;@static&apos;]);
+  /** for @_static, does not need to use this tag */
+  [&apos;@_static&apos;]() {
+    let tag = this._find([&apos;@_static&apos;]);
     if (tag) {
       if (tag.tagValue === &apos;&apos; || tag.tagValue === &apos;true&apos;) {
         this._value.static = true;
@@ -207,24 +218,24 @@ export default class AbstractDoc {
     }
   }
 
-  /** for @variation */
-  [&apos;@variation&apos;]() {
-    this._value.variation = this._findTagValue([&apos;@variation&apos;]);
+  /** for @_variation */
+  [&apos;@_variation&apos;]() {
+    this._value.variation = this._findTagValue([&apos;@_variation&apos;]);
   }
 
-  /** for @name, does not need to use this tag */
-  [&apos;@name&apos;]() {
-    this._value.name = this._findTagValue([&apos;@name&apos;]);
+  /** for @_name, does not need to use this tag */
+  [&apos;@_name&apos;]() {
+    this._value.name = this._findTagValue([&apos;@_name&apos;]);
   }
 
-  /** for @memberof, does not need to use this tag */
-  [&apos;@memberof&apos;]() {
-    this._value.memberof = this._findTagValue([&apos;@memberof&apos;]);
+  /** for @_memberof, does not need to use this tag */
+  [&apos;@_memberof&apos;]() {
+    this._value.memberof = this._findTagValue([&apos;@_memberof&apos;]);
   }
 
-  /** for @longname, does not need to use this tag */
-  [&apos;@longname&apos;]() {
-    let tag = this._find([&apos;@longname&apos;]);
+  /** for @_longname, does not need to use this tag */
+  [&apos;@_longname&apos;]() {
+    let tag = this._find([&apos;@_longname&apos;]);
     if (tag) {
       this._value.longname = tag.tagValue;
     } else {
@@ -272,9 +283,9 @@ export default class AbstractDoc {
     // avoid unknown tag.
   }
 
-  /** for @export, does not need to use this tag */
-  [&apos;@export&apos;]() {
-    let tag = this._find([&apos;@export&apos;]);
+  /** for @_export, does not need to use this tag */
+  [&apos;@_export&apos;]() {
+    let tag = this._find([&apos;@_export&apos;]);
     if (tag) {
       if (tag.tagValue === &apos;&apos; || tag.tagValue === &apos;true&apos;) {
         this._value.export = true;
@@ -300,9 +311,9 @@ export default class AbstractDoc {
     this._value.export = false;
   }
 
-  /** for @importPath, does not need to use this tag */
-  [&apos;@importPath&apos;]() {
-    let tag = this._find([&apos;@importPath&apos;]);
+  /** for @_importPath, does not need to use this tag */
+  [&apos;@_importPath&apos;]() {
+    let tag = this._find([&apos;@_importPath&apos;]);
     if (tag) {
       this._value.importPath = tag.tagValue;
     } else {
@@ -310,11 +321,16 @@ export default class AbstractDoc {
     }
   }
 
-  /** for @importStyle, does not need to use this tag */
-  [&apos;@importStyle&apos;]() {
-    let tag = this._find([&apos;@importStyle&apos;]);
+  /** for @_importStyle, does not need to use this tag */
+  [&apos;@_importStyle&apos;]() {
+    let tag = this._find([&apos;@_importStyle&apos;]);
     if (tag) {
       this._value.importStyle = tag.tagValue;
+      return;
+    }
+
+    if (this._node.__esdoc__pseudo_export) {
+      this._value.importStyle = null;
       return;
     }
 
@@ -363,9 +379,9 @@ export default class AbstractDoc {
     }
   }
 
-  /** for @lineNumber, does not need to use this tag */
-  [&quot;@lineNumber&quot;]() {
-    let tag = this._find([&apos;@lineNumber&apos;]);
+  /** for @_lineNumber, does not need to use this tag */
+  [&quot;@_lineNumber&quot;]() {
+    let tag = this._find([&apos;@_lineNumber&apos;]);
     if (tag) {
       this._value.lineNumber = tag.tagValue;
       return;
@@ -436,16 +452,29 @@ export default class AbstractDoc {
     }
   }
 
-  /** for @undocument, does not need to use this tag */
-  [&apos;@undocument&apos;]() {
-    let tag = this._find([&apos;@undocument&apos;]);
+  /** for @_pseudoExport, does not need to use this tag. */
+  [&apos;@_pseudoExport&apos;](){
+    let tag = this._find([&apos;@_pseudoExport&apos;]);
+    if (tag) {
+      this._value.pseudoExport = [&apos;&apos;, &apos;true&apos;, true].includes(tag.tagValue);
+      return;
+    }
+
+    if (this._node.__esdoc__pseudo_export) {
+      this._value.pseudoExport = true;
+    }
+  }
+
+  /** for @_undocument, does not need to use this tag */
+  [&apos;@_undocument&apos;]() {
+    let tag = this._find([&apos;@_undocument&apos;]);
     if (tag) {
       this._value.undocument = true;
     }
   }
 
-  /** for @unknown, does not need to use this tag */
-  [&apos;@unknown&apos;]() {
+  /** for @_unknown, does not need to use this tag */
+  [&apos;@_unknown&apos;]() {
     for (let tag of this._commentTags) {
       if (this[tag.tagName]) continue;
 
@@ -564,9 +593,9 @@ export default class AbstractDoc {
     }
   }
 
-  /** for @member. */
-  [&apos;@member&apos;]() {
-    let value = this._findTagValue([&apos;@member&apos;]);
+  /** for @_member. */
+  [&apos;@_member&apos;]() {
+    let value = this._findTagValue([&apos;@_member&apos;]);
     if (!value) return;
 
     let {typeText, paramName, paramDesc} = ParamParser.parseParamValue(value, true, true, false);
@@ -574,17 +603,17 @@ export default class AbstractDoc {
     this._value.type = result;
   }
 
-  /** for @content, does not need to use this tag */
-  [&apos;@content&apos;]() {
-    let value = this._findTagValue([&apos;@content&apos;]);
+  /** for @_content, does not need to use this tag */
+  [&apos;@_content&apos;]() {
+    let value = this._findTagValue([&apos;@_content&apos;]);
     if (value) {
       this._value.content = value;
     }
   }
 
-  /** for @generator, does not need to use this tag */
-  [&apos;@generator&apos;]() {
-    let tag = this._find([&apos;@generator&apos;]);
+  /** for @_generator, does not need to use this tag */
+  [&apos;@_generator&apos;]() {
+    let tag = this._find([&apos;@_generator&apos;]);
     if (tag) {
       this._value.generator = true;
     }
@@ -703,6 +732,29 @@ export default class AbstractDoc {
     }
 
     return results.reverse().join(&apos;.&apos;);
+  }
+
+  /**
+   * find class in same file, import or external.
+   * @param {string} className - target class name.
+   * @returns {string} found class long name.
+   * @private
+   */
+  _findClassLongname(className) {
+    // find in same file.
+    for (let node of this._ast.body) {
+      if (![&apos;ExportDefaultDeclaration&apos;, &apos;ExportNamedDeclaration&apos;].includes(node.type)) continue;
+      if (node.declaration &amp;&amp; node.declaration.type === &apos;ClassDeclaration&apos; &amp;&amp; node.declaration.id.name === className) {
+        return `${this._pathResolver.filePath}~${className}`;
+      }
+    }
+
+    // find in import.
+    let importPath = ASTUtil.findPathInImportDeclaration(this._ast, className);
+    if (importPath) return this._resolveLongname(className);
+
+    // find in external
+    return className;
   }
 }
 </code></pre>

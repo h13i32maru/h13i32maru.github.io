@@ -48,12 +48,13 @@
 <li data-ice="classDoc"><span><a href="class/src/Doc/ExternalDoc.js~ExternalDoc.html">ExternalDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/FileDoc.js~FileDoc.html">FileDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/FileDocBuilder.js~FileDocBuilder.html">FileDocBuilder</a></span></li>
-<li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/TestFileDocBuilder.js~FileDocBuilder.html">FileDocBuilder</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/FunctionDoc.js~FunctionDoc.html">FunctionDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/IdentifiersDocBuilder.js~IdentifiersDocBuilder.html">IdentifiersDocBuilder</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/IndexDocBuilder.js~IndexDocBuilder.html">IndexDocBuilder</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Util/InvalidCodeLogger.js~InvalidCodeLogger.html">InvalidCodeLogger</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/MemberDoc.js~MemberDoc.html">MemberDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/MethodDoc.js~MethodDoc.html">MethodDoc</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Util/NamingUtil.js~NamingUtil.html">NamingUtil</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Parser/ParamParser.js~ParamParser.html">ParamParser</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Util/PathResolver.js~PathResolver.html">PathResolver</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/SearchIndexBuilder.js~SearchIndexBuilder.html">SearchIndexBuilder</a></span></li>
@@ -64,6 +65,7 @@
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/TestDocBuilder.js~TestDocBuilder.html">TestDocBuilder</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Factory/TestDocFactory.js~TestDocFactory.html">TestDocFactory</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/TestFileDoc.js~TestFileDoc.html">TestFileDoc</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/TestFileDocBuilder.js~TestFileDocBuilder.html">TestFileDocBuilder</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/TypedefDoc.js~TypedefDoc.html">TypedefDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/VariableDoc.js~VariableDoc.html">VariableDoc</a></span></li>
 </ul>
@@ -82,7 +84,13 @@
 </ul>
 </div>
 
-
+<div data-ice="variableWrap">
+  <h2><a href="variable/">Variable</a></h2>
+  <ul>
+    
+  <li data-ice="variableDoc"><span><a href="variable/index.html#static-variable-invalidCodeLogger">invalidCodeLogger</a></span></li>
+</ul>
+</div>
 
 <div data-ice="typedefWrap">
   <h2><a href="typedef/">Typedef</a></h2>
@@ -119,27 +127,63 @@ describe(&apos;MyVariable:&apos;, ()=&gt; {
   /** @test {SingleDocBuilder#_buildSingleDoc} */
   it(&apos;has summary.&apos;, ()=&gt;{
     find(doc, &apos;[data-ice=&quot;summary&quot;]&apos;, (doc)=&gt;{
-      assert.includes(doc, &apos;[data-ice=&quot;target&quot;]:nth-of-type(1)&apos;, &apos;public myVariable1: Object this is myVariable1 desc.&apos;);
-      assert.includes(doc, &apos;[data-ice=&quot;target&quot;]:nth-of-type(2)&apos;, &apos;public myVariable2: number this is myVariable2 desc.&apos;);
-      assert.includes(doc, &apos;[data-ice=&quot;target&quot;]:nth-of-type(3)&apos;, &apos;public myVariable3: number this is myVariable3 desc.&apos;);
+      assert.includes(doc, &apos;[data-ice=&quot;target&quot;]:nth-of-type(1)&apos;, &apos;public myExport1: MyExport1&apos;);
+      assert.includes(doc, &apos;[data-ice=&quot;target&quot;]:nth-of-type(2)&apos;, &apos;public myExport10: MyExport10&apos;);
+      assert.includes(doc, &apos;[data-ice=&quot;target&quot;]:nth-of-type(3)&apos;, &apos;public myExport2: MyExport2&apos;);
+      assert.includes(doc, &apos;[data-ice=&quot;target&quot;]:nth-of-type(4)&apos;, &apos;public myExport3: MyExport3&apos;);
+      assert.includes(doc, &apos;[data-ice=&quot;target&quot;]:nth-of-type(5)&apos;, &apos;public myExport4: MyExport4&apos;);
+      assert.includes(doc, &apos;[data-ice=&quot;target&quot;]:nth-of-type(6)&apos;, &apos;public myExport5: MyExport5&apos;);
+      assert.includes(doc, &apos;[data-ice=&quot;target&quot;]:nth-of-type(7)&apos;, &apos;public myVariable1: Object this is myVariable1 desc.&apos;);
+      assert.includes(doc, &apos;[data-ice=&quot;target&quot;]:nth-of-type(8)&apos;, &apos;public myVariable2: number this is myVariable2 desc.&apos;);
+      assert.includes(doc, &apos;[data-ice=&quot;target&quot;]:nth-of-type(9)&apos;, &apos;public myVariable3: number this is myVariable3 desc.&apos;);
 
-      assert.includes(doc, &apos;[data-ice=&quot;target&quot;]:nth-of-type(1) [data-ice=&quot;name&quot;] a&apos;, &apos;variable/index.html#static-variable-myVariable1&apos;, &apos;href&apos;);
+      assert.includes(doc, &apos;[data-ice=&quot;target&quot;]:nth-of-type(1) [data-ice=&quot;name&quot;] a&apos;, &apos;variable/index.html#static-variable-myExport1&apos;, &apos;href&apos;);
     });
   });
 
   /** @test {SingleDocBuilder#_buildSingleDoc} */
   it(&apos;has detail.&apos;, ()=&gt; {
     find(doc, &apos;[data-ice=&quot;detail&quot;]:nth-of-type(1)&apos;, (doc)=&gt; {
+      assert.includes(doc, &apos;#static-variable-myExport1&apos;, &apos;public myExport1: MyExport1&apos;);
+      assert.includes(doc, &apos;[data-ice=&quot;importPath&quot;]&apos;, &quot;import myExport1 from &apos;esdoc-test-fixture/out/src/Export.js&apos;&quot;);
+    });
+
+    find(doc, &apos;[data-ice=&quot;detail&quot;]:nth-of-type(2)&apos;, (doc)=&gt; {
+      assert.includes(doc, &apos;#static-variable-myExport10&apos;, &apos;public myExport10: MyExport10&apos;);
+      assert.includes(doc, &apos;[data-ice=&quot;importPath&quot;]&apos;, &quot;import {myExport10} from &apos;esdoc-test-fixture/out/src/Export.js&apos;&quot;);
+    });
+
+    find(doc, &apos;[data-ice=&quot;detail&quot;]:nth-of-type(3)&apos;, (doc)=&gt; {
+      assert.includes(doc, &apos;#static-variable-myExport2&apos;, &apos;public myExport2: MyExport2&apos;);
+      assert.includes(doc, &apos;[data-ice=&quot;importPath&quot;]&apos;, &quot;import myExport2 from &apos;esdoc-test-fixture/out/src/Export.js&apos;&quot;);
+    });
+
+    find(doc, &apos;[data-ice=&quot;detail&quot;]:nth-of-type(4)&apos;, (doc)=&gt; {
+      assert.includes(doc, &apos;#static-variable-myExport3&apos;, &apos;public myExport3: MyExport3&apos;);
+      assert.includes(doc, &apos;[data-ice=&quot;importPath&quot;]&apos;, &quot;import myExport3 from &apos;esdoc-test-fixture/out/src/Export.js&apos;&quot;);
+    });
+
+    find(doc, &apos;[data-ice=&quot;detail&quot;]:nth-of-type(5)&apos;, (doc)=&gt; {
+      assert.includes(doc, &apos;#static-variable-myExport4&apos;, &apos;public myExport4: MyExport4&apos;);
+      assert.includes(doc, &apos;[data-ice=&quot;importPath&quot;]&apos;, &quot;import {myExport4} from &apos;esdoc-test-fixture/out/src/Export.js&apos;&quot;);
+    });
+
+    find(doc, &apos;[data-ice=&quot;detail&quot;]:nth-of-type(6)&apos;, (doc)=&gt; {
+      assert.includes(doc, &apos;#static-variable-myExport5&apos;, &apos;public myExport5: MyExport5&apos;);
+      assert.includes(doc, &apos;[data-ice=&quot;importPath&quot;]&apos;, &quot;import {myExport5} from &apos;esdoc-test-fixture/out/src/Export.js&apos;&quot;);
+    });
+
+    find(doc, &apos;[data-ice=&quot;detail&quot;]:nth-of-type(7)&apos;, (doc)=&gt; {
       assert.includes(doc, &apos;#static-variable-myVariable1&apos;, &apos;public myVariable1: Object&apos;);
       assert.includes(doc, &apos;[data-ice=&quot;importPath&quot;]&apos;, &quot;import myVariable1 from &apos;esdoc-test-fixture/out/src/myVariable.js&apos;&quot;);
     });
 
-    find(doc, &apos;[data-ice=&quot;detail&quot;]:nth-of-type(2)&apos;, (doc)=&gt; {
+    find(doc, &apos;[data-ice=&quot;detail&quot;]:nth-of-type(8)&apos;, (doc)=&gt; {
       assert.includes(doc, &apos;#static-variable-myVariable2&apos;, &apos;public myVariable2: number&apos;);
       assert.includes(doc, &apos;[data-ice=&quot;importPath&quot;]&apos;, &quot;import {myVariable2} from &apos;esdoc-test-fixture/out/src/myVariable.js&apos;&quot;);
     });
 
-    find(doc, &apos;[data-ice=&quot;detail&quot;]:nth-of-type(3)&apos;, (doc)=&gt; {
+    find(doc, &apos;[data-ice=&quot;detail&quot;]:nth-of-type(9)&apos;, (doc)=&gt; {
       assert.includes(doc, &apos;#static-variable-myVariable3&apos;, &apos;public myVariable3: number&apos;);
     });
   });

@@ -48,12 +48,13 @@
 <li data-ice="classDoc"><span><a href="class/src/Doc/ExternalDoc.js~ExternalDoc.html">ExternalDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/FileDoc.js~FileDoc.html">FileDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/FileDocBuilder.js~FileDocBuilder.html">FileDocBuilder</a></span></li>
-<li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/TestFileDocBuilder.js~FileDocBuilder.html">FileDocBuilder</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/FunctionDoc.js~FunctionDoc.html">FunctionDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/IdentifiersDocBuilder.js~IdentifiersDocBuilder.html">IdentifiersDocBuilder</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/IndexDocBuilder.js~IndexDocBuilder.html">IndexDocBuilder</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Util/InvalidCodeLogger.js~InvalidCodeLogger.html">InvalidCodeLogger</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/MemberDoc.js~MemberDoc.html">MemberDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/MethodDoc.js~MethodDoc.html">MethodDoc</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Util/NamingUtil.js~NamingUtil.html">NamingUtil</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Parser/ParamParser.js~ParamParser.html">ParamParser</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Util/PathResolver.js~PathResolver.html">PathResolver</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/SearchIndexBuilder.js~SearchIndexBuilder.html">SearchIndexBuilder</a></span></li>
@@ -64,6 +65,7 @@
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/TestDocBuilder.js~TestDocBuilder.html">TestDocBuilder</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Factory/TestDocFactory.js~TestDocFactory.html">TestDocFactory</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/TestFileDoc.js~TestFileDoc.html">TestFileDoc</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/TestFileDocBuilder.js~TestFileDocBuilder.html">TestFileDocBuilder</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/TypedefDoc.js~TypedefDoc.html">TypedefDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/VariableDoc.js~VariableDoc.html">VariableDoc</a></span></li>
 </ul>
@@ -82,7 +84,13 @@
 </ul>
 </div>
 
-
+<div data-ice="variableWrap">
+  <h2><a href="variable/">Variable</a></h2>
+  <ul>
+    
+  <li data-ice="variableDoc"><span><a href="variable/index.html#static-variable-invalidCodeLogger">invalidCodeLogger</a></span></li>
+</ul>
+</div>
 
 <div data-ice="typedefWrap">
   <h2><a href="typedef/">Typedef</a></h2>
@@ -121,6 +129,8 @@
 
 <div class="self-detail detail">
   <h1 data-ice="name">ClassDocBuilder</h1>
+
+  
 
   <div class="flat-list" data-ice="extendsChain"><h4>Extends:</h4><div><span><a href="class/src/Publisher/Builder/DocBuilder.js~DocBuilder.html">DocBuilder</a></span> &#x2192; ClassDocBuilder</div></div>
   
@@ -1212,19 +1222,19 @@
     <h4>Test:</h4>
     <ul>
       
-    <li data-ice="test"><span><a href="test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber272">MyClass1: has static member detail.</a></span></li>
-<li data-ice="test"><span><a href="test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber297">MyClass1: has static method detail.</a></span></li>
-<li data-ice="test"><span><a href="test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber316">MyClass1: has constructor detail.</a></span></li>
-<li data-ice="test"><span><a href="test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber331">MyClass1: has member detail.</a></span></li>
-<li data-ice="test"><span><a href="test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber367">MyClass1: has method detail.</a></span></li>
+    <li data-ice="test"><span><a href="test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber274">MyClass1: has static member detail.</a></span></li>
+<li data-ice="test"><span><a href="test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber299">MyClass1: has static method detail.</a></span></li>
+<li data-ice="test"><span><a href="test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber318">MyClass1: has constructor detail.</a></span></li>
+<li data-ice="test"><span><a href="test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber333">MyClass1: has member detail.</a></span></li>
+<li data-ice="test"><span><a href="test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber369">MyClass1: has method detail.</a></span></li>
 <li data-ice="test"><span><a href="test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber13">MyClass1: has header notice.</a></span></li>
 <li data-ice="test"><span><a href="test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber31">MyClass1: has self detail.</a></span></li>
-<li data-ice="test"><span><a href="test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber84">MyClass1: has static member summary.</a></span></li>
+<li data-ice="test"><span><a href="test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber86">MyClass1: has static member summary.</a></span></li>
+<li data-ice="test"><span><a href="test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber112">MyClass1: has static method summary.</a></span></li>
+<li data-ice="test"><span><a href="test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber131">MyClass1: has constructor summary.</a></span></li>
 <li data-ice="test"><span><a href="test-file/src/BuilderTest/TestDocTest.js.html#lineNumber37">Identifier to Test: ClassDocBuilder: has test</a></span></li>
-<li data-ice="test"><span><a href="test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber110">MyClass1: has static method summary.</a></span></li>
-<li data-ice="test"><span><a href="test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber129">MyClass1: has constructor summary.</a></span></li>
-<li data-ice="test"><span><a href="test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber139">MyClass1: has member summary.</a></span></li>
-<li data-ice="test"><span><a href="test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber184">MyClass1: has method summary.</a></span></li>
+<li data-ice="test"><span><a href="test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber141">MyClass1: has member summary.</a></span></li>
+<li data-ice="test"><span><a href="test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber186">MyClass1: has method summary.</a></span></li>
 </ul>
   </div>
 
@@ -1242,7 +1252,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Publisher/Builder/ClassDocBuilder.js.html#lineNumber164">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Publisher/Builder/ClassDocBuilder.js.html#lineNumber173">source</a></span></span>
     </span>
   </h3>
 
@@ -1317,7 +1327,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Publisher/Builder/ClassDocBuilder.js.html#lineNumber128">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Publisher/Builder/ClassDocBuilder.js.html#lineNumber137">source</a></span></span>
     </span>
   </h3>
 
@@ -1392,7 +1402,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Publisher/Builder/ClassDocBuilder.js.html#lineNumber147">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Publisher/Builder/ClassDocBuilder.js.html#lineNumber156">source</a></span></span>
     </span>
   </h3>
 
@@ -1467,7 +1477,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Publisher/Builder/ClassDocBuilder.js.html#lineNumber181">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Publisher/Builder/ClassDocBuilder.js.html#lineNumber190">source</a></span></span>
     </span>
   </h3>
 
@@ -1524,7 +1534,7 @@
     <h4>Test:</h4>
     <ul>
       
-    <li data-ice="test"><span><a href="test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber214">MyClass1: has inherited summary.</a></span></li>
+    <li data-ice="test"><span><a href="test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber216">MyClass1: has inherited summary.</a></span></li>
 </ul>
   </div>
 
@@ -1542,7 +1552,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Publisher/Builder/ClassDocBuilder.js.html#lineNumber110">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Publisher/Builder/ClassDocBuilder.js.html#lineNumber119">source</a></span></span>
     </span>
   </h3>
 

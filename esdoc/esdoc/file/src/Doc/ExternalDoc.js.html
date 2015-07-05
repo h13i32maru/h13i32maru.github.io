@@ -48,12 +48,13 @@
 <li data-ice="classDoc"><span><a href="class/src/Doc/ExternalDoc.js~ExternalDoc.html">ExternalDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/FileDoc.js~FileDoc.html">FileDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/FileDocBuilder.js~FileDocBuilder.html">FileDocBuilder</a></span></li>
-<li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/TestFileDocBuilder.js~FileDocBuilder.html">FileDocBuilder</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/FunctionDoc.js~FunctionDoc.html">FunctionDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/IdentifiersDocBuilder.js~IdentifiersDocBuilder.html">IdentifiersDocBuilder</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/IndexDocBuilder.js~IndexDocBuilder.html">IndexDocBuilder</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Util/InvalidCodeLogger.js~InvalidCodeLogger.html">InvalidCodeLogger</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/MemberDoc.js~MemberDoc.html">MemberDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/MethodDoc.js~MethodDoc.html">MethodDoc</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Util/NamingUtil.js~NamingUtil.html">NamingUtil</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Parser/ParamParser.js~ParamParser.html">ParamParser</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Util/PathResolver.js~PathResolver.html">PathResolver</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/SearchIndexBuilder.js~SearchIndexBuilder.html">SearchIndexBuilder</a></span></li>
@@ -64,6 +65,7 @@
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/TestDocBuilder.js~TestDocBuilder.html">TestDocBuilder</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Factory/TestDocFactory.js~TestDocFactory.html">TestDocFactory</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/TestFileDoc.js~TestFileDoc.html">TestFileDoc</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/TestFileDocBuilder.js~TestFileDocBuilder.html">TestFileDocBuilder</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/TypedefDoc.js~TypedefDoc.html">TypedefDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/VariableDoc.js~VariableDoc.html">VariableDoc</a></span></li>
 </ul>
@@ -82,7 +84,13 @@
 </ul>
 </div>
 
-
+<div data-ice="variableWrap">
+  <h2><a href="variable/">Variable</a></h2>
+  <ul>
+    
+  <li data-ice="variableDoc"><span><a href="variable/index.html#static-variable-invalidCodeLogger">invalidCodeLogger</a></span></li>
+</ul>
+</div>
 
 <div data-ice="typedefWrap">
   <h2><a href="typedef/">Typedef</a></h2>
@@ -133,22 +141,22 @@ export default class ExternalDoc extends AbstractDoc {
   }
 
   /** specify ``external`` to kind. */
-  [&apos;@kind&apos;]() {
-    super[&apos;@kind&apos;]();
+  [&apos;@_kind&apos;]() {
+    super[&apos;@_kind&apos;]();
     if (this._value.kind) return;
     this._value.kind = &apos;external&apos;;
   }
 
   /** take out self name from tag */
-  [&apos;@name&apos;]() {
-    let value = this._findTagValue([&apos;@name&apos;, &apos;@external&apos;]);
+  [&apos;@_name&apos;]() {
+    let value = this._findTagValue([&apos;@_name&apos;, &apos;@external&apos;]);
     if (!value) {
       logger.w(`can not resolve name.`);
     }
 
     this._value.name = value;
 
-    let tags = this._findAll([&apos;@name&apos;, &apos;@external&apos;]);
+    let tags = this._findAll([&apos;@_name&apos;, &apos;@external&apos;]);
     if (!tags) {
       logger.w(`can not resolve name.`);
       return;
@@ -157,7 +165,7 @@ export default class ExternalDoc extends AbstractDoc {
     let name;
     for (let tag of tags) {
       let {tagName, tagValue} = tag;
-      if (tagName === &apos;@name&apos;) {
+      if (tagName === &apos;@_name&apos;) {
         name = tagValue;
       } else if (tagName === &apos;@external&apos;) {
         let {typeText, paramDesc} = ParamParser.parseParamValue(tagValue, true, false, true);
@@ -170,15 +178,15 @@ export default class ExternalDoc extends AbstractDoc {
   }
 
   /** take out self memberof from file path. */
-  [&apos;@memberof&apos;]() {
-    super[&apos;@memberof&apos;]();
+  [&apos;@_memberof&apos;]() {
+    super[&apos;@_memberof&apos;]();
     if (this._value.memberof) return;
     this._value.memberof = this._pathResolver.filePath;
   }
 
   /** specify name to longname */
-  [&apos;@longname&apos;]() {
-    super[&apos;@longname&apos;]();
+  [&apos;@_longname&apos;]() {
+    super[&apos;@_longname&apos;]();
     if (this._value.longname) return;
     this._value.longname = this._value.name;
   }

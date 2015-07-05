@@ -48,12 +48,13 @@
 <li data-ice="classDoc"><span><a href="class/src/Doc/ExternalDoc.js~ExternalDoc.html">ExternalDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/FileDoc.js~FileDoc.html">FileDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/FileDocBuilder.js~FileDocBuilder.html">FileDocBuilder</a></span></li>
-<li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/TestFileDocBuilder.js~FileDocBuilder.html">FileDocBuilder</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/FunctionDoc.js~FunctionDoc.html">FunctionDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/IdentifiersDocBuilder.js~IdentifiersDocBuilder.html">IdentifiersDocBuilder</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/IndexDocBuilder.js~IndexDocBuilder.html">IndexDocBuilder</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Util/InvalidCodeLogger.js~InvalidCodeLogger.html">InvalidCodeLogger</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/MemberDoc.js~MemberDoc.html">MemberDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/MethodDoc.js~MethodDoc.html">MethodDoc</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Util/NamingUtil.js~NamingUtil.html">NamingUtil</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Parser/ParamParser.js~ParamParser.html">ParamParser</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Util/PathResolver.js~PathResolver.html">PathResolver</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/SearchIndexBuilder.js~SearchIndexBuilder.html">SearchIndexBuilder</a></span></li>
@@ -64,6 +65,7 @@
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/TestDocBuilder.js~TestDocBuilder.html">TestDocBuilder</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Factory/TestDocFactory.js~TestDocFactory.html">TestDocFactory</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/TestFileDoc.js~TestFileDoc.html">TestFileDoc</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/TestFileDocBuilder.js~TestFileDocBuilder.html">TestFileDocBuilder</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/TypedefDoc.js~TypedefDoc.html">TypedefDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/VariableDoc.js~VariableDoc.html">VariableDoc</a></span></li>
 </ul>
@@ -82,7 +84,13 @@
 </ul>
 </div>
 
-
+<div data-ice="variableWrap">
+  <h2><a href="variable/">Variable</a></h2>
+  <ul>
+    
+  <li data-ice="variableDoc"><span><a href="variable/index.html#static-variable-invalidCodeLogger">invalidCodeLogger</a></span></li>
+</ul>
+</div>
 
 <div data-ice="typedefWrap">
   <h2><a href="typedef/">Typedef</a></h2>
@@ -254,6 +262,13 @@ export default class DocBuilder {
       url: packageObj.repository ? packageObj.repository.url : &apos;&apos;
     };
 
+    if (indexInfo.url.indexOf(&apos;git@github.com:&apos;) === 0) {
+      let matched = indexInfo.url.match(/^git@github\.com:(.*)\.git$/);
+      if (matched &amp;&amp; matched[1]) {
+        indexInfo.url = `https://github.com/${matched[1]}`;
+      }
+    }
+
     return indexInfo;
   }
 
@@ -268,6 +283,7 @@ export default class DocBuilder {
     let ice = new IceCap(this._readTemplate(&apos;layout.html&apos;), {autoClose: false});
 
     ice.text(&apos;esdocVersion&apos;, `(${this._config._esdocVersion})`);
+
     if (info.url) {
       ice.attr(&apos;repoURL&apos;, &apos;href&apos;, info.url);
       if (info.url.match(new RegExp(&apos;^https?://github.com/&apos;))) {
@@ -799,7 +815,6 @@ export default class DocBuilder {
 
     // e.g. Map&lt;number, string&gt;
     matched = typeName.match(/^(.*?)\.?&lt;(.*?)&gt;$/);
-    if (typeName.includes(&apos;foo&apos;)) console.log(typeName);
     if (matched) {
       let mainType = matched[1];
       // bad hack: Map.&lt;string, boolean&gt; =&gt; Map.&lt;string\Z boolean&gt;
@@ -818,9 +833,9 @@ export default class DocBuilder {
 
     if (typeName.indexOf(&apos;...&apos;) === 0) {
       typeName = typeName.replace(&apos;...&apos;, &apos;&apos;);
-      return &apos;...&apos; + this._buildDocLinkHTML(typeName, typeName);
+      return &apos;...&apos; + this._buildDocLinkHTML(typeName);
     } else {
-      return this._buildDocLinkHTML(typeName, typeName);
+      return this._buildDocLinkHTML(typeName);
     }
   }
 

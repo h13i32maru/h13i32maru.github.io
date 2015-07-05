@@ -48,12 +48,13 @@
 <li data-ice="classDoc"><span><a href="class/src/Doc/ExternalDoc.js~ExternalDoc.html">ExternalDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/FileDoc.js~FileDoc.html">FileDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/FileDocBuilder.js~FileDocBuilder.html">FileDocBuilder</a></span></li>
-<li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/TestFileDocBuilder.js~FileDocBuilder.html">FileDocBuilder</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/FunctionDoc.js~FunctionDoc.html">FunctionDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/IdentifiersDocBuilder.js~IdentifiersDocBuilder.html">IdentifiersDocBuilder</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/IndexDocBuilder.js~IndexDocBuilder.html">IndexDocBuilder</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Util/InvalidCodeLogger.js~InvalidCodeLogger.html">InvalidCodeLogger</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/MemberDoc.js~MemberDoc.html">MemberDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/MethodDoc.js~MethodDoc.html">MethodDoc</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Util/NamingUtil.js~NamingUtil.html">NamingUtil</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Parser/ParamParser.js~ParamParser.html">ParamParser</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Util/PathResolver.js~PathResolver.html">PathResolver</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/SearchIndexBuilder.js~SearchIndexBuilder.html">SearchIndexBuilder</a></span></li>
@@ -64,6 +65,7 @@
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/TestDocBuilder.js~TestDocBuilder.html">TestDocBuilder</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Factory/TestDocFactory.js~TestDocFactory.html">TestDocFactory</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/TestFileDoc.js~TestFileDoc.html">TestFileDoc</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/TestFileDocBuilder.js~TestFileDocBuilder.html">TestFileDocBuilder</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/TypedefDoc.js~TypedefDoc.html">TypedefDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/VariableDoc.js~VariableDoc.html">VariableDoc</a></span></li>
 </ul>
@@ -82,7 +84,13 @@
 </ul>
 </div>
 
-
+<div data-ice="variableWrap">
+  <h2><a href="variable/">Variable</a></h2>
+  <ul>
+    
+  <li data-ice="variableDoc"><span><a href="variable/index.html#static-variable-invalidCodeLogger">invalidCodeLogger</a></span></li>
+</ul>
+</div>
 
 <div data-ice="typedefWrap">
   <h2><a href="typedef/">Typedef</a></h2>
@@ -121,6 +129,8 @@
 
 <div class="self-detail detail">
   <h1 data-ice="name">DocResolver</h1>
+
+  
 
   
   
@@ -437,6 +447,31 @@
     <td>
       <div>
         <p>
+           <span data-ice="name"><span><a href="class/src/Publisher/Builder/DocResolver.js~DocResolver.html#instance-method-_resolveNecessary">_resolveNecessary</a></span></span><span data-ice="signature">()</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>resolve necessary identifier.</p></div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">private</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
            <span data-ice="name"><span><a href="class/src/Publisher/Builder/DocResolver.js~DocResolver.html#instance-method-_resolveTestRelation">_resolveTestRelation</a></span></span><span data-ice="signature">()</span>
         </p>
       </div>
@@ -709,7 +744,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocResolver.js.html#lineNumber57">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocResolver.js.html#lineNumber59">source</a></span></span>
     </span>
   </h3>
 
@@ -752,7 +787,7 @@ but name is started with &apos;-&apos;, the doc is private.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocResolver.js.html#lineNumber368">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocResolver.js.html#lineNumber406">source</a></span></span>
     </span>
   </h3>
 
@@ -795,7 +830,7 @@ other doc is not duplication.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocResolver.js.html#lineNumber203">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocResolver.js.html#lineNumber205">source</a></span></span>
     </span>
   </h3>
 
@@ -845,7 +880,7 @@ add following special property.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocResolver.js.html#lineNumber38">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocResolver.js.html#lineNumber39">source</a></span></span>
     </span>
   </h3>
 
@@ -894,7 +929,7 @@ remove docs that has ignore property.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocResolver.js.html#lineNumber145">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocResolver.js.html#lineNumber147">source</a></span></span>
     </span>
   </h3>
 
@@ -935,7 +970,7 @@ remove docs that has ignore property.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocResolver.js.html#lineNumber117">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocResolver.js.html#lineNumber119">source</a></span></span>
     </span>
   </h3>
 
@@ -943,6 +978,54 @@ remove docs that has ignore property.</p>
   
   
   <div data-ice="description"><p>resolve description as markdown.</p>
+</div>
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-_resolveNecessary">
+    <span class="access" data-ice="access">private</span>
+    
+    
+    
+    
+    <span data-ice="name">_resolveNecessary</span><span data-ice="signature">()</span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocResolver.js.html#lineNumber333">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>resolve necessary identifier.</p>
+<pre><code class="lang-javascript"><pre class="source-code"><code class="prettyprint">class Foo {}
+
+export default Bar extends Foo {}</code></pre>
+</code></pre>
+<p><code>Foo</code> is not exported, but <code>Bar</code> extends <code>Foo</code>.
+<code>Foo</code> is necessary.
+So, <code>Foo</code> must be exported by force.</p>
 </div>
 
   
@@ -976,7 +1059,7 @@ remove docs that has ignore property.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocResolver.js.html#lineNumber323">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocResolver.js.html#lineNumber361">source</a></span></span>
     </span>
   </h3>
 
@@ -1021,7 +1104,7 @@ remove docs that has ignore property.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocResolver.js.html#lineNumber103">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocResolver.js.html#lineNumber105">source</a></span></span>
     </span>
   </h3>
 
@@ -1063,7 +1146,7 @@ doc is added ignore property that does not have document tag.</p>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocResolver.js.html#lineNumber87">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocResolver.js.html#lineNumber89">source</a></span></span>
     </span>
   </h3>
 

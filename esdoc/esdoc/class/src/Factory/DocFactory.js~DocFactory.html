@@ -48,12 +48,13 @@
 <li data-ice="classDoc"><span><a href="class/src/Doc/ExternalDoc.js~ExternalDoc.html">ExternalDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/FileDoc.js~FileDoc.html">FileDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/FileDocBuilder.js~FileDocBuilder.html">FileDocBuilder</a></span></li>
-<li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/TestFileDocBuilder.js~FileDocBuilder.html">FileDocBuilder</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/FunctionDoc.js~FunctionDoc.html">FunctionDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/IdentifiersDocBuilder.js~IdentifiersDocBuilder.html">IdentifiersDocBuilder</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/IndexDocBuilder.js~IndexDocBuilder.html">IndexDocBuilder</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Util/InvalidCodeLogger.js~InvalidCodeLogger.html">InvalidCodeLogger</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/MemberDoc.js~MemberDoc.html">MemberDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/MethodDoc.js~MethodDoc.html">MethodDoc</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Util/NamingUtil.js~NamingUtil.html">NamingUtil</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Parser/ParamParser.js~ParamParser.html">ParamParser</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Util/PathResolver.js~PathResolver.html">PathResolver</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/SearchIndexBuilder.js~SearchIndexBuilder.html">SearchIndexBuilder</a></span></li>
@@ -64,6 +65,7 @@
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/TestDocBuilder.js~TestDocBuilder.html">TestDocBuilder</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Factory/TestDocFactory.js~TestDocFactory.html">TestDocFactory</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/TestFileDoc.js~TestFileDoc.html">TestFileDoc</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/TestFileDocBuilder.js~TestFileDocBuilder.html">TestFileDocBuilder</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/TypedefDoc.js~TypedefDoc.html">TypedefDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/VariableDoc.js~VariableDoc.html">VariableDoc</a></span></li>
 </ul>
@@ -82,7 +84,13 @@
 </ul>
 </div>
 
-
+<div data-ice="variableWrap">
+  <h2><a href="variable/">Variable</a></h2>
+  <ul>
+    
+  <li data-ice="variableDoc"><span><a href="variable/index.html#static-variable-invalidCodeLogger">invalidCodeLogger</a></span></li>
+</ul>
+</div>
 
 <div data-ice="typedefWrap">
   <h2><a href="typedef/">Typedef</a></h2>
@@ -110,17 +118,19 @@
 </nav>
 
 <div class="content" data-ice="content"><div class="header-notice">
-  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import DocFactory from &apos;<span><a href="file/src/Factory/DocFactory.js.html#lineNumber24">esdoc/out/src/Factory/DocFactory.js</a></span>&apos;</code></pre></div>
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import DocFactory from &apos;<span><a href="file/src/Factory/DocFactory.js.html#lineNumber25">esdoc/out/src/Factory/DocFactory.js</a></span>&apos;</code></pre></div>
   <span data-ice="access">public</span>
   <span data-ice="kind">class</span>
   
   
   
-  <span data-ice="source">| <span><a href="file/src/Factory/DocFactory.js.html#lineNumber24">source</a></span></span>
+  <span data-ice="source">| <span><a href="file/src/Factory/DocFactory.js.html#lineNumber25">source</a></span></span>
 </div>
 
 <div class="self-detail detail">
   <h1 data-ice="name">DocFactory</h1>
+
+  
 
   
   
@@ -593,13 +603,63 @@ let results = factory.results;</code></pre>
     <td>
       <div>
         <p>
-           <span data-ice="name"><span><a href="class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_findUp">_findUp</a></span></span><span data-ice="signature">(node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>, types: <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span>[]</span></span>): <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode|null</a></span></span>
+           <span data-ice="name"><span><a href="class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_findUp">_findUp</a></span></span><span data-ice="signature">(node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>, types: <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span>[]</span></span>): <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span></span>
         </p>
       </div>
       <div>
         
         
         <div data-ice="description"><p>find node while goes up.</p></div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">private</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_inspectExportDefaultDeclaration">_inspectExportDefaultDeclaration</a></span></span><span data-ice="signature">()</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>inspect ExportDefaultDeclaration.</p></div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+<tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">private</span>
+      
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_inspectExportNamedDeclaration">_inspectExportNamedDeclaration</a></span></span><span data-ice="signature">()</span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>inspect ExportNamedDeclaration.</p></div>
       </div>
     </td>
     <td>
@@ -668,31 +728,6 @@ let results = factory.results;</code></pre>
     <td>
       <div>
         <p>
-           <span data-ice="name"><span><a href="class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_joinSeparatedExport">_joinSeparatedExport</a></span></span><span data-ice="signature">()</span>
-        </p>
-      </div>
-      <div>
-        
-        
-        <div data-ice="description"><p>join separated export declaration in AST internal.</p></div>
-      </div>
-    </td>
-    <td>
-      
-      
-    </td>
-  </tr>
-<tr data-ice="target">
-    <td>
-      <span class="access" data-ice="access">private</span>
-      
-      
-      
-      <span class="override" data-ice="override"></span>
-    </td>
-    <td>
-      <div>
-        <p>
            <span data-ice="name"><span><a href="class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_traverseComments">_traverseComments</a></span></span><span data-ice="signature">(parentNode: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>, node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>, comments: <span><span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span><span>[]</span></span>): <span><span><a href="typedef/index.html#static-typedef-DocObject">DocObject</a></span><span>[]</span></span></span>
         </p>
       </div>
@@ -718,7 +753,7 @@ let results = factory.results;</code></pre>
     <td>
       <div>
         <p>
-           <span data-ice="name"><span><a href="class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_unwrapExportDeclaration">_unwrapExportDeclaration</a></span></span><span data-ice="signature">(node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>): <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode|null</a></span></span>
+           <span data-ice="name"><span><a href="class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_unwrapExportDeclaration">_unwrapExportDeclaration</a></span></span><span data-ice="signature">(node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>): <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span></span>
         </p>
       </div>
       <div>
@@ -753,7 +788,7 @@ let results = factory.results;</code></pre>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber37">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber38">source</a></span></span>
     </span>
   </h3>
 
@@ -821,7 +856,7 @@ let results = factory.results;</code></pre>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber28">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber29">source</a></span></span>
     </span>
   </h3>
 
@@ -863,7 +898,7 @@ let results = factory.results;</code></pre>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber38">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber39">source</a></span></span>
     </span>
   </h3>
 
@@ -903,7 +938,7 @@ let results = factory.results;</code></pre>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber39">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber40">source</a></span></span>
     </span>
   </h3>
 
@@ -943,7 +978,7 @@ let results = factory.results;</code></pre>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber41">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber42">source</a></span></span>
     </span>
   </h3>
 
@@ -983,7 +1018,7 @@ let results = factory.results;</code></pre>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber40">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber41">source</a></span></span>
     </span>
   </h3>
 
@@ -1026,7 +1061,7 @@ let results = factory.results;</code></pre>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber92">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber228">source</a></span></span>
     </span>
   </h3>
 
@@ -1093,7 +1128,7 @@ let results = factory.results;</code></pre>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber477">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber613">source</a></span></span>
     </span>
   </h3>
 
@@ -1162,7 +1197,7 @@ let results = factory.results;</code></pre>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber189">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber325">source</a></span></span>
     </span>
   </h3>
 
@@ -1238,7 +1273,7 @@ let results = factory.results;</code></pre>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber388">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber524">source</a></span></span>
     </span>
   </h3>
 
@@ -1307,7 +1342,7 @@ let results = factory.results;</code></pre>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber268">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber404">source</a></span></span>
     </span>
   </h3>
 
@@ -1376,7 +1411,7 @@ let results = factory.results;</code></pre>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber308">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber444">source</a></span></span>
     </span>
   </h3>
 
@@ -1445,7 +1480,7 @@ let results = factory.results;</code></pre>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber296">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber432">source</a></span></span>
     </span>
   </h3>
 
@@ -1514,7 +1549,7 @@ let results = factory.results;</code></pre>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber280">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber416">source</a></span></span>
     </span>
   </h3>
 
@@ -1583,7 +1618,7 @@ let results = factory.results;</code></pre>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber225">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber361">source</a></span></span>
     </span>
   </h3>
 
@@ -1659,7 +1694,7 @@ let results = factory.results;</code></pre>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber355">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber491">source</a></span></span>
     </span>
   </h3>
 
@@ -1724,11 +1759,11 @@ let results = factory.results;</code></pre>
     
     
     
-    <span data-ice="name">_findUp</span><span data-ice="signature">(node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>, types: <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span>[]</span></span>): <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode|null</a></span></span>
+    <span data-ice="name">_findUp</span><span data-ice="signature">(node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>, types: <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span>[]</span></span>): <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber488">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber624">source</a></span></span>
     </span>
   </h3>
 
@@ -1771,7 +1806,7 @@ let results = factory.results;</code></pre>
     <h4>Return:</h4>
     <table>
       <tr>
-        <td class="return-type" data-ice="returnType"><span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode|null</a></span></td>
+        <td class="return-type" data-ice="returnType"><span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span></td>
         <td class="return-desc" data-ice="returnDescription"><p>found first node.</p>
 </td>
       </tr>
@@ -1794,6 +1829,122 @@ let results = factory.results;</code></pre>
   
 </div>
 <div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-_inspectExportDefaultDeclaration">
+    <span class="access" data-ice="access">private</span>
+    
+    
+    
+    
+    <span data-ice="name">_inspectExportDefaultDeclaration</span><span data-ice="signature">()</span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber86">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>inspect ExportDefaultDeclaration.</p>
+<p>case1: separated export</p>
+<pre><code class="lang-javascript"><pre class="source-code"><code class="prettyprint">class Foo {}
+export default Foo;</code></pre>
+</code></pre>
+<p>case2: export instance(directly).</p>
+<pre><code class="lang-javascript"><pre class="source-code"><code class="prettyprint">class Foo {}
+export default new Foo();</code></pre>
+</code></pre>
+<p>case3: export instance(indirectly).</p>
+<pre><code class="lang-javascript"><pre class="source-code"><code class="prettyprint">class Foo {}
+let foo = new Foo();
+export default foo;</code></pre>
+</code></pre>
+</div>
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <div data-ice="tests">
+    <h4>Test:</h4>
+    <ul>
+      
+    <li data-ice="test"><span><a href="test-file/src/BuilderTest/ExportDocTest.js.html#lineNumber7">Export:</a></span></li>
+</ul>
+  </div>
+
+  
+  <div data-ice="todo"><h4>TODO:</h4><ul><li><span>support function export.</span></li></ul></div>
+</div>
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="instance-method-_inspectExportNamedDeclaration">
+    <span class="access" data-ice="access">private</span>
+    
+    
+    
+    
+    <span data-ice="name">_inspectExportNamedDeclaration</span><span data-ice="signature">()</span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber162">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>inspect ExportNamedDeclaration.</p>
+<p>case1: separated export</p>
+<pre><code class="lang-javascript"><pre class="source-code"><code class="prettyprint">class Foo {}
+export {Foo};</code></pre>
+</code></pre>
+<p>case2: export instance(indirectly).</p>
+<pre><code class="lang-javascript"><pre class="source-code"><code class="prettyprint">class Foo {}
+let foo = new Foo();
+export {foo};</code></pre>
+</code></pre>
+</div>
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <div data-ice="tests">
+    <h4>Test:</h4>
+    <ul>
+      
+    <li data-ice="test"><span><a href="test-file/src/BuilderTest/ExportDocTest.js.html#lineNumber7">Export:</a></span></li>
+</ul>
+  </div>
+
+  
+  <div data-ice="todo"><h4>TODO:</h4><ul><li><span>support function export.</span></li></ul></div>
+</div>
+<div class="detail" data-ice="detail">
   <h3 data-ice="anchor" id="instance-method-_isLastNodeInParent">
     <span class="access" data-ice="access">private</span>
     
@@ -1804,7 +1955,7 @@ let results = factory.results;</code></pre>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber440">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber576">source</a></span></span>
     </span>
   </h3>
 
@@ -1880,7 +2031,7 @@ let results = factory.results;</code></pre>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber456">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber592">source</a></span></span>
     </span>
   </h3>
 
@@ -1946,54 +2097,6 @@ let results = factory.results;</code></pre>
   
 </div>
 <div class="detail" data-ice="detail">
-  <h3 data-ice="anchor" id="instance-method-_joinSeparatedExport">
-    <span class="access" data-ice="access">private</span>
-    
-    
-    
-    
-    <span data-ice="name">_joinSeparatedExport</span><span data-ice="signature">()</span>
-    <span class="right-info">
-      
-      
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber71">source</a></span></span>
-    </span>
-  </h3>
-
-  
-  
-  
-  <div data-ice="description"><p>join separated export declaration in AST internal.</p>
-<pre><code class="lang-javascript"><pre class="source-code"><code class="prettyprint">class Foo {}
-
-export default Foo;</code></pre>
-</code></pre>
-<p>&#x2193;</p>
-<pre><code class="lang-javascript"><pre class="source-code"><code class="prettyprint">export default class Foo {}</code></pre>
-</code></pre>
-</div>
-
-  
-
-  <div data-ice="properties">
-</div>
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-  
-</div>
-<div class="detail" data-ice="detail">
   <h3 data-ice="anchor" id="instance-method-_traverseComments">
     <span class="access" data-ice="access">private</span>
     
@@ -2004,7 +2107,7 @@ export default Foo;</code></pre>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber130">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber266">source</a></span></span>
     </span>
   </h3>
 
@@ -2083,11 +2186,11 @@ export default Foo;</code></pre>
     
     
     
-    <span data-ice="name">_unwrapExportDeclaration</span><span data-ice="signature">(node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>): <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode|null</a></span></span>
+    <span data-ice="name">_unwrapExportDeclaration</span><span data-ice="signature">(node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>): <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber419">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber555">source</a></span></span>
     </span>
   </h3>
 
@@ -2123,7 +2226,7 @@ export default Foo;</code></pre>
     <h4>Return:</h4>
     <table>
       <tr>
-        <td class="return-type" data-ice="returnType"><span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode|null</a></span></td>
+        <td class="return-type" data-ice="returnType"><span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span></td>
         <td class="return-desc" data-ice="returnDescription"><p>unwrapped child node of exported node.</p>
 </td>
       </tr>

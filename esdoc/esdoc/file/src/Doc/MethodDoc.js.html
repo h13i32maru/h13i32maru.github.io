@@ -48,12 +48,13 @@
 <li data-ice="classDoc"><span><a href="class/src/Doc/ExternalDoc.js~ExternalDoc.html">ExternalDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/FileDoc.js~FileDoc.html">FileDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/FileDocBuilder.js~FileDocBuilder.html">FileDocBuilder</a></span></li>
-<li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/TestFileDocBuilder.js~FileDocBuilder.html">FileDocBuilder</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/FunctionDoc.js~FunctionDoc.html">FunctionDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/IdentifiersDocBuilder.js~IdentifiersDocBuilder.html">IdentifiersDocBuilder</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/IndexDocBuilder.js~IndexDocBuilder.html">IndexDocBuilder</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Util/InvalidCodeLogger.js~InvalidCodeLogger.html">InvalidCodeLogger</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/MemberDoc.js~MemberDoc.html">MemberDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/MethodDoc.js~MethodDoc.html">MethodDoc</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Util/NamingUtil.js~NamingUtil.html">NamingUtil</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Parser/ParamParser.js~ParamParser.html">ParamParser</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Util/PathResolver.js~PathResolver.html">PathResolver</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/SearchIndexBuilder.js~SearchIndexBuilder.html">SearchIndexBuilder</a></span></li>
@@ -64,6 +65,7 @@
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/TestDocBuilder.js~TestDocBuilder.html">TestDocBuilder</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Factory/TestDocFactory.js~TestDocFactory.html">TestDocFactory</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/TestFileDoc.js~TestFileDoc.html">TestFileDoc</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/TestFileDocBuilder.js~TestFileDocBuilder.html">TestFileDocBuilder</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/TypedefDoc.js~TypedefDoc.html">TypedefDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/VariableDoc.js~VariableDoc.html">VariableDoc</a></span></li>
 </ul>
@@ -82,7 +84,13 @@
 </ul>
 </div>
 
-
+<div data-ice="variableWrap">
+  <h2><a href="variable/">Variable</a></h2>
+  <ul>
+    
+  <li data-ice="variableDoc"><span><a href="variable/index.html#static-variable-invalidCodeLogger">invalidCodeLogger</a></span></li>
+</ul>
+</div>
 
 <div data-ice="typedefWrap">
   <h2><a href="typedef/">Typedef</a></h2>
@@ -130,15 +138,15 @@ export default class MethodDoc extends AbstractDoc {
   }
 
   /** use kind property of self node. */
-  [&apos;@kind&apos;]() {
-    AbstractDoc.prototype[&apos;@kind&apos;].call(this);
+  [&apos;@_kind&apos;]() {
+    AbstractDoc.prototype[&apos;@_kind&apos;].call(this);
     if (this._value.kind) return;
     this._value.kind = this._node.kind;
   }
 
   /** take out self name from self node */
-  [&apos;@name&apos;]() {
-    AbstractDoc.prototype[&apos;@name&apos;].call(this);
+  [&apos;@_name&apos;]() {
+    AbstractDoc.prototype[&apos;@_name&apos;].call(this);
     if (this._value.name) return;
 
     // normally `key.name`, but computed value(aka [&apos;foo&apos;]) refers `key.value`.
@@ -146,15 +154,15 @@ export default class MethodDoc extends AbstractDoc {
   }
 
   /** take out memberof from parent class node */
-  [&apos;@memberof&apos;]() {
-    AbstractDoc.prototype[&apos;@memberof&apos;].call(this);
+  [&apos;@_memberof&apos;]() {
+    AbstractDoc.prototype[&apos;@_memberof&apos;].call(this);
     if (this._value.memberof) return;
 
     let memberof;
     let parent = this._node.parent;
     while (parent) {
       if (parent.type === &apos;ClassDeclaration&apos; || parent.type === &apos;ClassExpression&apos;) {
-        memberof = `${this._pathResolver.filePath}~${parent.id.name}`;
+        memberof = `${this._pathResolver.filePath}~${parent.doc.value.name}`;
         this._value.memberof = memberof;
         return;
       }
@@ -202,8 +210,8 @@ export default class MethodDoc extends AbstractDoc {
   }
 
   /** use generator property of self node. */
-  [&apos;@generator&apos;]() {
-    super[&apos;@generator&apos;]();
+  [&apos;@_generator&apos;]() {
+    super[&apos;@_generator&apos;]();
     if (&apos;generator&apos; in this._value) return;
 
     this._value.generator = this._node.value.generator;

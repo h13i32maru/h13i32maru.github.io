@@ -1,43 +1,31 @@
 {
-  "coverage": "94.5%",
-  "expectCount": 291,
-  "actualCount": 275,
+  "coverage": "93.06%",
+  "expectCount": 303,
+  "actualCount": 282,
   "files": {
-    "src/Doc/AbstractDoc.js": {
-      "expectCount": 52,
-      "actualCount": 47
-    },
     "src/Doc/FileDoc.js": {
       "expectCount": 6,
       "actualCount": 6
     },
-    "src/Doc/TestDoc.js": {
+    "src/Doc/AbstractDoc.js": {
+      "expectCount": 54,
+      "actualCount": 49
+    },
+    "src/Doc/MethodDoc.js": {
+      "expectCount": 9,
+      "actualCount": 9
+    },
+    "src/Doc/FunctionDoc.js": {
+      "expectCount": 7,
+      "actualCount": 7
+    },
+    "src/Doc/MemberDoc.js": {
       "expectCount": 7,
       "actualCount": 7
     },
     "src/Doc/ClassDoc.js": {
       "expectCount": 8,
       "actualCount": 8
-    },
-    "src/Doc/ExternalDoc.js": {
-      "expectCount": 7,
-      "actualCount": 7
-    },
-    "src/Doc/FunctionDoc.js": {
-      "expectCount": 7,
-      "actualCount": 7
-    },
-    "src/Doc/MethodDoc.js": {
-      "expectCount": 9,
-      "actualCount": 9
-    },
-    "src/Doc/AssignmentDoc.js": {
-      "expectCount": 4,
-      "actualCount": 4
-    },
-    "src/Doc/VariableDoc.js": {
-      "expectCount": 5,
-      "actualCount": 5
     },
     "src/Doc/TestFileDoc.js": {
       "expectCount": 2,
@@ -47,17 +35,29 @@
       "expectCount": 6,
       "actualCount": 6
     },
-    "src/Doc/MemberDoc.js": {
+    "src/Doc/VariableDoc.js": {
+      "expectCount": 5,
+      "actualCount": 5
+    },
+    "src/Doc/ExternalDoc.js": {
       "expectCount": 7,
       "actualCount": 7
+    },
+    "src/Doc/TestDoc.js": {
+      "expectCount": 7,
+      "actualCount": 7
+    },
+    "src/Doc/AssignmentDoc.js": {
+      "expectCount": 4,
+      "actualCount": 4
     },
     "src/Publisher/Builder/ASTDocBuilder.js": {
       "expectCount": 4,
       "actualCount": 3
     },
     "src/Util/ASTUtil.js": {
-      "expectCount": 3,
-      "actualCount": 3
+      "expectCount": 6,
+      "actualCount": 6
     },
     "src/Publisher/Builder/ClassDocBuilder.js": {
       "expectCount": 8,
@@ -76,12 +76,12 @@
       "actualCount": 29
     },
     "src/Factory/DocFactory.js": {
-      "expectCount": 23,
-      "actualCount": 19
+      "expectCount": 24,
+      "actualCount": 20
     },
     "src/Publisher/Builder/DocResolver.js": {
-      "expectCount": 14,
-      "actualCount": 12
+      "expectCount": 15,
+      "actualCount": 13
     },
     "src/ESDoc.js": {
       "expectCount": 8,
@@ -99,10 +99,6 @@
       "expectCount": 3,
       "actualCount": 3
     },
-    "src/Publisher/Builder/TestFileDocBuilder.js": {
-      "expectCount": 3,
-      "actualCount": 3
-    },
     "src/Publisher/Builder/IdentifiersDocBuilder.js": {
       "expectCount": 3,
       "actualCount": 3
@@ -110,6 +106,14 @@
     "src/Publisher/Builder/IndexDocBuilder.js": {
       "expectCount": 5,
       "actualCount": 4
+    },
+    "src/Util/InvalidCodeLogger.js": {
+      "expectCount": 3,
+      "actualCount": 0
+    },
+    "src/Util/NamingUtil.js": {
+      "expectCount": 2,
+      "actualCount": 0
     },
     "src/Parser/ParamParser.js": {
       "expectCount": 6,
@@ -142,6 +146,10 @@
     "src/Factory/TestDocFactory.js": {
       "expectCount": 11,
       "actualCount": 11
+    },
+    "src/Publisher/Builder/TestFileDocBuilder.js": {
+      "expectCount": 3,
+      "actualCount": 3
     },
     "src/Publisher/Builder/util.js": {
       "expectCount": 3,

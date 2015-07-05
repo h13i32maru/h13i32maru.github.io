@@ -48,12 +48,13 @@
 <li data-ice="classDoc"><span><a href="class/src/Doc/ExternalDoc.js~ExternalDoc.html">ExternalDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/FileDoc.js~FileDoc.html">FileDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/FileDocBuilder.js~FileDocBuilder.html">FileDocBuilder</a></span></li>
-<li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/TestFileDocBuilder.js~FileDocBuilder.html">FileDocBuilder</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/FunctionDoc.js~FunctionDoc.html">FunctionDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/IdentifiersDocBuilder.js~IdentifiersDocBuilder.html">IdentifiersDocBuilder</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/IndexDocBuilder.js~IndexDocBuilder.html">IndexDocBuilder</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Util/InvalidCodeLogger.js~InvalidCodeLogger.html">InvalidCodeLogger</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/MemberDoc.js~MemberDoc.html">MemberDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/MethodDoc.js~MethodDoc.html">MethodDoc</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Util/NamingUtil.js~NamingUtil.html">NamingUtil</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Parser/ParamParser.js~ParamParser.html">ParamParser</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Util/PathResolver.js~PathResolver.html">PathResolver</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/SearchIndexBuilder.js~SearchIndexBuilder.html">SearchIndexBuilder</a></span></li>
@@ -64,6 +65,7 @@
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/TestDocBuilder.js~TestDocBuilder.html">TestDocBuilder</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Factory/TestDocFactory.js~TestDocFactory.html">TestDocFactory</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/TestFileDoc.js~TestFileDoc.html">TestFileDoc</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/TestFileDocBuilder.js~TestFileDocBuilder.html">TestFileDocBuilder</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/TypedefDoc.js~TypedefDoc.html">TypedefDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/VariableDoc.js~VariableDoc.html">VariableDoc</a></span></li>
 </ul>
@@ -82,7 +84,13 @@
 </ul>
 </div>
 
-
+<div data-ice="variableWrap">
+  <h2><a href="variable/">Variable</a></h2>
+  <ul>
+    
+  <li data-ice="variableDoc"><span><a href="variable/index.html#static-variable-invalidCodeLogger">invalidCodeLogger</a></span></li>
+</ul>
+</div>
 
 <div data-ice="typedefWrap">
   <h2><a href="typedef/">Typedef</a></h2>
@@ -123,7 +131,9 @@
   <h1 data-ice="name">DocBuilder</h1>
 
   
-  <div class="flat-list" data-ice="directSubclass"><h4>Direct Subclass:</h4><div><span><a href="class/src/Publisher/Builder/ASTDocBuilder.js~ASTDocBuilder.html">ASTDocBuilder</a></span>, <span><a href="class/src/Publisher/Builder/ClassDocBuilder.js~ClassDocBuilder.html">ClassDocBuilder</a></span>, <span><a href="class/src/Publisher/Builder/CoverageBuilder.js~CoverageBuilder.html">CoverageBuilder</a></span>, <span><a href="class/src/Publisher/Builder/FileDocBuilder.js~FileDocBuilder.html">FileDocBuilder</a></span>, <span><a href="class/src/Publisher/Builder/TestFileDocBuilder.js~FileDocBuilder.html">FileDocBuilder</a></span>, <span><a href="class/src/Publisher/Builder/IdentifiersDocBuilder.js~IdentifiersDocBuilder.html">IdentifiersDocBuilder</a></span>, <span><a href="class/src/Publisher/Builder/IndexDocBuilder.js~IndexDocBuilder.html">IndexDocBuilder</a></span>, <span><a href="class/src/Publisher/Builder/SearchIndexBuilder.js~SearchIndexBuilder.html">SearchIndexBuilder</a></span>, <span><a href="class/src/Publisher/Builder/SingleDocBuilder.js~SingleDocBuilder.html">SingleDocBuilder</a></span>, <span><a href="class/src/Publisher/Builder/SourceDocBuilder.js~SourceDocBuilder.html">SourceDocBuilder</a></span>, <span><a href="class/src/Publisher/Builder/StaticFileBuilder.js~StaticFileBuilder.html">StaticFileBuilder</a></span>, <span><a href="class/src/Publisher/Builder/TestDocBuilder.js~TestDocBuilder.html">TestDocBuilder</a></span></div></div>
+
+  
+  <div class="flat-list" data-ice="directSubclass"><h4>Direct Subclass:</h4><div><span><a href="class/src/Publisher/Builder/ASTDocBuilder.js~ASTDocBuilder.html">ASTDocBuilder</a></span>, <span><a href="class/src/Publisher/Builder/ClassDocBuilder.js~ClassDocBuilder.html">ClassDocBuilder</a></span>, <span><a href="class/src/Publisher/Builder/CoverageBuilder.js~CoverageBuilder.html">CoverageBuilder</a></span>, <span><a href="class/src/Publisher/Builder/FileDocBuilder.js~FileDocBuilder.html">FileDocBuilder</a></span>, <span><a href="class/src/Publisher/Builder/IdentifiersDocBuilder.js~IdentifiersDocBuilder.html">IdentifiersDocBuilder</a></span>, <span><a href="class/src/Publisher/Builder/IndexDocBuilder.js~IndexDocBuilder.html">IndexDocBuilder</a></span>, <span><a href="class/src/Publisher/Builder/SearchIndexBuilder.js~SearchIndexBuilder.html">SearchIndexBuilder</a></span>, <span><a href="class/src/Publisher/Builder/SingleDocBuilder.js~SingleDocBuilder.html">SingleDocBuilder</a></span>, <span><a href="class/src/Publisher/Builder/SourceDocBuilder.js~SourceDocBuilder.html">SourceDocBuilder</a></span>, <span><a href="class/src/Publisher/Builder/StaticFileBuilder.js~StaticFileBuilder.html">StaticFileBuilder</a></span>, <span><a href="class/src/Publisher/Builder/TestDocBuilder.js~TestDocBuilder.html">TestDocBuilder</a></span>, <span><a href="class/src/Publisher/Builder/TestFileDocBuilder.js~TestFileDocBuilder.html">TestFileDocBuilder</a></span></div></div>
   
   
   
@@ -1153,7 +1163,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocBuilder.js.html#lineNumber946">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocBuilder.js.html#lineNumber953">source</a></span></span>
     </span>
   </h3>
 
@@ -1222,7 +1232,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocBuilder.js.html#lineNumber891">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocBuilder.js.html#lineNumber898">source</a></span></span>
     </span>
   </h3>
 
@@ -1291,7 +1301,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocBuilder.js.html#lineNumber381">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocBuilder.js.html#lineNumber389">source</a></span></span>
     </span>
   </h3>
 
@@ -1367,7 +1377,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocBuilder.js.html#lineNumber356">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocBuilder.js.html#lineNumber364">source</a></span></span>
     </span>
   </h3>
 
@@ -1458,7 +1468,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocBuilder.js.html#lineNumber724">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocBuilder.js.html#lineNumber731">source</a></span></span>
     </span>
   </h3>
 
@@ -1549,7 +1559,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocBuilder.js.html#lineNumber763">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocBuilder.js.html#lineNumber770">source</a></span></span>
     </span>
   </h3>
 
@@ -1641,7 +1651,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocBuilder.js.html#lineNumber907">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocBuilder.js.html#lineNumber914">source</a></span></span>
     </span>
   </h3>
 
@@ -1710,7 +1720,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocBuilder.js.html#lineNumber601">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocBuilder.js.html#lineNumber609">source</a></span></span>
     </span>
   </h3>
 
@@ -1786,7 +1796,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocBuilder.js.html#lineNumber153">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocBuilder.js.html#lineNumber160">source</a></span></span>
     </span>
   </h3>
 
@@ -1838,7 +1848,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocBuilder.js.html#lineNumber190">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocBuilder.js.html#lineNumber198">source</a></span></span>
     </span>
   </h3>
 
@@ -1883,8 +1893,8 @@
 <li data-ice="test"><span><a href="test-file/src/BuilderTest/NavDocTest.js.html#lineNumber16">Nav: has interface nav.</a></span></li>
 <li data-ice="test"><span><a href="test-file/src/BuilderTest/NavDocTest.js.html#lineNumber24">Nav: has function nav.</a></span></li>
 <li data-ice="test"><span><a href="test-file/src/BuilderTest/NavDocTest.js.html#lineNumber32">Nav: has variable nav.</a></span></li>
-<li data-ice="test"><span><a href="test-file/src/BuilderTest/NavDocTest.js.html#lineNumber40">Nav: has typedef nav.</a></span></li>
-<li data-ice="test"><span><a href="test-file/src/BuilderTest/NavDocTest.js.html#lineNumber48">Nav: has external nav.</a></span></li>
+<li data-ice="test"><span><a href="test-file/src/BuilderTest/NavDocTest.js.html#lineNumber41">Nav: has typedef nav.</a></span></li>
+<li data-ice="test"><span><a href="test-file/src/BuilderTest/NavDocTest.js.html#lineNumber49">Nav: has external nav.</a></span></li>
 </ul>
   </div>
 
@@ -1902,7 +1912,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocBuilder.js.html#lineNumber923">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocBuilder.js.html#lineNumber930">source</a></span></span>
     </span>
   </h3>
 
@@ -1971,7 +1981,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocBuilder.js.html#lineNumber842">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocBuilder.js.html#lineNumber849">source</a></span></span>
     </span>
   </h3>
 
@@ -2048,7 +2058,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocBuilder.js.html#lineNumber785">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocBuilder.js.html#lineNumber792">source</a></span></span>
     </span>
   </h3>
 
@@ -2117,7 +2127,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocBuilder.js.html#lineNumber313">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocBuilder.js.html#lineNumber321">source</a></span></span>
     </span>
   </h3>
 
@@ -2200,7 +2210,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocBuilder.js.html#lineNumber285">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocBuilder.js.html#lineNumber293">source</a></span></span>
     </span>
   </h3>
 
@@ -2291,7 +2301,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocBuilder.js.html#lineNumber630">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocBuilder.js.html#lineNumber638">source</a></span></span>
     </span>
   </h3>
 
@@ -2428,7 +2438,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocBuilder.js.html#lineNumber250">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocBuilder.js.html#lineNumber258">source</a></span></span>
     </span>
   </h3>
 
@@ -2624,7 +2634,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocBuilder.js.html#lineNumber529">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocBuilder.js.html#lineNumber537">source</a></span></span>
     </span>
   </h3>
 
@@ -2744,7 +2754,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocBuilder.js.html#lineNumber562">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocBuilder.js.html#lineNumber570">source</a></span></span>
     </span>
   </h3>
 
@@ -2813,7 +2823,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocBuilder.js.html#lineNumber505">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocBuilder.js.html#lineNumber513">source</a></span></span>
     </span>
   </h3>
 
@@ -2888,7 +2898,7 @@
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocBuilder.js.html#lineNumber540">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Publisher/Builder/DocBuilder.js.html#lineNumber548">source</a></span></span>
     </span>
   </h3>
 

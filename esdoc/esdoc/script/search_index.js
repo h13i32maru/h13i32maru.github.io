@@ -102,12 +102,6 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
-    "esdoc/out/src/publisher/builder/testfiledocbuilder.js~filedocbuilder",
-    "class/src/Publisher/Builder/TestFileDocBuilder.js~FileDocBuilder.html",
-    "<span>FileDocBuilder</span> <span class=\"search-result-import-path\">esdoc/out/src/Publisher/Builder/TestFileDocBuilder.js</span>",
-    "class"
-  ],
-  [
     "esdoc/out/src/doc/functiondoc.js~functiondoc",
     "class/src/Doc/FunctionDoc.js~FunctionDoc.html",
     "<span>FunctionDoc</span> <span class=\"search-result-import-path\">esdoc/out/src/Doc/FunctionDoc.js</span>",
@@ -126,6 +120,12 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
+    "esdoc/out/src/util/invalidcodelogger.js~invalidcodelogger",
+    "class/src/Util/InvalidCodeLogger.js~InvalidCodeLogger.html",
+    "<span>InvalidCodeLogger</span> <span class=\"search-result-import-path\">esdoc/out/src/Util/InvalidCodeLogger.js</span>",
+    "class"
+  ],
+  [
     "esdoc/out/src/doc/memberdoc.js~memberdoc",
     "class/src/Doc/MemberDoc.js~MemberDoc.html",
     "<span>MemberDoc</span> <span class=\"search-result-import-path\">esdoc/out/src/Doc/MemberDoc.js</span>",
@@ -135,6 +135,12 @@ window.esdocSearchIndex = [
     "esdoc/out/src/doc/methoddoc.js~methoddoc",
     "class/src/Doc/MethodDoc.js~MethodDoc.html",
     "<span>MethodDoc</span> <span class=\"search-result-import-path\">esdoc/out/src/Doc/MethodDoc.js</span>",
+    "class"
+  ],
+  [
+    "esdoc/out/src/util/namingutil.js~namingutil",
+    "class/src/Util/NamingUtil.js~NamingUtil.html",
+    "<span>NamingUtil</span> <span class=\"search-result-import-path\">esdoc/out/src/Util/NamingUtil.js</span>",
     "class"
   ],
   [
@@ -198,6 +204,12 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
+    "esdoc/out/src/publisher/builder/testfiledocbuilder.js~testfiledocbuilder",
+    "class/src/Publisher/Builder/TestFileDocBuilder.js~TestFileDocBuilder.html",
+    "<span>TestFileDocBuilder</span> <span class=\"search-result-import-path\">esdoc/out/src/Publisher/Builder/TestFileDocBuilder.js</span>",
+    "class"
+  ],
+  [
     "esdoc/out/src/doc/typedefdoc.js~typedefdoc",
     "class/src/Doc/TypedefDoc.js~TypedefDoc.html",
     "<span>TypedefDoc</span> <span class=\"search-result-import-path\">esdoc/out/src/Doc/TypedefDoc.js</span>",
@@ -214,6 +226,12 @@ window.esdocSearchIndex = [
     "function/index.html#static-function-dateForUTC",
     "<span>dateForUTC</span> <span class=\"search-result-import-path\">esdoc/out/src/Publisher/Builder/util.js</span>",
     "function"
+  ],
+  [
+    "esdoc/out/src/util/invalidcodelogger.js~invalidcodelogger",
+    "variable/index.html#static-variable-invalidCodeLogger",
+    "<span>invalidCodeLogger</span> <span class=\"search-result-import-path\">esdoc/out/src/Util/InvalidCodeLogger.js</span>",
+    "variable"
   ],
   [
     "esdoc/out/src/publisher/builder/util.js~markdown",
@@ -252,15 +270,45 @@ window.esdocSearchIndex = [
     "test"
   ],
   [
-    "abstractdoc#@undocument src/doc/abstractdoc.js~abstractdoc#@undocument,abstractdoc#@undocument",
+    "abstractdoc#@_undocument src/doc/abstractdoc.js~abstractdoc#@_undocument,abstractdoc#@_undocument",
     "test-file/src/DocTest/AbstractDocTest.js.html#lineNumber15",
     "AbstractDoc: has undocument tag.",
     "test"
   ],
   [
-    "abstractdoc#@unknown src/doc/abstractdoc.js~abstractdoc#@unknown,abstractdoc#@unknown",
+    "abstractdoc#@_unknown src/doc/abstractdoc.js~abstractdoc#@_unknown,abstractdoc#@_unknown",
     "test-file/src/DocTest/AbstractDocTest.js.html#lineNumber7",
     "AbstractDoc: has unknown tag.",
+    "test"
+  ],
+  [
+    "",
+    "test-file/src/BuilderTest/nAnonymousTest.js.html#lineNumber3",
+    "Anonymous",
+    "test"
+  ],
+  [
+    "classdoc#@_name src/doc/classdoc.js~classdoc#@_name,classdoc#@_name",
+    "test-file/src/BuilderTest/nAnonymousTest.js.html#lineNumber7",
+    "Anonymous Anonymous Class",
+    "test"
+  ],
+  [
+    "",
+    "test-file/src/BuilderTest/nAnonymousTest.js.html#lineNumber10",
+    "Anonymous Anonymous Class has anonymous class",
+    "test"
+  ],
+  [
+    "functiondoc#@_name src/doc/functiondoc.js~functiondoc#@_name,functiondoc#@_name",
+    "test-file/src/BuilderTest/nAnonymousTest.js.html#lineNumber18",
+    "Anonymous Anonymous Function",
+    "test"
+  ],
+  [
+    "",
+    "test-file/src/BuilderTest/nAnonymousTest.js.html#lineNumber21",
+    "Anonymous Anonymous Function has anonymous function",
     "test"
   ],
   [
@@ -613,13 +661,19 @@ window.esdocSearchIndex = [
   ],
   [
     "commentparser.parse src/parser/commentparser.js~commentparser.parse,commentparser.parse",
-    "test-file/src/UnitTest/CommentParserTest.js.html#lineNumber39",
+    "test-file/src/UnitTest/CommentParserTest.js.html#lineNumber29",
+    "CommentParser: can parse doc comments with trailing tabs",
+    "test"
+  ],
+  [
+    "commentparser.parse src/parser/commentparser.js~commentparser.parse,commentparser.parse",
+    "test-file/src/UnitTest/CommentParserTest.js.html#lineNumber61",
     "CommentParser: return empty with line comment.",
     "test"
   ],
   [
     "commentparser.isesdoc src/parser/commentparser.js~commentparser.isesdoc,commentparser.isesdoc",
-    "test-file/src/UnitTest/CommentParserTest.js.html#lineNumber29",
+    "test-file/src/UnitTest/CommentParserTest.js.html#lineNumber51",
     "CommentParser: return empty with non doc comment.",
     "test"
   ],
@@ -666,6 +720,108 @@ window.esdocSearchIndex = [
     "test"
   ],
   [
+    "docfactory#_inspectexportdefaultdeclaration docfactory#_inspectexportnameddeclaration src/factory/docfactory.js~docfactory#_inspectexportdefaultdeclaration,docfactory#_inspectexportdefaultdeclaration src/factory/docfactory.js~docfactory#_inspectexportnameddeclaration,docfactory#_inspectexportnameddeclaration",
+    "test-file/src/BuilderTest/ExportDocTest.js.html#lineNumber7",
+    "Export:",
+    "test"
+  ],
+  [
+    "",
+    "test-file/src/BuilderTest/ExportDocTest.js.html#lineNumber8",
+    "Export: MyExport1:",
+    "test"
+  ],
+  [
+    "",
+    "test-file/src/BuilderTest/ExportDocTest.js.html#lineNumber11",
+    "Export: MyExport1: has instance notice.",
+    "test"
+  ],
+  [
+    "",
+    "test-file/src/BuilderTest/ExportDocTest.js.html#lineNumber17",
+    "Export: MyExport2:",
+    "test"
+  ],
+  [
+    "",
+    "test-file/src/BuilderTest/ExportDocTest.js.html#lineNumber20",
+    "Export: MyExport2: has instance notice.",
+    "test"
+  ],
+  [
+    "",
+    "test-file/src/BuilderTest/ExportDocTest.js.html#lineNumber26",
+    "Export: MyExport3:",
+    "test"
+  ],
+  [
+    "",
+    "test-file/src/BuilderTest/ExportDocTest.js.html#lineNumber29",
+    "Export: MyExport3: has instance notice.",
+    "test"
+  ],
+  [
+    "",
+    "test-file/src/BuilderTest/ExportDocTest.js.html#lineNumber35",
+    "Export: MyExport4:",
+    "test"
+  ],
+  [
+    "",
+    "test-file/src/BuilderTest/ExportDocTest.js.html#lineNumber38",
+    "Export: MyExport4: has instance notice.",
+    "test"
+  ],
+  [
+    "",
+    "test-file/src/BuilderTest/ExportDocTest.js.html#lineNumber44",
+    "Export: MyExport5:",
+    "test"
+  ],
+  [
+    "",
+    "test-file/src/BuilderTest/ExportDocTest.js.html#lineNumber47",
+    "Export: MyExport5: has instance notice.",
+    "test"
+  ],
+  [
+    "",
+    "test-file/src/BuilderTest/ExportDocTest.js.html#lineNumber53",
+    "Export: MyExport6:",
+    "test"
+  ],
+  [
+    "",
+    "test-file/src/BuilderTest/ExportDocTest.js.html#lineNumber56",
+    "Export: MyExport6: does not have instance notice.",
+    "test"
+  ],
+  [
+    "",
+    "test-file/src/BuilderTest/ExportDocTest.js.html#lineNumber71",
+    "Export: MyExport99:",
+    "test"
+  ],
+  [
+    "",
+    "test-file/src/BuilderTest/ExportDocTest.js.html#lineNumber74",
+    "Export: MyExport99: does not have instance notice.",
+    "test"
+  ],
+  [
+    "",
+    "test-file/src/BuilderTest/ExportDocTest.js.html#lineNumber62",
+    "Export: MyExport9:",
+    "test"
+  ],
+  [
+    "",
+    "test-file/src/BuilderTest/ExportDocTest.js.html#lineNumber65",
+    "Export: MyExport9: has instance notice.",
+    "test"
+  ],
+  [
     "",
     "test-file/src/BuilderTest/TestDocTest.js.html#lineNumber31",
     "Identifier to Test:",
@@ -709,7 +865,7 @@ window.esdocSearchIndex = [
   ],
   [
     "identifiersdocbuilder#_buildidentifierdoc src/publisher/builder/identifiersdocbuilder.js~identifiersdocbuilder#_buildidentifierdoc,identifiersdocbuilder#_buildidentifierdoc",
-    "test-file/src/BuilderTest/IdentifiersDocTest.js.html#lineNumber39",
+    "test-file/src/BuilderTest/IdentifiersDocTest.js.html#lineNumber40",
     "Identifiers: has typedef summary.",
     "test"
   ],
@@ -757,13 +913,13 @@ window.esdocSearchIndex = [
   ],
   [
     "classdocbuilder#_buildclassdoc src/publisher/builder/classdocbuilder.js~classdocbuilder#_buildclassdoc,classdocbuilder#_buildclassdoc",
-    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber316",
+    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber318",
     "MyClass1: has constructor detail.",
     "test"
   ],
   [
     "classdocbuilder#_buildclassdoc src/publisher/builder/classdocbuilder.js~classdocbuilder#_buildclassdoc,classdocbuilder#_buildclassdoc",
-    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber129",
+    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber131",
     "MyClass1: has constructor summary.",
     "test"
   ],
@@ -781,31 +937,31 @@ window.esdocSearchIndex = [
   ],
   [
     "classdocbuilder#_buildinheritedsummaryhtml src/publisher/builder/classdocbuilder.js~classdocbuilder#_buildinheritedsummaryhtml,classdocbuilder#_buildinheritedsummaryhtml",
-    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber214",
+    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber216",
     "MyClass1: has inherited summary.",
     "test"
   ],
   [
     "classdocbuilder#_buildclassdoc src/publisher/builder/classdocbuilder.js~classdocbuilder#_buildclassdoc,classdocbuilder#_buildclassdoc",
-    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber331",
+    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber333",
     "MyClass1: has member detail.",
     "test"
   ],
   [
     "classdocbuilder#_buildclassdoc src/publisher/builder/classdocbuilder.js~classdocbuilder#_buildclassdoc,classdocbuilder#_buildclassdoc",
-    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber139",
+    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber141",
     "MyClass1: has member summary.",
     "test"
   ],
   [
     "classdocbuilder#_buildclassdoc src/publisher/builder/classdocbuilder.js~classdocbuilder#_buildclassdoc,classdocbuilder#_buildclassdoc",
-    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber367",
+    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber369",
     "MyClass1: has method detail.",
     "test"
   ],
   [
     "classdocbuilder#_buildclassdoc src/publisher/builder/classdocbuilder.js~classdocbuilder#_buildclassdoc,classdocbuilder#_buildclassdoc",
-    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber184",
+    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber186",
     "MyClass1: has method summary.",
     "test"
   ],
@@ -817,25 +973,25 @@ window.esdocSearchIndex = [
   ],
   [
     "classdocbuilder#_buildclassdoc src/publisher/builder/classdocbuilder.js~classdocbuilder#_buildclassdoc,classdocbuilder#_buildclassdoc",
-    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber272",
+    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber274",
     "MyClass1: has static member detail.",
     "test"
   ],
   [
     "classdocbuilder#_buildclassdoc src/publisher/builder/classdocbuilder.js~classdocbuilder#_buildclassdoc,classdocbuilder#_buildclassdoc",
-    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber84",
+    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber86",
     "MyClass1: has static member summary.",
     "test"
   ],
   [
     "classdocbuilder#_buildclassdoc src/publisher/builder/classdocbuilder.js~classdocbuilder#_buildclassdoc,classdocbuilder#_buildclassdoc",
-    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber297",
+    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber299",
     "MyClass1: has static method detail.",
     "test"
   ],
   [
     "classdocbuilder#_buildclassdoc src/publisher/builder/classdocbuilder.js~classdocbuilder#_buildclassdoc,classdocbuilder#_buildclassdoc",
-    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber110",
+    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber112",
     "MyClass1: has static method summary.",
     "test"
   ],
@@ -883,7 +1039,7 @@ window.esdocSearchIndex = [
   ],
   [
     "singledocbuilder#_buildsingledoc src/publisher/builder/singledocbuilder.js~singledocbuilder#_buildsingledoc,singledocbuilder#_buildsingledoc",
-    "test-file/src/BuilderTest/VariableDocTest.js.html#lineNumber19",
+    "test-file/src/BuilderTest/VariableDocTest.js.html#lineNumber25",
     "MyVariable: has detail.",
     "test"
   ],
@@ -907,7 +1063,7 @@ window.esdocSearchIndex = [
   ],
   [
     "docbuilder#_buildnavdoc src/publisher/builder/docbuilder.js~docbuilder#_buildnavdoc,docbuilder#_buildnavdoc",
-    "test-file/src/BuilderTest/NavDocTest.js.html#lineNumber48",
+    "test-file/src/BuilderTest/NavDocTest.js.html#lineNumber49",
     "Nav: has external nav.",
     "test"
   ],
@@ -925,7 +1081,7 @@ window.esdocSearchIndex = [
   ],
   [
     "docbuilder#_buildnavdoc src/publisher/builder/docbuilder.js~docbuilder#_buildnavdoc,docbuilder#_buildnavdoc",
-    "test-file/src/BuilderTest/NavDocTest.js.html#lineNumber40",
+    "test-file/src/BuilderTest/NavDocTest.js.html#lineNumber41",
     "Nav: has typedef nav.",
     "test"
   ],
@@ -973,12 +1129,6 @@ window.esdocSearchIndex = [
   ],
   [
     "paramparser.parseparam src/parser/paramparser.js~paramparser.parseparam,paramparser.parseparam",
-    "test-file/src/UnitTest/ParamParserTest.js.html#lineNumber98",
-    "ParamParser: parse param with complex.",
-    "test"
-  ],
-  [
-    "paramparser.parseparam src/parser/paramparser.js~paramparser.parseparam,paramparser.parseparam",
     "test-file/src/UnitTest/ParamParserTest.js.html#lineNumber66",
     "ParamParser: parse param with complex.",
     "test"
@@ -986,6 +1136,12 @@ window.esdocSearchIndex = [
   [
     "paramparser.parseparam src/parser/paramparser.js~paramparser.parseparam,paramparser.parseparam",
     "test-file/src/UnitTest/ParamParserTest.js.html#lineNumber81",
+    "ParamParser: parse param with complex.",
+    "test"
+  ],
+  [
+    "paramparser.parseparam src/parser/paramparser.js~paramparser.parseparam,paramparser.parseparam",
+    "test-file/src/UnitTest/ParamParserTest.js.html#lineNumber98",
     "ParamParser: parse param with complex.",
     "test"
   ],
@@ -1092,6 +1248,12 @@ window.esdocSearchIndex = [
     "testFile"
   ],
   [
+    "src/buildertest/exportdoctest.js",
+    "test-file/src/BuilderTest/ExportDocTest.js.html",
+    "src/BuilderTest/ExportDocTest.js",
+    "testFile"
+  ],
+  [
     "src/buildertest/filedoctest.js",
     "test-file/src/BuilderTest/FileDocTest.js.html",
     "src/BuilderTest/FileDocTest.js",
@@ -1140,10 +1302,112 @@ window.esdocSearchIndex = [
     "testFile"
   ],
   [
+    "src/buildertest/nanonymoustest.js",
+    "test-file/src/BuilderTest/nAnonymousTest.js.html",
+    "src/BuilderTest/nAnonymousTest.js",
+    "testFile"
+  ],
+  [
     "src/doc/abstractdoc.js",
     "file/src/Doc/AbstractDoc.js.html",
     "src/Doc/AbstractDoc.js",
     "file"
+  ],
+  [
+    "src/doc/abstractdoc.js~abstractdoc#@_content",
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@_content",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@_content",
+    "method"
+  ],
+  [
+    "src/doc/abstractdoc.js~abstractdoc#@_export",
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@_export",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@_export",
+    "method"
+  ],
+  [
+    "src/doc/abstractdoc.js~abstractdoc#@_generator",
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@_generator",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@_generator",
+    "method"
+  ],
+  [
+    "src/doc/abstractdoc.js~abstractdoc#@_importpath",
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@_importPath",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@_importPath",
+    "method"
+  ],
+  [
+    "src/doc/abstractdoc.js~abstractdoc#@_importstyle",
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@_importStyle",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@_importStyle",
+    "method"
+  ],
+  [
+    "src/doc/abstractdoc.js~abstractdoc#@_kind",
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@_kind",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@_kind",
+    "method"
+  ],
+  [
+    "src/doc/abstractdoc.js~abstractdoc#@_linenumber",
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@_lineNumber",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@_lineNumber",
+    "method"
+  ],
+  [
+    "src/doc/abstractdoc.js~abstractdoc#@_longname",
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@_longname",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@_longname",
+    "method"
+  ],
+  [
+    "src/doc/abstractdoc.js~abstractdoc#@_member",
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@_member",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@_member",
+    "method"
+  ],
+  [
+    "src/doc/abstractdoc.js~abstractdoc#@_memberof",
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@_memberof",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@_memberof",
+    "method"
+  ],
+  [
+    "src/doc/abstractdoc.js~abstractdoc#@_name",
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@_name",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@_name",
+    "method"
+  ],
+  [
+    "src/doc/abstractdoc.js~abstractdoc#@_pseudoexport",
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@_pseudoExport",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@_pseudoExport",
+    "method"
+  ],
+  [
+    "src/doc/abstractdoc.js~abstractdoc#@_static",
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@_static",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@_static",
+    "method"
+  ],
+  [
+    "src/doc/abstractdoc.js~abstractdoc#@_undocument",
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@_undocument",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@_undocument",
+    "method"
+  ],
+  [
+    "src/doc/abstractdoc.js~abstractdoc#@_unknown",
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@_unknown",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@_unknown",
+    "method"
+  ],
+  [
+    "src/doc/abstractdoc.js~abstractdoc#@_variation",
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@_variation",
+    "src/Doc/AbstractDoc.js~AbstractDoc#@_variation",
+    "method"
   ],
   [
     "src/doc/abstractdoc.js~abstractdoc#@abstract",
@@ -1155,12 +1419,6 @@ window.esdocSearchIndex = [
     "src/doc/abstractdoc.js~abstractdoc#@access",
     "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@access",
     "src/Doc/AbstractDoc.js~AbstractDoc#@access",
-    "method"
-  ],
-  [
-    "src/doc/abstractdoc.js~abstractdoc#@content",
-    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@content",
-    "src/Doc/AbstractDoc.js~AbstractDoc#@content",
     "method"
   ],
   [
@@ -1194,75 +1452,15 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/doc/abstractdoc.js~abstractdoc#@export",
-    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@export",
-    "src/Doc/AbstractDoc.js~AbstractDoc#@export",
-    "method"
-  ],
-  [
-    "src/doc/abstractdoc.js~abstractdoc#@generator",
-    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@generator",
-    "src/Doc/AbstractDoc.js~AbstractDoc#@generator",
-    "method"
-  ],
-  [
     "src/doc/abstractdoc.js~abstractdoc#@ignore",
     "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@ignore",
     "src/Doc/AbstractDoc.js~AbstractDoc#@ignore",
     "method"
   ],
   [
-    "src/doc/abstractdoc.js~abstractdoc#@importpath",
-    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@importPath",
-    "src/Doc/AbstractDoc.js~AbstractDoc#@importPath",
-    "method"
-  ],
-  [
-    "src/doc/abstractdoc.js~abstractdoc#@importstyle",
-    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@importStyle",
-    "src/Doc/AbstractDoc.js~AbstractDoc#@importStyle",
-    "method"
-  ],
-  [
-    "src/doc/abstractdoc.js~abstractdoc#@kind",
-    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@kind",
-    "src/Doc/AbstractDoc.js~AbstractDoc#@kind",
-    "method"
-  ],
-  [
-    "src/doc/abstractdoc.js~abstractdoc#@linenumber",
-    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@lineNumber",
-    "src/Doc/AbstractDoc.js~AbstractDoc#@lineNumber",
-    "method"
-  ],
-  [
     "src/doc/abstractdoc.js~abstractdoc#@listens",
     "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@listens",
     "src/Doc/AbstractDoc.js~AbstractDoc#@listens",
-    "method"
-  ],
-  [
-    "src/doc/abstractdoc.js~abstractdoc#@longname",
-    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@longname",
-    "src/Doc/AbstractDoc.js~AbstractDoc#@longname",
-    "method"
-  ],
-  [
-    "src/doc/abstractdoc.js~abstractdoc#@member",
-    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@member",
-    "src/Doc/AbstractDoc.js~AbstractDoc#@member",
-    "method"
-  ],
-  [
-    "src/doc/abstractdoc.js~abstractdoc#@memberof",
-    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@memberof",
-    "src/Doc/AbstractDoc.js~AbstractDoc#@memberof",
-    "method"
-  ],
-  [
-    "src/doc/abstractdoc.js~abstractdoc#@name",
-    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@name",
-    "src/Doc/AbstractDoc.js~AbstractDoc#@name",
     "method"
   ],
   [
@@ -1320,12 +1518,6 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/doc/abstractdoc.js~abstractdoc#@static",
-    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@static",
-    "src/Doc/AbstractDoc.js~AbstractDoc#@static",
-    "method"
-  ],
-  [
     "src/doc/abstractdoc.js~abstractdoc#@throws",
     "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@throws",
     "src/Doc/AbstractDoc.js~AbstractDoc#@throws",
@@ -1341,24 +1533,6 @@ window.esdocSearchIndex = [
     "src/doc/abstractdoc.js~abstractdoc#@type",
     "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@type",
     "src/Doc/AbstractDoc.js~AbstractDoc#@type",
-    "method"
-  ],
-  [
-    "src/doc/abstractdoc.js~abstractdoc#@undocument",
-    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@undocument",
-    "src/Doc/AbstractDoc.js~AbstractDoc#@undocument",
-    "method"
-  ],
-  [
-    "src/doc/abstractdoc.js~abstractdoc#@unknown",
-    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@unknown",
-    "src/Doc/AbstractDoc.js~AbstractDoc#@unknown",
-    "method"
-  ],
-  [
-    "src/doc/abstractdoc.js~abstractdoc#@variation",
-    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-@variation",
-    "src/Doc/AbstractDoc.js~AbstractDoc#@variation",
     "method"
   ],
   [
@@ -1401,6 +1575,12 @@ window.esdocSearchIndex = [
     "src/doc/abstractdoc.js~abstractdoc#_findalltagvalues",
     "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-_findAllTagValues",
     "src/Doc/AbstractDoc.js~AbstractDoc#_findAllTagValues",
+    "method"
+  ],
+  [
+    "src/doc/abstractdoc.js~abstractdoc#_findclasslongname",
+    "class/src/Doc/AbstractDoc.js~AbstractDoc.html#instance-method-_findClassLongname",
+    "src/Doc/AbstractDoc.js~AbstractDoc#_findClassLongname",
     "method"
   ],
   [
@@ -1458,21 +1638,21 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/doc/assignmentdoc.js~assignmentdoc#@kind",
-    "class/src/Doc/AssignmentDoc.js~AssignmentDoc.html#instance-method-@kind",
-    "src/Doc/AssignmentDoc.js~AssignmentDoc#@kind",
+    "src/doc/assignmentdoc.js~assignmentdoc#@_kind",
+    "class/src/Doc/AssignmentDoc.js~AssignmentDoc.html#instance-method-@_kind",
+    "src/Doc/AssignmentDoc.js~AssignmentDoc#@_kind",
     "method"
   ],
   [
-    "src/doc/assignmentdoc.js~assignmentdoc#@memberof",
-    "class/src/Doc/AssignmentDoc.js~AssignmentDoc.html#instance-method-@memberof",
-    "src/Doc/AssignmentDoc.js~AssignmentDoc#@memberof",
+    "src/doc/assignmentdoc.js~assignmentdoc#@_memberof",
+    "class/src/Doc/AssignmentDoc.js~AssignmentDoc.html#instance-method-@_memberof",
+    "src/Doc/AssignmentDoc.js~AssignmentDoc#@_memberof",
     "method"
   ],
   [
-    "src/doc/assignmentdoc.js~assignmentdoc#@name",
-    "class/src/Doc/AssignmentDoc.js~AssignmentDoc.html#instance-method-@name",
-    "src/Doc/AssignmentDoc.js~AssignmentDoc#@name",
+    "src/doc/assignmentdoc.js~assignmentdoc#@_name",
+    "class/src/Doc/AssignmentDoc.js~AssignmentDoc.html#instance-method-@_name",
+    "src/Doc/AssignmentDoc.js~AssignmentDoc#@_name",
     "method"
   ],
   [
@@ -1480,6 +1660,24 @@ window.esdocSearchIndex = [
     "file/src/Doc/ClassDoc.js.html",
     "src/Doc/ClassDoc.js",
     "file"
+  ],
+  [
+    "src/doc/classdoc.js~classdoc#@_kind",
+    "class/src/Doc/ClassDoc.js~ClassDoc.html#instance-method-@_kind",
+    "src/Doc/ClassDoc.js~ClassDoc#@_kind",
+    "method"
+  ],
+  [
+    "src/doc/classdoc.js~classdoc#@_memberof",
+    "class/src/Doc/ClassDoc.js~ClassDoc.html#instance-method-@_memberof",
+    "src/Doc/ClassDoc.js~ClassDoc#@_memberof",
+    "method"
+  ],
+  [
+    "src/doc/classdoc.js~classdoc#@_name",
+    "class/src/Doc/ClassDoc.js~ClassDoc.html#instance-method-@_name",
+    "src/Doc/ClassDoc.js~ClassDoc#@_name",
+    "method"
   ],
   [
     "src/doc/classdoc.js~classdoc#@extends",
@@ -1500,24 +1698,6 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/doc/classdoc.js~classdoc#@kind",
-    "class/src/Doc/ClassDoc.js~ClassDoc.html#instance-method-@kind",
-    "src/Doc/ClassDoc.js~ClassDoc#@kind",
-    "method"
-  ],
-  [
-    "src/doc/classdoc.js~classdoc#@memberof",
-    "class/src/Doc/ClassDoc.js~ClassDoc.html#instance-method-@memberof",
-    "src/Doc/ClassDoc.js~ClassDoc#@memberof",
-    "method"
-  ],
-  [
-    "src/doc/classdoc.js~classdoc#@name",
-    "class/src/Doc/ClassDoc.js~ClassDoc.html#instance-method-@name",
-    "src/Doc/ClassDoc.js~ClassDoc#@name",
-    "method"
-  ],
-  [
     "src/doc/classdoc.js~classdoc#_apply",
     "class/src/Doc/ClassDoc.js~ClassDoc.html#instance-method-_apply",
     "src/Doc/ClassDoc.js~ClassDoc#_apply",
@@ -1530,33 +1710,33 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "src/doc/externaldoc.js~externaldoc#@_kind",
+    "class/src/Doc/ExternalDoc.js~ExternalDoc.html#instance-method-@_kind",
+    "src/Doc/ExternalDoc.js~ExternalDoc#@_kind",
+    "method"
+  ],
+  [
+    "src/doc/externaldoc.js~externaldoc#@_longname",
+    "class/src/Doc/ExternalDoc.js~ExternalDoc.html#instance-method-@_longname",
+    "src/Doc/ExternalDoc.js~ExternalDoc#@_longname",
+    "method"
+  ],
+  [
+    "src/doc/externaldoc.js~externaldoc#@_memberof",
+    "class/src/Doc/ExternalDoc.js~ExternalDoc.html#instance-method-@_memberof",
+    "src/Doc/ExternalDoc.js~ExternalDoc#@_memberof",
+    "method"
+  ],
+  [
+    "src/doc/externaldoc.js~externaldoc#@_name",
+    "class/src/Doc/ExternalDoc.js~ExternalDoc.html#instance-method-@_name",
+    "src/Doc/ExternalDoc.js~ExternalDoc#@_name",
+    "method"
+  ],
+  [
     "src/doc/externaldoc.js~externaldoc#@external",
     "class/src/Doc/ExternalDoc.js~ExternalDoc.html#instance-method-@external",
     "src/Doc/ExternalDoc.js~ExternalDoc#@external",
-    "method"
-  ],
-  [
-    "src/doc/externaldoc.js~externaldoc#@kind",
-    "class/src/Doc/ExternalDoc.js~ExternalDoc.html#instance-method-@kind",
-    "src/Doc/ExternalDoc.js~ExternalDoc#@kind",
-    "method"
-  ],
-  [
-    "src/doc/externaldoc.js~externaldoc#@longname",
-    "class/src/Doc/ExternalDoc.js~ExternalDoc.html#instance-method-@longname",
-    "src/Doc/ExternalDoc.js~ExternalDoc#@longname",
-    "method"
-  ],
-  [
-    "src/doc/externaldoc.js~externaldoc#@memberof",
-    "class/src/Doc/ExternalDoc.js~ExternalDoc.html#instance-method-@memberof",
-    "src/Doc/ExternalDoc.js~ExternalDoc#@memberof",
-    "method"
-  ],
-  [
-    "src/doc/externaldoc.js~externaldoc#@name",
-    "class/src/Doc/ExternalDoc.js~ExternalDoc.html#instance-method-@name",
-    "src/Doc/ExternalDoc.js~ExternalDoc#@name",
     "method"
   ],
   [
@@ -1572,27 +1752,27 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/doc/filedoc.js~filedoc#@content",
-    "class/src/Doc/FileDoc.js~FileDoc.html#instance-method-@content",
-    "src/Doc/FileDoc.js~FileDoc#@content",
+    "src/doc/filedoc.js~filedoc#@_content",
+    "class/src/Doc/FileDoc.js~FileDoc.html#instance-method-@_content",
+    "src/Doc/FileDoc.js~FileDoc#@_content",
     "method"
   ],
   [
-    "src/doc/filedoc.js~filedoc#@kind",
-    "class/src/Doc/FileDoc.js~FileDoc.html#instance-method-@kind",
-    "src/Doc/FileDoc.js~FileDoc#@kind",
+    "src/doc/filedoc.js~filedoc#@_kind",
+    "class/src/Doc/FileDoc.js~FileDoc.html#instance-method-@_kind",
+    "src/Doc/FileDoc.js~FileDoc#@_kind",
     "method"
   ],
   [
-    "src/doc/filedoc.js~filedoc#@longname",
-    "class/src/Doc/FileDoc.js~FileDoc.html#instance-method-@longname",
-    "src/Doc/FileDoc.js~FileDoc#@longname",
+    "src/doc/filedoc.js~filedoc#@_longname",
+    "class/src/Doc/FileDoc.js~FileDoc.html#instance-method-@_longname",
+    "src/Doc/FileDoc.js~FileDoc#@_longname",
     "method"
   ],
   [
-    "src/doc/filedoc.js~filedoc#@name",
-    "class/src/Doc/FileDoc.js~FileDoc.html#instance-method-@name",
-    "src/Doc/FileDoc.js~FileDoc#@name",
+    "src/doc/filedoc.js~filedoc#@_name",
+    "class/src/Doc/FileDoc.js~FileDoc.html#instance-method-@_name",
+    "src/Doc/FileDoc.js~FileDoc#@_name",
     "method"
   ],
   [
@@ -1608,27 +1788,27 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/doc/functiondoc.js~functiondoc#@generator",
-    "class/src/Doc/FunctionDoc.js~FunctionDoc.html#instance-method-@generator",
-    "src/Doc/FunctionDoc.js~FunctionDoc#@generator",
+    "src/doc/functiondoc.js~functiondoc#@_generator",
+    "class/src/Doc/FunctionDoc.js~FunctionDoc.html#instance-method-@_generator",
+    "src/Doc/FunctionDoc.js~FunctionDoc#@_generator",
     "method"
   ],
   [
-    "src/doc/functiondoc.js~functiondoc#@kind",
-    "class/src/Doc/FunctionDoc.js~FunctionDoc.html#instance-method-@kind",
-    "src/Doc/FunctionDoc.js~FunctionDoc#@kind",
+    "src/doc/functiondoc.js~functiondoc#@_kind",
+    "class/src/Doc/FunctionDoc.js~FunctionDoc.html#instance-method-@_kind",
+    "src/Doc/FunctionDoc.js~FunctionDoc#@_kind",
     "method"
   ],
   [
-    "src/doc/functiondoc.js~functiondoc#@memberof",
-    "class/src/Doc/FunctionDoc.js~FunctionDoc.html#instance-method-@memberof",
-    "src/Doc/FunctionDoc.js~FunctionDoc#@memberof",
+    "src/doc/functiondoc.js~functiondoc#@_memberof",
+    "class/src/Doc/FunctionDoc.js~FunctionDoc.html#instance-method-@_memberof",
+    "src/Doc/FunctionDoc.js~FunctionDoc#@_memberof",
     "method"
   ],
   [
-    "src/doc/functiondoc.js~functiondoc#@name",
-    "class/src/Doc/FunctionDoc.js~FunctionDoc.html#instance-method-@name",
-    "src/Doc/FunctionDoc.js~FunctionDoc#@name",
+    "src/doc/functiondoc.js~functiondoc#@_name",
+    "class/src/Doc/FunctionDoc.js~FunctionDoc.html#instance-method-@_name",
+    "src/Doc/FunctionDoc.js~FunctionDoc#@_name",
     "method"
   ],
   [
@@ -1650,27 +1830,27 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/doc/memberdoc.js~memberdoc#@kind",
-    "class/src/Doc/MemberDoc.js~MemberDoc.html#instance-method-@kind",
-    "src/Doc/MemberDoc.js~MemberDoc#@kind",
+    "src/doc/memberdoc.js~memberdoc#@_kind",
+    "class/src/Doc/MemberDoc.js~MemberDoc.html#instance-method-@_kind",
+    "src/Doc/MemberDoc.js~MemberDoc#@_kind",
     "method"
   ],
   [
-    "src/doc/memberdoc.js~memberdoc#@memberof",
-    "class/src/Doc/MemberDoc.js~MemberDoc.html#instance-method-@memberof",
-    "src/Doc/MemberDoc.js~MemberDoc#@memberof",
+    "src/doc/memberdoc.js~memberdoc#@_memberof",
+    "class/src/Doc/MemberDoc.js~MemberDoc.html#instance-method-@_memberof",
+    "src/Doc/MemberDoc.js~MemberDoc#@_memberof",
     "method"
   ],
   [
-    "src/doc/memberdoc.js~memberdoc#@name",
-    "class/src/Doc/MemberDoc.js~MemberDoc.html#instance-method-@name",
-    "src/Doc/MemberDoc.js~MemberDoc#@name",
+    "src/doc/memberdoc.js~memberdoc#@_name",
+    "class/src/Doc/MemberDoc.js~MemberDoc.html#instance-method-@_name",
+    "src/Doc/MemberDoc.js~MemberDoc#@_name",
     "method"
   ],
   [
-    "src/doc/memberdoc.js~memberdoc#@static",
-    "class/src/Doc/MemberDoc.js~MemberDoc.html#instance-method-@static",
-    "src/Doc/MemberDoc.js~MemberDoc#@static",
+    "src/doc/memberdoc.js~memberdoc#@_static",
+    "class/src/Doc/MemberDoc.js~MemberDoc.html#instance-method-@_static",
+    "src/Doc/MemberDoc.js~MemberDoc#@_static",
     "method"
   ],
   [
@@ -1692,27 +1872,27 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/doc/methoddoc.js~methoddoc#@generator",
-    "class/src/Doc/MethodDoc.js~MethodDoc.html#instance-method-@generator",
-    "src/Doc/MethodDoc.js~MethodDoc#@generator",
+    "src/doc/methoddoc.js~methoddoc#@_generator",
+    "class/src/Doc/MethodDoc.js~MethodDoc.html#instance-method-@_generator",
+    "src/Doc/MethodDoc.js~MethodDoc#@_generator",
     "method"
   ],
   [
-    "src/doc/methoddoc.js~methoddoc#@kind",
-    "class/src/Doc/MethodDoc.js~MethodDoc.html#instance-method-@kind",
-    "src/Doc/MethodDoc.js~MethodDoc#@kind",
+    "src/doc/methoddoc.js~methoddoc#@_kind",
+    "class/src/Doc/MethodDoc.js~MethodDoc.html#instance-method-@_kind",
+    "src/Doc/MethodDoc.js~MethodDoc#@_kind",
     "method"
   ],
   [
-    "src/doc/methoddoc.js~methoddoc#@memberof",
-    "class/src/Doc/MethodDoc.js~MethodDoc.html#instance-method-@memberof",
-    "src/Doc/MethodDoc.js~MethodDoc#@memberof",
+    "src/doc/methoddoc.js~methoddoc#@_memberof",
+    "class/src/Doc/MethodDoc.js~MethodDoc.html#instance-method-@_memberof",
+    "src/Doc/MethodDoc.js~MethodDoc#@_memberof",
     "method"
   ],
   [
-    "src/doc/methoddoc.js~methoddoc#@name",
-    "class/src/Doc/MethodDoc.js~MethodDoc.html#instance-method-@name",
-    "src/Doc/MethodDoc.js~MethodDoc#@name",
+    "src/doc/methoddoc.js~methoddoc#@_name",
+    "class/src/Doc/MethodDoc.js~MethodDoc.html#instance-method-@_name",
+    "src/Doc/MethodDoc.js~MethodDoc#@_name",
     "method"
   ],
   [
@@ -1746,27 +1926,27 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "src/doc/testdoc.js~testdoc#@_kind",
+    "class/src/Doc/TestDoc.js~TestDoc.html#instance-method-@_kind",
+    "src/Doc/TestDoc.js~TestDoc#@_kind",
+    "method"
+  ],
+  [
+    "src/doc/testdoc.js~testdoc#@_memberof",
+    "class/src/Doc/TestDoc.js~TestDoc.html#instance-method-@_memberof",
+    "src/Doc/TestDoc.js~TestDoc#@_memberof",
+    "method"
+  ],
+  [
+    "src/doc/testdoc.js~testdoc#@_name",
+    "class/src/Doc/TestDoc.js~TestDoc.html#instance-method-@_name",
+    "src/Doc/TestDoc.js~TestDoc#@_name",
+    "method"
+  ],
+  [
     "src/doc/testdoc.js~testdoc#@desc",
     "class/src/Doc/TestDoc.js~TestDoc.html#instance-method-@desc",
     "src/Doc/TestDoc.js~TestDoc#@desc",
-    "method"
-  ],
-  [
-    "src/doc/testdoc.js~testdoc#@kind",
-    "class/src/Doc/TestDoc.js~TestDoc.html#instance-method-@kind",
-    "src/Doc/TestDoc.js~TestDoc#@kind",
-    "method"
-  ],
-  [
-    "src/doc/testdoc.js~testdoc#@memberof",
-    "class/src/Doc/TestDoc.js~TestDoc.html#instance-method-@memberof",
-    "src/Doc/TestDoc.js~TestDoc#@memberof",
-    "method"
-  ],
-  [
-    "src/doc/testdoc.js~testdoc#@name",
-    "class/src/Doc/TestDoc.js~TestDoc.html#instance-method-@name",
-    "src/Doc/TestDoc.js~TestDoc#@name",
     "method"
   ],
   [
@@ -1788,9 +1968,9 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/doc/testfiledoc.js~testfiledoc#@kind",
-    "class/src/Doc/TestFileDoc.js~TestFileDoc.html#instance-method-@kind",
-    "src/Doc/TestFileDoc.js~TestFileDoc#@kind",
+    "src/doc/testfiledoc.js~testfiledoc#@_kind",
+    "class/src/Doc/TestFileDoc.js~TestFileDoc.html#instance-method-@_kind",
+    "src/Doc/TestFileDoc.js~TestFileDoc#@_kind",
     "method"
   ],
   [
@@ -1800,21 +1980,21 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/doc/typedefdoc.js~typedefdoc#@kind",
-    "class/src/Doc/TypedefDoc.js~TypedefDoc.html#instance-method-@kind",
-    "src/Doc/TypedefDoc.js~TypedefDoc#@kind",
+    "src/doc/typedefdoc.js~typedefdoc#@_kind",
+    "class/src/Doc/TypedefDoc.js~TypedefDoc.html#instance-method-@_kind",
+    "src/Doc/TypedefDoc.js~TypedefDoc#@_kind",
     "method"
   ],
   [
-    "src/doc/typedefdoc.js~typedefdoc#@memberof",
-    "class/src/Doc/TypedefDoc.js~TypedefDoc.html#instance-method-@memberof",
-    "src/Doc/TypedefDoc.js~TypedefDoc#@memberof",
+    "src/doc/typedefdoc.js~typedefdoc#@_memberof",
+    "class/src/Doc/TypedefDoc.js~TypedefDoc.html#instance-method-@_memberof",
+    "src/Doc/TypedefDoc.js~TypedefDoc#@_memberof",
     "method"
   ],
   [
-    "src/doc/typedefdoc.js~typedefdoc#@name",
-    "class/src/Doc/TypedefDoc.js~TypedefDoc.html#instance-method-@name",
-    "src/Doc/TypedefDoc.js~TypedefDoc#@name",
+    "src/doc/typedefdoc.js~typedefdoc#@_name",
+    "class/src/Doc/TypedefDoc.js~TypedefDoc.html#instance-method-@_name",
+    "src/Doc/TypedefDoc.js~TypedefDoc#@_name",
     "method"
   ],
   [
@@ -1836,21 +2016,21 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/doc/variabledoc.js~variabledoc#@kind",
-    "class/src/Doc/VariableDoc.js~VariableDoc.html#instance-method-@kind",
-    "src/Doc/VariableDoc.js~VariableDoc#@kind",
+    "src/doc/variabledoc.js~variabledoc#@_kind",
+    "class/src/Doc/VariableDoc.js~VariableDoc.html#instance-method-@_kind",
+    "src/Doc/VariableDoc.js~VariableDoc#@_kind",
     "method"
   ],
   [
-    "src/doc/variabledoc.js~variabledoc#@memberof",
-    "class/src/Doc/VariableDoc.js~VariableDoc.html#instance-method-@memberof",
-    "src/Doc/VariableDoc.js~VariableDoc#@memberof",
+    "src/doc/variabledoc.js~variabledoc#@_memberof",
+    "class/src/Doc/VariableDoc.js~VariableDoc.html#instance-method-@_memberof",
+    "src/Doc/VariableDoc.js~VariableDoc#@_memberof",
     "method"
   ],
   [
-    "src/doc/variabledoc.js~variabledoc#@name",
-    "class/src/Doc/VariableDoc.js~VariableDoc.html#instance-method-@name",
-    "src/Doc/VariableDoc.js~VariableDoc#@name",
+    "src/doc/variabledoc.js~variabledoc#@_name",
+    "class/src/Doc/VariableDoc.js~VariableDoc.html#instance-method-@_name",
+    "src/Doc/VariableDoc.js~VariableDoc#@_name",
     "method"
   ],
   [
@@ -2046,6 +2226,18 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/factory/docfactory.js~docfactory#_inspectexportdefaultdeclaration",
+    "class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_inspectExportDefaultDeclaration",
+    "src/Factory/DocFactory.js~DocFactory#_inspectExportDefaultDeclaration",
+    "method"
+  ],
+  [
+    "src/factory/docfactory.js~docfactory#_inspectexportnameddeclaration",
+    "class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_inspectExportNamedDeclaration",
+    "src/Factory/DocFactory.js~DocFactory#_inspectExportNamedDeclaration",
+    "method"
+  ],
+  [
     "src/factory/docfactory.js~docfactory#_islastnodeinparent",
     "class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_isLastNodeInParent",
     "src/Factory/DocFactory.js~DocFactory#_isLastNodeInParent",
@@ -2055,12 +2247,6 @@ window.esdocSearchIndex = [
     "src/factory/docfactory.js~docfactory#_istopdepthinbody",
     "class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_isTopDepthInBody",
     "src/Factory/DocFactory.js~DocFactory#_isTopDepthInBody",
-    "method"
-  ],
-  [
-    "src/factory/docfactory.js~docfactory#_joinseparatedexport",
-    "class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_joinSeparatedExport",
-    "src/Factory/DocFactory.js~DocFactory#_joinSeparatedExport",
     "method"
   ],
   [
@@ -2568,6 +2754,12 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/publisher/builder/docresolver.js~docresolver#_resolvenecessary",
+    "class/src/Publisher/Builder/DocResolver.js~DocResolver.html#instance-method-_resolveNecessary",
+    "src/Publisher/Builder/DocResolver.js~DocResolver#_resolveNecessary",
+    "method"
+  ],
+  [
     "src/publisher/builder/docresolver.js~docresolver#_resolvetestrelation",
     "class/src/Publisher/Builder/DocResolver.js~DocResolver.html#instance-method-_resolveTestRelation",
     "src/Publisher/Builder/DocResolver.js~DocResolver#_resolveTestRelation",
@@ -2766,15 +2958,15 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "src/publisher/builder/testfiledocbuilder.js~filedocbuilder#_buildfiledoc",
-    "class/src/Publisher/Builder/TestFileDocBuilder.js~FileDocBuilder.html#instance-method-_buildFileDoc",
-    "src/Publisher/Builder/TestFileDocBuilder.js~FileDocBuilder#_buildFileDoc",
+    "src/publisher/builder/testfiledocbuilder.js~testfiledocbuilder#_buildfiledoc",
+    "class/src/Publisher/Builder/TestFileDocBuilder.js~TestFileDocBuilder.html#instance-method-_buildFileDoc",
+    "src/Publisher/Builder/TestFileDocBuilder.js~TestFileDocBuilder#_buildFileDoc",
     "method"
   ],
   [
-    "src/publisher/builder/testfiledocbuilder.js~filedocbuilder#exec",
-    "class/src/Publisher/Builder/TestFileDocBuilder.js~FileDocBuilder.html#instance-method-exec",
-    "src/Publisher/Builder/TestFileDocBuilder.js~FileDocBuilder#exec",
+    "src/publisher/builder/testfiledocbuilder.js~testfiledocbuilder#exec",
+    "class/src/Publisher/Builder/TestFileDocBuilder.js~TestFileDocBuilder.html#instance-method-exec",
+    "src/Publisher/Builder/TestFileDocBuilder.js~TestFileDocBuilder#exec",
     "method"
   ],
   [
@@ -2916,15 +3108,57 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "src/util/astutil.js~astutil.createvariabledeclarationandnewexpressionnode",
+    "class/src/Util/ASTUtil.js~ASTUtil.html#static-method-createVariableDeclarationAndNewExpressionNode",
+    "src/Util/ASTUtil.js~ASTUtil.createVariableDeclarationAndNewExpressionNode",
+    "method"
+  ],
+  [
+    "src/util/astutil.js~astutil.findclassdeclarationnode",
+    "class/src/Util/ASTUtil.js~ASTUtil.html#static-method-findClassDeclarationNode",
+    "src/Util/ASTUtil.js~ASTUtil.findClassDeclarationNode",
+    "method"
+  ],
+  [
     "src/util/astutil.js~astutil.findpathinimportdeclaration",
     "class/src/Util/ASTUtil.js~ASTUtil.html#static-method-findPathInImportDeclaration",
     "src/Util/ASTUtil.js~ASTUtil.findPathInImportDeclaration",
     "method"
   ],
   [
+    "src/util/astutil.js~astutil.findvariabledeclarationandnewexpressionnode",
+    "class/src/Util/ASTUtil.js~ASTUtil.html#static-method-findVariableDeclarationAndNewExpressionNode",
+    "src/Util/ASTUtil.js~ASTUtil.findVariableDeclarationAndNewExpressionNode",
+    "method"
+  ],
+  [
     "src/util/astutil.js~astutil.traverse",
     "class/src/Util/ASTUtil.js~ASTUtil.html#static-method-traverse",
     "src/Util/ASTUtil.js~ASTUtil.traverse",
+    "method"
+  ],
+  [
+    "src/util/invalidcodelogger.js",
+    "file/src/Util/InvalidCodeLogger.js.html",
+    "src/Util/InvalidCodeLogger.js",
+    "file"
+  ],
+  [
+    "src/util/invalidcodelogger.js~invalidcodelogger#show",
+    "class/src/Util/InvalidCodeLogger.js~InvalidCodeLogger.html#instance-method-show",
+    "src/Util/InvalidCodeLogger.js~InvalidCodeLogger#show",
+    "method"
+  ],
+  [
+    "src/util/namingutil.js",
+    "file/src/Util/NamingUtil.js.html",
+    "src/Util/NamingUtil.js",
+    "file"
+  ],
+  [
+    "src/util/namingutil.js~namingutil.filepathtoname",
+    "class/src/Util/NamingUtil.js~NamingUtil.html#static-method-filePathToName",
+    "src/Util/NamingUtil.js~NamingUtil.filePathToName",
     "method"
   ],
   [

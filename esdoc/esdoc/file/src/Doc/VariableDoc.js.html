@@ -48,12 +48,13 @@
 <li data-ice="classDoc"><span><a href="class/src/Doc/ExternalDoc.js~ExternalDoc.html">ExternalDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/FileDoc.js~FileDoc.html">FileDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/FileDocBuilder.js~FileDocBuilder.html">FileDocBuilder</a></span></li>
-<li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/TestFileDocBuilder.js~FileDocBuilder.html">FileDocBuilder</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/FunctionDoc.js~FunctionDoc.html">FunctionDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/IdentifiersDocBuilder.js~IdentifiersDocBuilder.html">IdentifiersDocBuilder</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/IndexDocBuilder.js~IndexDocBuilder.html">IndexDocBuilder</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Util/InvalidCodeLogger.js~InvalidCodeLogger.html">InvalidCodeLogger</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/MemberDoc.js~MemberDoc.html">MemberDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/MethodDoc.js~MethodDoc.html">MethodDoc</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Util/NamingUtil.js~NamingUtil.html">NamingUtil</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Parser/ParamParser.js~ParamParser.html">ParamParser</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Util/PathResolver.js~PathResolver.html">PathResolver</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/SearchIndexBuilder.js~SearchIndexBuilder.html">SearchIndexBuilder</a></span></li>
@@ -64,6 +65,7 @@
 <li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/TestDocBuilder.js~TestDocBuilder.html">TestDocBuilder</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Factory/TestDocFactory.js~TestDocFactory.html">TestDocFactory</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/TestFileDoc.js~TestFileDoc.html">TestFileDoc</a></span></li>
+<li data-ice="classDoc"><span><a href="class/src/Publisher/Builder/TestFileDocBuilder.js~TestFileDocBuilder.html">TestFileDocBuilder</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/TypedefDoc.js~TypedefDoc.html">TypedefDoc</a></span></li>
 <li data-ice="classDoc"><span><a href="class/src/Doc/VariableDoc.js~VariableDoc.html">VariableDoc</a></span></li>
 </ul>
@@ -82,7 +84,13 @@
 </ul>
 </div>
 
-
+<div data-ice="variableWrap">
+  <h2><a href="variable/">Variable</a></h2>
+  <ul>
+    
+  <li data-ice="variableDoc"><span><a href="variable/index.html#static-variable-invalidCodeLogger">invalidCodeLogger</a></span></li>
+</ul>
+</div>
 
 <div data-ice="typedefWrap">
   <h2><a href="typedef/">Typedef</a></h2>
@@ -112,30 +120,31 @@
 <div class="content" data-ice="content"><h1 data-ice="title">src/Doc/VariableDoc.js</h1>
 <pre class="source-code line-number"><code class="prettyprint linenums" data-ice="content">import AbstractDoc from &apos;./AbstractDoc.js&apos;;
 import ParamParser from &apos;../Parser/ParamParser.js&apos;
+import ASTUtil from &apos;../Util/ASTUtil.js&apos;;
 
 /**
  * Doc Class from Variable Declaration AST node.
  */
 export default class VariableDoc extends AbstractDoc {
   /** specify ``variable`` to kind. */
-  [&apos;@kind&apos;]() {
-    super[&apos;@kind&apos;]();
+  [&apos;@_kind&apos;]() {
+    super[&apos;@_kind&apos;]();
     if (this._value.kind) return;
 
     this._value.kind = &apos;variable&apos;;
   }
 
   /** set name by using self node. */
-  [&apos;@name&apos;]() {
-    super[&apos;@name&apos;]();
+  [&apos;@_name&apos;]() {
+    super[&apos;@_name&apos;]();
     if (this._value.name) return;
 
     this._value.name = this._node.declarations[0].id.name;
   }
 
   /** set memberof by using file path. */
-  [&apos;@memberof&apos;]() {
-    super[&apos;@memberof&apos;]();
+  [&apos;@_memberof&apos;]() {
+    super[&apos;@_memberof&apos;]();
     if (this._value.memberof) return;
     this._value.memberof = this._pathResolver.filePath;
   }
@@ -145,7 +154,13 @@ export default class VariableDoc extends AbstractDoc {
     super[&apos;@type&apos;]();
     if (this._value.type) return;
 
-    this._value.type = ParamParser.guessType(this._node.declarations[0].init);
+    if (this._node.declarations[0].init.type === &apos;NewExpression&apos;) {
+      let className = this._node.declarations[0].init.callee.name;
+      let longname = this._findClassLongname(className);
+      this._value.type = {types: [longname]};
+    } else {
+      this._value.type = ParamParser.guessType(this._node.declarations[0].init);
+    }
   }
 }
 
