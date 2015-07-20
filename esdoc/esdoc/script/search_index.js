@@ -138,6 +138,12 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
+    "esdoc/out/src/util/npmutil.js~npmutil",
+    "class/src/Util/NPMUtil.js~NPMUtil.html",
+    "<span>NPMUtil</span> <span class=\"search-result-import-path\">esdoc/out/src/Util/NPMUtil.js</span>",
+    "class"
+  ],
+  [
     "esdoc/out/src/util/namingutil.js~namingutil",
     "class/src/Util/NamingUtil.js~NamingUtil.html",
     "<span>NamingUtil</span> <span class=\"search-result-import-path\">esdoc/out/src/Util/NamingUtil.js</span>",
@@ -1165,7 +1171,7 @@ window.esdocSearchIndex = [
   ],
   [
     "paramparser.parseparam src/parser/paramparser.js~paramparser.parseparam,paramparser.parseparam",
-    "test-file/src/UnitTest/ParamParserTest.js.html#lineNumber98",
+    "test-file/src/UnitTest/ParamParserTest.js.html#lineNumber81",
     "ParamParser: parse param with complex.",
     "test"
   ],
@@ -1177,7 +1183,7 @@ window.esdocSearchIndex = [
   ],
   [
     "paramparser.parseparam src/parser/paramparser.js~paramparser.parseparam,paramparser.parseparam",
-    "test-file/src/UnitTest/ParamParserTest.js.html#lineNumber81",
+    "test-file/src/UnitTest/ParamParserTest.js.html#lineNumber98",
     "ParamParser: parse param with complex.",
     "test"
   ],
@@ -2164,18 +2170,6 @@ window.esdocSearchIndex = [
     "class/src/ESDocCLI.js~ESDocCLI.html#instance-method-_createConfigFromJSONFile",
     "src/ESDocCLI.js~ESDocCLI#_createConfigFromJSONFile",
     "method"
-  ],
-  [
-    "src/esdoccli.js~esdoccli#_findpackagejson",
-    "class/src/ESDocCLI.js~ESDocCLI.html#instance-method-_findPackageJSON",
-    "src/ESDocCLI.js~ESDocCLI#_findPackageJSON",
-    "method"
-  ],
-  [
-    "src/esdoccli.js~esdoccli#_packageobj",
-    "class/src/ESDocCLI.js~ESDocCLI.html#instance-member-_packageObj",
-    "src/ESDocCLI.js~ESDocCLI#_packageObj",
-    "member"
   ],
   [
     "src/esdoccli.js~esdoccli#_showhelp",
@@ -3219,6 +3213,18 @@ window.esdocSearchIndex = [
     "src/util/invalidcodelogger.js~invalidcodelogger#show",
     "class/src/Util/InvalidCodeLogger.js~InvalidCodeLogger.html#instance-method-show",
     "src/Util/InvalidCodeLogger.js~InvalidCodeLogger#show",
+    "method"
+  ],
+  [
+    "src/util/npmutil.js",
+    "file/src/Util/NPMUtil.js.html",
+    "src/Util/NPMUtil.js",
+    "file"
+  ],
+  [
+    "src/util/npmutil.js~npmutil.findpackage",
+    "class/src/Util/NPMUtil.js~NPMUtil.html#static-method-findPackage",
+    "src/Util/NPMUtil.js~NPMUtil.findPackage",
     "method"
   ],
   [

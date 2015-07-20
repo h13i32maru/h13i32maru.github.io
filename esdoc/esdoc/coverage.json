@@ -88,8 +88,8 @@
       "actualCount": 8
     },
     "src/ESDocCLI.js": {
-      "expectCount": 9,
-      "actualCount": 9
+      "expectCount": 7,
+      "actualCount": 7
     },
     "src/Parser/ESParser.js": {
       "expectCount": 2,
@@ -110,6 +110,10 @@
     "src/Util/InvalidCodeLogger.js": {
       "expectCount": 3,
       "actualCount": 3
+    },
+    "src/Util/NPMUtil.js": {
+      "expectCount": 2,
+      "actualCount": 2
     },
     "src/Util/NamingUtil.js": {
       "expectCount": 2,

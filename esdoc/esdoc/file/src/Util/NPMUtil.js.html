@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <base data-ice="baseUrl" href="../../../">
-  <title data-ice="title">src/BuilderTest/CoverageDocTest.js | ESDoc API Document</title>
+  <title data-ice="title">src/Util/NPMUtil.js | ESDoc API Document</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -119,84 +119,34 @@
 
 </nav>
 
-<div class="content" data-ice="content"><h1 data-ice="title">src/BuilderTest/CoverageDocTest.js</h1>
-<pre class="source-code line-number"><code class="prettyprint linenums" data-ice="content">import fs from &apos;fs&apos;;
-import {assert} from &apos;./../util.js&apos;;
+<div class="content" data-ice="content"><h1 data-ice="title">src/Util/NPMUtil.js</h1>
+<pre class="source-code line-number"><code class="prettyprint linenums" data-ice="content">import path from &apos;path&apos;;
+import fs from &apos;fs-extra&apos;;
 
-/** @test {CoverageBuilder} */
-describe(&apos;Coverage:&apos;, ()=&gt; {
+/**
+ * Node Package Manager(npm) util class.
+ */
+export default class NPMUtil {
 
-  /** @test {CoverageBuilder#exec} */
-  it(&apos;has coverage.json&apos;, ()=&gt;{
-    let json = fs.readFileSync(&apos;./test/fixture/esdoc/coverage.json&apos;, {encoding: &apos;utf8&apos;}).toString();
-    let coverage = JSON.parse(json);
-    assert.equal(coverage.coverage, &apos;86.32%&apos;);
-    assert.equal(coverage.expectCount, 117);
-    assert.equal(coverage.actualCount, 101);
-    assert.deepEqual(coverage.files, {
-      &quot;src/ForTestDoc/AbstractDoc.js&quot;: {
-        &quot;expectCount&quot;: 3,
-        &quot;actualCount&quot;: 0
-      },
-      &quot;src/ForTestDoc/ClassDoc.js&quot;: {
-        &quot;expectCount&quot;: 1,
-        &quot;actualCount&quot;: 0
-      },
-      &quot;src/ForTestDoc/ClassDocBuilder.js&quot;: {
-        &quot;expectCount&quot;: 2,
-        &quot;actualCount&quot;: 0
-      },
-      &quot;src/MyClass.js&quot;: {
-        &quot;expectCount&quot;: 37,
-        &quot;actualCount&quot;: 32
-      },
-      &quot;src/MyError.js&quot;: {
-        &quot;expectCount&quot;: 1,
-        &quot;actualCount&quot;: 1
-      },
-      &quot;src/MyEvent.js&quot;: {
-        &quot;expectCount&quot;: 1,
-        &quot;actualCount&quot;: 1
-      },
-      &quot;src/Export.js&quot;: {
-        &quot;expectCount&quot;: 23,
-        &quot;actualCount&quot;: 23
-      },
-      &quot;src/MyExpressionExtend.js&quot;: {
-        &quot;expectCount&quot;: 2,
-        &quot;actualCount&quot;: 2
-      },
-      &quot;src/MyInterface.js&quot;: {
-        &quot;expectCount&quot;: 3,
-        &quot;actualCount&quot;: 3
-      },
-      &quot;src/ExtendNest.js&quot;: {
-        &quot;expectCount&quot;: 2,
-        &quot;actualCount&quot;: 2
-      },
-      &quot;src/ReactJSX.js&quot;: {
-        &quot;expectCount&quot;: 2,
-        &quot;actualCount&quot;: 2
-      },
-      &quot;src/OtherClass/SuperMyClass.js&quot;: {
-        &quot;expectCount&quot;: 19,
-        &quot;actualCount&quot;: 19
-      },
-      &quot;src/nMyAnonymous.js&quot;: {
-        &quot;expectCount&quot;: 4,
-        &quot;actualCount&quot;: 3
-      },
-      &quot;src/myFunction.js&quot;: {
-        &quot;expectCount&quot;: 10,
-        &quot;actualCount&quot;: 8
-      },
-      &quot;src/myVariable.js&quot;: {
-        &quot;expectCount&quot;: 7,
-        &quot;actualCount&quot;: 5
-      }
-    });
-  });
-});
+  /**
+   * find ESDoc package.json object.
+   * @returns {Object} package.json object.
+   */
+  static findPackage() {
+    let packageObj = null;
+    try {
+      let packageFilePath = path.resolve(__dirname, &apos;../../package.json&apos;);
+      let json = fs.readFileSync(packageFilePath, {encode: &apos;utf8&apos;});
+      packageObj = JSON.parse(json);
+    } catch (e) {
+      let packageFilePath = path.resolve(__dirname, &apos;../../../package.json&apos;);
+      let json = fs.readFileSync(packageFilePath, {encode: &apos;utf8&apos;});
+      packageObj = JSON.parse(json);
+    }
+
+    return packageObj;
+  }
+}
 </code></pre>
 </div>
 

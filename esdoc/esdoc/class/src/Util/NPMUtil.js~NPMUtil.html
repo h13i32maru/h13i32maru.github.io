@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <base data-ice="baseUrl" href="../../../">
-  <title data-ice="title">src/BuilderTest/CoverageDocTest.js | ESDoc API Document</title>
+  <title data-ice="title">NPMUtil | ESDoc API Document</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -119,85 +119,143 @@
 
 </nav>
 
-<div class="content" data-ice="content"><h1 data-ice="title">src/BuilderTest/CoverageDocTest.js</h1>
-<pre class="source-code line-number"><code class="prettyprint linenums" data-ice="content">import fs from &apos;fs&apos;;
-import {assert} from &apos;./../util.js&apos;;
+<div class="content" data-ice="content"><div class="header-notice">
+  <div data-ice="importPath" class="import-path"><pre class="prettyprint"><code data-ice="importPathCode">import NPMUtil from &apos;<span><a href="file/src/Util/NPMUtil.js.html#lineNumber7">esdoc/out/src/Util/NPMUtil.js</a></span>&apos;</code></pre></div>
+  <span data-ice="access">public</span>
+  <span data-ice="kind">class</span>
+  
+  
+  
+  <span data-ice="source">| <span><a href="file/src/Util/NPMUtil.js.html#lineNumber7">source</a></span></span>
+</div>
 
-/** @test {CoverageBuilder} */
-describe(&apos;Coverage:&apos;, ()=&gt; {
+<div class="self-detail detail">
+  <h1 data-ice="name">NPMUtil</h1>
 
-  /** @test {CoverageBuilder#exec} */
-  it(&apos;has coverage.json&apos;, ()=&gt;{
-    let json = fs.readFileSync(&apos;./test/fixture/esdoc/coverage.json&apos;, {encoding: &apos;utf8&apos;}).toString();
-    let coverage = JSON.parse(json);
-    assert.equal(coverage.coverage, &apos;86.32%&apos;);
-    assert.equal(coverage.expectCount, 117);
-    assert.equal(coverage.actualCount, 101);
-    assert.deepEqual(coverage.files, {
-      &quot;src/ForTestDoc/AbstractDoc.js&quot;: {
-        &quot;expectCount&quot;: 3,
-        &quot;actualCount&quot;: 0
-      },
-      &quot;src/ForTestDoc/ClassDoc.js&quot;: {
-        &quot;expectCount&quot;: 1,
-        &quot;actualCount&quot;: 0
-      },
-      &quot;src/ForTestDoc/ClassDocBuilder.js&quot;: {
-        &quot;expectCount&quot;: 2,
-        &quot;actualCount&quot;: 0
-      },
-      &quot;src/MyClass.js&quot;: {
-        &quot;expectCount&quot;: 37,
-        &quot;actualCount&quot;: 32
-      },
-      &quot;src/MyError.js&quot;: {
-        &quot;expectCount&quot;: 1,
-        &quot;actualCount&quot;: 1
-      },
-      &quot;src/MyEvent.js&quot;: {
-        &quot;expectCount&quot;: 1,
-        &quot;actualCount&quot;: 1
-      },
-      &quot;src/Export.js&quot;: {
-        &quot;expectCount&quot;: 23,
-        &quot;actualCount&quot;: 23
-      },
-      &quot;src/MyExpressionExtend.js&quot;: {
-        &quot;expectCount&quot;: 2,
-        &quot;actualCount&quot;: 2
-      },
-      &quot;src/MyInterface.js&quot;: {
-        &quot;expectCount&quot;: 3,
-        &quot;actualCount&quot;: 3
-      },
-      &quot;src/ExtendNest.js&quot;: {
-        &quot;expectCount&quot;: 2,
-        &quot;actualCount&quot;: 2
-      },
-      &quot;src/ReactJSX.js&quot;: {
-        &quot;expectCount&quot;: 2,
-        &quot;actualCount&quot;: 2
-      },
-      &quot;src/OtherClass/SuperMyClass.js&quot;: {
-        &quot;expectCount&quot;: 19,
-        &quot;actualCount&quot;: 19
-      },
-      &quot;src/nMyAnonymous.js&quot;: {
-        &quot;expectCount&quot;: 4,
-        &quot;actualCount&quot;: 3
-      },
-      &quot;src/myFunction.js&quot;: {
-        &quot;expectCount&quot;: 10,
-        &quot;actualCount&quot;: 8
-      },
-      &quot;src/myVariable.js&quot;: {
-        &quot;expectCount&quot;: 7,
-        &quot;actualCount&quot;: 5
-      }
-    });
-  });
-});
-</code></pre>
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  <div class="description" data-ice="description"><p>Node Package Manager(npm) util class.</p>
+</div>
+
+  
+
+  
+
+  
+
+  
+</div>
+
+
+<div data-ice="staticMethodSummary"><h2>Static Method Summary</h2><table class="summary" data-ice="summary">
+  <thead><tr><td data-ice="title" colspan="3">Static Public Methods</td></tr></thead>
+  <tbody>
+  
+  <tr data-ice="target">
+    <td>
+      <span class="access" data-ice="access">public</span>
+      <span data-ice="static">static</span>
+      
+      
+      <span class="override" data-ice="override"></span>
+    </td>
+    <td>
+      <div>
+        <p>
+           <span data-ice="name"><span><a href="class/src/Util/NPMUtil.js~NPMUtil.html#static-method-findPackage">findPackage</a></span></span><span data-ice="signature">(): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span></span>
+        </p>
+      </div>
+      <div>
+        
+        
+        <div data-ice="description"><p>find ESDoc package.json object.</p></div>
+      </div>
+    </td>
+    <td>
+      
+      
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+
+
+
+
+
+
+
+<div data-ice="staticMethodDetails"><h2 data-ice="title">Static Public Methods</h2>
+
+<div class="detail" data-ice="detail">
+  <h3 data-ice="anchor" id="static-method-findPackage">
+    <span class="access" data-ice="access">public</span>
+    <span data-ice="static">static</span>
+    
+    
+    
+    <span data-ice="name">findPackage</span><span data-ice="signature">(): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span></span>
+    <span class="right-info">
+      
+      
+      <span data-ice="source"><span><a href="file/src/Util/NPMUtil.js.html#lineNumber13">source</a></span></span>
+    </span>
+  </h3>
+
+  
+  
+  
+  <div data-ice="description"><p>find ESDoc package.json object.</p>
+</div>
+
+  
+
+  <div data-ice="properties">
+</div>
+
+  <div class="return-params" data-ice="returnParams">
+    <h4>Return:</h4>
+    <table>
+      <tr>
+        <td class="return-type" data-ice="returnType"><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></span></td>
+        <td class="return-desc" data-ice="returnDescription"><p>package.json object.</p>
+</td>
+      </tr>
+    </table>
+    <div data-ice="returnProperties">
+</div>
+  </div>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+</div>
+</div>
+
+
+
 </div>
 
 <footer class="footer">
