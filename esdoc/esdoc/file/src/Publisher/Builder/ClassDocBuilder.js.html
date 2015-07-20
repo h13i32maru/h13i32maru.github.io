@@ -79,6 +79,7 @@
     
   <li data-ice="functionDoc"><span><a href="function/index.html#static-function-dateForUTC">dateForUTC</a></span></li>
 <li data-ice="functionDoc"><span><a href="function/index.html#static-function-markdown">markdown</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-parseExample">parseExample</a></span></li>
 <li data-ice="functionDoc"><span><a href="function/index.html#static-function-publish">publish</a></span></li>
 <li data-ice="functionDoc"><span><a href="function/index.html#static-function-shorten">shorten</a></span></li>
 </ul>
@@ -120,6 +121,7 @@
 <div class="content" data-ice="content"><h1 data-ice="title">src/Publisher/Builder/ClassDocBuilder.js</h1>
 <pre class="source-code line-number"><code class="prettyprint linenums" data-ice="content">import IceCap from &apos;ice-cap&apos;;
 import DocBuilder from &apos;./DocBuilder.js&apos;;
+import {parseExample} from &apos;./util.js&apos;;
 
 /**
  * Class Output Builder class.
@@ -151,6 +153,8 @@ export default class ClassDocBuilder extends DocBuilder {
    * @private
    */
   _buildClassDoc(doc) {
+    let expressionExtends = this._buildExpressionExtendsHTML(doc);
+    let mixinClasses = this._buildMixinClassesHTML(doc);
     let extendsChain = this._buildExtendsChainHTML(doc);
     let directSubclass = this._buildDirectSubclassHTML(doc);
     let indirectSubclass = this._buildIndirectSubclassHTML(doc);
@@ -174,7 +178,8 @@ export default class ClassDocBuilder extends DocBuilder {
     ice.text(&apos;version&apos;, doc.version, &apos;append&apos;);
     ice.load(&apos;variation&apos;, this._buildVariationHTML(doc), &apos;append&apos;);
 
-    // extends chain
+    ice.into(&apos;expressionExtends&apos;, expressionExtends, (expressionExtends, ice)=&gt; ice.load(&apos;expressionExtendsCode&apos;, expressionExtends));
+    ice.load(&apos;mixinExtends&apos;, mixinClasses, &apos;append&apos;);
     ice.load(&apos;extendsChain&apos;, extendsChain, &apos;append&apos;);
     ice.load(&apos;directSubclass&apos;, directSubclass, &apos;append&apos;);
     ice.load(&apos;indirectSubclass&apos;, indirectSubclass, &apos;append&apos;);
@@ -199,7 +204,9 @@ export default class ClassDocBuilder extends DocBuilder {
 
     ice.into(&apos;exampleDocs&apos;, doc.examples, (examples, ice)=&gt;{
       ice.loop(&apos;exampleDoc&apos;, examples, (i, example, ice)=&gt;{
-        ice.text(&apos;exampleCode&apos;, example);
+        let parsed = parseExample(example);
+        ice.text(&apos;exampleCode&apos;, parsed.body);
+        ice.text(&apos;exampleCaption&apos;, parsed.caption);
       });
     });
 
@@ -249,13 +256,46 @@ export default class ClassDocBuilder extends DocBuilder {
   }
 
   /**
+   * build mixin extends html.
+   * @param {DocObject} doc - target class doc.
+   * @return {string} mixin extends html.
+   */
+  _buildMixinClassesHTML(doc) {
+    if (!doc.extends) return &apos;&apos;;
+    if (doc.extends.length &lt;= 1) return &apos;&apos;;
+
+    let links = [];
+    for (var longname of doc.extends) {
+      links.push(this._buildDocLinkHTML(longname));
+    }
+
+    return `&lt;div&gt;${links.join(&apos;, &apos;)}&lt;/div&gt;`;
+  }
+
+  /**
+   * build expression extends html.
+   * @param {DocObject} doc - target class doc.
+   * @return {string} expression extends html.
+   */
+  _buildExpressionExtendsHTML(doc) {
+    if (!doc.expressionExtends) return &apos;&apos;;
+
+    let html = doc.expressionExtends.replace(/[A-Z_$][a-zA-Z0-9_$]*/g, (v)=&gt;{
+      return this._buildDocLinkHTML(v);
+    });
+
+    return `class ${doc.name} extends ${html}`;
+  }
+
+  /**
    * build class ancestor extends chain.
    * @param {DocObject} doc - target class doc.
    * @returns {string} extends chain links html.
    * @private
    */
   _buildExtendsChainHTML(doc) {
-    if (!doc._custom_extends_chains) return;
+    if (!doc._custom_extends_chains) return &apos;&apos;;
+    if (doc.extends.length &gt; 1) return &apos;&apos;;
 
     var links = [];
     for (var longname of doc._custom_extends_chains) {

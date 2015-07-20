@@ -79,6 +79,7 @@
     
   <li data-ice="functionDoc"><span><a href="function/index.html#static-function-dateForUTC">dateForUTC</a></span></li>
 <li data-ice="functionDoc"><span><a href="function/index.html#static-function-markdown">markdown</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-parseExample">parseExample</a></span></li>
 <li data-ice="functionDoc"><span><a href="function/index.html#static-function-publish">publish</a></span></li>
 <li data-ice="functionDoc"><span><a href="function/index.html#static-function-shorten">shorten</a></span></li>
 </ul>
@@ -139,7 +140,7 @@ describe(&apos;Anonymous&apos;, ()=&gt;{
     let doc = readDoc(&apos;function/index.html&apos;);
 
     it(&apos;has anonymous function&apos;, ()=&gt;{
-      assert.includes(doc, &apos;[data-ice=&quot;summary&quot;] [data-ice=&quot;target&quot;]:nth-of-type(9)&apos;, &apos;nMyAnonymous1&apos;);
+      assert.includes(doc, &apos;[data-ice=&quot;summary&quot;] [data-ice=&quot;target&quot;]:nth-of-type(11)&apos;, &apos;nMyAnonymous1&apos;);
     });
   });
 });

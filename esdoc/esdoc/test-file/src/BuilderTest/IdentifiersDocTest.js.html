@@ -79,6 +79,7 @@
     
   <li data-ice="functionDoc"><span><a href="function/index.html#static-function-dateForUTC">dateForUTC</a></span></li>
 <li data-ice="functionDoc"><span><a href="function/index.html#static-function-markdown">markdown</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-parseExample">parseExample</a></span></li>
 <li data-ice="functionDoc"><span><a href="function/index.html#static-function-publish">publish</a></span></li>
 <li data-ice="functionDoc"><span><a href="function/index.html#static-function-shorten">shorten</a></span></li>
 </ul>
@@ -128,7 +129,7 @@ describe(&apos;Identifiers:&apos;, ()=&gt; {
   it(&apos;has class summary.&apos;, ()=&gt;{
     find(doc, &apos;[data-ice=&quot;classSummary&quot;]&apos;, (doc)=&gt;{
       assert.includes(doc, &apos;[data-ice=&quot;target&quot;]:nth-of-type(4)&apos;, &apos;public MyClass1 this class was deprecated. use MyClass1Ex instead of this class. this class is experimental. this class is dangerous. this is MyClass1 desc.&apos;);
-      assert.includes(doc, &apos;[data-ice=&quot;target&quot;]:nth-of-type(22)&apos;, &apos;public SuperMyClass1 this is SuperMyClass1.&apos;);
+      assert.includes(doc, &apos;[data-ice=&quot;target&quot;]:nth-of-type(24)&apos;, &apos;public SuperMyClass1 this is SuperMyClass1.&apos;);
     });
   });
 

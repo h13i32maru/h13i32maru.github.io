@@ -79,6 +79,7 @@
     
   <li data-ice="functionDoc"><span><a href="function/index.html#static-function-dateForUTC">dateForUTC</a></span></li>
 <li data-ice="functionDoc"><span><a href="function/index.html#static-function-markdown">markdown</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-parseExample">parseExample</a></span></li>
 <li data-ice="functionDoc"><span><a href="function/index.html#static-function-publish">publish</a></span></li>
 <li data-ice="functionDoc"><span><a href="function/index.html#static-function-shorten">shorten</a></span></li>
 </ul>
@@ -139,6 +140,8 @@
   
   
   
+  
+  
 
   
   
@@ -150,9 +153,12 @@
   <div data-ice="exampleDocs">
     <h4>Example:</h4>
     
-  <pre class="prettyprint source-code" data-ice="exampleDoc"><code data-ice="exampleCode">let factory = new DocFactory(ast, pathResolver);
+  <div class="example-doc" data-ice="exampleDoc">
+      
+      <pre class="prettyprint source-code"><code data-ice="exampleCode">let factory = new DocFactory(ast, pathResolver);
 factory.push(node, parentNode);
 let results = factory.results;</code></pre>
+    </div>
 </div>
 
   
@@ -603,7 +609,7 @@ let results = factory.results;</code></pre>
     <td>
       <div>
         <p>
-           <span data-ice="name"><span><a href="class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_findUp">_findUp</a></span></span><span data-ice="signature">(node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>, types: <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span>[]</span></span>): <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span></span>
+           <span data-ice="name"><span><a href="class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_findUp">_findUp</a></span></span><span data-ice="signature">(node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>, types: <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span>[]</span></span>): <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span>
         </p>
       </div>
       <div>
@@ -753,7 +759,7 @@ let results = factory.results;</code></pre>
     <td>
       <div>
         <p>
-           <span data-ice="name"><span><a href="class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_unwrapExportDeclaration">_unwrapExportDeclaration</a></span></span><span data-ice="signature">(node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>): <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span></span>
+           <span data-ice="name"><span><a href="class/src/Factory/DocFactory.js~DocFactory.html#instance-method-_unwrapExportDeclaration">_unwrapExportDeclaration</a></span></span><span data-ice="signature">(node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>): <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span>
         </p>
       </div>
       <div>
@@ -1061,7 +1067,7 @@ let results = factory.results;</code></pre>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber228">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber266">source</a></span></span>
     </span>
   </h3>
 
@@ -1128,7 +1134,7 @@ let results = factory.results;</code></pre>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber613">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber651">source</a></span></span>
     </span>
   </h3>
 
@@ -1197,7 +1203,7 @@ let results = factory.results;</code></pre>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber325">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber363">source</a></span></span>
     </span>
   </h3>
 
@@ -1273,7 +1279,7 @@ let results = factory.results;</code></pre>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber524">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber562">source</a></span></span>
     </span>
   </h3>
 
@@ -1342,7 +1348,7 @@ let results = factory.results;</code></pre>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber404">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber442">source</a></span></span>
     </span>
   </h3>
 
@@ -1411,7 +1417,7 @@ let results = factory.results;</code></pre>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber444">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber482">source</a></span></span>
     </span>
   </h3>
 
@@ -1480,7 +1486,7 @@ let results = factory.results;</code></pre>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber432">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber470">source</a></span></span>
     </span>
   </h3>
 
@@ -1549,7 +1555,7 @@ let results = factory.results;</code></pre>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber416">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber454">source</a></span></span>
     </span>
   </h3>
 
@@ -1618,7 +1624,7 @@ let results = factory.results;</code></pre>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber361">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber399">source</a></span></span>
     </span>
   </h3>
 
@@ -1694,7 +1700,7 @@ let results = factory.results;</code></pre>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber491">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber529">source</a></span></span>
     </span>
   </h3>
 
@@ -1759,11 +1765,11 @@ let results = factory.results;</code></pre>
     
     
     
-    <span data-ice="name">_findUp</span><span data-ice="signature">(node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>, types: <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span>[]</span></span>): <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span></span>
+    <span data-ice="name">_findUp</span><span data-ice="signature">(node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>, types: <span><span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span><span>[]</span></span>): <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber624">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber662">source</a></span></span>
     </span>
   </h3>
 
@@ -1806,7 +1812,7 @@ let results = factory.results;</code></pre>
     <h4>Return:</h4>
     <table>
       <tr>
-        <td class="return-type" data-ice="returnType"><span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span></td>
+        <td class="return-type" data-ice="returnType"><span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></td>
         <td class="return-desc" data-ice="returnDescription"><p>found first node.</p>
 </td>
       </tr>
@@ -1899,7 +1905,7 @@ export default foo;</code></pre>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber162">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber180">source</a></span></span>
     </span>
   </h3>
 
@@ -1955,7 +1961,7 @@ export {foo};</code></pre>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber576">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber614">source</a></span></span>
     </span>
   </h3>
 
@@ -2031,7 +2037,7 @@ export {foo};</code></pre>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber592">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber630">source</a></span></span>
     </span>
   </h3>
 
@@ -2107,7 +2113,7 @@ export {foo};</code></pre>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber266">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber304">source</a></span></span>
     </span>
   </h3>
 
@@ -2186,11 +2192,11 @@ export {foo};</code></pre>
     
     
     
-    <span data-ice="name">_unwrapExportDeclaration</span><span data-ice="signature">(node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>): <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span></span>
+    <span data-ice="name">_unwrapExportDeclaration</span><span data-ice="signature">(node: <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span>): <span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></span>
     <span class="right-info">
       
       
-      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber555">source</a></span></span>
+      <span data-ice="source"><span><a href="file/src/Factory/DocFactory.js.html#lineNumber593">source</a></span></span>
     </span>
   </h3>
 
@@ -2226,7 +2232,7 @@ export {foo};</code></pre>
     <h4>Return:</h4>
     <table>
       <tr>
-        <td class="return-type" data-ice="returnType"><span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span></td>
+        <td class="return-type" data-ice="returnType"><span><a href="typedef/index.html#static-typedef-ASTNode">ASTNode</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null">null</a></span></td>
         <td class="return-desc" data-ice="returnDescription"><p>unwrapped child node of exported node.</p>
 </td>
       </tr>

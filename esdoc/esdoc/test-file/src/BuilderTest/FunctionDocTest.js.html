@@ -79,6 +79,7 @@
     
   <li data-ice="functionDoc"><span><a href="function/index.html#static-function-dateForUTC">dateForUTC</a></span></li>
 <li data-ice="functionDoc"><span><a href="function/index.html#static-function-markdown">markdown</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-parseExample">parseExample</a></span></li>
 <li data-ice="functionDoc"><span><a href="function/index.html#static-function-publish">publish</a></span></li>
 <li data-ice="functionDoc"><span><a href="function/index.html#static-function-shorten">shorten</a></span></li>
 </ul>
@@ -133,8 +134,10 @@ describe(&apos;MyFunction:&apos;, ()=&gt;{
       assert.includes(doc, &apos;[data-ice=&quot;target&quot;]:nth-of-type(4)&apos;, &apos;public myFunction4(p1: number, p2: string): number this is myFunction4 desc.&apos;);
       assert.includes(doc, &apos;[data-ice=&quot;target&quot;]:nth-of-type(5)&apos;, &apos;public myFunction5(p1: number, p2: string): Object this is myFunction5 desc.&apos;);
       assert.includes(doc, &apos;[data-ice=&quot;target&quot;]:nth-of-type(6)&apos;, &apos;public * myFunction6(): Generator this is myFunction6 desc.&apos;);
-      assert.includes(doc, &apos;[data-ice=&quot;target&quot;]:nth-of-type(7)&apos;, &apos;public myFunction7(p1: *[], p2: number[], p3: {}, p4: {&quot;a&quot;: 123, &quot;b&quot;: &quot;abc&quot;}): *&apos;);
+      assert.includes(doc, &apos;[data-ice=&quot;target&quot;]:nth-of-type(7)&apos;, &apos;public myFunction7(p1: *[], p2: number[], p3: {}, p4: {&quot;a&quot;: number, &quot;b&quot;: string}): *&apos;);
       assert.includes(doc, &apos;[data-ice=&quot;target&quot;]:nth-of-type(8)&apos;, &apos;public myFunction8(p1: *)&apos;);
+      assert.includes(doc, &apos;[data-ice=&quot;target&quot;]:nth-of-type(9)&apos;, &apos;public myFunctionSeparateExport1(p1: number) this is myFunctionSeparateExport1.&apos;);
+      assert.includes(doc, &apos;[data-ice=&quot;target&quot;]:nth-of-type(10)&apos;, &apos;public myFunctionSeparateExport2(p1: number) this is myFunctionSeparateExport2.&apos;);
 
       assert.includes(doc, &apos;[data-ice=&quot;target&quot;]:nth-of-type(1) [data-ice=&quot;name&quot;] a&apos;, &apos;function/index.html#static-function-myFunction1&apos;, &apos;href&apos;);
     });
@@ -145,6 +148,13 @@ describe(&apos;MyFunction:&apos;, ()=&gt;{
     find(doc, &apos;[data-ice=&quot;detail&quot;]:nth-of-type(1)&apos;, (doc)=&gt;{
       assert.includes(doc, &apos;#static-function-myFunction1&apos;, &apos;public myFunction1()&apos;);
       assert.includes(doc, &apos;[data-ice=&quot;importPath&quot;]&apos;, &quot;import myFunction1 from &apos;esdoc-test-fixture/out/src/myFunction.js&apos;&quot;);
+
+      find(doc, &apos;[data-ice=&quot;example&quot;]&apos;, (doc)=&gt;{
+        assert.includes(doc, &apos;div.example-doc:nth-of-type(1)&apos;, &apos;This is example caption&apos;);
+        assert.includes(doc, &apos;div.example-doc:nth-of-type(1)&apos;, &apos;let foo = 123;&apos;);
+
+        assert.includes(doc, &apos;div.example-doc:nth-of-type(2)&apos;, &apos;let bar = 456;&apos;);
+      });
     });
 
     find(doc, &apos;[data-ice=&quot;detail&quot;]:nth-of-type(2)&apos;, (doc)=&gt;{
@@ -170,11 +180,21 @@ describe(&apos;MyFunction:&apos;, ()=&gt;{
     });
 
     find(doc, &apos;[data-ice=&quot;detail&quot;]:nth-of-type(7)&apos;, (doc)=&gt;{
-      assert.includes(doc, &apos;#static-function-myFunction7&apos;, &apos;public myFunction7(p1: *[], p2: number[], p3: {}, p4: {&quot;a&quot;: 123, &quot;b&quot;: &quot;abc&quot;}): *&apos;);
+      assert.includes(doc, &apos;#static-function-myFunction7&apos;, &apos;public myFunction7(p1: *[], p2: number[], p3: {}, p4: {&quot;a&quot;: number, &quot;b&quot;: string}): *&apos;);
     });
 
     find(doc, &apos;[data-ice=&quot;detail&quot;]:nth-of-type(8)&apos;, (doc)=&gt;{
       assert.includes(doc, &apos;#static-function-myFunction8&apos;, &apos;public myFunction8(p1: *)&apos;);
+    });
+
+    find(doc, &apos;[data-ice=&quot;detail&quot;]:nth-of-type(9)&apos;, (doc)=&gt;{
+      assert.includes(doc, &apos;#static-function-myFunctionSeparateExport1&apos;, &apos;public myFunctionSeparateExport1(p1: number)&apos;);
+      assert.includes(doc, &apos;[data-ice=&quot;importPath&quot;]&apos;, &quot;import myFunctionSeparateExport1 from &apos;esdoc-test-fixture/out/src/myFunction.js&apos;&quot;);
+    });
+
+    find(doc, &apos;[data-ice=&quot;detail&quot;]:nth-of-type(10)&apos;, (doc)=&gt;{
+      assert.includes(doc, &apos;#static-function-myFunctionSeparateExport2&apos;, &apos;public myFunctionSeparateExport2(p1: number)&apos;);
+      assert.includes(doc, &apos;[data-ice=&quot;importPath&quot;]&apos;, &quot;import {myFunctionSeparateExport2} from &apos;esdoc-test-fixture/out/src/myFunction.js&apos;&quot;);
     });
   });
 });

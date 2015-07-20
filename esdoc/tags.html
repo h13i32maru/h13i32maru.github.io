@@ -89,6 +89,7 @@ class MyClass {
 <li><a href="#simple">Simple</a></li>
 <li><a href="#array">Array</a></li>
 <li><a href="#object">Object</a></li>
+<li><a href="#record">Record</a></li>
 <li><a href="#generics">Generics</a></li>
 <li><a href="#function">Function</a></li>
 <li><a href="#union">Union</a></li>
@@ -422,9 +423,24 @@ function myFunc(param){...}
 function myFunc(param){...}
 
 /**
- * @param {{foo: number, bar: string}} param - this is object param(short hand).
+ * this is object destructuring.
+ * @param {Object} param - this is object param.
+ * @param {number} param.foo - this is property param.
+ * @param {string} param.bar - this is property param.
+ */
+function myFunc({foo, bar}){...}
+</code></pre>
+<h3 id="record">Record</h3>
+<pre><code class="lang-javascript">/**
+ * @param {{foo: number, bar: string}} param - this is object param.
  */
 function myFunc(param){...}
+
+/**
+ * this is object destructuring.
+ * @param {{foo: number, bar: string}} param - this is object param.
+ */
+function myFunc({foo, bar}){...}
 </code></pre>
 <h3 id="generics">Generics</h3>
 <pre><code class="lang-javascript">/**

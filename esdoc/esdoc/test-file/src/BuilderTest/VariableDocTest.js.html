@@ -79,6 +79,7 @@
     
   <li data-ice="functionDoc"><span><a href="function/index.html#static-function-dateForUTC">dateForUTC</a></span></li>
 <li data-ice="functionDoc"><span><a href="function/index.html#static-function-markdown">markdown</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-parseExample">parseExample</a></span></li>
 <li data-ice="functionDoc"><span><a href="function/index.html#static-function-publish">publish</a></span></li>
 <li data-ice="functionDoc"><span><a href="function/index.html#static-function-shorten">shorten</a></span></li>
 </ul>
@@ -136,6 +137,10 @@ describe(&apos;MyVariable:&apos;, ()=&gt; {
       assert.includes(doc, &apos;[data-ice=&quot;target&quot;]:nth-of-type(7)&apos;, &apos;public myVariable1: Object this is myVariable1 desc.&apos;);
       assert.includes(doc, &apos;[data-ice=&quot;target&quot;]:nth-of-type(8)&apos;, &apos;public myVariable2: number this is myVariable2 desc.&apos;);
       assert.includes(doc, &apos;[data-ice=&quot;target&quot;]:nth-of-type(9)&apos;, &apos;public myVariable3: number this is myVariable3 desc.&apos;);
+      assert.includes(doc, &apos;[data-ice=&quot;target&quot;]:nth-of-type(10)&apos;, &apos;public myVariable4: number&apos;);
+      assert.includes(doc, &apos;[data-ice=&quot;target&quot;]:nth-of-type(11)&apos;, &apos;public myVariable5: *&apos;);
+      assert.includes(doc, &apos;[data-ice=&quot;target&quot;]:nth-of-type(12)&apos;, &apos;public myVariableSeparateExport1: {foo: number, bar: string} this is myVariableSeparateExport1.&apos;);
+      assert.includes(doc, &apos;[data-ice=&quot;target&quot;]:nth-of-type(13)&apos;, &apos;public myVariableSeparateExport2: Object this is myVariableSeparateExport2.&apos;);
 
       assert.includes(doc, &apos;[data-ice=&quot;target&quot;]:nth-of-type(1) [data-ice=&quot;name&quot;] a&apos;, &apos;variable/index.html#static-variable-myExport1&apos;, &apos;href&apos;);
     });
@@ -185,6 +190,24 @@ describe(&apos;MyVariable:&apos;, ()=&gt; {
 
     find(doc, &apos;[data-ice=&quot;detail&quot;]:nth-of-type(9)&apos;, (doc)=&gt; {
       assert.includes(doc, &apos;#static-variable-myVariable3&apos;, &apos;public myVariable3: number&apos;);
+    });
+
+    find(doc, &apos;[data-ice=&quot;detail&quot;]:nth-of-type(10)&apos;, (doc)=&gt; {
+      assert.includes(doc, &apos;#static-variable-myVariable4&apos;, &apos;public myVariable4: number&apos;);
+    });
+
+    find(doc, &apos;[data-ice=&quot;detail&quot;]:nth-of-type(11)&apos;, (doc)=&gt; {
+      assert.includes(doc, &apos;#static-variable-myVariable5&apos;, &apos;public myVariable5: *&apos;);
+    });
+
+    find(doc, &apos;[data-ice=&quot;detail&quot;]:nth-of-type(12)&apos;, (doc)=&gt; {
+      assert.includes(doc, &apos;#static-variable-myVariableSeparateExport1&apos;, &apos;public myVariableSeparateExport1: {foo: number, bar: string}&apos;);
+      assert.includes(doc, &apos;[data-ice=&quot;importPath&quot;]&apos;, &quot;import myVariableSeparateExport1 from &apos;esdoc-test-fixture/out/src/myVariable.js&apos;&quot;);
+    });
+
+    find(doc, &apos;[data-ice=&quot;detail&quot;]:nth-of-type(13)&apos;, (doc)=&gt; {
+      assert.includes(doc, &apos;#static-variable-myVariableSeparateExport2&apos;, &apos;public myVariableSeparateExport2: Object&apos;);
+      assert.includes(doc, &apos;[data-ice=&quot;importPath&quot;]&apos;, &quot;import {myVariableSeparateExport2} from &apos;esdoc-test-fixture/out/src/myVariable.js&apos;&quot;);
     });
   });
 });

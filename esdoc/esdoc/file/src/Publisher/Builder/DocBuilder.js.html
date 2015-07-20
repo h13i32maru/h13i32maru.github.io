@@ -79,6 +79,7 @@
     
   <li data-ice="functionDoc"><span><a href="function/index.html#static-function-dateForUTC">dateForUTC</a></span></li>
 <li data-ice="functionDoc"><span><a href="function/index.html#static-function-markdown">markdown</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-parseExample">parseExample</a></span></li>
 <li data-ice="functionDoc"><span><a href="function/index.html#static-function-publish">publish</a></span></li>
 <li data-ice="functionDoc"><span><a href="function/index.html#static-function-shorten">shorten</a></span></li>
 </ul>
@@ -122,7 +123,7 @@
 import path from &apos;path&apos;;
 import escape from &apos;escape-html&apos;;
 import IceCap from &apos;ice-cap&apos;;
-import {shorten} from &apos;./util.js&apos;;
+import {shorten, parseExample} from &apos;./util.js&apos;;
 import DocResolver from &apos;./DocResolver.js&apos;;
 
 /**
@@ -608,7 +609,9 @@ export default class DocBuilder {
       // example
       ice.into(&apos;example&apos;, doc.examples, (examples, ice)=&gt;{
         ice.loop(&apos;exampleDoc&apos;, examples, (i, exampleDoc, ice)=&gt;{
-          ice.text(&apos;exampleCode&apos;, exampleDoc);
+          let parsed = parseExample(exampleDoc);
+          ice.text(&apos;exampleCode&apos;, parsed.body);
+          ice.text(&apos;exampleCaption&apos;, parsed.caption);
         });
       });
 

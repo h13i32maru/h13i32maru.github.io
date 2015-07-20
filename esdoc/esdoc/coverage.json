@@ -1,7 +1,7 @@
 {
-  "coverage": "94.05%",
-  "expectCount": 303,
-  "actualCount": 285,
+  "coverage": "94.17%",
+  "expectCount": 309,
+  "actualCount": 291,
   "files": {
     "src/Doc/FileDoc.js": {
       "expectCount": 6,
@@ -11,21 +11,29 @@
       "expectCount": 54,
       "actualCount": 49
     },
-    "src/Doc/MethodDoc.js": {
-      "expectCount": 9,
-      "actualCount": 9
-    },
     "src/Doc/FunctionDoc.js": {
       "expectCount": 7,
       "actualCount": 7
     },
-    "src/Doc/MemberDoc.js": {
+    "src/Doc/MethodDoc.js": {
+      "expectCount": 9,
+      "actualCount": 9
+    },
+    "src/Doc/ExternalDoc.js": {
       "expectCount": 7,
       "actualCount": 7
     },
     "src/Doc/ClassDoc.js": {
-      "expectCount": 8,
-      "actualCount": 8
+      "expectCount": 9,
+      "actualCount": 9
+    },
+    "src/Doc/AssignmentDoc.js": {
+      "expectCount": 4,
+      "actualCount": 4
+    },
+    "src/Doc/TestDoc.js": {
+      "expectCount": 7,
+      "actualCount": 7
     },
     "src/Doc/TestFileDoc.js": {
       "expectCount": 2,
@@ -39,29 +47,21 @@
       "expectCount": 5,
       "actualCount": 5
     },
-    "src/Doc/ExternalDoc.js": {
+    "src/Doc/MemberDoc.js": {
       "expectCount": 7,
       "actualCount": 7
-    },
-    "src/Doc/TestDoc.js": {
-      "expectCount": 7,
-      "actualCount": 7
-    },
-    "src/Doc/AssignmentDoc.js": {
-      "expectCount": 4,
-      "actualCount": 4
     },
     "src/Publisher/Builder/ASTDocBuilder.js": {
       "expectCount": 4,
       "actualCount": 3
     },
     "src/Util/ASTUtil.js": {
-      "expectCount": 6,
-      "actualCount": 6
-    },
-    "src/Publisher/Builder/ClassDocBuilder.js": {
       "expectCount": 8,
       "actualCount": 8
+    },
+    "src/Publisher/Builder/ClassDocBuilder.js": {
+      "expectCount": 10,
+      "actualCount": 10
     },
     "src/Parser/CommentParser.js": {
       "expectCount": 3,
@@ -152,8 +152,8 @@
       "actualCount": 3
     },
     "src/Publisher/Builder/util.js": {
-      "expectCount": 3,
-      "actualCount": 3
+      "expectCount": 4,
+      "actualCount": 4
     },
     "src/Publisher/publish.js": {
       "expectCount": 1,

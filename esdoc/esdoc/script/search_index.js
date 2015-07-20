@@ -240,6 +240,12 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "esdoc/out/src/publisher/builder/util.js~parseexample",
+    "function/index.html#static-function-parseExample",
+    "<span>parseExample</span> <span class=\"search-result-import-path\">esdoc/out/src/Publisher/Builder/util.js</span>",
+    "function"
+  ],
+  [
     "esdoc/out/src/publisher/publish.js~publish",
     "function/index.html#static-function-publish",
     "<span>publish</span> <span class=\"search-result-import-path\">esdoc/out/src/Publisher/publish.js</span>",
@@ -822,6 +828,36 @@ window.esdocSearchIndex = [
     "test"
   ],
   [
+    "classdocbuilder#_buildmixinclasseshtml classdocbuilder#_buildexpressionextendshtml src/publisher/builder/classdocbuilder.js~classdocbuilder#_buildmixinclasseshtml,classdocbuilder#_buildmixinclasseshtml src/publisher/builder/classdocbuilder.js~classdocbuilder#_buildexpressionextendshtml,classdocbuilder#_buildexpressionextendshtml",
+    "test-file/src/BuilderTest/ExpressionExtendsDocTest.js.html#lineNumber7",
+    "ExpressionExtends:",
+    "test"
+  ],
+  [
+    "",
+    "test-file/src/BuilderTest/ExpressionExtendsDocTest.js.html#lineNumber19",
+    "ExpressionExtends: Expression Extends:",
+    "test"
+  ],
+  [
+    "",
+    "test-file/src/BuilderTest/ExpressionExtendsDocTest.js.html#lineNumber22",
+    "ExpressionExtends: Expression Extends: has expression",
+    "test"
+  ],
+  [
+    "",
+    "test-file/src/BuilderTest/ExpressionExtendsDocTest.js.html#lineNumber8",
+    "ExpressionExtends: Mixin Extends:",
+    "test"
+  ],
+  [
+    "",
+    "test-file/src/BuilderTest/ExpressionExtendsDocTest.js.html#lineNumber11",
+    "ExpressionExtends: Mixin Extends: has expression and mixin",
+    "test"
+  ],
+  [
     "",
     "test-file/src/BuilderTest/TestDocTest.js.html#lineNumber31",
     "Identifier to Test:",
@@ -913,13 +949,13 @@ window.esdocSearchIndex = [
   ],
   [
     "classdocbuilder#_buildclassdoc src/publisher/builder/classdocbuilder.js~classdocbuilder#_buildclassdoc,classdocbuilder#_buildclassdoc",
-    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber318",
+    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber325",
     "MyClass1: has constructor detail.",
     "test"
   ],
   [
     "classdocbuilder#_buildclassdoc src/publisher/builder/classdocbuilder.js~classdocbuilder#_buildclassdoc,classdocbuilder#_buildclassdoc",
-    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber131",
+    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber138",
     "MyClass1: has constructor summary.",
     "test"
   ],
@@ -937,31 +973,31 @@ window.esdocSearchIndex = [
   ],
   [
     "classdocbuilder#_buildinheritedsummaryhtml src/publisher/builder/classdocbuilder.js~classdocbuilder#_buildinheritedsummaryhtml,classdocbuilder#_buildinheritedsummaryhtml",
-    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber216",
+    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber223",
     "MyClass1: has inherited summary.",
     "test"
   ],
   [
     "classdocbuilder#_buildclassdoc src/publisher/builder/classdocbuilder.js~classdocbuilder#_buildclassdoc,classdocbuilder#_buildclassdoc",
-    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber333",
+    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber340",
     "MyClass1: has member detail.",
     "test"
   ],
   [
     "classdocbuilder#_buildclassdoc src/publisher/builder/classdocbuilder.js~classdocbuilder#_buildclassdoc,classdocbuilder#_buildclassdoc",
-    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber141",
+    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber148",
     "MyClass1: has member summary.",
     "test"
   ],
   [
     "classdocbuilder#_buildclassdoc src/publisher/builder/classdocbuilder.js~classdocbuilder#_buildclassdoc,classdocbuilder#_buildclassdoc",
-    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber369",
+    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber376",
     "MyClass1: has method detail.",
     "test"
   ],
   [
     "classdocbuilder#_buildclassdoc src/publisher/builder/classdocbuilder.js~classdocbuilder#_buildclassdoc,classdocbuilder#_buildclassdoc",
-    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber186",
+    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber193",
     "MyClass1: has method summary.",
     "test"
   ],
@@ -973,25 +1009,25 @@ window.esdocSearchIndex = [
   ],
   [
     "classdocbuilder#_buildclassdoc src/publisher/builder/classdocbuilder.js~classdocbuilder#_buildclassdoc,classdocbuilder#_buildclassdoc",
-    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber274",
+    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber281",
     "MyClass1: has static member detail.",
     "test"
   ],
   [
     "classdocbuilder#_buildclassdoc src/publisher/builder/classdocbuilder.js~classdocbuilder#_buildclassdoc,classdocbuilder#_buildclassdoc",
-    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber86",
+    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber93",
     "MyClass1: has static member summary.",
     "test"
   ],
   [
     "classdocbuilder#_buildclassdoc src/publisher/builder/classdocbuilder.js~classdocbuilder#_buildclassdoc,classdocbuilder#_buildclassdoc",
-    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber299",
+    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber306",
     "MyClass1: has static method detail.",
     "test"
   ],
   [
     "classdocbuilder#_buildclassdoc src/publisher/builder/classdocbuilder.js~classdocbuilder#_buildclassdoc,classdocbuilder#_buildclassdoc",
-    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber112",
+    "test-file/src/BuilderTest/ClassDocTest.js.html#lineNumber119",
     "MyClass1: has static method summary.",
     "test"
   ],
@@ -1003,7 +1039,7 @@ window.esdocSearchIndex = [
   ],
   [
     "singledocbuilder#_buildsingledoc src/publisher/builder/singledocbuilder.js~singledocbuilder#_buildsingledoc,singledocbuilder#_buildsingledoc",
-    "test-file/src/BuilderTest/FunctionDocTest.js.html#lineNumber24",
+    "test-file/src/BuilderTest/FunctionDocTest.js.html#lineNumber26",
     "MyFunction: has detail.",
     "test"
   ],
@@ -1039,7 +1075,7 @@ window.esdocSearchIndex = [
   ],
   [
     "singledocbuilder#_buildsingledoc src/publisher/builder/singledocbuilder.js~singledocbuilder#_buildsingledoc,singledocbuilder#_buildsingledoc",
-    "test-file/src/BuilderTest/VariableDocTest.js.html#lineNumber25",
+    "test-file/src/BuilderTest/VariableDocTest.js.html#lineNumber29",
     "MyVariable: has detail.",
     "test"
   ],
@@ -1129,6 +1165,12 @@ window.esdocSearchIndex = [
   ],
   [
     "paramparser.parseparam src/parser/paramparser.js~paramparser.parseparam,paramparser.parseparam",
+    "test-file/src/UnitTest/ParamParserTest.js.html#lineNumber98",
+    "ParamParser: parse param with complex.",
+    "test"
+  ],
+  [
+    "paramparser.parseparam src/parser/paramparser.js~paramparser.parseparam,paramparser.parseparam",
     "test-file/src/UnitTest/ParamParserTest.js.html#lineNumber66",
     "ParamParser: parse param with complex.",
     "test"
@@ -1136,12 +1178,6 @@ window.esdocSearchIndex = [
   [
     "paramparser.parseparam src/parser/paramparser.js~paramparser.parseparam,paramparser.parseparam",
     "test-file/src/UnitTest/ParamParserTest.js.html#lineNumber81",
-    "ParamParser: parse param with complex.",
-    "test"
-  ],
-  [
-    "paramparser.parseparam src/parser/paramparser.js~paramparser.parseparam,paramparser.parseparam",
-    "test-file/src/UnitTest/ParamParserTest.js.html#lineNumber98",
     "ParamParser: parse param with complex.",
     "test"
   ],
@@ -1251,6 +1287,12 @@ window.esdocSearchIndex = [
     "src/buildertest/exportdoctest.js",
     "test-file/src/BuilderTest/ExportDocTest.js.html",
     "src/BuilderTest/ExportDocTest.js",
+    "testFile"
+  ],
+  [
+    "src/buildertest/expressionextendsdoctest.js",
+    "test-file/src/BuilderTest/ExpressionExtendsDocTest.js.html",
+    "src/BuilderTest/ExpressionExtendsDocTest.js",
     "testFile"
   ],
   [
@@ -1701,6 +1743,12 @@ window.esdocSearchIndex = [
     "src/doc/classdoc.js~classdoc#_apply",
     "class/src/Doc/ClassDoc.js~ClassDoc.html#instance-method-_apply",
     "src/Doc/ClassDoc.js~ClassDoc#_apply",
+    "method"
+  ],
+  [
+    "src/doc/classdoc.js~classdoc#_readselection",
+    "class/src/Doc/ClassDoc.js~ClassDoc.html#instance-method-_readSelection",
+    "src/Doc/ClassDoc.js~ClassDoc#_readSelection",
     "method"
   ],
   [
@@ -2472,6 +2520,12 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/publisher/builder/classdocbuilder.js~classdocbuilder#_buildexpressionextendshtml",
+    "class/src/Publisher/Builder/ClassDocBuilder.js~ClassDocBuilder.html#instance-method-_buildExpressionExtendsHTML",
+    "src/Publisher/Builder/ClassDocBuilder.js~ClassDocBuilder#_buildExpressionExtendsHTML",
+    "method"
+  ],
+  [
     "src/publisher/builder/classdocbuilder.js~classdocbuilder#_buildextendschainhtml",
     "class/src/Publisher/Builder/ClassDocBuilder.js~ClassDocBuilder.html#instance-method-_buildExtendsChainHTML",
     "src/Publisher/Builder/ClassDocBuilder.js~ClassDocBuilder#_buildExtendsChainHTML",
@@ -2487,6 +2541,12 @@ window.esdocSearchIndex = [
     "src/publisher/builder/classdocbuilder.js~classdocbuilder#_buildinheritedsummaryhtml",
     "class/src/Publisher/Builder/ClassDocBuilder.js~ClassDocBuilder.html#instance-method-_buildInheritedSummaryHTML",
     "src/Publisher/Builder/ClassDocBuilder.js~ClassDocBuilder#_buildInheritedSummaryHTML",
+    "method"
+  ],
+  [
+    "src/publisher/builder/classdocbuilder.js~classdocbuilder#_buildmixinclasseshtml",
+    "class/src/Publisher/Builder/ClassDocBuilder.js~ClassDocBuilder.html#instance-method-_buildMixinClassesHTML",
+    "src/Publisher/Builder/ClassDocBuilder.js~ClassDocBuilder#_buildMixinClassesHTML",
     "method"
   ],
   [
@@ -3120,6 +3180,12 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
+    "src/util/astutil.js~astutil.findfunctiondeclarationnode",
+    "class/src/Util/ASTUtil.js~ASTUtil.html#static-method-findFunctionDeclarationNode",
+    "src/Util/ASTUtil.js~ASTUtil.findFunctionDeclarationNode",
+    "method"
+  ],
+  [
     "src/util/astutil.js~astutil.findpathinimportdeclaration",
     "class/src/Util/ASTUtil.js~ASTUtil.html#static-method-findPathInImportDeclaration",
     "src/Util/ASTUtil.js~ASTUtil.findPathInImportDeclaration",
@@ -3129,6 +3195,12 @@ window.esdocSearchIndex = [
     "src/util/astutil.js~astutil.findvariabledeclarationandnewexpressionnode",
     "class/src/Util/ASTUtil.js~ASTUtil.html#static-method-findVariableDeclarationAndNewExpressionNode",
     "src/Util/ASTUtil.js~ASTUtil.findVariableDeclarationAndNewExpressionNode",
+    "method"
+  ],
+  [
+    "src/util/astutil.js~astutil.findvariabledeclarationnode",
+    "class/src/Util/ASTUtil.js~ASTUtil.html#static-method-findVariableDeclarationNode",
+    "src/Util/ASTUtil.js~ASTUtil.findVariableDeclarationNode",
     "method"
   ],
   [

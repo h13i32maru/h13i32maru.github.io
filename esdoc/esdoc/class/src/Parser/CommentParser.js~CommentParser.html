@@ -79,6 +79,7 @@
     
   <li data-ice="functionDoc"><span><a href="function/index.html#static-function-dateForUTC">dateForUTC</a></span></li>
 <li data-ice="functionDoc"><span><a href="function/index.html#static-function-markdown">markdown</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-parseExample">parseExample</a></span></li>
 <li data-ice="functionDoc"><span><a href="function/index.html#static-function-publish">publish</a></span></li>
 <li data-ice="functionDoc"><span><a href="function/index.html#static-function-shorten">shorten</a></span></li>
 </ul>
@@ -139,6 +140,8 @@
   
   
   
+  
+  
 
   
   
@@ -150,10 +153,13 @@
   <div data-ice="exampleDocs">
     <h4>Example:</h4>
     
-  <pre class="prettyprint source-code" data-ice="exampleDoc"><code data-ice="exampleCode">for (let comment of node.leadingComments) {
+  <div class="example-doc" data-ice="exampleDoc">
+      
+      <pre class="prettyprint source-code"><code data-ice="exampleCode">for (let comment of node.leadingComments) {
   let tags = CommentParser.parse(comment);
   console.log(tags);
 }</code></pre>
+    </div>
 </div>
 
   <div data-ice="tests">
@@ -391,9 +397,9 @@
     <h4>Test:</h4>
     <ul>
       
-    <li data-ice="test"><span><a href="test-file/src/UnitTest/CommentParserTest.js.html#lineNumber7">CommentParser: can parse doc comment.</a></span></li>
+    <li data-ice="test"><span><a href="test-file/src/UnitTest/CommentParserTest.js.html#lineNumber61">CommentParser: return empty with line comment.</a></span></li>
+<li data-ice="test"><span><a href="test-file/src/UnitTest/CommentParserTest.js.html#lineNumber7">CommentParser: can parse doc comment.</a></span></li>
 <li data-ice="test"><span><a href="test-file/src/UnitTest/CommentParserTest.js.html#lineNumber29">CommentParser: can parse doc comments with trailing tabs</a></span></li>
-<li data-ice="test"><span><a href="test-file/src/UnitTest/CommentParserTest.js.html#lineNumber61">CommentParser: return empty with line comment.</a></span></li>
 </ul>
   </div>
 

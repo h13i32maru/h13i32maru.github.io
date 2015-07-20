@@ -79,6 +79,7 @@
     
   <li data-ice="functionDoc"><span><a href="function/index.html#static-function-dateForUTC">dateForUTC</a></span></li>
 <li data-ice="functionDoc"><span><a href="function/index.html#static-function-markdown">markdown</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-parseExample">parseExample</a></span></li>
 <li data-ice="functionDoc"><span><a href="function/index.html#static-function-publish">publish</a></span></li>
 <li data-ice="functionDoc"><span><a href="function/index.html#static-function-shorten">shorten</a></span></li>
 </ul>
@@ -218,6 +219,8 @@ export default class ParamParser {
       if (typeText[0] === &apos;(&apos;) {
         typeText = typeText.replace(/^[(]/, &apos;&apos;).replace(/[)]$/, &apos;&apos;);
         result.types = typeText.split(&apos;|&apos;);
+      } else if(typeText.includes(&apos;|&apos;)){
+        result.types = typeText.split(&apos;|&apos;);
       } else {
         result.types = [typeText];
       }
@@ -272,7 +275,8 @@ export default class ParamParser {
    */
   static guessParams(params) {
     let _params = [];
-    for (let param of params) {
+    for (let i = 0; i &lt; params.length; i++) {
+      let param = params[i];
       let result = {};
 
       switch (param.type) {
@@ -286,11 +290,7 @@ export default class ParamParser {
           if (param.left.type === &apos;Identifier&apos;) {
             result.name = param.left.name;
           } else if (param.left.type === &apos;ObjectPattern&apos;) {
-            let names = [];
-            for (let prop of param.left.properties) {
-              names.push(prop.key.name);
-            }
-            result.name = `{${names.join(&apos;,&apos;)}}`;
+            result.name = `objectPattern${i === 0 ? &apos;&apos; : i}`;
           }
 
           result.optional = true;
@@ -306,13 +306,24 @@ export default class ParamParser {
             result.defaultRaw = param.right.elements.map((elm)=&gt; elm.value);
             result.defaultValue = `${JSON.stringify(result.defaultRaw)}`;
           } else if(param.right.type === &apos;ObjectExpression&apos;){
+            let typeMap = {};
+            for (let prop of param.left.properties || []) {
+              typeMap[prop.key.name] = &apos;*&apos;;
+            }
+
             // e.g. func(a = {key: 123}){}
             let obj = {};
             for (let prop of param.right.properties) {
               obj[prop.key.name] = prop.value.value;
+              typeMap[prop.key.name] = typeof prop.value.value;
             }
 
-            result.types = [`${JSON.stringify(obj)}`];
+            let types = [];
+            for (let key of Object.keys(typeMap)) {
+              types.push(`&quot;${key}&quot;: ${typeMap[key]}`);
+            }
+
+            result.types = [`{${types.join(&apos;, &apos;)}}`];
             result.defaultRaw = obj;
             result.defaultValue = `${JSON.stringify(result.defaultRaw)}`;
           } else if (param.right.type === &apos;Identifier&apos;) {
@@ -331,6 +342,18 @@ export default class ParamParser {
           result.name = `${param.argument.name}`;
           result.types = [&apos;...*&apos;];
           result.spread = true;
+          break;
+        case &apos;ObjectPattern&apos;:
+          let objectPattern = [];
+          let raw = {};
+          for (let property of param.properties) {
+            objectPattern.push(`&quot;${property.key.name}&quot;: *`);
+            raw[property.key.name] = null;
+          }
+          result.name = `objectPattern${i === 0 ? &apos;&apos; : i}`;
+          result.types = [`{${objectPattern.join(&apos;, &apos;)}}`];
+          result.defaultRaw = raw;
+          result.defaultValue = `${JSON.stringify(result.defaultRaw)}`;
           break;
         default:
           logger.w(&apos;unknown param.type&apos;, param);

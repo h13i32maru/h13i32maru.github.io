@@ -79,6 +79,7 @@
     
   <li data-ice="functionDoc"><span><a href="function/index.html#static-function-dateForUTC">dateForUTC</a></span></li>
 <li data-ice="functionDoc"><span><a href="function/index.html#static-function-markdown">markdown</a></span></li>
+<li data-ice="functionDoc"><span><a href="function/index.html#static-function-parseExample">parseExample</a></span></li>
 <li data-ice="functionDoc"><span><a href="function/index.html#static-function-publish">publish</a></span></li>
 <li data-ice="functionDoc"><span><a href="function/index.html#static-function-shorten">shorten</a></span></li>
 </ul>
@@ -200,6 +201,34 @@ export default class ASTUtil {
   static findClassDeclarationNode(name, ast) {
     for (let node of ast.body) {
       if (node.type === &apos;ClassDeclaration&apos; &amp;&amp; node.id.name === name) return node;
+    }
+
+    return null;
+  }
+
+  /**
+   * find FunctionDeclaration node.
+   * @param {string} name - function name.
+   * @param {AST} ast - find in this ast.
+   * @returns {ASTNode|null} found ast node.
+   */
+  static findFunctionDeclarationNode(name, ast) {
+    for (let node of ast.body) {
+      if (node.type === &apos;FunctionDeclaration&apos; &amp;&amp; node.id.name === name) return node;
+    }
+
+    return null;
+  }
+
+  /**
+   * find VariableDeclaration node.
+   * @param {string} name - variable name.
+   * @param {AST} ast - find in this ast.
+   * @returns {ASTNode|null} found ast node.
+   */
+  static findVariableDeclarationNode(name, ast) {
+    for (let node of ast.body) {
+      if (node.type === &apos;VariableDeclaration&apos; &amp;&amp; node.declarations[0].id.name === name) return node;
     }
 
     return null;

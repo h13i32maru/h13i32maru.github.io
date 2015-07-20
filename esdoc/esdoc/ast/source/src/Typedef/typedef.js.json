@@ -3,16 +3,16 @@
   "body": [],
   "sourceType": "module",
   "range": [
-    3039,
-    3039
+    3072,
+    3072
   ],
   "loc": {
     "start": {
-      "line": 120,
+      "line": 121,
       "column": 0
     },
     "end": {
-      "line": 120,
+      "line": 121,
       "column": 0
     }
   },
@@ -91,10 +91,10 @@
     },
     {
       "type": "Block",
-      "value": "*\n * @typedef {Object} ASTNode\n * @see https://github.com/estree/estree\n ",
+      "value": "*\n * @typedef {Object} ASTNode\n * @see https://github.com/estree/estree\n * @property {Object} superClass\n ",
       "range": [
         1255,
-        1332
+        1365
       ],
       "loc": {
         "start": {
@@ -102,7 +102,7 @@
           "column": 0
         },
         "end": {
-          "line": 45,
+          "line": 46,
           "column": 3
         }
       }
@@ -111,16 +111,16 @@
       "type": "Block",
       "value": "*\n * @typedef {Object} NPMPackageObject\n * @see https://docs.npmjs.com/files/package.json\n ",
       "range": [
-        1334,
-        1429
+        1367,
+        1462
       ],
       "loc": {
         "start": {
-          "line": 47,
+          "line": 48,
           "column": 0
         },
         "end": {
-          "line": 50,
+          "line": 51,
           "column": 3
         }
       }
@@ -129,16 +129,16 @@
       "type": "Block",
       "value": "*\n * @typedef {Object} Taffy\n * @see http://www.taffydb.com/\n ",
       "range": [
-        1431,
-        1497
+        1464,
+        1530
       ],
       "loc": {
         "start": {
-          "line": 52,
+          "line": 53,
           "column": 0
         },
         "end": {
-          "line": 55,
+          "line": 56,
           "column": 3
         }
       }
@@ -147,16 +147,16 @@
       "type": "Block",
       "value": "*\n * @typedef {Object} IceCap\n * @see https://github.com/h13i32maru/ice-cap\n ",
       "range": [
-        1499,
-        1580
+        1532,
+        1613
       ],
       "loc": {
         "start": {
-          "line": 57,
+          "line": 58,
           "column": 0
         },
         "end": {
-          "line": 60,
+          "line": 61,
           "column": 3
         }
       }
@@ -165,16 +165,16 @@
       "type": "Block",
       "value": "*\n * @typedef {Object} CoverageObject\n * @property {string} coverage - ratio.\n * @property {number} expectCount - all identifier count.\n * @property {number} actualCount - documented identifier count.\n * @property {Object<string, Object>} files - file name and coverage.\n ",
       "range": [
-        1582,
-        1858
+        1615,
+        1891
       ],
       "loc": {
         "start": {
-          "line": 62,
+          "line": 63,
           "column": 0
         },
         "end": {
-          "line": 68,
+          "line": 69,
           "column": 3
         }
       }
@@ -183,16 +183,16 @@
       "type": "Block",
       "value": "*\n * ESDocCLI uses argv\n * @typedef {Object} ESDocCLIArgv\n * @property {boolean} [h] - for help\n * @property {boolean} [help] - for help\n * @property {boolean [v] - for version\n * @property {boolean} [version] - for version\n * @property {string} [c] - for config file path\n * @property {string[]} [_] - for source directory path\n ",
       "range": [
-        1860,
-        2194
+        1893,
+        2227
       ],
       "loc": {
         "start": {
-          "line": 70,
+          "line": 71,
           "column": 0
         },
         "end": {
-          "line": 79,
+          "line": 80,
           "column": 3
         }
       }
@@ -201,16 +201,16 @@
       "type": "Block",
       "value": "*\n * @typedef {Object} DocTypedef\n ",
       "range": [
-        2196,
-        2235
+        2229,
+        2268
       ],
       "loc": {
         "start": {
-          "line": 81,
+          "line": 82,
           "column": 0
         },
         "end": {
-          "line": 83,
+          "line": 84,
           "column": 3
         }
       }
@@ -219,16 +219,16 @@
       "type": "Block",
       "value": "*\n * @typedef {Object} PackageTypedef\n * @property {Object} repository\n * @property {string} repository.url\n ",
       "range": [
-        2237,
-        2350
+        2270,
+        2383
       ],
       "loc": {
         "start": {
-          "line": 85,
+          "line": 86,
           "column": 0
         },
         "end": {
-          "line": 89,
+          "line": 90,
           "column": 3
         }
       }
@@ -237,16 +237,16 @@
       "type": "Block",
       "value": "*\n * @typedef {Object} ParsedParam\n * @property {boolean} [nullable]\n * @property {string[]} types\n * @property {boolean} [spread]\n * @property {boolean} [optional]\n * @property {string} [defaultValue]\n * @property {*} [defaultRaw]\n * @property {string} [name]\n * @property {string} [description]\n ",
       "range": [
-        2352,
-        2654
+        2385,
+        2687
       ],
       "loc": {
         "start": {
-          "line": 91,
+          "line": 92,
           "column": 0
         },
         "end": {
-          "line": 101,
+          "line": 102,
           "column": 3
         }
       }
@@ -255,16 +255,16 @@
       "type": "Block",
       "value": "*\n * @todo remove this typedef.\n * @typedef {Object} IceCapInstanceTypedef\n * @property {function} loop\n * @property {function} attr\n * @property {function} text\n * @property {function} load\n * @property {function} into\n * @property {function} drop\n * @property {string} html\n ",
       "range": [
-        2656,
-        2937
+        2689,
+        2970
       ],
       "loc": {
         "start": {
-          "line": 103,
+          "line": 104,
           "column": 0
         },
         "end": {
-          "line": 113,
+          "line": 114,
           "column": 3
         }
       }
@@ -273,16 +273,16 @@
       "type": "Block",
       "value": "*\n * @todo remove this typedef.\n * @typedef {Object} TaffyCursor\n * @property {function} each\n ",
       "range": [
-        2939,
-        3038
+        2972,
+        3071
       ],
       "loc": {
         "start": {
-          "line": 115,
+          "line": 116,
           "column": 0
         },
         "end": {
-          "line": 119,
+          "line": 120,
           "column": 3
         }
       }
@@ -363,10 +363,10 @@
     },
     {
       "type": "Block",
-      "value": "*\n * @typedef {Object} ASTNode\n * @see https://github.com/estree/estree\n ",
+      "value": "*\n * @typedef {Object} ASTNode\n * @see https://github.com/estree/estree\n * @property {Object} superClass\n ",
       "range": [
         1255,
-        1332
+        1365
       ],
       "loc": {
         "start": {
@@ -374,7 +374,7 @@
           "column": 0
         },
         "end": {
-          "line": 45,
+          "line": 46,
           "column": 3
         }
       }
@@ -383,16 +383,16 @@
       "type": "Block",
       "value": "*\n * @typedef {Object} NPMPackageObject\n * @see https://docs.npmjs.com/files/package.json\n ",
       "range": [
-        1334,
-        1429
+        1367,
+        1462
       ],
       "loc": {
         "start": {
-          "line": 47,
+          "line": 48,
           "column": 0
         },
         "end": {
-          "line": 50,
+          "line": 51,
           "column": 3
         }
       }
@@ -401,16 +401,16 @@
       "type": "Block",
       "value": "*\n * @typedef {Object} Taffy\n * @see http://www.taffydb.com/\n ",
       "range": [
-        1431,
-        1497
+        1464,
+        1530
       ],
       "loc": {
         "start": {
-          "line": 52,
+          "line": 53,
           "column": 0
         },
         "end": {
-          "line": 55,
+          "line": 56,
           "column": 3
         }
       }
@@ -419,16 +419,16 @@
       "type": "Block",
       "value": "*\n * @typedef {Object} IceCap\n * @see https://github.com/h13i32maru/ice-cap\n ",
       "range": [
-        1499,
-        1580
+        1532,
+        1613
       ],
       "loc": {
         "start": {
-          "line": 57,
+          "line": 58,
           "column": 0
         },
         "end": {
-          "line": 60,
+          "line": 61,
           "column": 3
         }
       }
@@ -437,16 +437,16 @@
       "type": "Block",
       "value": "*\n * @typedef {Object} CoverageObject\n * @property {string} coverage - ratio.\n * @property {number} expectCount - all identifier count.\n * @property {number} actualCount - documented identifier count.\n * @property {Object<string, Object>} files - file name and coverage.\n ",
       "range": [
-        1582,
-        1858
+        1615,
+        1891
       ],
       "loc": {
         "start": {
-          "line": 62,
+          "line": 63,
           "column": 0
         },
         "end": {
-          "line": 68,
+          "line": 69,
           "column": 3
         }
       }
@@ -455,16 +455,16 @@
       "type": "Block",
       "value": "*\n * ESDocCLI uses argv\n * @typedef {Object} ESDocCLIArgv\n * @property {boolean} [h] - for help\n * @property {boolean} [help] - for help\n * @property {boolean [v] - for version\n * @property {boolean} [version] - for version\n * @property {string} [c] - for config file path\n * @property {string[]} [_] - for source directory path\n ",
       "range": [
-        1860,
-        2194
+        1893,
+        2227
       ],
       "loc": {
         "start": {
-          "line": 70,
+          "line": 71,
           "column": 0
         },
         "end": {
-          "line": 79,
+          "line": 80,
           "column": 3
         }
       }
@@ -473,16 +473,16 @@
       "type": "Block",
       "value": "*\n * @typedef {Object} DocTypedef\n ",
       "range": [
-        2196,
-        2235
+        2229,
+        2268
       ],
       "loc": {
         "start": {
-          "line": 81,
+          "line": 82,
           "column": 0
         },
         "end": {
-          "line": 83,
+          "line": 84,
           "column": 3
         }
       }
@@ -491,16 +491,16 @@
       "type": "Block",
       "value": "*\n * @typedef {Object} PackageTypedef\n * @property {Object} repository\n * @property {string} repository.url\n ",
       "range": [
-        2237,
-        2350
+        2270,
+        2383
       ],
       "loc": {
         "start": {
-          "line": 85,
+          "line": 86,
           "column": 0
         },
         "end": {
-          "line": 89,
+          "line": 90,
           "column": 3
         }
       }
@@ -509,16 +509,16 @@
       "type": "Block",
       "value": "*\n * @typedef {Object} ParsedParam\n * @property {boolean} [nullable]\n * @property {string[]} types\n * @property {boolean} [spread]\n * @property {boolean} [optional]\n * @property {string} [defaultValue]\n * @property {*} [defaultRaw]\n * @property {string} [name]\n * @property {string} [description]\n ",
       "range": [
-        2352,
-        2654
+        2385,
+        2687
       ],
       "loc": {
         "start": {
-          "line": 91,
+          "line": 92,
           "column": 0
         },
         "end": {
-          "line": 101,
+          "line": 102,
           "column": 3
         }
       }
@@ -527,16 +527,16 @@
       "type": "Block",
       "value": "*\n * @todo remove this typedef.\n * @typedef {Object} IceCapInstanceTypedef\n * @property {function} loop\n * @property {function} attr\n * @property {function} text\n * @property {function} load\n * @property {function} into\n * @property {function} drop\n * @property {string} html\n ",
       "range": [
-        2656,
-        2937
+        2689,
+        2970
       ],
       "loc": {
         "start": {
-          "line": 103,
+          "line": 104,
           "column": 0
         },
         "end": {
-          "line": 113,
+          "line": 114,
           "column": 3
         }
       }
@@ -545,16 +545,16 @@
       "type": "Block",
       "value": "*\n * @todo remove this typedef.\n * @typedef {Object} TaffyCursor\n * @property {function} each\n ",
       "range": [
-        2939,
-        3038
+        2972,
+        3071
       ],
       "loc": {
         "start": {
-          "line": 115,
+          "line": 116,
           "column": 0
         },
         "end": {
-          "line": 119,
+          "line": 120,
           "column": 3
         }
       }
