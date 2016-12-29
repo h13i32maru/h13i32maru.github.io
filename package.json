@@ -5,7 +5,9 @@
   "dependencies": {
     "http-server": "^0.8.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "http-server": "0.8.5"
+  },
   "scripts": {
     "start": "./node_modules/.bin/http-server -p 9999 -c -1 ./"
   },
