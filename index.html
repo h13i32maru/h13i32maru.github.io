@@ -2,44 +2,163 @@
 <html>
 <head>
 <meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
 <title>h13i32maru</title>
-<link rel="stylesheet" href="css/style.css"/>
+<style>
+  body {
+    width: 1024px;
+    margin: auto;
+    color: #444;
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .profile h1 {
+    margin: 0;
+
+  }
+
+  .profile .real-name {
+    font-size: 0.75em;
+    margin-top: -0.3em;
+  }
+
+  .profile img {
+    width: 28px;
+    margin: 5px 0 0 10px;
+  }
+
+  .profile span {
+    font-size: 0.8em;
+  }
+
+  .gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 1em;
+  }
+
+  .gallery > div {
+    width: 320px;
+    flex: 1;
+    margin-bottom: 1.5em;
+  }
+
+  .gallery .desc {
+    font-size: 0.8em;
+    width: 300px;
+  }
+
+  .gallery .desc a {
+    text-decoration: none;
+    font-weight: bold;
+    color: inherit;
+  }
+
+  .gallery img {
+    width: 300px;
+    border: solid 1px #ddd;
+    border-radius: 4px;
+  }
+
+  @media(max-width: 800px)  {
+    body {
+      width: auto;
+      margin: 0 1em;
+    }
+
+    .gallery {
+      display: block;
+    }
+
+    .gallery > div {
+      width: auto;
+      text-align: center;
+    }
+
+    .gallery .desc {
+      width: auto;
+    }
+  }
+</style>
 </head>
 
 <body>
-<header>
-  <span class="title">h13i32maru</span>
-</header>
+<h1>
+</h1>
 
-<h1>Profile</h1>
-<article>
-  <p>Name: Ryo Maruyama (丸山 亮)</p>
-  <p>Birth: 1986</p>
-  <p>Place: Mie → Tokyo</p>
-  <p>Like: JavaScript, Cooking, Japanese Dish</p>
-</article>
+<div class="profile">
+  <div>
+    <h1>h13i32maru</h1>
+    <div class="real-name">Ryo Maruyama</div>
+  </div>
+  <a href="https://twitter.com/h13i32maru"><img src="./image/twitter.svg"></a>
+  <a href="https://github.com/h13i32maru"><img src="./image/github-face.svg"></a>
+</div>
 
-<h1>Software</h1>
-<article>
-  <p><a href="https://github.com/h13i32maru">github/h13i32maru</a>: My repositories</p>
-  <p><a href="https://esdoc.org">ESDoc</a>: Good Documentation Generator for JavaScript</p>
-  <p><a href="https://jasperapp.io">Jasper</a>: Issue Reader for GitHub</p>
-</article>
+<div class="gallery">
+  <div>
+    <a href="https://esdoc.org"><img src="./image/ss-esdoc.png"/></a>
+    <div class="desc"><a href="https://esdoc.org">ESDoc</a>: Good Documentation Generator for JavaScript</div>
+  </div>
 
-<h1>Media</h1>
-<article>
-  <p><a href="https://twitter.com/h13i32maru">twitter/h13i32maru</a>: My tweets</p>
-  <p><a href="http://blog.h13i32maru.jp">maru source</a>: Blog of Software Engineering</p>
-  <p><a href="http://codelunch.fm">CodeLunch.fm</a>: Podcast of Software Engineering</p>
-</article>
+  <div>
+    <a href="https://jasperapp.io"><img src="./image/ss-jasper.png"/></a>
+    <div class="desc"><a href="https://jasperapp.io">Jasper</a>: A flexible and powerful issue reader for GitHub</div>
+  </div>
 
-<h1>Job</h1>
-<article>
-  <p>2014 - : <a href="https://info.cookpad.com/">Cookpad</a> (Ruby, Android, JavaScript)</p>
+  <div>
+    <a href="https://trickleapp.net"><img src="./image/ss-trickle.png"/></a>
+    <div class="desc"><a href="https://trickleapp.net">Trickle</a>: Write down your favorite activities without hesitation</div>
+  </div>
+
+  <div>
+    <a href="http://codelunch.fm"><img src="./image/ss-codelunch.png"/></a>
+    <div class="desc"><a href="http://codelunch.fm">CodeLunch.fm</a>: Podcast of Software Engineering</div>
+  </div>
+
+  <div>
+    <a href="http://blog.h13i32maru.jp"><img src="./image/ss-blog.png"/></a>
+    <div class="desc"><a href="http://blog.h13i32maru.jp">maru source</a>: Blog of Software Engineering</div>
+  </div>
+
+  <div>
+    <a href="http://b.hatena.ne.jp/entrylist?url=http%3A%2F%2Fblog.h13i32maru.jp%2F&sort=count"><img src="./image/ss-hatena.png"/></a>
+    <div class="desc"><a href="http://b.hatena.ne.jp/entrylist?url=http%3A%2F%2Fblog.h13i32maru.jp%2F&sort=count">maru source</a>: Popular articles of my blog</div>
+  </div>
+
+  <div>
+    <a href="https://press.forkwell.com/entry/2018/04/13/095525"><img src="./image/ss-forkwell.png"/></a>
+    <div class="desc"><a href="https://press.forkwell.com/entry/2018/04/13/095525">forkwell Interview</a>: クックパッドの料理好きなエンジニアが個人でもヒットツールを作り続ける理由とは？－ クックパッド 丸山亮 氏</div>
+  </div>
+
+  <div>
+    <a href="https://techlife.cookpad.com/search?q=h13i32maru"><img src="./image/ss-techlife.png"/></a>
+    <div class="desc"><a href="https://techlife.cookpad.com/search?q=h13i32maru">クックパッド開発者ブログ</a>: My articles in Cookpad inc.</div>
+  </div>
+
+  <div></div>
+</div>
+
+<h1>History</h1>
+<div class="history">
+  <p>2014 - : <a href="https://info.cookpad.com/">Cookpad</a> (Android, JavaScript, Department Manager)</p>
   <p>2010 - 2014: <a href="http://www.klab.com/jp/">KLab</a> (Android, ngCore, PHP, JavaScript)</p>
   <p>2006 - 2010: <a href="http://ize.co.jp/">iZE</a> (Thin Client, KNOPPIX, Qt)</p>
-</article>
+  <p>2001 - 2006: <a href="http://www.suzuka-ct.ac.jp/">鈴鹿工業高等専門学校</a> (電子情報工学科)</p>
+</div>
 
 </body>
 </html>
