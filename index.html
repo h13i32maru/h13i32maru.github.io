@@ -13,6 +13,7 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
     background: #1c3e73;
     color: #fff;
+    padding: 0.5em 0;
   }
 
   a {
@@ -49,7 +50,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 1em;
+    margin-top: 0.5em;
   }
 
   .gallery > div {
@@ -59,7 +60,7 @@
   }
 
   .gallery .desc {
-    font-size: 0.8em;
+    font-size: 0.9em;
     width: 300px;
     text-align: center;
   }
@@ -75,6 +76,23 @@
     border: solid 1px #fff;
     border-radius: 4px;
   }
+
+  .gallery.product img {
+    border: solid 10px #FECC04;
+  }
+
+  .gallery.media img {
+    border: solid 10px #1194f6;
+  }
+
+  h2.section {
+    margin: 0.5em 0 0 0;
+  }
+
+  h2.section.product {
+    margin: 1em 0 0 0;
+  }
+
 
   @media(max-width: 800px)  {
     body {
@@ -99,8 +117,6 @@
 </head>
 
 <body>
-<h1>
-</h1>
 
 <div class="profile">
   <div>
@@ -111,7 +127,8 @@
   <a href="https://github.com/h13i32maru"><img src="./image/github-face.svg"></a>
 </div>
 
-<div class="gallery">
+<h2 class="section product">Product</h2>
+<div class="gallery product">
   <div>
     <a href="https://esdoc.org"><img src="./image/ss-esdoc.png"/></a>
     <div class="desc">
@@ -135,15 +152,10 @@
       <div>Write down your favorite activities without hesitation</div>
     </div>
   </div>
+</div>
 
-  <div>
-    <a href="http://codelunch.fm"><img src="./image/ss-codelunch.png"/></a>
-    <div class="desc">
-      <a href="http://codelunch.fm">CodeLunch.fm</a> (<a href="http://blog.h13i32maru.jp/entry/2013/12/15/225745">2013.12~</a>)
-      <div>Podcast of Software Engineering</div>
-    </div>
-  </div>
-
+<h2 class="section media">Media</h2>
+<div class="gallery media">
   <div>
     <a href="http://blog.h13i32maru.jp"><img src="./image/ss-blog.png"/></a>
     <div class="desc">
@@ -155,23 +167,23 @@
   <div>
     <a href="http://b.hatena.ne.jp/entrylist?url=http%3A%2F%2Fblog.h13i32maru.jp%2F&sort=count"><img src="./image/ss-hatena.png"/></a>
     <div class="desc">
-      <a href="http://b.hatena.ne.jp/entrylist?url=http%3A%2F%2Fblog.h13i32maru.jp%2F&sort=count">Popular article</a>
+      <a href="http://b.hatena.ne.jp/entrylist?url=http%3A%2F%2Fblog.h13i32maru.jp%2F&sort=count">Popular article</a> (2007.05~)
       <div>by はてなブックマーク</div>
     </div>
   </div>
 
   <div>
-    <a href="https://press.forkwell.com/entry/2018/04/13/095525"><img src="./image/ss-forkwell.png"/></a>
+    <a href="http://codelunch.fm"><img src="./image/ss-codelunch.png"/></a>
     <div class="desc">
-      <a href="https://press.forkwell.com/entry/2018/04/13/095525">forkwell Interview</a> (2018.04)
-      <div>クックパッドの料理好きなエンジニアが個人でもヒットツールを作り続ける理由とは？</div>
+      <a href="http://codelunch.fm">CodeLunch.fm</a> (<a href="http://blog.h13i32maru.jp/entry/2013/12/15/225745">2013.12~</a>)
+      <div>Podcast of Software Engineering</div>
     </div>
   </div>
 
   <div>
     <a href="https://techlife.cookpad.com/search?q=h13i32maru+%E4%B8%B8%E5%B1%B1"><img src="./image/ss-techlife.png"/></a>
     <div class="desc">
-      <a href="https://techlife.cookpad.com/search?q=h13i32maru+%E4%B8%B8%E5%B1%B1">クックパッド開発者ブログ</a> (2014.10)
+      <a href="https://techlife.cookpad.com/search?q=h13i32maru+%E4%B8%B8%E5%B1%B1">クックパッド開発者ブログ</a> (2014.10~)
       <div>My articles in Cookpad inc.</div>
     </div>
   </div>
@@ -183,6 +195,15 @@
       <div>TechBooster in C89</div>
     </div>
   </div>
+
+  <div>
+    <a href="https://press.forkwell.com/entry/2018/04/13/095525"><img src="./image/ss-forkwell.png"/></a>
+    <div class="desc">
+      <a href="https://press.forkwell.com/entry/2018/04/13/095525">forkwell Interview</a> (2018.04)
+      <div>クックパッドの料理好きなエンジニアが個人でもヒットツールを作り続ける理由とは？</div>
+    </div>
+  </div>
+
 </div>
 
 <h1>History</h1>
