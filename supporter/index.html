@@ -45,20 +45,31 @@
   .supporter-list {
     font-size: 1.1em;
     font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 0.5em;
   }
 
   .supporter-list > div {
-    padding: 1em;
-    border-radius: 4px;
-    margin-bottom: 1em;
+    padding: 0.5em;
+    flex: 1 33%;
+    margin-bottom: 1.5em;
+    box-sizing: border-box;
   }
 
-  .supporter-list .color {
+  .supporter-list .color a {
+    display: block;
+    border-radius: 4px;
+    padding: 2em 0;
     background: linear-gradient(-45deg, rgb(250, 255, 0), rgb(255, 0, 161));
   }
 
-  .supporter-list .normal {
+  .supporter-list .normal a {
     /*border: solid 1px white;*/
+    display: block;
+    border-radius: 4px;
+    padding: 2em 0;
     background: #fff;
     color: #1c3e73;
   }
@@ -104,13 +115,18 @@
   <div class="color"><a href="https://github.com/yoheikikuta/resume">yohei-kikuta</a></div>
   <div class="color"><a href="https://scrapbox.io/morishin/morishin">morishin</a></div>
   <div class="normal"><a href="https://github.com/hokaccha">hokaccha</a></div>
+
   <div class="color"><a href="https://umeru.ma/">umeruma</a></div>
-  <div class="normal">pot</div>
-  <div class="normal">anons</div>
+  <div class="normal"><a>pot</a></div>
+  <div class="normal"><a>anons</a></div>
+
   <div class="color"><a href="https://twitter.com/kiriake">kiriake</a></div>
-  <div class="normal">pisces03</div>
-  <div class="color">310uk</div>
-  <div class="normal">@lalamoo</div>
+  <div class="normal"><a>pisces03</a></div>
+  <div class="color"><a>310uk</a></div>
+
+  <div class="normal"><a>@lalamoo</a></div>
+  <div class="normal"><a href="https://84b9cb.info/">84b9cb</a></div>
+  <div></div>
 </div>
 
 </body>
