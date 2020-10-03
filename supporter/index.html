@@ -38,6 +38,13 @@
     color: inherit;
   }
 
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid 1px #aaa;
+  }
+
   .gumroad img {
     width: 160px;
   }
@@ -49,6 +56,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 0.5em;
+    min-height: 300px;
   }
 
   .supporter-list > div {
@@ -85,48 +93,55 @@
 
 <body>
 <div>
-  <h1>Supporter Credit</h1>
+  <header>
+    <a href="/">戻る</a>
+    <h1 style="flex: 1">Supporter Subscription</h1>
+  </header>
   <p>
     ありがたいことに、これまで「Jasper便利だからお金払いたい」「Trickleの開発応援したいから投げ銭したい」などの声を何度かいただきました。
-    そこで、<a href="https://gum.co/h13i32maru" style="font-weight: bold;">サポータークレジット</a>というものを販売することにしました。
+    <br/>
+    <br/>
+    そこで、<a href="https://gum.co/h13i32maru" style="font-weight: bold;">サポーターサブスクリプション</a>というものを販売することにしました。
+    <br/>
+    JasperやTrickleなどの個々のプロダクト、もしくは僕自身を応援してあげよう！と思ってくださる方は購入していただけると大変励みになります。
     <br/>
     <a class="gumroad" href="https://gum.co/h13i32maru"><img src="../image/gumroad.png"/></a>
     <br/>
     <br/>
-    「ESDoc, Jasper, Trickle, CodeLunch.fmなどの活動を応援してあげたい！」
-    と思ってくださる方は購入していただけると大変励みになります。
-    購入すると、お名前をこのページに掲載させていただきます。
+    なお、投げ銭ではなく商取引とするために、便宜上「このページに名前を掲載する権利を販売する」という形にしています。
+    なので、購入後に「ライセンス番号」「サイトへの表示名」「リンク先URL」「アイコンURL」をh13i32maru+supporter@gmail.com までご連絡ください。
     <br/>
-    <br/>
-    購入後、「ライセンス番号」「サイトへの表示名」「リンク先」をh13i32maru+supporter@gmail.com までご連絡ください。
     <br/>
     <span style="font-size: 0.8em; color: #2599e4;">
     ※ 投げ銭やドネーションにしなかったのは<a style="text-decoration: underline;" href="https://yoheikikuta.github.io/web_tip/">こちら</a>の記事を参考にしました。
     </span>
-    <br/>
-    <br/>
-    <a href="/">h13i32maru.jp</a>
   </p>
-  <hr/>
 </div>
 
-<h1>🎉 Thanks 🎉</h1>
+<h1>🎉 購入者 🎉</h1>
+<div class="supporter-list">
+</div>
+
+<hr/>
+
+<h1>🎉 サポータークレジット購入者 🎉</h1>
+<div>※現在は販売しておりません</div>
 <div class="supporter-list">
   <div class="color"><a href="https://github.com/yoheikikuta/resume">yohei-kikuta</a></div>
   <div class="color"><a href="https://scrapbox.io/morishin/morishin">morishin</a></div>
-  <div class="normal"><a href="https://github.com/hokaccha">hokaccha</a></div>
+  <div class="color"><a href="https://github.com/hokaccha">hokaccha</a></div>
 
   <div class="color"><a href="https://umeru.ma/">umeruma</a></div>
-  <div class="normal"><a>pot</a></div>
-  <div class="normal"><a>anons</a></div>
+  <div class="color"><a>pot</a></div>
+  <div class="color"><a>anons</a></div>
 
   <div class="color"><a href="https://twitter.com/kiriake">kiriake</a></div>
-  <div class="normal"><a>pisces03</a></div>
+  <div class="color"><a>pisces03</a></div>
   <div class="color"><a>310uk</a></div>
 
-  <div class="normal"><a>@lalamoo</a></div>
-  <div class="normal"><a>84b9cb</a></div>
-  <div class="normal"><a>nekmrru</a></div>
+  <div class="color"><a>@lalamoo</a></div>
+  <div class="color"><a>84b9cb</a></div>
+  <div class="color"><a>nekmrru</a></div>
 
   <div class="color"><a href="http://mnzn.cute.bz/">フジタカ</a></div>
   <div class="color"><a href="https://twitter.com/tsumura">tsumura</a></div>
