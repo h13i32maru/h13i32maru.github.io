@@ -1,8 +1,7 @@
 {
-  "name": "codelunch",
+  "name": "h13i32maru-jp",
   "version": "1.0.0",
   "private": true,
-  "description": "http://codelunch.fm",
   "scripts": {
     "build": "ts-node ./src/build.ts"
   },
