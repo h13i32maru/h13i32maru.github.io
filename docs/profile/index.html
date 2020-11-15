@@ -160,6 +160,10 @@
       flex: 1;
     }
 
+    .content .content-body .work-mark {
+      display: none;
+    }
+
     .content .content-title {
       font-weight: bold;
       font-size: 1.2em;
@@ -246,14 +250,30 @@
       .content .content-image {
         height: 200px;
         max-width: initial;
+        position: relative;
       }
 
       .content .content-body {
         padding: 0;
       }
 
+      .content .content-body .work-mark {
+        display: inline-block;
+        background: #717171;
+        color: white;
+        border: solid 1px #ddd;
+        border-radius: 4px;
+        padding: 4px;
+        font-size: 0.6em;
+        vertical-align: bottom;
+      }
+
       .timeline .year-mark {
-        display: none;
+        margin-top: 12px;
+      }
+
+      .timeline .year-mark + .content {
+        border-top: none;
       }
 
       .timeline h2 {
@@ -335,7 +355,10 @@
         <div class="content work-private">
           <div class="content-image"><img src="../image/profile/2020-codelunchfm.png"/></div>
           <div class="content-body">
-            <div><span class="content-title">2020.10 CodeLunch.fm再開</span></div>
+            <div>
+              <span class="work-mark">個人活動</span>
+              <span class="content-title">2020.10 CodeLunch.fm再開</span>
+              </div>
             <div class="content-desc">ソフトウェアの技術トークを行っているポッドキャストを再開</div>
             <div class="content-labels"></div>
             <div class="content-urls">
@@ -350,7 +373,10 @@
         <div class="content work-private">
           <div class="content-image"><img src="../image/profile/2020-jasper.png"/></div>
           <div class="content-body">
-            <div><span class="content-title">2020.10 Jasper v1.0.0リリース</span></div>
+            <div>
+              <span class="work-mark">個人活動</span>
+              <span class="content-title">2020.10 Jasper v1.0.0リリース</span>
+              </div>
             <div class="content-desc">2016年から開発しているGitHub用のIssue Reader「Jasper v1.0.0」をリリース</div>
             <div class="content-labels"><div>TypeScript</div>
 <div>Electron</div>
@@ -372,8 +398,11 @@
         <div class="content work-job">
           <div class="content-image"><img src="../image/profile/2020-renewal-cookpad-android.png"/></div>
           <div class="content-body">
-            <div><span class="content-title">2020.10 クックパッドアプリ(Android版)のリニューアル</span></div>
-            <div class="content-desc">リニューアルプロジェクトのAndroidエンジニアを担当</div>
+            <div>
+              <span class="work-mark">仕事</span>
+              <span class="content-title">2020.10 クックパッドアプリのリニューアル開発</span>
+              </div>
+            <div class="content-desc">Android版クックパッドアプリのリニューアルプロジェクトでAndroid開発を行った</div>
             <div class="content-labels"><div>Android</div>
 <div>VIPER Architecture</div>
 <div>Kotlin</div>
@@ -389,7 +418,10 @@
         <div class="content work-private">
           <div class="content-image"><img src="../image/profile/2020-dininglab.png"/></div>
           <div class="content-body">
-            <div><span class="content-title">2020.06 食卓ラボリリース</span></div>
+            <div>
+              <span class="work-mark">個人活動</span>
+              <span class="content-title">2020.06 食卓ラボリリース</span>
+              </div>
             <div class="content-desc">食卓を楽しくするサービス「食卓ラボ」をiOS/Androidでリリース</div>
             <div class="content-labels"><div>TypeScript</div>
 <div>React Native</div>
@@ -413,7 +445,10 @@
         <div class="content work-job">
           <div class="content-image"><img src="../image/profile/no-image.png"/></div>
           <div class="content-body">
-            <div><span class="content-title">2020.01 クックパッドのレシピ投稿領域の部長職を辞退</span></div>
+            <div>
+              <span class="work-mark">仕事</span>
+              <span class="content-title">2020.01 クックパッドのレシピ投稿領域の部長職を辞退</span>
+              </div>
             <div class="content-desc">2018年から担ってきた部長職を今期は辞退して、エンジニア職に戻った</div>
             <div class="content-labels"></div>
             <div class="content-urls">
@@ -427,7 +462,10 @@
         <div class="content work-private">
           <div class="content-image"><img src="../image/profile/2019-trickle-desktop.png"/></div>
           <div class="content-body">
-            <div><span class="content-title">2019.10 Trickleデスクトップ版リリース</span></div>
+            <div>
+              <span class="work-mark">個人活動</span>
+              <span class="content-title">2019.10 Trickleデスクトップ版リリース</span>
+              </div>
             <div class="content-desc">2018年から開発している自分のアクティビティを保存する「Trickle」のデスクトップ版をリリース</div>
             <div class="content-labels"><div>TypeScript</div>
 <div>Electron</div>
@@ -447,7 +485,10 @@
         <div class="content work-private">
           <div class="content-image"><img src="../image/profile/2018-trickle.png"/></div>
           <div class="content-body">
-            <div><span class="content-title">2018.11 Trickleリリース</span></div>
+            <div>
+              <span class="work-mark">個人活動</span>
+              <span class="content-title">2018.11 Trickleリリース</span>
+              </div>
             <div class="content-desc">自分のアクティビティを気兼ねなく書き溜める「Trickle」をiOS/Androidでリリース。同日にAbemaTVに出演</div>
             <div class="content-labels"><div>JavaScript</div>
 <div>TypeScript</div>
@@ -472,7 +513,10 @@
         <div class="content work-private">
           <div class="content-image"><img src="../image/profile/2018-jasper-free.png"/></div>
           <div class="content-body">
-            <div><span class="content-title">2018.07 Jasperを無料化</span></div>
+            <div>
+              <span class="work-mark">個人活動</span>
+              <span class="content-title">2018.07 Jasperを無料化</span>
+              </div>
             <div class="content-desc">2016年から開発しているGitHub用のIssue Reader「Jasper」を無料化</div>
             <div class="content-labels"></div>
             <div class="content-urls">
@@ -487,7 +531,10 @@
         <div class="content work-job">
           <div class="content-image"><img src="../image/profile/2018-mykitchen.png"/></div>
           <div class="content-body">
-            <div><span class="content-title">2018.04 クックパッド MYキッチンアプリをリリース</span></div>
+            <div>
+              <span class="work-mark">仕事</span>
+              <span class="content-title">2018.04 クックパッド MYキッチンアプリをリリース</span>
+              </div>
             <div class="content-desc">レシピ作者向けのアプリとしてゼロから作った「MYキッチン」アプリをiOS/Androidでリリース。現在は公開終了。</div>
             <div class="content-labels"><div>JavaScript</div>
 <div>TypeScript</div>
@@ -505,7 +552,10 @@
         <div class="content work-private">
           <div class="content-image"><img src="../image/profile/2018-forkwell.jpg"/></div>
           <div class="content-body">
-            <div><span class="content-title">2018.04 Forkwellのエンジニアインタビュー掲載</span></div>
+            <div>
+              <span class="work-mark">個人活動</span>
+              <span class="content-title">2018.04 Forkwellのエンジニアインタビュー掲載</span>
+              </div>
             <div class="content-desc">Forkwellからリレー形式のエンジニアインタビューを受けて掲載されました</div>
             <div class="content-labels"></div>
             <div class="content-urls">
@@ -519,7 +569,10 @@
         <div class="content work-job">
           <div class="content-image"><img src="../image/profile/no-image.png"/></div>
           <div class="content-body">
-            <div><span class="content-title">2018.01 クックパッド 投稿開発部 部長に任命</span></div>
+            <div>
+              <span class="work-mark">仕事</span>
+              <span class="content-title">2018.01 クックパッド 投稿開発部 部長に任命</span>
+              </div>
             <div class="content-desc">クックパッド株式会社のレシピ事業のユーザ投稿に責任を持つ部署「投稿開発部」の部長に任命</div>
             <div class="content-labels"><div>PdM</div>
 <div>デザインスプリント</div>
@@ -537,7 +590,10 @@
         <div class="content work-job">
           <div class="content-image"><img src="../image/profile/2017-cookpad-recipe-matome.png"/></div>
           <div class="content-body">
-            <div><span class="content-title">2017.08 iOS版クックパッドアプリの「レシピまとめ」をリリース</span></div>
+            <div>
+              <span class="work-mark">仕事</span>
+              <span class="content-title">2017.08 iOS版クックパッドアプリの「レシピまとめ」をリリース</span>
+              </div>
             <div class="content-desc">自分が投稿したレシピを自由にまとめることができる「レシピまとめ」をiOS版クックパッドアプリでリリース</div>
             <div class="content-labels"><div>PdM</div>
 <div>PjM</div></div>
@@ -552,7 +608,10 @@
         <div class="content work-job">
           <div class="content-image"><img src="../image/profile/no-image.png"/></div>
           <div class="content-body">
-            <div><span class="content-title">2017.07 クックパッド サービス開発部 副部長に任命</span></div>
+            <div>
+              <span class="work-mark">仕事</span>
+              <span class="content-title">2017.07 クックパッド サービス開発部 副部長に任命</span>
+              </div>
             <div class="content-desc">クックパッド株式会社のレシピ事業全体に責任を持つ部署「サービス開発部」の副部長に任命</div>
             <div class="content-labels"><div>PdM</div>
 <div>PjM</div>
@@ -570,7 +629,10 @@
         <div class="content work-job">
           <div class="content-image"><img src="../image/profile/2017-techconf.png"/></div>
           <div class="content-body">
-            <div><span class="content-title">2017.01 Cookpad Tech Conf2017で登壇</span></div>
+            <div>
+              <span class="work-mark">仕事</span>
+              <span class="content-title">2017.01 Cookpad Tech Conf2017で登壇</span>
+              </div>
             <div class="content-desc">「チームでプロダクト開発をするための取り組み」という内容でCookpad Tech Conf2017に登壇</div>
             <div class="content-labels"></div>
             <div class="content-urls">
@@ -584,7 +646,10 @@
         <div class="content work-private">
           <div class="content-image"><img src="../image/profile/2016-nodefest.jpg"/></div>
           <div class="content-body">
-            <div><span class="content-title">2016.11 Node学園祭2016で登壇</span></div>
+            <div>
+              <span class="work-mark">個人活動</span>
+              <span class="content-title">2016.11 Node学園祭2016で登壇</span>
+              </div>
             <div class="content-desc">Jasperの作成で得た設計や開発の話をしました</div>
             <div class="content-labels"></div>
             <div class="content-urls">
@@ -599,7 +664,10 @@
         <div class="content work-job">
           <div class="content-image"><img src="../image/profile/2016-cookinglog.jpg"/></div>
           <div class="content-body">
-            <div><span class="content-title">2016.09 Android版クックパッドアプリに「料理きろく」をリリース</span></div>
+            <div>
+              <span class="work-mark">仕事</span>
+              <span class="content-title">2016.09 Android版クックパッドアプリに「料理きろく」をリリース</span>
+              </div>
             <div class="content-desc">自動で料理の写真を判定し、カレンダー形式で記録していく「料理きろく」をリリースしました</div>
             <div class="content-labels"><div>PdM</div>
 <div>PjM</div></div>
@@ -614,7 +682,10 @@
         <div class="content work-private">
           <div class="content-image"><img src="../image/profile/2016-jasper.png"/></div>
           <div class="content-body">
-            <div><span class="content-title">2016.06 GitHub用のIssue Reader「Jasper」をリリース</span></div>
+            <div>
+              <span class="work-mark">個人活動</span>
+              <span class="content-title">2016.06 GitHub用のIssue Reader「Jasper」をリリース</span>
+              </div>
             <div class="content-desc">GitHubのIssueを効率的に閲覧することができる「Jasper」をMac/Window/Linuxでリリース</div>
             <div class="content-labels"><div>JavaScript</div>
 <div>TypeScript</div>
@@ -635,7 +706,10 @@
         <div class="content work-private">
           <div class="content-image"><img src="../image/profile/2015-web-explorer.jpg"/></div>
           <div class="content-body">
-            <div><span class="content-title">2015.12 「The Web Explorer」頒布</span></div>
+            <div>
+              <span class="work-mark">個人活動</span>
+              <span class="content-title">2015.12 「The Web Explorer」頒布</span>
+              </div>
             <div class="content-desc">コミックマーケットC89で「The Web Explorer」に自作OSS「ESDoc」について執筆</div>
             <div class="content-labels"><div>ESDoc</div>
 <div>JavaScript</div></div>
@@ -650,7 +724,10 @@
         <div class="content work-private">
           <div class="content-image"><img src="../image/profile/2015-nodefest.jpg"/></div>
           <div class="content-body">
-            <div><span class="content-title">2015.11 Node学園祭2015に登壇</span></div>
+            <div>
+              <span class="work-mark">個人活動</span>
+              <span class="content-title">2015.11 Node学園祭2015に登壇</span>
+              </div>
             <div class="content-desc">自作したJavaScript向けのドキュメンテーションツール「ESDoc」についてNode学園祭2015で登壇</div>
             <div class="content-labels"><div>ESDoc</div>
 <div> JavaScript</div></div>
@@ -666,7 +743,10 @@
         <div class="content work-job">
           <div class="content-image"><img src="../image/profile/2015-bookmark-category.png"/></div>
           <div class="content-body">
-            <div><span class="content-title">2015.11 Android版クックパッドアプリで「おまかせ整理」をリリース</span></div>
+            <div>
+              <span class="work-mark">仕事</span>
+              <span class="content-title">2015.11 Android版クックパッドアプリで「おまかせ整理」をリリース</span>
+              </div>
             <div class="content-desc">ブックマークしたレシピを自動的に分類する機能「おまかせ整理」をAndroid版クックパッドアプリでリリース</div>
             <div class="content-labels"><div>PdM</div>
 <div>PjM</div>
@@ -684,7 +764,10 @@
         <div class="content work-private">
           <div class="content-image"><img src="../image/profile/2015-esdoc.png"/></div>
           <div class="content-body">
-            <div><span class="content-title">2015.05 ESDocリリース</span></div>
+            <div>
+              <span class="work-mark">個人活動</span>
+              <span class="content-title">2015.05 ESDocリリース</span>
+              </div>
             <div class="content-desc">ES2015以降のJavaScript向けのドキュメンテーションツール「ESDoc」をリリース</div>
             <div class="content-labels"><div>JavaScript</div>
 <div>ECMAScript2015</div>
@@ -707,7 +790,10 @@
         <div class="content work-private">
           <div class="content-image"><img src="../image/profile/2014-maruyama-syokudo.jpg"/></div>
           <div class="content-body">
-            <div><span class="content-title">2014.12 「丸山食堂」を実施</span></div>
+            <div>
+              <span class="work-mark">個人活動</span>
+              <span class="content-title">2014.12 「丸山食堂」を実施</span>
+              </div>
             <div class="content-desc">2日間限定で「丸山食堂」という食堂を知人のカフェを借りてオープン</div>
             <div class="content-labels"></div>
             <div class="content-urls">
@@ -721,7 +807,10 @@
         <div class="content work-job">
           <div class="content-image"><img src="../image/profile/2014-toru-recipe.png"/></div>
           <div class="content-body">
-            <div><span class="content-title">2014.10 SPWeb版クックパッドで「撮るレシピ」リリース</span></div>
+            <div>
+              <span class="work-mark">仕事</span>
+              <span class="content-title">2014.10 SPWeb版クックパッドで「撮るレシピ」リリース</span>
+              </div>
             <div class="content-desc">本や雑誌などのレシピを写真で撮って保存する機能「撮るレシピ」をSPWeb版クックパッドでSPAとしてリリース</div>
             <div class="content-labels"><div>JavaScript</div>
 <div>SPA</div>
@@ -737,7 +826,10 @@
         <div class="content work-job">
           <div class="content-image"><img src="../image/profile/2014-cookpad.png"/></div>
           <div class="content-body">
-            <div><span class="content-title">2014.03 クックパッド株式会社に入社</span></div>
+            <div>
+              <span class="work-mark">仕事</span>
+              <span class="content-title">2014.03 クックパッド株式会社に入社</span>
+              </div>
             <div class="content-desc">レシピ事業を行っているクックパッド株式会社にWebフロントエンドエンジニアとして入社</div>
             <div class="content-labels"></div>
             <div class="content-urls">
@@ -751,7 +843,10 @@
         <div class="content work-job">
           <div class="content-image"><img src="../image/profile/2014-klab.gif"/></div>
           <div class="content-body">
-            <div><span class="content-title">2014.03 KLab株式会社を退職</span></div>
+            <div>
+              <span class="work-mark">仕事</span>
+              <span class="content-title">2014.03 KLab株式会社を退職</span>
+              </div>
             <div class="content-desc">2010年から努めていたKLab株式会社を退職</div>
             <div class="content-labels"></div>
             <div class="content-urls">
@@ -765,7 +860,10 @@
         <div class="content work-private">
           <div class="content-image"><img src="../image/profile/2014-navyjs.png"/></div>
           <div class="content-body">
-            <div><span class="content-title">2014.02 NavyJS, NavyCreatorをリリース</span></div>
+            <div>
+              <span class="work-mark">個人活動</span>
+              <span class="content-title">2014.02 NavyJS, NavyCreatorをリリース</span>
+              </div>
             <div class="content-desc">Webフロントエンド向けのアプリケーションフレームワーク「NavyJS」と専用IDE「NavyCreator」をリリース。現在は開発終了。</div>
             <div class="content-labels"><div>C++</div>
 <div>Qt</div>
@@ -787,7 +885,10 @@
         <div class="content work-private">
           <div class="content-image"><img src="../image/profile/2013-codelunchfm.png"/></div>
           <div class="content-body">
-            <div><span class="content-title">2013.12 CodeLunch.fm開始</span></div>
+            <div>
+              <span class="work-mark">個人活動</span>
+              <span class="content-title">2013.12 CodeLunch.fm開始</span>
+              </div>
             <div class="content-desc">ソフトウェア技術系のトークをするポッドキャスト「CodeLunch.fm」を開始</div>
             <div class="content-labels"></div>
             <div class="content-urls">
@@ -801,7 +902,10 @@
         <div class="content work-job">
           <div class="content-image"><img src="../image/profile/2013-web-performance.png"/></div>
           <div class="content-body">
-            <div><span class="content-title">2013.11 Webフロントエンドパフォーマンスチューニングについて発信</span></div>
+            <div>
+              <span class="work-mark">仕事</span>
+              <span class="content-title">2013.11 Webフロントエンドパフォーマンスチューニングについて発信</span>
+              </div>
             <div class="content-desc">業務で得たWebフロントエンドパフォーマンスチューニングについて内容を整理して発信</div>
             <div class="content-labels"></div>
             <div class="content-urls">
@@ -815,7 +919,10 @@
         <div class="content work-job">
           <div class="content-image"><img src="../image/profile/2013-baseball.jpg"/></div>
           <div class="content-body">
-            <div><span class="content-title">2013.08 「プロ野球グランドスラム」の開発</span></div>
+            <div>
+              <span class="work-mark">仕事</span>
+              <span class="content-title">2013.08 「プロ野球グランドスラム」の開発</span>
+              </div>
             <div class="content-desc">KLab株式会社で「プロ野球グランドスラム」のWebフロントエンドを開発</div>
             <div class="content-labels"><div>JavaScript</div>
 <div>Knockout.js</div>
@@ -833,7 +940,10 @@
         <div class="content work-job">
           <div class="content-image"><img src="../image/profile/2013-lods.jpg"/></div>
           <div class="content-body">
-            <div><span class="content-title">2013.05 「ロード・オプ・ザ・ドラゴン」の開発</span></div>
+            <div>
+              <span class="work-mark">仕事</span>
+              <span class="content-title">2013.05 「ロード・オプ・ザ・ドラゴン」の開発</span>
+              </div>
             <div class="content-desc">KLab株式会社で「ロードオプザ・ドラゴン」のサーバサイドを開発</div>
             <div class="content-labels"><div>PHP</div></div>
             <div class="content-urls">
@@ -847,7 +957,10 @@
         <div class="content work-job">
           <div class="content-image"><img src="../image/profile/2013-gigabot.png"/></div>
           <div class="content-body">
-            <div><span class="content-title">2013.04 「GIGABOT WARS」の開発</span></div>
+            <div>
+              <span class="work-mark">仕事</span>
+              <span class="content-title">2013.04 「GIGABOT WARS」の開発</span>
+              </div>
             <div class="content-desc">KLab株式会社で「GIGABOT WARS」のGUIアプリケーションフレームワークの開発</div>
             <div class="content-labels"><div>JavaScript</div>
 <div>ngCore</div></div>
@@ -862,7 +975,10 @@
         <div class="content work-private">
           <div class="content-image"><img src="../image/profile/2012-btree.png"/></div>
           <div class="content-body">
-            <div><span class="content-title">2012.07 RDBMSのBTree Indexについて発信</span></div>
+            <div>
+              <span class="work-mark">個人活動</span>
+              <span class="content-title">2012.07 RDBMSのBTree Indexについて発信</span>
+              </div>
             <div class="content-desc">RDBMSのIndexにはなぜBTreeが使われているかということについて調査・考察した内容を発信</div>
             <div class="content-labels"></div>
             <div class="content-urls">
@@ -876,7 +992,10 @@
         <div class="content work-job">
           <div class="content-image"><img src="../image/profile/no-image.png"/></div>
           <div class="content-body">
-            <div><span class="content-title">2012.08 他社協業のSNSの開発</span></div>
+            <div>
+              <span class="work-mark">仕事</span>
+              <span class="content-title">2012.08 他社協業のSNSの開発</span>
+              </div>
             <div class="content-desc">KLab株式会社で他社協業のSNSのAndroidを開発</div>
             <div class="content-labels"><div>Android</div>
 <div>WebView</div>
@@ -892,7 +1011,10 @@
         <div class="content work-private">
           <div class="content-image"><img src="../image/profile/2011-calorie.png"/></div>
           <div class="content-body">
-            <div><span class="content-title">2011.08 32Calorieをリリース</span></div>
+            <div>
+              <span class="work-mark">個人活動</span>
+              <span class="content-title">2011.08 32Calorieをリリース</span>
+              </div>
             <div class="content-desc">摂取したカロリーを簡単に記録できるAndroidアプリをリリース</div>
             <div class="content-labels"><div>Android</div></div>
             <div class="content-urls">
@@ -907,7 +1029,10 @@
         <div class="content work-job">
           <div class="content-image"><img src="../image/profile/2010-klab.gif"/></div>
           <div class="content-body">
-            <div><span class="content-title">2010.08 KLab株式会社に入社</span></div>
+            <div>
+              <span class="work-mark">仕事</span>
+              <span class="content-title">2010.08 KLab株式会社に入社</span>
+              </div>
             <div class="content-desc">受託開発・ソーシャルゲーム開発を行っている「KLab株式会社」にソフトウェアエンジニアとして入社</div>
             <div class="content-labels"></div>
             <div class="content-urls">
@@ -921,7 +1046,10 @@
         <div class="content work-private">
           <div class="content-image"><img src="../image/profile/2010-custom-twitter.png"/></div>
           <div class="content-body">
-            <div><span class="content-title">2010.06 「Custom Twitter」をリリース</span></div>
+            <div>
+              <span class="work-mark">個人活動</span>
+              <span class="content-title">2010.06 「Custom Twitter」をリリース</span>
+              </div>
             <div class="content-desc">Web版のTwitterをGoogle風の見た目にカスタマイズして遊べるGreasemonkey製のジョークツール「Custom Twitter」をリリース</div>
             <div class="content-labels"><div>JavaScript</div>
 <div>Greasemonkey</div></div>
@@ -938,7 +1066,10 @@
         <div class="content work-job">
           <div class="content-image"><img src="../image/profile/no-image.png"/></div>
           <div class="content-body">
-            <div><span class="content-title">2010.01 Cisco VPN Clientの問題を記載</span></div>
+            <div>
+              <span class="work-mark">仕事</span>
+              <span class="content-title">2010.01 Cisco VPN Clientの問題を記載</span>
+              </div>
             <div class="content-desc">Cisco VPN ClientをKNOPPIXなどの1CD Linuxで使う場合の問題について記載</div>
             <div class="content-labels"><div>Cisco</div>
 <div>strace</div>
@@ -954,7 +1085,10 @@
         <div class="content work-private">
           <div class="content-image"><img src="../image/profile/2010-toox.png"/></div>
           <div class="content-body">
-            <div><span class="content-title">2010.01 Tooxをリリース</span></div>
+            <div>
+              <span class="work-mark">個人活動</span>
+              <span class="content-title">2010.01 Tooxをリリース</span>
+              </div>
             <div class="content-desc">メモ帳、ブックマーク管理、お金の管理ができるWebサービス「Toox」をリリース。現在はサービス終了。</div>
             <div class="content-labels"><div>Ruby</div>
 <div>jQuery</div>
@@ -972,7 +1106,10 @@
         <div class="content work-job">
           <div class="content-image"><img src="../image/profile/2006-ize-thin-client.jpg"/></div>
           <div class="content-body">
-            <div><span class="content-title">2006.04 iZE株式会社に入社</span></div>
+            <div>
+              <span class="work-mark">仕事</span>
+              <span class="content-title">2006.04 iZE株式会社に入社</span>
+              </div>
             <div class="content-desc">受託開発やThin Client開発をしているiZE株式会社に入社。指紋認証搭載のUSBメモリ型Linux Thin Clientの開発</div>
             <div class="content-labels"><div>Linux</div>
 <div>KNOPPIX</div>
@@ -992,7 +1129,10 @@
         <div class="content work-private">
           <div class="content-image"><img src="../image/profile/2001-suzuka.png"/></div>
           <div class="content-body">
-            <div><span class="content-title">2001.04 国立鈴鹿工業高等専門学校 電子情報工学科 入学</span></div>
+            <div>
+              <span class="work-mark">個人活動</span>
+              <span class="content-title">2001.04 国立鈴鹿工業高等専門学校 電子情報工学科 入学</span>
+              </div>
             <div class="content-desc">電子情報工学科にて電子工学、情報工学を履修。2006.03卒業</div>
             <div class="content-labels"><div>情報工学</div>
 <div>C言語</div>

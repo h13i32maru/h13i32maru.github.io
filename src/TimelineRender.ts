@@ -17,7 +17,10 @@ export class TimelineRender {
         <div class="content work-${timeline.private ? 'private' : 'job'}">
           <div class="content-image"><img src="${timeline.imageUrl}"/></div>
           <div class="content-body">
-            <div><span class="content-title">${timeline.date} ${timeline.title}</span></div>
+            <div>
+              <span class="work-mark">${timeline.private ? '個人活動' : '仕事'}</span>
+              <span class="content-title">${timeline.date} ${timeline.title}</span>
+              </div>
             <div class="content-desc">${timeline.desc}</div>
             <div class="content-labels">${this.renderLabels(timeline.labels)}</div>
             <div class="content-urls">

@@ -37,8 +37,8 @@ export const timelines: TimelineEntity[] = [
   {
     imageUrl: '../image/profile/2020-renewal-cookpad-android.png',
     date: '2020.10',
-    title: 'クックパッドアプリ(Android版)のリニューアル',
-    desc: 'リニューアルプロジェクトのAndroidエンジニアを担当',
+    title: 'クックパッドアプリのリニューアル開発',
+    desc: 'Android版クックパッドアプリのリニューアルプロジェクトでAndroid開発を行った',
     private: false,
     labels: ['Android', 'VIPER Architecture', 'Kotlin', 'Dagger'],
     urls: [

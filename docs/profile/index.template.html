@@ -160,6 +160,10 @@
       flex: 1;
     }
 
+    .content .content-body .work-mark {
+      display: none;
+    }
+
     .content .content-title {
       font-weight: bold;
       font-size: 1.2em;
@@ -246,14 +250,30 @@
       .content .content-image {
         height: 200px;
         max-width: initial;
+        position: relative;
       }
 
       .content .content-body {
         padding: 0;
       }
 
+      .content .content-body .work-mark {
+        display: inline-block;
+        background: #717171;
+        color: white;
+        border: solid 1px #ddd;
+        border-radius: 4px;
+        padding: 4px;
+        font-size: 0.6em;
+        vertical-align: bottom;
+      }
+
       .timeline .year-mark {
-        display: none;
+        margin-top: 12px;
+      }
+
+      .timeline .year-mark + .content {
+        border-top: none;
       }
 
       .timeline h2 {
