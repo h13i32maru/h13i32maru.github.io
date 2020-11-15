@@ -12,11 +12,78 @@
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
     }
 
+    h1, h2, h3 {
+      margin: 0;
+    }
+
     .root {
       max-width: 1280px;
       margin: auto;
     }
 
+    /* プロフィール */
+    .profile .mdi {
+      font-size: 24px;
+      color: #888;
+    }
+
+    .works {
+      display: flex;
+    }
+
+    .works .work {
+      flex: 1;
+      width: 0;
+    }
+
+    .works .work-title {
+      font-weight: bold;
+      margin-top: 12px;
+    }
+
+    .works .work-desc {
+      padding-left: 18px;
+    }
+
+    .works .work-labels {
+      padding-left: 18px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .works .work-labels div {
+      background: orange;
+      color: white;
+      font-weight: bold;
+      padding: 4px 8px;
+      border-radius: 100px;
+      font-size: 0.8em;
+      margin-right: 8px;
+      margin-bottom: 8px;
+    }
+
+    /*興味関心*/
+    .interests {
+      display: flex;
+    }
+
+    .interests .interest {
+      flex: 1;
+      width: 0;
+      padding-right: 12px;
+    }
+
+    .interests .interest-skill-map {
+      flex: 2;
+    }
+
+    .interest img {
+      width: 100%;
+      border: solid 1px #ddd;
+      border-radius: 4px;
+    }
+
+    /* タイムライン */
     .year-label {
       font-size: 2em;
       font-weight: bold;
@@ -75,10 +142,69 @@
       display: block;
     }
   </style>
+  <link rel="stylesheet" href="../css/materialdesignicons.css"/>
 </head>
 <body>
 <div class="root">
+  <div class="profile">
+    <h1>丸山 亮 / h13i32maru
+      <a href="https://github.com/h13i32maru"><span class="mdi mdi-github"></span></a>
+      <a href="https://twitter.com/h13i32maru"><span class="mdi mdi-twitter"></span></a>
+      <a href="https://blog.h13i32maru.jp"><span class="mdi mdi-post-outline"></span></a>
+    </h1>
+    <div class="works">
+      <div class="work work-private">
+        <h2>個人活動</h2>
+        <div class="work-title"><a href="https://jasperapp.io">Jasper</a> (2016.06)</div>
+        <div class="work-desc">GitHub 用の Issueリーダー(Mac/Window/Linux)</div>
+        <div class="work-labels"><div>TypeScript</div><div>Electron</div><div>React</div><div>styled-components</div></div>
 
+        <div class="work-title"><a href="https://trickleapp.me/">Trickle</a> (2018.11)</div>
+        <div class="work-desc">気兼ねなくアクティビティを書き溜めるサービス(Android/iOS/Mac/Windows)</div>
+        <div class="work-labels"><div>TypeScript</div><div>React</div><div>React Native</div><div>Electron</div><div>styled-components</div><div>Node.js</div><div>Express</div><div>GCP</div></div>
+
+        <div class="work-title"><a href="https://dininglab.app/">食卓ラボ</a> (2020.06)</div>
+        <div class="work-desc">家庭の食卓を楽しくするサービス(Android/iOS)</div>
+        <div class="work-labels"><div>TypeScript</div><div>React Native</div><div>styled-components</div><div>Node.js</div><div>Express</div><div>GCP</div></div>
+
+        <div class="work-title"><a href="https://esdoc.org/">ESDoc</a> (2015.05)</div>
+        <div class="work-desc">ES2015以降のJavaScript向けドキュメンテーションツール</div>
+        <div class="work-labels"><div>JavaScript</div><div>Node.js</div><div>AST</div><div>Mocha</div></div>
+
+        <div class="work-title"><a href="https://codelunch.fm/">CodeLunch.fm</a> (2013.12)</div>
+        <div class="work-desc">ソフトウェアエンジニアの技術トークポッドキャスト</div>
+      </div>
+
+      <div class="work work-business">
+        <h2>仕事</h2>
+        <div class="work-title"><a href="https://info.cookpad.com/">Cookpad株式会社</a> (2014.03 - 現在)</div>
+        <div class="work-desc">レシピサービス開発、サービス開発部 副部長、投稿開発部 部長</div>
+        <div class="work-labels"><div>JavaScript</div><div>Android</div><div>Kotlin</div><div>PdM</div><div>PjM</div><div>デザインスプリント</div><div>ユーザインタビュー</div><div>仮説検証</div><div>SQL</div></div>
+
+        <div class="work-title"><a href="https://www.klab.com/jp/">KLab株式会社</a> (2010.09 - 2014.02)</div>
+        <div class="work-desc">ソーシャルゲームの基盤開発、エンジニアリングマネージャー</div>
+        <div class="work-labels"><div>JavaScript</div><div>Knockout.js</div><div>jQuery</div><div>ngCore</div><div>Android</div><div>Java</div><div>PHP</div></div>
+
+        <div class="work-title"><a href="http://ize.co.jp/">iZE株式会社</a> (2006.03 - 2010.08)</div>
+        <div class="work-desc">USBメモリ型 Linux Thin Clientの開発</div>
+        <div class="work-labels"><div>KNOPPIX</div><div>C++</div><div>Qt</div><div>ブートローダー</div><div>Remote Desktop Protocol</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="interests">
+    <div class="interest interest-skill-map">
+      <h2>スキルマップ</h2>
+      <div><img src="../image/profile/skill-map.png"/></div>
+    </div>
+    <div class="interest interest-strength-finder">
+      <h2>ストレングスファインダー</h2>
+      <div><img src="../image/profile/strength-finder.png"/></div>
+    </div>
+  </div>
+
+
+  <h2>タイムライン</h2>
 __TIMELINE__
 </div>
 </body>
