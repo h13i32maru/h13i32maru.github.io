@@ -15,7 +15,7 @@ export const timelines: TimelineEntity[] = [
     title: 'CodeLunch.fm再開',
     desc: 'ソフトウェアの技術トークを行っているポッドキャストを再開',
     private: true,
-    labels: ['TypeScript', 'Design'],
+    labels: [],
     urls: [
       {url: 'https://codelunch.fm/'},
       {url: 'https://twitter.com/h13i32maru/status/1317311580372004865'},
