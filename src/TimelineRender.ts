@@ -27,7 +27,7 @@ export class TimelineRender {
   }
 
   private renderUrls(urls: TimelineEntity['urls']): string {
-    return urls.map(url => `<a href="${url.url}">${url.url}</a>`).join('\n');
+    return urls.map(url => `<a href="${url.url}">${url.label ?? url.url}</a>`).join('\n');
   }
 }
 

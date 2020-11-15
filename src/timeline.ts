@@ -18,7 +18,7 @@ export const timelines: TimelineEntity[] = [
     labels: [],
     urls: [
       {url: 'https://codelunch.fm/'},
-      {url: 'https://twitter.com/h13i32maru/status/1317311580372004865'},
+      {url: 'https://twitter.com/h13i32maru/status/1317311580372004865', label: 'リリースツイート'},
     ],
   },
   {
@@ -30,8 +30,8 @@ export const timelines: TimelineEntity[] = [
     labels: ['TypeScript', 'Electron', 'React', 'Design', 'GraphQL', 'styled-components', 'GitBook'],
     urls: [
       {url: 'https://jasperapp.io/'},
-      {url: 'https://blog.h13i32maru.jp/entry/2020/10/05/172043'},
-      {url: 'https://twitter.com/h13i32maru/status/1313033353516380160'},
+      {url: 'https://blog.h13i32maru.jp/entry/2020/10/05/172043', label: 'Jasper v1.0.0をリリースしました🚀（GitHub用のissueリーダー）'},
+      {url: 'https://twitter.com/h13i32maru/status/1313033353516380160', label: 'リリースツイート'},
     ]
   },
   {
@@ -54,8 +54,8 @@ export const timelines: TimelineEntity[] = [
     labels: ['TypeScript', 'React Native', 'Design', 'styled-components', 'Node.js', 'Express', 'Google App Engine', 'Google Cloud Storage', 'Google Cloud SQL'],
     urls: [
       {url: 'https://dininglab.app/'},
-      {url: 'https://blog.h13i32maru.jp/entry/2020/06/23/090000'},
-      {url: 'https://twitter.com/h13i32maru/status/1275219696984326144'},
+      {url: 'https://blog.h13i32maru.jp/entry/2020/06/23/090000', label: '食卓を楽しくするサービス「食卓ラボ」をリリースしました！'},
+      {url: 'https://twitter.com/h13i32maru/status/1275219696984326144', label: 'リリースツイート'},
     ]
   },
   {
@@ -66,7 +66,7 @@ export const timelines: TimelineEntity[] = [
     private: false,
     labels: [],
     urls: [
-      {url: 'https://blog.h13i32maru.jp/entry/2020/06/30/155452'}
+      {url: 'https://blog.h13i32maru.jp/entry/2020/06/30/155452', label: '自分が使って幸せになるものを作る'}
     ]
   },
   {
@@ -78,8 +78,8 @@ export const timelines: TimelineEntity[] = [
     labels: ['TypeScript', 'Electron', 'React', 'styled-components', 'Design'],
     urls: [
       {url: 'https://trickleapp.me/'},
-      {url: 'https://blog.h13i32maru.jp/entry/2019/10/05/181449'},
-      {url: 'https://twitter.com/h13i32maru/status/1181000469717471233'}
+      {url: 'https://blog.h13i32maru.jp/entry/2019/10/05/181449', label: '気兼ねなくアクティビティを書き留められるTrickleというサービスをリリースしました（11ヶ月ぶり2回目）'},
+      {url: 'https://twitter.com/h13i32maru/status/1181000469717471233', label: 'リリースツイート'},
     ]
   },
   {
@@ -91,9 +91,9 @@ export const timelines: TimelineEntity[] = [
     labels: ['JavaScript', 'TypeScript', 'Node.js', 'React Native', 'styled-components', 'Express', 'Google App Engine', 'Google Cloud Storage', 'Google Cloud SQL'],
     urls: [
       {url: 'https://trickleapp.me/'},
-      {url: 'https://blog.h13i32maru.jp/entry/2018/11/12/092904'},
-      {url: 'https://twitter.com/h13i32maru/status/1061779831543652353'},
-      {url: 'https://times.abema.tv/news-article/5207398'}
+      {url: 'https://blog.h13i32maru.jp/entry/2018/11/12/092904', label: '気兼ねなくアクティビティを書き留められるTrickleというサービスをリリースしました'},
+      {url: 'https://twitter.com/h13i32maru/status/1061779831543652353', label: 'リリースツイート'},
+      {url: 'https://times.abema.tv/news-article/5207398', label: 'AbemaTV: SNSに疲れた人向け？コミュニケーションを取らない新アプリ「Trickle」とは'}
     ]
   },
   {
@@ -105,7 +105,7 @@ export const timelines: TimelineEntity[] = [
     labels: [],
     urls: [
       {url: 'https://jasperapp.io/'},
-      {url: 'https://blog.h13i32maru.jp/entry/2018/07/17/083215'}
+      {url: 'https://blog.h13i32maru.jp/entry/2018/07/17/083215', label: 'Jasper(GitHub用のIssue Reader)を無料にしました'}
     ]
   },
   {
@@ -116,7 +116,7 @@ export const timelines: TimelineEntity[] = [
     private: false,
     labels: ['JavaScript', 'TypeScript', 'React Native', 'styled-components', 'Design'],
     urls: [
-      {url: 'https://techlife.cookpad.com/entry/2018/04/16/100000'}
+      {url: 'https://techlife.cookpad.com/entry/2018/04/16/100000', label: 'React Nativeで作った新アプリについて(5日間連載)'},
     ]
   },
   {
@@ -127,7 +127,7 @@ export const timelines: TimelineEntity[] = [
     private: true,
     labels: [],
     urls: [
-      {url: 'https://pr.forkwell.com/2018-04-13-095525/'}
+      {url: 'https://pr.forkwell.com/2018-04-13-095525/', label: 'クックパッドの料理好きなエンジニアが個人でもヒットツールを作り続ける理由とは？－ クックパッド 丸山亮 氏'},
     ]
   },
   {
@@ -165,7 +165,7 @@ export const timelines: TimelineEntity[] = [
     private: false,
     labels: [],
     urls: [
-      {url: 'https://techconf.cookpad.com/2017/h13i32maru.html'}
+      {url: 'https://techconf.cookpad.com/2017/h13i32maru.html', label: 'チームでプロダクト開発をするための取り組み'},
     ]
   },
   {
@@ -176,8 +176,8 @@ export const timelines: TimelineEntity[] = [
     private: true,
     labels: [],
     urls: [
-      {url: 'https://nodefest.jp/2016/schedule.html#conference'},
-      {url: 'https://liginc.co.jp/332939'}
+      {url: 'https://nodefest.jp/2016/schedule.html#conference', label: 'Node学園祭2016'},
+      {url: 'https://liginc.co.jp/332939', label: 'Nodeまみれ！東京Node学園祭2016に行ってきた！【#05】'},
     ]
   },
   {
@@ -188,7 +188,7 @@ export const timelines: TimelineEntity[] = [
     private: false,
     labels: ['PdM', 'PjM'],
     urls: [
-      {url: 'https://info.cookpad.com/pr/news/press_2017_0928'},
+      {url: 'https://info.cookpad.com/pr/news/press_2017_0928', label: '〜クックパッド アプリ、機械学習を活用した新たな機能追加〜'},
     ]
   },
   {
@@ -201,8 +201,8 @@ export const timelines: TimelineEntity[] = [
     urls: [
       {url: 'https://jasperapp.io/'},
       {url: 'https://github.com/jasperapp/jasper'},
-      {url: 'https://blog.h13i32maru.jp/entry/2016/06/08/090000'},
-      {url: 'https://twitter.com/h13i32maru/status/740339713949605888'},
+      {url: 'https://blog.h13i32maru.jp/entry/2016/06/08/090000', label: 'JasperというGitHub Issue Readerを作りました'},
+      {url: 'https://twitter.com/h13i32maru/status/740339713949605888', label: 'リリースツイート'},
     ]
   },
   {
@@ -213,7 +213,7 @@ export const timelines: TimelineEntity[] = [
     labels: ['ESDoc', 'JavaScript'],
     private: true,
     urls: [
-      {url: 'https://techbooster.booth.pm/items/178228'}
+      {url: 'https://techbooster.booth.pm/items/178228', label: 'The Web Explorer TechBooster'},
     ]
   },
   {
@@ -224,8 +224,8 @@ export const timelines: TimelineEntity[] = [
     labels: ['ESDoc',' JavaScript'],
     private: true,
     urls: [
-      {url: 'https://blog.h13i32maru.jp/entry/2015/11/08/140212'},
-      {url: 'https://nodejs.connpass.com/event/20741/presentation/'},
+      {url: 'https://blog.h13i32maru.jp/entry/2015/11/08/140212', label: '東京Node学園祭2015でESDocについて発表してきました'},
+      {url: 'https://nodejs.connpass.com/event/20741/presentation/', label: 'Node学園祭2015'},
     ]
   },
   {
@@ -236,7 +236,7 @@ export const timelines: TimelineEntity[] = [
     private: false,
     labels: ['PdM', 'PjM', 'Android', 'Ruby on Rails', 'Solr'],
     urls: [
-      {url: 'https://techlife.cookpad.com/entry/2015/09/30/170015'},
+      {url: 'https://techlife.cookpad.com/entry/2015/09/30/170015', label: '機械学習によるレシピの自動分類、その裏側'},
     ]
   },
   {
@@ -249,8 +249,8 @@ export const timelines: TimelineEntity[] = [
     urls: [
       {url: 'https://esdoc.org/'},
       {url: 'https://github.com/esdoc/esdoc'},
-      {url: 'https://blog.h13i32maru.jp/entry/2015/05/06/221041'},
-      {url: 'https://twitter.com/h13i32maru/status/595943068274008064'},
+      {url: 'https://blog.h13i32maru.jp/entry/2015/05/06/221041', label: 'ESDocというJavaScript向けのAPIドキュメントツールを作りました'},
+      {url: 'https://twitter.com/h13i32maru/status/595943068274008064', label: 'リリースツイート'},
     ]
   },
   {
@@ -261,7 +261,7 @@ export const timelines: TimelineEntity[] = [
     private: true,
     labels: [],
     urls: [
-      {url: 'https://blog.h13i32maru.jp/entry/2014/12/22/213239'}
+      {url: 'https://blog.h13i32maru.jp/entry/2014/12/22/213239', label: '丸山食堂'},
     ]
   },
   {
@@ -292,7 +292,7 @@ export const timelines: TimelineEntity[] = [
     private: false,
     labels: [],
     urls: [
-      {url: 'https://blog.h13i32maru.jp/entry/2014/03/01/211423'}
+      {url: 'https://blog.h13i32maru.jp/entry/2014/03/01/211423', label: 'KLab株式会社を退職しました'},
     ]
   },
   {
@@ -304,7 +304,7 @@ export const timelines: TimelineEntity[] = [
     labels: ['C++', 'Qt', 'JavaScript', 'Canvas'],
     urls: [
       {url: 'http://navyjs.org/'},
-      {url: 'https://blog.h13i32maru.jp/entry/2014/02/26/080953'},
+      {url: 'https://blog.h13i32maru.jp/entry/2014/02/26/080953', label: 'NavyJSというJavaScriptフレームワークとNavyCreatorというIDEを作りました'},
       {url: 'https://github.com/h13i32maru/navyjs'},
       {url: 'https://github.com/h13i32maru/navyjs-legacy2'},
       {url: 'https://github.com/h13i32maru/navyjs-framework-legacy2'},
@@ -347,12 +347,12 @@ export const timelines: TimelineEntity[] = [
   {
     imageUrl: '../image/profile/2013-lods.jpg',
     date: '2013.05',
-    title: '「ロードオプザ・ドラゴン」の開発',
+    title: '「ロード・オプ・ザ・ドラゴン」の開発',
     desc: 'KLab株式会社で「ロードオプザ・ドラゴン」のサーバサイドを開発',
     private: false,
     labels: ['PHP'],
     urls: [
-      {url: 'https://octoba.net/archives/20130427-android-app-lods-191656.html'}
+      {url: 'https://octoba.net/archives/20130427-android-app-lods-191656.html', label: 'ロード・オブ・ザ・ドラゴン'}
     ]
   },
   {
@@ -363,7 +363,7 @@ export const timelines: TimelineEntity[] = [
     private: false,
     labels: ['JavaScript', 'ngCore'],
     urls: [
-      {url: 'https://gamebiz.jp/?p=101865'}
+      {url: 'https://gamebiz.jp/?p=101865', label: 'KLab、『GIGABOT WARS』を欧米版「Mobage」でリリース'},
     ]
   },
   {
@@ -394,8 +394,8 @@ export const timelines: TimelineEntity[] = [
     private: true,
     labels: ['Android'],
     urls: [
-      {url: 'https://play.google.com/store/apps/details?id=jp.h13i32maru.calorie'},
-      {url: 'https://blog.h13i32maru.jp/entry/20110821/1313925301'}
+      {url: 'https://play.google.com/store/apps/details?id=jp.h13i32maru.calorie', label: '32Calorie - Google Play'},
+      {url: 'https://blog.h13i32maru.jp/entry/20110821/1313925301', label: '一日の摂取カロリーを記録するアプリ「32Calorie」をリリースしました！'},
     ],
   },
   {
