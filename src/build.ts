@@ -6,7 +6,7 @@ import {timelineYears} from './timeline';
 const timelineRender = new TimelineRender();
 
 // load template
-const templateIndexPath = path.resolve(__dirname, `./template-profile.html`);
+const templateIndexPath = path.resolve(__dirname, `../docs/profile/index.template.html`);
 const templateIndexHTML = fs.readFileSync(templateIndexPath).toString();
 
 const indexHTML = templateIndexHTML
