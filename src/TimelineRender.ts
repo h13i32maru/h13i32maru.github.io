@@ -15,7 +15,7 @@ export class TimelineRender {
     return results.join('\n');
   }
 
-  private renderTimelines(year: number, timelines: TimelineEntity[]): string {
+  private renderTimelines(year: number | string, timelines: TimelineEntity[]): string {
     const results = timelines.map(timeline => {
       // language=HTML
       return `
