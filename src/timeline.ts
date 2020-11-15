@@ -455,5 +455,16 @@ export const timelines: TimelineEntity[] = [
       {url: 'https://japan.zdnet.com/article/20361559/', label: 'アイズ、USBメモリで指紋認証するシンクライアント「iZE Thin Client」発表'},
       {url: 'https://news.mynavi.jp/article/20071126-a034/', label: '既存PCをシンクライアント端末に! アイズ、iZE Thin Clientの新モデル発売'}
     ]
+  },
+  {
+    imageUrl: '../image/profile/2001-suzuka.png',
+    date: '2001.04',
+    title: '国立鈴鹿工業高等専門学校 電子情報工学科 入学',
+    desc: '電子情報工学科にて電子工学、情報工学を履修。2006.03卒業',
+    private: true,
+    labels: ['情報工学', 'C言語', 'Linux', '電子工学', '電磁気'],
+    urls: [
+      {url: 'https://www.suzuka-ct.ac.jp/', label: '国立鈴鹿工業高等専門学校'},
+    ]
   }
 ]
