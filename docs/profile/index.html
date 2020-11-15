@@ -110,6 +110,8 @@
       display: flex;
       flex-direction: column;
       padding-top: 60px;
+      border-top: solid 1px #ddd;
+      margin-top: 60px;
     }
 
     .content {
@@ -185,6 +187,21 @@
       display: block;
     }
 
+    .timeline .year-mark {
+      margin: auto;
+      background: #717171;
+      color: white;
+      width: 100px;
+      height: 100px;
+      text-align: center;
+      line-height: 100px;
+      border-radius: 100px;
+      font-size: 1.2em;
+    }
+
+    .timeline h2 {
+      display: none;
+    }
 
     @media(max-width: 1280px) {
       h1 {
@@ -229,6 +246,14 @@
 
       .content .content-body {
         padding: 0;
+      }
+
+      .timeline .year-mark {
+        display: none;
+      }
+
+      .timeline h2 {
+        display: block;
       }
     }
   </style>
@@ -298,6 +323,7 @@
   <div class="timeline">
     <h2>タイムライン</h2>
     
+        <div class="year-mark">2020</div>
         <div class="content work-private">
           <div class="content-image"><img src="../image/profile/2020-codelunchfm.png"/></div>
           <div class="content-body">
@@ -312,6 +338,7 @@
         </div>
       
 
+        
         <div class="content work-private">
           <div class="content-image"><img src="../image/profile/2020-jasper.png"/></div>
           <div class="content-body">
@@ -333,6 +360,7 @@
         </div>
       
 
+        
         <div class="content work-job">
           <div class="content-image"><img src="../image/profile/2020-renewal-cookpad-android.png"/></div>
           <div class="content-body">
@@ -349,6 +377,7 @@
         </div>
       
 
+        
         <div class="content work-private">
           <div class="content-image"><img src="../image/profile/2020-dininglab.png"/></div>
           <div class="content-body">
@@ -372,6 +401,7 @@
         </div>
       
 
+        
         <div class="content work-job">
           <div class="content-image"><img src="../image/profile/no-image.png"/></div>
           <div class="content-body">
@@ -385,6 +415,7 @@
         </div>
       
 
+        <div class="year-mark">2019</div>
         <div class="content work-private">
           <div class="content-image"><img src="../image/profile/2019-trickle-desktop.png"/></div>
           <div class="content-body">
@@ -404,6 +435,7 @@
         </div>
       
 
+        <div class="year-mark">2018</div>
         <div class="content work-private">
           <div class="content-image"><img src="../image/profile/2018-trickle.png"/></div>
           <div class="content-body">
@@ -428,6 +460,7 @@
         </div>
       
 
+        
         <div class="content work-private">
           <div class="content-image"><img src="../image/profile/2018-jasper-free.png"/></div>
           <div class="content-body">
@@ -442,6 +475,7 @@
         </div>
       
 
+        
         <div class="content work-job">
           <div class="content-image"><img src="../image/profile/2018-mykitchen.png"/></div>
           <div class="content-body">
@@ -459,6 +493,7 @@
         </div>
       
 
+        
         <div class="content work-private">
           <div class="content-image"><img src="../image/profile/2018-forkwell.jpg"/></div>
           <div class="content-body">
@@ -472,6 +507,7 @@
         </div>
       
 
+        
         <div class="content work-job">
           <div class="content-image"><img src="../image/profile/no-image.png"/></div>
           <div class="content-body">
@@ -489,6 +525,7 @@
         </div>
       
 
+        <div class="year-mark">2017</div>
         <div class="content work-job">
           <div class="content-image"><img src="../image/profile/2017-cookpad-recipe-matome.png"/></div>
           <div class="content-body">
@@ -503,6 +540,7 @@
         </div>
       
 
+        
         <div class="content work-job">
           <div class="content-image"><img src="../image/profile/no-image.png"/></div>
           <div class="content-body">
@@ -520,6 +558,7 @@
         </div>
       
 
+        
         <div class="content work-job">
           <div class="content-image"><img src="../image/profile/2017-techconf.png"/></div>
           <div class="content-body">
@@ -533,6 +572,7 @@
         </div>
       
 
+        <div class="year-mark">2016</div>
         <div class="content work-private">
           <div class="content-image"><img src="../image/profile/2016-nodefest.jpg"/></div>
           <div class="content-body">
@@ -547,6 +587,7 @@
         </div>
       
 
+        
         <div class="content work-job">
           <div class="content-image"><img src="../image/profile/2016-cookinglog.jpg"/></div>
           <div class="content-body">
@@ -561,6 +602,7 @@
         </div>
       
 
+        
         <div class="content work-private">
           <div class="content-image"><img src="../image/profile/2016-jasper.png"/></div>
           <div class="content-body">
@@ -581,6 +623,7 @@
         </div>
       
 
+        <div class="year-mark">2015</div>
         <div class="content work-private">
           <div class="content-image"><img src="../image/profile/2015-web-explorer.jpg"/></div>
           <div class="content-body">
@@ -595,6 +638,7 @@
         </div>
       
 
+        
         <div class="content work-private">
           <div class="content-image"><img src="../image/profile/2015-nodefest.jpg"/></div>
           <div class="content-body">
@@ -610,6 +654,7 @@
         </div>
       
 
+        
         <div class="content work-job">
           <div class="content-image"><img src="../image/profile/2015-bookmark-category.png"/></div>
           <div class="content-body">
@@ -627,6 +672,7 @@
         </div>
       
 
+        
         <div class="content work-private">
           <div class="content-image"><img src="../image/profile/2015-esdoc.png"/></div>
           <div class="content-body">
@@ -649,6 +695,7 @@
         </div>
       
 
+        <div class="year-mark">2014</div>
         <div class="content work-private">
           <div class="content-image"><img src="../image/profile/2014-maruyama-syokudo.jpg"/></div>
           <div class="content-body">
@@ -662,6 +709,7 @@
         </div>
       
 
+        
         <div class="content work-job">
           <div class="content-image"><img src="../image/profile/2014-toru-recipe.png"/></div>
           <div class="content-body">
@@ -677,6 +725,7 @@
         </div>
       
 
+        
         <div class="content work-job">
           <div class="content-image"><img src="../image/profile/2014-cookpad.png"/></div>
           <div class="content-body">
@@ -690,6 +739,7 @@
         </div>
       
 
+        
         <div class="content work-job">
           <div class="content-image"><img src="../image/profile/2014-klab.gif"/></div>
           <div class="content-body">
@@ -703,6 +753,7 @@
         </div>
       
 
+        
         <div class="content work-private">
           <div class="content-image"><img src="../image/profile/2014-navyjs.png"/></div>
           <div class="content-body">
@@ -724,6 +775,7 @@
         </div>
       
 
+        <div class="year-mark">2013</div>
         <div class="content work-private">
           <div class="content-image"><img src="../image/profile/2013-codelunchfm.png"/></div>
           <div class="content-body">
@@ -737,6 +789,7 @@
         </div>
       
 
+        
         <div class="content work-job">
           <div class="content-image"><img src="../image/profile/2013-web-performance.png"/></div>
           <div class="content-body">
@@ -750,6 +803,7 @@
         </div>
       
 
+        
         <div class="content work-job">
           <div class="content-image"><img src="../image/profile/2013-baseball.jpg"/></div>
           <div class="content-body">
@@ -767,6 +821,7 @@
         </div>
       
 
+        
         <div class="content work-job">
           <div class="content-image"><img src="../image/profile/2013-lods.jpg"/></div>
           <div class="content-body">
@@ -780,6 +835,7 @@
         </div>
       
 
+        
         <div class="content work-job">
           <div class="content-image"><img src="../image/profile/2013-gigabot.png"/></div>
           <div class="content-body">
@@ -794,6 +850,7 @@
         </div>
       
 
+        <div class="year-mark">2012</div>
         <div class="content work-private">
           <div class="content-image"><img src="../image/profile/2012-btree.png"/></div>
           <div class="content-body">
@@ -807,6 +864,7 @@
         </div>
       
 
+        
         <div class="content work-job">
           <div class="content-image"><img src="../image/profile/no-image.png"/></div>
           <div class="content-body">
@@ -822,6 +880,7 @@
         </div>
       
 
+        <div class="year-mark">2011</div>
         <div class="content work-private">
           <div class="content-image"><img src="../image/profile/2011-calorie.png"/></div>
           <div class="content-body">
@@ -836,6 +895,7 @@
         </div>
       
 
+        <div class="year-mark">2010</div>
         <div class="content work-job">
           <div class="content-image"><img src="../image/profile/2010-klab.gif"/></div>
           <div class="content-body">
@@ -849,6 +909,7 @@
         </div>
       
 
+        
         <div class="content work-private">
           <div class="content-image"><img src="../image/profile/2010-custom-twitter.png"/></div>
           <div class="content-body">
@@ -865,6 +926,7 @@
         </div>
       
 
+        
         <div class="content work-job">
           <div class="content-image"><img src="../image/profile/no-image.png"/></div>
           <div class="content-body">
@@ -880,6 +942,7 @@
         </div>
       
 
+        
         <div class="content work-private">
           <div class="content-image"><img src="../image/profile/2010-toox.png"/></div>
           <div class="content-body">
@@ -897,6 +960,7 @@
         </div>
       
 
+        <div class="year-mark">2006</div>
         <div class="content work-job">
           <div class="content-image"><img src="../image/profile/2006-ize-thin-client.jpg"/></div>
           <div class="content-body">

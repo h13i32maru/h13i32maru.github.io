@@ -2,9 +2,18 @@ import {TimelineEntity} from './timeline';
 
 export class TimelineRender {
   renderTimelines(timelines: TimelineEntity[]): string {
+    let latestYear = '';
     const results = timelines.map(timeline => {
+      const thisYear = timeline.date.split('.')[0];
+      let yearView = '';
+      if (latestYear !== thisYear) {
+        yearView = `<div class="year-mark">${thisYear}</div>`;
+      }
+      latestYear = thisYear;
+
       // language=HTML
       return `
+        ${yearView}
         <div class="content work-${timeline.private ? 'private' : 'job'}">
           <div class="content-image"><img src="${timeline.imageUrl}"/></div>
           <div class="content-body">
