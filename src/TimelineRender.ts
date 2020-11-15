@@ -1,30 +1,16 @@
-import {TimelineEntity, TimelineYearEntity} from './timeline';
+import {TimelineEntity} from './timeline';
 
 export class TimelineRender {
-  renderTimelineYears(timelineYears: TimelineYearEntity[]): string {
-    const results = timelineYears.map(timelineYear => {
-      // language=HTML
-      return `
-        <div class="year-container">
-          <div class="year-label">${timelineYear.year}年</div>
-          ${this.renderTimelines(timelineYear.year, timelineYear.timelines)}
-        </div>
-    `;
-    });
-
-    return results.join('\n');
-  }
-
-  private renderTimelines(year: number | string, timelines: TimelineEntity[]): string {
+  renderTimelines(timelines: TimelineEntity[]): string {
     const results = timelines.map(timeline => {
       // language=HTML
       return `
-        <div class="content">
+        <div class="content work-${timeline.private ? 'private' : 'job'}">
           <div class="content-image"><img src="${timeline.imageUrl}"/></div>
           <div class="content-body">
-            <div><span class="content-title">${year}.${timeline.month} ${timeline.title}</span></div>
+            <div><span class="content-title">${timeline.date} ${timeline.title}</span></div>
             <div class="content-desc">${timeline.desc}</div>
-            <div class="content-labels"><div class="work">${timeline.work}</div>${this.renderLabels(timeline.labels)}</div>
+            <div class="content-labels">${this.renderLabels(timeline.labels)}</div>
             <div class="content-urls">
               ${this.renderUrls(timeline.urls)}
             </div>
