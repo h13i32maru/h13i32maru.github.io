@@ -1,1 +1,4 @@
-https://materialdesignicons.com/
+- `profile/index.html`
+  - edit `docs/profile/index.template.html`
+  - edit `src/timeline.ts`
+  - run `npm run build`
