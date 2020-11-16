@@ -98,6 +98,21 @@
       padding-right: 30px;
     }
 
+    .interests .interest-product-column {
+      display: flex;
+    }
+
+    .interests .interest-product-column > div {
+      flex: 1;
+      width: 0;
+    }
+
+    .interests .interest-product-column a {
+      display: block;
+      margin: 8px 0;
+      font-weight: bold;
+    }
+
     .interests .interest-skill-map {
       flex: 2;
     }
@@ -333,12 +348,33 @@
   </div>
 
   <div class="interests">
+    <div class="interest interest-product">
+      <h2>好きな製品</h2>
+      <div class="interest-product-column">
+        <div>
+          <a href="https://www.typescriptlang.org/">TypeScript</a>
+          <a href="https://reactjs.org/">React</a>
+          <a href="https://reactnative.dev/">React Native</a>
+          <a href="https://www.electronjs.org/">Electron</a>
+          <a href="https://docs.aws.amazon.com/ja_jp/redshift/latest/dg/c_redshift-sql.html">SQL</a>
+          <a href="https://kotlinlang.org/">Kotlin</a>
+        </div>
+        <div>
+          <a href="https://www.jetbrains.com/webstorm/">WebStorm</a>
+          <a href="https://jasperapp.io/">Jasper</a>
+          <a href="https://www.notion.so/">Notion</a>
+          <a href="https://www.bdash.io/">Bdash</a>
+          <a href="https://www.google.com/intl/ja_jp/docs/about/">Google Docs</a>
+          <a href="https://www.omnigroup.com/omniplan/">OmniPlan</a>
+        </div>
+      </div>
+    </div>
     <div class="interest interest-skill-map">
       <h2>スキルマップ</h2>
       <div><a href="../image/profile/skill-map.png"><img src="../image/profile/skill-map.png"/></a></div>
     </div>
     <div class="interest interest-strength-finder">
-      <h2>ストレングスファインダー</h2>
+      <h2>Strength Finder</h2>
       <div><a href="../image/profile/strength-finder.png"><img src="../image/profile/strength-finder.png"/></a></div>
     </div>
   </div>
